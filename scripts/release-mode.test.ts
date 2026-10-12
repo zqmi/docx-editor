@@ -112,7 +112,7 @@ test('every lookup shares one bounded deadline', async () => {
 
 test('the repository resolves the published package set', () => {
   const names = publicPackages(join(import.meta.dir, '..')).map(({ name }) => name);
-  expect(names).toContain('@docx-editor.dev/core');
+  expect(names).toContain('@zqmi/docx-editor-core');
   expect(names).toContain('@docx-editor.dev/docx-to-pdf');
   expect(names.every((name) => name.startsWith('@docx-editor.dev/'))).toBe(true);
 });

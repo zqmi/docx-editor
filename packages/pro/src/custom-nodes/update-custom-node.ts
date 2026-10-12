@@ -9,8 +9,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // one undo step — the tag codec has no in-place rewrite, and pretending it did would put
 // a second write path beside `insertInlineContentControl`.
 
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
-import type { PaginatedSurface } from '@docx-editor.dev/core/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { PaginatedSurface } from '@zqmi/docx-editor-core/editor';
 import {
   contentControlPropertiesOf,
   contentControlTextOf,
@@ -21,9 +21,9 @@ import {
   type OoxmlNode,
   type OoxmlParagraphNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { CustomNodeDefinition } from './define-custom-node.ts';
-import type { StoryScope } from '@docx-editor.dev/core/store';
+import type { StoryScope } from '@zqmi/docx-editor-core/store';
 import {
   payloadWriteOf,
   projectionOf,

@@ -26,21 +26,21 @@ export type {
   OpenPdfDocumentForExportOptions,
   OpenPdfDocumentForExportResult,
 } from './types.ts';
-export { createFontSource, defineFontResolver } from '@docx-editor.dev/core/editor';
+export { createFontSource, defineFontResolver } from '@zqmi/docx-editor-core/editor';
 export type {
   ExportFontResolutionReport,
   ExportFontFaceResolution,
   ExportFontFamilyResolution,
   FontOriginFailure,
   ExportDroppedEmbeddedFont,
-} from '@docx-editor.dev/core/export';
+} from '@zqmi/docx-editor-core/export';
 export type {
   FontRequest,
   FontSubstitution,
   RevisionDisplayMode,
-} from '@docx-editor.dev/core/layout';
-export type { HeadlessDocumentRejection } from '@docx-editor.dev/core/store';
-export { ExportResourceError } from '@docx-editor.dev/core/export';
+} from '@zqmi/docx-editor-core/layout';
+export type { HeadlessDocumentRejection } from '@zqmi/docx-editor-core/store';
+export { ExportResourceError } from '@zqmi/docx-editor-core/export';
 
 export type {
   ReviewDisplayMode,
@@ -53,5 +53,5 @@ export type {
   RevisionChangedLinesMark,
   RevisionMarkupColor,
   RevisionMarkupNamedColor,
-} from '@docx-editor.dev/core/editor';
-export { REVISION_MARKUP_COLORS } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
+export { REVISION_MARKUP_COLORS } from '@zqmi/docx-editor-core/editor';

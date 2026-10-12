@@ -23,7 +23,7 @@ Edit DOCX files through a supported subset of the Office.js object model. The AP
 Run the API on a server over DOCX bytes or in the browser against an open editor. See [Office.js compatibility](https://www.docx-editor.dev/docs/2.x/editor-api/office-js-api) for supported members and differences from Office.js.
 
 ```bash
-npm install @docx-editor.dev/editor-api @docx-editor.dev/core
+npm install @docx-editor.dev/editor-api @zqmi/docx-editor-core
 ```
 
 Server use requires Node.js `^20.16.0 || >=22.3.0`.
@@ -154,9 +154,9 @@ To upgrade from the former reviewer, bridge, MCP, or chat APIs, see [Migration](
 
 | Package | Description |
 | --- | --- |
-| [`@docx-editor.dev/react`](https://www.npmjs.com/package/@docx-editor.dev/react) | React adapter. `<DocxEditor>`, provider primitives, hooks, and compound chrome. |
-| [`@docx-editor.dev/core`](https://www.npmjs.com/package/@docx-editor.dev/core) | Framework-agnostic engine: OOXML read/write, canonical document tree, layout, paint. |
-| [`@docx-editor.dev/i18n`](https://www.npmjs.com/package/@docx-editor.dev/i18n) | Shared locale strings and types. |
+| [`@zqmi/docx-editor-react`](https://www.npmjs.com/package/@zqmi/docx-editor-react) | React adapter. `<DocxEditor>`, provider primitives, hooks, and compound chrome. |
+| [`@zqmi/docx-editor-core`](https://www.npmjs.com/package/@zqmi/docx-editor-core) | Framework-agnostic engine: OOXML read/write, canonical document tree, layout, paint. |
+| [`@zqmi/docx-editor-i18n`](https://www.npmjs.com/package/@zqmi/docx-editor-i18n) | Shared locale strings and types. |
 | [`@docx-editor.dev/pro`](https://www.npmjs.com/package/@docx-editor.dev/pro) | Tracked changes, comments, and custom nodes. |
 | [`@docx-editor.dev/editor-api`](https://www.npmjs.com/package/@docx-editor.dev/editor-api) | Supported Office.js subset for document editing on a server or in an open editor. |
 

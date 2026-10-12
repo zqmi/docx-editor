@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 import './globals.css';
 
 export const metadata: Metadata = {

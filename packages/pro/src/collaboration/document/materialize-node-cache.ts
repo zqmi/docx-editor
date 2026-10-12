@@ -11,7 +11,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * the tree past `maxTreeDepth`, and whether the build is complete, so a spine rebuild can
  * reuse the node's child list (see `materialize-spine.ts`).
  */
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { idOf, type LogicalId } from './identity.ts';
 
 export class NodeCache {

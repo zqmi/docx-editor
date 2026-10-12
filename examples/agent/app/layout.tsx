@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 // The shipped stylesheet is self-contained: its utilities are compiled and
 // scoped to `.docx-editor` at build time, so there is no Tailwind step here.
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 import './globals.css';
 
 export const metadata: Metadata = {

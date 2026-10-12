@@ -86,7 +86,7 @@ for (const packageDir of packageDirs) {
       for (const [, subpath] of content.matchAll(/@docx-editor\.dev\/core\/([\w./-]+)/g)) {
         if (!publicCoreSubpaths.has(subpath)) {
           errors.push(
-            `${path.relative(root, artifact)} imports @docx-editor.dev/core/${subpath}, which core does not export`
+            `${path.relative(root, artifact)} imports @zqmi/docx-editor-core/${subpath}, which core does not export`
           );
         }
       }

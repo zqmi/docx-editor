@@ -17,7 +17,7 @@ import {
   XML_NAMESPACE_URI,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { type AttributeFields, attributeListFrom, elementFrom, textNode } from './node-shapes.ts';
 import { rejectDangerousKey, type DocumentLimits, type LimitCode } from './limits.ts';
 

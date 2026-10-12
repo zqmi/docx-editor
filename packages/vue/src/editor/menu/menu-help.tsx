@@ -2,7 +2,7 @@
 // their own file, so the menu parts file stays under its line cap.
 
 import { defineComponent, type PropType } from 'vue';
-import type { ChromeMenuId } from '@docx-editor.dev/core/editor';
+import type { ChromeMenuId } from '@zqmi/docx-editor-core/editor';
 import { openReportIssue } from '../../lib/reportIssue';
 import { useMenuContext, useMenuLabel } from './menu-context';
 import { Menu, MenuRow, menuRowSlot, type MenuPartComponent } from './parts';

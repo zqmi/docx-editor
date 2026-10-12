@@ -61,7 +61,7 @@ function entriesFromExports(packageRoot, packageName, exportsMap) {
   // Instead of parsing tsup configs we use a robust fallback: scan all
   // `**/index.ts` and same-named `.ts` files under `src/`, pick the one
   // whose head doc-block names this exact subpath (e.g. matches the
-  // string `@docx-editor.dev/react/dialogs` in the comment).
+  // string `@zqmi/docx-editor-react/dialogs` in the comment).
   const subpathSrcIndex = buildSubpathSrcIndex(packageRoot, packageName);
 
   const entries = [];

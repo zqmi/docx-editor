@@ -22,7 +22,7 @@ import {
   WML_NAMESPACE_URI,
   type OoxmlNode,
   type OoxmlParagraphNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { LogicalId } from './identity.ts';
 import type { DocumentRegistry } from './registry.ts';
 import type { SharedCharacter } from './paragraph-text.ts';

@@ -1,6 +1,6 @@
 // Options for `breakParagraph`. Re-exported from `paragraph-flow.ts`.
 
-import type { DocumentProperties, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { DocumentProperties, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import type { CellAnchorScope } from './cell-anchor-layout.ts';
 import type { CjkParagraphTypography } from './cjk-typography.ts';
 import type { ExclusionZone } from './drawing-exclusion.ts';

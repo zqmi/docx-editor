@@ -4,13 +4,13 @@
   "commit": false,
   "fixed": [
     [
-      "@docx-editor.dev/core",
-      "@docx-editor.dev/react",
+      "@zqmi/docx-editor-core",
+      "@zqmi/docx-editor-react",
       "@docx-editor.dev/editor-api",
       "@docx-editor.dev/vue",
-      "@docx-editor.dev/i18n",
+      "@zqmi/docx-editor-i18n",
       "@docx-editor.dev/pro",
-      "@docx-editor.dev/fonts",
+      "@zqmi/docx-editor-fonts",
       "@docx-editor.dev/fonts-cjk",
       "@docx-editor.dev/docx-to-markdown",
       "@docx-editor.dev/docx-to-pdf"

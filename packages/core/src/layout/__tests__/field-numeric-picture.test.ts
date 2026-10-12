@@ -1,7 +1,7 @@
 // The `\#` numeric picture switch: what it renders, and what it refuses.
 import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { readOoxmlPackage } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createParagraphLayoutCache,

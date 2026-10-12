@@ -12,8 +12,8 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
-import { isFldSimple } from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
+import { isFldSimple } from '@zqmi/docx-editor-core/store';
 import {
   DEFAULT_ENDNOTE_PROPERTIES,
   DEFAULT_FOOTNOTE_PROPERTIES,

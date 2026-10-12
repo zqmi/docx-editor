@@ -8,8 +8,8 @@
 - Updated dependencies [af15667]
   - @docx-editor.dev/pro@2.19.0
   - @docx-editor.dev/editor-api@2.19.0
-  - @docx-editor.dev/core@2.19.0
-  - @docx-editor.dev/i18n@2.19.0
+  - @zqmi/docx-editor-core@2.19.0
+  - @zqmi/docx-editor-i18n@2.19.0
 
 ## 0.0.12
 
@@ -41,20 +41,20 @@
 - Updated dependencies [f56f0b6]
 - Updated dependencies [f10341d]
 - Updated dependencies [040e653]
-  - @docx-editor.dev/core@2.18.0
+  - @zqmi/docx-editor-core@2.18.0
   - @docx-editor.dev/pro@2.18.0
   - @docx-editor.dev/editor-api@2.18.0
-  - @docx-editor.dev/i18n@2.18.0
+  - @zqmi/docx-editor-i18n@2.18.0
 
 ## 0.0.11
 
 ### Patch Changes
 
 - Updated dependencies [332494b]
-  - @docx-editor.dev/core@2.17.0
+  - @zqmi/docx-editor-core@2.17.0
   - @docx-editor.dev/editor-api@2.17.0
   - @docx-editor.dev/pro@2.17.0
-  - @docx-editor.dev/i18n@2.17.0
+  - @zqmi/docx-editor-i18n@2.17.0
 
 ## 0.0.10
 
@@ -62,20 +62,20 @@
 
 - Updated dependencies [d8c40b2]
 - Updated dependencies [02b77f6]
-  - @docx-editor.dev/core@2.16.2
+  - @zqmi/docx-editor-core@2.16.2
   - @docx-editor.dev/editor-api@2.16.2
   - @docx-editor.dev/pro@2.16.2
-  - @docx-editor.dev/i18n@2.16.2
+  - @zqmi/docx-editor-i18n@2.16.2
 
 ## 0.0.9
 
 ### Patch Changes
 
 - Updated dependencies [b2390c6]
-  - @docx-editor.dev/core@2.16.1
+  - @zqmi/docx-editor-core@2.16.1
   - @docx-editor.dev/editor-api@2.16.1
   - @docx-editor.dev/pro@2.16.1
-  - @docx-editor.dev/i18n@2.16.1
+  - @zqmi/docx-editor-i18n@2.16.1
 
 ## 0.0.8
 
@@ -115,18 +115,18 @@
 - Updated dependencies [b5ab91b]
 - Updated dependencies [1de0f64]
 - Updated dependencies [6f7da01]
-  - @docx-editor.dev/core@2.16.0
+  - @zqmi/docx-editor-core@2.16.0
   - @docx-editor.dev/editor-api@2.16.0
-  - @docx-editor.dev/i18n@2.16.0
+  - @zqmi/docx-editor-i18n@2.16.0
   - @docx-editor.dev/pro@2.16.0
 
 ## 0.0.7
 
 ### Patch changes
 
-- @docx-editor.dev/core@2.15.1
+- @zqmi/docx-editor-core@2.15.1
   - @docx-editor.dev/editor-api@2.15.1
-  - @docx-editor.dev/i18n@2.15.1
+  - @zqmi/docx-editor-i18n@2.15.1
   - @docx-editor.dev/pro@2.15.1
 
 ## 0.0.6
@@ -146,18 +146,18 @@
 - Updated dependencies [0e1360d]
 - Updated dependencies [2a8e57e]
 - Updated dependencies [7dc8b22]
-  - @docx-editor.dev/core@2.15.0
+  - @zqmi/docx-editor-core@2.15.0
   - @docx-editor.dev/pro@2.15.0
   - @docx-editor.dev/editor-api@2.15.0
-  - @docx-editor.dev/i18n@2.15.0
+  - @zqmi/docx-editor-i18n@2.15.0
 
 ## 0.0.5
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.14.1
+- @zqmi/docx-editor-core@2.14.1
   - @docx-editor.dev/editor-api@2.14.1
-  - @docx-editor.dev/i18n@2.14.1
+  - @zqmi/docx-editor-i18n@2.14.1
   - @docx-editor.dev/pro@2.14.1
 
 ## 0.0.4
@@ -169,10 +169,10 @@
 - Updated dependencies [01022a4]
 - Updated dependencies [6b5bb8d]
 - Updated dependencies [f731c52]
-  - @docx-editor.dev/core@2.14.0
+  - @zqmi/docx-editor-core@2.14.0
   - @docx-editor.dev/editor-api@2.14.0
   - @docx-editor.dev/pro@2.14.0
-  - @docx-editor.dev/i18n@2.14.0
+  - @zqmi/docx-editor-i18n@2.14.0
 
 ## 0.0.3
 
@@ -200,10 +200,10 @@
 - Updated dependencies [0d782e3]
 - Updated dependencies [7e85377]
 - Updated dependencies [96cdbe2]
-  - @docx-editor.dev/core@2.13.0
+  - @zqmi/docx-editor-core@2.13.0
   - @docx-editor.dev/pro@2.13.0
   - @docx-editor.dev/editor-api@2.13.0
-  - @docx-editor.dev/i18n@2.13.0
+  - @zqmi/docx-editor-i18n@2.13.0
 
 ## 0.0.2
 
@@ -220,10 +220,10 @@
 - Updated dependencies [9f1b924]
 - Updated dependencies [8fe5920]
 - Updated dependencies [fe3b8a3]
-  - @docx-editor.dev/core@2.12.0
+  - @zqmi/docx-editor-core@2.12.0
   - @docx-editor.dev/pro@2.12.0
   - @docx-editor.dev/editor-api@2.12.0
-  - @docx-editor.dev/i18n@2.12.0
+  - @zqmi/docx-editor-i18n@2.12.0
 
 ## 0.0.1
 
@@ -305,7 +305,7 @@
 - Updated dependencies [e4872fb]
 - Updated dependencies [0d770d9]
 - Updated dependencies [dfaafc0]
-  - @docx-editor.dev/core@2.11.0
+  - @zqmi/docx-editor-core@2.11.0
   - @docx-editor.dev/editor-api@2.11.0
   - @docx-editor.dev/pro@2.11.0
-  - @docx-editor.dev/i18n@2.11.0
+  - @zqmi/docx-editor-i18n@2.11.0

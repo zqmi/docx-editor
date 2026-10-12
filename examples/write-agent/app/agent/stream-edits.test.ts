@@ -7,7 +7,7 @@ import { runWriterTool, type ToolResult } from './run-tool';
 import { WriterInputStream, type WriterPart } from './stream-input';
 import { streamWriterParts } from './stream-response';
 import { WriterStreamEdits } from './stream-edits';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { collaborationModule, reviewModule } from '@docx-editor.dev/pro';
 import { createPeerHarness } from '../../../../packages/pro/src/collaboration/__tests__/document-peer-support';
 import { createWriterRuntime } from './run-tool';

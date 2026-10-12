@@ -1,5 +1,5 @@
 // Bounded eligibility checks for speculative table-border measurement.
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import type { SemanticTableRow, SemanticTableStructure } from './semantic-table.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

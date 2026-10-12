@@ -5,10 +5,10 @@ import {
   useDocxEditor,
   type AnchorHighlightOptions,
   type ScrollToAnchorOptions,
-} from '@docx-editor.dev/react';
-import type { DocAnchor } from '@docx-editor.dev/core';
+} from '@zqmi/docx-editor-react';
+import type { DocAnchor } from '@zqmi/docx-editor-core';
 import { exampleText as t } from '../../shared/example-text';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 import { PARA_IDS, sampleDocument } from './sample-document';
 import './styles.css';
 

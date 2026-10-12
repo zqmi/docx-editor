@@ -3,8 +3,8 @@
 // it is disabled is translated. Viewing mode explains itself with the editing-mode hint, as
 // the mode pill does; every other reason is the slot's localized engine reason.
 
-import type { ChromeSlotId } from '@docx-editor.dev/core/editor';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useEditorCommand } from '../useEditorCommand';
 import { useEditorState } from '../useEditorState';
 

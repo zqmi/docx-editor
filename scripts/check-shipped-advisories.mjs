@@ -230,7 +230,7 @@ for (const [marker, trails] of shipped) {
 
 /**
  * Anchor a finding to the line that declares the direct dependency it came in
- * through. A trail reads `@docx-editor.dev/core > fast-xml-parser > strnum`, so
+ * through. A trail reads `@zqmi/docx-editor-core > fast-xml-parser > strnum`, so
  * the first hop names the published package and the second names the line to
  * point at. GitHub code scanning drops any result without a location.
  */

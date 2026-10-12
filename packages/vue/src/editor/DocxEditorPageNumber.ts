@@ -9,7 +9,7 @@ import {
   type InjectionKey,
   type PropType,
 } from 'vue';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation } from '../i18n';
 import { useDocxEditor } from './context';
 import { useNavigationViewportElement } from './navigation/navigation-layout';

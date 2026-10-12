@@ -5,8 +5,8 @@ import {
   REVIEW_PANE_GUTTER,
   reviewGutter,
 } from '../src/editor/review-gutter';
-import type { ZoomMode } from '@docx-editor.dev/core/contracts/editor';
-import { reviewPaneEntitledZoom, type ReviewPaneOverflow } from '@docx-editor.dev/core/editor';
+import type { ZoomMode } from '@zqmi/docx-editor-core/contracts/editor';
+import { reviewPaneEntitledZoom, type ReviewPaneOverflow } from '@zqmi/docx-editor-core/editor';
 import { navigationShift } from '../src/editor/navigation/navigation-geometry';
 
 const PAGE = 816;

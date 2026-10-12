@@ -1,6 +1,6 @@
 import { findNode } from '../store/package/ooxml-edit.ts';
 // Field boundaries, rather than paragraph ownership, define the generated read-only region.
-import { paragraphOffsetIndex, type OoxmlPart, type TreeDocOp } from '@docx-editor.dev/core/store';
+import { paragraphOffsetIndex, type OoxmlPart, type TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { detectBodyTocs, tocFieldRange, type DetectedToc } from '../store/package/toc-detect.ts';
 import { treeOpReach } from '../store/store/tree-op-content-controls.ts';
 import type { SemanticPosition, SemanticSelection } from '../layout/semantic-interaction.ts';

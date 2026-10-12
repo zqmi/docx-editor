@@ -1,5 +1,5 @@
 import { unchangedLtrLine } from './unchanged-ltr-line.ts';
-import { PAGE_BREAK_CHAR, type OoxmlProperty } from '@docx-editor.dev/core/store';
+import { PAGE_BREAK_CHAR, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { coalesceBidiPieces } from './bidi-piece-coalescing.ts';
 import { bidiAlgorithm } from './bidi.ts';
 import { PICTURE_CHAR } from './line-picture-alignment.ts';

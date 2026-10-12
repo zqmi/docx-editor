@@ -1,6 +1,6 @@
 // Section-column balancing over the neutral semantic block-flow pass.
 
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { drainLayoutSteps, type LayoutSteps } from './layout-steps.ts';
 import type { RefFieldContext } from './field-ref.ts';
 import type { ContinuedPageHost } from './continued-page-zones.ts';

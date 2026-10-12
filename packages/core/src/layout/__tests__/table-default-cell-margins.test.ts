@@ -8,7 +8,7 @@
 // error compounds down the table until it paginates a page early.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { buildStyleCascadeTable, readTableStructure } from '../index.ts';
 import { cascadeTableFormatting } from '../style-cascade.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';

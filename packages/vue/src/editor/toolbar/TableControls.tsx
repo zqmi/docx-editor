@@ -11,8 +11,8 @@ import {
   type Ref,
   type VNode,
 } from 'vue';
-import type { TableBorderStyle } from '@docx-editor.dev/core/contracts/editor';
-import type { TableChromeDraft } from '@docx-editor.dev/core/editor';
+import type { TableBorderStyle } from '@zqmi/docx-editor-core/contracts/editor';
+import type { TableChromeDraft } from '@zqmi/docx-editor-core/editor';
 import {
   TABLE_BORDER_STYLE_OPTIONS,
   TABLE_BORDER_TARGET_OPTIONS,
@@ -20,7 +20,7 @@ import {
   tableChromeIconPaths,
   type TableBorderTargetValue,
   type TableChromeSlotId,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useToolbarLabel } from './toolbar-context';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from './ToolbarButton';
 import type { ToolbarSlotPartComponent } from './parts';

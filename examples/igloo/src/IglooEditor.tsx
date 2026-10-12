@@ -16,10 +16,10 @@ import {
   useChromeTranslate,
   useDocxSource,
   useEditorState,
-} from '@docx-editor.dev/react';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-react';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { customNodesModule, reviewModule } from '@docx-editor.dev/pro';
-import { packagedFonts } from '@docx-editor.dev/fonts';
+import { packagedFonts } from '@zqmi/docx-editor-fonts';
 
 import { IceSea } from './art/IceSea';
 import { Iceberg } from './art/Iceberg';

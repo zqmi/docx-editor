@@ -4,7 +4,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterAll, describe, expect, test } from 'bun:test';
-import type { OoxmlPackage, TreeModelChange } from '@docx-editor.dev/core/store';
+import type { OoxmlPackage, TreeModelChange } from '@zqmi/docx-editor-core/store';
 import { ORIGIN_IDS } from '../../store/registry/frozen-ids.ts';
 import { TypingHistory } from '../typing-history.ts';
 import { mount, paragraph } from './paginated-surface-fixtures.ts';

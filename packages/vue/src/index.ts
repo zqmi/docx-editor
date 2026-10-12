@@ -41,7 +41,7 @@ export {
   type DocxEditorAuthorStyleProps,
 } from './editor/DocxEditorAuthorStyle';
 export { useScopeClassName } from './editor/scope-context';
-export { LOADING_SNAPSHOT } from '@docx-editor.dev/core/editor';
+export { LOADING_SNAPSHOT } from '@zqmi/docx-editor-core/editor';
 
 export { useEditorCommand, type EditorCommandState } from './editor/useEditorCommand';
 export {
@@ -377,7 +377,7 @@ export {
   type ChromeMenuSubmenuEntry,
   type ChromeSlotId,
   type ToolbarCommandState,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 export { EditorFontError } from './types';
 export type {
@@ -409,7 +409,7 @@ export {
   type FontUrlSource,
   type LoadFontsRequest,
   type LoadFontsResult,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 export {
   generateRulerTicks,
@@ -441,14 +441,14 @@ export type {
   EditorScope,
   PageSetup,
   ScrollToAnchorOptions,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 export type {
   ReviewAuthorInfo,
   RevisionAuthorAssignments,
   RevisionAuthorStyle,
   RevisionStyles,
-} from '@docx-editor.dev/core/editor';
-export type { DocxDocument } from '@docx-editor.dev/core/contracts/types';
+} from '@zqmi/docx-editor-core/editor';
+export type { DocxDocument } from '@zqmi/docx-editor-core/contracts/types';
 
 export {
   usePageSetupDialog,
@@ -511,7 +511,7 @@ export { definePopup, type DocxEditorPopup } from './editor/popup-renderer';
 
 export { useHistoryGroup, type UseHistoryGroupReturn } from './editor/useHistoryGroup';
 
-export { createDocumentRefresh, DocumentRefreshError } from '@docx-editor.dev/core/editor';
+export { createDocumentRefresh, DocumentRefreshError } from '@zqmi/docx-editor-core/editor';
 export type {
   DocumentRefresh,
   DocumentRefreshState,
@@ -526,9 +526,9 @@ export type {
   RefreshHighlightAnimation,
   ClearRefreshHighlightsOptions,
   NavigateToChangeOptions,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
-export type { ChromeExportHandlers, ChromeExportFormat } from '@docx-editor.dev/core/editor';
+export type { ChromeExportHandlers, ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
 
 export {
   DocxEditorExportDialog,
@@ -554,7 +554,7 @@ export type {
   RevisionDeletionMark,
   RevisionChangedLinesMark,
   ReviewDisplayMode,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 export {
   DocxEditorRevisionMarkupDialog,
@@ -565,4 +565,4 @@ export {
 export type {
   RevisionMarkupDialogSession,
   RevisionMarkupChromeHandlers,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';

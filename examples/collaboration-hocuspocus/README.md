@@ -83,7 +83,7 @@ To migrate the rooms, follow these steps:
    ```bash
    mkdir room-export && cd room-export
    npm init -y && npm pkg set type=module
-   npm install @docx-editor.dev/pro@2.27.0 @docx-editor.dev/core@2.27.0 yjs@^13.6.32
+   npm install @docx-editor.dev/pro@2.27.0 @zqmi/docx-editor-core@2.27.0 yjs@^13.6.32
    ```
 
 1. In that directory, run `node export-rooms.ts --data-dir "/absolute/path/to/server/.data"`. Replace the quoted path with your stopped server's data directory. It writes `<room>.migration.docx` beside each room, with `<room>.migration.sha256`, the SHA-256 of the state it exported. If a room fails with `not-initialized`, it holds no document: move `<room>.ydoc` out of the data directory, keep it with your backups, and run the export again.

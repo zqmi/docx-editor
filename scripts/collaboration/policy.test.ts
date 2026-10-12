@@ -266,7 +266,7 @@ describe('format version policy', () => {
 describe('isolation and deterministic reproduction', () => {
   test('an isolated lock rejects workspace links and duplicate core copies', () => {
     const directory = mkdtempSync(join(tmpdir(), 'collaboration-isolation-test-'));
-    const packages = { 'node_modules/@docx-editor.dev/core': {}, 'node_modules/yjs': {} };
+    const packages = { 'node_modules/@zqmi/docx-editor-core': {}, 'node_modules/yjs': {} };
     const write = (entries: Record<string, unknown>) =>
       writeFileSync(join(directory, 'package-lock.json'), JSON.stringify({ packages: entries }));
     try {
@@ -274,7 +274,7 @@ describe('isolation and deterministic reproduction', () => {
       expect(() => assertIsolated(directory)).not.toThrow();
       write({ ...packages, 'node_modules/shared': { link: true } });
       expect(() => assertIsolated(directory)).toThrow('Workspace link');
-      write({ ...packages, 'node_modules/pro/node_modules/@docx-editor.dev/core': {} });
+      write({ ...packages, 'node_modules/pro/node_modules/@zqmi/docx-editor-core': {} });
       expect(() => assertIsolated(directory)).toThrow('Expected one');
       write(packages);
       mkdirSync(join(directory, 'node_modules'), { recursive: true });
@@ -298,14 +298,14 @@ describe('release preview staging', () => {
     const manifest = {
       name: '@docx-editor.dev/pro',
       version: '2.18.0',
-      peerDependencies: { '@docx-editor.dev/core': '~2.19.0', yjs: '^13.6.32' },
+      peerDependencies: { '@zqmi/docx-editor-core': '~2.19.0', yjs: '^13.6.32' },
     };
     const staged = stageManifest(manifest, {
       '@docx-editor.dev/pro': '2.19.0',
-      '@docx-editor.dev/core': '2.19.0',
+      '@zqmi/docx-editor-core': '2.19.0',
     });
     expect(staged.version).toBe('2.19.0');
-    expect(staged.peerDependencies['@docx-editor.dev/core']).toBe('~2.19.0');
+    expect(staged.peerDependencies['@zqmi/docx-editor-core']).toBe('~2.19.0');
     expect(staged.peerDependencies.yjs).toBe('^13.6.32');
     expect(manifest.version).toBe('2.18.0');
   });

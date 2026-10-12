@@ -200,9 +200,9 @@ for (const [group, contract] of Object.entries(required)) {
 const mdxFiles = readMarkdownFiles(docsRoot);
 const docsSurface = evaluatePublicDocsSurface({
   docsByPackage: {
-    '@docx-editor.dev/react': {
+    '@zqmi/docx-editor-react': {
       rootClaims: required['react provider and compound surface'].names,
-      subpathClaims: documentedSubpaths('@docx-editor.dev/react', mdxFiles),
+      subpathClaims: documentedSubpaths('@zqmi/docx-editor-react', mdxFiles),
     },
     '@docx-editor.dev/vue': {
       rootClaims: required['vue composition and composables surface'].names,
@@ -210,7 +210,7 @@ const docsSurface = evaluatePublicDocsSurface({
     },
   },
   packageExports: {
-    '@docx-editor.dev/react': packageExports(resolve(root, 'packages/react')),
+    '@zqmi/docx-editor-react': packageExports(resolve(root, 'packages/react')),
     '@docx-editor.dev/vue': packageExports(resolve(root, 'packages/vue')),
   },
 });

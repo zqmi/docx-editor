@@ -2,12 +2,12 @@ import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
 import { micromark } from 'micromark';
 import { gfm, gfmHtml } from 'micromark-extension-gfm';
-import { openDocumentForExport, type ExportDocumentSource } from '@docx-editor.dev/core/export';
+import { openDocumentForExport, type ExportDocumentSource } from '@zqmi/docx-editor-core/export';
 import {
   openHeadlessDocument,
   relationshipTargetIn,
   type HeadlessDocumentView,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   exportMarkdownFrom,
   exportMarkdownLayout,

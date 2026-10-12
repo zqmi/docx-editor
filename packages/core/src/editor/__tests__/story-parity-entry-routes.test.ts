@@ -15,7 +15,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { paragraphFragmentsOfBlocks } from '@docx-editor.dev/core/layout';
+import { paragraphFragmentsOfBlocks } from '@zqmi/docx-editor-core/layout';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { partOfNodeId } from '../surface-scope.ts';
 

@@ -2,7 +2,7 @@
 
 - [x] 0.1 Record the baseline: `bun install`, then `bun run typecheck`, `bun run lint`,
       `bun run test`, `bun run check:parity`, `bun run api:check`, `bun run i18n:validate`.
-      Fresh worktrees are not green — build `@docx-editor.dev/i18n` before typecheck means
+      Fresh worktrees are not green — build `@zqmi/docx-editor-i18n` before typecheck means
       anything, and note every failure that is already there so a new one is visible
 - [x] 0.2 Record the export gap as numbers, from `scripts/lib/named-exports.mjs`: React exports,
       Vue exports, React-only, Vue-only. The starting point is 273 / 68 / 216 / 11
@@ -48,12 +48,12 @@
 
 Lands before any new surface: everything after it must be written against ONE engine.
 
-- [x] 2.1 `@docx-editor.dev/core` from `dependencies` to `peerDependencies` (required, not
+- [x] 2.1 `@zqmi/docx-editor-core` from `dependencies` to `peerDependencies` (required, not
       optional) plus a `workspace:*` `devDependency`
-- [x] 2.2 `@docx-editor.dev/i18n` gets a real semver range; drop `private: true`
+- [x] 2.2 `@zqmi/docx-editor-i18n` gets a real semver range; drop `private: true`
 - [x] 2.3 Replace `vite.config.ts` with `tsup.config.ts`: `platform: 'browser'`,
       `format: ['cjs','esm']`, `dts: true`, `metafile: true`,
-      `external: ['vue','@docx-editor.dev/core','@docx-editor.dev/i18n']`
+      `external: ['vue','@zqmi/docx-editor-core','@zqmi/docx-editor-i18n']`
 - [x] 2.4 `packages/vue/test/package-dependencies.test.ts`, the twin of React's, asserting all
       three facts (peer present, no regular dependency, dev dependency pins the workspace)
 - [x] 2.5 A build assertion that `dist/index.js` imports the engine by bare specifier and inlines
@@ -136,7 +136,7 @@ Rebuilt from nothing, one file per React file, at the React file's path.
 - [x] 4.3 `useEditorState(selector, isEqual?)`: eager `shallowRef` + `watch(tick)` with the
       memoized `(snapshot, slice)` pair and the equality bail-out. NOT `computed` — it cannot
       take a custom equality and is lazy
-- [x] 4.4 Lift `LOADING_SNAPSHOT` into `@docx-editor.dev/core/editor` and re-export it from both
+- [x] 4.4 Lift `LOADING_SNAPSHOT` into `@zqmi/docx-editor-core/editor` and re-export it from both
       adapters. Vue cannot import a React file, and copying is what let React's copy gain
       `canUndo`/`canRedo` while Vue's `PRE_MOUNT_SNAPSHOT` never did. One constant, one home
 - [x] 4.5 Scope disposal through `getCurrentScope()` + `onScopeDispose`, so the `…Instance` forms

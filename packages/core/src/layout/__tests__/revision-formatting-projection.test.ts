@@ -4,7 +4,7 @@ import {
   canonicalOoxmlFingerprint,
   readOoxmlPart,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { linesOf } from '../semantic-records.ts';
 import type { RevisionAuthorFilter, RevisionDisplayMode } from '../revision-projection.ts';

@@ -3,7 +3,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { stubReviewModule } from './review-test-module.ts';
 import { trackedDocx } from './paginated-surface-fixtures.ts';

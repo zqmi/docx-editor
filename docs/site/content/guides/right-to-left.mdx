@@ -60,7 +60,7 @@ The command changes only the paragraph direction. It does not change the text, t
 Use the browser `Editor` API's `setParagraphDirection` command. It applies to every paragraph that the selection touches. The command creates one undo step.
 
 ```ts
-import type { Editor } from '@docx-editor.dev/core';
+import type { Editor } from '@zqmi/docx-editor-core';
 
 function makeRightToLeft(editor: Editor) {
   const command = { type: 'setParagraphDirection', direction: 'rtl' } as const;

@@ -23,7 +23,7 @@
 
 // The VIEW, not the concrete binding session: `paginated-surface.ts` is the only file in
 // this lane allowed to name that one (`store/__tests__/prosemirror-isolation.test.ts`).
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
 import {
   findNode,
   inlineControlEndingAt,
@@ -31,7 +31,7 @@ import {
   parentNodeOf,
   type StoryScope,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   paragraphTextFromLayout,
   paragraphsInCells,
@@ -40,7 +40,7 @@ import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { directParagraphsInCells } from '../layout/semantic-cell-selection.ts';
 import { retractedLengthOf, retractedRangesOf } from '../store/store/tree-op-retraction.ts';
 import { trackedInsertionLanding } from '../store/store/tree-op-tracked-adjacency.ts';

@@ -111,12 +111,12 @@ test('context-menu component retains state and receives current editor translati
 
 test('a replacement field session resets component drafts while registration rerenders preserve them', async () => {
   const { formFieldDocx } = await import('../../core/src/editor/__tests__/form-field-docx.fixture');
-  let editor: import('@docx-editor.dev/core/editor').DocxEditorInstance | undefined;
-  let current: import('@docx-editor.dev/core/editor').TextFormFieldDialogSession | undefined;
+  let editor: import('@zqmi/docx-editor-core/editor').DocxEditorInstance | undefined;
+  let current: import('@zqmi/docx-editor-core/editor').TextFormFieldDialogSession | undefined;
   function CustomField({
     session,
   }: {
-    session: import('@docx-editor.dev/core/editor').TextFormFieldDialogSession;
+    session: import('@zqmi/docx-editor-core/editor').TextFormFieldDialogSession;
   }) {
     current = session;
     const [draft, setDraft] = useState(session.field.defaultText);

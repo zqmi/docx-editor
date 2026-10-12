@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/fonts` — metric-compatible substitutes for common Word faces.
+ * `@zqmi/docx-editor-fonts` — metric-compatible substitutes for common Word faces.
  *
  * Word's own defaults (Calibri, Cambria, Times New Roman, Arial, Courier New) are proprietary
  * and cannot ship in an open package. What CAN ship are the faces built to MATCH THEIR METRICS:
@@ -11,14 +11,14 @@
  *
  * @example Serve the packaged substitutes on demand
  * ```ts
- * import { packagedFonts } from '@docx-editor.dev/fonts';
+ * import { packagedFonts } from '@zqmi/docx-editor-fonts';
  *
  * const editor = createDocxEditor({ document: bytes, fonts: packagedFonts() });
  * ```
  *
  * @example Load Word's five document defaults up front instead
  * ```ts
- * import { defaultFonts } from '@docx-editor.dev/fonts';
+ * import { defaultFonts } from '@zqmi/docx-editor-fonts';
  *
  * const fonts = await defaultFonts();
  * const editor = createDocxEditor({ document: bytes, fonts });
@@ -27,7 +27,7 @@
  * @packageDocumentation
  * @public
  */
-// @docx-editor.dev/fonts — metric-compatible substitutes for common Word faces.
+// @zqmi/docx-editor-fonts — metric-compatible substitutes for common Word faces.
 //
 // Word's own defaults (Calibri, Cambria, Times New Roman, Arial, Courier New) are
 // proprietary and cannot ship in an open package. What CAN ship are the faces built to
@@ -365,7 +365,7 @@ export async function defaultFonts(
 
 /**
  * The mark that tells `useDocxSource` a function is an on-demand resolver rather than a
- * zero-argument loader. `Symbol.for` of the same key `@docx-editor.dev/core`'s
+ * zero-argument loader. `Symbol.for` of the same key `@zqmi/docx-editor-core`'s
  * `defineFontResolver` uses.
  *
  * Written out here rather than imported, for the same reason the face types above are
@@ -507,7 +507,7 @@ const wordFamiliesByFoldedName: ReadonlyMap<string, DefaultFontFamily> = new Map
  * the families a document turns out to name, plus its default face, rather than every
  * family this package ships.
  *
- * Same call shape as `googleFonts()` from `@docx-editor.dev/fonts/google`, so the two
+ * Same call shape as `googleFonts()` from `@zqmi/docx-editor-fonts/google`, so the two
  * compose by sitting next to each other rather than by being combined differently:
  *
  * ```ts

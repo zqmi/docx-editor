@@ -12,7 +12,7 @@ import {
   validateOoxmlPart,
   type OoxmlInvariantResult,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { BackendKind, InvariantIssueCode } from './contract.ts';
 import { twoParagraphFixture } from './fixtures.ts';
 import { insertText } from './ops.ts';

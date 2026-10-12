@@ -22,7 +22,7 @@ import {
   hasContinuingNote,
   placeContinuationNotice,
 } from './note-continuation-notice.ts';
-import type { OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { fragmentOwnsPosition, fragmentParagraphs } from './line-segments.ts';
 import {
   collectNoteReferences,
@@ -258,12 +258,12 @@ export interface NotesLayoutInput {
   /** Per-notes-part paragraph identity for projected links and metadata fields. */
   readonly projectionTokenForParagraphForPart?: (
     ownerPartName: string,
-    paragraph: import('@docx-editor.dev/core/store').OoxmlNode
+    paragraph: import('@zqmi/docx-editor-core/store').OoxmlNode
   ) => string;
   /** Memoized table aggregate counterpart to `projectionTokenForParagraphForPart`. */
   readonly projectionTokenForTableForPart?: (
     ownerPartName: string,
-    table: import('@docx-editor.dev/core/store').OoxmlNode
+    table: import('@zqmi/docx-editor-core/store').OoxmlNode
   ) => string;
   /** Combined notes-part freshness signal; outer memo only, never a paragraph producer. */
   readonly projectionEpoch?: string;
@@ -271,7 +271,7 @@ export interface NotesLayoutInput {
   /** Field-code inspection projection. @internal */
   readonly showFieldCodes?: boolean;
   /** Document properties for a document-property field inside a note story. */
-  readonly documentProperties?: import('@docx-editor.dev/core/store').DocumentProperties;
+  readonly documentProperties?: import('@zqmi/docx-editor-core/store').DocumentProperties;
   /**
    * The document's resolved REF inputs, so a footnote's cross-reference paints the live
    * value the body paints. Normally injected by `semantic-layout` from the context it built

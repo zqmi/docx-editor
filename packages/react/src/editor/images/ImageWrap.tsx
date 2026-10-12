@@ -3,7 +3,7 @@ import type { DocxEditorChildren } from '../../docx-editor-children';
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { ReactElement } from 'react';
-import type { ImageWrapTarget } from '@docx-editor.dev/core/editor';
+import type { ImageWrapTarget } from '@zqmi/docx-editor-core/editor';
 import { useTranslation } from '../../i18n';
 import type { TranslationKey } from '../../i18n';
 import { useEditorValueCommand } from '../useEditorValueCommand';

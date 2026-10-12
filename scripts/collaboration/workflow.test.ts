@@ -49,7 +49,7 @@ function repository() {
   );
   write('packages/core/src/store/example.ts', 'export const value = 1;\n');
   data('packages/pro/package.json', { version: '2.18.0' });
-  data('.changeset/config.json', { fixed: [['@docx-editor.dev/core', '@docx-editor.dev/pro']] });
+  data('.changeset/config.json', { fixed: [['@zqmi/docx-editor-core', '@docx-editor.dev/pro']] });
   const published = commit();
   data('.collaboration/releases.json', {
     baseline: '2.18.0',
@@ -248,7 +248,7 @@ test('an existing core Changeset covers the fixed Pro release group', () => {
   repo.write('packages/core/src/store/example.ts', 'export const value = 2;\n');
   repo.write(
     '.changeset/test-change.md',
-    "---\n'@docx-editor.dev/core': patch\n---\n\nPreserve shared text.\n"
+    "---\n'@zqmi/docx-editor-core': patch\n---\n\nPreserve shared text.\n"
   );
   expect(repo.check('--base', repo.base).status).toBe(0);
 });
@@ -271,15 +271,15 @@ test('preview planning reads all pending notes without a local main branch', () 
   const repo = repository();
   repo.write('bun.lock', '{}\n');
   repo.data('package.json', { name: 'preview-test', private: true, workspaces: ['packages/*'] });
-  repo.data('packages/core/package.json', { name: '@docx-editor.dev/core', version: '2.18.0' });
+  repo.data('packages/core/package.json', { name: '@zqmi/docx-editor-core', version: '2.18.0' });
   repo.data('packages/pro/package.json', { name: '@docx-editor.dev/pro', version: '2.18.0' });
   repo.data('.changeset/config.json', {
     baseBranch: 'main',
-    fixed: [['@docx-editor.dev/core', '@docx-editor.dev/pro']],
+    fixed: [['@zqmi/docx-editor-core', '@docx-editor.dev/pro']],
   });
   repo.write(
     '.changeset/already-on-main.md',
-    '---\n"@docx-editor.dev/core": minor\n---\n\nExisting release note.\n'
+    '---\n"@zqmi/docx-editor-core": minor\n---\n\nExisting release note.\n'
   );
   const base = repo.commit();
   repo.git('update-ref', 'refs/remotes/origin/main', base);
@@ -300,7 +300,7 @@ test('preview planning reads all pending notes without a local main branch', () 
     { cwd: repo.dir, encoding: 'utf8' }
   );
   expect(JSON.parse(result)).toEqual({
-    '@docx-editor.dev/core': '2.19.0',
+    '@zqmi/docx-editor-core': '2.19.0',
     '@docx-editor.dev/pro': '2.19.0',
   });
   expect(repo.git('for-each-ref', '--format=%(refname)', 'refs/heads')).toBe('');

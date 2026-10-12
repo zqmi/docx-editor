@@ -4,7 +4,7 @@
 // `toolbarCommandState` instead — disabled is honest for an action, but "no headings" or
 // a page-width ruler is a claim, and a claim about a document that is not there is false.
 
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 
 /**
  * True while the editor has NO painted document: still loading one, the one it was

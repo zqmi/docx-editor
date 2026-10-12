@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import type * as Y from 'yjs';
 import type { Awareness } from 'y-protocols/awareness';
-import type { CollaborationIdentity } from '@docx-editor.dev/core/collaboration';
+import type { CollaborationIdentity } from '@zqmi/docx-editor-core/collaboration';
 import type { CollaborationBootstrap } from './types.ts';
 
 /**

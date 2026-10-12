@@ -35,8 +35,8 @@ Create a `.docx` with your brand styles and remove its content. Load that templa
 
 ```tsx
 import { useEffect, useState } from 'react';
-import { DocxEditor } from '@docx-editor.dev/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import { DocxEditor } from '@zqmi/docx-editor-react';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 export function BrandedEditor() {
   const [template, setTemplate] = useState<ArrayBuffer>();
@@ -99,7 +99,7 @@ Pass brand fonts through the `fonts` prop. `loadFonts` fetches the listed URLs a
 <Framework value="react">
 
 ```tsx
-import { loadFonts } from '@docx-editor.dev/react';
+import { loadFonts } from '@zqmi/docx-editor-react';
 
 const brand = await loadFonts({
   sources: [

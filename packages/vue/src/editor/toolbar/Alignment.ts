@@ -1,5 +1,5 @@
 import { defineComponent, h, ref } from 'vue';
-import { type ChromeSlotId } from '@docx-editor.dev/core/editor';
+import { type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useEditorCommand, type EditorCommandState } from '../useEditorCommand';
 import { useToolbarLabel } from './toolbar-context';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from './ToolbarButton';

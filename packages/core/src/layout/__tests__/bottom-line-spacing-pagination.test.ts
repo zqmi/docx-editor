@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../index.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

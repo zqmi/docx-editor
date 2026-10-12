@@ -2,7 +2,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { expect, test } from 'bun:test';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { createLayoutSession } from '../../layout/layout-session.ts';
 import { createParagraphLayoutCache } from '../../layout/layout-cache.ts';
 import { readTableStructure } from '../../layout/semantic-table.ts';

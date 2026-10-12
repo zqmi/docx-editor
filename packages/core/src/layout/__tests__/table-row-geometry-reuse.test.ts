@@ -5,7 +5,7 @@ import {
   serializeOoxmlPart,
   type OoxmlElement,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createLayoutSession } from '../layout-session.ts';
 import { caretAt } from '../semantic-interaction.ts';
 import { createParagraphLayoutCache, tableCellBreakKeysOf } from '../layout-cache.ts';

@@ -5,7 +5,7 @@
 // instruction falls back to the previous behavior (cached text or nothing), never a throw.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { styleForFontSlot } from '../script-itemization.ts';
 import type { RevisionDisplayMode } from '../revision-projection.ts';

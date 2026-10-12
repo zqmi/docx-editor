@@ -1,11 +1,11 @@
-import { editorInstanceScope } from '@docx-editor.dev/core/editor';
+import { editorInstanceScope } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorExportDialog } from '../DocxEditorExportDialog';
 import { DocxEditorPrintDialog } from '../DocxEditorPrintDialog';
 import { usePopupConfig } from '../popup-config';
 import { renderPopup } from '../popup-renderer';
 import { useMenuExport } from './useMenuExport';
 import { useMenuPrint } from './useMenuPrint';
-import type { ChromeExportHandlers } from '@docx-editor.dev/core/editor';
+import type { ChromeExportHandlers } from '@zqmi/docx-editor-core/editor';
 import { DialogPortal, useDialogHost } from '../dialog-host';
 import {
   computed,
@@ -25,10 +25,10 @@ import {
   CHROME_MENUS,
   isChromePrintShortcut,
   type ChromeMenuId,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation, type TranslationKey } from '../../i18n';
 import { DocxEditorPageSetupDialog } from '../DocxEditorPageSetup';
 import { DocxEditorParagraphDialog } from '../DocxEditorParagraphDialog';

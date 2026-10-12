@@ -3,7 +3,7 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { defineComponent, h, nextTick, onMounted, onUnmounted } from 'vue';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorNavigation } from '../src/editor/navigation';
 import { DocxEditorLoading } from '../src/editor/DocxEditorLoading';
 import { DocxEditorHorizontalRuler } from '../src/editor/DocxEditorRulers';

@@ -33,7 +33,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // namespace and hands each store its own nodes.
 
 import { attributeValue } from './materialize-freeze.ts';
-import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import type { ElementRecord } from './schema.ts';
 import { idOf, type LogicalId } from './identity.ts';
 

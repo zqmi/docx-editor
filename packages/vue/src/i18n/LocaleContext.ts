@@ -7,8 +7,8 @@ import {
   type InjectionKey,
   type ShallowRef,
 } from 'vue';
-import { createT, deepMerge, en } from '@docx-editor.dev/i18n';
-import type { LocaleStrings, TFunction, Translations, TranslationKey } from '@docx-editor.dev/i18n';
+import { createT, deepMerge, en } from '@zqmi/docx-editor-i18n';
+import type { LocaleStrings, TFunction, Translations, TranslationKey } from '@zqmi/docx-editor-i18n';
 import { defineComponent, type PropType } from 'vue';
 
 const localeKey: InjectionKey<ShallowRef<LocaleStrings>> = Symbol('locale');

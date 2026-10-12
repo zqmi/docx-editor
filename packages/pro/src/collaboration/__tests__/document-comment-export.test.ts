@@ -9,7 +9,7 @@ import {
   addPackageComment,
   deletePackageComments,
   writeOoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, zipDocument, W, R, REL } from './document-peer-support.ts';
 
 const peers = createPeerHarness('comment-export');

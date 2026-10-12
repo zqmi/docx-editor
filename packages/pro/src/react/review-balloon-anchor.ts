@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 
-import type { RevisionDisplay } from '@docx-editor.dev/core/editor';
+import type { RevisionDisplay } from '@zqmi/docx-editor-core/editor';
 import type { ReviewItemView } from './useReview.ts';
 
 type BalloonReviewItem = Extract<ReviewItemView, { readonly kind: 'revision' }>;

@@ -3,9 +3,9 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-pdf/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import { ExportResourceError } from '@docx-editor.dev/core/export';
+import { ExportResourceError } from '@zqmi/docx-editor-core/export';
 import type { PdfDiagnostic } from './types.ts';
-import type { LayoutBox } from '@docx-editor.dev/core/layout';
+import type { LayoutBox } from '@zqmi/docx-editor-core/layout';
 import { deflateSync } from 'node:zlib';
 import type { PDFContext, PDFPage, PDFRawStream } from 'pdf-lib';
 

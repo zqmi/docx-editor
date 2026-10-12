@@ -35,4 +35,4 @@ export {
 } from './parts';
 export { MenuHelp, MenuReportIssue, type MenuReportIssueProps } from './menu-help';
 
-export type { ChromeExportHandlers, ChromeExportFormat } from '@docx-editor.dev/core/editor';
+export type { ChromeExportHandlers, ChromeExportFormat } from '@zqmi/docx-editor-core/editor';

@@ -33,7 +33,7 @@ import {
   writeOoxmlPackage,
   type CustomNodeExportPolicy,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { AnyCustomNodeDefinition } from './define-custom-node.ts';
 import { decodeCustomNodeTag } from './tag-codec.ts';
 import { customNodeNamespace } from './node-payload.ts';

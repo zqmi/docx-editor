@@ -15,7 +15,7 @@ import {
   serializeOoxmlPart,
   TreeDocumentStore,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import {

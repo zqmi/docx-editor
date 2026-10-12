@@ -16,10 +16,10 @@ import * as Y from 'yjs';
 import type {
   CollaborationFailure,
   CollaborationFailureCode,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 // Named for its first caller, not for fonts. Hashing wire bytes is the same primitive, and
 // the media digests this verifies are produced by this exact function in the store lane.
-import { sha256FontBytes as sha256Bytes } from '@docx-editor.dev/core/layout';
+import { sha256FontBytes as sha256Bytes } from '@zqmi/docx-editor-core/layout';
 import type { BlobBytesStore, DocumentRegistry } from './document/index.ts';
 import { CollaborationSchemaError } from './errors.ts';
 

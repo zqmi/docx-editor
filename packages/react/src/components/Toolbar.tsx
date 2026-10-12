@@ -16,7 +16,7 @@ import type { ReactNode } from 'react';
 import React, { useCallback, useEffect, useRef } from 'react';
 import { useTranslation } from '../i18n';
 import type { CSSProperties } from 'react';
-import type { ColorValue, Theme } from '@docx-editor.dev/core/contracts/editor';
+import type { ColorValue, Theme } from '@zqmi/docx-editor-core/contracts/editor';
 import { resolveColorToHex } from '../lib/colorResolver';
 import type { DocumentStyleSummary } from '../lib/stylePreview';
 import type { ParagraphAlignment } from './ui/AlignmentButtons';

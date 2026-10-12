@@ -2,7 +2,7 @@ import {
   readTwipsMeasure,
   type OoxmlElement,
   type OoxmlProperty,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { shiftInlineDrawingRecord, type InlineDrawingLayoutContext } from './drawing-layout.ts';
 import { isLegacyVmlAtom } from '../store/package/legacy-vml-projection.ts';
 import { isRunLevelMcAlternateContent } from '../store/package/drawing-projection.ts';

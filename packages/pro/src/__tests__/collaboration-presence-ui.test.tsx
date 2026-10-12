@@ -15,12 +15,12 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import type {
   CollaborationParticipant,
   CollaborationRemoteSelection,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import {
   DocxEditorAuthorStyle,
   DocxEditorContent,
@@ -28,7 +28,7 @@ import {
   DocxEditorViewport,
   useDocxEditor,
   useEditorState,
-} from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-react';
 import { DocxEditorCollaboration, DocxEditorCollaborationRoot } from '../react/index.ts';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import { collaborationModule } from '../index.ts';

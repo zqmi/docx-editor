@@ -13,7 +13,7 @@
 // interleaved `let`s reset from three places, and the omission had no obvious home.
 
 import type { PaginatedSurface, PaginatedSurfaceState } from './paginated-surface-contract.ts';
-import type { SemanticSelection as SurfaceSelection } from '@docx-editor.dev/core/layout';
+import type { SemanticSelection as SurfaceSelection } from '@zqmi/docx-editor-core/layout';
 import { drawingSelectionIntentKey } from './docx-editor-images.ts';
 import { selectionsMatch } from './docx-editor-support.ts';
 

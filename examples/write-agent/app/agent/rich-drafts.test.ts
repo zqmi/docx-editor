@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test';
 import { strFromU8, unzipSync } from 'fflate';
 import { DocxEditor } from '@docx-editor.dev/editor-api';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { seedDocx } from '../seed-document';
 import { createWriterRuntime, runWriterTool } from './run-tool';

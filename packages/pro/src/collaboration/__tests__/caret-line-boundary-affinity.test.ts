@@ -4,8 +4,8 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
-import { createDocxEditor, type DocxEditorInstance } from '@docx-editor.dev/core/editor';
-import { caretStops, linesOf } from '@docx-editor.dev/core/layout';
+import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { caretStops, linesOf } from '@zqmi/docx-editor-core/layout';
 import { collaborationModule } from '../collaboration-module.ts';
 import { createPeerHarness, zipDocument } from './document-peer-support.ts';
 

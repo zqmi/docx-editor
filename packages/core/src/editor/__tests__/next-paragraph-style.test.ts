@@ -11,7 +11,7 @@ import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import type { PaginatedSurface } from '../paginated-surface.ts';
-import { directParagraphProperties } from '@docx-editor.dev/core/store';
+import { directParagraphProperties } from '@zqmi/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const CT = 'http://schemas.openxmlformats.org/package/2006/content-types';

@@ -16,7 +16,7 @@ import { takePreviousRows } from './table-row-placement-reuse.ts';
 import { autofitContextOf } from './table-autofit-widths.ts';
 import { positionedTableOriginX } from './table-origin.ts';
 import { withoutFloatingTableZones } from './table-float-overlap.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import {
   finalizeTableRows,
   initialCellCursors,

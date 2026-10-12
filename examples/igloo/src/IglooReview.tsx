@@ -7,10 +7,10 @@
 // unrecognized child appended to every card, and `--doc-*` tokens.
 
 import { DocxEditorReview, useReview, useReviewItem } from '@docx-editor.dev/pro/react';
-import type { ReviewRevisionKind } from '@docx-editor.dev/core/contracts/editor';
+import type { ReviewRevisionKind } from '@zqmi/docx-editor-core/contracts/editor';
 import { BergGlyph, DomeGlyph } from './art/Specimen';
 import { Stats } from './SpecimenPopover';
-import { useChromeTranslate } from '@docx-editor.dev/react';
+import { useChromeTranslate } from '@zqmi/docx-editor-react';
 import { ICE_LABELS } from './labels';
 import { iceMarker, IceMelt, IceRefreeze } from './icons/review';
 import { blocksOf, insideTemperature, OUTSIDE, surveyOf, tipHeight } from './specimens';

@@ -14,7 +14,7 @@ import type {
   ReviewItemQuery,
   ReviewItemRevealEvent,
   ReviewItemRevealSource,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor, type MaybeRefOrGetter } from '@docx-editor.dev/vue';
 import { useEditorRenderRevision, type EditorRenderRevision } from './useEditorRenderRevision.ts';
 

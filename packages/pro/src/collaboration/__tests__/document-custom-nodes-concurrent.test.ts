@@ -23,11 +23,11 @@ import {
   TreePackageStore,
   writeOoxmlPackage,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   createCollaborationDocumentPort,
   type CanonicalPrimitiveJournal,
-} from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/collaboration/replication';
 import { LogicalIdentityMap } from '../document-identity.ts';
 import { zipDocument } from './document-peer-support.ts';
 import {

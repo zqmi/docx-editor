@@ -7,7 +7,7 @@
 // the cancellation wrong is the kind of bug that only shows up as a React warning in
 // somebody else's console.
 //
-// FONTS ARE PASSED IN, not imported. `@docx-editor.dev/fonts` ships font BYTES; making this
+// FONTS ARE PASSED IN, not imported. `@zqmi/docx-editor-fonts` ships font BYTES; making this
 // package depend on it would put megabytes in the bundle of every consumer who brings their
 // own faces or wants none. So the hook takes the origins — `{ fonts: packagedFonts() }` for
 // Word's defaults — and owns only the wiring around them.
@@ -32,15 +32,15 @@ import {
   composeFontOrigins,
   defineFontResolver,
   isFontResolver,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import type {
   FontConfigurationFragment,
   FontOrigin,
   FontResolutionRequest,
   FontResolver,
   MarkedFontResolver,
-} from '@docx-editor.dev/core/editor';
-import type { FontConfiguration } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { FontConfiguration } from '@zqmi/docx-editor-core/contracts/editor';
 
 /** A complete configuration, or a fragment this hook composes with the defaults. @public */
 export type DocxFontsInput = FontConfiguration | FontConfigurationFragment;

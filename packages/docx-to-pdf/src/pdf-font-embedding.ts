@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { create as createFontkitFont, type FontkitCollection, type FontkitFont } from 'fontkit';
-import type { ExportAdmittedFontFace as PdfAdmittedFont } from '@docx-editor.dev/core/export';
+import type { ExportAdmittedFontFace as PdfAdmittedFont } from '@zqmi/docx-editor-core/export';
 
 /** Maximum SFNT tables inspected in one face directory. @internal */
 export const MAX_SFNT_TABLES = 4096;

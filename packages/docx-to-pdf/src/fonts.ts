@@ -5,8 +5,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { create as openFont, type FontkitFont } from 'fontkit';
 import { PDFDocument, PDFName, PDFString, type PDFRef } from 'pdf-lib';
-import type { ExportAdmittedFontFace } from '@docx-editor.dev/core/export';
-import { mapSymbolPuaText } from '@docx-editor.dev/core/layout';
+import type { ExportAdmittedFontFace } from '@zqmi/docx-editor-core/export';
+import { mapSymbolPuaText } from '@zqmi/docx-editor-core/layout';
 import { fontEmbeddingDecision } from './pdf-font-embedding.ts';
 import { strikeMetrics } from './font-metrics.ts';
 import { flateStream, hex, unicodeHex, Work } from './context.ts';

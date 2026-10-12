@@ -3,10 +3,10 @@ function sorted(items, compare) {
 }
 
 const REMOVED_SURFACE_PATTERNS = [
-  '@docx-editor.dev/react/ui',
-  '@docx-editor.dev/react/hooks',
-  '@docx-editor.dev/react/dialogs',
-  '@docx-editor.dev/react/plugin-api',
+  '@zqmi/docx-editor-react/ui',
+  '@zqmi/docx-editor-react/hooks',
+  '@zqmi/docx-editor-react/dialogs',
+  '@zqmi/docx-editor-react/plugin-api',
   '@docx-editor.dev/vue/ui',
   '@docx-editor.dev/vue/composables',
   '@docx-editor.dev/vue/dialogs',

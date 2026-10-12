@@ -1,7 +1,7 @@
 // Shared OOXML shading fill resolution + paragraph/run publication.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { elevenPointDefaults } from './fixtures/eleven-point-defaults.ts';
 import {

@@ -11,7 +11,7 @@
 //
 // The engine is reached through its COMPOSITION ROOT only. An adapter that imported the
 // layout lane for a parameter type would be reaching past the boundary for a name, which is
-// how a boundary starts leaking. The import path becomes `@docx-editor.dev/core/editor` when
+// how a boundary starts leaking. The import path becomes `@zqmi/docx-editor-core/editor` when
 // task 10.5 migrates the namespace.
 
 import { useEffect, useImperativeHandle, useRef, useState, type Ref } from 'react';
@@ -23,7 +23,7 @@ import {
   type SectionProperties,
   type SurfaceFormatting,
   type TextMeasurer,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 export interface PaginatedDocxEditorProps {
   /** The document to open. Replacing it remounts the surface. */

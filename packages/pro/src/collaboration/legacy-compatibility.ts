@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import type {
   CollaborationFailureCode,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 
 /**
  * Protocol identifier for the retired text-only collaboration format.

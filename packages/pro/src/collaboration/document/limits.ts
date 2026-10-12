@@ -3,7 +3,7 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import { isDangerousKey, normalizePartName } from '@docx-editor.dev/core/store';
+import { isDangerousKey, normalizePartName } from '@zqmi/docx-editor-core/store';
 
 /** Finite resource limits for shared package state. Every value is attacker-controlled. */
 export interface DocumentLimits {

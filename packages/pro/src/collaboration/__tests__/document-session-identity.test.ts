@@ -14,9 +14,9 @@ import {
   TreePackageStore,
   normalizeParagraphIdentity,
   readOoxmlPackage,
-} from '@docx-editor.dev/core/store';
-import { createCollaborationDocumentPort } from '@docx-editor.dev/core/collaboration/replication';
-import type { CollaborationDocumentPort } from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { CollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

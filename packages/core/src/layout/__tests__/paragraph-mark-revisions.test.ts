@@ -5,7 +5,7 @@
 // when it changes. Every gap below shipped as silence: a decision a reader could not see.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { paragraphMarkRevisionsOf, type RevisionDisplayMode } from '../revision-projection.ts';
 import type { ParagraphFragmentRecord } from '../semantic-records.ts';

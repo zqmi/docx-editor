@@ -31,7 +31,7 @@ The following example mounts the default display. `DocxEditorReview` renders the
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
 
 const modules = [reviewModule()];
@@ -230,7 +230,7 @@ The following component lets the user choose where tracked changes open and how 
 
 ```tsx
 import type { MouseEvent } from 'react';
-import { useDocxEditor, useEditorState } from '@docx-editor.dev/react';
+import { useDocxEditor, useEditorState } from '@zqmi/docx-editor-react';
 import type { CommentMarkerStyle, RevisionDisplay } from '@docx-editor.dev/pro/react';
 
 const keepCaret = (event: MouseEvent) => event.preventDefault();
@@ -470,9 +470,9 @@ Pass your DOCX bytes and loaded fonts to this component. The preview uses a fict
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, type DocxEditorRootProps } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRootProps } from '@zqmi/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 const modules = [reviewModule()];
 
@@ -518,7 +518,7 @@ export function ContractEditor({
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/vue';
 import type { FontConfigurationFragment } from '@docx-editor.dev/vue';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 defineProps<{ bytes: Uint8Array; fonts: FontConfigurationFragment }>();
 const modules = [reviewModule()];
@@ -602,7 +602,7 @@ Set `revisionsIn` to `'balloons'`. The review pane then lists comments only, and
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
 
 const modules = [reviewModule({ pane: { revisionsIn: 'balloons' } })];
@@ -707,9 +707,9 @@ Pass your DOCX bytes and loaded fonts to this component. The preview uses a fict
 ```tsx
 import { useRef } from 'react';
 import { ContractBalloons } from './ContractBalloons';
-import { DocxEditor, type DocxEditorRootProps } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRootProps } from '@zqmi/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 const modules = [reviewModule({ pane: { revisionsIn: 'balloons' } })];
 
@@ -759,7 +759,7 @@ import ContractBalloons from './ContractBalloons.vue';
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/vue';
 import type { FontConfigurationFragment } from '@docx-editor.dev/vue';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 defineProps<{ bytes: Uint8Array; fonts: FontConfigurationFragment }>();
 const container = ref<HTMLElement | null>(null);
@@ -807,7 +807,7 @@ Create `ContractBalloons.tsx` or `ContractBalloons.vue` with these examples. Bot
 'use client';
 
 import { useEffect, useRef, useState, type RefObject } from 'react';
-import { useDocxEditor, useEditorEvent, useReviewAuthors } from '@docx-editor.dev/react';
+import { useDocxEditor, useEditorEvent, useReviewAuthors } from '@zqmi/docx-editor-react';
 import { useReview } from '@docx-editor.dev/pro/react';
 import { revisionLabel, watchBalloonAnchor, type BalloonPosition } from './watch-balloon-anchor';
 
@@ -1073,7 +1073,7 @@ Create `watch-balloon-anchor.ts` beside your tracked change balloon component. I
 The helper updates after scrolling, resizing, document changes, zoom changes, and review pane transitions. It hides the component when the item has no visible band.
 
 ```ts
-import type { Editor } from '@docx-editor.dev/core';
+import type { Editor } from '@zqmi/docx-editor-core';
 
 export interface BalloonPosition {
   left: number;

@@ -1,4 +1,4 @@
-import { en } from '@docx-editor.dev/i18n';
+import { en } from '@zqmi/docx-editor-i18n';
 import type { PaginatedSurfaceOptions } from './paginated-surface-options.ts';
 
 export function setSurfaceAccessibleLabel(

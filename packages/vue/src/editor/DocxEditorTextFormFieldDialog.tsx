@@ -10,8 +10,8 @@ import {
   type PropType,
   type VNode,
 } from 'vue';
-import { TEXT_FORM_FORMATS, type TextFormFieldDialogSession } from '@docx-editor.dev/core/editor';
-import type { TextFormFieldOptions, TextFormFieldType } from '@docx-editor.dev/core/store';
+import { TEXT_FORM_FORMATS, type TextFormFieldDialogSession } from '@zqmi/docx-editor-core/editor';
+import type { TextFormFieldOptions, TextFormFieldType } from '@zqmi/docx-editor-core/store';
 import { useFormControlTranslate } from './form-control-translate';
 import {
   createDialogComposition,

@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test';
 import { readFile } from 'node:fs/promises';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
-import { createFixedMeasurer } from '@docx-editor.dev/core/layout';
+import { createFixedMeasurer } from '@zqmi/docx-editor-core/layout';
 import { micromark } from 'micromark';
 import { gfm, gfmHtml } from 'micromark-extension-gfm';
 import { exportMarkdown } from '../src/index.ts';

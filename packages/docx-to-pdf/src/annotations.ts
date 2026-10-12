@@ -14,8 +14,8 @@ import {
   type PDFObject,
   type PDFRef,
 } from 'pdf-lib';
-import type { ExportSemanticLayout } from '@docx-editor.dev/core/export';
-import type { SemanticSpanVisit } from '@docx-editor.dev/core/layout';
+import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
+import type { SemanticSpanVisit } from '@zqmi/docx-editor-core/layout';
 import { pageHeight, pdfLiteralUri, Work } from './context.ts';
 
 type Literal =

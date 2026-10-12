@@ -11,7 +11,7 @@ import {
   WML_NAMESPACE_URI,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   MAX_INLINE_CONTAINER_DEPTH,
   nextInlineContainerDepth,

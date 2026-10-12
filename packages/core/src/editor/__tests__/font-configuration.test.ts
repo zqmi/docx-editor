@@ -1,11 +1,11 @@
 import { expect, spyOn, test } from 'bun:test';
-import { EditorFontError, type FontConfiguration } from '@docx-editor.dev/core/contracts/editor';
+import { EditorFontError, type FontConfiguration } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   FontResolutionError,
   HarfBuzzShapingError,
   layoutFontConfigurationFingerprint,
   sha256FontBytes,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import {
   createLayoutShaping,
   resetFontFailureWarningForTests,
@@ -546,7 +546,7 @@ test('a shaper that never loaded keeps its code and its remedy out to the host',
   // written (#282). `toEditorFontError` is public API, so it stays a pure mapper —
   // the console side of this lives in `reportFontError`, which knows who is listening.
   const failure = new HarfBuzzShapingError('wasmUnavailable', {
-    diagnostic: 'serve `@docx-editor.dev/core/harfbuzz.wasm` and call `setHarfBuzzWasmUrl`',
+    diagnostic: 'serve `@zqmi/docx-editor-core/harfbuzz.wasm` and call `setHarfBuzzWasmUrl`',
   });
 
   const surfaced = toEditorFontError(failure);

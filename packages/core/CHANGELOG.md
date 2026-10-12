@@ -1,4 +1,4 @@
-# @docx-editor.dev/core
+# @zqmi/docx-editor-core
 
 ## 2.28.0
 
@@ -67,7 +67,7 @@
   Use the same admitted substitute for editor measurement, painting, font notices, and font-backed export.
 
 - 9535470: Render horizontal and vertical VML shape paths with one zero extent.
-- Updated dependencies: @docx-editor.dev/i18n@2.28.0
+- Updated dependencies: @zqmi/docx-editor-i18n@2.28.0
 
 ## 2.27.0
 
@@ -96,7 +96,7 @@
 - 8fcab75: Undo and redo treat a run of typing as one step at any typing speed, in local and collaborative editing. Fixes #1114
 - e965797: A custom node without a review card no longer shows the active highlight when you place the cursor inside it.
 - 13785e8: Reads on a missing header or footer return empty results instead of refusing. Fixes #1125
-- Updated dependencies: @docx-editor.dev/i18n@2.27.0
+- Updated dependencies: @zqmi/docx-editor-i18n@2.27.0
 
 ## 2.26.0
 
@@ -130,7 +130,7 @@
 - 77e1010: Place the trailing spaces of mixed-direction lines beside the text they follow, so right-to-left paragraph lines no longer run past the right margin, and spaces whose direction differs from their run or paragraph take room on the line instead of hanging. Fixes #1061
 - 7b96dfc: A symbol is now one character of paragraph text that reads as "(", so the caret steps over it in one move, Backspace and Delete remove it, and search never matches it. Paragraph offsets after a symbol move by one.
 - 36390bf: Deleting the row where a vertical merge starts now moves the merge start to the next row instead of leaving a continuation with nothing to continue, `Table.deleteRows()` accepts tables with merged cells, and a continuation cell with no merged cell above it starts its own merge instead of hiding its content. Fixes #1069
-- Updated dependencies: @docx-editor.dev/i18n@2.26.0
+- Updated dependencies: @zqmi/docx-editor-i18n@2.26.0
 
 ## 2.25.0
 
@@ -146,11 +146,11 @@
 - e151687: Give every pasted paragraph a paragraph ID, and keep list numbering when you paste a list into a document that already has lists.
 - 5d02def: Preserve content in unsupported revision wrappers.
 - 95fbca3: Fix search results when single queries and query batches share an editor, and report exact search result limits.
-- f098ae6: The `@docx-editor.dev/i18n` type declarations are now valid when a project type-checks its dependencies with `skipLibCheck` turned off. Some declared types print in a different form, such as `DocumentOutline` as a `MemoExoticComponent`, with the same meaning.
+- f098ae6: The `@zqmi/docx-editor-i18n` type declarations are now valid when a project type-checks its dependencies with `skipLibCheck` turned off. Some declared types print in a different form, such as `DocumentOutline` as a `MemoExoticComponent`, with the same meaning.
 - a13f6a7: In viewing mode, clicks, drags, and caret keys no longer place a caret or select text, so the toolbar keeps its values and the pointer shows an arrow over text.
 - 5d02def: Fix successive writer edits and mixed paragraph insertion order, and reject control suggestions over pending paragraph revisions.
 - Updated dependencies [5d02def]
-  - @docx-editor.dev/i18n@2.25.0
+  - @zqmi/docx-editor-i18n@2.25.0
 
 ## 2.24.0
 
@@ -166,7 +166,7 @@
 - 997814e: Fix fixed-table column widths when explicit cell preferences are smaller than the initial grid.
 - Updated dependencies [3a8853f]
 - Updated dependencies [567c1e5]
-  - @docx-editor.dev/i18n@2.24.0
+  - @zqmi/docx-editor-i18n@2.24.0
 
 ## 2.23.0
 
@@ -266,7 +266,7 @@
 - 30bd2a8: Floating drawings handle negative wrap distances without excess gaps. Changing a drawing's wrap mode preserves inherited anchor distances.
 - Updated dependencies [5981e48]
 - Updated dependencies [3b95523]
-  - @docx-editor.dev/i18n@2.23.0
+  - @zqmi/docx-editor-i18n@2.23.0
 
 ## 2.22.0
 
@@ -318,7 +318,7 @@
 - 07718bd: Apply modern justification and default ligatures to documents with `compatibilityMode` 16 or later.
 - 07718bd: Expand `w:lineRule="atLeast"` line boxes upward when their minimum height exceeds the text height. Improve PDF baseline placement at rounding boundaries.
 - 07718bd: Allow documents with wrapping exclusions to complete layout when they require more than eight reflow passes.
-- @docx-editor.dev/i18n@2.22.0
+- @zqmi/docx-editor-i18n@2.22.0
 
 ## 2.21.1
 
@@ -347,7 +347,7 @@
   Fix move-revision handling and partial-resolution reporting. Preserve existing nested tables when a row cannot be removed, and report `retained-structure` when its structural change remains pending.
 
 - Updated dependencies [6a7b93a]
-  - @docx-editor.dev/i18n@2.21.1
+  - @zqmi/docx-editor-i18n@2.21.1
 
 ## 2.21.0
 
@@ -368,7 +368,7 @@
 - 14a3468: Use the shared page-margin revision bars for tables and drawings without duplicate colored row bars or image frames. All Markup uses gray bars; Simple Markup uses red bars. Remove unused legacy cell-revision styles and tint tokens. The Igloo demo also inherits the standard margin-bar colors.
 - 424a121: Headless export no longer fails with "unsupported value type in comparator input: undefined" for a document whose theme has no East Asian, complex-script, or supplemental font scheme.
 - 2d4e0e7: Resolve independent table and paragraph changes in bulk without blocking them on unsupported or excluded revisions. Preserve pending table properties when removing all rows, and group only the properties a selected revision can replace or remove.
-- @docx-editor.dev/i18n@2.21.0
+- @zqmi/docx-editor-i18n@2.21.0
 
 ## 2.20.0
 
@@ -385,7 +385,7 @@
 - a9034d4: Match Word's TOC link appearance while preserving explicit formatting and clickable targets. Fixes #892.
 - a9034d4: Support the Word keyboard shortcut for switching between field instructions and results. Fixes #891.
 - Updated dependencies [c10916a]
-  - @docx-editor.dev/i18n@2.20.0
+  - @zqmi/docx-editor-i18n@2.20.0
 
 ## 2.19.1
 
@@ -401,13 +401,13 @@
 - ccd6bdd: Preserve inline content controls during TOC refresh and respect locked cached page numbers. Fixes #875.
 - ccd6bdd: Preserve stale tabbed TOC titles when page numbers are omitted by their TC source. Fixes #876.
 - ccd6bdd: Preserve TC-based table-of-contents entries during refresh, including entry levels, identifiers, and page numbers. Fixes #868.
-- @docx-editor.dev/i18n@2.19.1
+- @zqmi/docx-editor-i18n@2.19.1
 
 ## 2.19.0
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.19.0
+- @zqmi/docx-editor-i18n@2.19.0
 
 ## 2.18.0
 
@@ -445,14 +445,14 @@
 
 - 90ea211: Preserve the document's scroll position and text selection when picking or typing a font size, or dismissing the font-size input with Escape. Restore the saved selection when returning focus to the editor from toolbar inputs.
 - f10341d: Prevent excessive processing time when documents contain malformed VML color values with long whitespace sequences.
-- @docx-editor.dev/i18n@2.18.0
+- @zqmi/docx-editor-i18n@2.18.0
 
 ## 2.17.0
 
 ### Patch Changes
 
 - 332494b: Dismiss content-control dropdown and date menus on outside press or Escape; re-pressing the widget toggles the menu shut.
-- @docx-editor.dev/i18n@2.17.0
+- @zqmi/docx-editor-i18n@2.17.0
 
 ## 2.16.2
 
@@ -460,14 +460,14 @@
 
 - d8c40b2: Set tracked insertion underlines slightly below the text like Word, with a CSS token for the gap.
 - 02b77f6: Use a thin solid underline for tracked insertions and add CSS tokens for its style and thickness.
-- @docx-editor.dev/i18n@2.16.2
+- @zqmi/docx-editor-i18n@2.16.2
 
 ## 2.16.1
 
 ### Patch Changes
 
 - b2390c6: Improve Word review parity with grouped paragraph breaks, optional paragraph and manual line-break marks, detailed formatting cards, separate formatting decisions, navigation, bulk acceptance/rejection, and markup display controls. Fixes #793 and #794.
-- @docx-editor.dev/i18n@2.16.1
+- @zqmi/docx-editor-i18n@2.16.1
 
 ## 2.16.0
 
@@ -516,19 +516,19 @@
 - b5ab91b: Preserve floating-image text distances, and keep text out of narrow image side gaps.
 - 6f7da01: Avoid an extra blank page after simple text-anchored tables with a terminal empty paragraph that fits the same page.
 - Updated dependencies [00666a8]
-  - @docx-editor.dev/i18n@2.16.0
+  - @zqmi/docx-editor-i18n@2.16.0
 
 ## 2.15.1
 
 ### Patch changes
 
-- @docx-editor.dev/i18n@2.15.1
+- @zqmi/docx-editor-i18n@2.15.1
 
 ## 2.15.0
 
 ### Minor changes
 
-- 5284df5: Add `@docx-editor.dev/core/export` for document layout without a DOM. Export sessions share the browser editor's layout engine and return immutable pages, comments, tracked changes, and font-resolution reports.
+- 5284df5: Add `@zqmi/docx-editor-core/export` for document layout without a DOM. Export sessions share the browser editor's layout engine and return immutable pages, comments, tracked changes, and font-resolution reports.
 - 0d81033: Add font resources, shaped text, embedded fonts, metadata, internal link targets, and comment and tracked-change positions to export sessions.
 - 8e6133f: Apply author, mode, translation, and locale changes without rebuilding the editor, including Vue root and packaged components. Fixes #695 and #561.
 
@@ -543,13 +543,13 @@
 - cfe3fe1: Allow on-demand font resolvers to return empty results without a configuration error.
 - 0e1360d: Keep underlined trailing spaces and underscore tab leaders as single rules that reach the line margin.
 - 2a8e57e: Show tracked field controls with their adjacent replacement instead of separate **Deleted** cards.
-- @docx-editor.dev/i18n@2.15.0
+- @zqmi/docx-editor-i18n@2.15.0
 
 ## 2.14.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.14.1
+- @zqmi/docx-editor-i18n@2.14.1
 
 ## 2.14.0
 
@@ -563,7 +563,7 @@
 ### Patch Changes
 
 - 1afc5f2: Treat contextual table controls as the first collapsible preset-toolbar group, so entering a table moves those controls into More before ordinary formatting controls instead of overlapping them. Keep table color pickers contained within the More panel so later controls remain clipped and scrollable while a picker is open. Fixes #669.
-- @docx-editor.dev/i18n@2.14.0
+- @zqmi/docx-editor-i18n@2.14.0
 
 ## 2.13.0
 
@@ -593,7 +593,7 @@
 - 8506a62: Numbered paragraphs now inherit the list id through the style chain when a style sets only the level, so multilevel heading numbering in legal templates renders. Fixes #600.
 - 0d782e3: Invalidate a table's cached break correctly when drawing layout moves between its cell paragraphs: the drawing-token aggregate now preserves paragraph position instead of sorting, so two different token assignments can no longer alias. Fixes #626
 - 7e85377: Declare the Node floor the text shaper needs (`^20.16.0 || >=22.3.0`) so an installer reports it before a run fails. Fixes #595.
-- @docx-editor.dev/i18n@2.13.0
+- @zqmi/docx-editor-i18n@2.13.0
 
 ## 2.12.0
 
@@ -609,7 +609,7 @@
 - 3755b98: Combine style toggle properties per level of the style hierarchy, shape small capitals with matching advances, and draw one frame around consecutive identically bordered paragraphs in a table cell. Fixes #505.
 - 8fe5920: A relationship, content type, or extra part written through a transaction's `applyPackage` now survives into the package, the save, and one shared undo unit with the story edit, instead of replicating to peers while vanishing from the author's own document. Fixes #558.
 - fe3b8a3: Pasting rich content into non-empty documents no longer degrades to plain text or inserts Word's macOS preview image. Word headings, captions, and image dimensions now retain their source semantics and physical size.
-- @docx-editor.dev/i18n@2.12.0
+- @zqmi/docx-editor-i18n@2.12.0
 
 ## 2.11.0
 
@@ -657,7 +657,7 @@
 - e4872fb: Review chrome no longer commits queued typing while it reads, and a missing image at paint time shows a placeholder instead of throwing.
 - d11816f: A cell merged over several rows now takes the height of the rows it covers instead of loading all of it onto the row it starts on, so the rows beside it keep their own heights and shading. A `w:cantSplit` row holding such a merge can now split across a page rather than failing the table's layout. Fixes #504
 - 0d770d9: Header and footer variants resolve per page, so a title page with no first-page header starts its body at the top margin, and a sheet added for note overflow takes the variant its own page number resolves. `PAGE` and `NUMPAGES` fields evaluate the `\#` numeric picture switch instead of painting the result cached in the file.
-- @docx-editor.dev/i18n@2.11.0
+- @zqmi/docx-editor-i18n@2.11.0
 
 ## 2.10.0
 
@@ -675,7 +675,7 @@
 - 0928951: Mark a drawing inside a tracked insertion or deletion with a revision outline, the standard revision datasets, and a margin change bar; a deleted picture stays visible and dimmed under all-markup and disappears from the proposed result. In suggesting mode, inserting an image proposes a tracked insertion, deleting a selected image proposes a tracked deletion, and Delete on a pointer-selected picture deletes the picture instead of the paragraph break beside it. Fixes #479
 - b10d396: Run formatting (bold, italic, font family, font size, color) now applies to text inside tracked changes; it previously did nothing over runs wrapped in `w:ins` or `w:del`. Fixes #493
 - 0e3663d: Double-clicking either half of a tracked replacement now selects that half. A word no longer runs through struck text, which Word paints immediately before the text proposed to replace it.
-- @docx-editor.dev/i18n@2.10.0
+- @zqmi/docx-editor-i18n@2.10.0
 
 ## 2.9.2
 
@@ -699,14 +699,14 @@
 - da051fc: Suggesting mode now records page field, hyperlink, and footnote/endnote insertion as tracked changes, and an armed caret format survives an IME replacement. Fixes #463
 - e568148: Fix replacements over a selection in tracked-changes mode: typing, paste, Enter, tab, breaks, and page fields now land after the struck words with the caret following, instead of reversed or in front of the strike. Multi-line paste now splits its paragraphs inside the tracked insertion, and typing over your own pending Enter merges it instead of doing nothing.
 - 263ceb1: Suggesting mode now records inserted tabs, line breaks, and page breaks as tracked insertions, and an armed typing format is no longer dropped when the insert relocates past struck text. Fixes #458
-- @docx-editor.dev/i18n@2.9.2
+- @zqmi/docx-editor-i18n@2.9.2
 
 ## 2.9.1
 
 ### Patch Changes
 
 - 36ea49a: Show selected paragraph marks and empty lines with a small selection block.
-- @docx-editor.dev/i18n@2.9.1
+- @zqmi/docx-editor-i18n@2.9.1
 
 ## 2.9.0
 
@@ -740,7 +740,7 @@
 - 44f11db: The editor snapshot now notifies subscribers when `hasReviewContent` changes.
 - 03262fc: Review author colours now remain stable while you edit, remove, and undo comments or tracked changes in an attached document.
 - 2704c4d: Speed up large-document typing by caching paragraph, section, list, and content-control lookups so keystrokes avoid repeated full-document walks.
-  - @docx-editor.dev/i18n@2.9.0
+  - @zqmi/docx-editor-i18n@2.9.0
 
 ## 2.8.0
 
@@ -763,7 +763,7 @@
 - 5ae7f4d: Fixed list items and other same-style paragraphs not closing up until you reopened the document.
 - 7a58fb2: Fixed IME text being dropped when you compose into an empty paragraph, and fixed a composition deleting an inline image or hidden text elsewhere in the same paragraph. Composing over a selection that spans two paragraphs now replaces the whole range in one step. Text in a header, a repeating table header row, or a footnote referenced twice no longer duplicates when you compose into it.
 - dab6700: A document protected with `w:documentProtection w:edit="forms"` now refuses edits in headers, footers and notes as it already did in the body. Form fields in those stories stay fillable.
-  - @docx-editor.dev/i18n@2.8.0
+  - @zqmi/docx-editor-i18n@2.8.0
 
 ## 2.7.0
 
@@ -785,13 +785,13 @@
 - 4c907ed: Typing over your own pending suggestion now replaces it. The keystroke was refused and silently dropped, because a suggestion the same author retracts leaves the paragraph instead of staying struck in place.
 - 25235c1: Typing latency in very long documents drops further: layout reuses each unchanged section's whole prepass, list numbering, font catalogs, drawing scans, and note-mark projection reuse memoized answers across keystrokes, and shaped text measurement stops rebuilding string keys per probe.
 - 4c907ed: Fixes four write lanes that had drifted from the rules the others follow: Enter inside a tracked insertion now breaks the paragraph at the caret, a table inside a header or footer can be deleted, IME text in suggesting mode is proposed rather than written, and a multi-line paste proposes its paragraph breaks and leaves the caret after the pasted text.
-  - @docx-editor.dev/i18n@2.7.0
+  - @zqmi/docx-editor-i18n@2.7.0
 
 ## 2.6.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.6.1
+- @zqmi/docx-editor-i18n@2.6.1
 
 ## 2.6.0
 
@@ -816,7 +816,7 @@
 - bc614bd: Anchored images in the document body now keep their place when a header or footer is taller than its margin. A page-relative image was pushed down the page by the header height, and a bottom-margin-relative one followed an oversized footer. Fixes #274.
 - 1ce2f55: Resolved comment miniatures now show a hover fill, and the reply field shows a focus outline.
 - 887f67f: Viewing mode refuses every path into header and footer editing, not only a double-click, and a document opened in viewing no longer comes up with an editable pages layer.
-  - @docx-editor.dev/i18n@2.6.0
+  - @zqmi/docx-editor-i18n@2.6.0
 
 ## 2.5.0
 
@@ -839,19 +839,19 @@
 - 192c644: Pasting from an application that offers only an HTML flavour now recovers its text more faithfully: an attribute value holding a `>` no longer truncates the paste, unterminated markup is no longer pasted as literal text, and a very large table no longer blocks the page. Reading a document's content types no longer uses a pattern a crafted file could make backtrack.
 - f811b44: Memoize package snapshots, section enumeration, and list resolution so a keystroke in a long document no longer rescans the whole tree; typing in large documents is significantly faster.
 - 4a57eed: Update harfbuzzjs to 1.6.0 (HarfBuzz 14.3.0). Shaping output does not change.
-  - @docx-editor.dev/i18n@2.5.0
+  - @zqmi/docx-editor-i18n@2.5.0
 
 ## 2.4.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.4.1
+- @zqmi/docx-editor-i18n@2.4.1
 
 ## 2.4.0
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.4.0
+- @zqmi/docx-editor-i18n@2.4.0
 
 ## 2.3.1
 
@@ -859,20 +859,20 @@
 
 - 1c9b6a2: Long documents now reuse pagination after explicit page and section breaks, avoiding full-document work for ordinary typing, wrap-inducing edits, and character, word, line, vertical, or document-edge caret movement. Rapid typing preserves input order while coalescing pending page, toolbar, and review-rail refreshes, and repeated tracked deletions stay compact instead of adding one OOXML run per keypress.
 - 1c9b6a2: Rapid typing no longer reorders characters when a deferred paint leaves the DOM caret behind the model. Native and touch carets that return to that leftover offset still edit there.
-  - @docx-editor.dev/i18n@2.3.1
+  - @zqmi/docx-editor-i18n@2.3.1
 
 ## 2.3.0
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.3.0
+- @zqmi/docx-editor-i18n@2.3.0
 
 ## 2.2.1
 
 ### Patch Changes
 
 - 35f6d04: Fix exported comment replies opening as separate comments instead of a thread in Microsoft Word.
-  - @docx-editor.dev/i18n@2.2.1
+  - @zqmi/docx-editor-i18n@2.2.1
 
 ## 2.2.0
 
@@ -886,13 +886,13 @@
 - 04c2379: Programmatic selections made while embedded fonts load now keep their range and visible highlight after the shaped-font remount.
 - f0e4ab9: Tracked changes on a field's result now render as tracked. A deletion or insertion around the value of a cross-reference, page number or form field previously painted as ordinary unchanged text, so a reviewer saw no strikethrough or author colour on an edit the review sidebar was reporting correctly. A paragraph containing such a field also measured longer than what was laid out from it, which put the caret and the keystroke at different offsets — clicking after the field placed the cursor in one place and typing appeared in another. `w:fldSimple` now paints its cached result instead of blank space, allowlisted PAGE/NUMPAGES/SECTIONPAGES nested inside a non-page simple field evaluate per sheet rather than reusing the saved cache, and field results carry Word's grey field shading — always for legacy form fields unless the document sets `w:doNotShadeFormData`, and per the new `fieldShading` option (`never` / `when-selected` / `always`) for the rest.
 - Updated dependencies [568ccf7]
-  - @docx-editor.dev/i18n@2.2.0
+  - @zqmi/docx-editor-i18n@2.2.0
 
 ## 2.1.3
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.1.3
+- @zqmi/docx-editor-i18n@2.1.3
 
 ## 2.1.2
 
@@ -904,14 +904,14 @@
 - 802ab3e: The collapsed review rail now draws a glyph for what each marker actually is — an insertion, a deletion, a formatting change, a comment or a custom node — instead of one comment bubble for every kind. A custom node names its own through `reviewCard`'s new `icon`, and the `Markers` part takes an `icon` of its own for a host that wants to draw all of them itself.
 - 4fa91bd: The painted-document rules are now scoped to the editor. Around a hundred `.layout-*` and `.paged-editor*` selectors shipped unscoped, so a host with its own `.layout-page-header` or `.layout-page-content` had those elements restyled by the editor's stylesheet. The class names are unchanged; only the rules moved under `.docx-editor`. The stylesheet guard now exempts `.docx-` alone, so nothing else can ship unanchored.
 - 4fa91bd: The y-prosemirror remote-cursor styles are now scoped to the editor. `.ProseMirror-yjs-cursor` is y-prosemirror's class name rather than one the engine mints, and it shipped unscoped, so a host running its own ProseMirror editor with Yjs on the same page had its remote cursors restyled. The stylesheet guard no longer treats `.ProseMirror-` as an engine-owned namespace.
-  - @docx-editor.dev/i18n@2.1.2
+  - @zqmi/docx-editor-i18n@2.1.2
 
 ## 2.1.1
 
 ### Patch Changes
 
 - d74c5d6: Jumping to a tracked change or a selection now lands on it: the reveal was measuring caret geometry against the top of the sheet rather than the page's content box, so every jump stopped one page margin short and left the target just under the fold. Reveals that have to travel now centre their target instead of stopping the moment it clears the bottom edge, and one that is already on screen still does not move.
-  - @docx-editor.dev/i18n@2.1.1
+  - @zqmi/docx-editor-i18n@2.1.1
 
 ## 2.1.0
 
@@ -951,14 +951,14 @@
 - e215962: Trailing tabs no longer start a new line, so a header authored as tabbed columns keeps its own height and stops pushing the body down the page. Header and footer shapes marked `behindDoc` now paint beneath the body text instead of over it.
 - 434454d: Paint form-blank underlines across tab advances: an underlined `w:tab` now draws a rule for the reserved stop width instead of relying on CSS text-decoration on an invisible tab glyph.
 - Updated dependencies [232728c]
-  - @docx-editor.dev/i18n@2.1.0
+  - @zqmi/docx-editor-i18n@2.1.0
 
 ## 2.0.1
 
 ### Patch Changes
 
 - 51f14f5: Add the `repository` field to the core package manifest so npm can verify its provenance statement on publish.
-  - @docx-editor.dev/i18n@2.0.1
+  - @zqmi/docx-editor-i18n@2.0.1
 
 ## 2.0.0
 
@@ -967,9 +967,9 @@
 - 26095c6: Initial release.
 
   A WYSIWYG `.docx` editor that runs entirely in the browser: it opens a Word file, paints the real paginated layout, edits it in place, and writes a `.docx` back out.
-  - `@docx-editor.dev/react` — the React adapter. `<DocxEditor document={bytes} />` for the packaged editor, or compose `DocxEditor.Root` / `.Viewport` / `.Content` with the hooks (`useEditorState`, `useEditorCommand`, `useDocxEditor`) to build your own chrome.
-  - `@docx-editor.dev/core` — the framework-agnostic engine: OPC/XML reading, the canonical OOXML tree, layout, paint, and the `Editor` contract the adapters render.
-  - `@docx-editor.dev/i18n` — the shared string catalogue, with nine locales.
+  - `@zqmi/docx-editor-react` — the React adapter. `<DocxEditor document={bytes} />` for the packaged editor, or compose `DocxEditor.Root` / `.Viewport` / `.Content` with the hooks (`useEditorState`, `useEditorCommand`, `useDocxEditor`) to build your own chrome.
+  - `@zqmi/docx-editor-core` — the framework-agnostic engine: OPC/XML reading, the canonical OOXML tree, layout, paint, and the `Editor` contract the adapters render.
+  - `@zqmi/docx-editor-i18n` — the shared string catalogue, with nine locales.
   - `@docx-editor.dev/editor-api` — a batching document object model for automating a document from a server or from an editor already open in a page.
   - `@docx-editor.dev/pro` — tracked changes, comments, and custom nodes.
 
@@ -986,9 +986,9 @@
 - 26095c6: Put the caret in the right place on an empty paragraph. A centred or right-aligned one drew it at the left margin, and one with a first-line indent ignored the indent; in both cases it only jumped to the correct position once a character was typed. Lines now publish their aligned content origin as `LineRecord.contentX`.
 - 26095c6: The root entry and the `contracts/*` entries now export the types their own signatures hand out — `CanResult` from `can()`, `TextMatch` from `findText()`, `TableContext` from `query()` and around 60 more that were previously unnameable from the entry point that returns them. The root re-exports the whole `Editor` contract rather than a hand-listed subset, so it cannot drift from it again.
 
-  Removes `@docx-editor.dev/core/contracts/plugin` and `@docx-editor.dev/core/contracts/mcp`. Every function in them threw, and `coreTools` had no runtime binding at all. Extensions and MCP are deferred to a separately specified contract; `EditorModule` is the supported seam.
+  Removes `@zqmi/docx-editor-core/contracts/plugin` and `@zqmi/docx-editor-core/contracts/mcp`. Every function in them threw, and `coreTools` had no runtime binding at all. Extensions and MCP are deferred to a separately specified contract; `EditorModule` is the supported seam.
 
 ### Patch Changes
 
 - Updated dependencies [26095c6]
-  - @docx-editor.dev/i18n@2.0.0
+  - @zqmi/docx-editor-i18n@2.0.0

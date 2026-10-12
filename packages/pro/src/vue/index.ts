@@ -86,7 +86,7 @@ export type {
   CollaborationSelectionKind,
   CollaborationStatus,
   CollaborationStatusSnapshot,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 export type {
   CollaborationBootstrap,
   CollaborationIdentityUpdate,

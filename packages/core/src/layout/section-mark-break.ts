@@ -1,6 +1,6 @@
 // Where an empty section mark stays when a page break precedes it or it carries its own.
 
-import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { paragraphSectionNode, type DocumentSection } from './section-properties.ts';
 
 /** Paragraph properties, a bookmark, or a run that holds only its properties. */

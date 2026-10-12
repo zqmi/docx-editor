@@ -1,10 +1,10 @@
 import { expect, test } from 'bun:test';
-import type { ExportSemanticLayout, ExportSession } from '@docx-editor.dev/core/export';
+import type { ExportSemanticLayout, ExportSession } from '@zqmi/docx-editor-core/export';
 import type {
   ParagraphFragmentRecord,
   SemanticLayout,
   TableFragmentRecord,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { exportMarkdownFrom } from '../src/index.ts';
 
 function session(layout: SemanticLayout): ExportSession {

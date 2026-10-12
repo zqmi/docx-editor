@@ -25,7 +25,7 @@ Install the Pro package, Yjs, and the WebRTC provider:
 npm install @docx-editor.dev/pro yjs y-webrtc
 ```
 
-You also need `@docx-editor.dev/react` or `@docx-editor.dev/vue` in your application.
+You also need `@zqmi/docx-editor-react` or `@docx-editor.dev/vue` in your application.
 
 ## Create a room ID
 
@@ -47,7 +47,7 @@ Call `useWebrtcCollaboration` with a room ID, an identity, and the initial DOCX 
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { useWebrtcCollaboration } from '@docx-editor.dev/pro/react/webrtc';
 
 interface CollaborativeEditorProps {

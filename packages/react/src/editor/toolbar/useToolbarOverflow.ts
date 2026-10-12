@@ -17,7 +17,7 @@ import {
   toolbarOverflowGroups,
   TOOLBAR_OVERFLOW_HYSTERESIS,
   type ToolbarFitInput,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import {
   collapsibleGroupCost,
   controlsOverflow,
@@ -26,7 +26,7 @@ import {
   readInlineMargins,
   separatorLeadingCost,
   trailingGapCost,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 /** Marks a collapsible group wrapper; the value is the group id. */
 export const GROUP_ATTRIBUTE = 'data-toolbar-group';

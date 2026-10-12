@@ -47,7 +47,7 @@ If a font remains unresolved, the default `fontPolicy: 'best-effort'` allows app
 Install the fonts package as a direct dependency of your application:
 
 ```sh
-npm install @docx-editor.dev/fonts
+npm install @zqmi/docx-editor-fonts
 ```
 
 This example keeps the bundled substitutes and requests missing faces from the Google Fonts catalog:
@@ -55,7 +55,7 @@ This example keeps the bundled substitutes and requests missing faces from the G
 ```js
 import { readFile } from 'node:fs/promises';
 import { exportMarkdown } from '@docx-editor.dev/docx-to-markdown';
-import { googleFonts } from '@docx-editor.dev/fonts/google';
+import { googleFonts } from '@zqmi/docx-editor-fonts/google';
 
 const docxBytes = await readFile('document.docx');
 const result = await exportMarkdown(docxBytes, {

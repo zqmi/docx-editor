@@ -11,7 +11,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // saw the packaged reply box come back, and its own components vanish, whenever the
 // window narrowed.
 //
-// These tests paint through the BUILT react adapter (`@docx-editor.dev/react` resolves to
+// These tests paint through the BUILT react adapter (`@zqmi/docx-editor-react` resolves to
 // packages/react/dist) — rebuild it before trusting a failure.
 
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
@@ -22,7 +22,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterAll, afterEach, beforeAll, describe, expect, test } from 'bun:test';
 import type { ReactNode } from 'react';
 import { act, cleanup, render } from '@testing-library/react';
-import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@docx-editor.dev/react';
+import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@zqmi/docx-editor-react';
 import { reviewModule } from '../index.ts';
 import { DocxEditorReview, useReviewItem } from '../react/index.ts';
 import { strToU8, zipSync } from 'fflate';

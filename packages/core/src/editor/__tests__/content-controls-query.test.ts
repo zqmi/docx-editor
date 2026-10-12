@@ -10,8 +10,8 @@ import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
 import { createDocxEditor } from '../docx-editor.ts';
 import { contentControlSummaryOf, inlineContentControlsAt } from '../content-controls.ts';
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
-import { WML_NAMESPACE_URI } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
 import {
   MAX_INLINE_CONTAINER_DEPTH,
   paragraphOffsetIndex,

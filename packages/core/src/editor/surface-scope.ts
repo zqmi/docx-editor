@@ -10,7 +10,7 @@ import {
   documentOrder,
   moveCaret,
   paragraphFragmentsOf,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import type {
   BlockFragmentRecord,
   CaretGeometry,
@@ -23,11 +23,11 @@ import type {
   SemanticPosition,
   SemanticSelection,
   TextMeasurer,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import type { EditorScope, ViewScope } from '../contracts/editor.ts';
 import type { SurfaceEditingMode } from './paginated-surface-contract.ts';
-import type { OoxmlPart, StoryScope } from '@docx-editor.dev/core/store';
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
+import type { OoxmlPart, StoryScope } from '@zqmi/docx-editor-core/store';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
 import {
   hitAnchoredDrawingAtPoint,
   hitTestFragments,

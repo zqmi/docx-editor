@@ -1,4 +1,4 @@
-import { isApplePlatform } from '@docx-editor.dev/i18n';
+import { isApplePlatform } from '@zqmi/docx-editor-i18n';
 import type { Editor } from '../contracts/editor.ts';
 import { runChromeExport, type ChromeExportHandlers } from './chrome-export.ts';
 

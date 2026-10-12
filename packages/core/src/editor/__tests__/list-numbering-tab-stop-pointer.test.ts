@@ -9,7 +9,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { createFixedMeasurer, paragraphFragmentsOf } from '@docx-editor.dev/core/layout';
+import { createFixedMeasurer, paragraphFragmentsOf } from '@zqmi/docx-editor-core/layout';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

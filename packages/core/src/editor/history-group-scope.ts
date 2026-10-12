@@ -17,7 +17,7 @@
 // binds its typing run's own group, because buffered keystrokes that land at the head of a
 // grouped command are an edit of their own, not a frame of the gesture.
 
-import type { HistoryGroup } from '@docx-editor.dev/core/store';
+import type { HistoryGroup } from '@zqmi/docx-editor-core/store';
 
 let active: { readonly owner: object; readonly group: HistoryGroup } | null = null;
 

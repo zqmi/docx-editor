@@ -1,4 +1,4 @@
-import type { OoxmlElement, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 
 const W14 = 'http://schemas.microsoft.com/office/word/2010/wordml';
 const HEX = /^[0-9a-f]{6}$/i;

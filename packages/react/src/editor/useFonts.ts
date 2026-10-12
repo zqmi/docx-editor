@@ -20,8 +20,8 @@ import {
   type FontResolutionRequest,
   type FontResolver,
   type MarkedFontResolver,
-} from '@docx-editor.dev/core/editor';
-import type { FontConfiguration } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { FontConfiguration } from '@zqmi/docx-editor-core/contracts/editor';
 
 /**
  * Anything that can describe fonts: a resolved configuration, a bare fragment, a promise

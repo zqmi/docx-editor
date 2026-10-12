@@ -17,7 +17,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // written under (or the peer refuses the part as `invalid-qname`).
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { ImageDecodePort, OoxmlNode, OoxmlPackage } from '@docx-editor.dev/core/store';
+import type { ImageDecodePort, OoxmlNode, OoxmlPackage } from '@zqmi/docx-editor-core/store';
 import { BODY, createPeerHarness, walk, zipDocument } from './document-peer-support.ts';
 
 const PNG_1X1 = Uint8Array.from(

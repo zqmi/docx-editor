@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/editor-a
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
-import type { AutomationHost, AutomationBatchRequest } from '@docx-editor.dev/core/automation';
+import type { AutomationHost, AutomationBatchRequest } from '@zqmi/docx-editor-core/automation';
 import { createRuntime } from '../runtime.ts';
 import { openHost } from './support/hosts.ts';
 

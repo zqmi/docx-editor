@@ -6,7 +6,7 @@ import {
 } from '../../store/package/note-properties.ts';
 import { buildNumberingIndex } from '../numbering-index.ts';
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, applyTreeOp, paragraphTextOf } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, applyTreeOp, paragraphTextOf } from '@zqmi/docx-editor-core/store';
 import { loadBody } from './float-over-table-harness.ts';
 import { layoutSemanticDocument, createLayoutSession } from '../semantic-layout.ts';
 import { buildStyleCascadeTable } from '../style-cascade.ts';

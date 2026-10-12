@@ -1,6 +1,6 @@
 // The hAnsi face is independent of ascii. Keep authored properties and model
 // ranges intact; only derived layout pieces select a different measurement face.
-import type { OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { themeFontFamilyOf } from '../store/package/theme-font-scheme.ts';
 import { isEastAsiaHintSymbol, hasEastAsiaSymbolHint } from './east-asia-symbol-hint.ts';
 import type { FieldAwarePiece } from './field-pieces.ts';

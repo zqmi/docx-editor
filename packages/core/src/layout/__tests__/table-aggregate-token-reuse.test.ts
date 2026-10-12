@@ -3,7 +3,7 @@
 // case compares with the flat walk; the recorder shows whether the latest string answered.
 
 import { afterEach, beforeEach, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import {
   aggregateParagraphTokensForTableBlock,
   createTableRowTokenStore,

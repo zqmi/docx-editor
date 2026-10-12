@@ -1,4 +1,4 @@
-import type { OoxmlElement, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import {
   APPLICATION_PARAGRAPH_PROPERTIES,
   omittedDocDefaults,

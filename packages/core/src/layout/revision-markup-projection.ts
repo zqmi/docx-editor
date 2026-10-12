@@ -10,7 +10,7 @@ import {
   type RevisionAttribution,
 } from './revision-projection.ts';
 import { propertiesOfRunContainer } from './field-run-text.ts';
-import type { OoxmlNode, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 
 /** Resolve local presentation before measuring glyphs. */
 export function projectRevisionMarkup(

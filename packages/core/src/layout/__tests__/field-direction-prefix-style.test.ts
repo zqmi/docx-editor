@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { breakParagraph } from '../paragraph-flow.ts';
 import { createFixedMeasurer } from '../fixed-measurer.ts';

@@ -18,7 +18,7 @@ import type {
   AutomationParagraphFormatRead,
   AutomationSpan,
   AutomationValue,
-} from '@docx-editor.dev/core/automation';
+} from '@zqmi/docx-editor-core/automation';
 import { DocxEditorError } from './errors.ts';
 
 function wrongShape(target: string): DocxEditorError {

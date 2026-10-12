@@ -11,7 +11,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
-import { serializeOoxmlPart, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { selectCellRectangle } from './paginated-surface-fixtures.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

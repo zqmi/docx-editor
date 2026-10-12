@@ -3,7 +3,7 @@ import {
   type EditorFontErrorCode,
   type FontConfiguration,
   type FontFaceRequest,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import {
   FontResolutionError,
   HarfBuzzShapingError,
@@ -12,7 +12,7 @@ import {
   disposeLayoutShaping,
   type LayoutShapingInstrumentation,
   type LayoutShapingOptions,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 
 export type { LayoutShapingInstrumentation };
 
@@ -27,7 +27,7 @@ export function warnFontFailureOnce(error: { readonly diagnostic?: string }): vo
   warnedFontFailure = true;
   const detail = error.diagnostic ? `: ${error.diagnostic}` : '.';
   console.error(
-    `[@docx-editor.dev/core] text shaping is disabled${detail}\n` +
+    `[@zqmi/docx-editor-core] text shaping is disabled${detail}\n` +
       'Text is being measured with fallback metrics, so line and page breaks will not match Word.'
   );
 }

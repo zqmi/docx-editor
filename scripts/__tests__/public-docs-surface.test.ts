@@ -5,7 +5,7 @@ describe('public docs surface', () => {
   test('rejects removed subpath claims in docs', () => {
     const result = surface.evaluatePublicDocsSurface({
       docsByPackage: {
-        '@docx-editor.dev/react': {
+        '@zqmi/docx-editor-react': {
           rootClaims: ['DocxEditor', 'useDocxEditor'],
           subpathClaims: {
             '.': ['DocxEditor', 'useDocxEditor'],
@@ -14,7 +14,7 @@ describe('public docs surface', () => {
         },
       },
       packageExports: {
-        '@docx-editor.dev/react': {
+        '@zqmi/docx-editor-react': {
           '.': ['DocxEditor', 'useDocxEditor'],
         },
       },
@@ -22,7 +22,7 @@ describe('public docs surface', () => {
 
     expect(result.invalidSubpaths).toEqual([
       {
-        packageName: '@docx-editor.dev/react',
+        packageName: '@zqmi/docx-editor-react',
         subpath: './ui',
       },
     ]);
@@ -31,7 +31,7 @@ describe('public docs surface', () => {
   test('checks the documented root claims against the current root entry', () => {
     const result = surface.evaluatePublicDocsSurface({
       docsByPackage: {
-        '@docx-editor.dev/react': {
+        '@zqmi/docx-editor-react': {
           rootClaims: ['DocxEditor', 'DocxEditorRoot', 'useDocxEditor', 'useEditorState'],
           subpathClaims: {
             '.': ['DocxEditor', 'DocxEditorRoot', 'useDocxEditor', 'useEditorState'],
@@ -39,7 +39,7 @@ describe('public docs surface', () => {
         },
       },
       packageExports: {
-        '@docx-editor.dev/react': {
+        '@zqmi/docx-editor-react': {
           '.': ['DocxEditor', 'DocxEditorRoot', 'useDocxEditor'],
         },
       },
@@ -47,7 +47,7 @@ describe('public docs surface', () => {
 
     expect(result.missingRootExports).toEqual([
       {
-        packageName: '@docx-editor.dev/react',
+        packageName: '@zqmi/docx-editor-react',
         exportName: 'useEditorState',
       },
     ]);
@@ -60,11 +60,11 @@ describe('public docs surface', () => {
         import { renderAsync } from '@docx-editor.dev/vue';
       `,
       'docs/PROPS.md': `
-        import { DocxEditor, type DocxEditorRef, renderAsync } from '@docx-editor.dev/react';
+        import { DocxEditor, type DocxEditorRef, renderAsync } from '@zqmi/docx-editor-react';
         Both packages export DocxEditorHandle and RenderAsyncOptions.
       `,
       'CHANGELOG.md': `
-        import { PluginHost } from '@docx-editor.dev/react/plugin-api';
+        import { PluginHost } from '@zqmi/docx-editor-react/plugin-api';
       `,
     });
 

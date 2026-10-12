@@ -30,7 +30,7 @@
 // - Nested tables and positioned (`w:tblpPr`) tables never keep their rows.
 
 import { autofitContextOf } from './table-autofit-widths.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import {
   readTableStructure,
   type SemanticTableRow,

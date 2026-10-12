@@ -1,7 +1,7 @@
 // Paragraph spacing and bottom borders (task 7.3).
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   AUTO_PARAGRAPH_SPACING_PT,
   MAX_PARAGRAPH_SPACING_PT,

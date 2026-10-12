@@ -1,5 +1,5 @@
 import { computed, type ComputedRef } from 'vue';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
 import { useTranslation } from './LocaleContext';
 
 /** @public */

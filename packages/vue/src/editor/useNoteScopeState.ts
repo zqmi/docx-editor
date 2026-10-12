@@ -1,5 +1,5 @@
 import { type ShallowRef } from 'vue';
-import type { Editor, EditorSnapshot, ViewScope } from '@docx-editor.dev/core/contracts/editor';
+import type { Editor, EditorSnapshot, ViewScope } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { PDFDocument, PDFRawStream, decodePDFRawStream } from 'pdf-lib';
-import { createFontSource } from '@docx-editor.dev/core/editor';
+import { createFontSource } from '@zqmi/docx-editor-core/editor';
 import { exportPdf } from '../src/index.ts';
 import { docx } from './fixture.ts';
 import { baselineYPositions } from './glyph-positions.ts';

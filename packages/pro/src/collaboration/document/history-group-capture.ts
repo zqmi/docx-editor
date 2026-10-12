@@ -12,12 +12,12 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // of each frame; and a change of group — into one, out of one, or between two — is a
 // boundary, so the capture is stopped. Journals with no group keep the clock rule, which
 // is what lets a run of keystrokes stay one item.
-import type { HistoryGroup } from '@docx-editor.dev/core/store';
+import type { HistoryGroup } from '@zqmi/docx-editor-core/store';
 import type * as Y from 'yjs';
 import {
   registerUndoHistoryPosition,
   reportHistoryGroup,
-} from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/collaboration/replication';
 
 type StackItem = Y.UndoManager['undoStack'][number];
 

@@ -10,7 +10,7 @@ import {
   type HeadlessDocumentView,
   type OoxmlElement,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createDocumentFurnitureSource } from '../document-furniture-source.ts';
 import { layoutDocumentView } from '../document-layout-coordinator.ts';
 import { createDocumentLinkProjectors } from '../document-link-projector.ts';

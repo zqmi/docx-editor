@@ -22,7 +22,7 @@ Open `http://localhost:5174`.
 Install the adapter and its engine peer:
 
 ```bash
-npm install @docx-editor.dev/vue @docx-editor.dev/core
+npm install @docx-editor.dev/vue @zqmi/docx-editor-core
 ```
 
 Import the stylesheet once. Then pass `"blank"` to create an empty document:

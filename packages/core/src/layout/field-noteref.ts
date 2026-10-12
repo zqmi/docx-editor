@@ -28,7 +28,7 @@ import {
   type OoxmlNode,
   type OoxmlParagraphNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { OoxmlPackage } from '../store/package/ooxml-package.ts';
 import { noteIdOf, noteReferenceKindOf, type NoteKind } from '../store/package/note-nodes.ts';
 import {

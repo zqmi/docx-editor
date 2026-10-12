@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { alignCellLine, type CellLineAlignment } from '../cell-line-alignment.ts';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { frozenLine, type PendingLine } from '../pending-line.ts';

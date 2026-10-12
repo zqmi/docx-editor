@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { buildNumberingIndex } from '../numbering-index.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import { tableKeepOpening, type TableKeepFlow } from '../table-row-keeps.ts';

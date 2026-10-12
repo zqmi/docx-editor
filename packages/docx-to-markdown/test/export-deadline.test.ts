@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { ExportResourceError } from '@docx-editor.dev/core/export';
+import { ExportResourceError } from '@zqmi/docx-editor-core/export';
 import { createSuccessfulValueCache, provisionWithExportDeadline } from '../src/export-deadline.ts';
 
 test('resource deadline returns a typed timeout without waiting for stuck work', async () => {

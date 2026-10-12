@@ -7,7 +7,7 @@
 // field's own instruction, and an empty result paints nothing, URL included.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   piecesOfParagraph,
   type FieldLinkProjector,

@@ -26,7 +26,7 @@ import {
   type Peer,
 } from './document-peer-support.ts';
 import { collaborationDocx } from './support.ts';
-import { readOoxmlPackage, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 
 const harness = createPeerHarness('room-generation-room');
 

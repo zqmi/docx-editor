@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
-import { forEachSemanticSpan, linesOf } from '@docx-editor.dev/core/layout';
+import { forEachSemanticSpan, linesOf } from '@zqmi/docx-editor-core/layout';
 import { openExportSession } from '../src/open-session.ts';
 import { docx } from './fixture.ts';
 

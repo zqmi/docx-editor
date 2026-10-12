@@ -1,5 +1,5 @@
 {
-  "name": "@docx-editor.dev/react",
+  "name": "@zqmi/docx-editor-react",
   "version": "2.28.0",
   "description": "React DOCX editor adapter for the @docx-editor.dev editor contract.",
   "main": "./dist/index.js",
@@ -22,11 +22,11 @@
   "scripts": {
     "build": "node ../../scripts/check-built-siblings.mjs && tsup",
     "typecheck": "tsc --noEmit",
-    "api:extract": "node ../../scripts/api-extractor.mjs --package @docx-editor.dev/react --local",
-    "api:check": "node ../../scripts/api-extractor.mjs --package @docx-editor.dev/react"
+    "api:extract": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-react --local",
+    "api:check": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-react"
   },
   "peerDependencies": {
-    "@docx-editor.dev/core": "~2.28.0",
+    "@zqmi/docx-editor-core": "~2.28.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "@docx-editor.dev/core": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
     "fflate": "^0.8.2",
     "typescript7": "npm:typescript@^7.0.2"
   },
@@ -56,17 +56,18 @@
     "url": "https://github.com/jedrazb"
   },
   "license": "Apache-2.0",
-  "homepage": "https://docx-editor.dev/",
+  "homepage": "https://github.com/zqmi/docx-editor",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eigenpal/docx-editor.git",
+    "url": "https://github.com/zqmi/docx-editor.git",
     "directory": "packages/react"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@docx-editor.dev/i18n": "^2.28.0",
+    "@zqmi/docx-editor-i18n": "^2.28.0",
     "@radix-ui/react-select": "^2.3.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1"

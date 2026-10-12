@@ -1,14 +1,14 @@
 /**
- * @docx-editor.dev/i18n/pl
+ * @zqmi/docx-editor-i18n/pl
  *
  * Polish (`pl`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import pl from '@docx-editor.dev/i18n/pl';
+ * import pl from '@zqmi/docx-editor-i18n/pl';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const pl = (await import('@docx-editor.dev/i18n/pl')).default;
+ * const pl = (await import('@zqmi/docx-editor-i18n/pl')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

@@ -10,7 +10,7 @@
 // The page shape is in `table-row-keep-fixtures.ts`.
 
 import { describe, expect, test } from 'bun:test';
-import { serializeOoxmlPart, TreeDocumentStore, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart, TreeDocumentStore, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { layoutSemanticDocument } from '../semantic-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import {

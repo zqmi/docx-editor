@@ -10,13 +10,13 @@ import { readFileSync } from 'node:fs';
 import type { ReactNode } from 'react';
 import { act, cleanup, fireEvent, render, waitFor } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';
 import { DocxEditorToolbar } from '../src/editor/toolbar/index.ts';
 import { LocaleProvider } from '../src/i18n/index.ts';
-import { en, type Translations } from '@docx-editor.dev/i18n';
+import { en, type Translations } from '@zqmi/docx-editor-i18n';
 import { POPUP_ESCAPE_SOURCE } from '../../vue/test/helpers/popup-escape-document';
 
 /** Every leaf key in the shipped catalogue, dotted. */

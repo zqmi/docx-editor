@@ -34,11 +34,11 @@ import {
   type OoxmlPackage,
   type StoryScope,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   createCollaborationDocumentPort,
   type CollaborationDocumentPort,
-} from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/collaboration/replication';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

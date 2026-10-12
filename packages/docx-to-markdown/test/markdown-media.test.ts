@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { createFixedMeasurer, forEachSemanticDrawing } from '@docx-editor.dev/core/layout';
+import { createFixedMeasurer, forEachSemanticDrawing } from '@zqmi/docx-editor-core/layout';
 import { readFile } from 'node:fs/promises';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
 import { micromark } from 'micromark';

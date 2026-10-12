@@ -21,7 +21,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { reviewModule } from '../review/review-module.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

@@ -2,7 +2,7 @@
 /**
  * Guards the single-source-of-truth invariant for editor UI styling:
  * the React and Vue adapter `src/styles/editor.css` files must ONLY import the
- * shared core stylesheet (@docx-editor.dev/core/styles/editor.css) — no tokens, no
+ * shared core stylesheet (@zqmi/docx-editor-core/styles/editor.css) — no tokens, no
  * @tailwind directive, no UI rules forked into one adapter. The Vue copy is
  * allowed a small, explicit set of documented Vue-only rules.
  *
@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
-const CORE_IMPORT = "@import '@docx-editor.dev/core/styles/editor.css';";
+const CORE_IMPORT = "@import '@zqmi/docx-editor-core/styles/editor.css';";
 
 // Both adapters' editor.css must be 100% thin (import-only) — there are no
 // adapter-only CSS rules. If you think you need one, prove it can't live in
@@ -44,7 +44,7 @@ for (const { file, allowBlocks } of checks) {
   if (leftover.length > 0) {
     failures.push(
       `${file}: contains adapter-local styling that should live in the shared core stylesheet ` +
-        `(@docx-editor.dev/core/styles/editor.css). Offending residue:\n` +
+        `(@zqmi/docx-editor-core/styles/editor.css). Offending residue:\n` +
         leftover.split('\n').map((l) => `    ${l}`).join('\n')
     );
   }

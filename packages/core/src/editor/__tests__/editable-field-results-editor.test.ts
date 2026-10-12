@@ -6,7 +6,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { currentFieldResultsMode } from '../../store/package/field-result-mode.ts';
-import { serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { runToolbarCommand } from '../toolbar-commands.ts';
 import type { DocxEditorConfig } from '../docx-editor-types.ts';

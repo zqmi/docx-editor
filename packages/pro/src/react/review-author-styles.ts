@@ -12,7 +12,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { useMemo, useRef } from 'react';
 import type { CSSProperties } from 'react';
-import type { DocxEditorInstance, ReviewAuthorInfo } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance, ReviewAuthorInfo } from '@zqmi/docx-editor-core/editor';
 import type { ReviewItemView } from './useReview';
 
 /** How many author slots the token ramp defines; past it, colours repeat. */

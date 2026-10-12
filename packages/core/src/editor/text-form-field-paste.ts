@@ -1,12 +1,12 @@
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
-import type { SemanticPosition } from '@docx-editor.dev/core/layout';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { SemanticPosition } from '@zqmi/docx-editor-core/layout';
 import {
   findNode,
   formsProtectionEnabled,
   paragraphTextOf,
   sectionProtectsForms,
   textFormFieldsOf,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   supportsTextFormField,
   textFormInputLength,

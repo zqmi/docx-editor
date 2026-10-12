@@ -9,20 +9,20 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@docx-editor.dev/core"><img src="https://img.shields.io/npm/v/@docx-editor.dev/core.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@docx-editor.dev/core"><img src="https://img.shields.io/npm/dm/@docx-editor.dev/core.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
+  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-core"><img src="https://img.shields.io/npm/v/@zqmi/docx-editor-core.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-core"><img src="https://img.shields.io/npm/dm/@zqmi/docx-editor-core.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
   <a href="https://github.com/eigenpal/docx-editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat-square&color=3B5BDB" alt="license" /></a>
   <a href="https://www.docx-editor.dev/docs"><img src="https://img.shields.io/badge/Docs-3B5BDB?style=flat-square&logo=readthedocs&logoColor=white" alt="Documentation" /></a>
 </p>
 
-# @docx-editor.dev/core
+# @zqmi/docx-editor-core
 
 Use the [docx-editor.dev](https://docx-editor.dev) engine to read, edit, render, and save DOCX files. The engine stores document content in a canonical tree. It has no framework dependency.
 
 Install this package alongside the React or Vue adapter. Both adapters require it as a peer dependency. You can also use its public contracts to build your own adapter.
 
 ```bash
-npm install @docx-editor.dev/core
+npm install @zqmi/docx-editor-core
 ```
 
 Node.js requires `^20.16.0 || >=22.3.0`.
@@ -39,8 +39,8 @@ Node.js requires `^20.16.0 || >=22.3.0`.
 Import editor creation, font helpers, and contract types from the package root:
 
 ```ts
-import { createDocxEditor, loadFonts, DEFAULT_FONT } from '@docx-editor.dev/core';
-import type { Editor, EditorSnapshot } from '@docx-editor.dev/core';
+import { createDocxEditor, loadFonts, DEFAULT_FONT } from '@zqmi/docx-editor-core';
+import type { Editor, EditorSnapshot } from '@zqmi/docx-editor-core';
 ```
 
 `DEFAULT_FONT` provides the default font configuration: Calibri at 11 points. `WORD_DEFAULT_FONT` is its deprecated alias. Document formatting and document-default rules determine the text size used for layout. Missing defaults and explicitly empty defaults can produce different results.
@@ -79,12 +79,12 @@ Export sessions default to `all-markup`, which shows inserted and deleted text. 
 
 For exports that need font-based page breaks, use `openFontBackedDocumentForExport`. It resolves the fonts used throughout the document before layout. Without a measurer, `openDocumentForExport(bytes)` uses a fixed-width approximation.
 
-Install `@docx-editor.dev/fonts` to use packaged substitutes in this example:
+Install `@zqmi/docx-editor-fonts` to use packaged substitutes in this example:
 
 ```ts
 import { readFile } from 'node:fs/promises';
-import { openFontBackedDocumentForExport } from '@docx-editor.dev/core/export';
-import { packagedFonts } from '@docx-editor.dev/fonts';
+import { openFontBackedDocumentForExport } from '@zqmi/docx-editor-core/export';
+import { packagedFonts } from '@zqmi/docx-editor-fonts';
 
 const bytes = new Uint8Array(await readFile('contract.docx'));
 const opened = await openFontBackedDocumentForExport(bytes, {

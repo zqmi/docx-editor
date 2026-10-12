@@ -2,7 +2,7 @@ import type { InvalidTextFormFieldSession } from '../popup-sessions.ts';
 import type { TextFormFieldDialogSession } from '../text-form-field-session.ts';
 import { applyProtectedTextFormEdit } from '../../store/store/tree-op-field-results.ts';
 import { textFormFieldForEdit } from '../../store/store/text-form-fields.ts';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { expect, test } from 'bun:test';
 import {
   readOoxmlPart,
@@ -10,7 +10,7 @@ import {
   applyTreeOp,
   textFormFieldsOf,
   type OoxmlParagraphNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createTextFormFieldInteraction } from '../surface-text-form-fields.ts';
 
 function setup(

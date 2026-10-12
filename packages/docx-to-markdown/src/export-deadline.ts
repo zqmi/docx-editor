@@ -1,4 +1,4 @@
-import { ExportResourceError } from '@docx-editor.dev/core/export';
+import { ExportResourceError } from '@zqmi/docx-editor-core/export';
 
 /** Bound one exporter resource startup and normalize its failures. @internal */
 export async function provisionWithExportDeadline<T>(

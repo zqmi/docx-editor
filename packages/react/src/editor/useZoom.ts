@@ -11,8 +11,8 @@
 // tracking the viewport and about to move off it.
 
 import { useCallback, useMemo } from 'react';
-import type { EditorSnapshot, ZoomMode } from '@docx-editor.dev/core/contracts/editor';
-import { FIT_WIDTH_ZOOM_MODE } from '@docx-editor.dev/core/editor';
+import type { EditorSnapshot, ZoomMode } from '@zqmi/docx-editor-core/contracts/editor';
+import { FIT_WIDTH_ZOOM_MODE } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 import { ZOOM_LEVELS, stepZoomLevel } from './zoom-levels';

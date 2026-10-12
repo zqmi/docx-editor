@@ -21,13 +21,13 @@ import { afterEach, describe, expect, test } from 'bun:test';
 import type { ReactNode } from 'react';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import { createT, en, type TranslationKey, type Translations } from '@docx-editor.dev/i18n';
+import { createT, en, type TranslationKey, type Translations } from '@zqmi/docx-editor-i18n';
 import { LocaleProvider } from '../src/i18n/index.ts';
 import {
   chromeSlotId,
   defaultChromeGroups,
   type DocxEditorInstance,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { DocxEditor } from '../src/components/DocxEditor.tsx';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { testReviewModule } from './review-test-module.ts';

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { propertiesOfRunContainer } from '../field-run-text.ts';
 import { resolveRunStyle, runStylesEqual } from '../run-style.ts';
 import { buildStyleCascadeTable } from '../style-cascade.ts';

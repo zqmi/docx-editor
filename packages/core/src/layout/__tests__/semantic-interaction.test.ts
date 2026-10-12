@@ -5,7 +5,7 @@ import { selectionMarkRects } from '../selection-rects.ts';
 // That is what makes interaction testable headlessly and identical between adapters.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { documentOrder } from '../document-order.ts';
 import { elevenPointDefaults } from './fixtures/eleven-point-defaults.ts';

@@ -22,7 +22,7 @@
 
 import { withDisplayedHyphens } from '../store/package/hyphen-text.ts';
 import { withoutSymbols } from '../store/store/paragraph-model-text.ts';
-import { paragraphTextOf } from '@docx-editor.dev/core/store';
+import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
 import type { OoxmlElement, OoxmlNode, OoxmlPart } from '../store/package/ooxml-tree.ts';
 import { styleOutlineLevel } from '../store/package/style-outline.ts';
 import { bodyParagraphs } from './tree-binding.ts';

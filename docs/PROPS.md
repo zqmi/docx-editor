@@ -3,7 +3,7 @@
 React and Vue share the root editor contract. Import the component and ref type for your framework.
 
 ```ts
-import { DocxEditor, type DocxEditorRef } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
 ```
 
 For Vue, use the Vue package:
@@ -75,7 +75,7 @@ Attach a React ref to the editor, then call its methods from event handlers:
 
 ```tsx
 import { useRef } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const ref = useRef<DocxEditorRef>(null);

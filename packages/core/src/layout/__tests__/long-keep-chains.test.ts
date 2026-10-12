@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, TreeDocumentStore } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, TreeDocumentStore } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import { buildStyleCascadeTable } from '../style-cascade.ts';

@@ -15,13 +15,13 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // a matching definition renders its SDT content literally, which is also the free tier's and
 // Word's fallback.
 
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import {
   contentControlPropertiesOf,
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { rememberLicenseKey, type ProLicenseOptions } from '../license.ts';
 import { decodeCustomNodeTag } from './tag-codec.ts';
 import { customNodeNamespace } from './node-payload.ts';

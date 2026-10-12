@@ -1,8 +1,8 @@
 import { afterAll, expect, test } from 'bun:test';
 import { strFromU8, unzipSync } from 'fflate';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { writeOoxmlPackage } from '@docx-editor.dev/core/store';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { writeOoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { DocxEditor } from '@docx-editor.dev/editor-api';
 import { collaborationModule, reviewModule } from '@docx-editor.dev/pro';
 import { createPeerHarness } from '../../../../packages/pro/src/collaboration/__tests__/document-peer-support';

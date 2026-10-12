@@ -104,7 +104,7 @@ describe('exact PDF export', () => {
 
 test('strict fidelity refuses missing glyphs after optional font execution rejection', async () => {
   const { readFileSync } = await import('node:fs');
-  const { createFontSource } = await import('@docx-editor.dev/core/editor');
+  const { createFontSource } = await import('@zqmi/docx-editor-core/editor');
   const data = new Uint8Array(
     readFileSync(
       new URL('../../core/src/layout/__tests__/fixtures/fonts/DejaVuSans.ttf', import.meta.url)

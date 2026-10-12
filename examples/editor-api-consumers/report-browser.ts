@@ -1,7 +1,7 @@
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
-import { sha256FontBytes } from '@docx-editor.dev/core/layout';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { sha256FontBytes } from '@zqmi/docx-editor-core/layout';
 import { execute, plan } from './report-plan';
 
 const evidence: unknown[] = [];

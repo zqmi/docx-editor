@@ -3,7 +3,7 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import type { CollaborationFailureCode } from '@docx-editor.dev/core/collaboration';
+import type { CollaborationFailureCode } from '@zqmi/docx-editor-core/collaboration';
 
 const COLLABORATION_UPGRADE_GUIDE_URL =
   'https://www.docx-editor.dev/docs/2.x/pro/collaboration-versions';

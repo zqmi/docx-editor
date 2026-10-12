@@ -9,10 +9,10 @@
   "dependencies": {
     "@ai-sdk/openai": "^4.0.27",
     "@ai-sdk/react": "^4.0.51",
-    "@docx-editor.dev/core": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
     "@docx-editor.dev/editor-api": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
-    "@docx-editor.dev/react": "workspace:*",
+    "@zqmi/docx-editor-react": "workspace:*",
     "ai": "^7.0.48",
     "fflate": "^0.8.2",
     "next": "^16.2.7",

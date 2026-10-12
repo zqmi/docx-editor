@@ -18,8 +18,8 @@ import { NOTHING_TO_COPY_FORMATTING, NOTHING_TO_PAINT } from './surface-format-p
 import { isDocAnchor, isDocAnchorRange, resolveAnchorSelection } from './anchor-resolution.ts';
 import { resolveDocTargetSelection } from './doc-target-resolution.ts';
 import { storyScopeOfNodeId } from './surface-scope.ts';
-import type { StoryScope } from '@docx-editor.dev/core/store';
-import { paragraphFragmentsOfBlocks } from '@docx-editor.dev/core/layout';
+import type { StoryScope } from '@zqmi/docx-editor-core/store';
+import { paragraphFragmentsOfBlocks } from '@zqmi/docx-editor-core/layout';
 import {
   execEditHeaderFooter,
   execInsertPageField,

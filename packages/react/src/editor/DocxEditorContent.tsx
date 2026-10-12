@@ -11,7 +11,7 @@ import { DialogMount } from './dialog-host';
 // Paste and drop of supported raster formats route through the shared image-insert path.
 
 import { useCallback, useLayoutEffect, useRef } from 'react';
-import { clipboardDropLandsText, clipboardPasteLandsContent } from '@docx-editor.dev/core/editor';
+import { clipboardDropLandsText, clipboardPasteLandsContent } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { useImageInsertOptional } from './images/ImageInsert';
 import { ImageSelectionOverlay } from './images/ImageSelectionOverlay.tsx';

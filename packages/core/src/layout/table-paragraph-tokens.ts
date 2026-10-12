@@ -8,7 +8,7 @@
 import { listLayoutToken } from './list-marker-reuse.ts';
 import { blockHasNumberedParagraphs, type ResolvedListItem } from './list-resolve.ts';
 import type { StyleCascadeTable } from './style-cascade.ts';
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { framedTokenJoin } from './framed-token.ts';
 
 /**

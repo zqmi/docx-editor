@@ -18,7 +18,7 @@ import {
   findTableInteractionAt,
   tableInteractionIndex,
 } from '../../layout/semantic-table-interaction.ts';
-import { paragraphTextFromLayout } from '@docx-editor.dev/core/layout';
+import { paragraphTextFromLayout } from '@zqmi/docx-editor-core/layout';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import type { OoxmlNode } from '../../store/package/ooxml-tree.ts';
 

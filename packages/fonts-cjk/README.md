@@ -17,7 +17,7 @@ This package supplies Noto Sans CJK JP for Chinese, Japanese, and Korean text. T
 Use Node.js `^20.16.0 || >=22.3.0`. Install the package with the PDF converter and its required engine peer:
 
 ```bash
-npm install @docx-editor.dev/docx-to-pdf @docx-editor.dev/core @docx-editor.dev/fonts-cjk
+npm install @docx-editor.dev/docx-to-pdf @zqmi/docx-editor-core @docx-editor.dev/fonts-cjk
 ```
 
 The converter declares `@docx-editor.dev/fonts-cjk` as an optional peer dependency. Use versions that satisfy the converter's peer dependency ranges. PDF export finds the package without configuration and reads its font from disk. It makes no network request for the font.

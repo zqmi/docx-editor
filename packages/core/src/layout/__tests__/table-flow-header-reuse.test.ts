@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import type { OoxmlElement, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { readOoxmlPackage } from '../../store/package/ooxml-package.ts';
 import { resolveNotesPart } from '../../store/package/note-references.ts';
 import {

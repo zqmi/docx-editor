@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { keepsSubtreeMemo } from '../../store/package/subtree-memo-policy.ts';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
 import { storyCarriesCommentAnchor } from '../story-text-reads.ts';

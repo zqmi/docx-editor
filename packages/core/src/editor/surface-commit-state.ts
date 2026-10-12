@@ -1,5 +1,5 @@
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
-import type { SemanticSelection } from '@docx-editor.dev/core/layout';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
 
 /**
  * Observe the store's split result without enumerating every paragraph in the story.

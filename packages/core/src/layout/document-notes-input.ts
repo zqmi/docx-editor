@@ -6,7 +6,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   authoredDocumentEndnoteProperties,
   authoredDocumentFootnoteProperties,

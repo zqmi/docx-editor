@@ -17,12 +17,12 @@ import {
   type OoxmlPart,
   type TreeDocOp,
   type TextFormFieldRange,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   wordBoundary,
   type SemanticPosition,
   type SemanticSelection,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { planTextFormSave } from './text-form-save-plan.ts';
 
 /** Input provenance belongs to the open document, including during a font remount. */

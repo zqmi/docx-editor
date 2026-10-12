@@ -7,7 +7,7 @@
 // the text changes nothing.
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   buildStyleCascadeTable,
   layoutSemanticDocument,

@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/core/editor` — the editor facade and its chrome vocabulary.
+ * `@zqmi/docx-editor-core/editor` — the editor facade and its chrome vocabulary.
  *
  * `createDocxEditor` implements the full `Editor` contract over a paginated surface, and the
  * chrome registry (`CHROME_GROUPS`, `ChromeSlotId`) is the toolbar taxonomy both adapters derive
@@ -15,7 +15,7 @@
 // Browser composition root: composes the typed OOXML tree session, layout pagination,
 // and the paginated surface into the PM-free Editor contract.
 
-export type { TreeApplyResult, TreeDocxSessionView } from '@docx-editor.dev/core/binding';
+export type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
 export type { TrackedChangeFilterMode, TrackedChangePredicate } from '../contracts/editor.ts';
 export {
   createLayoutShaping,
@@ -358,7 +358,7 @@ export type {
   SemanticPosition,
   SemanticSelection,
   TextMeasurer,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 // Same reason: `PaginatedSurfaceOptions.fieldShading` is typed by it.
 export type { FieldShadingMode } from '../output/semantic-paint.ts';
 // And `DocxEditorConfig.revisionStyles`, `getReviewAuthors` by these.

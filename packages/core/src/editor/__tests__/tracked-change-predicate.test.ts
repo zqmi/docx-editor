@@ -7,7 +7,7 @@ import {
   type OoxmlPart,
   type ReviewCommentItem,
   type ReviewRevisionItem,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { piecesOfParagraph } from '../../layout/field-projection.ts';
 import type { RevisionAuthorFilter } from '../../layout/revision-projection.ts';
 import { readTableStructure } from '../../layout/semantic-table.ts';

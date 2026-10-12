@@ -4,7 +4,7 @@ import {
   type HeadlessDocumentView,
   type HeadlessThemeFonts,
   type OoxmlElement,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { collectThemeSchemeFaces } from '../../store/package/theme-font-scheme.ts';
 import { createDocumentStyleDependencies } from '../document-style-deps.ts';
 

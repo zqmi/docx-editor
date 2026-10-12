@@ -1,4 +1,4 @@
-import { createT, en, type TranslationKey } from '@docx-editor.dev/i18n';
+import { createT, en, type TranslationKey } from '@zqmi/docx-editor-i18n';
 
 const english = createT(en);
 export function textFormTranslate(translate?: (key: TranslationKey) => string) {

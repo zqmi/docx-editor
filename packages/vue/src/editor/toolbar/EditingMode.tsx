@@ -1,11 +1,11 @@
 import { computed, defineComponent, ref, watch } from 'vue';
-import type { DocumentEditingMode, EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { DocumentEditingMode, EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   runToolbarCommand,
   toolbarCommandState,
   type DocxEditorInstance,
-} from '@docx-editor.dev/core/editor';
-import { localizeDisabledReason } from '@docx-editor.dev/i18n';
+} from '@zqmi/docx-editor-core/editor';
+import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
 import { useTranslation } from '../../i18n';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';

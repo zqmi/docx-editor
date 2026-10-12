@@ -13,7 +13,7 @@ import {
   readOoxmlPart,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   detectStoryPageFields,
   MAX_FIELD_INSTRUCTION_CHARS,

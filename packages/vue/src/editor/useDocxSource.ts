@@ -14,14 +14,14 @@ import {
   composeFontOrigins,
   defineFontResolver,
   isFontResolver,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import type {
   FontConfigurationFragment,
   FontOrigin,
   FontResolutionRequest,
   FontResolver,
-} from '@docx-editor.dev/core/editor';
-import type { FontConfiguration } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { FontConfiguration } from '@zqmi/docx-editor-core/contracts/editor';
 import type { MaybeRefOrGetter } from '../maybe-ref-or-getter';
 
 /** @public */

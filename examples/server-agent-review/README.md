@@ -115,7 +115,7 @@ Connect the React editor to the room and enable review controls:
 
 ```tsx
 import { reviewModule } from '@docx-editor.dev/pro';
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { DocxEditorCollaborationRoot, DocxEditorReview } from '@docx-editor.dev/pro/react';
 import { useHocuspocusCollaboration } from '@docx-editor.dev/pro/react/hocuspocus';
 

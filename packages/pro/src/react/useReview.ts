@@ -26,8 +26,8 @@ import type {
   ReviewItemQuery,
   ReviewItemRevealEvent,
   ReviewItemRevealSource,
-} from '@docx-editor.dev/core/contracts/editor';
-import { notificationYieldsToTask, useDocxEditor } from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-core/contracts/editor';
+import { notificationYieldsToTask, useDocxEditor } from '@zqmi/docx-editor-react';
 import { adoptReviewItems, type ReviewAdoptOptions } from '../review/review-item-author.ts';
 
 export type { ReviewAdoptOptions };

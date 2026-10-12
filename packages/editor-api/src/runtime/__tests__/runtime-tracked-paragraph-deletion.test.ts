@@ -12,8 +12,8 @@ import {
   canonicalOoxmlFingerprint,
   readOoxmlPackage,
   semanticDigest,
-} from '@docx-editor.dev/core/store';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/store';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { DocxEditor, type DocxEditorServerRuntime, type RequestContext } from '../../index.ts';
 import { DocxEditor as DocxEditorBrowser } from '../../browser.ts';
 import { reviewModule } from '../../../../pro/src/review/review-module.ts';

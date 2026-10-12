@@ -5,8 +5,8 @@ import type {
   HighlightOptions,
   HighlightRange,
   HighlightResult,
-} from '@docx-editor.dev/core/contracts/editor';
-import { HIGHLIGHT_REFRESH_MS, type HighlightSource } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
+import { HIGHLIGHT_REFRESH_MS, type HighlightSource } from '@zqmi/docx-editor-core/editor';
 import type { MaybeRefOrGetter } from '../maybe-ref-or-getter';
 import { useDocxEditor } from './context';
 

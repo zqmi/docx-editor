@@ -10,7 +10,7 @@ import {
   shallowRef,
   watch,
 } from 'vue';
-import { clipboardDropLandsText, clipboardPasteLandsContent } from '@docx-editor.dev/core/editor';
+import { clipboardDropLandsText, clipboardPasteLandsContent } from '@zqmi/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { useDocxEditor } from './context';
 import { useImageInsertOptional } from './images/ImageInsert';

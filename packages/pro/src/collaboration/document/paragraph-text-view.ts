@@ -11,7 +11,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * replica shows.
  */
 import * as Y from 'yjs';
-import { WML_NAMESPACE_URI, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { elementFrom } from './node-shapes.ts';
 import { rejectDangerousKey, type DocumentLimits } from './limits.ts';
 import type { ParagraphView } from './paragraph-inline-index.ts';

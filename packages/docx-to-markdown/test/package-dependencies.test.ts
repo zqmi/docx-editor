@@ -36,10 +36,10 @@ const requiresSameMinor = (range: string | undefined, version: string): boolean 
 
 describe('engine dependency integrity', () => {
   test('requires one consumer-owned core instance', () => {
-    expect(manifest.peerDependencies?.['@docx-editor.dev/core']).toMatch(/^~\d+\.\d+\.\d+$/);
-    expect(manifest.dependencies?.['@docx-editor.dev/core']).toBeUndefined();
-    expect(manifest.peerDependenciesMeta?.['@docx-editor.dev/core']?.optional).toBeUndefined();
-    expect(manifest.devDependencies?.['@docx-editor.dev/core']).toBe('workspace:*');
+    expect(manifest.peerDependencies?.['@zqmi/docx-editor-core']).toMatch(/^~\d+\.\d+\.\d+$/);
+    expect(manifest.dependencies?.['@zqmi/docx-editor-core']).toBeUndefined();
+    expect(manifest.peerDependenciesMeta?.['@zqmi/docx-editor-core']?.optional).toBeUndefined();
+    expect(manifest.devDependencies?.['@zqmi/docx-editor-core']).toBe('workspace:*');
   });
 
   test('participates in public releases with compatible engine dependencies', () => {
@@ -50,9 +50,9 @@ describe('engine dependency integrity', () => {
     expect(changesetConfig.ignore).not.toContain(packageName);
     expect(changesetConfig.updateInternalDependencies).toBe('patch');
     expect(
-      requiresSameMinor(manifest.peerDependencies?.['@docx-editor.dev/core'], coreManifest.version)
+      requiresSameMinor(manifest.peerDependencies?.['@zqmi/docx-editor-core'], coreManifest.version)
     ).toBe(true);
-    expect(manifest.dependencies?.['@docx-editor.dev/fonts']).toBe(`~${fontsManifest.version}`);
+    expect(manifest.dependencies?.['@zqmi/docx-editor-fonts']).toBe(`~${fontsManifest.version}`);
   });
 
   test('accepts only compatible tilde floors from the current engine minor', () => {
@@ -121,9 +121,9 @@ describe('engine dependency integrity', () => {
       join(repositoryRoot, 'packages', 'fonts', 'src', 'index.ts'),
       'utf8'
     );
-    expect(manifest.dependencies?.['@docx-editor.dev/fonts']).toBe(`~${fontsManifest.version}`);
+    expect(manifest.dependencies?.['@zqmi/docx-editor-fonts']).toBe(`~${fontsManifest.version}`);
     expect(source).toContain('FONT_ASSET_ROOT');
-    expect(source).toContain("from '@docx-editor.dev/fonts'");
+    expect(source).toContain("from '@zqmi/docx-editor-fonts'");
     expect(source).not.toContain('../../fonts/assets/');
     expect(fontsIndex).toContain('export const FONT_ASSET_ROOT');
     expect(fontsIndex).not.toMatch(/docx-to-markdown|docx-to-pdf/);

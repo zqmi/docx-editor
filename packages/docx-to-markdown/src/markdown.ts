@@ -26,8 +26,8 @@ import {
   type ParagraphFragmentRecord,
   type SemanticLayout,
   type StyleSpanRecord,
-} from '@docx-editor.dev/core/layout';
-import type { ExportSemanticLayout } from '@docx-editor.dev/core/export';
+} from '@zqmi/docx-editor-core/layout';
+import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
 import {
   markdownSourceCaptureKey,
   MarkdownInlineWriter,

@@ -17,7 +17,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // else — the queue, the context, the object lifetime, the errors — is neutral and compiles without
 // the DOM lib, which is what `__tests__/runtime-boundaries.test.ts` holds in place.
 
-import { createBrowserAutomationHost, type DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import { createBrowserAutomationHost, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { createRuntime, type DocxEditorRuntime, type RevisionTextView } from './runtime.ts';
 
 /**

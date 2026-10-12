@@ -8,7 +8,7 @@ import { describe, expect, spyOn, test } from 'bun:test';
 import type {
   CanonicalPrimitiveEffect,
   CanonicalPrimitiveJournal,
-} from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/collaboration/replication';
 import { DEFAULT_DOCUMENT_LIMITS, type DocumentLimits } from '../document/limits.ts';
 import { JournalProjection, projectEffect } from '../document/journal-projection.ts';
 import { projectJournalToShared } from '../document/projected-journal.ts';

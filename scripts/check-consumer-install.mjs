@@ -215,17 +215,17 @@ try {
   writeFileSync(
     path.join(reactAppDir, 'src/main.tsx'),
     `import { createRoot } from 'react-dom/client';
-import { DocxEditor } from '@docx-editor.dev/react';
-import * as Engine from '@docx-editor.dev/core';
-import * as EngineEditor from '@docx-editor.dev/core/editor';
-import * as Fonts from '@docx-editor.dev/fonts';
+import { DocxEditor } from '@zqmi/docx-editor-react';
+import * as Engine from '@zqmi/docx-editor-core';
+import * as EngineEditor from '@zqmi/docx-editor-core/editor';
+import * as Fonts from '@zqmi/docx-editor-fonts';
 import * as EditorApi from '@docx-editor.dev/editor-api';
 import * as Collaboration from '@docx-editor.dev/pro/collaboration';
 import * as CollaborationWebrtc from '@docx-editor.dev/pro/collaboration/webrtc';
 import * as CollaborationHocuspocus from '@docx-editor.dev/pro/collaboration/hocuspocus';
 import * as Pro from '@docx-editor.dev/pro';
 import * as ProReact from '@docx-editor.dev/pro/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 const exportedSurfaceChecks = [
   Engine,
@@ -379,13 +379,13 @@ export default defineConfig({ plugins: [react()] });
     path.join(vueAppDir, 'src/main.ts'),
     `import { createApp, h } from 'vue';
 import { DocxEditor } from '@docx-editor.dev/vue';
-import * as Engine from '@docx-editor.dev/core';
-import * as EngineEditor from '@docx-editor.dev/core/editor';
-import * as Fonts from '@docx-editor.dev/fonts';
+import * as Engine from '@zqmi/docx-editor-core';
+import * as EngineEditor from '@zqmi/docx-editor-core/editor';
+import * as Fonts from '@zqmi/docx-editor-fonts';
 import * as EditorApi from '@docx-editor.dev/editor-api';
 import * as Pro from '@docx-editor.dev/pro';
 import * as ProVue from '@docx-editor.dev/pro/vue';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 const exportedSurfaceChecks = [Engine, EngineEditor, Fonts, EditorApi, Pro, ProVue];
 console.assert(exportedSurfaceChecks.every((entry) => typeof entry === 'object' && entry !== null));

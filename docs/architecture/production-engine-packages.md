@@ -1,6 +1,6 @@
 # Engine lane topology
 
-The engine is ONE package, `@docx-editor.dev/core`, divided into guarded internal lanes under `packages/core/src/`. This record covers the lane boundaries, their responsibilities, and the rules CI enforces.
+The engine is ONE package, `@zqmi/docx-editor-core`, divided into guarded internal lanes under `packages/core/src/`. This record covers the lane boundaries, their responsibilities, and the rules CI enforces.
 
 - Machine-readable source of truth: `packages/core/src/__tests__/core-lane-graph.ts`
 - Enforcement (all under `bun test`):

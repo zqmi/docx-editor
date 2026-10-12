@@ -84,7 +84,7 @@ function canonicalFixturePlugin(): Plugin {
 // instead of whatever is actually wrong in it.
 export default defineConfig(async (): Promise<UserConfig> => {
   const stars = await fetchGitHubStars();
-  // `@docx-editor.dev/core` lives in a separate repo and is consumed from npm,
+  // `@zqmi/docx-editor-core` lives in a separate repo and is consumed from npm,
   // so it always resolves via node_modules — only workspace-local packages get
   // source aliases.
   // When USE_PUBLISHED_PACKAGES=1 we skip the workspace source aliases so vite
@@ -147,11 +147,11 @@ export default defineConfig(async (): Promise<UserConfig> => {
             // Resolve package imports to source for live development
             // Order matters: more-specific prefixes before less-specific ones
             {
-              find: '@docx-editor.dev/react',
+              find: '@zqmi/docx-editor-react',
               replacement: path.join(monorepoRoot, 'packages/react/src/index.ts'),
             },
             {
-              find: '@docx-editor.dev/core/editor',
+              find: '@zqmi/docx-editor-core/editor',
               replacement: path.join(monorepoRoot, 'packages/core/src/editor/index.ts'),
             },
             // Nested, so the single-segment lane capture below cannot reach it. Without this
@@ -159,13 +159,13 @@ export default defineConfig(async (): Promise<UserConfig> => {
             // `dist` while everything around it resolves to source — two copies of the engine,
             // and a node_modules dep vite re-optimizes mid-run.
             {
-              find: '@docx-editor.dev/core/collaboration/replication',
+              find: '@zqmi/docx-editor-core/collaboration/replication',
               replacement: path.join(
                 monorepoRoot,
                 'packages/core/src/collaboration/replication.ts'
               ),
             },
-            // The remaining core lane subpaths, one rule. `@docx-editor.dev/react`
+            // The remaining core lane subpaths, one rule. `@zqmi/docx-editor-react`
             // above resolves to package SOURCE, so the whole `packages/react/src` graph is
             // compiled here and its own bare specifiers resolve through these aliases too.
             // `editor` and the `contracts/*` single-file entries are matched above / by the
@@ -199,7 +199,7 @@ export default defineConfig(async (): Promise<UserConfig> => {
               replacement: path.join(monorepoRoot, 'packages/pro/src/index.ts'),
             },
             {
-              find: '@docx-editor.dev/fonts/google',
+              find: '@zqmi/docx-editor-fonts/google',
               replacement: path.join(monorepoRoot, 'packages/fonts/src/google-fonts.ts'),
             },
             // Every package points its export map at `dist/`, so a specifier missing from
@@ -208,11 +208,11 @@ export default defineConfig(async (): Promise<UserConfig> => {
             // never added to it: the demo built anyway on any machine that had run
             // `build:packages`, and only failed on the CI job that had not.
             {
-              find: '@docx-editor.dev/fonts',
+              find: '@zqmi/docx-editor-fonts',
               replacement: path.join(monorepoRoot, 'packages/fonts/src/index.ts'),
             },
             {
-              find: '@docx-editor.dev/i18n',
+              find: '@zqmi/docx-editor-i18n',
               replacement: path.join(monorepoRoot, 'packages/i18n/src/index.ts'),
             },
           ],

@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { openDocumentForExport } from '@docx-editor.dev/core/export';
+import { openDocumentForExport } from '@zqmi/docx-editor-core/export';
 import {
   exportMarkdownFrom,
   type MarkdownExportOptions,

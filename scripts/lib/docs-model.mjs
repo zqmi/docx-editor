@@ -3,7 +3,7 @@
 // can render directly. The clean shape:
 //
 //   {
-//     package: "@docx-editor.dev/react",
+//     package: "@zqmi/docx-editor-react",
 //     subpath: "./hooks",
 //     version: "1.0.0",
 //     exports: [

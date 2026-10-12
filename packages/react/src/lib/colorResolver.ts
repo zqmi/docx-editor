@@ -5,13 +5,13 @@
  * and table command planning cannot disagree.
  */
 
-import type { ColorValue, Theme, ThemeColorScheme } from '@docx-editor.dev/core/contracts/editor';
+import type { ColorValue, Theme, ThemeColorScheme } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   applyThemeShade,
   applyThemeTint,
   resolveThemeColorHex,
   validateThemeModifier,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 /** Office default theme color scheme, used when a document supplies none. */
 const DEFAULT_THEME_COLORS: Readonly<Record<string, string>> = {

@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 // The review hooks' `adopt`, shared so the React and Vue twins cannot drift.
 
-import type { Editor, ReviewItemPlacement } from '@docx-editor.dev/core/contracts/editor';
+import type { Editor, ReviewItemPlacement } from '@zqmi/docx-editor-core/contracts/editor';
 
 /**
  * Who and when an adopted change records.

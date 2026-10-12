@@ -21,4 +21,4 @@ export {
   alignmentAfterDirectionChange,
   withTabStop,
   trapTabWithin,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';

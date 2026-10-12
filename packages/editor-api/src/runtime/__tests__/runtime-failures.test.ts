@@ -21,7 +21,7 @@ import type {
   AutomationBatchResponse,
   AutomationErrorCode,
   AutomationOperationResult,
-} from '@docx-editor.dev/core/automation';
+} from '@zqmi/docx-editor-core/automation';
 import { createRuntime } from '../runtime.ts';
 import { messageFor, type DocxEditorErrorCode } from '../errors.ts';
 import { openHost, spyHost, stubHost } from './support/hosts.ts';

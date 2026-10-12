@@ -2,11 +2,11 @@
 
 ### Requirement: One physical production core package
 
-All production `packages/engine-*` source SHALL move into guarded internal lanes under `packages/core/src`, and the repository SHALL publish one engine package named `@docx-editor.dev/core`. React, Vue, Nuxt, the `@docx-editor.dev/editor-api` product package, and i18n SHALL remain separate adapter or product packages.
+All production `packages/engine-*` source SHALL move into guarded internal lanes under `packages/core/src`, and the repository SHALL publish one engine package named `@zqmi/docx-editor-core`. React, Vue, Nuxt, the `@docx-editor.dev/editor-api` product package, and i18n SHALL remain separate adapter or product packages.
 
 #### Scenario: Consumer installs the browser editor
 
-- **WHEN** a React or Vue adapter imports `@docx-editor.dev/core/editor`
+- **WHEN** a React or Vue adapter imports `@zqmi/docx-editor-core/editor`
 - **THEN** it uses the single published core package and no `@docx-editor.dev/engine-*` package is required
 
 ### Requirement: Internal lane boundaries survive physical consolidation
@@ -25,7 +25,7 @@ The core source tree SHALL retain separately guarded `contracts`, `store`, `bind
 
 ### Requirement: Intentional subpath exports
 
-`@docx-editor.dev/core` SHALL expose environment-specific public entry points through explicit conditional subpath exports rather than one unrestricted barrel. Unexported internal lanes SHALL remain inaccessible as supported public API.
+`@zqmi/docx-editor-core` SHALL expose environment-specific public entry points through explicit conditional subpath exports rather than one unrestricted barrel. Unexported internal lanes SHALL remain inaccessible as supported public API.
 
 #### Scenario: Public API is extracted
 
@@ -43,7 +43,7 @@ Each `packages/engine-*` workspace package SHALL be removed only after its sourc
 
 ### Requirement: Adapter packages remain thin and separate
 
-React and Vue SHALL remain separately published lifecycle adapters over the same PM-free `@docx-editor.dev/core/editor` boundary. Physical core consolidation SHALL NOT move framework component code or adapter-only styling into core.
+React and Vue SHALL remain separately published lifecycle adapters over the same PM-free `@zqmi/docx-editor-core/editor` boundary. Physical core consolidation SHALL NOT move framework component code or adapter-only styling into core.
 
 #### Scenario: Paired adapters consume core
 

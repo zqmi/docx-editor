@@ -2,7 +2,7 @@ import {
   createDocumentRefresh,
   type DocxEditorInstance,
   type RefreshSubmission,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { exampleText as t } from './example-text';
 import { refreshFixture, sampleProcessor } from './refresh-demo-fixture';
 

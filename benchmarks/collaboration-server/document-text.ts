@@ -5,7 +5,7 @@ import {
   readOoxmlPackage,
   TreePackageStore,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 export function storeFrom(bytes: Uint8Array): TreePackageStore {
   const loaded = readOoxmlPackage(bytes);

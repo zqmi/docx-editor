@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import { createDocxEditor } from '../docx-editor.ts';
-import { createT, deepMerge, en, type LocaleStrings } from '@docx-editor.dev/i18n';
+import { createT, deepMerge, en, type LocaleStrings } from '@zqmi/docx-editor-i18n';
 import { formFieldDocx, firstFormCatalogue, nextFormCatalogue } from './form-field-docx.fixture';
 import { textFormTranslate } from '../text-form-field-translations';
 

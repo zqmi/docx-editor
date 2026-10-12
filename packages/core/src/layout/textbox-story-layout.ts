@@ -17,7 +17,7 @@
 // nesting depth, fragment count, and the extent clip all fail closed with reasons.
 
 import { withFieldResultsProducer } from './field-results-producer.ts';
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import type { DrawingProjection } from '../store/package/drawing-projection.ts';
 import { emuToPoints } from './drawing-layout.ts';
 import { drawingResourceLayoutToken } from './inline-drawing-source.ts';
@@ -118,7 +118,7 @@ export interface TextboxStoryLayoutOptions {
   readonly displayMode?: RevisionDisplayMode;
   readonly revisionAuthorFilter?: RevisionAuthorFilter;
   /** Document properties, for a document-property field inside the text-box story. */
-  readonly documentProperties?: import('@docx-editor.dev/core/store').DocumentProperties;
+  readonly documentProperties?: import('@zqmi/docx-editor-core/store').DocumentProperties;
   /** Sanitized hyperlink seams inherited from the story containing this text box. */
   readonly projectLink?: import('./field-pieces.ts').HyperlinkProjector;
   readonly projectFieldLink?: import('./field-pieces.ts').FieldLinkProjector;
@@ -146,7 +146,7 @@ export interface TextboxStoryLayoutOptions {
   readonly inlineDrawingLayout?: import('./drawing-layout.ts').InlineDrawingLayoutContext;
   /** Per-paragraph projection + resource token for the break cache key. */
   readonly drawingTokenForParagraph?: (
-    paragraph: import('@docx-editor.dev/core/store').OoxmlNode
+    paragraph: import('@zqmi/docx-editor-core/store').OoxmlNode
   ) => string;
   /** Host-part semantic projection token for each paragraph in this text-box story. */
   readonly projectionTokenForParagraph?: (paragraph: OoxmlNode) => string;

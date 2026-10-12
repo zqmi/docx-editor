@@ -16,7 +16,7 @@ import { HEADER_R_ID, PROBE } from './story-parity-fixture.ts';
 
 const W_NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const W14_NS = 'http://schemas.microsoft.com/office/word/2010/wordml';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { buildParagraphAnchorIndex } from '../../binding/paragraph-anchors.ts';
 import { resolveDocAnchor } from '../anchor-resolution.ts';
 import { caretIn, openStory, partOfNodeId, PART_OF_STORY } from './story-parity-harness.ts';

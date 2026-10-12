@@ -11,7 +11,7 @@ import {
   type OoxmlNode,
   type OoxmlPackage,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { withChildren } from './node-shapes.ts';
 import { idOf, type LogicalId } from './identity.ts';
 import { awaitingUpdates } from './yjs-items.ts';

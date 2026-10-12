@@ -2,7 +2,7 @@ import { carryBlockMetadataIdentity } from './block-metadata-identity.ts';
 import { ordinaryTableParagraph } from './table-ordinary-paragraph.ts';
 import { firstRowContentDeps, lastRowContentDeps } from './table-fragment-content-insets.ts';
 import { bodyLineId } from './body-line-id.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { drawingInputsUnchangedByTextEdit } from './drawing-text-only-change.ts';
 import { readTableStructure } from './semantic-table.ts';
 import { autofitContextOf } from './table-autofit-widths.ts';

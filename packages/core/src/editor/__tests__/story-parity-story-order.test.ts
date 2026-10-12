@@ -14,7 +14,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import { everyStoryOrder, selectionRects, spansInSelection } from '@docx-editor.dev/core/layout';
+import { everyStoryOrder, selectionRects, spansInSelection } from '@zqmi/docx-editor-core/layout';
 import { STORY_KINDS } from './story-parity-contract.ts';
 import { PROBE } from './story-parity-fixture.ts';
 import { openStory, partOfNodeId, scopeOf } from './story-parity-harness.ts';

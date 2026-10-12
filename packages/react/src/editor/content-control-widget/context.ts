@@ -1,4 +1,4 @@
-import { DEFAULT_IMAGE_RESOURCE_LIMITS } from '@docx-editor.dev/core/store';
+import { DEFAULT_IMAGE_RESOURCE_LIMITS } from '@zqmi/docx-editor-core/store';
 import { useId, createContext, useCallback, useContext, useMemo, useState } from 'react';
 import {
   CONTENT_CONTROL_PICTURE_ACCEPT,
@@ -12,7 +12,7 @@ import {
   shiftMonth,
   type CalendarMonth,
   type ContentControlWidgetSession,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useEditorState } from '../useEditorState';
 
 /** One selectable entry of a dropdown or combo-box control. @public */

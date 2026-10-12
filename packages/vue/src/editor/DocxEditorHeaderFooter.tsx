@@ -1,5 +1,5 @@
 import { computed, defineComponent, h, ref, watch, type CSSProperties, type PropType } from 'vue';
-import type { EditorCommand } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation } from '../i18n';
 import type { TranslationKey } from '../i18n';
 import { Z_INDEX } from '../styles/zIndex';

@@ -100,7 +100,7 @@ For complete wrappers, see [React composition](/docs/2.x/react/composition#primi
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, useChromeTranslate } from '@docx-editor.dev/react';
+import { DocxEditor, useChromeTranslate } from '@zqmi/docx-editor-react';
 
 function MyChrome({ bytes }: { bytes: Uint8Array }) {
   const t = useChromeTranslate();
@@ -333,7 +333,7 @@ Use `useEditorCommand()` to connect a custom button to command availability, act
 <Framework value="react">
 
 ```tsx
-import { useEditorCommand } from '@docx-editor.dev/react';
+import { useEditorCommand } from '@zqmi/docx-editor-react';
 
 function BoldButton() {
   const bold = useEditorCommand('text.bold');

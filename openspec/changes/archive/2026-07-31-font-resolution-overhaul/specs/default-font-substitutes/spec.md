@@ -1,10 +1,10 @@
-# Default Font Substitutes (@docx-editor.dev/fonts)
+# Default Font Substitutes (@zqmi/docx-editor-fonts)
 
 ## ADDED Requirements
 
 ### Requirement: Package provides metric-compatible substitutes as a configuration fragment
 
-The `@docx-editor.dev/fonts` package SHALL export `loadDefaultFonts(options?)`
+The `@zqmi/docx-editor-fonts` package SHALL export `loadDefaultFonts(options?)`
 returning a Promise of a configuration fragment `{ sources, substitutions }` covering
 metric-compatible OFL substitutes for Word default families: Carlito (for Calibri),
 Caladea (for Cambria), Liberation Serif (for Times New Roman), Liberation Sans (for
@@ -41,7 +41,7 @@ for all bundled fonts.
 
 ### Requirement: Core takes no dependency on the fonts package
 
-`@docx-editor.dev/core` SHALL NOT import from `@docx-editor.dev/fonts`. The fragment
+`@zqmi/docx-editor-core` SHALL NOT import from `@zqmi/docx-editor-fonts`. The fragment
 SHALL compose through the public configuration surface (`composeFontConfiguration`)
 like any other source of `FontSource`s, with explicit app-supplied sources taking
 precedence over substitute sources.

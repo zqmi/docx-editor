@@ -1,6 +1,6 @@
 import type { Ref } from 'vue';
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
-import { LOADING_SNAPSHOT } from '@docx-editor.dev/core/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import { LOADING_SNAPSHOT } from '@zqmi/docx-editor-core/editor';
 import type { DocxEditorRef } from '../../types';
 
 /** @internal */

@@ -11,7 +11,7 @@ import { createApp, defineComponent, h, shallowRef } from 'vue';
 import type {
   CollaborationParticipant,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import {
   useCollaborationParticipants,
   type UseCollaborationParticipantsReturn,

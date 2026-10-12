@@ -8,12 +8,12 @@
 // Presence: each participant publishes its caret. Once every replica holds the same document,
 // every peer must show that caret in the same paragraph, at the same offset.
 
-import type { SemanticSelection } from '@docx-editor.dev/core/layout';
+import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
 import {
   paragraphTextOf,
   type OoxmlPart,
   type TreePackageStore,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   carriedSelectionOf,
   createRemoteCaret,

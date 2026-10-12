@@ -3,7 +3,7 @@
 // Keyed by the exact bytes object, and taken once: a session is live editing state, so two
 // mounts must never share one. An entry whose mount never comes dies with its bytes.
 
-import { openTreeSession, type OpenTreeSessionResult } from '@docx-editor.dev/core/binding';
+import { openTreeSession, type OpenTreeSessionResult } from '@zqmi/docx-editor-core/binding';
 import { openTreeSessionFromPackage } from '../binding/tree-session.ts';
 import { readOoxmlPackageSteps } from '../store/package/ooxml-package.ts';
 import type { ReviewModuleContribution } from '../contracts/modules.ts';

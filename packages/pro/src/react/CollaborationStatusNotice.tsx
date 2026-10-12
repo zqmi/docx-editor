@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
-import { useTranslation } from '@docx-editor.dev/react';
+import { useTranslation } from '@zqmi/docx-editor-react';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import {
   collaborationNoticeOf,

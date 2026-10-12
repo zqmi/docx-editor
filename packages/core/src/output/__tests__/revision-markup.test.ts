@@ -2,7 +2,7 @@ import { caretStops } from '../../layout/semantic-interaction.ts';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../../layout/semantic-layout.ts';
 import { linesOf } from '../../layout/semantic-records.ts';
 import { paintSemanticLayout } from '../semantic-paint.ts';

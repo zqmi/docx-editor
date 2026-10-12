@@ -3,8 +3,8 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import type { ContentControlWidgetSession } from './popup-sessions.ts';
 
 interface Host {

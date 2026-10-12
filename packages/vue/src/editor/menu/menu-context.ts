@@ -1,4 +1,4 @@
-import type { ChromeExportFormat } from '@docx-editor.dev/core/editor';
+import type { ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
 import {
   computed,
   defineComponent,
@@ -10,7 +10,7 @@ import {
   type MaybeRef,
 } from 'vue';
 import { useTranslation, type TranslationKey } from '../../i18n';
-import type { ChromeMenuId } from '@docx-editor.dev/core/editor';
+import type { ChromeMenuId } from '@zqmi/docx-editor-core/editor';
 import type { ToolbarTranslate } from '../toolbar/toolbar-context';
 
 /** @public */

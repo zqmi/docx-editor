@@ -4,7 +4,7 @@ The 1.0.0-release branch is the long-living integration branch for a unified pac
 
 Community PR #245 (`Cruiser13`) is the first real Vue 3 implementation. It builds on the earlier #88 harness and adds the full UI surface: toolbar, dialogs, sidebar, image handling, error boundaries — 49 files spanning ~9.2k lines. The author describes it as bug-free; reality after a hardening pass will probably be different. This design covers how to land it well.
 
-The strategic constraint: we keep three packages with hard boundaries — `@docx-editor.dev/core` (no UI framework), `@docx-editor.dev/react` (React-only UI), `@docx-editor.dev/vue` (Vue-only UI). Cross-imports between adapters or from core into a framework break the whole thesis of "core is framework-agnostic."
+The strategic constraint: we keep three packages with hard boundaries — `@zqmi/docx-editor-core` (no UI framework), `@zqmi/docx-editor-react` (React-only UI), `@docx-editor.dev/vue` (Vue-only UI). Cross-imports between adapters or from core into a framework break the whole thesis of "core is framework-agnostic."
 
 The React adapter is the reference. It works, ships, has Playwright coverage, and has been iterated on for months. Vue parity is defined as "same `Document` in → same on-page rendering, same DOCX out, same UX semantics."
 
@@ -24,7 +24,7 @@ The React adapter is the reference. It works, ships, has Playwright coverage, an
 - SSR or Nuxt-specific helpers. The editor is client-side only and Vue's hydration story would balloon scope.
 - Vue 2 compatibility. Composition API is required.
 - Vue-specific extensions to the plugin API or agent API beyond what's needed to mount the editor.
-- Re-architecting `@docx-editor.dev/core` for Vue. The core is already framework-agnostic; if Vue can't consume it cleanly, that's a Vue-side adapter problem.
+- Re-architecting `@zqmi/docx-editor-core` for Vue. The core is already framework-agnostic; if Vue can't consume it cleanly, that's a Vue-side adapter problem.
 - A unified test runner that's Vue-aware. Playwright drives the browser; framework specifics are invisible at that layer.
 - Re-architecting `@docx-editor.dev/agents`. The bridge, server, mcp, ai-sdk subpaths stay framework-agnostic; only the UI subpath gets a Vue twin alongside the existing React one.
 
@@ -59,7 +59,7 @@ The React adapter is the reference. It works, ships, has Playwright coverage, an
 - `<DocxEditor>` SFC component with `v-model:document`, props for config, ref-exposed imperative API mirroring `DocxEditorRef` from React.
 - `useDocxEditor(options)` composable that returns the same imperative API plus reactive refs for selection/state. For consumers building custom UI on top of core.
 
-**Why:** Vue idiom is "components for layouts, composables for logic." Forcing component-only would push power users into manual DOM mounting; forcing composable-only would make the simple "drop in an editor" path verbose. Both paths share one underlying `EditorCore` from `@docx-editor.dev/core`, no duplication.
+**Why:** Vue idiom is "components for layouts, composables for logic." Forcing component-only would push power users into manual DOM mounting; forcing composable-only would make the simple "drop in an editor" path verbose. Both paths share one underlying `EditorCore` from `@zqmi/docx-editor-core`, no duplication.
 
 **Alternative considered:** component-only (matches React's `<DocxEditor>` 1:1). Rejected — Vue users expect composables, and the React adapter already exposes `useDocxEditor`-shaped hooks elsewhere; symmetry across adapters is the point.
 
@@ -91,7 +91,7 @@ The React adapter is the reference. It works, ships, has Playwright coverage, an
 
 **Choice:** before adding the Vue agent UI subpath, move `<AgentPanel>`, `<AgentChat>`, `<AgentChatLog>`, `<AgentComposer>`, `<AgentSuggestionChip>`, `<AgentTimeline>` out of `packages/react/src/components/` and into `packages/agent-use/src/react/`. Do not re-export them from `packages/react`; the React adapter should expose React editor surfaces only. Then the `@docx-editor.dev/agents/react` subpath actually owns its claimed UI surface, and the Vue subpath can mirror a real precedent rather than a fictional one.
 
-**Why:** today's `@docx-editor.dev/agents/react` exports only hooks (`useAgentChat`, `useDocxAgentTools`) and types. The React agent UI components live in `@docx-editor.dev/react`'s component tree alongside the editor itself. That's a category error — agent UI is part of the agent SDK, not the editor adapter. Without this migration, the Vue plan claims to "mirror the existing `/react` subpath" but there's no UI to mirror, and the framework-isolation lint can't apply cleanly to the agent UI because half of it is in the editor package.
+**Why:** today's `@docx-editor.dev/agents/react` exports only hooks (`useAgentChat`, `useDocxAgentTools`) and types. The React agent UI components live in `@zqmi/docx-editor-react`'s component tree alongside the editor itself. That's a category error — agent UI is part of the agent SDK, not the editor adapter. Without this migration, the Vue plan claims to "mirror the existing `/react` subpath" but there's no UI to mirror, and the framework-isolation lint can't apply cleanly to the agent UI because half of it is in the editor package.
 
 **Alternative considered:** ship Vue agent UI in `@docx-editor.dev/vue` to match the current React layout. Rejected — perpetuates the category error, doubles the framework-isolation surface area, and forces every editor consumer to pull agent UI even when not using agents.
 
@@ -155,7 +155,7 @@ The React adapter is the reference. It works, ships, has Playwright coverage, an
 
 ### Decision 14: All five packages stay in the fixed group through 1.x
 
-**Choice:** keep all five packages (`@docx-editor.dev/react`, `-vue`, `-core`, `-agents`, `-js-editor` shim) in the `.changeset/config.json` `fixed` group through the 1.x line. No public roadmap commitment to a future split.
+**Choice:** keep all five packages (`@zqmi/docx-editor-react`, `-vue`, `-core`, `-agents`, `-js-editor` shim) in the `.changeset/config.json` `fixed` group through the 1.x line. No public roadmap commitment to a future split.
 
 **Why:** the fixed group earns its keep on the 1.0 train — coordinated rename, parity story across editor adapters matters, packages ship together. Through 1.x the assumption is the same: agent UI churn aligned with editor churn keeps the surface coherent for consumers. If/when an internal scheduling discussion concludes the agents package should float on its own cadence, that's an implementation decision made then, not a public roadmap commitment now.
 
@@ -235,7 +235,7 @@ Each directory has its own runner script: `bun run test:e2e:react`, `:vue`, `:pa
 | ----------------------------- | ------------------------------------------------ | ----- | ---------------------------------------------------------------------------------------------------------------------- |
 | **Type-level surface parity** | `bun run typecheck`                              | <5s   | `DocxEditorRef` / `EditorRefLike` interface drift between adapters                                                     |
 | **Export parity script**      | `check:parity` + CI                              | <2s   | Public component/composable list drift between `packages/{react,vue}/package.json` exports                             |
-| **i18n validation**           | `i18n:validate` + prepublish                     | <1s   | Translation key drift in the shared `@docx-editor.dev/i18n` locale files                                               |
+| **i18n validation**           | `i18n:validate` + prepublish                     | <1s   | Translation key drift in the shared `@zqmi/docx-editor-i18n` locale files                                               |
 | **Snapshot parity**           | unit test, pre-commit                            | <10s  | `Document` model round-trip drift (serialise → deserialise → assert deep-equal across adapters)                        |
 | **Parity smoke E2E**          | on-demand (`bun run test:e2e:parity:smoke`) + CI | <30s  | Critical-path divergence: mount fixture, type 5 chars, toggle bold, save, assert byte-equal                            |
 | **Full parity E2E**           | CI on parity-affecting PRs                       | ~5min | Per-feature behavioural parity (the existing `tests/parity/` suite)                                                    |

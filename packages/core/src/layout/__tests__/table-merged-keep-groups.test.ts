@@ -1,4 +1,4 @@
-import { serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createLayoutSession } from '../layout-session.ts';
 import { describe, expect, test } from 'bun:test';
 import { keptRowGroup, type KeptRowSource } from '../table-row-keeps.ts';

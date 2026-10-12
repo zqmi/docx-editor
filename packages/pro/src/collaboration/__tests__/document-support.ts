@@ -15,8 +15,8 @@ import {
   type OoxmlPart,
   type OoxmlTextNode,
   type SemanticDigest,
-} from '@docx-editor.dev/core/store';
-import type { CanonicalPrimitiveJournal } from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/store';
+import type { CanonicalPrimitiveJournal } from '@zqmi/docx-editor-core/collaboration/replication';
 import {
   DocumentRegistry,
   LogicalIdAllocator,

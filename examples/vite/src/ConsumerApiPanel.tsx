@@ -9,8 +9,8 @@ import {
   useEditorState,
   useEditorValueCommand,
   useTranslation,
-} from '@docx-editor.dev/react';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-react';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { keepCaret } from './demoButtons';
 
 const selectSnapshot = (snapshot: EditorSnapshot) => snapshot;

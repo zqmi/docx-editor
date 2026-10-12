@@ -7,7 +7,7 @@
 // - outside that box, a percentage excludes the mean outer side rule (`ruleAdjustedTableWidth`);
 // - an AutoFit table without a width fits the room its leading indent leaves, and a nested
 //   one in the older modes also the room of its outer cell margins.
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { hasCompatibilityRule } from './compatibility/compatibility-rules.ts';
 import {
   legacyNestedAutoRoomPt,

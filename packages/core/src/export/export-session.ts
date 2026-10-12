@@ -16,7 +16,7 @@ import {
   type HeadlessDocumentView,
   type ImageDecodePort,
   type ImageResourceState,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   createDocumentFurnitureSource,
   type CreateDocumentFurnitureSourceOptions,

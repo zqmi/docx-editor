@@ -7,15 +7,15 @@ import type { ReactNode } from 'react';
 // only when table admission or editing mode changes.
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import type { DocumentEditingMode, EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocumentEditingMode, EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import {
   DEFAULT_TABLE_CHROME_DRAFT,
   runTableChromeCommand,
   tableChromeToolbarState,
   type TableChromeDraft,
   type TableChromeSlotId,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorEvent } from '../useEditorEvent';
 import { useEditorState } from '../useEditorState';

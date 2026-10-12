@@ -5,7 +5,7 @@
 // state, mapped type, and structural level. They hold no layout state and close
 // over nothing in `semantic-layout.ts`; they operate only on their arguments.
 
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import {
   MAX_CONTENT_CONTROL_NESTING as MAX_SDT_NESTING,
   contentControlContentChildren,

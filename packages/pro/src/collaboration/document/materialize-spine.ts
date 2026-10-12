@@ -17,7 +17,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * child that some other parent already placed, a child no longer in the cache as shown, or a
  * dirty child that is deleted or missing. The caller then runs the full rebuild.
  */
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { idOf, type LogicalId } from './identity.ts';
 
 export interface SpineContext {

@@ -1,6 +1,6 @@
 import { defineComponent, h, type PropType, type VNode } from 'vue';
 import type { DocxEditorChildren } from '../../docx-editor-children';
-import { type ChromeSlotId } from '@docx-editor.dev/core/editor';
+import { type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useEditorCommand } from '../useEditorCommand';
 import { useContentControl, CONTENT_CONTROL_SLOTS } from '../useContentControl';
 import { useToolbarLabel } from './toolbar-context';

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { alignSpans, breakParagraph } from '../paragraph-flow.ts';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { cjkTypographyFromSettings, resolveCjkTypography } from '../cjk-typography.ts';

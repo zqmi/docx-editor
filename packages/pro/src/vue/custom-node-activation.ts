@@ -6,10 +6,10 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { computed, toValue, type ComputedRef, type MaybeRefOrGetter } from 'vue';
 import { useDocxEditor } from '@docx-editor.dev/vue';
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
-import { customNodePayloadsByControl } from '@docx-editor.dev/core/store';
-import { partOfNodeId } from '@docx-editor.dev/core/editor';
-import type { PaginatedSurface as EditorSurface } from '@docx-editor.dev/core/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import { customNodePayloadsByControl } from '@zqmi/docx-editor-core/store';
+import { partOfNodeId } from '@zqmi/docx-editor-core/editor';
+import type { PaginatedSurface as EditorSurface } from '@zqmi/docx-editor-core/editor';
 import {
   isCustomNodeDefinition,
   type ActivatedCustomNode,

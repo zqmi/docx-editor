@@ -9,7 +9,7 @@
 // Glyph resolution reuses `symbol-run.ts` — the same 0xF000-page normalization, PUA mapping
 // and codepoint validation as `w:sym` — so the two symbol paths cannot drift apart.
 
-import type { OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { resolveRunStyle, type ResolvedRunStyle, type ThemeFonts } from './run-style.ts';
 import { isSymbolEncodedFamily, mapSymbolPuaText } from './symbol-encoding.ts';
 import {

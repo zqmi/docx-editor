@@ -1,7 +1,7 @@
 // Revision visibility walks inline content controls the same way as hyperlinks.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { revisionRemovesParagraph } from '../revision-visibility.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

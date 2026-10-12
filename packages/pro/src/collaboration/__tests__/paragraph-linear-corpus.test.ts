@@ -14,7 +14,7 @@ import {
   readOoxmlPackage,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import * as Y from 'yjs';
 import { linearizeParagraph, materializeParagraph } from '../document/paragraph-linear.ts';
 import { decodeItems, encodeItems, uniqueInlineIds } from '../document/paragraph-text.ts';

@@ -3,7 +3,7 @@
  *
  * Separated from `editor.ts` so the facade file stays under the max-lines gate while
  * furniture/notes APIs remain one cohesive vocabulary. Re-exported from `editor.ts`
- * so consumers keep importing `@docx-editor.dev/core/contracts/editor`.
+ * so consumers keep importing `@zqmi/docx-editor-core/contracts/editor`.
  */
 
 /** Furniture variant selected by section title-page / even-and-odd flags. */

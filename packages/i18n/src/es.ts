@@ -1,14 +1,14 @@
 /**
- * @docx-editor.dev/i18n/es
+ * @zqmi/docx-editor-i18n/es
  *
  * Spanish (`es`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import es from '@docx-editor.dev/i18n/es';
+ * import es from '@zqmi/docx-editor-i18n/es';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const es = (await import('@docx-editor.dev/i18n/es')).default;
+ * const es = (await import('@zqmi/docx-editor-i18n/es')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

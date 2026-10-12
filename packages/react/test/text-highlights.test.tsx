@@ -9,8 +9,8 @@ import { afterEach, describe, expect, test } from 'bun:test';
 import { useCallback } from 'react';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { strToU8, zipSync } from 'fflate';
-import type { Editor, HighlightResult, TextMatch } from '@docx-editor.dev/core/contracts/editor';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { Editor, HighlightResult, TextMatch } from '@zqmi/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';
@@ -24,7 +24,7 @@ import {
 } from '../src/editor/navigation/useDocumentSearch.ts';
 import { HIGHLIGHT_REFRESH_MS, useHighlights } from '../src/editor/useHighlights.ts';
 import { useHighlightAt } from '../src/editor/useHighlightAt.ts';
-import { createDocumentRefresh, createDocumentSearch } from '@docx-editor.dev/core/editor';
+import { createDocumentRefresh, createDocumentSearch } from '@zqmi/docx-editor-core/editor';
 import {
   refreshFixture,
   refreshMetadata,
@@ -285,7 +285,7 @@ describe('DocxEditor.Navigation highlights', () => {
 describe('useHighlights', () => {
   test('applies an array, reports the result, and clears on unmount', async () => {
     let result: HighlightResult | null = null;
-    let ranges: readonly import('@docx-editor.dev/core/contracts/editor').HighlightRange[] = [];
+    let ranges: readonly import('@zqmi/docx-editor-core/contracts/editor').HighlightRange[] = [];
     function Marks() {
       result = useHighlights('glossary', ranges, { className: 'term' });
       return null;

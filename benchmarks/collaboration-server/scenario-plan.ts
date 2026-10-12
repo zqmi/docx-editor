@@ -16,7 +16,7 @@ import {
   type StoryScope,
   type TreeDocOp,
   type TreePackageStore,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { elements, parentOf, textOf } from './scenario-tree.ts';
 
 const BODY: StoryScope = { kind: 'body' };

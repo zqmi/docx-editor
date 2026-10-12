@@ -48,7 +48,7 @@ import {
 } from './table-row-growth.ts';
 import type { CellContentInsets } from './table-cell-geometry.ts';
 import type { TableBorderStrokeRecord } from './table-borders.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import type {
   BlockFragmentRecord,
   LineRecord,

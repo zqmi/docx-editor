@@ -22,7 +22,7 @@ Choose visible buttons, icons, and CSS in this example. Hiding a button does not
 Pass a chrome slot ID to `useEditorCommand`. The [chrome slot reference](/docs/2.x/guides/chrome-slots) lists every available ID and its named toolbar part. The hook returns the state and action for a control:
 
 ```tsx
-import { useEditorCommand } from '@docx-editor.dev/react';
+import { useEditorCommand } from '@zqmi/docx-editor-react';
 
 function BoldButton() {
   const bold = useEditorCommand('text.bold');
@@ -61,7 +61,7 @@ const suggest = useEditorCommand({ type: 'setEditingMode', mode: 'suggesting' })
 Use `useEditorState` to subscribe to part of the editor snapshot. The hook runs the selector for each state update. It renders your component only when the selected value changes:
 
 ```tsx
-import { useEditorState } from '@docx-editor.dev/react';
+import { useEditorState } from '@zqmi/docx-editor-react';
 
 function PageIndicator() {
   const page = useEditorState((s) => s.page);
@@ -112,7 +112,7 @@ Useful fields include:
 `useDocxEditor` returns the editor instance. It returns `null` before the `DocxEditor.Root` mount effect creates the instance. It also returns `null` outside a `DocxEditor.Root`. Use the instance for actions and one-time reads:
 
 ```tsx
-import { useDocxEditor } from '@docx-editor.dev/react';
+import { useDocxEditor } from '@zqmi/docx-editor-react';
 
 function SaveButton() {
   const editor = useDocxEditor();
@@ -133,7 +133,7 @@ function SaveButton() {
 For an external paragraph reference, call `scrollToAnchor` on this same instance:
 
 ```tsx
-import { useDocxEditor } from '@docx-editor.dev/react';
+import { useDocxEditor } from '@zqmi/docx-editor-react';
 
 function ReferenceButton({ paraId }: { paraId: string }) {
   const editor = useDocxEditor();
@@ -163,7 +163,7 @@ Calling `editor.snapshot()` during render does not subscribe your component. Use
 Use `useEditorEvent` to subscribe for the component's lifetime:
 
 ```tsx
-import { useEditorEvent } from '@docx-editor.dev/react';
+import { useEditorEvent } from '@zqmi/docx-editor-react';
 
 useEditorEvent('selectionChange', () => setPanelOpen(false));
 useEditorEvent('change', (change) => void autosave(change.revision));
@@ -174,7 +174,7 @@ useEditorEvent('change', (change) => void autosave(change.revision));
 `useFontFamily` provides font-picker state. It returns the current value, options, setter, and enabled state:
 
 ```tsx
-import { useFontFamily } from '@docx-editor.dev/react';
+import { useFontFamily } from '@zqmi/docx-editor-react';
 
 function FontPicker() {
   const font = useFontFamily();
@@ -202,7 +202,7 @@ function FontPicker() {
 Use `usePageSetup` to read and change the current section. The hook supports margins, orientation, and paper size:
 
 ```tsx
-import { usePageSetup } from '@docx-editor.dev/react';
+import { usePageSetup } from '@zqmi/docx-editor-react';
 
 function OrientationToggle() {
   const { pageSetup, apply, isEnabled } = usePageSetup();
@@ -224,7 +224,7 @@ function OrientationToggle() {
 Use `useParagraphFormat` to read and change the paragraph at the selection. `apply` sends the supplied fields as one command, so one call creates one undo step:
 
 ```tsx
-import { useParagraphFormat } from '@docx-editor.dev/react';
+import { useParagraphFormat } from '@zqmi/docx-editor-react';
 
 function DoubleSpaceButton() {
   const { format, apply, isEnabled } = useParagraphFormat();
@@ -250,7 +250,7 @@ For the whole form, `DocxEditor.ParagraphDialog` is the Paragraph dialog over th
 `useDocumentOutline` returns headings in document order. It also provides an action that moves to a heading:
 
 ```tsx
-import { useDocumentOutline } from '@docx-editor.dev/react';
+import { useDocumentOutline } from '@zqmi/docx-editor-react';
 
 function Outline() {
   const { items, selectedBlockId, goTo, isEmpty } = useDocumentOutline();
@@ -280,7 +280,7 @@ Each item has the shape `{ heading, depth }`. `heading` has the shape `{ text, l
 `useDocumentSearch` returns the editor's search session, which the **Find** pane also uses. This toolbar searches as you type, and Enter moves to the next match:
 
 ```tsx
-import { useDocumentSearch } from '@docx-editor.dev/react';
+import { useDocumentSearch } from '@zqmi/docx-editor-react';
 
 function Find() {
   const search = useDocumentSearch();
@@ -320,7 +320,7 @@ function Find() {
 
 ```tsx
 import { useCallback } from 'react';
-import { useHighlights, type Editor } from '@docx-editor.dev/react';
+import { useHighlights, type Editor } from '@zqmi/docx-editor-react';
 
 function GlossaryHighlights({ terms }: { terms: readonly string[] }) {
   const findTerms = useCallback(
@@ -357,7 +357,7 @@ Font size uses half-points: `24` means 12 pt. `null` means mixed or unavailable.
 
 ```tsx
 import { useState } from 'react';
-import { useEditorValueCommand, useHistoryGroup } from '@docx-editor.dev/react';
+import { useEditorValueCommand, useHistoryGroup } from '@zqmi/docx-editor-react';
 
 export function FontSizeSlider() {
   const size = useEditorValueCommand('font.size');

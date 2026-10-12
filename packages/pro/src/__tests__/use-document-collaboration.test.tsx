@@ -15,7 +15,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import type { EditorCollaborationSession } from '@docx-editor.dev/core/collaboration';
+import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
 import {
   useDocumentCollaboration,
   DOCUMENT_CREATE_ROOM_FOR_TESTS,

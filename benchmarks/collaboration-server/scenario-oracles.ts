@@ -8,7 +8,7 @@ import {
   type OoxmlNode,
   type OoxmlPackage,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { Replica } from './scenario-replica.ts';
 import { sharedNodes } from './scenario-tree.ts';
 

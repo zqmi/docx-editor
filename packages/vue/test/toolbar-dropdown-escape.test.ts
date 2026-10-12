@@ -2,7 +2,7 @@ import './dom-setup.ts';
 import { afterEach, expect, test } from 'bun:test';
 import { h, ref } from 'vue';
 import { strFromU8, unzipSync } from 'fflate';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorToolbar } from '../src/editor/toolbar';
 import { collaborationModule } from '../../pro/src/collaboration/collaboration-module';
 import type { DocumentCollaborationHandle } from '../../pro/src/collaboration/document-session';

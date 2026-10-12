@@ -8,13 +8,13 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import type { EditorCollaborationSession } from '@docx-editor.dev/core/collaboration';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import {
   canonicalOoxmlFingerprint,
   readOoxmlPackage,
   semanticDigest,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
 import { DocxEditor, isDocxEditorError } from '@docx-editor.dev/editor-api';

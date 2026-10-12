@@ -18,11 +18,11 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { serverPagination, type ServerPaginationOptions } from './pagination.ts';
 export type { ServerPaginationOptions } from './pagination.ts';
-import { createServerAutomationHost } from '@docx-editor.dev/core/automation';
+import { createServerAutomationHost } from '@zqmi/docx-editor-core/automation';
 import type {
   CollaborationModuleContribution,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import { fail, type DocxEditorErrorInit } from './errors.ts';
 import { createRuntime, type DocxEditorServerRuntime, type RevisionTextView } from './runtime.ts';
 

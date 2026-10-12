@@ -1,9 +1,9 @@
 // A press on a blank header or footer band opens the variant the page displays, creating it
 // first when it is missing; a control that layout has not placed yet refuses from its sdtPr.
 import { describe, expect, test } from 'bun:test';
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
-import type { SemanticLayout } from '@docx-editor.dev/core/layout';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { SemanticLayout } from '@zqmi/docx-editor-core/layout';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { treeLockRefusal } from '../content-control-locks.ts';
 import { openBlankHeaderFooter } from '../surface-hf-editing.ts';
 

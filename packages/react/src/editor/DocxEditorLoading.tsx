@@ -31,7 +31,7 @@ import type { ReactNode } from 'react';
 
 import { useEffect, useState, type CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useTranslation } from '../i18n';
 import { isDevelopment } from '../lib/is-development';

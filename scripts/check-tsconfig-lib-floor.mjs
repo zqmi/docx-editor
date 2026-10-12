@@ -2,7 +2,7 @@
 /**
  * Guards the ES `lib` floor of every TypeScript program that contains core's SOURCE.
  *
- * The adapter and satellite packages map `@docx-editor.dev/core` (and its subpaths)
+ * The adapter and satellite packages map `@zqmi/docx-editor-core` (and its subpaths)
  * through tsconfig `paths` to `../core/src/*.ts` rather than to the built `.d.ts`, so
  * core's sources are part of those programs. That makes core's `lib` their floor:
  * core is ES2022 and its sources use ES2022 features (`Array.prototype.at`,

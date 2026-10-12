@@ -12,7 +12,7 @@ import { projectedText, storyCarriesCommentAnchor } from './story-text-reads.ts'
 import { stylesPartOf } from '../store/package/ooxml-indexes.ts';
 import { materializeGlossaryPlaceholders } from '../store/store/placeholder-materialize.ts';
 import type { Node as PMNode } from 'prosemirror-model';
-import { paragraphOrderOfPart, type ReviewItem } from '@docx-editor.dev/core/store';
+import { paragraphOrderOfPart, type ReviewItem } from '@zqmi/docx-editor-core/store';
 import {
   canApplyLocalReviewPatch,
   localReviewPatchParagraphId,
@@ -66,7 +66,7 @@ import {
   type RelationshipRecord,
   type StoryScope,
   type TreeModelChange,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { headerFooterPartsFromResolution } from '../store/package/hf-references.ts';
 import {
   collectDocumentFonts,
@@ -145,7 +145,7 @@ export type { DocumentStyleEntry } from './document-catalog.ts';
 export type { DocumentThemeColorEntry, ThemeColorSlot } from './document-theme.ts';
 export type { DocumentOutlineEntry } from './document-outline.ts';
 export type { ParagraphAnchorIndex } from './paragraph-anchors.ts';
-export type { StoryScope, StoryTargetRejection } from '@docx-editor.dev/core/store';
+export type { StoryScope, StoryTargetRejection } from '@zqmi/docx-editor-core/store';
 
 /**
  * Why bytes could not be opened: any bounded-reader rejection, plus the package that parsed but

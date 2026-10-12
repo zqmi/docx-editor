@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // still read the same slice the author's editor shows.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, nodeText, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('split-deleted-anchor-room');

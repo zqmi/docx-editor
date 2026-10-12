@@ -12,7 +12,7 @@ import './dom-setup.ts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import type { ReactNode } from 'react';
 import { cleanup, render } from '@testing-library/react';
-import { createT, en, type TranslationKey, type Translations } from '@docx-editor.dev/i18n';
+import { createT, en, type TranslationKey, type Translations } from '@zqmi/docx-editor-i18n';
 import { LocaleProvider, useChromeTranslate, type ChromeTranslate } from '../src/i18n';
 
 const english = createT(en);

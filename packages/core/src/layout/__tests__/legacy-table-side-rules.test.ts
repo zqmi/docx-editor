@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, serializeOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,

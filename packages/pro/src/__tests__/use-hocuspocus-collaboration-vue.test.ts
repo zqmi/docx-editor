@@ -21,7 +21,7 @@ import {
 import { renderToString } from 'vue/server-renderer';
 import type * as Y from 'yjs';
 import type { HocuspocusProvider } from '@hocuspocus/provider';
-import type { EditorCollaborationSession } from '@docx-editor.dev/core/collaboration';
+import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
 import { collaborationModule } from '../collaboration/collaboration-module.ts';
 import {
   useHocuspocusCollaboration,

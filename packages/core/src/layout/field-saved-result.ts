@@ -5,7 +5,7 @@
 // same offsets the store's editable mode addresses. These helpers mark the pieces of one such
 // result so paint and the caret can treat them as one field.
 
-import { fldSimpleInstr, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { fldSimpleInstr, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { parseHyperlinkInstruction } from './field-link.ts';
 import { parseRefLinkInstruction } from './field-ref-link.ts';
 import type { FieldAwarePiece, FieldLinkProjector } from './field-pieces.ts';

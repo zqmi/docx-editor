@@ -7,7 +7,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { expect, test } from 'bun:test';
 import { fireEvent, getByLabelText, getByRole } from '@testing-library/react';
-import { createDocxEditor, type ResolvedRevisionMarkup } from '@docx-editor.dev/core/editor';
+import { createDocxEditor, type ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
 import { reviewModule } from '../index.ts';
 
 test('a host restores preferences, changes them in the dialog, and saves the same resolved object', () => {
@@ -58,7 +58,7 @@ test.each(['detach', 'destroy', 'load'] as const)(
     const container = document.createElement('div');
     document.body.append(container);
     const editor = createDocxEditor({ container, document: 'blank', modules: [reviewModule({})] });
-    let session: import('@docx-editor.dev/core/editor').RevisionMarkupDialogSession | undefined;
+    let session: import('@zqmi/docx-editor-core/editor').RevisionMarkupDialogSession | undefined;
     const dispose = editor.setRevisionMarkupChrome({
       onRequest: (value) => {
         session = value;

@@ -1,6 +1,6 @@
 import { afterAll, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { collaborationModule, reviewModule } from '@docx-editor.dev/pro';
 import { DocxEditor } from '@docx-editor.dev/editor-api';
 import { createPeerHarness } from '../../../../packages/pro/src/collaboration/__tests__/document-peer-support';

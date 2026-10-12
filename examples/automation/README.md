@@ -67,7 +67,7 @@ Follow these rules when you use the API:
 
 ## Edit an open browser document
 
-The browser subpath takes an editor that the host created with `@docx-editor.dev/react`, `@docx-editor.dev/vue`, or a plain page. It drives that editor in place. Edits land in the open document, with the reader's undo stack intact, so there is no `save()` here: the host saves the way it already did.
+The browser subpath takes an editor that the host created with `@zqmi/docx-editor-react`, `@docx-editor.dev/vue`, or a plain page. It drives that editor in place. Edits land in the open document, with the reader's undo stack intact, so there is no `save()` here: the host saves the way it already did.
 
 ```ts
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';

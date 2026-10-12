@@ -25,7 +25,7 @@ import {
   type RevisionAuthorFilter,
   type RevisionDisplayMode,
 } from './revision-projection.ts';
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import type { DrawingGeometry } from './drawing-geometry.ts';
 import {
   availableTextIntervalsOnScanline,

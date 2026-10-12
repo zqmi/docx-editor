@@ -10,7 +10,7 @@ a hook over that one instance — `useEditorState`, `useEditorCommand`, `useEdit
 needs and does not have, and it is the whole of this change.
 
 Two facts about the repository shape the plan. The Vue package's build aliases
-`@docx-editor.dev/core` to source and inlines it, so a page running the adapter beside the
+`@zqmi/docx-editor-core` to source and inlines it, so a page running the adapter beside the
 published engine gets two copies — the failure CLAUDE.md describes: the shaper loads twice and
 every identity-keyed cache misses, quietly. And no gate compares anything but names, so a
 `useZoom` returning nine of React's thirteen members would ship green.
@@ -61,14 +61,14 @@ and no exemption file at the end of this change.
 
 **The engine resolves to one copy, and the package installs**
 
-- `@docx-editor.dev/core` moves from `dependencies` to `peerDependencies` + a `workspace:*`
+- `@zqmi/docx-editor-core` moves from `dependencies` to `peerDependencies` + a `workspace:*`
   `devDependency`, the shape `packages/react/package.json` already has and
   `packages/react/test/package-dependencies.test.ts` already pins.
 - The build moves to `tsup`, with the engine, `vue`, and the i18n package external, and
   `metafile: true`. The metafile is not optional:
   `scripts/generate-third-party-notices.mjs` reads `dist/metafile-*.json`, the run is
   all-or-nothing, and a publishable package with no attribution path fails the release.
-- `@docx-editor.dev/i18n` gets a real semver range. `private: true` goes. The package joins
+- `@zqmi/docx-editor-i18n` gets a real semver range. `private: true` goes. The package joins
   `build:packages`.
 - Components are render-function TypeScript (`defineComponent` + `h`), not SFCs: `tsup` does not
   compile SFCs, and `max-lines` — the only gate that catches an over-long file — counts `.ts`
@@ -113,7 +113,7 @@ single source.
 `@docx-editor.dev/vue/styles.css` — neither subpath exists — and auto-imports fifteen composable
 names from the removed package. Subpath parity is strict and React has one entry, so Vue keeps
 one: the module auto-imports from the package root and points at
-`@docx-editor.dev/core/styles/editor.css` for the stylesheet.
+`@zqmi/docx-editor-core/styles/editor.css` for the stylesheet.
 
 ## Impact
 

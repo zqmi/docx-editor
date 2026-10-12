@@ -8,7 +8,7 @@
 // (`positionPastDeletion`, and the same rule in the store).
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { caretStops, moveCaret, positionPastDeletion } from '../semantic-interaction.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import type { RevisionDisplayMode } from '../revision-projection.ts';

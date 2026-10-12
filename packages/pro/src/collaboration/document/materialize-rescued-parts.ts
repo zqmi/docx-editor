@@ -21,7 +21,7 @@ import {
   resolveInternalTarget,
   type ContentTypeIndex,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { LogicalId } from './identity.ts';
 import { rejectPartName } from './limits.ts';
 import { isRelsPartName } from './materialize-rels.ts';

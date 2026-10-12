@@ -8,7 +8,7 @@
 
 import { expect, test } from 'bun:test';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
-import type { OoxmlElement, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createLayoutSession } from '../layout-session.ts';
 import { createParagraphLayoutCache } from '../layout-cache.ts';
 import { readTableStructure } from '../semantic-table.ts';

@@ -5,8 +5,8 @@ import {
   toolbarCommandState,
   type ImageWrapTarget,
   type ToolbarValueMap,
-} from '@docx-editor.dev/core/editor';
-import type { EditorExecOptions, ExecResult } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { EditorExecOptions, ExecResult } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

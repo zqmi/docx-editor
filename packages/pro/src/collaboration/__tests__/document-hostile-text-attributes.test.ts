@@ -9,7 +9,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // decoding stays bounded.
 
 import { describe, expect, test } from 'bun:test';
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { DEFAULT_DOCUMENT_LIMITS } from '../document/limits.ts';
 import { attributeSignature, decodeAttributes } from '../document/paragraph-text.ts';
 import { collaborationDocx } from './support.ts';

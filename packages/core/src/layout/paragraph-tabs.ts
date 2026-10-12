@@ -9,7 +9,7 @@
 // Hostile authored values are dropped or clamped; stop count is capped; nothing from the
 // file is used as a loop bound or allocation size.
 
-import { readTwipsMeasure, type OoxmlElement, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readTwipsMeasure, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 
 /** Soft ceiling matching Word's practical custom-tab UI limit. */
 export const MAX_TAB_STOPS = 64;

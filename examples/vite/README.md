@@ -22,15 +22,15 @@ The default document is `public/sample.docx`. In development, `?fixture=<name>.d
 Install the adapter and its engine peer:
 
 ```bash
-npm install @docx-editor.dev/react @docx-editor.dev/core
+npm install @zqmi/docx-editor-react @zqmi/docx-editor-core
 ```
 
-Import `@docx-editor.dev/core/styles/editor.css` once in your application entry. Then render the editor:
+Import `@zqmi/docx-editor-core/styles/editor.css` once in your application entry. Then render the editor:
 
 ```tsx
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 import { useRef } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
 
 function Editor({ file }: { file: ArrayBuffer }) {
   const editorRef = useRef<DocxEditorRef>(null);

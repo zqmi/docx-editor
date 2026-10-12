@@ -9,7 +9,7 @@
 // not start with a closing mark (。，、」…) and must not end with an opening one (「（…).
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { breakParagraph } from '../paragraph-flow.ts';
 import { createFixedMeasurer } from '../semantic-layout.ts';
 

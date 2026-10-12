@@ -1,5 +1,5 @@
 // View-only field instructions. Canonical ranges and field results remain unchanged.
-import type { OoxmlNode, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import {
   collectFieldRunChildren,
   fldSimpleInstr,

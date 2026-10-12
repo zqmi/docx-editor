@@ -6,7 +6,7 @@
 // here, so the toolbar, the keyboard and the Paragraph dialog cannot disagree about one
 // paragraph.
 
-import type { OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { jcValueForAlignment } from '../layout/paragraph-alignment.ts';
 import { paragraphIsRtl } from '../layout/rtl-paragraph.ts';
 import type { ParagraphPropertyEdit } from './paragraph-format-contract.ts';

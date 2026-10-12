@@ -4,23 +4,23 @@
 
 ```ts
 
-import { AutomationCapabilities } from '@docx-editor.dev/core/automation';
-import { AutomationHandle } from '@docx-editor.dev/core/automation';
-import { AutomationHost } from '@docx-editor.dev/core/automation';
-import { AutomationOperation } from '@docx-editor.dev/core/automation';
-import { AutomationPaginationOptions } from '@docx-editor.dev/core/automation';
-import { AutomationSpan } from '@docx-editor.dev/core/automation';
-import { AutomationSpanRef } from '@docx-editor.dev/core/automation';
-import { AutomationValue } from '@docx-editor.dev/core/automation';
-import { CollaborationModuleContribution } from '@docx-editor.dev/core/collaboration';
-import { DocxEditorInstance } from '@docx-editor.dev/core/editor';
-import { EditorCollaborationSession } from '@docx-editor.dev/core/collaboration';
-import { RevisionAuthorEntry } from '@docx-editor.dev/core/automation';
-import { RevisionAuthorResult } from '@docx-editor.dev/core/automation';
-import { RevisionAuthorSkipReason } from '@docx-editor.dev/core/automation';
-import { RevisionBatchEntry } from '@docx-editor.dev/core/automation';
-import { RevisionBatchResult } from '@docx-editor.dev/core/automation';
-import { RevisionBatchSkipReason } from '@docx-editor.dev/core/automation';
+import { AutomationCapabilities } from '@zqmi/docx-editor-core/automation';
+import { AutomationHandle } from '@zqmi/docx-editor-core/automation';
+import { AutomationHost } from '@zqmi/docx-editor-core/automation';
+import { AutomationOperation } from '@zqmi/docx-editor-core/automation';
+import { AutomationPaginationOptions } from '@zqmi/docx-editor-core/automation';
+import { AutomationSpan } from '@zqmi/docx-editor-core/automation';
+import { AutomationSpanRef } from '@zqmi/docx-editor-core/automation';
+import { AutomationValue } from '@zqmi/docx-editor-core/automation';
+import { CollaborationModuleContribution } from '@zqmi/docx-editor-core/collaboration';
+import { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import { RevisionAuthorEntry } from '@zqmi/docx-editor-core/automation';
+import { RevisionAuthorResult } from '@zqmi/docx-editor-core/automation';
+import { RevisionAuthorSkipReason } from '@zqmi/docx-editor-core/automation';
+import { RevisionBatchEntry } from '@zqmi/docx-editor-core/automation';
+import { RevisionBatchResult } from '@zqmi/docx-editor-core/automation';
+import { RevisionBatchSkipReason } from '@zqmi/docx-editor-core/automation';
 
 // @public
 export enum Alignment {

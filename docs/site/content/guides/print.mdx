@@ -29,9 +29,9 @@ Use the `exporters.ts` module from [Configure the menu](/docs/2.x/guides/export#
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { exporters } from './exporters';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 export function Editor({ source }: { source: Uint8Array }) {
   return <DocxEditor document={source} menu={{ exporters }} />;
@@ -45,7 +45,7 @@ export function Editor({ source }: { source: Uint8Array }) {
 <script setup lang="ts">
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { exporters } from './exporters';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 defineProps<{ source: Uint8Array }>();
 </script>
@@ -83,7 +83,7 @@ The shortcut prints when focus is inside the editor, including its menu bar and 
 
 Without `menu.exporters.pdf`, the browser handles the shortcut. **File > Print** then shows no shortcut, and selecting it opens a setup error.
 
-For your own controls, use `isChromePrintShortcut(event)` from `@docx-editor.dev/core/editor` to recognize the same shortcut.
+For your own controls, use `isChromePrintShortcut(event)` from `@zqmi/docx-editor-core/editor` to recognize the same shortcut.
 
 ## Browser requirements
 
@@ -133,7 +133,7 @@ Pass `hidden` to the print part to remove its menu item. `Menu.Item` dispatches 
 
 ## Build a custom print flow
 
-Call `runChromePrint(editor, exporters, container)` from `@docx-editor.dev/core/editor` to prepare a `ChromePrintJob`:
+Call `runChromePrint(editor, exporters, container)` from `@zqmi/docx-editor-core/editor` to prepare a `ChromePrintJob`:
 
 | Member      | Behavior                                                   |
 | ----------- | ---------------------------------------------------------- |
@@ -151,8 +151,8 @@ import {
   runChromePrint,
   type ChromeExportHandlers,
   type ChromePrintJob,
-} from '@docx-editor.dev/core/editor';
-import type { Editor } from '@docx-editor.dev/core';
+} from '@zqmi/docx-editor-core/editor';
+import type { Editor } from '@zqmi/docx-editor-core';
 
 export async function printDocument(
   editor: Editor,

@@ -1,4 +1,4 @@
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import type { HeldCellBreak } from './cell-continuation-lines.ts';
 import type { TableCellStyleFormatting } from './style-cascade.ts';
 

@@ -13,8 +13,8 @@ import {
   diffSemanticDigests,
   readOoxmlPackage,
   semanticDigest,
-} from '@docx-editor.dev/core/store';
-import { caretAt, createFixedMeasurer, linesOf } from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/store';
+import { caretAt, createFixedMeasurer, linesOf } from '@zqmi/docx-editor-core/layout';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 import { docx, putCaret } from './paginated-surface-fixtures.ts';
 

@@ -3,7 +3,7 @@
  *
  * Separated so the facade file stays under the max-lines gate while the image vocabulary
  * stays one cohesive shape. Re-exported from `editor.ts`, so consumers keep importing
- * `@docx-editor.dev/core/contracts/editor`.
+ * `@zqmi/docx-editor-core/contracts/editor`.
  */
 
 import type {

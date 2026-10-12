@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/core/export` — DOM-free semantic export sessions and shared resources.
+ * `@zqmi/docx-editor-core/export` — DOM-free semantic export sessions and shared resources.
  *
  * Exporters consume the same published `SemanticLayout` records as the browser painter.
  * They do not parse OOXML or independently derive document semantics.

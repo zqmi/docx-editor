@@ -1,8 +1,8 @@
 import { expect, test } from 'bun:test';
 import { micromark } from 'micromark';
 import { gfm, gfmHtml } from 'micromark-extension-gfm';
-import type { ExportSemanticLayout, ExportSession } from '@docx-editor.dev/core/export';
-import type { ParagraphFragmentRecord, SemanticLayout } from '@docx-editor.dev/core/layout';
+import type { ExportSemanticLayout, ExportSession } from '@zqmi/docx-editor-core/export';
+import type { ParagraphFragmentRecord, SemanticLayout } from '@zqmi/docx-editor-core/layout';
 import { exportMarkdownFrom } from '../src/index.ts';
 
 function paragraph(

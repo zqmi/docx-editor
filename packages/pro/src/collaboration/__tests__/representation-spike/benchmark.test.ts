@@ -15,7 +15,7 @@ import {
   readOoxmlPackage,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,
@@ -23,8 +23,8 @@ import {
   layoutSemanticDocument,
   pagesToMaterialize,
   type SemanticLayout,
-} from '@docx-editor.dev/core/layout';
-import { paintSemanticLayout } from '@docx-editor.dev/core/output';
+} from '@zqmi/docx-editor-core/layout';
+import { paintSemanticLayout } from '@zqmi/docx-editor-core/output';
 import { collectKind, nodeText, walk } from './fixtures.ts';
 import { allocationEvidence, percentile, timingSummary, timingVerdict } from './gates.ts';
 import { createReplica, destroyReplica, joinReplica } from './replicas.ts';

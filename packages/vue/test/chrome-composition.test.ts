@@ -1,8 +1,8 @@
 import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import { createT, en, type TranslationKey } from '@docx-editor.dev/i18n';
-import { chromeSlotId, defaultChromeGroups } from '@docx-editor.dev/core/editor';
+import { createT, en, type TranslationKey } from '@zqmi/docx-editor-i18n';
+import { chromeSlotId, defaultChromeGroups } from '@zqmi/docx-editor-core/editor';
 import { h } from 'vue';
 import { DocxEditorMenu } from '../src/editor/menu';
 import { DocxEditorToolbar } from '../src/editor/toolbar';

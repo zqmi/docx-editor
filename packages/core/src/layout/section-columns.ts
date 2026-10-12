@@ -1,4 +1,4 @@
-import { twips, twipsToPoints } from '@docx-editor.dev/core/store';
+import { twips, twipsToPoints } from '@zqmi/docx-editor-core/store';
 import type { SectionColumns } from './section-properties.ts';
 import type { LayoutBox } from './semantic-records.ts';
 

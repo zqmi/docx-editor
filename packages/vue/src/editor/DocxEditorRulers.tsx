@@ -7,8 +7,8 @@ import {
   type CSSProperties,
   type PropType,
 } from 'vue';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
-import type { RulerIndent } from '@docx-editor.dev/core/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import type { RulerIndent } from '@zqmi/docx-editor-core/editor';
 import { HorizontalRuler, type RulerPageSetup } from '../components/ui/HorizontalRuler';
 import { VerticalRuler } from '../components/ui/VerticalRuler';
 import { useDocxEditor } from './context';

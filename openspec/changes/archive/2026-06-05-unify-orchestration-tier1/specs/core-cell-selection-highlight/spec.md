@@ -2,7 +2,7 @@
 
 ### Requirement: Cell-selection highlight available to both adapters
 
-`@docx-editor.dev/core` SHALL expose `applyCellSelectionHighlight(container, state, options?)` as a framework-neutral DOM projection helper. It SHALL paint the `.layout-table-cell-selected` class on painted cells whose PM positions fall inside an active `CellSelection`, scoped by `options.scope` (`body` | `header` | `footer`). Both the React and Vue adapters SHALL call it.
+`@zqmi/docx-editor-core` SHALL expose `applyCellSelectionHighlight(container, state, options?)` as a framework-neutral DOM projection helper. It SHALL paint the `.layout-table-cell-selected` class on painted cells whose PM positions fall inside an active `CellSelection`, scoped by `options.scope` (`body` | `header` | `footer`). Both the React and Vue adapters SHALL call it.
 
 #### Scenario: Active cell selection is projected
 

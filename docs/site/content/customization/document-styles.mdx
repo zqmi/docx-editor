@@ -58,9 +58,9 @@ Pass your DOCX bytes and loaded fonts to this component. The preview uses a fict
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, type DocxEditorRootProps } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRootProps } from '@zqmi/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 const modules = [reviewModule()];
 
@@ -106,7 +106,7 @@ export function ContractEditor({
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/vue';
 import type { FontConfigurationFragment } from '@docx-editor.dev/vue';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 defineProps<{ bytes: Uint8Array; fonts: FontConfigurationFragment }>();
 const modules = [reviewModule()];
@@ -149,7 +149,7 @@ Mount this picker inside `DocxEditor.Root` with the document surface. The hook r
 <Framework value="react">
 
 ```tsx
-import { useParagraphStyle } from '@docx-editor.dev/react';
+import { useParagraphStyle } from '@zqmi/docx-editor-react';
 
 export function ContractStylePicker() {
   const { value, options, isEnabled, setValue } = useParagraphStyle();

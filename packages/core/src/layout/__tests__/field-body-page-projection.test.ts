@@ -6,7 +6,7 @@
 // paints nothing — exactly as it would in a header or footer.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   createFixedMeasurer,
   layoutSemanticDocument,

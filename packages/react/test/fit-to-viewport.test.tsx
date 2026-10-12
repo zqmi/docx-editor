@@ -12,7 +12,7 @@ import './dom-setup.ts';
 import { afterEach, beforeEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';
@@ -20,7 +20,7 @@ import { useZoom, type UseZoomResult } from '../src/editor/useZoom.ts';
 import { navigationShift } from '../src/editor/navigation/navigation-geometry.ts';
 import { selectPaneGeometry } from '../src/editor/navigation/useNavigationPane.ts';
 import { LOADING_SNAPSHOT } from '../src/editor/loading-snapshot.ts';
-import type { ZoomMode } from '@docx-editor.dev/core/contracts/editor';
+import type { ZoomMode } from '@zqmi/docx-editor-core/contracts/editor';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const CT = 'http://schemas.openxmlformats.org/package/2006/content-types';

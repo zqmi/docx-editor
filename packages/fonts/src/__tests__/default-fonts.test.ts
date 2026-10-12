@@ -1,4 +1,4 @@
-// @docx-editor.dev/fonts (font-resolution-overhaul group 4).
+// @zqmi/docx-editor-fonts (font-resolution-overhaul group 4).
 //
 // Pins the package's promises: no fetch without a call, family narrowing fetches only
 // the requested assets, baked hashes match the shipped bytes, and the fragment's
@@ -11,13 +11,13 @@ import {
   composeFontConfiguration,
   createLayoutShaping,
   disposeLayoutShaping,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import {
   DEFAULT_RUN_STYLE,
   FontResolutionError,
   createFixedMeasurer,
   createLayoutShapedMeasurer,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import {
   ALL_DEFAULT_FONT_FAMILIES,
   ALL_WORD_DEFAULT_FAMILIES,
@@ -309,7 +309,7 @@ describe('lane boundary', () => {
     const corePackage = JSON.parse(
       readFileSync(new URL('../../../core/package.json', import.meta.url), 'utf8')
     ) as { dependencies?: Record<string, string>; devDependencies?: Record<string, string> };
-    expect(corePackage.dependencies?.['@docx-editor.dev/fonts']).toBeUndefined();
-    expect(corePackage.devDependencies?.['@docx-editor.dev/fonts']).toBeUndefined();
+    expect(corePackage.dependencies?.['@zqmi/docx-editor-fonts']).toBeUndefined();
+    expect(corePackage.devDependencies?.['@zqmi/docx-editor-fonts']).toBeUndefined();
   });
 });

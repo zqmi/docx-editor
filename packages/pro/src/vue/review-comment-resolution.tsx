@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 /** @jsxImportSource vue */
 
 import { defineComponent, h, type ComputedRef, type PropType, type VNode } from 'vue';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
 import { useEditorState } from '@docx-editor.dev/vue';
 import { ACCEPT_ICON, REOPEN_ICON, icon } from './review-icons.tsx';
 import type { ReviewRailValue } from './review-context.ts';

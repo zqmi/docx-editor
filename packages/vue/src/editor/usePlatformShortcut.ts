@@ -16,7 +16,7 @@
 // one — so this errs the way a rendering bug should.
 
 import { onMounted, ref, type Ref } from 'vue';
-import { platformShortcut } from '@docx-editor.dev/i18n';
+import { platformShortcut } from '@zqmi/docx-editor-i18n';
 
 /**
  * A label formatter that names the modifier keys this reader's keyboard has.

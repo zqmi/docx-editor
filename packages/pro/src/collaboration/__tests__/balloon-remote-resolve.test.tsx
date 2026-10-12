@@ -14,8 +14,8 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
-import { createDocxEditor, type DocxEditorInstance } from '@docx-editor.dev/core/editor';
-import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@docx-editor.dev/react';
+import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@zqmi/docx-editor-react';
 import { DocxEditorReview } from '../../react/index.ts';
 import { collaborationModule, reviewModule } from '../../index.ts';
 import { typeInto } from '../../__tests__/review-balloons-harness.ts';

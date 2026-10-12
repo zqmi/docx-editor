@@ -8,8 +8,8 @@ import {
   type MaybeRefOrGetter,
 } from 'vue';
 import { scopeDispose } from '../scope-dispose';
-import type { EditorSnapshot, PageSetup } from '@docx-editor.dev/core/contracts/editor';
-import { ZOOM_MAX, ZOOM_MIN } from '@docx-editor.dev/core/editor';
+import type { EditorSnapshot, PageSetup } from '@zqmi/docx-editor-core/contracts/editor';
+import { ZOOM_MAX, ZOOM_MIN } from '@zqmi/docx-editor-core/editor';
 import { twipsToPixels } from '../../lib/units';
 import { inject } from 'vue';
 import { ReviewRailContext, useDocxEditor } from '../context';

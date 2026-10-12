@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type HeadlessDocumentView } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type HeadlessDocumentView } from '@zqmi/docx-editor-core/store';
 import {
   compatibilityModeFromSettings,
   compatibilityProfileFromSettings,

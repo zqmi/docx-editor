@@ -2,7 +2,7 @@ import type {
   SemanticCommentArtifactRecord,
   SemanticReviewArtifactRecord,
   SemanticTrackedChangeArtifactRecord,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import {
   EMPTY_MAPPED_MARKDOWN,
   type MappedMarkdown,

@@ -6,7 +6,7 @@ import type {
   ContentControlBoundaryRecord,
   ContentControlMappedType,
   PageRecord,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import type { PaintOptions } from './semantic-paint.ts';
 
 /**

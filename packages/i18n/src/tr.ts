@@ -1,14 +1,14 @@
 /**
- * @docx-editor.dev/i18n/tr
+ * @zqmi/docx-editor-i18n/tr
  *
  * Turkish (`tr`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import tr from '@docx-editor.dev/i18n/tr';
+ * import tr from '@zqmi/docx-editor-i18n/tr';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const tr = (await import('@docx-editor.dev/i18n/tr')).default;
+ * const tr = (await import('@zqmi/docx-editor-i18n/tr')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

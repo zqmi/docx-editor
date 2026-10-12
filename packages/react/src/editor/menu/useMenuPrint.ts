@@ -6,8 +6,8 @@ import {
   runChromePrint,
   type ChromeExportHandlers,
   type ChromePrintJob,
-} from '@docx-editor.dev/core/editor';
-import type { Editor } from '@docx-editor.dev/core';
+} from '@zqmi/docx-editor-core/editor';
+import type { Editor } from '@zqmi/docx-editor-core';
 import { useTranslation } from '../../i18n';
 
 /**

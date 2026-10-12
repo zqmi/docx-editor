@@ -16,7 +16,7 @@ import {
   collectReviewItems as engineCollectReviewItems,
   findNode,
   revisionItemsOf,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { EditorModule } from '../../contracts/modules.ts';
 import { CHROME_GROUPS, CHROME_MENUS } from '../chrome-controls.ts';
 import { commandForSlot } from '../toolbar-commands.ts';

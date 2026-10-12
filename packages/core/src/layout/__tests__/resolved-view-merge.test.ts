@@ -8,7 +8,7 @@
 // test wearing geometry.
 
 import { describe, expect, test } from 'bun:test';
-import { applyTreeOp, readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { applyTreeOp, readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { documentOrder } from '../document-order.ts';
 import {

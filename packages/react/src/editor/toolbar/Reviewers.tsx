@@ -2,9 +2,9 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { DocxEditorChildren } from '../../docx-editor-children';
-import { localizeDisabledReason } from '@docx-editor.dev/i18n';
-import { toolbarCommandState } from '@docx-editor.dev/core/editor';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
+import { toolbarCommandState } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation } from '../../i18n';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';

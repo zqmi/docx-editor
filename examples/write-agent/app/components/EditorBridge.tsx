@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useDocxEditor } from '@docx-editor.dev/react';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import { useDocxEditor } from '@zqmi/docx-editor-react';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 
 export function EditorBridge({
   onEditor,

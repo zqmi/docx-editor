@@ -12,7 +12,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // gap. A story-specific replication regression fails here.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { OoxmlNode, StoryScope, TreeDocOp } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('story-variants-room');

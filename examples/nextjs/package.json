@@ -7,8 +7,8 @@
     "start": "next start --port 3000"
   },
   "dependencies": {
-    "@docx-editor.dev/core": "workspace:*",
-    "@docx-editor.dev/react": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
+    "@zqmi/docx-editor-react": "workspace:*",
     "next": "^16.2.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

@@ -13,7 +13,7 @@
 // paragraph — nearly every paragraph in a document — costs one map write and no extra work,
 // and only a paragraph that actually carries `w:pBdr` ever makes a neighbour resolve.
 
-import type { OoxmlElement, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { paragraphBoxOutdent } from './paragraph-indent.ts';
 import { paragraphIsRtl } from './rtl-paragraph.ts';
 import { paragraphBordersFingerprint, type ParagraphBorders } from './paragraph-style.ts';

@@ -22,22 +22,22 @@
       // Every published subpath, mapped to source. The export map points at dist, so a subpath
       // missing here resolves to built .d.ts while its siblings resolve to src, and the same
       // type then arrives under two identities.
-      "@docx-editor.dev/core": ["../../../../core/src/index.ts"],
-      "@docx-editor.dev/core/automation": ["../../../../core/src/automation/index.ts"],
-      "@docx-editor.dev/core/binding": ["../../../../core/src/binding/index.ts"],
-      "@docx-editor.dev/core/contracts/editor": ["../../../../core/src/contracts/editor.ts"],
-      "@docx-editor.dev/core/contracts/document": ["../../../../core/src/contracts/document.ts"],
-      "@docx-editor.dev/core/contracts/interaction": [
+      "@zqmi/docx-editor-core": ["../../../../core/src/index.ts"],
+      "@zqmi/docx-editor-core/automation": ["../../../../core/src/automation/index.ts"],
+      "@zqmi/docx-editor-core/binding": ["../../../../core/src/binding/index.ts"],
+      "@zqmi/docx-editor-core/contracts/editor": ["../../../../core/src/contracts/editor.ts"],
+      "@zqmi/docx-editor-core/contracts/document": ["../../../../core/src/contracts/document.ts"],
+      "@zqmi/docx-editor-core/contracts/interaction": [
         "../../../../core/src/contracts/interaction.ts"
       ],
-      "@docx-editor.dev/core/contracts/mcp": ["../../../../core/src/contracts/mcp.ts"],
-      "@docx-editor.dev/core/contracts/modules": ["../../../../core/src/contracts/modules.ts"],
-      "@docx-editor.dev/core/contracts/plugin": ["../../../../core/src/contracts/plugin.ts"],
-      "@docx-editor.dev/core/contracts/types": ["../../../../core/src/contracts/types-barrel.ts"],
-      "@docx-editor.dev/core/layout": ["../../../../core/src/layout/index.ts"],
-      "@docx-editor.dev/core/output": ["../../../../core/src/output/index.ts"],
-      "@docx-editor.dev/core/store": ["../../../../core/src/store/index.ts"],
-      "@docx-editor.dev/core/editor": ["../../../../core/src/editor/index.ts"]
+      "@zqmi/docx-editor-core/contracts/mcp": ["../../../../core/src/contracts/mcp.ts"],
+      "@zqmi/docx-editor-core/contracts/modules": ["../../../../core/src/contracts/modules.ts"],
+      "@zqmi/docx-editor-core/contracts/plugin": ["../../../../core/src/contracts/plugin.ts"],
+      "@zqmi/docx-editor-core/contracts/types": ["../../../../core/src/contracts/types-barrel.ts"],
+      "@zqmi/docx-editor-core/layout": ["../../../../core/src/layout/index.ts"],
+      "@zqmi/docx-editor-core/output": ["../../../../core/src/output/index.ts"],
+      "@zqmi/docx-editor-core/store": ["../../../../core/src/store/index.ts"],
+      "@zqmi/docx-editor-core/editor": ["../../../../core/src/editor/index.ts"]
     }
   },
   "include": ["declared-lifecycle.ts"],

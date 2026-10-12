@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
-import { useDocxEditor, useEditorState } from '@docx-editor.dev/react';
-import { safeParticipantColor } from '@docx-editor.dev/core/collaboration';
-import type { CollaborationParticipant } from '@docx-editor.dev/core/collaboration';
+import { useDocxEditor, useEditorState } from '@zqmi/docx-editor-react';
+import { safeParticipantColor } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationParticipant } from '@zqmi/docx-editor-core/collaboration';
 import {
   DocxEditorCollaboration,
   useCollaborationParticipants,

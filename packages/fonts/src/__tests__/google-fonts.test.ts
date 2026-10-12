@@ -1,4 +1,4 @@
-// @docx-editor.dev/fonts/google — the on-demand half.
+// @zqmi/docx-editor-fonts/google — the on-demand half.
 //
 // Pins the promises that make fetching-on-open defensible: nothing goes out for a family
 // the document did not name, a name is only ever a lookup key (never a URL fragment),

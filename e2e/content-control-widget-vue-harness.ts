@@ -1,5 +1,5 @@
 import { createApp, h } from 'vue';
-import type { ContentControlWidgetSession } from '@docx-editor.dev/core/editor';
+import type { ContentControlWidgetSession } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorContentControlWidget } from '../packages/vue/src/editor/DocxEditorContentControlWidget';
 
 export function mountWidget(element: HTMLElement, session: ContentControlWidgetSession): void {
@@ -16,7 +16,7 @@ export function mountWidget(element: HTMLElement, session: ContentControlWidgetS
   );
 }
 
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 export function mountCatalog(bytes: Uint8Array) {
   const root = document.createElement('div');
   root.className = 'docx-editor';

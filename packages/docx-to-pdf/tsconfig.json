@@ -16,24 +16,24 @@
       // Keep every published core subpath on source. A missing entry falls through to dist,
       // mixing stale declarations with the source graph and making clean typechecks build-order
       // dependent.
-      "@docx-editor.dev/core": ["../core/src/index.ts"],
-      "@docx-editor.dev/core/automation": ["../core/src/automation/index.ts"],
-      "@docx-editor.dev/core/binding": ["../core/src/binding/index.ts"],
-      "@docx-editor.dev/core/collaboration": ["../core/src/collaboration/index.ts"],
-      "@docx-editor.dev/core/collaboration/replication": [
+      "@zqmi/docx-editor-core": ["../core/src/index.ts"],
+      "@zqmi/docx-editor-core/automation": ["../core/src/automation/index.ts"],
+      "@zqmi/docx-editor-core/binding": ["../core/src/binding/index.ts"],
+      "@zqmi/docx-editor-core/collaboration": ["../core/src/collaboration/index.ts"],
+      "@zqmi/docx-editor-core/collaboration/replication": [
         "../core/src/collaboration/replication.ts"
       ],
-      "@docx-editor.dev/core/contracts/document": ["../core/src/contracts/document.ts"],
-      "@docx-editor.dev/core/contracts/editor": ["../core/src/contracts/editor.ts"],
-      "@docx-editor.dev/core/contracts/interaction": ["../core/src/contracts/interaction.ts"],
-      "@docx-editor.dev/core/contracts/modules": ["../core/src/contracts/modules.ts"],
-      "@docx-editor.dev/core/contracts/types": ["../core/src/contracts/types-barrel.ts"],
-      "@docx-editor.dev/core/export": ["../core/src/export/index.ts"],
-      "@docx-editor.dev/core/editor": ["../core/src/editor/index.ts"],
-      "@docx-editor.dev/core/layout": ["../core/src/layout/index.ts"],
-      "@docx-editor.dev/core/output": ["../core/src/output/index.ts"],
-      "@docx-editor.dev/core/store": ["../core/src/store/index.ts"],
-      "@docx-editor.dev/fonts": ["../fonts/src/index.ts"],
+      "@zqmi/docx-editor-core/contracts/document": ["../core/src/contracts/document.ts"],
+      "@zqmi/docx-editor-core/contracts/editor": ["../core/src/contracts/editor.ts"],
+      "@zqmi/docx-editor-core/contracts/interaction": ["../core/src/contracts/interaction.ts"],
+      "@zqmi/docx-editor-core/contracts/modules": ["../core/src/contracts/modules.ts"],
+      "@zqmi/docx-editor-core/contracts/types": ["../core/src/contracts/types-barrel.ts"],
+      "@zqmi/docx-editor-core/export": ["../core/src/export/index.ts"],
+      "@zqmi/docx-editor-core/editor": ["../core/src/editor/index.ts"],
+      "@zqmi/docx-editor-core/layout": ["../core/src/layout/index.ts"],
+      "@zqmi/docx-editor-core/output": ["../core/src/output/index.ts"],
+      "@zqmi/docx-editor-core/store": ["../core/src/store/index.ts"],
+      "@zqmi/docx-editor-fonts": ["../fonts/src/index.ts"],
       "@docx-editor.dev/fonts-cjk": ["../fonts-cjk/src/index.ts"]
     }
   },

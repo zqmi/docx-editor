@@ -13,9 +13,9 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { paragraphTextOf } from '@docx-editor.dev/core/store';
+import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
 import { applySelectionToDom, semanticSelectionFromDom } from '../dom-selection.ts';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../../layout/semantic-layout.ts';
 import { paintSemanticLayout } from '../../output/semantic-paint.ts';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';

@@ -1,5 +1,5 @@
 import { watch } from 'vue';
-import type { EditorEvents } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorEvents } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 
 /** @public */

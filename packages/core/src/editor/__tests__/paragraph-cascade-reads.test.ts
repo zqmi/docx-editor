@@ -21,7 +21,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { createKeyDownHandler } from '../surface-input.ts';
 import { mountPaginatedSurface } from '../paginated-surface.ts';

@@ -17,7 +17,7 @@
 
 import { DocxEditor as EditorApi } from '@docx-editor.dev/editor-api/browser';
 import type { DocxEditorRuntime } from '@docx-editor.dev/editor-api/browser';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import type { AgentContextSnapshot } from './tools';
 
 /** What a tool call answers. The string reaches the model verbatim. */

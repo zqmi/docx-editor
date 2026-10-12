@@ -11,7 +11,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // and every replica keeps the same one of them.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { OoxmlNode, TreeDocOp } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('concurrent-format-merge-room');

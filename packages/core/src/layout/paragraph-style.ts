@@ -10,7 +10,7 @@ import {
   twipsToPoints,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
 import { borderStrokeWidthPt } from './border-metrics.ts';
 import { gridLineBox } from './line-grid.ts';

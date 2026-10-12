@@ -6,14 +6,14 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // "What custom nodes does this document have?", as one call.
 //
 // Answering it by hand meant `editor.surface.session.part()`, `.currentPackage()`, and
-// `customNodePayloadsByControl` imported from `@docx-editor.dev/core/store` — three engine
+// `customNodePayloadsByControl` imported from `@zqmi/docx-editor-core/store` — three engine
 // internals to use a pro feature, none of them mentioned on the pro surface. Worse, the obvious
 // shortcut (`recognizeCustomNodes(part, definitions)`) compiles and returns every node with no
 // payload at all, which is indistinguishable from a document whose nodes genuinely carry none.
 
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
-import type { PaginatedSurface } from '@docx-editor.dev/core/editor';
-import { customNodePayloadsByControl } from '@docx-editor.dev/core/store';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { PaginatedSurface } from '@zqmi/docx-editor-core/editor';
+import { customNodePayloadsByControl } from '@zqmi/docx-editor-core/store';
 import {
   isCustomNodeDefinition,
   recognizeCustomNodes,

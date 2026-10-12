@@ -7,7 +7,7 @@
 
 import { selectionMarkRects } from '../layout/selection-rects.ts';
 import type { TextMeasurer } from '../layout/semantic-records.ts';
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
 import { hiddenMarkRemovedIds, type RevisionView } from './hidden-mark-joins.ts';
 import { mergedPredecessorsOf } from '../layout/line-segments.ts';
 import {
@@ -16,7 +16,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   documentOrder,
   paragraphTextFromLayout,
@@ -24,7 +24,7 @@ import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 
 /** What counts as part of a word for a double-click and for the format painter. */
 const WORD_CHARACTER = /[\p{L}\p{N}_'’]/u;

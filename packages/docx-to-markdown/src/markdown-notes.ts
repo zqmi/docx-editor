@@ -4,7 +4,7 @@ import {
   type BlockFragmentRecord,
   type PageRecord,
   type SemanticLayout,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 
 export interface NoteProjection {
   readonly kind: 'footnote' | 'endnote';

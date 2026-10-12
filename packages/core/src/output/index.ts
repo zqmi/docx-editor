@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/core/output` — painting a layout into DOM.
+ * `@zqmi/docx-editor-core/output` — painting a layout into DOM.
  *
  * The painted pages ARE the editable surface, but the DOM is a picture: browser mutations are
  * prevented and re-expressed as tree ops, and selection maps only through `data-paragraph-id`

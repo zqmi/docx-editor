@@ -9,7 +9,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { reviewModule } from '../review/review-module.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

@@ -9,9 +9,9 @@
     "typecheck:runtime": "tsc --noEmit"
   },
   "dependencies": {
-    "@docx-editor.dev/core": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
     "@docx-editor.dev/docx-to-markdown": "workspace:*",
-    "@docx-editor.dev/fonts": "workspace:*"
+    "@zqmi/docx-editor-fonts": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "^1.2.0",

@@ -21,7 +21,7 @@ import {
   type ImageOverlayScrollPort,
   type ImageResizeHandle,
   type SelectedDrawingOverlayTarget,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import {
   computeImageResizeResult,
   createImageOverlayScrollPort,
@@ -30,8 +30,8 @@ import {
   overlayFrameToSheetCssPixels,
   overlayHostOrigin,
   resizePreservesAspect,
-} from '@docx-editor.dev/core/editor';
-import type { DrawingPositionInput } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { DrawingPositionInput } from '@zqmi/docx-editor-core/editor';
 import { useTranslation } from '../../i18n';
 import { useDocxEditor } from '../context';
 import { guardToolbarMousedown } from '../toolbar/ToolbarButton';

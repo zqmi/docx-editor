@@ -1,7 +1,7 @@
 // Atomic Office Math reads and writes for the paginated surface.
 
-import type { TreeApplyResult, TreeDocxSessionView } from '@docx-editor.dev/core/binding';
-import type { SemanticPosition, SemanticSelection } from '@docx-editor.dev/core/layout';
+import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { SemanticPosition, SemanticSelection } from '@zqmi/docx-editor-core/layout';
 import {
   OFFICE_MATH_NAMESPACE_URI,
   equationExpressionToLinearMath,
@@ -15,7 +15,7 @@ import {
   type OoxmlPart,
   type StoryScope,
   type EquationExpression,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 const SUGGESTING_EQUATION_REFUSAL =
   'equation replacement and removal are not supported in suggesting mode';

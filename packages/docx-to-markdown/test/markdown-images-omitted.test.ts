@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
-import type { ExportSemanticLayout } from '@docx-editor.dev/core/export';
-import type { ParagraphFragmentRecord, SemanticLayout } from '@docx-editor.dev/core/layout';
+import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
+import type { ParagraphFragmentRecord, SemanticLayout } from '@zqmi/docx-editor-core/layout';
 import { exportMarkdownLayout } from '../src/index.ts';
 
 function paragraph(id: string, text: string, fragmentIndex = 0): ParagraphFragmentRecord {

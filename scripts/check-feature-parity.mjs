@@ -116,7 +116,7 @@ function extractFromFile(absPath, adapterRoot) {
     .replace(/\.(tsx?|vue|jsx?)$/, '');
 
   // Tag files that are pure core re-exports — they don't add surface
-  // (the canonical implementation lives in @docx-editor.dev/core)
+  // (the canonical implementation lives in @zqmi/docx-editor-core)
   // so the parity counter shouldn't penalise them as react-only.
   // Only consider .ts/.tsx; Vue SFCs always have a <template>, so
   // they're never pure shims.

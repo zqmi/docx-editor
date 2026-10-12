@@ -1,9 +1,9 @@
 import { afterEach, expect, test } from 'bun:test';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { docx } from './paginated-surface-fixtures.ts';
-import { detectBodyTocs, serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { detectBodyTocs, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { applyTreeOp, paragraphTextOf } from '../../store/store/tree-ops.ts';
-import { validateOoxmlPart, bodyStoryRoot, storyParagraphs } from '@docx-editor.dev/core/store';
+import { validateOoxmlPart, bodyStoryRoot, storyParagraphs } from '@zqmi/docx-editor-core/store';
 import { tocParagraphRanges } from '../surface-toc-ranges.ts';
 const run = (s: string) => `<w:r><w:t>${s}</w:t></w:r>`;
 const begin =

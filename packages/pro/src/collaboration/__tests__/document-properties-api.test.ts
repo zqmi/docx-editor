@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { strFromU8, unzipSync } from 'fflate';
 import { afterAll, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';
 import { collaborationModule } from '../../index';
 import { createPeerHarness, zipDocument } from './document-peer-support';

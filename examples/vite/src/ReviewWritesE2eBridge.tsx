@@ -3,7 +3,7 @@
 // not write. The chrome controls still drive every mutation.
 
 import { useEffect } from 'react';
-import { useDocxEditor } from '@docx-editor.dev/react';
+import { useDocxEditor } from '@zqmi/docx-editor-react';
 
 export interface ReviewWriteItemSnap {
   readonly id: string;

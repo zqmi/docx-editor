@@ -10,7 +10,7 @@ import { eastAsiaRunsOfSegments } from '../script-itemization.ts';
 import { symbolRunStyle } from '../symbol-run.ts';
 import { intlGraphemeBoundary, resetGraphemeBoundary, setGraphemeBoundary } from '../grapheme.ts';
 import { createFixedMeasurer, layoutSemanticDocument, linesOf } from '../index.ts';
-import { readOoxmlPart, type OoxmlProperty } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
 
 const fonts: OoxmlProperty = {
   localName: 'rFonts',

@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 import type { DocxEditorChildren } from '../docx-editor-children';
-import type { ChromeExportFormat } from '@docx-editor.dev/core/editor';
+import type { ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
 import { useTranslation } from '../i18n';
 import { DialogFrame } from './dialog-parts';
 

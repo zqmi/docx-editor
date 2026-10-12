@@ -6,7 +6,7 @@ import {
   readOoxmlPart,
   serializeOoxmlPart,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { layoutSemanticDocument } from '../semantic-layout.ts';

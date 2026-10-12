@@ -18,7 +18,7 @@
 //   is drawn from the line box (borders, shading, markers, mark revisions).
 // Anything else returns null, and the row is laid out normally.
 
-import type { OoxmlElement, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import {
   cellAvailableWidth,
   cellParagraphBreakInputs,

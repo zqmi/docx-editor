@@ -8,7 +8,7 @@ import {
   canonicalOoxmlFingerprint,
   validateOoxmlPart,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { BackendKind } from './contract.ts';
 import {
   collectKind,

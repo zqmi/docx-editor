@@ -15,7 +15,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type * as Y from 'yjs';
 import type { WebrtcProvider } from 'y-webrtc';
-import type { EditorCollaborationSession } from '@docx-editor.dev/core/collaboration';
+import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
 import { collaborationModule } from '../collaboration/collaboration-module.ts';
 import {
   useWebrtcCollaboration,

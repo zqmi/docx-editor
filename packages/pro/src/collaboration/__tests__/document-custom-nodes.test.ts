@@ -23,7 +23,7 @@ import {
   readCustomXmlNode,
   relationshipsOf,
   resolveContentTypeOf,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, zipDocument, type Peer } from './document-peer-support.ts';
 
 const NS = 'https://example.test/nodes';

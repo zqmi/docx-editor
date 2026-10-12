@@ -15,8 +15,8 @@ import {
   inlineCharacterTextOf,
   withHyphenGlyphs,
 } from '../store/package/hyphen-text.ts';
-import { relationshipTargetIn, storyParagraphs, storyRootsOf } from '@docx-editor.dev/core/store';
-import type { TreeApplyResult, TreeDocxSessionView } from '@docx-editor.dev/core/binding';
+import { relationshipTargetIn, storyParagraphs, storyRootsOf } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
 import {
   hardBreakText,
   hyperlinkTargetOf,
@@ -27,7 +27,7 @@ import {
   type OoxmlPart,
   type StoryScope,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   isInlineRunContainer,
   MAX_INLINE_CONTAINER_DEPTH,
@@ -38,7 +38,7 @@ import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 
 /** WordprocessingML, for the demoted controls the reader preserves as generic nodes. */
 const WML = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

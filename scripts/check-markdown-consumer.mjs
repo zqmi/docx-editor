@@ -163,7 +163,7 @@ for (const [bundler, external] of [
     path.join(nextApp, 'next.config.mjs'),
     `export default {
   output: 'standalone', outputFileTracingRoot: ${JSON.stringify(consumer)},
-  serverExternalPackages: ${JSON.stringify(external ? ['@docx-editor.dev/docx-to-markdown', '@docx-editor.dev/core', '@docx-editor.dev/fonts'] : [])},
+  serverExternalPackages: ${JSON.stringify(external ? ['@docx-editor.dev/docx-to-markdown', '@zqmi/docx-editor-core', '@zqmi/docx-editor-fonts'] : [])},
 };`
   );
 

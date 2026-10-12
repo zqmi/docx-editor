@@ -10,7 +10,7 @@ import {
   type CSSProperties,
   type PropType,
 } from 'vue';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor, useReviewRailRegistry } from './context';
 import { useEditorState } from './useEditorState';
 import { ScopedByAncestorContext, useScopeClassName } from './scope-context';

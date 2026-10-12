@@ -8,7 +8,7 @@ Defines framework-neutral contracts for behavior shared by supported adapters.
 
 ### Requirement: applyFormatting and setParagraphStyle in core
 
-`@docx-editor.dev/core` SHALL expose `applyFormatting(view, options, deps)` and `setParagraphStyle(view, options, deps)` where `deps` supplies an injected `getStyleResolver`. The mark/style logic (bold, italic, underline, strike, color, highlight, fontSize, fontFamily, and paragraph style application) MUST satisfy the observable scenarios below for the same document, selection, options, and resolver inputs. Both adapters SHALL delegate, passing their own `EditorView` and style resolver.
+`@zqmi/docx-editor-core` SHALL expose `applyFormatting(view, options, deps)` and `setParagraphStyle(view, options, deps)` where `deps` supplies an injected `getStyleResolver`. The mark/style logic (bold, italic, underline, strike, color, highlight, fontSize, fontFamily, and paragraph style application) MUST satisfy the observable scenarios below for the same document, selection, options, and resolver inputs. Both adapters SHALL delegate, passing their own `EditorView` and style resolver.
 
 #### Scenario: Apply character marks to a located range
 

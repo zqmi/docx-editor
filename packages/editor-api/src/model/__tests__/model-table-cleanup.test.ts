@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { expect, test } from 'bun:test';
 import { DocxEditor, type DocxEditorRuntime } from '@docx-editor.dev/editor-api';
 import { DocxEditor as BrowserDocxEditor } from '@docx-editor.dev/editor-api/browser';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { zipSync, unzipSync, strToU8, strFromU8 } from 'fflate';
 

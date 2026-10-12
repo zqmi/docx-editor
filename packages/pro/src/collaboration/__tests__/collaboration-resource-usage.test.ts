@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { readCollaborationResourceUsage } from '../resource-usage.ts';
 import { createPeerHarness } from './document-peer-support.ts';
 import { collaborationDocx } from './support.ts';

@@ -26,7 +26,7 @@ The shared engine handles document state, editing, layout, and rendering.
 Install the adapter and its required engine peer:
 
 ```bash
-npm install @docx-editor.dev/vue @docx-editor.dev/core
+npm install @docx-editor.dev/vue @zqmi/docx-editor-core
 ```
 
 ## Quick start

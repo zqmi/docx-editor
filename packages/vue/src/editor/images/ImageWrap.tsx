@@ -1,5 +1,5 @@
 import { computed, defineComponent, ref, watch, type VNode } from 'vue';
-import type { ImageWrapTarget } from '@docx-editor.dev/core/editor';
+import type { ImageWrapTarget } from '@zqmi/docx-editor-core/editor';
 import { useTranslation, type TranslationKey } from '../../i18n';
 import { useStableDocxId } from '../../lib/stable-id';
 import { useEditorValueCommand } from '../useEditorValueCommand';

@@ -27,17 +27,17 @@ const requiresSameMinor = (range: string | undefined, version: string) => {
 describe('how this package asks for the engine', () => {
   test('the engine is a peer', () => {
     expect(
-      requiresSameMinor(manifest.peerDependencies?.['@docx-editor.dev/core'], core.version)
+      requiresSameMinor(manifest.peerDependencies?.['@zqmi/docx-editor-core'], core.version)
     ).toBe(true);
-    expect(manifest.dependencies?.['@docx-editor.dev/core']).toBeUndefined();
+    expect(manifest.dependencies?.['@zqmi/docx-editor-core']).toBeUndefined();
   });
 
   test('the engine peer is required', () => {
-    expect(manifest.peerDependenciesMeta?.['@docx-editor.dev/core']?.optional).toBeUndefined();
+    expect(manifest.peerDependenciesMeta?.['@zqmi/docx-editor-core']?.optional).toBeUndefined();
   });
 
   test('workspace devDependency pins the engine for build', () => {
-    expect(manifest.devDependencies?.['@docx-editor.dev/core']).toBe('workspace:*');
+    expect(manifest.devDependencies?.['@zqmi/docx-editor-core']).toBe('workspace:*');
   });
 
   test('does not install engine implementation dependencies', () => {

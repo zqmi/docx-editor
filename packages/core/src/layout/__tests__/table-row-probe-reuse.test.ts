@@ -3,7 +3,7 @@ import { bodyLineId } from '../body-line-id.ts';
 import { finalizeTableRows } from '../table-fragment-finalize.ts';
 import { rememberRowPlacement, isSettledPreviousRow } from '../table-row-placement-reuse.ts';
 import { expect, test } from 'bun:test';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { createRowProbeReuse } from '../table-row-probe-reuse.ts';
 import { layoutRowFragment, type TableFlowDeps } from '../semantic-table-layout.ts';
 import { readTableStructure } from '../semantic-table.ts';

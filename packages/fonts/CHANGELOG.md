@@ -1,4 +1,4 @@
-# @docx-editor.dev/fonts
+# @zqmi/docx-editor-fonts
 
 ## 2.28.0
 

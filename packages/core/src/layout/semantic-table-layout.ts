@@ -31,7 +31,7 @@ import { emptyParagraphStyleFields } from './empty-paragraph-style.ts';
 // paragraph fragments already live in. Cell paragraph breaks go through the shared
 // `breakParagraph`, so they hit the same cache with keys at the cell's content width.
 
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { measuringFlowDeps, withoutAnchorSinks } from './table-probe-deps.ts';
 import {
   clipInlineDrawingRecordToRegion,
@@ -251,7 +251,7 @@ export interface TableFlowDeps {
   /** @internal Word TOC character-style suppression. */
   readonly tocLinkStyleRanges?: import('./toc-link-formatting.ts').TocLinkRanges;
   /** Document properties for document-property fields; the same object every flow shares. */
-  readonly documentProperties?: import('@docx-editor.dev/core/store').DocumentProperties;
+  readonly documentProperties?: import('@zqmi/docx-editor-core/store').DocumentProperties;
   /**
    * True when this table is in BODY flow, whose page fields are substituted at document finalize.
    * Propagates to every cell paragraph so a body-table PAGE field paints a placeholder; a table

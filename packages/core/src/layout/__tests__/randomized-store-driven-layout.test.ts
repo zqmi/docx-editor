@@ -41,7 +41,7 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   buildNumberingIndex,
   createFixedMeasurer,

@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { paragraphTextOf } from '@docx-editor.dev/core/store';
+import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
 import { createDocxEditor } from '../docx-editor.ts';
 
 function dateDocx(): Uint8Array {

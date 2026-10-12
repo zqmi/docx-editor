@@ -2,8 +2,8 @@
 // Mirrors the tree harness pattern: exposes a tiny window API, not a demo surface.
 
 import { useEffect } from 'react';
-import { useDocxEditor } from '@docx-editor.dev/react';
-import { selectedDrawingOverlayTargetOf } from '@docx-editor.dev/core/editor';
+import { useDocxEditor } from '@zqmi/docx-editor-react';
+import { selectedDrawingOverlayTargetOf } from '@zqmi/docx-editor-core/editor';
 
 declare global {
   interface Window {

@@ -8,7 +8,7 @@ import {
   readOoxmlPackage,
   type FragmentCoverage,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { paragraphLength } from '../../store/store/tree-op-segments.ts';
 import { buildCopyFlavours } from '../clipboard-copy-payload.ts';
 import { fragmentFromHtml } from '../clipboard-fragment-codec.ts';

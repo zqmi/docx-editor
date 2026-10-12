@@ -13,7 +13,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // publication is held back past the commit.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { StoryScope, TreeDocOp } from '@docx-editor.dev/core/store';
+import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
 import {
   BODY,
   createPeerHarness,

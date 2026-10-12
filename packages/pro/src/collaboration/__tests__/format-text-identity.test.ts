@@ -13,11 +13,11 @@ import {
   readOoxmlPackage,
   type OoxmlNode,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   createCollaborationDocumentPort,
   type CanonicalPrimitiveJournal,
-} from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/collaboration/replication';
 import {
   applyJournal,
   destroyReplica,

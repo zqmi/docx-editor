@@ -1,6 +1,6 @@
 // Vertical alignment metadata for table-cell layout.
 
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 
 /** `w:vAlign` — where a cell's content sits when the row is taller than the content. */
 export type CellVerticalAlign = 'top' | 'center' | 'bottom';

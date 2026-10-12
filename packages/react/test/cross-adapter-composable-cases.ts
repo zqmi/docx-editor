@@ -1,7 +1,7 @@
-import { CHROME_GROUPS, chromeSlotId, toolbarCommandState } from '@docx-editor.dev/core/editor';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
-import type { ChromeSlotId } from '@docx-editor.dev/core/editor';
-import { createT, en, localizeDisabledReason } from '@docx-editor.dev/i18n';
+import { CHROME_GROUPS, chromeSlotId, toolbarCommandState } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import { createT, en, localizeDisabledReason } from '@zqmi/docx-editor-i18n';
 import { zipSync, strToU8 } from 'fflate';
 import { stepZoomLevel } from '../../react/src/editor/zoom-levels.ts';
 

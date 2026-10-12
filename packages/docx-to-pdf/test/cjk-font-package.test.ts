@@ -41,7 +41,7 @@ test('the PDF package no longer ships the CJK face and declares its package opti
   expect(existsSync(new URL('../licenses/NotoSansCJK-OFL.txt', import.meta.url))).toBe(false);
   const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
   expect(pkg.peerDependencies['@docx-editor.dev/fonts-cjk']).toBe(
-    pkg.peerDependencies['@docx-editor.dev/core']
+    pkg.peerDependencies['@zqmi/docx-editor-core']
   );
   expect(pkg.peerDependenciesMeta['@docx-editor.dev/fonts-cjk']).toEqual({ optional: true });
   expect(pkg.dependencies['@docx-editor.dev/fonts-cjk']).toBeUndefined();

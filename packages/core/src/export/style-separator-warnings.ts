@@ -1,6 +1,6 @@
 import { readOnOffChild } from '../store/package/ooxml-shared.ts';
 import { WML_NAMESPACE_URI } from '../store/package/ooxml-tree.ts';
-import type { HeadlessDocumentView, OoxmlNode, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { HeadlessDocumentView, OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   createDocumentStyleDependencies,
   type DocumentStyleDependencies,

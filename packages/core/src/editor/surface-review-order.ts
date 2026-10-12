@@ -8,7 +8,7 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type TreeModelChange,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 /**
  * Paragraph id to document position over EVERY story the review queue lists — body

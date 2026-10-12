@@ -24,19 +24,19 @@ export default defineConfig({
         replacement: path.join(monorepoRoot, 'packages/pro/src/index.ts'),
       },
       {
-        find: '@docx-editor.dev/react',
+        find: '@zqmi/docx-editor-react',
         replacement: path.join(monorepoRoot, 'packages/react/src/index.ts'),
       },
       // The STYLESHEET, before any prefix rule that would swallow it. A plain-string
-      // `@docx-editor.dev/core` alias matches by prefix, so `.../core/styles/editor.css`
+      // `@zqmi/docx-editor-core` alias matches by prefix, so `.../core/styles/editor.css`
       // resolved to `packages/core/src/index.ts/styles/editor.css` — a path through a file,
       // which is what "Not a directory" meant.
       {
-        find: '@docx-editor.dev/core/styles/editor.css',
+        find: '@zqmi/docx-editor-core/styles/editor.css',
         replacement: path.join(monorepoRoot, 'packages/core/src/styles/editor.css'),
       },
       {
-        find: '@docx-editor.dev/core/editor',
+        find: '@zqmi/docx-editor-core/editor',
         replacement: path.join(monorepoRoot, 'packages/core/src/editor/index.ts'),
       },
       {
@@ -48,12 +48,12 @@ export default defineConfig({
         replacement: path.join(monorepoRoot, 'packages/core/src/contracts/$1.ts'),
       },
       {
-        // EXACT. As a bare string this matched every `@docx-editor.dev/core/*` subpath too.
+        // EXACT. As a bare string this matched every `@zqmi/docx-editor-core/*` subpath too.
         find: /^@docx-editor\.dev\/core$/,
         replacement: path.join(monorepoRoot, 'packages/core/src/index.ts'),
       },
       {
-        find: '@docx-editor.dev/i18n',
+        find: '@zqmi/docx-editor-i18n',
         replacement: path.join(monorepoRoot, 'packages/i18n/src/index.ts'),
       },
     ],

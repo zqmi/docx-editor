@@ -9,8 +9,8 @@
 // and a shape this cannot read resolves to "no picture bullet", which leaves the level's
 // `w:lvlText` in force rather than failing the document.
 
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
-import { WML_NAMESPACE_URI } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
 import { attribute, children, points, styleOf, VML } from '../store/package/legacy-vml-values.ts';
 
 /** Relationship namespace of `r:id` on `v:imagedata`. */

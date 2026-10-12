@@ -2,7 +2,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import { caretAt } from '@docx-editor.dev/core/layout';
+import { caretAt } from '@zqmi/docx-editor-core/layout';
 import { formatDefaultsDocx as docx, paragraph } from './paginated-surface-fixtures.ts';
 import {
   mountPaginatedSurface,

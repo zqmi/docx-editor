@@ -23,7 +23,7 @@ import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { toolbarCommandState, runToolbarCommand } from '../toolbar-commands.ts';
 import { createKeyDownHandler } from '../surface-input.ts';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const CT = 'http://schemas.openxmlformats.org/package/2006/content-types';

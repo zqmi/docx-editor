@@ -126,7 +126,7 @@ s = s.replace(
 // TableSlotContextValue draft type
 s = s.replace(
   /readonly draft: ReturnType<typeof useTableChromeSlot>\['draft'\];/,
-  'readonly draft: ComputedRef<import("@docx-editor.dev/core/editor").TableChromeDraft>;'
+  'readonly draft: ComputedRef<import("@zqmi/docx-editor-core/editor").TableChromeDraft>;'
 );
 
 // Fix useTableChromeTriggerA11y calls - enabled may be ComputedRef in slot ctx - use getters in slotCtx

@@ -21,7 +21,7 @@ import {
   runTextPending,
   splitProductsOf,
 } from './split-text-recording.ts';
-import type { CanonicalPrimitiveJournal } from '@docx-editor.dev/core/collaboration/replication';
+import type { CanonicalPrimitiveJournal } from '@zqmi/docx-editor-core/collaboration/replication';
 import type { LogicalId } from './identity.ts';
 import { sharedEffect, type SharedEffect, type SharedNodeDescriptor } from './shared-effect.ts';
 import {

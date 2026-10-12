@@ -20,8 +20,8 @@ import {
   type OoxmlAttribute,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
-import type { CanonicalPrimitiveEffect } from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/store';
+import type { CanonicalPrimitiveEffect } from '@zqmi/docx-editor-core/collaboration/replication';
 import { keyId } from './registry-node-reads.ts';
 import {
   attributeFrom,

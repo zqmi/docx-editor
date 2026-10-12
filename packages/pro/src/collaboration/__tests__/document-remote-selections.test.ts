@@ -8,9 +8,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { Awareness, applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protocols/awareness';
-import type { CollaborationDocumentPort } from '@docx-editor.dev/core/collaboration/replication';
+import type { CollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
 import { AWARENESS_FIELD, textDigest } from '../document-awareness.ts';
-import { mapOffsetAcrossText } from '@docx-editor.dev/core/collaboration/replication';
+import { mapOffsetAcrossText } from '@zqmi/docx-editor-core/collaboration/replication';
 import { RemoteSelectionResolver } from '../document-remote-selections.ts';
 
 const PARAGRAPH = 'AAAAAAAA';

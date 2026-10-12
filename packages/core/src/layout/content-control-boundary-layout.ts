@@ -12,7 +12,7 @@ import type {
   OoxmlNode,
   OoxmlParagraphNode,
   OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { isInlineRunContainer, MAX_INLINE_CONTAINER_DEPTH } from '../store/package/ooxml-shared.ts';
 import { paragraphOffsetIndex } from '../store/store/tree-op-segments.ts';
 import { paragraphContentBounds } from './paragraph-content-bounds.ts';

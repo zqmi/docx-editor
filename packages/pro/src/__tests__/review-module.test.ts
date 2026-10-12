@@ -16,7 +16,7 @@ import {
   createDocxEditor,
   DEFAULT_REVIEW_PANE,
   reviewPaneListsItem,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { reviewModule } from '../index.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
@@ -114,7 +114,7 @@ describe('reviewModule without a key (honor system)', () => {
 
 describe('the free packages carry no review derivation', () => {
   test('core layout no longer exports the queue derivation', async () => {
-    const layout = await import('@docx-editor.dev/core/layout');
+    const layout = await import('@zqmi/docx-editor-core/layout');
     // The vocabulary and pure helpers stay; the derivation is this package's.
     expect('reviewItemKey' in layout).toBe(true);
     expect('collectReviewItems' in layout).toBe(false);

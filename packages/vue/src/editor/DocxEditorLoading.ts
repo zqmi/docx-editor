@@ -10,7 +10,7 @@ import {
   type VNode,
 } from 'vue';
 import type { DocxEditorChildren } from '../docx-editor-children';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation } from '../i18n';
 import { isDevelopment } from '../lib/is-development';
 import { useDocxEditor } from './context';

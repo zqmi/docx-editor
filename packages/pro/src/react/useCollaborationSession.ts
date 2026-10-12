@@ -3,8 +3,8 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import { useDocxEditor, useEditorState } from '@docx-editor.dev/react';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import { useDocxEditor, useEditorState } from '@zqmi/docx-editor-react';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import type { CollaborationSession } from '../collaboration/types.ts';
 
 /** Module-level so the selector identity is stable across renders. */

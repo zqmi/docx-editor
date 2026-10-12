@@ -1,6 +1,6 @@
 // Floating tables use the same scanline geometry and convergence keys as anchored drawings.
 import { autofitContextOf, type TableAutofitContext } from './table-autofit-widths.ts';
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { hardBreakKind } from '../store/package/hard-break.ts';
 import { paragraphBreaksBefore } from './paragraph-style.ts';
 import type { PreparedBlock } from './section-prepass-types.ts';

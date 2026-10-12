@@ -1,5 +1,5 @@
 import { watch, type Ref } from 'vue';
-import { listenForPopupEscape, listenForPopupFocusLeave } from '@docx-editor.dev/core/editor';
+import { listenForPopupEscape, listenForPopupFocusLeave } from '@zqmi/docx-editor-core/editor';
 import { useNavigationViewportElement } from '../navigation/navigation-layout';
 
 /**

@@ -12,7 +12,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // one of them — the reverse of what Accept on that card does to a deleted mark.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, revisionItemsOf, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, revisionItemsOf, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   revisionItemCountSuffix,
   revisionItemLabelKey,

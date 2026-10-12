@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import type { EquationActivation } from '@docx-editor.dev/core/editor';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
-import { localizeDisabledReason } from '@docx-editor.dev/i18n';
+import type { EquationActivation } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
 import { useTranslation } from '../i18n';
 import { useDocxEditor } from './context';
 import { absolutePointInScroller } from './scroller-geometry.ts';

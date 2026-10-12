@@ -1,5 +1,5 @@
 import { inject, shallowRef, type InjectionKey, type ShallowRef } from 'vue';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 
 /** @public */
 export const docxEditorKey: InjectionKey<ShallowRef<DocxEditorInstance | null>> =

@@ -7,14 +7,14 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // `../vue/review-context.ts`.
 
 import { createContext, useCallback, useContext } from 'react';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
-import type { CommentMarkerStyle, RevisionDisplay } from '@docx-editor.dev/core/editor';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { CommentMarkerStyle, RevisionDisplay } from '@zqmi/docx-editor-core/editor';
 import {
   useReviewAuthors,
   useTranslation,
   type ReviewAuthorInfo,
   type ToolbarTranslate,
-} from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-react';
 import type { useReview, ReviewItemView } from './useReview.ts';
 
 /** The rail's data, provided once by the Root so a card never re-subscribes. */

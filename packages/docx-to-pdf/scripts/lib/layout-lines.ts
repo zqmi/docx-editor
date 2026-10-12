@@ -12,8 +12,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * with `unitsOf` for the 0.24pt device grid the reference renders on.
  */
 import { PDFDocument } from 'pdf-lib';
-import { forEachSemanticSpan } from '@docx-editor.dev/core/layout';
-import { baselineShiftPtOf, styleForFontSlot } from '@docx-editor.dev/core/layout';
+import { forEachSemanticSpan } from '@zqmi/docx-editor-core/layout';
+import { baselineShiftPtOf, styleForFontSlot } from '@zqmi/docx-editor-core/layout';
 import { EmbeddedFace } from '../../src/fonts.ts';
 import { paintedBaselineFromTop } from '../../src/text.ts';
 import { openExportSession, type SessionOptions } from '../../src/open-session.ts';

@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo, useEffect } from 'react';
 import type { CSSProperties } from 'react';
-import type { ColorValue, Theme, ThemeColorScheme } from '@docx-editor.dev/core/contracts/editor';
+import type { ColorValue, Theme, ThemeColorScheme } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   generateThemeTintShadeMatrix,
   resolveColor,

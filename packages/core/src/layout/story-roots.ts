@@ -24,7 +24,7 @@ import type {
   OoxmlNode,
   OoxmlParagraphNode,
   OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { MAX_CONTENT_CONTROL_NESTING } from '../store/package/content-control-walk.ts';
 import { blockStoryContainerChildren } from '../store/package/story-blocks.ts';
 import { WML_NAMESPACE_URI } from '../store/package/ooxml-tree.ts';

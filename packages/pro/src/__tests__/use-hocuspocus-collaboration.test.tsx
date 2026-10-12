@@ -20,7 +20,7 @@ import type { HocuspocusProvider } from '@hocuspocus/provider';
 import type {
   CollaborationFailureCode,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import { collaborationModule } from '../collaboration/collaboration-module.ts';
 import {
   useHocuspocusCollaboration,

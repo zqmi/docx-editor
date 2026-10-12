@@ -1,6 +1,6 @@
 import type { StyleCascadeTable } from './style-cascade.ts';
 import type { NumberingIndex } from './numbering-index.ts';
-import type { OoxmlElement, OoxmlNode, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import type { RevisionAuthorFilter, RevisionDisplayMode } from './revision-projection.ts';
 import type { DocumentSection } from './section-properties.ts';
 import { paragraphMergeGroupOf, storyBlocks } from './story-roots.ts';

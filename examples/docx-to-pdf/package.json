@@ -10,12 +10,12 @@
     "test": "node --test server.node.test.mjs"
   },
   "dependencies": {
-    "@docx-editor.dev/core": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
     "@docx-editor.dev/docx-to-pdf": "workspace:*",
-    "@docx-editor.dev/fonts": "workspace:*",
+    "@zqmi/docx-editor-fonts": "workspace:*",
     "@docx-editor.dev/fonts-cjk": "workspace:*",
-    "@docx-editor.dev/i18n": "workspace:*",
-    "@docx-editor.dev/react": "workspace:*",
+    "@zqmi/docx-editor-i18n": "workspace:*",
+    "@zqmi/docx-editor-react": "workspace:*",
     "@embedpdf/core": "^2.15.0",
     "@embedpdf/engines": "^2.15.0",
     "@embedpdf/models": "^2.15.0",

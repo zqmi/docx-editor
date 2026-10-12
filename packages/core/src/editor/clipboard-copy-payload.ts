@@ -10,7 +10,7 @@ import {
   extractFragmentPackage,
   type FragmentCoverage,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { interopHtmlFromFragmentPackage } from './clipboard-html-write.ts';
 import { wrapInteropHtml } from './clipboard-fragment-codec.ts';
 

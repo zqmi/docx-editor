@@ -16,7 +16,7 @@
 // The page shapes come from captured probes in compatibility modes 14 and 15.
 
 import { describe, expect, test } from 'bun:test';
-import { TreeDocumentStore, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { TreeDocumentStore, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { layoutSemanticDocument } from '../semantic-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import { keepNextFlowKeys } from '../pagination-keeps.ts';

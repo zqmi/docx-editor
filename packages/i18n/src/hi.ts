@@ -1,14 +1,14 @@
 /**
- * @docx-editor.dev/i18n/hi
+ * @zqmi/docx-editor-i18n/hi
  *
  * Hindi (`hi`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import hi from '@docx-editor.dev/i18n/hi';
+ * import hi from '@zqmi/docx-editor-i18n/hi';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const hi = (await import('@docx-editor.dev/i18n/hi')).default;
+ * const hi = (await import('@zqmi/docx-editor-i18n/hi')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

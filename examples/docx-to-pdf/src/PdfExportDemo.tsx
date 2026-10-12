@@ -4,8 +4,8 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { DocxEditor, useFonts, type DocxEditorRef } from '@docx-editor.dev/react';
-import { packagedFonts } from '@docx-editor.dev/fonts';
+import { DocxEditor, useFonts, type DocxEditorRef } from '@zqmi/docx-editor-react';
+import { packagedFonts } from '@zqmi/docx-editor-fonts';
 import { BrandLogo } from '../../shared/BrandLogo';
 import { PdfViewer, preparePdfPreview } from './PdfViewer';
 import { PdfProgress } from './PdfProgress';

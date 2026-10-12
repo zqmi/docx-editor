@@ -1,4 +1,4 @@
-import { findNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { findNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { validatedParaIdOfNode } from './paragraph-anchors.ts';
 
 interface DirectParagraphPartSource {

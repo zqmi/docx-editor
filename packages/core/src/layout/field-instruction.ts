@@ -16,7 +16,7 @@ import {
   isFldSimple,
   isInstrText as isInstrTextHelper,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   isDeletedInstrText,
   MAX_FIELD_INSTRUCTION_CHARS,

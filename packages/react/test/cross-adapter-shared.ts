@@ -1,5 +1,5 @@
 import { zipSync, strToU8 } from 'fflate';
-import { CHROME_GROUPS, chromeSlotId } from '@docx-editor.dev/core/editor';
+import { CHROME_GROUPS, chromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { stepZoomLevel } from '../src/editor/zoom-levels.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

@@ -11,8 +11,8 @@
     "skipLibCheck": true,
     // Map the workspace packages to their sources, so typecheck needs no built `dist`.
     "paths": {
-      "@docx-editor.dev/core": ["../../packages/core/src/index.ts"],
-      "@docx-editor.dev/core/*": ["../../packages/core/src/*"],
+      "@zqmi/docx-editor-core": ["../../packages/core/src/index.ts"],
+      "@zqmi/docx-editor-core/*": ["../../packages/core/src/*"],
       "@docx-editor.dev/pro": ["../../packages/pro/src/index.ts"],
       "@docx-editor.dev/pro/*": ["../../packages/pro/src/*"]
     },

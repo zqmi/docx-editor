@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test';
-import { defineFontResolver, type FontResolutionRequest } from '@docx-editor.dev/core/editor';
-import { createFixedMeasurer } from '@docx-editor.dev/core/layout';
-import { openHeadlessDocument } from '@docx-editor.dev/core/store';
+import { defineFontResolver, type FontResolutionRequest } from '@zqmi/docx-editor-core/editor';
+import { createFixedMeasurer } from '@zqmi/docx-editor-core/layout';
+import { openHeadlessDocument } from '@zqmi/docx-editor-core/store';
 import { ExportResourceError, exportMarkdown, openDocumentForExport } from '../src/index.ts';
 import { docx } from './fixture.ts';
 

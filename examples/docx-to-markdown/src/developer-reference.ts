@@ -32,7 +32,7 @@ export function quickstart(
     .join('\n');
   return `import { readFile } from 'node:fs/promises';
 import { exportMarkdown } from '@docx-editor.dev/docx-to-markdown';
-import { googleFonts } from '@docx-editor.dev/fonts/google';
+import { googleFonts } from '@zqmi/docx-editor-fonts/google';
 
 const docxBytes = await readFile(${JSON.stringify(filename)});
 const result = await exportMarkdown(docxBytes, {

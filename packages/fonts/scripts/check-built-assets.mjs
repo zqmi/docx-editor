@@ -68,7 +68,7 @@ for (const url of requestedUrls) {
 // module is still evaluating, which is uncatchable: it takes down the entire client
 // bundle rather than degrading font loading.
 //
-// That shipped once. `@docx-editor.dev/fonts@2.15.0` derived an asset root with a
+// That shipped once. `@zqmi/docx-editor-fonts@2.15.0` derived an asset root with a
 // single-argument `new URL()` and answered every page of a production site with
 // "URL constructor: /_next/static/media/Caladea-Bold.d6e01b80.ttf is not a valid URL".
 //

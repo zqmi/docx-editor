@@ -9,7 +9,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { afterEach, describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import { readOoxmlPackage, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { createDocumentCollaboration } from '../document-session.ts';
 import { createPeerHarness, walk, zipDocument } from './document-peer-support.ts';
 

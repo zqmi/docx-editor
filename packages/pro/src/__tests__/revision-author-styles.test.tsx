@@ -17,14 +17,14 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
 import { strToU8, zipSync } from 'fflate';
-import type { DocxEditorInstance, RevisionAuthorStyle } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance, RevisionAuthorStyle } from '@zqmi/docx-editor-core/editor';
 import {
   DocxEditorColorByChangeType,
   DocxEditorAuthorStyle,
   DocxEditorContent,
   DocxEditorRoot,
   DocxEditorViewport,
-} from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-react';
 import { reviewModule } from '../index.ts';
 import { DocxEditorReview, useReviewAuthor, type ReviewItemView } from '../react/index.ts';
 

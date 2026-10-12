@@ -9,11 +9,11 @@ import {
   useState,
   type CSSProperties,
 } from 'react';
-import { DocxEditor, useFonts, type DocxEditorRef } from '@docx-editor.dev/react';
+import { DocxEditor, useFonts, type DocxEditorRef } from '@zqmi/docx-editor-react';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { DocxEditorReview } from '@docx-editor.dev/pro/react';
-import { packagedFonts } from '@docx-editor.dev/fonts';
-import { googleFonts } from '@docx-editor.dev/fonts/google';
+import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { googleFonts } from '@zqmi/docx-editor-fonts/google';
 import {
   exportMarkdown,
   type ExportFontResolutionReport,

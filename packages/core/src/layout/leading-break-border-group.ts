@@ -10,8 +10,8 @@
 // visible after the break, a text frame on either side. A table anchors at the next regular
 // paragraph, so a paragraph after a regular paragraph never anchors one.
 
-import type { OoxmlElement, OoxmlParagraphNode } from '@docx-editor.dev/core/store';
-import { PAGE_BREAK_CHAR } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlParagraphNode } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
 import { paragraphModelTextOf } from '../store/store/paragraph-model-text.ts';
 import { anchoredDrawingAtomsInParagraph } from './drawing-atom-walk.ts';
 import type { BodyPageFieldContext } from './field-page-furniture.ts';

@@ -17,7 +17,7 @@ import type {
   CollaborationParticipant,
   CollaborationRemoteSelection,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import { useDocxEditor, useEditorState } from '@docx-editor.dev/vue';
 import { flush, mountEditorTree } from '../../../vue/test/helpers/mount.ts';
 import { DocxEditorCollaboration } from '../vue/index.ts';

@@ -18,8 +18,8 @@ import type { WebrtcProvider } from 'y-webrtc';
 import type {
   CollaborationFailure,
   CollaborationIdentity,
-} from '@docx-editor.dev/core/collaboration';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/collaboration';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import type { CollaborationBootstrap, CollaborationSession } from '../collaboration/types.ts';
 import {
   EMPTY_MODULES,

@@ -11,7 +11,7 @@
 // every anchor is such a float, in a table with no vertical merges and a top-aligned cell.
 // Everything else keeps the cell flow's own handling (see `anchoredOutOfCell`).
 
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { anchorLaidOutInCell, cellAnchorScope } from './cell-anchor-layout.ts';
 import { hasCompatibilityRule } from './compatibility/compatibility-rules.ts';
 import { exclusionZoneFromAnchoredDrawing, wrapProducesExclusion } from './drawing-exclusion.ts';

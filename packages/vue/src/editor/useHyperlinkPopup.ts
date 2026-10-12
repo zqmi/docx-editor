@@ -1,7 +1,7 @@
 import { computed, inject, ref, shallowRef, watch, type ComputedRef, type InjectionKey } from 'vue';
 import { scopeDispose } from './scope-dispose';
-import type { SurfaceHyperlink } from '@docx-editor.dev/core/editor';
-import type { Editor, EditorSnapshot, SelectionPin } from '@docx-editor.dev/core/contracts/editor';
+import type { SurfaceHyperlink } from '@zqmi/docx-editor-core/editor';
+import type { Editor, EditorSnapshot, SelectionPin } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

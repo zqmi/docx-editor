@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import type { StyleSpanRecord } from '@docx-editor.dev/core/layout';
+import type { StyleSpanRecord } from '@zqmi/docx-editor-core/layout';
 import { escapeText, MarkdownInlineWriter } from '../src/markdown-inline.ts';
 
 function styledToken(text: string, start: number, style: Partial<StyleSpanRecord['style']>) {

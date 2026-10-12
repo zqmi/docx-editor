@@ -7,7 +7,7 @@
 
 // MUST be first: happy-dom registration happens on import.
 import './dom-setup.ts';
-import { editorInstanceScope } from '@docx-editor.dev/core/editor';
+import { editorInstanceScope } from '@zqmi/docx-editor-core/editor';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 

@@ -6,7 +6,7 @@
 // This pass cuts such a piece at its breaks: text parts and break parts all keep the
 // field's one model range, so the caret, selection and offsets still see one atom.
 
-import { PAGE_BREAK_CHAR } from '@docx-editor.dev/core/store';
+import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
 import type { FieldAwarePiece } from './field-pieces.ts';
 
 /**

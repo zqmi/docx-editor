@@ -10,7 +10,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import { paragraphTextOf, serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { paragraphTextOf, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 import type { PaginatedSurfaceOptions } from '../paginated-surface-contract.ts';
 import { COLLABORATION_FIELD_RESULTS_REFUSAL } from '../field-results-scope.ts';

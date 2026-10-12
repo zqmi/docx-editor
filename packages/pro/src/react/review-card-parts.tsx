@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { Fragment, useContext, useId, useMemo } from 'react';
 import type { ReactNode } from 'react';
-import { Slot, useTranslation } from '@docx-editor.dev/react';
+import { Slot, useTranslation } from '@zqmi/docx-editor-react';
 import type { ReviewItemView } from './useReview.ts';
 import type { ReviewActionProps, ReviewPartProps } from './review-types.ts';
 import { ReviewItemContext, useRail, useReviewLabel } from './review-context.ts';

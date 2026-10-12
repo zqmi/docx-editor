@@ -11,16 +11,16 @@ import {
   cellSelectionBetween,
   cellSelectionRects,
   everyStoryOrder,
-} from '@docx-editor.dev/core/layout';
-import type { SemanticLayout, SemanticSelection } from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
+import type { SemanticLayout, SemanticSelection } from '@zqmi/docx-editor-core/layout';
 import { cellAddressAt } from '../layout/semantic-cell-selection.ts';
 import {
   presenceRangeRects,
   storyContentOffset,
   type KeyedRange,
 } from '../layout/selection-rects.ts';
-import { findNode, isValidParaId, paraIdOf, type OoxmlPart } from '@docx-editor.dev/core/store';
-import { paintSelectionOverlay, type OverlayRect } from '@docx-editor.dev/core/output';
+import { findNode, isValidParaId, paraIdOf, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { paintSelectionOverlay, type OverlayRect } from '@zqmi/docx-editor-core/output';
 import { safeParticipantColor } from '../collaboration/participant-color.ts';
 import type { RemoteCaretLabelAnchor, RemoteCaretLabelHost } from './paginated-surface-contract.ts';
 import type {

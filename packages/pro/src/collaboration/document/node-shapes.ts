@@ -19,7 +19,7 @@ import {
   type OoxmlNamespaceBinding,
   type OoxmlNode,
   type OoxmlTextNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 /** The fields of one attribute, before core proves the values its kind allows. */
 export interface AttributeFields {

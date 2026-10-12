@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { cachedAutofitCellWidths } from '../table-autofit-cell-cache.ts';
 import {
   autofitContextOf,

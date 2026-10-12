@@ -5,9 +5,9 @@ import {
   DocumentRefreshError,
   createDocumentRefresh,
   useDocxEditor,
-} from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-react';
 import { exampleText as t } from '../../shared/example-text';
-import '@docx-editor.dev/core/styles/editor.css';
+import '@zqmi/docx-editor-core/styles/editor.css';
 import './styles.css';
 import { receiveSampleUpdates, runRefreshJob } from './refresh-job';
 

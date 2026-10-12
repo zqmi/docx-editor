@@ -12,7 +12,7 @@ import { layoutDerivedSpacingSourcesEqual } from './layout-derived-spacing.ts';
 // inheritance is a separate layer (the style resolver); this is the direct-formatting half,
 // which is what the D8 boundary covers.
 
-import { readTwipsMeasure } from '@docx-editor.dev/core/store';
+import { readTwipsMeasure } from '@zqmi/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
 import { themeFontFamilyOf } from '../store/package/theme-font-scheme.ts';
 import { RUN_FONT_DEFAULTS } from './application-run-defaults.ts';

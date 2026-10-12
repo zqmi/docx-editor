@@ -15,7 +15,7 @@
 
 import { useCallback, useMemo } from 'react';
 import type { ReactElement } from 'react';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { DocumentOutline, type OutlineHeading } from '../components/DocumentOutline';
 import { useDocxEditor } from './context';
 import { selectDocumentAbsent } from './document-presence';

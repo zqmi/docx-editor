@@ -16,7 +16,7 @@ import {
 import type {
   CollaborationFailure,
   CollaborationStatus,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import { useCollaborationSession } from './useCollaborationSession.ts';
 

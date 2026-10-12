@@ -1,4 +1,4 @@
-import { readTwipsMeasure } from '@docx-editor.dev/core/store';
+import { readTwipsMeasure } from '@zqmi/docx-editor-core/store';
 import {
   WML_NAMESPACE_URI,
   type OoxmlElement,

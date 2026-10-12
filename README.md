@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@docx-editor.dev/core"><img src="https://img.shields.io/npm/v/@docx-editor.dev/core.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@docx-editor.dev/core"><img src="https://img.shields.io/npm/dm/@docx-editor.dev/core.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
+  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-core"><img src="https://img.shields.io/npm/v/@zqmi/docx-editor-core.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-core"><img src="https://img.shields.io/npm/dm/@zqmi/docx-editor-core.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
   <a href="https://github.com/eigenpal/docx-editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0_%2B_Pro-blue.svg?style=flat-square&color=3B5BDB" alt="license" /></a>
   <a href="https://docx-editor.dev/editor"><img src="https://img.shields.io/badge/Live_Demo-3B5BDB?style=flat-square&logo=vercel&logoColor=white" alt="Demo" /></a>
   <a href="https://www.docx-editor.dev/docs"><img src="https://img.shields.io/badge/Docs-3B5BDB?style=flat-square&logo=readthedocs&logoColor=white" alt="Documentation" /></a>
@@ -25,8 +25,8 @@ A visual `.docx` editor for React and Vue. Edit paginated Word documents in the 
 Install the adapter for your framework and its required engine peer:
 
 ```bash
-npm install @docx-editor.dev/react @docx-editor.dev/core   # React
-npm install @docx-editor.dev/vue @docx-editor.dev/core     # Vue
+npm install @zqmi/docx-editor-react @zqmi/docx-editor-core   # React
+npm install @docx-editor.dev/vue @zqmi/docx-editor-core     # Vue
 ```
 
 See the [React](#react) or [Vue](#vue) quick start.
@@ -60,11 +60,11 @@ Review, collaboration, the Editor API, and PDF export require separate packages 
 
 | Package | Description | Docs |
 | --- | --- | --- |
-| [`@docx-editor.dev/react`](https://www.npmjs.com/package/@docx-editor.dev/react) | React editor components and hooks. | [React adapter](https://www.docx-editor.dev/docs/2.x/react) |
+| [`@zqmi/docx-editor-react`](https://www.npmjs.com/package/@zqmi/docx-editor-react) | React editor components and hooks. | [React adapter](https://www.docx-editor.dev/docs/2.x/react) |
 | [`@docx-editor.dev/vue`](https://www.npmjs.com/package/@docx-editor.dev/vue) | Vue 3 editor components and composables. | [Vue adapter](https://www.docx-editor.dev/docs/2.x/vue) |
-| [`@docx-editor.dev/core`](https://www.npmjs.com/package/@docx-editor.dev/core) | DOCX parsing, editing, and rendering. | [Core engine](https://www.docx-editor.dev/docs/2.x/core) |
-| [`@docx-editor.dev/i18n`](https://www.npmjs.com/package/@docx-editor.dev/i18n) | Translations and locale types. | [Translations](https://www.docx-editor.dev/docs/2.x/i18n) |
-| [`@docx-editor.dev/fonts`](https://www.npmjs.com/package/@docx-editor.dev/fonts) | Open-licensed substitutes for Word fonts. | [Fonts and measurement](https://www.docx-editor.dev/docs/2.x/guides/fonts) |
+| [`@zqmi/docx-editor-core`](https://www.npmjs.com/package/@zqmi/docx-editor-core) | DOCX parsing, editing, and rendering. | [Core engine](https://www.docx-editor.dev/docs/2.x/core) |
+| [`@zqmi/docx-editor-i18n`](https://www.npmjs.com/package/@zqmi/docx-editor-i18n) | Translations and locale types. | [Translations](https://www.docx-editor.dev/docs/2.x/i18n) |
+| [`@zqmi/docx-editor-fonts`](https://www.npmjs.com/package/@zqmi/docx-editor-fonts) | Open-licensed substitutes for Word fonts. | [Fonts and measurement](https://www.docx-editor.dev/docs/2.x/guides/fonts) |
 | [`@docx-editor.dev/docx-to-markdown`](https://www.npmjs.com/package/@docx-editor.dev/docx-to-markdown) | Convert DOCX to Markdown with page and image output. | [Markdown export](https://www.docx-editor.dev/docs/2.x/export/markdown) |
 | [`@docx-editor.dev/docx-to-pdf`](https://www.npmjs.com/package/@docx-editor.dev/docx-to-pdf) | Convert DOCX to PDF on Node.js. | [PDF export](https://www.docx-editor.dev/docs/2.x/export/pdf) |
 | [`@docx-editor.dev/fonts-cjk`](https://www.npmjs.com/package/@docx-editor.dev/fonts-cjk) | Optional Chinese, Japanese, and Korean font for PDF export. | [CJK font setup](https://www.docx-editor.dev/docs/2.x/export/pdf/fonts#add-chinese-japanese-and-korean-text) |
@@ -79,8 +79,8 @@ Import the stylesheet once and pass the selected file to the editor:
 
 ```tsx
 import { useState } from 'react';
-import { DocxEditor } from '@docx-editor.dev/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import { DocxEditor } from '@zqmi/docx-editor-react';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 export function App() {
   const [doc, setDoc] = useState<Uint8Array>();
@@ -143,7 +143,7 @@ Full docs: [Vue adapter](https://www.docx-editor.dev/docs/2.x/vue) · [Props and
 
 Pass usable font bytes to measure text for line and page breaks. Fallback measurement can change wrapping and pagination.
 
-Use `packagedFonts()` from `@docx-editor.dev/fonts` for packaged substitutes. Use `customFonts()` from `@docx-editor.dev/core/editor` for your own font files. Add `googleFonts()` when your application accepts third-party font requests.
+Use `packagedFonts()` from `@zqmi/docx-editor-fonts` for packaged substitutes. Use `customFonts()` from `@zqmi/docx-editor-core/editor` for your own font files. Add `googleFonts()` when your application accepts third-party font requests.
 
 See [Fonts and measurement](https://www.docx-editor.dev/docs/2.x/guides/fonts).
 

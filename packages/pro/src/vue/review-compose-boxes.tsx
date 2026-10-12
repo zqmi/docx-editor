@@ -18,7 +18,7 @@ import {
   type PropType,
 } from 'vue';
 import { useDocxEditor } from '@docx-editor.dev/vue';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
 import type { ReviewRailValue } from './review-context.ts';
 import type { ReviewItemView } from './useReview.ts';
 import { useReviewStableId } from './stable-id.ts';

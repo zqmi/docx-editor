@@ -6,7 +6,7 @@
 // cache's counters, recency and geometry stay exactly what they were.
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   createBudgetedParagraphLayoutCache,
   createParagraphLayoutCache,

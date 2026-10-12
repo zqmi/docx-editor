@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // The visibility rule for children OOXML allows once, on child lists edits do not produce.
 
 import { describe, expect, test } from 'bun:test';
-import { WML_NAMESPACE_URI } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
 import {
   partitionChildIds,
   singletonLayout,

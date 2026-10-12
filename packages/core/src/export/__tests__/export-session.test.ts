@@ -9,7 +9,7 @@ import {
   TreePackageStore,
   type HeadlessDocumentView,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { forEachSemanticSpan } from '../../layout/export-traversal.ts';
 import type { SemanticLayout } from '../../layout/semantic-records.ts';
 import { openDocumentForExport } from '../export-session.ts';

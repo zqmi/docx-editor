@@ -24,8 +24,8 @@ import {
   CHROME_MENUS,
   runToolbarCommand,
   type DocxEditorInstance,
-} from '@docx-editor.dev/core/editor';
-import { createT, en, type TranslationKey, type Translations } from '@docx-editor.dev/i18n';
+} from '@zqmi/docx-editor-core/editor';
+import { createT, en, type TranslationKey, type Translations } from '@zqmi/docx-editor-i18n';
 import { LocaleProvider } from '../src/i18n/index.ts';
 import { DocxEditor } from '../src/components/DocxEditor.tsx';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';

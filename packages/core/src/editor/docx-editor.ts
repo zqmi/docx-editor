@@ -70,7 +70,7 @@ import {
   NO_TRACKING_SETTINGS,
   type DocumentTrackingSettings,
 } from '../store/package/tracking-settings.ts';
-import type { StoryScope } from '@docx-editor.dev/core/store';
+import type { StoryScope } from '@zqmi/docx-editor-core/store';
 import { parseNoteScopeId } from '../store/package/note-nodes.ts';
 import { resolveNotesPart } from '../store/package/note-references.ts';
 import type {
@@ -83,8 +83,8 @@ import type {
   TextMatch,
   Unsubscribe,
   ViewScope,
-} from '@docx-editor.dev/core/contracts/editor';
-import { EditorFontError } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
+import { EditorFontError } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   FontResolutionError,
   HARD_MAX_FONT_BYTES,
@@ -92,7 +92,7 @@ import {
   fontRequestKey,
   resolveDefaultSurfaceMeasurer,
   type TextMeasurer,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { createAnchorIndex } from './docx-editor-anchors.ts';
 import { snapshotTextFormInput, type PendingTextFormInput } from './surface-text-form-fields.ts';
 import { saveEditorDocument } from './docx-editor-save.ts';

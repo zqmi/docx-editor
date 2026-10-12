@@ -1,6 +1,6 @@
 // Canonical document-view composition root shared by browser and exporter hosts.
 
-import type { HeadlessDocumentView, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { HeadlessDocumentView, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { withFieldResultsMode, type FieldResultsMode } from '../store/package/field-result-mode.ts';
 import type { InlineDrawingLayoutContext } from './drawing-layout.ts';
 import type { DocumentLinkProjectors } from './document-link-projector.ts';

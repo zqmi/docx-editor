@@ -17,8 +17,8 @@ import {
   type CollaborationFailure,
   type CollaborationIdentity,
   type EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/collaboration';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import { collaborationModule } from '../collaboration/collaboration-module.ts';
 import { webrtcRoomOwnerFor } from './webrtc-room-owner.ts';
 

@@ -1,6 +1,6 @@
 // Page backgrounds acquire an implicit default-style paragraph after each header.
 // These are layout reserves, never authored nodes or editable paragraph records.
-import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import type { HeaderFooterStoryLayout } from './hf-layout.ts';
 import { attributeValue, childNamed } from './style-definition-reader.ts';
 

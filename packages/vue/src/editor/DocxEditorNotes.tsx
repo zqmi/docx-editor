@@ -12,7 +12,7 @@ export {
   type DocxEditorNotesContextMenuProps,
 } from './note-popup-parts';
 import { computed, defineComponent, h, ref, watch, type PropType } from 'vue';
-import type { EditorCommand } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation } from '../i18n';
 import { Z_INDEX } from '../styles/zIndex';
 import { useDocxEditor } from './context';

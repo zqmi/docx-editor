@@ -2,7 +2,7 @@
 // table part. One grid, so the two places cannot disagree about size, keys, or naming.
 
 import { computed, defineComponent, ref, type PropType, type VNode } from 'vue';
-import type { ChromeSlotId } from '@docx-editor.dev/core/editor';
+import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorCommand } from '../useEditorCommand';
 import { guardToolbarMousedown } from './ToolbarButton';

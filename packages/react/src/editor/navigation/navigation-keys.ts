@@ -3,8 +3,8 @@
 // Both adapters carry an identical copy of this file. It is plain DOM, so the two panes
 // answer every key and focus question the same way.
 
-import { chordLetter, editorInstanceScope } from '@docx-editor.dev/core/editor';
-import { isApplePlatform } from '@docx-editor.dev/i18n';
+import { chordLetter, editorInstanceScope } from '@zqmi/docx-editor-core/editor';
+import { isApplePlatform } from '@zqmi/docx-editor-i18n';
 import type { NavigationTab } from './useNavigationPane';
 
 /**

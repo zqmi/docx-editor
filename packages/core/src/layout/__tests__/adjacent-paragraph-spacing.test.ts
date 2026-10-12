@@ -13,7 +13,7 @@ import {
   serializeOoxmlPart,
   WML_NAMESPACE_URI,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { compatibilityProfileFromSettings } from '../compatibility/compatibility-profile.ts';
 import { layoutHeaderFooterStory } from '../hf-layout.ts';
 import { buildNumberingIndex } from '../numbering-index.ts';

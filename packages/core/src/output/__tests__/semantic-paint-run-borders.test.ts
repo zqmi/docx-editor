@@ -1,8 +1,8 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
-import { createFixedMeasurer, layoutSemanticDocument } from '@docx-editor.dev/core/layout';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { createFixedMeasurer, layoutSemanticDocument } from '@zqmi/docx-editor-core/layout';
 import { paintSemanticLayout } from '../semantic-paint.ts';
 
 test('character borders group adjacent formatted runs using placed line geometry', () => {

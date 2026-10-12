@@ -6,7 +6,7 @@
 // engine renders by default, on the part a reader sees on every page.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, WML_NAMESPACE_URI, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, WML_NAMESPACE_URI, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { layoutHeaderFooterStory } from '../hf-layout.ts';
 import type { RevisionDisplayMode } from '../revision-projection.ts';

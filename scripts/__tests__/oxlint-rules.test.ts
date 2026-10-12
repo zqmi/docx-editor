@@ -86,7 +86,7 @@ const FILES: Record<string, string> = {
     '',
   ].join('\n'),
   'packages/pro/src/vue/sample.ts': [
-    "import { useState } from '@docx-editor.dev/react';",
+    "import { useState } from '@zqmi/docx-editor-react';",
     'export { useState };',
     "export { jsx } from 'react/jsx-runtime';",
     '',

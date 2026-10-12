@@ -1,7 +1,7 @@
 import type { SectionPrepass } from '../section-prepass-types.ts';
 import { expect, test } from 'bun:test';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { createLayoutSession } from '../layout-session.ts';
 import { createParagraphLayoutCache } from '../layout-cache.ts';
 import { readTableStructure } from '../semantic-table.ts';
@@ -118,7 +118,7 @@ test('a split row text update matches a cold layout on every continuation page',
 
 test('successive AutoFit width changes match separately parsed layouts', async () => {
   const { para } = await import('./table-row-keep-fixtures.ts');
-  const { serializeOoxmlPart, readOoxmlPart } = await import('@docx-editor.dev/core/store');
+  const { serializeOoxmlPart, readOoxmlPart } = await import('@zqmi/docx-editor-core/store');
   const borders =
     '<w:tblBorders>' +
     ['left', 'right', 'insideV'].map((edge) => `<w:${edge} w:val="single" w:sz="4"/>`).join('') +

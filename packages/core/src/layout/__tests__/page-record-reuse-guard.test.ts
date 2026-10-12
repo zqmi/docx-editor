@@ -8,7 +8,7 @@
 // would otherwise ship is silent: a reused page showing a value the document no longer has.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument, type PageGeometry } from '../index.ts';
 import { PAGE_REUSE_GUARDS, unguardedPageFields } from '../page-reuse-guards.ts';
 

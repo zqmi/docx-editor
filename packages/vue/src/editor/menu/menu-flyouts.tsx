@@ -1,7 +1,7 @@
 import { warnMissingSubmenuLabel } from './menu-warnings';
 import { defineComponent, provide, ref, watch, type PropType } from 'vue';
 import type { DocxEditorChildren } from '../../docx-editor-children';
-import { type ChromeMenuItemEntry, type ChromeSlotId } from '@docx-editor.dev/core/editor';
+import { type ChromeMenuItemEntry, type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useEditorCommand } from '../useEditorCommand';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from '../toolbar/ToolbarButton';
 import { MenuRowTabIndexContext, useMenuContext, useMenuLabel } from './menu-context';

@@ -24,7 +24,7 @@ import { characterHeaderPageToken } from './character-header-pages.ts';
 // Scope stays furniture-only; body field projection remains deferred.
 
 import { hasCompatibilityRule } from './compatibility/compatibility-rules.ts';
-import type { OoxmlNode, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { stableHash } from '../store/comparators/canonical.ts';
 import { canonicalOoxmlFingerprint } from '../store/package/ooxml-tree.ts';
 import {
@@ -290,10 +290,10 @@ export function layoutHeaderFooterStory(
   defaultTabStopPt?: number,
   displayMode: RevisionDisplayMode = DEFAULT_REVISION_DISPLAY_MODE,
   inlineDrawingLayout?: import('./drawing-layout.ts').InlineDrawingLayoutContext,
-  drawingTokenForParagraph?: (paragraph: import('@docx-editor.dev/core/store').OoxmlNode) => string,
+  drawingTokenForParagraph?: (paragraph: import('@zqmi/docx-editor-core/store').OoxmlNode) => string,
   drawingLayoutToken?: string,
   hfPageContext?: HeaderFooterPageContext,
-  documentProperties?: import('@docx-editor.dev/core/store').DocumentProperties,
+  documentProperties?: import('@zqmi/docx-editor-core/store').DocumentProperties,
   inputs?: HeaderFooterStoryInputs
 ): HeaderFooterStoryLayout {
   if (inputs?.showFieldCodes) producer += '|field-codes';

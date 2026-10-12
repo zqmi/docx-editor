@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/core/contracts/interaction` — semantic addressing and interaction outcomes.
+ * `@zqmi/docx-editor-core/contracts/interaction` — semantic addressing and interaction outcomes.
  *
  * Semantic identities and targets: the vocabulary a caller uses to say WHICH text it means,
  * independent of layout, DOM or any editing engine's positions. Plus the outcome type an

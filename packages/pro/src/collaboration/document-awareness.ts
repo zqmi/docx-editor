@@ -13,8 +13,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import type {
   CollaborationIdentity,
   CollaborationLocalSelection,
-} from '@docx-editor.dev/core/collaboration';
-import { safeParticipantColor } from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
+import { safeParticipantColor } from '@zqmi/docx-editor-core/collaboration';
 import { CollaborationSchemaError } from './errors.ts';
 
 export const AWARENESS_FIELD = 'docxEditor';

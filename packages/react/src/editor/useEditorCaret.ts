@@ -8,7 +8,7 @@
 // Reference-stable, so it can be used as a dependency and captured in a handler.
 
 import { useCallback, useRef, useSyncExternalStore } from 'react';
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 
 /**

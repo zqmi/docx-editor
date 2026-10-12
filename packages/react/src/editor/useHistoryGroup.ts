@@ -3,8 +3,8 @@ import {
   bindHistoryGroup,
   type HistoryGroupBinding,
   type HistoryGroupBindingOptions,
-} from '@docx-editor.dev/core/editor';
-import type { EditorExecOptions } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { EditorExecOptions } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 
 /** @public */

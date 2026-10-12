@@ -13,19 +13,19 @@
 - 9535470: The page number indicator now stays in view when you place it inside the viewport instead of beside it.
 - 9535470: Editor popups close when focus moves into a host's own modal dialog, and the Vue table toolbar keeps its menus in server-rendered apps after the selection leaves a table and returns.
 - 9535470: Close toolbar dropdowns, pickers, and the More panel when you press Escape in the document, and keep Escape in your own inputs working. Fixes #1151
-- Updated dependencies: @docx-editor.dev/core@2.28.0, @docx-editor.dev/i18n@2.28.0
+- Updated dependencies: @zqmi/docx-editor-core@2.28.0, @zqmi/docx-editor-i18n@2.28.0
 
 ## 2.27.0
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.27.0, @docx-editor.dev/i18n@2.27.0
+- Updated dependencies: @zqmi/docx-editor-core@2.27.0, @zqmi/docx-editor-i18n@2.27.0
 
 ## 2.26.0
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.26.0, @docx-editor.dev/i18n@2.26.0
+- Updated dependencies: @zqmi/docx-editor-core@2.26.0, @zqmi/docx-editor-i18n@2.26.0
 
 ## 2.25.0
 
@@ -42,8 +42,8 @@
 - Updated dependencies [f098ae6]
 - Updated dependencies [a13f6a7]
 - Updated dependencies [5d02def]
-  - @docx-editor.dev/core@2.25.0
-  - @docx-editor.dev/i18n@2.25.0
+  - @zqmi/docx-editor-core@2.25.0
+  - @zqmi/docx-editor-i18n@2.25.0
 
 ## 2.24.0
 
@@ -56,8 +56,8 @@
 - Updated dependencies [997814e]
 - Updated dependencies [de3aac8]
 - Updated dependencies [567c1e5]
-  - @docx-editor.dev/core@2.24.0
-  - @docx-editor.dev/i18n@2.24.0
+  - @zqmi/docx-editor-core@2.24.0
+  - @zqmi/docx-editor-i18n@2.24.0
 
 ## 2.23.0
 
@@ -155,8 +155,8 @@
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
-  - @docx-editor.dev/core@2.23.0
-  - @docx-editor.dev/i18n@2.23.0
+  - @zqmi/docx-editor-core@2.23.0
+  - @zqmi/docx-editor-i18n@2.23.0
 
 ## 2.22.0
 
@@ -206,15 +206,15 @@
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
-  - @docx-editor.dev/core@2.22.0
-  - @docx-editor.dev/i18n@2.22.0
+  - @zqmi/docx-editor-core@2.22.0
+  - @zqmi/docx-editor-i18n@2.22.0
 
 ## 2.21.1
 
 ### Patch Changes
 
 - Updated dependencies [6a7b93a]
-  - @docx-editor.dev/i18n@2.21.1
+  - @zqmi/docx-editor-i18n@2.21.1
 
 ## 2.21.0
 
@@ -232,8 +232,8 @@
 - Updated dependencies [14a3468]
 - Updated dependencies [424a121]
 - Updated dependencies [2d4e0e7]
-  - @docx-editor.dev/core@2.21.0
-  - @docx-editor.dev/i18n@2.21.0
+  - @zqmi/docx-editor-core@2.21.0
+  - @zqmi/docx-editor-i18n@2.21.0
 
 ## 2.20.0
 
@@ -246,21 +246,21 @@
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
-  - @docx-editor.dev/core@2.20.0
-  - @docx-editor.dev/i18n@2.20.0
+  - @zqmi/docx-editor-core@2.20.0
+  - @zqmi/docx-editor-i18n@2.20.0
 
 ## 2.19.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.19.1
+- @zqmi/docx-editor-i18n@2.19.1
 
 ## 2.19.0
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.19.0
-  - @docx-editor.dev/i18n@2.19.0
+- @zqmi/docx-editor-core@2.19.0
+  - @zqmi/docx-editor-i18n@2.19.0
 
 ## 2.18.0
 
@@ -291,8 +291,8 @@
 - Updated dependencies [90ea211]
 - Updated dependencies [f10341d]
 - Updated dependencies [040e653]
-  - @docx-editor.dev/core@2.18.0
-  - @docx-editor.dev/i18n@2.18.0
+  - @zqmi/docx-editor-core@2.18.0
+  - @zqmi/docx-editor-i18n@2.18.0
 
 ## 2.17.0
 
@@ -303,20 +303,20 @@
 ### Patch Changes
 
 - Updated dependencies [332494b]
-  - @docx-editor.dev/core@2.17.0
-  - @docx-editor.dev/i18n@2.17.0
+  - @zqmi/docx-editor-core@2.17.0
+  - @zqmi/docx-editor-i18n@2.17.0
 
 ## 2.16.2
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.16.2
+- @zqmi/docx-editor-i18n@2.16.2
 
 ## 2.16.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.16.1
+- @zqmi/docx-editor-i18n@2.16.1
 
 ## 2.16.0
 
@@ -365,14 +365,14 @@
 - Updated dependencies [b5ab91b]
 - Updated dependencies [1de0f64]
 - Updated dependencies [6f7da01]
-  - @docx-editor.dev/core@2.16.0
-  - @docx-editor.dev/i18n@2.16.0
+  - @zqmi/docx-editor-core@2.16.0
+  - @zqmi/docx-editor-i18n@2.16.0
 
 ## 2.15.1
 
 ### Patch changes
 
-- @docx-editor.dev/i18n@2.15.1
+- @zqmi/docx-editor-i18n@2.15.1
 
 ## 2.15.0
 
@@ -390,14 +390,14 @@
 - Updated dependencies [cfe3fe1]
 - Updated dependencies [0e1360d]
 - Updated dependencies [2a8e57e]
-  - @docx-editor.dev/core@2.15.0
-  - @docx-editor.dev/i18n@2.15.0
+  - @zqmi/docx-editor-core@2.15.0
+  - @zqmi/docx-editor-i18n@2.15.0
 
 ## 2.14.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.14.1
+- @zqmi/docx-editor-i18n@2.14.1
 
 ## 2.14.0
 
@@ -409,8 +409,8 @@
 - Updated dependencies [01022a4]
 - Updated dependencies [6b5bb8d]
 - Updated dependencies [f731c52]
-  - @docx-editor.dev/core@2.14.0
-  - @docx-editor.dev/i18n@2.14.0
+  - @zqmi/docx-editor-core@2.14.0
+  - @zqmi/docx-editor-i18n@2.14.0
 
 ## 2.13.0
 
@@ -437,8 +437,8 @@
 - Updated dependencies [0d782e3]
 - Updated dependencies [7e85377]
 - Updated dependencies [96cdbe2]
-  - @docx-editor.dev/core@2.13.0
-  - @docx-editor.dev/i18n@2.13.0
+  - @zqmi/docx-editor-core@2.13.0
+  - @zqmi/docx-editor-i18n@2.13.0
 
 ## 2.12.0
 
@@ -451,8 +451,8 @@
 - Updated dependencies [3755b98]
 - Updated dependencies [8fe5920]
 - Updated dependencies [fe3b8a3]
-  - @docx-editor.dev/core@2.12.0
-  - @docx-editor.dev/i18n@2.12.0
+  - @zqmi/docx-editor-core@2.12.0
+  - @zqmi/docx-editor-i18n@2.12.0
 
 ## 2.11.0
 
@@ -497,8 +497,8 @@
 - Updated dependencies [d11816f]
 - Updated dependencies [0d770d9]
 - Updated dependencies [dfaafc0]
-  - @docx-editor.dev/core@2.11.0
-  - @docx-editor.dev/i18n@2.11.0
+  - @zqmi/docx-editor-core@2.11.0
+  - @zqmi/docx-editor-i18n@2.11.0
 
 ## 2.10.0
 
@@ -513,46 +513,46 @@
 - Updated dependencies [0e3663d]
 - Updated dependencies [b10d396]
 - Updated dependencies [0e3663d]
-  - @docx-editor.dev/core@2.10.0
-  - @docx-editor.dev/i18n@2.10.0
+  - @zqmi/docx-editor-core@2.10.0
+  - @zqmi/docx-editor-i18n@2.10.0
 
 ## 2.9.2
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.9.2
+- @zqmi/docx-editor-i18n@2.9.2
 
 ## 2.9.1
 
 ### Patch Changes
 
 - Updated dependencies [36ea49a]
-  - @docx-editor.dev/core@2.9.1
-  - @docx-editor.dev/i18n@2.9.1
+  - @zqmi/docx-editor-core@2.9.1
+  - @zqmi/docx-editor-i18n@2.9.1
 
 ## 2.9.0
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.9.0
+- @zqmi/docx-editor-i18n@2.9.0
 
 ## 2.8.0
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.8.0
+- @zqmi/docx-editor-i18n@2.8.0
 
 ## 2.7.0
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.7.0
+- @zqmi/docx-editor-i18n@2.7.0
 
 ## 2.6.1
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.6.1
+- @zqmi/docx-editor-i18n@2.6.1
 
 ## 2.6.0
 
@@ -562,7 +562,7 @@
 
 ### Patch Changes
 
-- @docx-editor.dev/i18n@2.6.0
+- @zqmi/docx-editor-i18n@2.6.0
 
 ## 2.5.0
 
@@ -582,22 +582,22 @@
 - Updated dependencies [5a2f3ed]
 - Updated dependencies [266a086]
 - Updated dependencies [d905af3]
-  - @docx-editor.dev/core@2.5.0
-  - @docx-editor.dev/i18n@2.5.0
+  - @zqmi/docx-editor-core@2.5.0
+  - @zqmi/docx-editor-i18n@2.5.0
 
 ## 2.4.1
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.4.1
-- @docx-editor.dev/i18n@2.4.1
+- @zqmi/docx-editor-core@2.4.1
+- @zqmi/docx-editor-i18n@2.4.1
 
 ## 2.4.0
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.4.0
-- @docx-editor.dev/i18n@2.4.0
+- @zqmi/docx-editor-core@2.4.0
+- @zqmi/docx-editor-i18n@2.4.0
 
 ## 2.3.1
 
@@ -605,23 +605,23 @@
 
 - Updated dependencies [1c9b6a2]
 - Updated dependencies [1c9b6a2]
-  - @docx-editor.dev/core@2.3.1
-  - @docx-editor.dev/i18n@2.3.1
+  - @zqmi/docx-editor-core@2.3.1
+  - @zqmi/docx-editor-i18n@2.3.1
 
 ## 2.3.0
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.3.0
-- @docx-editor.dev/i18n@2.3.0
+- @zqmi/docx-editor-core@2.3.0
+- @zqmi/docx-editor-i18n@2.3.0
 
 ## 2.2.1
 
 ### Patch Changes
 
 - Updated dependencies [35f6d04]
-  - @docx-editor.dev/core@2.2.1
-  - @docx-editor.dev/i18n@2.2.1
+  - @zqmi/docx-editor-core@2.2.1
+  - @zqmi/docx-editor-i18n@2.2.1
 
 ## 2.2.0
 
@@ -632,15 +632,15 @@
 - Updated dependencies [568ccf7]
 - Updated dependencies [04c2379]
 - Updated dependencies [f0e4ab9]
-  - @docx-editor.dev/core@2.2.0
-  - @docx-editor.dev/i18n@2.2.0
+  - @zqmi/docx-editor-core@2.2.0
+  - @zqmi/docx-editor-i18n@2.2.0
 
 ## 2.1.3
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.1.3
-- @docx-editor.dev/i18n@2.1.3
+- @zqmi/docx-editor-core@2.1.3
+- @zqmi/docx-editor-i18n@2.1.3
 
 ## 2.1.2
 
@@ -652,16 +652,16 @@
 - Updated dependencies [802ab3e]
 - Updated dependencies [4fa91bd]
 - Updated dependencies [4fa91bd]
-  - @docx-editor.dev/core@2.1.2
-  - @docx-editor.dev/i18n@2.1.2
+  - @zqmi/docx-editor-core@2.1.2
+  - @zqmi/docx-editor-i18n@2.1.2
 
 ## 2.1.1
 
 ### Patch Changes
 
 - Updated dependencies [d74c5d6]
-  - @docx-editor.dev/core@2.1.1
-  - @docx-editor.dev/i18n@2.1.1
+  - @zqmi/docx-editor-core@2.1.1
+  - @zqmi/docx-editor-i18n@2.1.1
 
 ## 2.1.0
 
@@ -698,16 +698,16 @@
 - Updated dependencies [0a62c6d]
 - Updated dependencies [e215962]
 - Updated dependencies [434454d]
-  - @docx-editor.dev/core@2.1.0
-  - @docx-editor.dev/i18n@2.1.0
+  - @zqmi/docx-editor-core@2.1.0
+  - @zqmi/docx-editor-i18n@2.1.0
 
 ## 2.0.1
 
 ### Patch Changes
 
 - Updated dependencies [51f14f5]
-  - @docx-editor.dev/core@2.0.1
-  - @docx-editor.dev/i18n@2.0.1
+  - @zqmi/docx-editor-core@2.0.1
+  - @zqmi/docx-editor-i18n@2.0.1
 
 ## 2.0.0
 
@@ -719,8 +719,8 @@
 - Updated dependencies [26095c6]
 - Updated dependencies [26095c6]
 - Updated dependencies [26095c6]
-  - @docx-editor.dev/core@2.0.0
-  - @docx-editor.dev/i18n@2.0.0
+  - @zqmi/docx-editor-core@2.0.0
+  - @zqmi/docx-editor-i18n@2.0.0
 
 ## 1.10.0
 
@@ -736,9 +736,9 @@
 - Updated dependencies [7a94b49]
 - Updated dependencies [53ede3c]
 - Updated dependencies [5e7120b]
-  - @docx-editor.dev/core@1.10.0
+  - @zqmi/docx-editor-core@1.10.0
   - @docx-editor.dev/agents@1.10.0
-  - @docx-editor.dev/i18n@1.10.0
+  - @zqmi/docx-editor-i18n@1.10.0
 
 ## 1.9.0
 
@@ -754,8 +754,8 @@
 - Updated dependencies [9454c9a]
 - Updated dependencies [f61435b]
 - Updated dependencies [28876a2]
-  - @docx-editor.dev/core@1.9.0
-  - @docx-editor.dev/i18n@1.9.0
+  - @zqmi/docx-editor-core@1.9.0
+  - @zqmi/docx-editor-i18n@1.9.0
   - @docx-editor.dev/agents@1.9.0
 
 ## 1.8.3
@@ -768,9 +768,9 @@
 - Updated dependencies [673e917]
 - Updated dependencies [74e36ef]
 - Updated dependencies [447d5b0]
-  - @docx-editor.dev/core@1.8.3
+  - @zqmi/docx-editor-core@1.8.3
   - @docx-editor.dev/agents@1.8.3
-  - @docx-editor.dev/i18n@1.8.3
+  - @zqmi/docx-editor-i18n@1.8.3
 
 ## 1.8.2
 
@@ -791,18 +791,18 @@
 - Updated dependencies [4f183b3]
 - Updated dependencies [0c233db]
 - Updated dependencies [7811a73]
-  - @docx-editor.dev/core@1.8.2
+  - @zqmi/docx-editor-core@1.8.2
   - @docx-editor.dev/agents@1.8.2
-  - @docx-editor.dev/i18n@1.8.2
+  - @zqmi/docx-editor-i18n@1.8.2
 
 ## 1.8.1
 
 ### Patch Changes
 
 - Updated dependencies [6047f84]
-  - @docx-editor.dev/core@1.8.1
+  - @zqmi/docx-editor-core@1.8.1
   - @docx-editor.dev/agents@1.8.1
-  - @docx-editor.dev/i18n@1.8.1
+  - @zqmi/docx-editor-i18n@1.8.1
 
 ## 1.8.0
 
@@ -813,8 +813,8 @@
 - Updated dependencies [27740e1]
 - Updated dependencies [114e83e]
   - @docx-editor.dev/agents@1.8.0
-  - @docx-editor.dev/core@1.8.0
-  - @docx-editor.dev/i18n@1.8.0
+  - @zqmi/docx-editor-core@1.8.0
+  - @zqmi/docx-editor-i18n@1.8.0
 
 ## 1.7.0
 
@@ -843,9 +843,9 @@
 - Updated dependencies [fc95983]
 - Updated dependencies [edd0bc2]
 - Updated dependencies [d4a27d4]
-  - @docx-editor.dev/core@1.7.0
+  - @zqmi/docx-editor-core@1.7.0
   - @docx-editor.dev/agents@1.7.0
-  - @docx-editor.dev/i18n@1.7.0
+  - @zqmi/docx-editor-i18n@1.7.0
 
 ## 1.6.2
 
@@ -855,9 +855,9 @@
 - 0ac0a4f: Localize the document outline toggle button's tooltip and label so they follow the editor's `i18n` prop instead of always showing English.
 - Updated dependencies [a8bce7a]
 - Updated dependencies [768b10e]
-  - @docx-editor.dev/core@1.6.2
+  - @zqmi/docx-editor-core@1.6.2
   - @docx-editor.dev/agents@1.6.2
-  - @docx-editor.dev/i18n@1.6.2
+  - @zqmi/docx-editor-i18n@1.6.2
 
 ## 1.6.1
 
@@ -871,8 +871,8 @@
 - Updated dependencies [6550426]
 - Updated dependencies [4a75c5e]
   - @docx-editor.dev/agents@1.6.1
-  - @docx-editor.dev/i18n@1.6.1
-  - @docx-editor.dev/core@1.6.1
+  - @zqmi/docx-editor-i18n@1.6.1
+  - @zqmi/docx-editor-core@1.6.1
 
 ## 1.6.0
 
@@ -884,9 +884,9 @@
 
 - 3a4a03f: Fix toolbar dropdowns closing when you scroll inside them. Scrolling the font size picker's preset list now keeps the dropdown open instead of dismissing it. Fixes #808.
 - bbda628: Apply selected font picker options by their primary family name so CSS fallback stacks like Lato, sans-serif do not get stored as document font names.
-- 7fe09f0: Share the paragraph-style-picker preview logic between the React and Vue toolbars. The filter/sort and per-style preview CSS now live once in `@docx-editor.dev/core/utils/stylePreview` (`resolveParagraphStyleOptions` + `getStylePreviewProps`), which both adapters call, so the style dropdown can no longer drift between them. Also fixes a Vue toolbar bug where typing a font size and then clicking a preset could re-commit the typed value over the preset.
+- 7fe09f0: Share the paragraph-style-picker preview logic between the React and Vue toolbars. The filter/sort and per-style preview CSS now live once in `@zqmi/docx-editor-core/utils/stylePreview` (`resolveParagraphStyleOptions` + `getStylePreviewProps`), which both adapters call, so the style dropdown can no longer drift between them. Also fixes a Vue toolbar bug where typing a font size and then clicking a preset could re-commit the typed value over the preset.
 - 7fe09f0: Align the React and Vue toolbar controls. The Vue font-size control is now an editable, clearly-bordered input box (matching React) instead of a plain button, and React's zoom control is now a − / + stepper around the level dropdown (matching Vue), so both adapters present the same editable zoom and font-size controls.
-- 7fe09f0: Unify the editor UI colors onto one CSS-variable token palette. The canonical chrome stylesheet now lives in `@docx-editor.dev/core` (`packages/core/src/styles/editor.css`) and both adapters import it, so React and Vue can never drift. Component styles reference `--doc-*` tokens instead of hardcoded colors, and the shadcn HSL tokens are aligned to the same palette and support opacity modifiers. A commented `.ep-root.dark` scaffold is included as the structure for a future dark theme (no dark values are shipped yet — adding the `dark` class has no visual effect until they are filled in). Light-mode appearance is unchanged apart from minor consolidation of near-duplicate grays/blues. As part of this, the Vue full-screen loading overlay now uses the same dark backdrop with light text as React (previously a light backdrop), and the Vue editing-mode chip and toolbar dropdown elevation share React's hover/shadow tokens. The Vue toolbar buttons, dropdown triggers, menu items, and steppers now reference the same shadcn `foreground`/`muted-foreground`/`muted`/`border` tokens React uses (previously the `--doc-*` family), so the toolbar matches React in both light and dark mode; the dropdown triggers also render at React's normal weight (they previously looked bold), and the selected menu item uses React's grey highlight instead of an indigo tint.
+- 7fe09f0: Unify the editor UI colors onto one CSS-variable token palette. The canonical chrome stylesheet now lives in `@zqmi/docx-editor-core` (`packages/core/src/styles/editor.css`) and both adapters import it, so React and Vue can never drift. Component styles reference `--doc-*` tokens instead of hardcoded colors, and the shadcn HSL tokens are aligned to the same palette and support opacity modifiers. A commented `.ep-root.dark` scaffold is included as the structure for a future dark theme (no dark values are shipped yet — adding the `dark` class has no visual effect until they are filled in). Light-mode appearance is unchanged apart from minor consolidation of near-duplicate grays/blues. As part of this, the Vue full-screen loading overlay now uses the same dark backdrop with light text as React (previously a light backdrop), and the Vue editing-mode chip and toolbar dropdown elevation share React's hover/shadow tokens. The Vue toolbar buttons, dropdown triggers, menu items, and steppers now reference the same shadcn `foreground`/`muted-foreground`/`muted`/`border` tokens React uses (previously the `--doc-*` family), so the toolbar matches React in both light and dark mode; the dropdown triggers also render at React's normal weight (they previously looked bold), and the selected menu item uses React's grey highlight instead of an indigo tint.
 - b8011f8: Focus the Vue editor on load so you can start typing immediately, without first clicking into the page. Matches the React adapter.
 - 7fe09f0: More React parity for the Vue editor: clicking the empty sidebar background now collapses an expanded comment/tracked-change card (it previously stayed open); the zoom control offers the same 50%–200% range and presets as React (was 25%–400%); and the toolbar dropdown triggers expose `aria-haspopup`/`aria-expanded` for screen readers.
 - 7fe09f0: Ship Tailwind utility classes in the Vue package's `styles.css`. The Vue build now runs Tailwind (via its own `tailwind.config.js` + PostCSS), so utility classes used by components like `Button` and `Toolbar` are styled out of the box for consumers who import `@docx-editor.dev/vue/styles.css`, without needing their own Tailwind config. Fixes #594.
@@ -905,8 +905,8 @@
 - Updated dependencies [f50a3c7]
 - Updated dependencies [7fe09f0]
   - @docx-editor.dev/agents@1.6.0
-  - @docx-editor.dev/core@1.6.0
-  - @docx-editor.dev/i18n@1.6.0
+  - @zqmi/docx-editor-core@1.6.0
+  - @zqmi/docx-editor-i18n@1.6.0
 
 ## 1.5.0
 
@@ -935,9 +935,9 @@
 - Updated dependencies [7d6daeb]
 - Updated dependencies [5cdfa5c]
 - Updated dependencies [44161e5]
-  - @docx-editor.dev/core@1.5.0
+  - @zqmi/docx-editor-core@1.5.0
   - @docx-editor.dev/agents@1.5.0
-  - @docx-editor.dev/i18n@1.5.0
+  - @zqmi/docx-editor-i18n@1.5.0
 
 ## 1.4.0
 
@@ -951,9 +951,9 @@
 - 92690d6: Fix the Vue formatting toolbar not applying to a header or footer while editing it. Bold, italic, font, size, color, paragraph style, and clear-formatting now target the header/footer being edited instead of the document body. Fixes #749.
 - Updated dependencies [28a521a]
 - Updated dependencies [1ab8b30]
-  - @docx-editor.dev/core@1.4.0
+  - @zqmi/docx-editor-core@1.4.0
   - @docx-editor.dev/agents@1.4.0
-  - @docx-editor.dev/i18n@1.4.0
+  - @zqmi/docx-editor-i18n@1.4.0
 
 ## 1.3.3
 
@@ -966,9 +966,9 @@
 - Updated dependencies [06fa96b]
 - Updated dependencies [bd704e2]
 - Updated dependencies [30df527]
-  - @docx-editor.dev/core@1.3.3
+  - @zqmi/docx-editor-core@1.3.3
   - @docx-editor.dev/agents@1.3.3
-  - @docx-editor.dev/i18n@1.3.3
+  - @zqmi/docx-editor-i18n@1.3.3
 
 ## 1.3.2
 
@@ -980,9 +980,9 @@
 - Updated dependencies [3bd7bf7]
 - Updated dependencies [0ded2a1]
 - Updated dependencies [58e3a7e]
-  - @docx-editor.dev/core@1.3.2
+  - @zqmi/docx-editor-core@1.3.2
   - @docx-editor.dev/agents@1.3.2
-  - @docx-editor.dev/i18n@1.3.2
+  - @zqmi/docx-editor-i18n@1.3.2
 
 ## 1.3.1
 
@@ -995,9 +995,9 @@
 - Updated dependencies [d100115]
 - Updated dependencies [db75f4f]
 - Updated dependencies [66cf3a8]
-  - @docx-editor.dev/core@1.3.1
+  - @zqmi/docx-editor-core@1.3.1
   - @docx-editor.dev/agents@1.3.1
-  - @docx-editor.dev/i18n@1.3.1
+  - @zqmi/docx-editor-i18n@1.3.1
 
 ## 1.3.0
 
@@ -1037,9 +1037,9 @@
 - Updated dependencies [f3d6861]
 - Updated dependencies [0f3eb97]
 - Updated dependencies [eaa6f7f]
-  - @docx-editor.dev/core@1.3.0
+  - @zqmi/docx-editor-core@1.3.0
   - @docx-editor.dev/agents@1.3.0
-  - @docx-editor.dev/i18n@1.3.0
+  - @zqmi/docx-editor-i18n@1.3.0
 
 ## 1.2.1
 
@@ -1048,8 +1048,8 @@
 - Updated dependencies [a0adf60]
 - Updated dependencies [1c2b098]
   - @docx-editor.dev/agents@1.2.1
-  - @docx-editor.dev/core@1.2.1
-  - @docx-editor.dev/i18n@1.2.1
+  - @zqmi/docx-editor-core@1.2.1
+  - @zqmi/docx-editor-i18n@1.2.1
 
 ## 1.2.0
 
@@ -1069,16 +1069,16 @@
 - Updated dependencies [a60ed77]
 - Updated dependencies [bc67374]
 - Updated dependencies [a60ed77]
-  - @docx-editor.dev/core@1.2.0
+  - @zqmi/docx-editor-core@1.2.0
   - @docx-editor.dev/agents@1.2.0
-  - @docx-editor.dev/i18n@1.2.0
+  - @zqmi/docx-editor-i18n@1.2.0
 
 ## 1.1.0
 
 ### Minor Changes
 
-- 9d7138e: Add a `fonts` prop on `<DocxEditor>` for declarative custom-font registration — each entry injects an `@font-face` from the URL you provide, and entries sharing a `family` register different weights. Also exposes `loadFontFromUrl`, `loadFontDefinitions`, and the `FontDefinition` type from `@docx-editor.dev/core/utils`. Fixes #620.
-- 9d7138e: Font-load failures now route through the React `onError` prop and the Vue `error` event instead of the console, so you can forward them to your own error tracker; with no subscriber attached they fall back to `console.warn`. Adds `onFontError(callback)` to `@docx-editor.dev/core/utils` for non-adapter hosts.
+- 9d7138e: Add a `fonts` prop on `<DocxEditor>` for declarative custom-font registration — each entry injects an `@font-face` from the URL you provide, and entries sharing a `family` register different weights. Also exposes `loadFontFromUrl`, `loadFontDefinitions`, and the `FontDefinition` type from `@zqmi/docx-editor-core/utils`. Fixes #620.
+- 9d7138e: Font-load failures now route through the React `onError` prop and the Vue `error` event instead of the console, so you can forward them to your own error tracker; with no subscriber attached they fall back to `console.warn`. Adds `onFontError(callback)` to `@zqmi/docx-editor-core/utils` for non-adapter hosts.
 - 42ea72d: Track structural edits as OOXML revisions in suggesting mode. Paragraph-break insert/delete, paragraph-property changes, and table row/cell insert/delete/merge are now recorded, round-tripped through DOCX, and shown in the tracked-changes sidebar (React and Vue, localized). Adds `acceptChangeById(id)` / `rejectChangeById(id)`, and `acceptAllChanges` / `rejectAllChanges` now resolve every revision type rather than inline marks only. Fixes #614.
 
 ### Patch Changes
@@ -1095,15 +1095,15 @@
 - Updated dependencies [ebb85a5]
 - Updated dependencies [137d5de]
 - Updated dependencies [e5e0997]
-  - @docx-editor.dev/i18n@1.1.0
-  - @docx-editor.dev/core@1.1.0
+  - @zqmi/docx-editor-i18n@1.1.0
+  - @zqmi/docx-editor-core@1.1.0
   - @docx-editor.dev/agents@1.1.0
 
 ## 1.0.3
 
 ### Patch Changes
 
-- 6d56181: Vue now renders documents with stacked floating objects identically to React. Previously, the Vue composable ran a simplified measurement pipeline without floating-zone awareness, so anchored images / floating textboxes / floating tables would not push body text below them in Vue. The float-extraction and per-block orchestration is now shared from `@docx-editor.dev/core/flow-model` (`measureBlocksWithFloats`); both adapters call it with their own per-block measure callback.
+- 6d56181: Vue now renders documents with stacked floating objects identically to React. Previously, the Vue composable ran a simplified measurement pipeline without floating-zone awareness, so anchored images / floating textboxes / floating tables would not push body text below them in Vue. The float-extraction and per-block orchestration is now shared from `@zqmi/docx-editor-core/flow-model` (`measureBlocksWithFloats`); both adapters call it with their own per-block measure callback.
 - Updated dependencies [24b31a4]
 - Updated dependencies [ec36a50]
 - Updated dependencies [143c31e]
@@ -1111,18 +1111,18 @@
 - Updated dependencies [bdd7f50]
 - Updated dependencies [6d56181]
 - Updated dependencies [e80093d]
-  - @docx-editor.dev/core@1.0.3
+  - @zqmi/docx-editor-core@1.0.3
   - @docx-editor.dev/agents@1.0.3
-  - @docx-editor.dev/i18n@1.0.3
+  - @zqmi/docx-editor-i18n@1.0.3
 
 ## 1.0.2
 
 ### Patch Changes
 
 - Updated dependencies [4e73af5]
-  - @docx-editor.dev/core@1.0.2
+  - @zqmi/docx-editor-core@1.0.2
   - @docx-editor.dev/agents@1.0.2
-  - @docx-editor.dev/i18n@1.0.2
+  - @zqmi/docx-editor-i18n@1.0.2
 
 ## 1.0.1
 
@@ -1132,8 +1132,8 @@
 - Updated dependencies [7806b78]
 - Updated dependencies [a193caa]
 - Updated dependencies [fe4cb94]
-  - @docx-editor.dev/core@1.0.1
-  - @docx-editor.dev/i18n@1.0.1
+  - @zqmi/docx-editor-core@1.0.1
+  - @zqmi/docx-editor-i18n@1.0.1
   - @docx-editor.dev/agents@1.0.1
 
 ## 1.0.0
@@ -1148,20 +1148,20 @@
 
   | Old import                            | New import                           |
   | ------------------------------------- | ------------------------------------ |
-  | `@eigenpal/docx-js-editor`            | `@docx-editor.dev/react`             |
-  | `@eigenpal/docx-js-editor/react`      | `@docx-editor.dev/react`             |
-  | `@docx-editor.dev/react/core`         | `@docx-editor.dev/core`              |
-  | `@docx-editor.dev/react/headless`     | `@docx-editor.dev/core/headless`     |
-  | `@docx-editor.dev/react/core-plugins` | `@docx-editor.dev/core/core-plugins` |
-  | `@docx-editor.dev/react/mcp`          | `@docx-editor.dev/agents/mcp`        |
-  | `@docx-editor.dev/react/i18n/*.json`  | `@docx-editor.dev/i18n/*.json`       |
+  | `@eigenpal/docx-js-editor`            | `@zqmi/docx-editor-react`             |
+  | `@eigenpal/docx-js-editor/react`      | `@zqmi/docx-editor-react`             |
+  | `@zqmi/docx-editor-react/core`         | `@zqmi/docx-editor-core`              |
+  | `@zqmi/docx-editor-react/headless`     | `@zqmi/docx-editor-core/headless`     |
+  | `@zqmi/docx-editor-react/core-plugins` | `@zqmi/docx-editor-core/core-plugins` |
+  | `@zqmi/docx-editor-react/mcp`          | `@docx-editor.dev/agents/mcp`        |
+  | `@zqmi/docx-editor-react/i18n/*.json`  | `@zqmi/docx-editor-i18n/*.json`       |
 
   The old `@eigenpal/docx-js-editor` package stays on 0.x for legacy maintenance — no 1.x compatibility shim ships. Framework-agnostic utilities (e.g. `createEmptyDocument`) move to core:
 
   ```diff
   - import { DocxEditor, createEmptyDocument } from '@eigenpal/docx-js-editor';
-  + import { DocxEditor } from '@docx-editor.dev/react';
-  + import { createEmptyDocument } from '@docx-editor.dev/core';
+  + import { DocxEditor } from '@zqmi/docx-editor-react';
+  + import { createEmptyDocument } from '@zqmi/docx-editor-core';
   ```
 
   ## Vue 3 adapter (`@docx-editor.dev/vue`)
@@ -1173,27 +1173,27 @@
 
   Parity gates cover insert-table, find/replace, page-setup, context menus, image overlay (resize/move/rotate/aspect-locked corners, dimension tooltip), advanced cell/row options (margins, height rule, text direction, no-wrap), menu-bar icons + shortcuts + carets, toolbar pickers, and the agent UI surface.
 
-  ## Shared i18n package (`@docx-editor.dev/i18n`)
+  ## Shared i18n package (`@zqmi/docx-editor-i18n`)
 
-  Locale strings move out of `@docx-editor.dev/react` into a dedicated package consumed by both adapters from a single source.
+  Locale strings move out of `@zqmi/docx-editor-react` into a dedicated package consumed by both adapters from a single source.
 
   ```diff
-  - import de from '@docx-editor.dev/react/i18n/de.json';
-  + import de from '@docx-editor.dev/i18n/de.json';
+  - import de from '@zqmi/docx-editor-react/i18n/de.json';
+  + import de from '@zqmi/docx-editor-i18n/de.json';
   ```
 
   The `defaultLocale` value (English) is still re-exported from the adapter packages, unchanged.
 
   ## Agent UI relocation (breaking)
 
-  `AgentPanel`, `AgentChatLog`, `AgentComposer`, `AgentSuggestionChip`, `AgentTimeline` no longer ship from `@docx-editor.dev/react`. They live at:
+  `AgentPanel`, `AgentChatLog`, `AgentComposer`, `AgentSuggestionChip`, `AgentTimeline` no longer ship from `@zqmi/docx-editor-react`. They live at:
   - `@docx-editor.dev/agents/react` — React components + `useAgentChat`
   - `@docx-editor.dev/agents/vue` — Vue 3 twins, plus `AIContextMenu` and `AIResponsePreview`
   - `@docx-editor.dev/agents/ai-sdk/react` / `/ai-sdk/vue` — `@ai-sdk/*` adapters
   - `@docx-editor.dev/agents/bridge` — React-free `createEditorBridge`, `agentTools`, `executeToolCall`, `getToolSchemas`, `createReviewerBridge`. Safe for headless / Vue / Node.
 
   ```diff
-  - import { AgentPanel, AgentChatLog } from '@docx-editor.dev/react';
+  - import { AgentPanel, AgentChatLog } from '@zqmi/docx-editor-react';
   + import { AgentPanel, AgentChatLog } from '@docx-editor.dev/agents/react';
   ```
 
@@ -1234,7 +1234,7 @@
 
   New tooling: `bun run docs:json` regenerates, `bun run docs:check` (in CI) fails on drift. Contract documented in `CLAUDE.md` under `### Docs JSON`. No runtime change to any published package.
 
-- 348fa6b: API Extractor snapshots for the 6 published subpaths of `@docx-editor.dev/react` (root, `/ui`, `/hooks`, `/dialogs`, `/plugin-api`, `/styles`) and `@docx-editor.dev/vue` (root, `/ui`, `/composables`, `/dialogs`, `/plugin-api`, `/styles`). CI now fails on undocumented public-surface drift via `bun run api:check`.
+- 348fa6b: API Extractor snapshots for the 6 published subpaths of `@zqmi/docx-editor-react` (root, `/ui`, `/hooks`, `/dialogs`, `/plugin-api`, `/styles`) and `@docx-editor.dev/vue` (root, `/ui`, `/composables`, `/dialogs`, `/plugin-api`, `/styles`). CI now fails on undocumented public-surface drift via `bun run api:check`.
 
   Adds `etc/parity.contract.json` — the cross-adapter parity contract listing which `DocxEditorProps` fields and `DocxEditorRef` members are paired between React and Vue, which are deliberately deferred in Vue, and which are Vue-exclusive. `bun run check:parity-contract` (also gated in CI) parses both snapshots and fails on any drift the contract doesn't acknowledge. Adding a new prop or ref method to either adapter forces an explicit classification in the contract.
 
@@ -1242,7 +1242,7 @@
 
   Vue's `useTableSelection` no longer exposes `manager: TableSelectionManager` in its return — it was unused by any internal consumer and leaked core's `TableSelectionManager` class as part of Vue's public surface.
 
-  Side effect for `@docx-editor.dev/vue`: the build no longer writes workspace-relative source paths (e.g. `../../core/src/core.ts`) into published declarations. Those paths were valid in this repo but unresolvable once installed from npm; setting `pathsToAliases: false` on the dts plugin keeps the package names (`@docx-editor.dev/core`, `@docx-editor.dev/i18n`) intact in `dist/*.d.ts`.
+  Side effect for `@docx-editor.dev/vue`: the build no longer writes workspace-relative source paths (e.g. `../../core/src/core.ts`) into published declarations. Those paths were valid in this repo but unresolvable once installed from npm; setting `pathsToAliases: false` on the dts plugin keeps the package names (`@zqmi/docx-editor-core`, `@zqmi/docx-editor-i18n`) intact in `dist/*.d.ts`.
 
   No runtime change for either package.
 
@@ -1265,6 +1265,6 @@
 - Updated dependencies [f7b8dc7]
 - Updated dependencies [b2230a3]
 - Updated dependencies [8836214]
-  - @docx-editor.dev/core@1.0.0
+  - @zqmi/docx-editor-core@1.0.0
   - @docx-editor.dev/agents@1.0.0
-  - @docx-editor.dev/i18n@1.0.0
+  - @zqmi/docx-editor-i18n@1.0.0

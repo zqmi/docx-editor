@@ -1,5 +1,5 @@
 import { styleSeparatorMembersOf } from './style-separator-group.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import type { ParagraphSpacing } from './paragraph-style.ts';
 import {
   cascadeParagraphFormatting,

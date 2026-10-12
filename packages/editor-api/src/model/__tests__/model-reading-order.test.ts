@@ -14,13 +14,13 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import {
   canonicalOoxmlFingerprint,
   diffSemanticDigests,
   readOoxmlPackage,
   semanticDigest,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createBrowser } from '../../runtime/browser.ts';
 import { createServer } from '../../runtime/server.ts';
 import type { DocxEditorRuntime, DocxEditorServerRuntime } from '../../runtime/runtime.ts';

@@ -176,7 +176,7 @@ No file under `packages/vue/src` SHALL keep a copy of the zoom level, the enable
 control, the selection, the page count, the arrangement of the toolbar, the ruler geometry, the
 navigation displacement, the search debounce, or any user-facing English string.
 
-Every one of those has exactly one home in `@docx-editor.dev/core` or `packages/i18n/en.json`,
+Every one of those has exactly one home in `@zqmi/docx-editor-core` or `packages/i18n/en.json`,
 and a second copy is a source of drift that no gate can see.
 
 #### Scenario: Framework isolation holds

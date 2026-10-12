@@ -16,7 +16,7 @@ import type {
   EditorScope,
   ExecErrorCode,
   ExecResult,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import type { ContentControlFilter, ContentControlType } from '../contracts/types.ts';
 import type { ContentControlSummary } from '../contracts/document.ts';
 import type { DocAnchor, DocLocation, DocRange } from '../contracts/types.ts';
@@ -37,7 +37,7 @@ import {
   type SelectionMark,
   type StoryScope,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { isInlineRunContainer, MAX_INLINE_CONTAINER_DEPTH } from '../store/package/ooxml-shared.ts';
 import { paragraphInlineLengthOf } from '../store/store/tree-op-segments.ts';
 import type { TreeApplyResult, TreeDocxSessionView } from '../binding/tree-session.ts';

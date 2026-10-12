@@ -13,7 +13,7 @@ import { describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
 import { strToU8, zipSync } from 'fflate';
-import { readOoxmlPackage } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
 import { createDocumentCollaboration, readCollaborationDocument } from '../document-session.ts';
 import { CollaborationSchemaError } from '../errors.ts';
 import { DOCUMENT_COLLABORATION_VERSIONS } from '../document-compatibility.ts';

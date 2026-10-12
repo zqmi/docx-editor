@@ -9,14 +9,14 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // typing can drift the label away from the attrs, with the literal label text
 // as its content (what Word and the free tier render).
 
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
-import type { PaginatedSurface } from '@docx-editor.dev/core/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { PaginatedSurface } from '@zqmi/docx-editor-core/editor';
 import {
   parseNoteScopeId,
   type CustomNodePayloadWrite,
   type CustomNodeWriteResult,
   type StoryScope,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { AnyCustomNodeDefinition, CustomNodeDefinition } from './define-custom-node.ts';
 import type { InferSchemaInput, StandardSchemaV1 } from './data-schema.ts';
 import { encodeCustomNodeTag } from './tag-codec.ts';

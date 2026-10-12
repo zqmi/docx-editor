@@ -24,7 +24,7 @@ import {
   flattenContentControls,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   readFlag,
   readGridSkip,

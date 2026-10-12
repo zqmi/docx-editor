@@ -32,7 +32,7 @@ export default defineConfig(
     // esbuild inlined is the record of the third-party code this package
     // redistributes on its own account.
     metafile: true,
-    // `@docx-editor.dev/core` stays external by tsup's workspace-package behavior. It is a published
+    // `@zqmi/docx-editor-core` stays external by tsup's workspace-package behavior. It is a published
     // package and a declared peer, so the consumer resolves one copy of the engine. Inlining
     // it here would give a page running this alongside an adapter two engines.
     // `harfbuzzjs` is external to get the build to RESOLVE, not because the output needs it.

@@ -15,7 +15,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8, unzipSync, strFromU8 } from 'fflate';
-import type { StoryScope } from '@docx-editor.dev/core/store';
+import type { StoryScope } from '@zqmi/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { cellSelectionRects, spansInCells } from '../../layout/semantic-cell-selection.ts';
 import { tableInteractionIndex } from '../../layout/semantic-table-interaction.ts';

@@ -7,7 +7,7 @@
 // count drifted from Word's.
 
 import { describe, expect, spyOn, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { resetGraphemeBoundary, setGraphemeBoundary } from '../grapheme.ts';
 import * as oversizedWordBreak from '../oversized-word-break.ts';
 import { breakParagraph } from '../paragraph-flow.ts';

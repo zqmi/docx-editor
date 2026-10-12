@@ -1,7 +1,7 @@
 import type { RevisionMarkupDialogSession } from './revision-markup.ts';
 import type { ReviewPaneOptions } from './review-pane.ts';
 /**
- * `@docx-editor.dev/core/contracts/modules` — the `EditorModule` seam.
+ * `@zqmi/docx-editor-core/contracts/modules` — the `EditorModule` seam.
  *
  * How a paid or optional capability contributes to the engine without the free tier importing
  * it: the review module and custom nodes both arrive through here, and their absence leaves the
@@ -20,7 +20,7 @@ import type { ReviewPaneOptions } from './review-pane.ts';
  * @public
  */
 
-import type { OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
 import type { CollaborationModuleContribution } from '../collaboration/index.ts';
 import type { ReviewDisplayMode } from '../layout/revision-projection.ts';
 import type {
@@ -48,8 +48,8 @@ export type {
 // the canonical tree deliberately does NOT: re-exporting `OoxmlElement` pulls its ~85-member
 // node union onto this entry point, which would make the module seam the second published
 // definition of the document model. A module author reaches the tree at
-// `@docx-editor.dev/core/store`, which is a published subpath written for exactly that.
-export type { OoxmlPart, RevisionAddress } from '@docx-editor.dev/core/store';
+// `@zqmi/docx-editor-core/store`, which is a published subpath written for exactly that.
+export type { OoxmlPart, RevisionAddress } from '@zqmi/docx-editor-core/store';
 export type { ReviewDisplayMode, RevisionDisplayMode } from '../layout/revision-projection.ts';
 
 /**

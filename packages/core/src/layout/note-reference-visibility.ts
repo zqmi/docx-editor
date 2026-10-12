@@ -1,4 +1,4 @@
-import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import {
   MAX_REVISION_DEPTH,
   isRevisionWrapper,

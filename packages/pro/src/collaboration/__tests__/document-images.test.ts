@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import type { OoxmlNode, OoxmlPackage } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, OoxmlPackage } from '@zqmi/docx-editor-core/store';
 import { CT, R, REL, createPeerHarness, walk } from './document-peer-support.ts';
 
 const WP = 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing';

@@ -7,8 +7,8 @@
 // from, and the `w:sectPr` the note-properties dialog writes back to. Three callers each
 // guessed differently, so the answer lives here once.
 
-import type { TreeDocxSessionView } from '@docx-editor.dev/core/binding';
-import type { StoryScope } from '@docx-editor.dev/core/store';
+import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { StoryScope } from '@zqmi/docx-editor-core/store';
 import { bodyParagraphSectionIndexForSession } from './body-paragraph-section-index.ts';
 import {
   enumerateDocumentSections,

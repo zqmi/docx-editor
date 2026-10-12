@@ -7,12 +7,12 @@ import { expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
 import {
   readOoxmlPackage,
   canonicalOoxmlFingerprint,
   serializeOoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createDocumentCollaboration } from '../document-session.ts';
 import { collaborationModule } from '../collaboration-module.ts';
 import { collaborationDocx } from './support.ts';

@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { defineComponent, h, type PropType, type VNode } from 'vue';
 import { DocxEditorRoot } from '@docx-editor.dev/vue';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import type { CollaborationSession } from '../collaboration/types.ts';
 
 /**

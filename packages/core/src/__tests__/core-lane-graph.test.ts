@@ -147,7 +147,7 @@ describe('a browser bundle cannot reach the server (task 10.1)', () => {
     let checked = 0;
     for (const lane of BROWSER_REACHABLE) {
       if (laneHasMoved(lane)) continue;
-      if (shared && CORE_LANES[lane].package === '@docx-editor.dev/core') continue;
+      if (shared && CORE_LANES[lane].package === '@zqmi/docx-editor-core') continue;
       const manifest = manifestOf(lane);
       if (!manifest) continue;
       checked += 1;
@@ -165,7 +165,7 @@ describe('a browser bundle cannot reach the server (task 10.1)', () => {
     if (checked === 0) {
       expect(
         BROWSER_REACHABLE.every(
-          (lane) => laneHasMoved(lane) || CORE_LANES[lane].package === '@docx-editor.dev/core'
+          (lane) => laneHasMoved(lane) || CORE_LANES[lane].package === '@zqmi/docx-editor-core'
         )
       ).toBe(true);
     }

@@ -3,7 +3,7 @@ import type {
   RefreshChangeInput,
   RefreshResult,
   RefreshSubmission,
-} from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-react';
 
 export interface ServerUpdate {
   documentId: string;

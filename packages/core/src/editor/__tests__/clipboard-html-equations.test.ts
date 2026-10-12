@@ -22,7 +22,7 @@ import {
   readOoxmlPackage,
   serializeOoxmlPart,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { projectExternalHtml } from '../clipboard-html-read.ts';
 import { wrapInteropHtml } from '../clipboard-fragment-codec.ts';
 import { mount, paragraph, putCaret } from './paginated-surface-fixtures.ts';

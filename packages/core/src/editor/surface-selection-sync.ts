@@ -12,13 +12,13 @@
 // surface ends up feeling worse than a textarea. Layout still owns geometry: what comes back
 // from the DOM is which CHARACTERS were gestured over, never where they are.
 
-import type { TreeApplyResult, TreeDocxSessionView } from '@docx-editor.dev/core/binding';
+import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
 import type {
   SemanticSelection,
   CaretGeometry,
   CaretAtOptions,
-} from '@docx-editor.dev/core/layout';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/layout';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import {
   applySelectionToDom,
   domSelectionTouchesPages,
@@ -33,7 +33,7 @@ import { collapsedAt } from './surface-selection-ops.ts';
 export interface SurfaceSelectionSyncDeps {
   readonly session: TreeDocxSessionView;
   /** Active story for IME commits and composition — body or open furniture. */
-  storyScope(): import('@docx-editor.dev/core/store').StoryScope;
+  storyScope(): import('@zqmi/docx-editor-core/store').StoryScope;
   /**
    * The document the surface was MOUNTED into, never the ambient global.
    *
@@ -59,7 +59,7 @@ export interface SurfaceSelectionSyncDeps {
   applyOps(
     ops: readonly TreeDocOp[],
     mark: { paragraphId: string; start: number; end: number } | null,
-    scope: import('@docx-editor.dev/core/store').StoryScope
+    scope: import('@zqmi/docx-editor-core/store').StoryScope
   ): TreeApplyResult;
   render(): void;
   flushLayout(): boolean;

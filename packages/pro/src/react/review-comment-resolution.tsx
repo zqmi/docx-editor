@@ -15,7 +15,7 @@ import {
   type MouseEvent as ReactMouseEvent,
   type ReactNode,
 } from 'react';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
 import {
   ACCEPT_ICON,
   REOPEN_ICON,

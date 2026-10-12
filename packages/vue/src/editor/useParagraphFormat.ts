@@ -3,17 +3,17 @@
 // for a dialog's worth of fields.
 
 import { computed, type ComputedRef } from 'vue';
-import type { EditorSnapshot, RunFormatting } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot, RunFormatting } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 
-import type { ParagraphFormatRead, ParagraphFormatUpdate } from '@docx-editor.dev/core/editor';
+import type { ParagraphFormatRead, ParagraphFormatUpdate } from '@zqmi/docx-editor-core/editor';
 export type {
   ParagraphFlagState,
   ParagraphTabStop,
   ParagraphFormatRead,
   ParagraphFormatUpdate,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 /** What `useParagraphFormat` returns. @public */
 export interface UseParagraphFormatReturn {

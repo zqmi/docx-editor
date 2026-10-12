@@ -6,8 +6,8 @@
 // Working out which section that is, and whether the answer is even reachable cheaply, is
 // the same question for the gate and for the write — so it is spelled once, here.
 
-import type { SemanticPosition } from '@docx-editor.dev/core/layout';
-import { WML_NAMESPACE_URI, type OoxmlNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import type { SemanticPosition } from '@zqmi/docx-editor-core/layout';
+import { WML_NAMESPACE_URI, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   allSectionNodes,
   bodySectionOf,

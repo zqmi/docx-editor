@@ -108,7 +108,7 @@ Dark mode is the same list re-declared under `.docx-editor.dark`.
 ### Two requirements
 
 - Place custom controls inside a `docx-editor` wrapper to apply scoped styles and theme tokens. Packaged components such as `DocxEditor.Toolbar` and `DocxEditor.Viewport` apply their own scope.
-- Import the stylesheet with `@import '@docx-editor.dev/core/styles/editor.css'`.
+- Import the stylesheet with `@import '@zqmi/docx-editor-core/styles/editor.css'`.
 
 ### What is deliberately not themeable
 
@@ -149,8 +149,8 @@ A stacking context can constrain popovers. A `z-index` on the wrapper around `Vi
 Call `useDocxSource` inside your component to fetch document bytes and resolve fonts:
 
 ```tsx
-import { useDocxSource } from '@docx-editor.dev/react';
-import { defaultFonts } from '@docx-editor.dev/fonts';
+import { useDocxSource } from '@zqmi/docx-editor-react';
+import { defaultFonts } from '@zqmi/docx-editor-fonts';
 
 const { document, fonts, error, isLoading } = useDocxSource(url, { fonts: defaultFonts });
 ```

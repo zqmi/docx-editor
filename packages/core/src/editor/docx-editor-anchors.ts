@@ -17,7 +17,7 @@ import {
   reviewAnchorIndex,
   type ReviewParagraphAnchor,
   type SemanticLayout,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { fragmentParagraphs } from '../layout/line-segments.ts';
 
 /**

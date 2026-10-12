@@ -197,7 +197,7 @@ export function ExampleSwitcher({ current }: ExampleSwitcherProps) {
           ))}
           <div style={{ height: '1px', background: 'var(--doc-border)', margin: '4px 0' }} />
           <a
-            href="https://www.npmjs.com/package/@docx-editor.dev/react"
+            href="https://www.npmjs.com/package/@zqmi/docx-editor-react"
             target="_blank"
             rel="noopener noreferrer"
             style={dropdownItemStyle}

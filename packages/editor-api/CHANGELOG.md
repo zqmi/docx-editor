@@ -11,19 +11,19 @@
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.28.0
+- Updated dependencies: @zqmi/docx-editor-core@2.28.0
 
 ## 2.27.0
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.27.0
+- Updated dependencies: @zqmi/docx-editor-core@2.27.0
 
 ## 2.26.0
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.26.0
+- Updated dependencies: @zqmi/docx-editor-core@2.26.0
 
 ## 2.25.0
 
@@ -48,7 +48,7 @@
 - Updated dependencies [f098ae6]
 - Updated dependencies [a13f6a7]
 - Updated dependencies [5d02def]
-  - @docx-editor.dev/core@2.25.0
+  - @zqmi/docx-editor-core@2.25.0
 
 ## 2.24.0
 
@@ -59,7 +59,7 @@
 - Updated dependencies [79d8bc1]
 - Updated dependencies [997814e]
 - Updated dependencies [de3aac8]
-  - @docx-editor.dev/core@2.24.0
+  - @zqmi/docx-editor-core@2.24.0
 
 ## 2.23.0
 
@@ -154,7 +154,7 @@
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
-  - @docx-editor.dev/core@2.23.0
+  - @zqmi/docx-editor-core@2.23.0
 
 ## 2.22.0
 
@@ -203,7 +203,7 @@
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
-  - @docx-editor.dev/core@2.22.0
+  - @zqmi/docx-editor-core@2.22.0
 
 ## 2.21.1
 
@@ -223,7 +223,7 @@
 - Updated dependencies [14a3468]
 - Updated dependencies [424a121]
 - Updated dependencies [2d4e0e7]
-  - @docx-editor.dev/core@2.21.0
+  - @zqmi/docx-editor-core@2.21.0
 
 ## 2.20.0
 
@@ -240,7 +240,7 @@
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
-  - @docx-editor.dev/core@2.20.0
+  - @zqmi/docx-editor-core@2.20.0
 
 ## 2.19.1
 
@@ -248,7 +248,7 @@
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.19.0
+- @zqmi/docx-editor-core@2.19.0
 
 ## 2.18.0
 
@@ -282,14 +282,14 @@
 - Updated dependencies [90ea211]
 - Updated dependencies [f10341d]
 - Updated dependencies [040e653]
-  - @docx-editor.dev/core@2.18.0
+  - @zqmi/docx-editor-core@2.18.0
 
 ## 2.17.0
 
 ### Patch Changes
 
 - Updated dependencies [332494b]
-  - @docx-editor.dev/core@2.17.0
+  - @zqmi/docx-editor-core@2.17.0
 
 ## 2.16.2
 
@@ -339,7 +339,7 @@
 - Updated dependencies [b5ab91b]
 - Updated dependencies [1de0f64]
 - Updated dependencies [6f7da01]
-  - @docx-editor.dev/core@2.16.0
+  - @zqmi/docx-editor-core@2.16.0
 
 ## 2.15.1
 
@@ -359,7 +359,7 @@
 - Updated dependencies [cfe3fe1]
 - Updated dependencies [0e1360d]
 - Updated dependencies [2a8e57e]
-  - @docx-editor.dev/core@2.15.0
+  - @zqmi/docx-editor-core@2.15.0
 
 ## 2.14.1
 
@@ -372,7 +372,7 @@
 - Updated dependencies [01022a4]
 - Updated dependencies [6b5bb8d]
 - Updated dependencies [f731c52]
-  - @docx-editor.dev/core@2.14.0
+  - @zqmi/docx-editor-core@2.14.0
 
 ## 2.13.0
 
@@ -399,7 +399,7 @@
 - Updated dependencies [0d782e3]
 - Updated dependencies [7e85377]
 - Updated dependencies [96cdbe2]
-  - @docx-editor.dev/core@2.13.0
+  - @zqmi/docx-editor-core@2.13.0
 
 ## 2.12.0
 
@@ -412,7 +412,7 @@
 - Updated dependencies [3755b98]
 - Updated dependencies [8fe5920]
 - Updated dependencies [fe3b8a3]
-  - @docx-editor.dev/core@2.12.0
+  - @zqmi/docx-editor-core@2.12.0
 
 ## 2.11.0
 
@@ -471,7 +471,7 @@
 - Updated dependencies [d11816f]
 - Updated dependencies [0d770d9]
 - Updated dependencies [dfaafc0]
-  - @docx-editor.dev/core@2.11.0
+  - @zqmi/docx-editor-core@2.11.0
 
 ## 2.10.0
 
@@ -486,7 +486,7 @@
 - Updated dependencies [0e3663d]
 - Updated dependencies [b10d396]
 - Updated dependencies [0e3663d]
-  - @docx-editor.dev/core@2.10.0
+  - @zqmi/docx-editor-core@2.10.0
 
 ## 2.9.2
 
@@ -495,13 +495,13 @@
 ### Patch Changes
 
 - Updated dependencies [36ea49a]
-  - @docx-editor.dev/core@2.9.1
+  - @zqmi/docx-editor-core@2.9.1
 
 ## 2.9.0
 
 ### Minor Changes
 
-- 6573c9b: `@docx-editor.dev/core` is now a peer dependency of `@docx-editor.dev/editor-api` instead of a regular dependency, so your project resolves one copy of the engine, shared with any editor adapter. Hosts whose package manager does not auto-install peers (for example Yarn) must add `@docx-editor.dev/core` explicitly.
+- 6573c9b: `@zqmi/docx-editor-core` is now a peer dependency of `@docx-editor.dev/editor-api` instead of a regular dependency, so your project resolves one copy of the engine, shared with any editor adapter. Hosts whose package manager does not auto-install peers (for example Yarn) must add `@zqmi/docx-editor-core` explicitly.
 - 686a9d6: Add agent-safe document writing and revision APIs.
   - Add an explicit `original` text projection. Pending deletions remain visible, while pending insertions stay hidden. This matches Word's Original review view.
   - Add the atomic `replaceStoryBlocks` automation operation with stable paragraph identities.
@@ -525,7 +525,7 @@
 - Updated dependencies [dab6700]
 - Updated dependencies [dab6700]
 - Updated dependencies [dab6700]
-  - @docx-editor.dev/core@2.8.0
+  - @zqmi/docx-editor-core@2.8.0
 
 ## 2.7.0
 
@@ -544,13 +544,13 @@
 - Updated dependencies [4c907ed]
 - Updated dependencies [25235c1]
 - Updated dependencies [4c907ed]
-  - @docx-editor.dev/core@2.7.0
+  - @zqmi/docx-editor-core@2.7.0
 
 ## 2.6.1
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.6.1
+- @zqmi/docx-editor-core@2.6.1
 
 ## 2.6.0
 
@@ -569,7 +569,7 @@
 - Updated dependencies [9a64477]
 - Updated dependencies [008243e]
 - Updated dependencies [887f67f]
-  - @docx-editor.dev/core@2.6.0
+  - @zqmi/docx-editor-core@2.6.0
 
 ## 2.5.0
 
@@ -589,14 +589,14 @@
 - Updated dependencies [5a2f3ed]
 - Updated dependencies [266a086]
 - Updated dependencies [d905af3]
-  - @docx-editor.dev/core@2.5.0
+  - @zqmi/docx-editor-core@2.5.0
 
 ## 2.4.1
 
 ### Patch Changes
 
 - 32018ce: Document and test explicit byte ownership for detached server runtimes: `createServer` completes consumption of input bytes and each `save` returns fresh caller-owned bytes.
-  - @docx-editor.dev/core@2.4.1
+  - @zqmi/docx-editor-core@2.4.1
 
 ## 2.4.0
 
@@ -606,7 +606,7 @@
 
 ### Patch Changes
 
-- @docx-editor.dev/core@2.4.0
+- @zqmi/docx-editor-core@2.4.0
 
 ## 2.3.1
 
@@ -614,7 +614,7 @@
 
 - Updated dependencies [1c9b6a2]
 - Updated dependencies [1c9b6a2]
-  - @docx-editor.dev/core@2.3.1
+  - @zqmi/docx-editor-core@2.3.1
 
 ## 2.3.0
 
@@ -635,14 +635,14 @@
 - c8c148f: Reject non-empty `LoadQueryOptions.expand` requests instead of silently ignoring navigation-property expansion.
 - 120b912: Fix browser `Range.select()` calls so offscreen ranges are revealed as well as logically selected.
 - 120b912: Fix browser `Bookmark.select()` calls so they resolve and reveal the bookmark without requiring a prior `bookmark.range` sync.
-  - @docx-editor.dev/core@2.3.0
+  - @zqmi/docx-editor-core@2.3.0
 
 ## 2.2.1
 
 ### Patch Changes
 
 - Updated dependencies [35f6d04]
-  - @docx-editor.dev/core@2.2.1
+  - @zqmi/docx-editor-core@2.2.1
 
 ## 2.2.0
 
@@ -652,14 +652,14 @@
 - Updated dependencies [9c25492]
 - Updated dependencies [04c2379]
 - Updated dependencies [f0e4ab9]
-  - @docx-editor.dev/core@2.2.0
+  - @zqmi/docx-editor-core@2.2.0
 
 ## 2.1.3
 
 ### Patch Changes
 
 - b96f21b: `InvalidObjectPath` now says which of the two states it means: an object an item accessor answered becomes usable after the next `await context.sync()`, while a released object needs `context.trackedObjects.add(...)`. The message previously described only the released case.
-  - @docx-editor.dev/core@2.1.3
+  - @zqmi/docx-editor-core@2.1.3
 
 ## 2.1.2
 
@@ -671,14 +671,14 @@
 - Updated dependencies [802ab3e]
 - Updated dependencies [4fa91bd]
 - Updated dependencies [4fa91bd]
-  - @docx-editor.dev/core@2.1.2
+  - @zqmi/docx-editor-core@2.1.2
 
 ## 2.1.1
 
 ### Patch Changes
 
 - Updated dependencies [d74c5d6]
-  - @docx-editor.dev/core@2.1.1
+  - @zqmi/docx-editor-core@2.1.1
 
 ## 2.1.0
 
@@ -714,14 +714,14 @@
 - Updated dependencies [0a62c6d]
 - Updated dependencies [e215962]
 - Updated dependencies [434454d]
-  - @docx-editor.dev/core@2.1.0
+  - @zqmi/docx-editor-core@2.1.0
 
 ## 2.0.1
 
 ### Patch Changes
 
 - Updated dependencies [51f14f5]
-  - @docx-editor.dev/core@2.0.1
+  - @zqmi/docx-editor-core@2.0.1
 
 ## 2.0.0
 
@@ -733,7 +733,7 @@
 - Updated dependencies [26095c6]
 - Updated dependencies [26095c6]
 - Updated dependencies [26095c6]
-  - @docx-editor.dev/core@2.0.0
+  - @zqmi/docx-editor-core@2.0.0
 
 ## 1.10.0
 
@@ -755,7 +755,7 @@
 
 ### Patch Changes
 
-- 2dedf30: The agent bridge now re-exports the paragraph-flash option types (`ParagraphHighlightOptions`, `ScrollToParaIdOptions`) from `@docx-editor.dev/core` instead of redeclaring them, so the two definitions can't drift. No change to the public API surface.
+- 2dedf30: The agent bridge now re-exports the paragraph-flash option types (`ParagraphHighlightOptions`, `ScrollToParaIdOptions`) from `@zqmi/docx-editor-core` instead of redeclaring them, so the two definitions can't drift. No change to the public API surface.
 - 6b1897a: Fix `DocxReviewer.getChanges()` dropping a tracked change when two changes in different paragraphs share a revision id (Word reuses `w:id` across paragraphs), which made the enumerated change list disagree with the count from `acceptAll`/`rejectAll`.
 
 ## 1.6.2
@@ -827,20 +827,20 @@
 
   | Old import                            | New import                           |
   | ------------------------------------- | ------------------------------------ |
-  | `@eigenpal/docx-js-editor`            | `@docx-editor.dev/react`             |
-  | `@eigenpal/docx-js-editor/react`      | `@docx-editor.dev/react`             |
-  | `@docx-editor.dev/react/core`         | `@docx-editor.dev/core`              |
-  | `@docx-editor.dev/react/headless`     | `@docx-editor.dev/core/headless`     |
-  | `@docx-editor.dev/react/core-plugins` | `@docx-editor.dev/core/core-plugins` |
-  | `@docx-editor.dev/react/mcp`          | `@docx-editor.dev/agents/mcp`        |
-  | `@docx-editor.dev/react/i18n/*.json`  | `@docx-editor.dev/i18n/*.json`       |
+  | `@eigenpal/docx-js-editor`            | `@zqmi/docx-editor-react`             |
+  | `@eigenpal/docx-js-editor/react`      | `@zqmi/docx-editor-react`             |
+  | `@zqmi/docx-editor-react/core`         | `@zqmi/docx-editor-core`              |
+  | `@zqmi/docx-editor-react/headless`     | `@zqmi/docx-editor-core/headless`     |
+  | `@zqmi/docx-editor-react/core-plugins` | `@zqmi/docx-editor-core/core-plugins` |
+  | `@zqmi/docx-editor-react/mcp`          | `@docx-editor.dev/agents/mcp`        |
+  | `@zqmi/docx-editor-react/i18n/*.json`  | `@zqmi/docx-editor-i18n/*.json`       |
 
   The old `@eigenpal/docx-js-editor` package stays on 0.x for legacy maintenance — no 1.x compatibility shim ships. Framework-agnostic utilities (e.g. `createEmptyDocument`) move to core:
 
   ```diff
   - import { DocxEditor, createEmptyDocument } from '@eigenpal/docx-js-editor';
-  + import { DocxEditor } from '@docx-editor.dev/react';
-  + import { createEmptyDocument } from '@docx-editor.dev/core';
+  + import { DocxEditor } from '@zqmi/docx-editor-react';
+  + import { createEmptyDocument } from '@zqmi/docx-editor-core';
   ```
 
   ## Vue 3 adapter (`@docx-editor.dev/vue`)
@@ -852,27 +852,27 @@
 
   Parity gates cover insert-table, find/replace, page-setup, context menus, image overlay (resize/move/rotate/aspect-locked corners, dimension tooltip), advanced cell/row options (margins, height rule, text direction, no-wrap), menu-bar icons + shortcuts + carets, toolbar pickers, and the agent UI surface.
 
-  ## Shared i18n package (`@docx-editor.dev/i18n`)
+  ## Shared i18n package (`@zqmi/docx-editor-i18n`)
 
-  Locale strings move out of `@docx-editor.dev/react` into a dedicated package consumed by both adapters from a single source.
+  Locale strings move out of `@zqmi/docx-editor-react` into a dedicated package consumed by both adapters from a single source.
 
   ```diff
-  - import de from '@docx-editor.dev/react/i18n/de.json';
-  + import de from '@docx-editor.dev/i18n/de.json';
+  - import de from '@zqmi/docx-editor-react/i18n/de.json';
+  + import de from '@zqmi/docx-editor-i18n/de.json';
   ```
 
   The `defaultLocale` value (English) is still re-exported from the adapter packages, unchanged.
 
   ## Agent UI relocation (breaking)
 
-  `AgentPanel`, `AgentChatLog`, `AgentComposer`, `AgentSuggestionChip`, `AgentTimeline` no longer ship from `@docx-editor.dev/react`. They live at:
+  `AgentPanel`, `AgentChatLog`, `AgentComposer`, `AgentSuggestionChip`, `AgentTimeline` no longer ship from `@zqmi/docx-editor-react`. They live at:
   - `@docx-editor.dev/agents/react` — React components + `useAgentChat`
   - `@docx-editor.dev/agents/vue` — Vue 3 twins, plus `AIContextMenu` and `AIResponsePreview`
   - `@docx-editor.dev/agents/ai-sdk/react` / `/ai-sdk/vue` — `@ai-sdk/*` adapters
   - `@docx-editor.dev/agents/bridge` — React-free `createEditorBridge`, `agentTools`, `executeToolCall`, `getToolSchemas`, `createReviewerBridge`. Safe for headless / Vue / Node.
 
   ```diff
-  - import { AgentPanel, AgentChatLog } from '@docx-editor.dev/react';
+  - import { AgentPanel, AgentChatLog } from '@zqmi/docx-editor-react';
   + import { AgentPanel, AgentChatLog } from '@docx-editor.dev/agents/react';
   ```
 

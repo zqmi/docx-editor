@@ -8,7 +8,7 @@ Defines framework-neutral contracts for behavior shared by supported adapters.
 
 ### Requirement: Comment and proposeChange transaction builders in core
 
-`@docx-editor.dev/core` SHALL expose pure transaction builders for comment creation, reply, and tracked-change proposal (`createCommentTr`, `replyTr`, `proposeChangeTr`), covering mark application, range resolution, and overlapping-change rejection. Adapter-specific state mutation, event emission, and subscriber notification SHALL remain in each adapter.
+`@zqmi/docx-editor-core` SHALL expose pure transaction builders for comment creation, reply, and tracked-change proposal (`createCommentTr`, `replyTr`, `proposeChangeTr`), covering mark application, range resolution, and overlapping-change rejection. Adapter-specific state mutation, event emission, and subscriber notification SHALL remain in each adapter.
 
 #### Scenario: Add a comment over a located range
 

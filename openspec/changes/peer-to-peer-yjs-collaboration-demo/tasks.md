@@ -16,7 +16,7 @@
 
 ## 3. Build the provider-neutral Yjs package
 
-- [x] 3.1 Scaffold `@docx-editor.dev/collaboration-yjs` with `@docx-editor.dev/core` and stable Yjs 13 as peers, package-dependency assertions, exports, build metadata, license/API gates, and a default entry that imports no network provider.
+- [x] 3.1 Scaffold `@docx-editor.dev/collaboration-yjs` with `@zqmi/docx-editor-core` and stable Yjs 13 as peers, package-dependency assertions, exports, build metadata, license/API gates, and a default entry that imports no network provider.
 - [x] 3.2 Implement the private versioned Yjs root schema for immutable metadata, bounded baseline bytes, and one `Y.Text` per existing body `w14:paraId`.
 - [x] 3.3 Implement creator bootstrap as one initialization transaction that validates/parses bytes, captures the original baseline, seeds paragraph text once, and records digest/version/size metadata.
 - [x] 3.4 Implement joiner bootstrap that waits for initialization, validates metadata/digest/bounds, opens exactly the received baseline, and refuses competing or mismatched initialization.

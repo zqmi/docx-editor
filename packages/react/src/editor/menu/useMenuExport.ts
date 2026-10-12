@@ -4,8 +4,8 @@ import {
   runChromeExport,
   type ChromeExportFormat,
   type ChromeExportHandlers,
-} from '@docx-editor.dev/core/editor';
-import type { Editor } from '@docx-editor.dev/core';
+} from '@zqmi/docx-editor-core/editor';
+import type { Editor } from '@zqmi/docx-editor-core';
 import { useTranslation } from '../../i18n';
 import { download, downloadName } from './download';
 

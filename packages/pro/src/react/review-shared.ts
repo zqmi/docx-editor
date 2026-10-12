@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // `../vue/review-shared.ts`.
 
 import type { MouseEvent as ReactMouseEvent } from 'react';
-import type { EditorSnapshot, ReviewItemQuery } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot, ReviewItemQuery } from '@zqmi/docx-editor-core/contracts/editor';
 import type { ReviewItemView } from './useReview.ts';
 
 /**

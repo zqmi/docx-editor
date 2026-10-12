@@ -1,6 +1,6 @@
 import { defineComponent, h, type PropType, type VNode } from 'vue';
-import { chromeProbeForSlot, type ChromeSlotId } from '@docx-editor.dev/core/editor';
-import { localizeDisabledReason } from '@docx-editor.dev/i18n';
+import { chromeProbeForSlot, type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
 import { useTranslation } from '../../i18n';
 import { useDocxEditor, useEditorStateTick } from '../context';
 import { useHyperlinkPopup } from '../useHyperlinkPopup';

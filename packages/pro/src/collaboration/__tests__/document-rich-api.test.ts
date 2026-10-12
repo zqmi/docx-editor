@@ -7,7 +7,7 @@ import { applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protocols/awarene
 import { strFromU8, unzipSync } from 'fflate';
 import { afterAll, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor, createDocumentRefresh } from '@docx-editor.dev/core/editor';
+import { createDocxEditor, createDocumentRefresh } from '@zqmi/docx-editor-core/editor';
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';
 import { collaborationModule, reviewModule } from '../../index';
 import { createPeerHarness, zipDocument } from './document-peer-support';

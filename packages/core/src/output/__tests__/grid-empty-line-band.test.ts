@@ -2,12 +2,12 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   buildNumberingIndex,
   createFixedMeasurer,
   layoutSemanticDocument,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { elevenPointDefaults } from '../../layout/__tests__/fixtures/eleven-point-defaults.ts';
 import { caretBoxOnLine } from '../../layout/semantic-hit-test.ts';
 import { paintSemanticLayout } from '../semantic-paint.ts';

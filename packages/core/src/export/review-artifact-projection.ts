@@ -14,7 +14,7 @@ import {
   type OoxmlPart,
   type ReviewItem,
   type ReviewRange,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createExportReviewDerivationScope } from '../store/store/review-export-derivation.ts';
 import { isPotentialRevisionElement } from '../store/store/tree-op-revisions.ts';
 import {

@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/core/collaboration` — provider-neutral collaboration contracts.
+ * `@zqmi/docx-editor-core/collaboration` — provider-neutral collaboration contracts.
  *
  * This lane names the attachment between the canonical tree and an optional replication
  * implementation. It performs no networking and imports no CRDT.

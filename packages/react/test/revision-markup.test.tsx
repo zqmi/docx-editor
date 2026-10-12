@@ -3,7 +3,7 @@ import { afterEach, expect, test } from 'bun:test';
 import { useState } from 'react';
 import { act, cleanup, render, getByLabelText } from '@testing-library/react';
 import { reviewModule } from '../../pro/src/index';
-import type { DocxEditorInstance, ResolvedRevisionMarkup } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance, ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorRevisionMarkup } from '../src/editor/DocxEditorRevisionMarkup';
 (globalThis as unknown as { IS_REACT_ACT_ENVIRONMENT?: boolean }).IS_REACT_ACT_ENVIRONMENT = true;

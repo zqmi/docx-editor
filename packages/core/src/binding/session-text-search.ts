@@ -5,9 +5,9 @@
 // the Find query. A new revision drops every entry. Many queries run in ONE walk of the
 // document, so a glossary of 200 terms costs one pass, not 200.
 
-import type { OoxmlPackage, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlPackage, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import type { HeaderFooterSectionResolution } from '../store/package/hf-references.ts';
-import { collectNoteReferences } from '@docx-editor.dev/core/store';
+import { collectNoteReferences } from '@zqmi/docx-editor-core/store';
 import { resolveNotesPart } from '../store/package/note-references.ts';
 import {
   collectTextMatchesForQueries,

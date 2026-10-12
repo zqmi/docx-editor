@@ -4,7 +4,7 @@
 
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
 import { buildNumberingIndex } from '../numbering-index.ts';
 import {

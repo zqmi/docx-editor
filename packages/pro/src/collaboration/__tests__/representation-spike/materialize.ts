@@ -11,7 +11,7 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type OoxmlTextNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type {
   DirtyPaths,
   ElementRecord,

@@ -28,7 +28,7 @@ import {
   readOoxmlPackage,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { storyBlocks } from '../story-roots.ts';
 

@@ -7,8 +7,8 @@ import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import postcss from 'postcss';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
-import { createFixedMeasurer, layoutSemanticDocument } from '@docx-editor.dev/core/layout';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { createFixedMeasurer, layoutSemanticDocument } from '@zqmi/docx-editor-core/layout';
 import { elevenPointDefaults } from '../../layout/__tests__/fixtures/eleven-point-defaults.ts';
 import { paintSemanticLayout } from '../semantic-paint.ts';
 

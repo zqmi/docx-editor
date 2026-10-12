@@ -88,7 +88,7 @@ When you need the rest of the Vue adapter surface, import it from `@docx-editor.
 The Nuxt module does not export these members. Add the Vue adapter to your dependencies before importing them:
 
 ```bash
-npm install @docx-editor.dev/vue @docx-editor.dev/core
+npm install @docx-editor.dev/vue @zqmi/docx-editor-core
 ```
 
 ## Contributing

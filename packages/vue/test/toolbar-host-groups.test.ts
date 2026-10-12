@@ -4,8 +4,8 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, mock, test } from 'bun:test';
 import { defineComponent, h, onBeforeUnmount } from 'vue';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
-import { en } from '@docx-editor.dev/i18n';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
+import { en } from '@zqmi/docx-editor-i18n';
 import { DocxEditorToolbar as T } from '../src/editor/toolbar';
 import { DocxEditorMenu } from '../src/editor/menu';
 import { useReviewRailRegistry } from '../src/editor/context';

@@ -9,7 +9,7 @@ import { characterHeaderPageToken } from './character-header-pages.ts';
 // finalize still runs once the total page count is known; when that count is unchanged,
 // finalized page identities from the previous pass are restored for untouched sheets.
 
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { finalizePageFieldProjection, withPageFieldSources } from './field-projection.ts';
 import { pageRefAssignmentToken } from './field-page-furniture.ts';
 import { framedTokenJoin } from './layout-cache.ts';

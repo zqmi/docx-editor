@@ -85,7 +85,7 @@ function normalize(url: string | URL): string {
  * the binary on their own, and passing a URL there simply overrides theirs.
  *
  * ```ts
- * import { setHarfBuzzWasmUrl } from '@docx-editor.dev/core/layout';
+ * import { setHarfBuzzWasmUrl } from '@zqmi/docx-editor-core/layout';
  * setHarfBuzzWasmUrl('/static/harfbuzz.wasm');
  * ```
  *
@@ -98,7 +98,7 @@ function normalize(url: string | URL): string {
  * Call it before the first editor is created. The runtime reads the location once
  * and caches the result, so a call afterwards warns and does nothing: fix the
  * call site and reload. The file to serve is exported as
- * `@docx-editor.dev/core/harfbuzz.wasm`, and it must be the copy from the
+ * `@zqmi/docx-editor-core/harfbuzz.wasm`, and it must be the copy from the
  * installed package version, because the runtime refuses a version mismatch at
  * load rather than shaping with unverified metrics.
  *
@@ -191,8 +191,8 @@ export function harfBuzzWasmUnavailableDiagnostic(cause: unknown): string {
   return (
     `the HarfBuzz WASM binary could not be loaded from ${location}. If this bundler does ` +
     'not emit `new URL(..., import.meta.url)` assets (esbuild, Bun, and library builds ' +
-    'that inline dynamic imports), serve `@docx-editor.dev/core/harfbuzz.wasm` yourself, ' +
-    "point `setHarfBuzzWasmUrl` from '@docx-editor.dev/core/layout' at it before creating " +
+    'that inline dynamic imports), serve `@zqmi/docx-editor-core/harfbuzz.wasm` yourself, ' +
+    "point `setHarfBuzzWasmUrl` from '@zqmi/docx-editor-core/layout' at it before creating " +
     `an editor, and reload the page. (${detail})`
   );
 }
@@ -212,7 +212,7 @@ export function harfBuzzVersionMismatchDiagnostic(expected: string, loaded: stri
   }
   return (
     `${mismatch}. The copy served at ${redact(overrideUrl)} is from a different version of ` +
-    '`@docx-editor.dev/core`. Re-copy `@docx-editor.dev/core/harfbuzz.wasm` from the ' +
+    '`@zqmi/docx-editor-core`. Re-copy `@zqmi/docx-editor-core/harfbuzz.wasm` from the ' +
     'installed package into your served assets, and reload the page.'
   );
 }

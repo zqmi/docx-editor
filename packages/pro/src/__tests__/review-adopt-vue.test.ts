@@ -10,7 +10,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, expect, test } from 'bun:test';
 import { createApp, defineComponent, h, nextTick, shallowRef } from 'vue';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { useReviewOf, type UseReviewReturn } from '../vue/useReview.ts';
 import {
   destroyTrackedEditors,

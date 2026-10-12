@@ -14,10 +14,10 @@ const lockfile = (coreVersion: string, i18nRange: string) => `{
       "name": "root",
     },
     "packages/core": {
-      "name": "@docx-editor.dev/core",
+      "name": "@zqmi/docx-editor-core",
       "version": "${coreVersion}",
       "dependencies": {
-        "@docx-editor.dev/i18n": "${i18nRange}",
+        "@zqmi/docx-editor-i18n": "${i18nRange}",
         "fflate": "^0.8.2",
       },
     },
@@ -33,7 +33,7 @@ function workspace(coreDependencies: Record<string, string>) {
   writeFileSync(
     join(dir, 'packages', 'core', 'package.json'),
     JSON.stringify({
-      name: '@docx-editor.dev/core',
+      name: '@zqmi/docx-editor-core',
       version: '2.22.1',
       dependencies: coreDependencies,
     })
@@ -45,7 +45,7 @@ const check = (dir: string, ...args: string[]) =>
   spawnSync('node', [script, ...args], { cwd: dir, encoding: 'utf8' });
 
 test('--fix rewrites the versions and ranges that Bun left behind', () => {
-  const dir = workspace({ '@docx-editor.dev/i18n': '^2.22.1', fflate: '^0.8.2' });
+  const dir = workspace({ '@zqmi/docx-editor-i18n': '^2.22.1', fflate: '^0.8.2' });
   try {
     expect(check(dir).status).toBe(1);
     expect(check(dir, '--fix').status).toBe(0);
@@ -58,7 +58,7 @@ test('--fix rewrites the versions and ranges that Bun left behind', () => {
 
 test('--fix leaves a missing dependency to Bun and still fails', () => {
   const dir = workspace({
-    '@docx-editor.dev/i18n': '^2.22.1',
+    '@zqmi/docx-editor-i18n': '^2.22.1',
     fflate: '^0.8.2',
     'new-dependency': '^1.0.0',
   });

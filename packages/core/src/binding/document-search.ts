@@ -27,7 +27,7 @@ import {
   SEARCH_QUERY_MAX,
   isSearchableQuery,
   paragraphTextOf,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { ViewScope } from '../contracts/editor.ts';
 import {
   headerFooterVariantCanPaint,

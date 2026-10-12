@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import {
   buildStyleCascadeTable,
   resolveParagraphLayoutInputs,

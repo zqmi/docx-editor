@@ -11,9 +11,9 @@ import './dom-setup.ts';
 
 import { describe, expect, test } from 'bun:test';
 import { computed, createApp, ref } from 'vue';
-import { defineFontResolver, isFontResolver } from '@docx-editor.dev/core/editor';
-import type { FontResolutionRequest } from '@docx-editor.dev/core/editor';
-import type { FontSource } from '@docx-editor.dev/core/contracts/editor';
+import { defineFontResolver, isFontResolver } from '@zqmi/docx-editor-core/editor';
+import type { FontResolutionRequest } from '@zqmi/docx-editor-core/editor';
+import type { FontSource } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxSource } from '../src/editor/useDocxSource';
 import { useFonts } from '../src/editor/useFonts';
 

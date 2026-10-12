@@ -2,8 +2,8 @@ import type { ReactNode } from 'react';
 // Shared a11y and keyboard helpers for contextual table toolbar compounds.
 
 import { useEffect, useId, type RefObject } from 'react';
-import { editorInstanceScope } from '@docx-editor.dev/core/editor';
-import { localizeDisabledReason } from '@docx-editor.dev/i18n';
+import { editorInstanceScope } from '@zqmi/docx-editor-core/editor';
+import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
 import { useTranslation } from '../../i18n';
 import { focusBy, focusEdge } from '../menu/menu-keyboard';
 import { guardToolbarMousedown } from './ToolbarButton';

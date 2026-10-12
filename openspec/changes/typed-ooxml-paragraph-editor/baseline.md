@@ -16,7 +16,7 @@ is a separate change; until it lands, the suite has to be run locally before mer
 - `check:public-docs-surface`, recorded below as deliberately red under task 11.4, now
   passes — the surface it objected to has since been reconciled.
 - Note: `bun run build` must have run, or `packages/pro` cannot resolve
-  `@docx-editor.dev/react` and three tests fail at module load. `api:check` needs
+  `@zqmi/docx-editor-react` and three tests fail at module load. `api:check` needs
   `packages/editor-api` built for the same reason.
 
 The one skip is a smoke test over `e2e/fixtures/pr140-shapes-and-page-breaks.docx`, which was
@@ -84,7 +84,7 @@ which is retained because this change's tasks were written against it.
   infrastructure drift; it is the public support claim section 11 exists to reconcile, and
   task 11.4 forbids updating those claims before paired acceptance. It must not be silenced
   before then.
-- `packages/agents` does not build: `src/bridge.ts` imports `@docx-editor.dev/core/headless`,
+- `packages/agents` does not build: `src/bridge.ts` imports `@zqmi/docx-editor-core/headless`,
   removed in the greenfield migration. The package's own `typecheck` already skips for the
   same reason.
 

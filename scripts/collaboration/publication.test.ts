@@ -7,7 +7,7 @@ import { createRegistryClient, PUBLICATION_TIMEOUT_MS } from './registry.mjs';
 import { readPublicationCandidate, verifyPublication } from './publication.mjs';
 import { validateRecoverySource, validateRecoveryPackages } from './recovery.mjs';
 
-const name = '@docx-editor.dev/core';
+const name = '@zqmi/docx-editor-core';
 const version = '2.19.0';
 const published = { name, version, dist: { integrity: 'sha512-tested' } };
 const manifest = { packages: { [name]: { version, integrity: published.dist.integrity } } };
@@ -108,7 +108,7 @@ test('nonpublication lookups do not wait for a missing version', async () => {
 
 test('all packages start together, share one deadline, and cancel on integrity mismatch', async () => {
   const calls: { deadline: number; signal: AbortSignal }[] = [];
-  const other = '@docx-editor.dev/react';
+  const other = '@zqmi/docx-editor-react';
   let cancelled = false;
   const lookup = async (
     pkg: string,

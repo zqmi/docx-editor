@@ -1,12 +1,12 @@
 /**
- * `@docx-editor.dev/core/collaboration/replication` — the seam a replication implementation
+ * `@zqmi/docx-editor-core/collaboration/replication` — the seam a replication implementation
  * binds to, not the surface a host consumes.
  *
  * Everything here exists for the layer BETWEEN a CRDT and the canonical tree: the document
  * port an adapter writes through, the primitive journal it reads, and the descriptors that
  * journal is made of. A host that renders presence and reads a status needs none of it, which
  * is why it lives behind its own subpath — autocomplete on
- * `@docx-editor.dev/core/collaboration` should not offer `putXmlPart` and `spliceChildren` to
+ * `@zqmi/docx-editor-core/collaboration` should not offer `putXmlPart` and `spliceChildren` to
  * somebody wiring up an avatar stack.
  *
  * Reach for this when you are writing a provider. `@docx-editor.dev/pro` is one.

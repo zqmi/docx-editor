@@ -25,7 +25,7 @@ Add review, collaboration, and custom content to the [docx-editor.dev](https://d
 - [Custom nodes](https://www.docx-editor.dev/docs/2.x/pro/custom-nodes): Inline node types stored as content controls.
 
 ```bash
-npm install @docx-editor.dev/react @docx-editor.dev/core @docx-editor.dev/pro
+npm install @zqmi/docx-editor-react @zqmi/docx-editor-core @docx-editor.dev/pro
 ```
 
 The framework-neutral entry is `@docx-editor.dev/pro`. Framework chrome lives at `@docx-editor.dev/pro/react` and `@docx-editor.dev/pro/vue`.
@@ -35,7 +35,7 @@ The framework-neutral entry is `@docx-editor.dev/pro`. Framework chrome lives at
 Pass capability modules to the editor root. Keep the module array stable across renders to avoid rebuilding the editor.
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
 
 const MODULES = [reviewModule()];

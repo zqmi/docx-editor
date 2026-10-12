@@ -14,15 +14,15 @@ import type { ReactNode } from 'react';
 // preset-level menu — flanked by − / + that walk the same levels.
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
-import { commandForSlotValue } from '@docx-editor.dev/core/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import { commandForSlotValue } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';
 import { useEditorCommand } from '../useEditorCommand';
 import { useToolbarLabel } from './toolbar-context';
 import { guardToolbarMousedown } from './ToolbarButton';
 import type { ToolbarSlotPartProps, ToolbarSlotPartComponent } from './parts';
-import { AUTO_ZOOM_MODE, FIT_WIDTH_ZOOM_MODE, sameZoomMode } from '@docx-editor.dev/core/editor';
+import { AUTO_ZOOM_MODE, FIT_WIDTH_ZOOM_MODE, sameZoomMode } from '@zqmi/docx-editor-core/editor';
 import { useZoom } from '../useZoom';
 
 /** Engine bounds for `w:sz`: integer half-points, 2..3276 (docx-editor-support). */

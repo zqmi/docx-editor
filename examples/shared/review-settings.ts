@@ -9,7 +9,7 @@ import {
   resolveReviewPane,
   type ResolvedReviewPane,
   type ReviewPaneOptions,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import type { ExampleTextKey } from './example-text';
 
 const STORAGE_KEY = 'docx-editor-demo.review-pane';

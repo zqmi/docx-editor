@@ -14,7 +14,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * does not know. Comparing the IDs after each local edit tells the session to install the
  * shared view.
  */
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { embedPlaceholder } from './node-shapes.ts';
 import { idOf, type LogicalId } from './identity.ts';
 import type { DocumentRegistry } from './registry.ts';

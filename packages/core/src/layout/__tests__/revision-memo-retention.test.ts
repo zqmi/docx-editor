@@ -11,7 +11,7 @@ import {
   openHeadlessDocument,
   readOoxmlPart,
   type OoxmlElement,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { OoxmlNode } from '../../store/package/ooxml-tree.ts';
 import {
   createSubtreeAggregateMemo,

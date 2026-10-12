@@ -18,7 +18,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * An edit anywhere else goes through: an update held back for other text waits for nothing.
  */
 import type * as Y from 'yjs';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { awaitingUpdates } from './document/yjs-items.ts';
 
 export interface EditWaitDeps {

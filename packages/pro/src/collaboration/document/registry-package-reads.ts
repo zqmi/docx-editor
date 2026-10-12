@@ -11,8 +11,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  */
 
 import type * as Y from 'yjs';
-import type { CanonicalBinaryDescriptor } from '@docx-editor.dev/core/collaboration/replication';
-import { partNameKey } from '@docx-editor.dev/core/store';
+import type { CanonicalBinaryDescriptor } from '@zqmi/docx-editor-core/collaboration/replication';
+import { partNameKey } from '@zqmi/docx-editor-core/store';
 import { rejectDangerousKey } from './limits.ts';
 import { asLogicalId } from './identity.ts';
 import { isNodeMap, type PartDirectoryEntry } from './schema.ts';

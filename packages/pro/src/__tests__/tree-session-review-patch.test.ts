@@ -7,13 +7,13 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { openTreeSession, treeSchema, type TreeDocxSession } from '@docx-editor.dev/core/binding';
-import type { ReviewItem, ReviewRevisionItem } from '@docx-editor.dev/core/layout';
+import { openTreeSession, treeSchema, type TreeDocxSession } from '@zqmi/docx-editor-core/binding';
+import type { ReviewItem, ReviewRevisionItem } from '@zqmi/docx-editor-core/layout';
 import {
   commentPartNameOf,
   commentsExtendedPartNameOf,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { collectReviewItems, revisionItemsOfParagraph } from '../review/review-model.ts';
 import { reviewModule } from '../review/review-module.ts';
 

@@ -1,4 +1,4 @@
-import type { StyleSpanRecord } from '@docx-editor.dev/core/layout';
+import type { StyleSpanRecord } from '@zqmi/docx-editor-core/layout';
 
 /** Keep Word's painted result while a native select supplies the platform picker. */
 export function paintLegacyDropdown(element: HTMLElement, span: StyleSpanRecord): void {

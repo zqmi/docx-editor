@@ -3,7 +3,7 @@ import type {
   ResolvedRevisionMarkup,
   ReviewDisplayMode,
   FieldResultsMode,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { formControlTranslateKey } from './form-control-translate';
 import { warnFieldResultsChanged } from './field-results-warning';
 import {
@@ -26,7 +26,7 @@ import type {
   Editor,
   EditorFontError,
   ZoomMode,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import {
   createDocxEditor,
   defaultTableLabel,
@@ -38,8 +38,8 @@ import {
   type FontConfigurationFragment,
   type FontResolver,
   type ImageDecodePort,
-} from '@docx-editor.dev/core/editor';
-import type { FontConfiguration } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { FontConfiguration } from '@zqmi/docx-editor-core/contracts/editor';
 import { useTranslation, type TranslationKey } from '../i18n';
 import {
   docxEditorKey,

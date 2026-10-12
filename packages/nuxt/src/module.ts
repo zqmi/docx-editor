@@ -9,7 +9,7 @@ import type { NuxtModule } from '@nuxt/schema';
 import { VUE_COMPOSABLES } from './vue-composables.generated';
 
 const PACKAGE_ROOT = '@docx-editor.dev/vue';
-const CORE_STYLES = '@docx-editor.dev/core/styles/editor.css';
+const CORE_STYLES = '@zqmi/docx-editor-core/styles/editor.css';
 
 /** @public */
 export interface ModuleOptions {
@@ -37,7 +37,7 @@ const module: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
     }
 
     const optimizeDeps = (nuxt.options.vite.optimizeDeps ??= {});
-    optimizeDeps.include = [...(optimizeDeps.include ?? []), '@docx-editor.dev/core', PACKAGE_ROOT];
+    optimizeDeps.include = [...(optimizeDeps.include ?? []), '@zqmi/docx-editor-core', PACKAGE_ROOT];
 
     addComponent({
       name: `${options.prefix}DocxEditor`,

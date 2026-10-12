@@ -3,13 +3,13 @@
 // applies fixed ranges again after a refresh.
 
 import { useEffect, useRef, useState } from 'react';
-import type { HighlightOptions, HighlightResult } from '@docx-editor.dev/core/contracts/editor';
+import type { HighlightOptions, HighlightResult } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   HIGHLIGHT_REFRESH_MS,
   watchHighlights,
   type HighlightSource,
   type HighlightWatch,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 
 export { HIGHLIGHT_REFRESH_MS, type HighlightSource };

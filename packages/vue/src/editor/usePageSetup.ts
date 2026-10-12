@@ -1,5 +1,5 @@
 import { computed, type ComputedRef } from 'vue';
-import type { EditorSnapshot, PageSetup } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot, PageSetup } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

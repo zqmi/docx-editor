@@ -149,7 +149,7 @@ export function bundledPackages(metafilePath, cwd) {
   }
   // Core's ESM build inlines harfbuzzjs (see packages/core/tsup.config.ts), so the
   // metafile attributes those bytes to core's dist chunk, not to harfbuzzjs.
-  add(packageAt('harfbuzzjs', '@docx-editor.dev/core'));
+  add(packageAt('harfbuzzjs', '@zqmi/docx-editor-core'));
   return {
     packages: [...found.values()].sort((a, b) => (a.manifest.name < b.manifest.name ? -1 : 1)),
     problems,
@@ -169,8 +169,8 @@ export function renderNotices({
     '',
     'The `docx-to-markdown` Python package is distributed under the Apache License,',
     'Version 2.0 (see `LICENSE` in the wheel). Its `_vendor/docx-to-markdown` executable',
-    'is a compiled bundle that contains the `@docx-editor.dev/core`,',
-    '`@docx-editor.dev/fonts`, and `@docx-editor.dev/docx-to-markdown` packages',
+    'is a compiled bundle that contains the `@zqmi/docx-editor-core`,',
+    '`@zqmi/docx-editor-fonts`, and `@docx-editor.dev/docx-to-markdown` packages',
     '(Apache-2.0, https://github.com/eigenpal/docx-editor) together with the',
     'third-party components below, each under its own license, reproduced in full.',
     '',

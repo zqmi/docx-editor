@@ -2,7 +2,7 @@
 // A pause or a maximum group duration starts a new group on the next flush.
 // Caret movement, another command, and edits to this paragraph also end the group.
 
-import type { HistoryGroup, OoxmlPackage, TreeModelChange } from '@docx-editor.dev/core/store';
+import type { HistoryGroup, OoxmlPackage, TreeModelChange } from '@zqmi/docx-editor-core/store';
 import type { SemanticSelection } from '../layout/semantic-interaction.ts';
 import { findNode } from '../store/package/ooxml-edit.ts';
 import { ooxmlTreesEqual } from '../store/package/ooxml-tree.ts';

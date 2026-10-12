@@ -1,14 +1,14 @@
 /**
- * @docx-editor.dev/i18n/en
+ * @zqmi/docx-editor-i18n/en
  *
  * English (`en`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import en from '@docx-editor.dev/i18n/en';
+ * import en from '@zqmi/docx-editor-i18n/en';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const en = (await import('@docx-editor.dev/i18n/en')).default;
+ * const en = (await import('@zqmi/docx-editor-i18n/en')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

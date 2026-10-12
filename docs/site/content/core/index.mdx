@@ -1,18 +1,18 @@
 ---
-title: '@docx-editor.dev/core'
+title: '@zqmi/docx-editor-core'
 description: 'The framework-agnostic engine: OOXML read and write, the canonical document tree, layout, paint, and the Editor contract that adapters render.'
 category: 'Reference'
 order: 70
 ---
 
-<PackageStats name="@docx-editor.dev/core" />
+<PackageStats name="@zqmi/docx-editor-core" />
 
 This package is the engine. It reads a `.docx` into a canonical document tree, lays that tree out into pages, paints them, and writes the tree back to OOXML. It has no framework dependency and no UI.
 
 Install Core alongside the React or Vue adapter. Both adapters require it as a peer dependency. Keep one Core copy in your application. Import Core directly when you build an adapter or use its public contracts.
 
 ```bash
-npm install @docx-editor.dev/core
+npm install @zqmi/docx-editor-core
 ```
 
 ## Entry points
@@ -20,8 +20,8 @@ npm install @docx-editor.dev/core
 The root is the entry point for typical editor creation and typing: create an editor over bytes, the contract it implements, fonts, and the chrome registry. See the [chrome slot reference](/docs/2.x/guides/chrome-slots) for the complete registry vocabulary and its React and Vue toolbar parts.
 
 ```ts
-import { createDocxEditor, loadFonts, DEFAULT_FONT } from '@docx-editor.dev/core';
-import type { Editor, EditorSnapshot } from '@docx-editor.dev/core';
+import { createDocxEditor, loadFonts, DEFAULT_FONT } from '@zqmi/docx-editor-core';
+import type { Editor, EditorSnapshot } from '@zqmi/docx-editor-core';
 ```
 
 `DEFAULT_FONT` provides the default font configuration: Calibri at 11 points. `WORD_DEFAULT_FONT` is its deprecated alias. Document formatting and document-default rules determine the text size used for layout. Missing defaults and explicitly empty defaults can produce different results.
@@ -50,7 +50,7 @@ Prefer the root import. Use `./editor` only when you build an adapter and need s
 `Editor` is the whole public surface an adapter uses. Call `exec` for commands. Call `query` and `snapshot` for reads:
 
 ```ts
-import type { Editor, EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { Editor, EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 
 function pageLabel(editor: Editor): string {
   const snapshot: EditorSnapshot = editor.snapshot();
@@ -76,7 +76,7 @@ For more information, see [Navigate a document](/docs/2.x/guides/navigation).
 
 ### Keep the caret on the selected line
 
-Wrapped line boundaries can share one text offset. For a custom surface, keep the optional `lineId` returned by `moveCaret`. Pass it to the next move through `MoveCaretOptions.lineId` and to `caretAt` through `preferredLineId`. These layout functions come from `@docx-editor.dev/core/layout`.
+Wrapped line boundaries can share one text offset. For a custom surface, keep the optional `lineId` returned by `moveCaret`. Pass it to the next move through `MoveCaretOptions.lineId` and to `caretAt` through `preferredLineId`. These layout functions come from `@zqmi/docx-editor-core/layout`.
 
 ### Indent selected paragraphs
 
@@ -109,7 +109,7 @@ If you use React or Vue, start with `useEditorValueCommand` and `useHistoryGroup
 This range control changes font size in points. The command takes half-points:
 
 ```ts
-import { bindHistoryGroup, type Editor } from '@docx-editor.dev/core';
+import { bindHistoryGroup, type Editor } from '@zqmi/docx-editor-core';
 
 function mountFontSize(editor: Editor, slider: HTMLInputElement, status: HTMLOutputElement) {
   slider.type = 'range';

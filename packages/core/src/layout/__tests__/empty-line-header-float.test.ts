@@ -3,7 +3,7 @@
 // table keeps empty paragraphs beside it in place, whether it sits in the body or in a header.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import {
   createFixedMeasurer,
   layoutHeaderFooterStory,

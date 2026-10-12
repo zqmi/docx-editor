@@ -12,7 +12,7 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type OoxmlProperty,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createParagraphLayoutCache,

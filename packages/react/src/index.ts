@@ -1,8 +1,8 @@
 /**
- * @docx-editor.dev/react
+ * @zqmi/docx-editor-react
  *
  * React adapter for the DOCX editor. A thin renderer over the `Editor`
- * contract from `@docx-editor.dev/core`: it supplies DOM and paints
+ * contract from `@zqmi/docx-editor-core`: it supplies DOM and paints
  * the engine's positioned display list, and holds no editing-engine state.
  *
  * @packageDocumentation
@@ -369,7 +369,7 @@ export {
   type ChromeMenuSubmenuEntry,
   type ChromeSlotId,
   type ToolbarCommandState,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 export { PaginatedDocxEditor } from './components/PaginatedDocxEditor';
 export { PaginatedDocxEditorShell } from './components/PaginatedDocxEditorShell';
 export type { PaginatedDocxEditorShellProps } from './components/PaginatedDocxEditorShell';
@@ -417,7 +417,7 @@ export {
   type FontUrlSource,
   type LoadFontsRequest,
   type LoadFontsResult,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 // Re-export the contract types a consumer needs to drive the editor.
 export type {
@@ -437,8 +437,8 @@ export type {
   EditorScope,
   PageSetup,
   ScrollToAnchorOptions,
-} from '@docx-editor.dev/core/contracts/editor';
-export type { DocxDocument } from '@docx-editor.dev/core/contracts/types';
+} from '@zqmi/docx-editor-core/contracts/editor';
+export type { DocxDocument } from '@zqmi/docx-editor-core/contracts/types';
 
 export { Toolbar, ToolbarButton, ToolbarGroup, type ToolbarProps } from './components/Toolbar';
 export { DocxEditorShell } from './components/DocxEditor/DocxEditorShell';
@@ -525,7 +525,7 @@ export {
 
 export { useHistoryGroup, type UseHistoryGroupReturn } from './editor/useHistoryGroup';
 
-export { createDocumentRefresh, DocumentRefreshError } from '@docx-editor.dev/core/editor';
+export { createDocumentRefresh, DocumentRefreshError } from '@zqmi/docx-editor-core/editor';
 export type {
   DocumentRefresh,
   DocumentRefreshState,
@@ -540,9 +540,9 @@ export type {
   RefreshHighlightAnimation,
   ClearRefreshHighlightsOptions,
   NavigateToChangeOptions,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
-export type { ChromeExportHandlers, ChromeExportFormat } from '@docx-editor.dev/core/editor';
+export type { ChromeExportHandlers, ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
 
 export {
   DocxEditorExportDialog,
@@ -570,7 +570,7 @@ export type {
   RevisionDeletionMark,
   RevisionChangedLinesMark,
   ReviewDisplayMode,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 export {
   DocxEditorRevisionMarkupDialog,

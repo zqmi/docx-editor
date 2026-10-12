@@ -22,7 +22,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * always sends `Origin` on a `POST`, so a request without one is not the page.
  */
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { resolveRevisionMarkup, type ResolvedRevisionMarkup } from '@docx-editor.dev/core/editor';
+import { resolveRevisionMarkup, type ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
 import { exportPdf } from '@docx-editor.dev/docx-to-pdf';
 
 const MAX_UPLOAD = 20 * 1024 * 1024;

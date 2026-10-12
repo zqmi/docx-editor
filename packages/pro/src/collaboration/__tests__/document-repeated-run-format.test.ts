@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 // #592: formatting must never change text, including descendants of concurrent splits.
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { StoryScope, TreeDocOp } from '@docx-editor.dev/core/store';
+import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
 import {
   BODY,
   W,

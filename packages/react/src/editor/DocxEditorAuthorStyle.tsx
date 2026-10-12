@@ -10,7 +10,7 @@
 // The DEFAULT needs no component at all: the engine colours by author, as Word does.
 
 import { useContext, useEffect, useRef } from 'react';
-import type { RevisionAuthorStyle } from '@docx-editor.dev/core/editor';
+import type { RevisionAuthorStyle } from '@zqmi/docx-editor-core/editor';
 import { RevisionStyleRegistryContext } from './revision-style-registry';
 
 function useDeclarationId(): symbol {

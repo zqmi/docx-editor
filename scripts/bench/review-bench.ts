@@ -7,7 +7,7 @@
 // with both full and predicate-filtered markup.
 //
 // The review-model hooks come from the pro review module, exactly as `createDocxEditor`
-// receives them. Pro's `@docx-editor.dev/core/*` imports resolve to core SRC through its
+// receives them. Pro's `@zqmi/docx-editor-core/*` imports resolve to core SRC through its
 // tsconfig `paths` when bun runs this from the workspace, so the whole bench is one engine
 // copy (consumer installs resolve the same specifiers to dist through the export maps).
 //

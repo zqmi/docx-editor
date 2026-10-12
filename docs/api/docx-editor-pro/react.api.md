@@ -5,11 +5,11 @@
 ```ts
 
 import { Awareness } from 'y-protocols/awareness';
-import { DocxEditorRootProps } from '@docx-editor.dev/react';
+import { DocxEditorRootProps } from '@zqmi/docx-editor-react';
 import * as react from 'react';
 import { ReactNode } from 'react';
-import { ReviewAuthorInfo } from '@docx-editor.dev/react';
-import { ToolbarTranslate } from '@docx-editor.dev/react';
+import { ReviewAuthorInfo } from '@zqmi/docx-editor-react';
+import { ToolbarTranslate } from '@zqmi/docx-editor-react';
 import * as Y from 'yjs';
 
 // @public

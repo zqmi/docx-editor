@@ -18,8 +18,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 //     here never reaches a file; a payload refused on the way out reaches one and comes back
 //     broken.
 
-import { customNodePayloadsOf } from '@docx-editor.dev/core/store';
-import type { OoxmlPackage } from '@docx-editor.dev/core/store';
+import { customNodePayloadsOf } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPackage } from '@zqmi/docx-editor-core/store';
 import type { AnyCustomNodeDefinition } from './define-custom-node.ts';
 import { serializeCustomNodeData, type StandardSchemaV1 } from './data-schema.ts';
 import { customNodeIssueOf, type CustomNodeIssue } from './node-write-result.ts';

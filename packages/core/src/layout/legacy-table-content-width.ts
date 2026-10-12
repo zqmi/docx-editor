@@ -8,7 +8,7 @@ import {
   readTwipsMeasure,
   WML_NAMESPACE_URI,
   type OoxmlElement,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { SemanticTableRow } from './semantic-table.ts';
 import {
   MAX_TABLE_COLUMNS,

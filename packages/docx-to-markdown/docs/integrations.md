@@ -7,7 +7,7 @@ Before you begin, [install the converter and check the runtime requirements](../
 Install the packages, then create one LangChain document for each exported page:
 
 ```sh
-npm install @docx-editor.dev/docx-to-markdown @docx-editor.dev/core @langchain/core
+npm install @docx-editor.dev/docx-to-markdown @zqmi/docx-editor-core @langchain/core
 ```
 
 Convert the file and map its pages to LangChain documents:
@@ -53,8 +53,8 @@ Keep the packages external so Node.js can load their bundled font and WebAssembl
 export default {
   serverExternalPackages: [
     '@docx-editor.dev/docx-to-markdown',
-    '@docx-editor.dev/core',
-    '@docx-editor.dev/fonts',
+    '@zqmi/docx-editor-core',
+    '@zqmi/docx-editor-fonts',
   ],
 };
 ```

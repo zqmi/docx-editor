@@ -1,12 +1,12 @@
 import { usePickerKeyboard } from './usePickerKeyboard';
 import { defineComponent, ref, useId, watch } from 'vue';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   AUTO_ZOOM_MODE,
   FIT_WIDTH_ZOOM_MODE,
   commandForSlotValue,
   sameZoomMode,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';
 import { useEditorCommand } from '../useEditorCommand';

@@ -37,7 +37,7 @@ import {
   type OoxmlPackage,
   type StoryScope,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   DocumentRegistry,
   PackageMaterializer,

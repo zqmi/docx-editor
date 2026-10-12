@@ -755,7 +755,7 @@ describe('URL port lifecycle', () => {
     };
     paintSemanticLayout(
       container,
-      layout as import('@docx-editor.dev/core/layout').SemanticLayout,
+      layout as import('@zqmi/docx-editor-core/layout').SemanticLayout,
       {
         scale: 1,
         imageUrlPort: port,
@@ -767,7 +767,7 @@ describe('URL port lifecycle', () => {
       {
         revision: 2,
         pages: [{ ...layout.pages[0]!, fragments: [] }],
-      } as import('@docx-editor.dev/core/layout').SemanticLayout,
+      } as import('@zqmi/docx-editor-core/layout').SemanticLayout,
       { scale: 1, imageUrlPort: port }
     );
     expect(revoked.length).toBe(1);

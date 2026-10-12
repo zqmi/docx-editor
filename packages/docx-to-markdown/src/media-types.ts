@@ -1,4 +1,4 @@
-import type { SemanticDrawingVisit } from '@docx-editor.dev/core/layout';
+import type { SemanticDrawingVisit } from '@zqmi/docx-editor-core/layout';
 
 /** One physical occurrence of an extracted image. @public */
 export interface MarkdownImageOccurrence {

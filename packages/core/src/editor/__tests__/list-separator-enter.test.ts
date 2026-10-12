@@ -2,7 +2,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import { paragraphTextOf, directParagraphProperties, findNode } from '@docx-editor.dev/core/store';
+import { paragraphTextOf, directParagraphProperties, findNode } from '@zqmi/docx-editor-core/store';
 import { strToU8, zipSync, unzipSync } from 'fflate';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { ensureSeparatorStyle } from '../list-separator-style.ts';

@@ -23,8 +23,8 @@ import {
   type MaybeRefOrGetter,
 } from 'vue';
 import type { ReviewAuthorInfo } from '@docx-editor.dev/vue';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
-import type { CommentMarkerStyle, RevisionDisplay } from '@docx-editor.dev/core/editor';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { CommentMarkerStyle, RevisionDisplay } from '@zqmi/docx-editor-core/editor';
 import { useReviewAuthors, useTranslation } from '@docx-editor.dev/vue';
 import type { ReviewActions } from './review-types.ts';
 import type { ReviewItemView } from './useReview.ts';

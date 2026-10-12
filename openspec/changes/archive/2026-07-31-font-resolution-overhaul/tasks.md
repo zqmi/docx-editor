@@ -21,7 +21,7 @@
 - [x] 3.3 Cache API layer: bucket `docx-editor-fonts`, keyed by URL, hash-revalidated on read, poisoned entry discarded and refetched, graceful no-cache degradation (Node/non-secure context)
 - [x] 3.4 Tests: two-URL exactness (no extra requests), 404-of-three partial admission, second-call cache hit, tampered-cache refetch
 
-## 4. @docx-editor.dev/fonts package
+## 4. @zqmi/docx-editor-fonts package
 
 - [x] 4.1 Scaffold `packages/fonts` workspace package: tsconfig, build, exports map, fixed-version release group membership, OFL license texts for Carlito/Caladea/Liberation
 - [x] 4.2 Add TTF assets (5 families × 4 faces) referenced via `new URL(..., import.meta.url)`; build step computes and bakes `sha256:` hashes

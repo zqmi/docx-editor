@@ -15,7 +15,7 @@ import {
   findNode,
   revisionItemsOf,
   serializeOoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type { EditorModule } from '../../contracts/modules.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

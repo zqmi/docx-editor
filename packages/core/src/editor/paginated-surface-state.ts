@@ -16,7 +16,7 @@ import type {
   ParagraphTabStop,
 } from './paragraph-format-contract.ts';
 import type { CollaborationStatus } from '../collaboration/index.ts';
-import type { CellSelection, SemanticSelection } from '@docx-editor.dev/core/layout';
+import type { CellSelection, SemanticSelection } from '@zqmi/docx-editor-core/layout';
 
 /**
  * What the selection is currently formatted as.

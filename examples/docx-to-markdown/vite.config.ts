@@ -57,7 +57,7 @@ export default defineConfig(
           replacement: path.join(monorepoRoot, 'packages/core/src/index.ts'),
         },
         {
-          find: '@docx-editor.dev/core/collaboration/replication',
+          find: '@zqmi/docx-editor-core/collaboration/replication',
           replacement: path.join(monorepoRoot, 'packages/core/src/collaboration/replication.ts'),
         },
         {
@@ -77,7 +77,7 @@ export default defineConfig(
           replacement: path.join(monorepoRoot, 'packages/pro/src/index.ts'),
         },
         {
-          find: '@docx-editor.dev/fonts/google',
+          find: '@zqmi/docx-editor-fonts/google',
           replacement: path.join(monorepoRoot, 'packages/fonts/src/google-fonts.ts'),
         },
         {

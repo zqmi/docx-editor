@@ -16,7 +16,7 @@ import {
   chromeSlotIsToggle,
   type ChromeControl,
   type ChromeSlotId,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useEditorCommand } from '../useEditorCommand';
 import { usePlatformShortcut } from '../usePlatformShortcut';
 import { useToolbarLabel } from './toolbar-context';

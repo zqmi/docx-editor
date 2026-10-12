@@ -2,7 +2,7 @@ import type {
   FieldResultsMode,
   RevisionMarkupOptions,
   ReviewDisplayMode,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import type {
   DocumentHandle,
   DocumentSource,
@@ -14,25 +14,25 @@ import type {
   ExecResult,
   FontConfiguration,
   ZoomMode,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import type {
   EditorModule,
   FontConfigurationFragment,
   FontResolver,
-} from '@docx-editor.dev/core/editor';
-import type { Translations } from '@docx-editor.dev/i18n';
+} from '@zqmi/docx-editor-core/editor';
+import type { Translations } from '@zqmi/docx-editor-i18n';
 import type { DocxEditorMenuProps } from './editor/menu';
 import type { DocxEditorContextMenuProps } from './editor/contextmenu';
 import type { DocxEditorNavigationProps } from './editor/navigation';
 
-export { EditorFontError } from '@docx-editor.dev/core/contracts/editor';
+export { EditorFontError } from '@zqmi/docx-editor-core/contracts/editor';
 export type {
   EditorFontErrorCode,
   FontConfiguration,
   FontFaceRequest,
   FontSource,
   FontSourceSubstitution,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 
 export type EditorMode = 'edit' | 'view' | 'suggesting';
 

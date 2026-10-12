@@ -15,8 +15,8 @@ import { Fragment } from 'react';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
 import { strToU8, zipSync } from 'fflate';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
-import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@docx-editor.dev/react';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@zqmi/docx-editor-react';
 import { reviewModule } from '../index.ts';
 import { DocxEditorReview } from '../react/index.ts';
 

@@ -19,7 +19,7 @@
 // calls non-rewritable (revision markup, nested fields, locks, anything but plain runs)
 // keeps its cache untouched.
 
-import type { OoxmlElement, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { resolveNotesPart } from '../store/package/note-references.ts';
 import type { NoteKind } from '../store/package/note-nodes.ts';
 import type { OoxmlPackage } from '../store/package/ooxml-package.ts';

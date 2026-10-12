@@ -2,7 +2,7 @@
 
 ### Requirement: Comment and proposeChange transaction builders in core
 
-`@docx-editor.dev/core` SHALL expose the comment and tracked-change write path as `TreeDocOp`s and package transactions over the canonical OOXML tree — not as ProseMirror transaction builders over marks. `createCommentTr`, `replyTr` and `proposeChangeTr` are withdrawn with the lane they belonged to: a comment is `w:commentRangeStart`/`w:commentRangeEnd`/`w:commentReference` in a story plus a `CT_Comment` in `word/comments.xml`, and a mark cannot express markup that spans five parts.
+`@zqmi/docx-editor-core` SHALL expose the comment and tracked-change write path as `TreeDocOp`s and package transactions over the canonical OOXML tree — not as ProseMirror transaction builders over marks. `createCommentTr`, `replyTr` and `proposeChangeTr` are withdrawn with the lane they belonged to: a comment is `w:commentRangeStart`/`w:commentRangeEnd`/`w:commentReference` in a story plus a `CT_Comment` in `word/comments.xml`, and a mark cannot express markup that spans five parts.
 
 A comment write SHALL commit through the package transaction seam, so the story markers, the comment body, the thread state, the relationship and the content-type override commit together or not at all. A tracked edit SHALL commit as an ordinary text op carrying a `RevisionAttributionInput`, so an op still states on its face whether it is tracked and no emit site can silently write an untracked edit while suggesting mode is on.
 

@@ -1,5 +1,5 @@
 import { computed, defineComponent, h, type PropType } from 'vue';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
 import { DocumentOutline } from '../components/DocumentOutline';
 import { useDocxEditor } from './context';
 import { selectDocumentAbsent } from './document-presence';

@@ -107,15 +107,15 @@ export default defineConfig({
           // a clean checkout. The React demo sidesteps it by importing core's stylesheet
           // from source with a relative path in its own `styles.css`.
           {
-            find: '@docx-editor.dev/core/styles/editor.css',
+            find: '@zqmi/docx-editor-core/styles/editor.css',
             replacement: path.join(monorepoRoot, 'packages/core/src/styles/editor.css'),
           },
           {
-            find: '@docx-editor.dev/core/editor',
+            find: '@zqmi/docx-editor-core/editor',
             replacement: path.join(monorepoRoot, 'packages/core/src/editor/index.ts'),
           },
           {
-            find: '@docx-editor.dev/core/collaboration/replication',
+            find: '@zqmi/docx-editor-core/collaboration/replication',
             replacement: path.join(monorepoRoot, 'packages/core/src/collaboration/replication.ts'),
           },
           {
@@ -147,18 +147,18 @@ export default defineConfig({
             replacement: path.join(monorepoRoot, 'packages/pro/src/index.ts'),
           },
           // Before the bare `fonts` entry: matching is prefix-based, so the shorter find
-          // would rewrite `@docx-editor.dev/fonts/google` to `…/src/index.ts/google` and
+          // would rewrite `@zqmi/docx-editor-fonts/google` to `…/src/index.ts/google` and
           // fail with "Not a directory". The React config carries the same pair.
           {
-            find: '@docx-editor.dev/fonts/google',
+            find: '@zqmi/docx-editor-fonts/google',
             replacement: path.join(monorepoRoot, 'packages/fonts/src/google-fonts.ts'),
           },
           {
-            find: '@docx-editor.dev/fonts',
+            find: '@zqmi/docx-editor-fonts',
             replacement: path.join(monorepoRoot, 'packages/fonts/src/index.ts'),
           },
           {
-            find: '@docx-editor.dev/i18n',
+            find: '@zqmi/docx-editor-i18n',
             replacement: path.join(monorepoRoot, 'packages/i18n/src/index.ts'),
           },
         ],

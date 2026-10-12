@@ -9,7 +9,7 @@ import type { StyleSpanRecord } from './semantic-records.ts';
 import { clipInlineDrawingRecordVertically, type InlineDrawingRecord } from './drawing-layout.ts';
 import { topAndBottomSkipBeforeLine, type ExclusionZone } from './drawing-exclusion.ts';
 import type { ModelRange } from './field-pieces.ts';
-import { PAGE_BREAK_CHAR } from '@docx-editor.dev/core/store';
+import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
 
 export interface PendingLine {
   readonly spans: StyleSpanRecord[];

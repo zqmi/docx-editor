@@ -1,5 +1,5 @@
 // Text frames share bounded scanline reflow with drawings and floating tables.
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import type { ExclusionColumnLayout, ExclusionZone } from './drawing-exclusion.ts';
 import type { PageRecord } from './semantic-records.ts';
 import type { StyleCascadeTable } from './style-cascade.ts';

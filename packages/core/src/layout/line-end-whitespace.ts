@@ -1,4 +1,4 @@
-import { PAGE_BREAK_CHAR } from '@docx-editor.dev/core/store';
+import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
 import type { StyleSpanRecord } from './semantic-records.ts';
 import { withoutTrailingSpaces } from './trailing-spaces.ts';
 

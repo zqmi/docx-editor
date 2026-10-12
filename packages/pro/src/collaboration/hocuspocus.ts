@@ -17,7 +17,7 @@ import { HocuspocusProvider } from '@hocuspocus/provider';
 import {
   isCollaborationFailureCode,
   type CollaborationIdentity,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

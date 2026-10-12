@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // Removing the row a vertical merge starts in hands the merge to the next row (issue #1069).
 // Both replicas must reach that repaired table, through concurrency, undo, and reconnect.
 import { afterEach, expect, test } from 'bun:test';
-import { serializeOoxmlPart, type OoxmlElement, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { serializeOoxmlPart, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('table-vmerge-rows', { offlineEditing: true });

@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { afterEach, describe, expect, test } from 'bun:test';
-import { paragraphTextOf, type TreeDocOp } from '@docx-editor.dev/core/store';
+import { paragraphTextOf, type TreeDocOp } from '@zqmi/docx-editor-core/store';
 import {
   createPeerHarness,
   nodeText,

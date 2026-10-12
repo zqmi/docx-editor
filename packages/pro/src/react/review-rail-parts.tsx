@@ -8,8 +8,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { isValidElement, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
-import { Slot, useDocxEditor, useEditorEvent, useEditorState } from '@docx-editor.dev/react';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import { Slot, useDocxEditor, useEditorEvent, useEditorState } from '@zqmi/docx-editor-react';
 import type { ReviewItemView } from './useReview.ts';
 import type { ReviewBalloonProps, ReviewMarkersProps, ReviewPartProps } from './review-types.ts';
 import {

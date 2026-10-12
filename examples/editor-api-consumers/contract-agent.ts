@@ -420,7 +420,7 @@ async function verifyBrowser() {
   // A DOM emulator exercises the public browser host. This does not test native rendering.
   const { GlobalRegistrator } = await import('@happy-dom/global-registrator');
   GlobalRegistrator.register();
-  const { createDocxEditor } = await import('@docx-editor.dev/core/editor');
+  const { createDocxEditor } = await import('@zqmi/docx-editor-core/editor');
   const { reviewModule } = await import('@docx-editor.dev/pro');
   const { DocxEditor: BrowserDocxEditor } = await import('@docx-editor.dev/editor-api/browser');
   const container = document.createElement('div');

@@ -19,7 +19,7 @@ import {
   createFixedMeasurer,
   linesOf,
   tryCreateCanvasMeasurer,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import { docx, mount, openLayout, paragraph, putCaret } from './paginated-surface-fixtures.ts';
 
 describe('the incremental layout machinery is actually used (tasks 9.2, 9.3)', () => {

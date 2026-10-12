@@ -4,7 +4,7 @@
 // (namespace, localName) pairs, and never keys an object by a file-supplied element name.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { MAX_DOCUMENT_PROPERTY_CHARS, readDocumentProperties } from '../document-properties.ts';
 
 const CP = 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties';

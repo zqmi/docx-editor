@@ -15,7 +15,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // the result is the engine's own, unchanged, so a caller that only reads `ok` and `reason` needs
 // to know nothing about this.
 
-import type { ExecResult } from '@docx-editor.dev/core/contracts/editor';
+import type { ExecResult } from '@zqmi/docx-editor-core/contracts/editor';
 import type { StandardSchemaIssue } from './data-schema.ts';
 
 /**

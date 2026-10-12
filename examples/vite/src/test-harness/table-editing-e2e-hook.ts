@@ -4,8 +4,8 @@ declare global {
   }
 }
 
-import type { Editor, EditorCommand } from '@docx-editor.dev/core/contracts/editor';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { Editor, EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import type {
   PaginatedSurfacePerf,
   SurfaceEditingMode,
@@ -18,7 +18,7 @@ import {
   paragraphTextFromLayout,
   type SemanticLayout,
   type TableFragmentRecord,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import {
   canonicalOoxmlFingerprint,
   diffSemanticDigests,
@@ -26,7 +26,7 @@ import {
   readOoxmlPackage,
   semanticDigest,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   detailedTableSnapshot,
   findInnerTable,

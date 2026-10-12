@@ -1,6 +1,6 @@
 import { shallowRef, watch, type ShallowRef } from 'vue';
 import { scopeDispose } from './scope-dispose';
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 
 /** @public */

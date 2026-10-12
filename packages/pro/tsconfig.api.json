@@ -6,10 +6,10 @@
   "compilerOptions": {
     "noEmit": true,
     "paths": {
-      "@docx-editor.dev/core": ["../core/dist/index.d.ts"],
-      "@docx-editor.dev/core/contracts/types": ["../core/dist/contracts/types.d.ts"],
-      "@docx-editor.dev/core/contracts/*": ["../core/dist/contracts/*.d.ts"],
-      "@docx-editor.dev/core/*": ["../core/dist/*.d.ts"]
+      "@zqmi/docx-editor-core": ["../core/dist/index.d.ts"],
+      "@zqmi/docx-editor-core/contracts/types": ["../core/dist/contracts/types.d.ts"],
+      "@zqmi/docx-editor-core/contracts/*": ["../core/dist/contracts/*.d.ts"],
+      "@zqmi/docx-editor-core/*": ["../core/dist/*.d.ts"]
     }
   }
 }

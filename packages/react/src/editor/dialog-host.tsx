@@ -1,12 +1,12 @@
 import { DocxEditorRevisionMarkupDialog } from './DocxEditorRevisionMarkupDialog';
-import type { RevisionMarkupDialogSession } from '@docx-editor.dev/core/editor';
+import type { RevisionMarkupDialogSession } from '@zqmi/docx-editor-core/editor';
 import { renderPopup } from './popup-renderer';
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import type { DocxEditorPopups } from './popup-config';
 import { useEditorMountGeneration } from './dialog-parts';
 import type { ReactNode } from 'react';
-import type { TextFormFieldDialogSession } from '@docx-editor.dev/core/editor';
+import type { TextFormFieldDialogSession } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { DocxEditorPageSetupDialog } from './DocxEditorPageSetup';
 import { DocxEditorParagraphDialog } from './DocxEditorParagraphDialog';

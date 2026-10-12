@@ -5,7 +5,7 @@
 // menu bar, and the enabled state still comes from the engine through the slot.
 
 import { defineComponent, h, nextTick, ref, watch, type PropType, type VNode } from 'vue';
-import { toolbarPopupLeft, type ChromeSlotId } from '@docx-editor.dev/core/editor';
+import { toolbarPopupLeft, type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorCommand } from '../useEditorCommand';
 import { mergeHostClass } from '../../lib/mergeHostClass';

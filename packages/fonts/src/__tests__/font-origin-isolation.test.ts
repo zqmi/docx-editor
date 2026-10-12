@@ -93,7 +93,7 @@ test.each(loaders)(
 );
 
 test('an editor preserves Arabic fallback widths across font resolution and disposal', async () => {
-  const { createDocxEditor } = await import('@docx-editor.dev/core/editor');
+  const { createDocxEditor } = await import('@zqmi/docx-editor-core/editor');
   const { strToU8, zipSync } = await import('fflate');
   const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
   const bytes = zipSync({

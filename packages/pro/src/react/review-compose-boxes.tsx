@@ -6,8 +6,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import type { MouseEvent as ReactMouseEvent } from 'react';
-import type { TranslationKey } from '@docx-editor.dev/i18n';
-import type { ReviewAuthorInfo } from '@docx-editor.dev/core/editor';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { ReviewAuthorInfo } from '@zqmi/docx-editor-core/editor';
 import type { ReviewPartProps } from './review-types.ts';
 import type { ReviewItemView } from './useReview.ts';
 import { COMPACT_CARD_WIDTH } from './use-rail-geometry.ts';

@@ -1,7 +1,7 @@
 import { getCurrentScope, shallowRef, toValue, watch, type ShallowRef } from 'vue';
 import { scopeDispose } from './scope-dispose';
-import type { EditorSnapshot } from '@docx-editor.dev/core/contracts/editor';
-import { LOADING_SNAPSHOT } from '@docx-editor.dev/core/editor';
+import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import { LOADING_SNAPSHOT } from '@zqmi/docx-editor-core/editor';
 import type { MaybeRefOrGetter } from '../maybe-ref-or-getter';
 import { useDocxEditor, useEditorStateTick } from './context';
 

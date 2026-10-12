@@ -3,10 +3,10 @@
 // library cannot decide for you: where bytes come from, where they go, and what to call them.
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { DocxEditor, useFonts, type DocxEditorRef } from '@docx-editor.dev/react';
-import type { DocumentSource } from '@docx-editor.dev/core/contracts/editor';
-import { blankDocumentBytes } from '@docx-editor.dev/core/editor';
-import { packagedFonts } from '@docx-editor.dev/fonts';
+import { DocxEditor, useFonts, type DocxEditorRef } from '@zqmi/docx-editor-react';
+import type { DocumentSource } from '@zqmi/docx-editor-core/contracts/editor';
+import { blankDocumentBytes } from '@zqmi/docx-editor-core/editor';
+import { packagedFonts } from '@zqmi/docx-editor-fonts';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { DocxEditorReview } from '@docx-editor.dev/pro/react';
 import './styles.css';

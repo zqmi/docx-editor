@@ -4,11 +4,11 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 
-import type { TranslationKey } from '@docx-editor.dev/i18n';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
 import type {
   ReviewRevisionItem,
   ReviewRevisionKind,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 
 /**
  * The packaged sentence for a revision kind that carries no quoted characters of its own.

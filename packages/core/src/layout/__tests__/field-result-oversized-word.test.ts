@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { documentOrder } from '../document-order.ts';
 import { selectionMarkRects, selectionRects } from '../selection-rects.ts';
 import { layoutHeaderFooterStory } from '../hf-layout.ts';

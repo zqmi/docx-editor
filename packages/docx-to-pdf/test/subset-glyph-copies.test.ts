@@ -7,7 +7,7 @@ import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { create, type FontkitFont } from 'fontkit';
 import { PDFDocument, PDFName, PDFRawStream, decodePDFRawStream } from 'pdf-lib';
-import type { ExportAdmittedFontFace } from '@docx-editor.dev/core/export';
+import type { ExportAdmittedFontFace } from '@zqmi/docx-editor-core/export';
 import { Work } from '../src/context.ts';
 import { EmbeddedFace } from '../src/fonts.ts';
 

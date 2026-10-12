@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import * as Y from 'yjs';
 import { projectedTextTarget, withProjectedTarget } from './projected-text-target.ts';
-import type { CanonicalPrimitiveJournal } from '@docx-editor.dev/core/collaboration/replication';
+import type { CanonicalPrimitiveJournal } from '@zqmi/docx-editor-core/collaboration/replication';
 import { validateEffect, type ApplyJournalResult } from './journal.ts';
 import { JournalProjection, projectEffect } from './journal-projection.ts';
 import {

@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // Text one author types survives a paragraph split another author makes in the same run at
 // the same time. The typing used to vanish on every replica, silently.
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import {
   createPeerHarness,
   nodeText,

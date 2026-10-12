@@ -1,5 +1,5 @@
 /**
- * `@docx-editor.dev/fonts/google` — Google-hosted faces, fetched on demand.
+ * `@zqmi/docx-editor-fonts/google` — Google-hosted faces, fetched on demand.
  *
  * Nothing is fetched until a document turns out to name a family this module can answer.
  * Open a file using only Calibri and exactly one family is fetched.
@@ -11,7 +11,7 @@
  *
  * @example Resolve catalogued families as documents need them
  * ```ts
- * import { googleFonts } from '@docx-editor.dev/fonts/google';
+ * import { googleFonts } from '@zqmi/docx-editor-fonts/google';
  *
  * const editor = createDocxEditor({ document: bytes, fonts: googleFonts() });
  * ```
@@ -19,7 +19,7 @@
  * @packageDocumentation
  * @public
  */
-// @docx-editor.dev/fonts/google — Google-hosted faces, fetched on demand.
+// @zqmi/docx-editor-fonts/google — Google-hosted faces, fetched on demand.
 //
 // `defaultFonts()` loads Word's five document-default families whichever document opens.
 // `googleFonts()` inverts that: nothing loads until a document turns out to name a family
@@ -400,7 +400,7 @@ function raceWithAbort<T>(work: Promise<T>, signal: AbortSignal | undefined): Pr
  * <DocxEditor.Root fonts={googleFonts()} />
  * ```
  *
- * Same call shape as `packagedFonts()` from `@docx-editor.dev/fonts`, so the two compose
+ * Same call shape as `packagedFonts()` from `@zqmi/docx-editor-fonts`, so the two compose
  * by sitting next to each other: `useFonts(packagedFonts(), googleFonts())` serves the
  * bundled faces first and reaches the catalog only for what they do not cover.
  *

@@ -16,7 +16,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // properties again, undo, and keep typing.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import { readOoxmlPackage, type OoxmlNode, type TreeDocOp } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage, type OoxmlNode, type TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { readCollaborationDocument } from '../document-read.ts';
 import { createPeerHarness, nodeText, zipDocument, type Peer } from './document-peer-support.ts';
 

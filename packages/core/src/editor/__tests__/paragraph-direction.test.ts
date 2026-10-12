@@ -6,7 +6,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { readOoxmlPart, serializeOoxmlPart, type OoxmlNode } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, serializeOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { createDirectionChordHandler } from '../surface-direction-chord.ts';
 import {

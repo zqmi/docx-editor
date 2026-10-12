@@ -26,7 +26,7 @@ import {
   type AutomationHost,
   type AutomationSaveResult,
   type AutomationUnsubscribe,
-} from '@docx-editor.dev/core/automation';
+} from '@zqmi/docx-editor-core/automation';
 import { TWO_PARAGRAPHS } from './docx.ts';
 
 export function openHost(bytes: Uint8Array = TWO_PARAGRAPHS): AutomationHost {

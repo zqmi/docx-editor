@@ -9,7 +9,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { readOoxmlPackage, resolveHeaderFooterPartsBySection } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage, resolveHeaderFooterPartsBySection } from '@zqmi/docx-editor-core/store';
 import { resolveNotesPart } from '../../store/package/note-references.ts';
 import {
   resolveEndnoteProperties,

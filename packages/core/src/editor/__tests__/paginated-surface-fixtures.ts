@@ -11,8 +11,8 @@
 
 import { zipSync, strToU8 } from 'fflate';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
-import { createFixedMeasurer, layoutSemanticDocument } from '@docx-editor.dev/core/layout';
-import { readOoxmlPackage } from '@docx-editor.dev/core/store';
+import { createFixedMeasurer, layoutSemanticDocument } from '@zqmi/docx-editor-core/layout';
+import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
 import { cellSelectionBetween } from '../../layout/semantic-cell-selection.ts';
 import type { TableCellAddress } from '../../layout/semantic-hit-test.ts';
 

@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createParagraphLayoutCache, type ParagraphKeyInputs } from '../layout-cache.ts';
 import {
   reuseSingleLineAtWidth,

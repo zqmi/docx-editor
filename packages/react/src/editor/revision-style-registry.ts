@@ -13,7 +13,7 @@ import type {
   DocxEditorInstance,
   RevisionAuthorStyle,
   RevisionStyles,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 
 export interface RevisionStyleRegistry {
   /**

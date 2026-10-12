@@ -7,7 +7,7 @@ import {
   twipsToPoints,
   type OoxmlProperty,
   type Twips,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { paragraphIsRtl } from './rtl-paragraph.ts';
 
 /**

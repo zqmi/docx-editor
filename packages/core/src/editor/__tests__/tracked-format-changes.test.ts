@@ -14,7 +14,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
-import type { OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
 import { revisionItemsOf } from '../../store/store/review-reads.ts';
 import { planRevisionBatch } from '../../store/store/revision-batch.ts';
 import { serializeOoxmlPart } from '../../store/index.ts';

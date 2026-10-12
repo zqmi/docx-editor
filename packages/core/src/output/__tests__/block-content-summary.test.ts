@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { OoxmlNode, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
 import { createLayoutSession } from '../../layout/layout-session.ts';
 import { createParagraphLayoutCache } from '../../layout/layout-cache.ts';

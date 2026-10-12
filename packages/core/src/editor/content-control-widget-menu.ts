@@ -3,7 +3,7 @@
 // calendar model, styled by the `docx-content-control-menu` / `-calendar` rules in the core
 // stylesheet, which is also what the adapter defaults reuse so one theme covers both.
 
-import type { TranslationKey } from '@docx-editor.dev/i18n';
+import type { TranslationKey } from '@zqmi/docx-editor-i18n';
 import {
   calendarMonth,
   calendarDateForKey,

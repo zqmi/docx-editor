@@ -52,7 +52,7 @@ export async function verifyRecoveryPublication(
   const controller = new AbortController();
   try {
     await Promise.all(
-      ['@docx-editor.dev/core', '@docx-editor.dev/docx-to-markdown'].map(async (name) => {
+      ['@zqmi/docx-editor-core', '@docx-editor.dev/docx-to-markdown'].map(async (name) => {
         await lookup(name, '', {
           waitForPublication: true,
           deadline,

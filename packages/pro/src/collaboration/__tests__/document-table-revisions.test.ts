@@ -8,7 +8,7 @@ import {
   planRevisionBatch,
   revisionItemsOf,
   serializeOoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, zipDocument } from './document-peer-support.ts';
 const peers = createPeerHarness('structural-table-revisions');
 afterEach(() => peers.cleanup());

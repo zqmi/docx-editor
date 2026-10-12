@@ -38,7 +38,7 @@ describe('published manifests', () => {
   // `changeset version` leaves `workspace:*` and `workspace:^` alone by design, and
   // `npm publish` — which `changeset publish` shells out to — copies package.json
   // verbatim. So the protocol survives into the tarball, where npm has no idea what it
-  // means: `npm i @docx-editor.dev/react` fails on `Unsupported URL Type "workspace:"`
+  // means: `npm i @zqmi/docx-editor-react` fails on `Unsupported URL Type "workspace:"`
   // before anything is unpacked. A plain range links to the workspace copy locally
   // (bun resolves it against the sibling's version) AND installs from the registry.
   test.each(publishable)('$manifest.name declares no workspace: range a consumer would see', ({

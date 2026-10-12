@@ -1,16 +1,16 @@
 ---
-title: '@docx-editor.dev/i18n'
+title: '@zqmi/docx-editor-i18n'
 description: 'Locale data for editor controls in twelve languages.'
 category: 'Reference'
 order: 60
 ---
 
-<PackageStats name="@docx-editor.dev/i18n" />
+<PackageStats name="@zqmi/docx-editor-i18n" />
 
 Use locale catalogs to translate editor controls in React and Vue. Both adapters accept the catalog through the `i18n` prop.
 
 ```bash
-npm install @docx-editor.dev/i18n
+npm install @zqmi/docx-editor-i18n
 ```
 
 Add this package as a direct dependency when importing its catalogs, including for the editor's `i18n` prop.
@@ -20,8 +20,8 @@ Add this package as a direct dependency when importing its catalogs, including f
 `i18n` supplies UI translations; `locale` selects regional date input and generated document labels. Neither setting infers the other. UI strings default to English or an inherited catalog; `locale` defaults to `en-US`.
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
-import { pl } from '@docx-editor.dev/i18n';
+import { DocxEditor } from '@zqmi/docx-editor-react';
+import { pl } from '@zqmi/docx-editor-i18n';
 
 // English UI, Polish dates (with no inherited catalog)
 <DocxEditor document={bytes} locale="pl-PL" />;
@@ -51,13 +51,13 @@ In Vue, use `locale="pl-PL"` and `:i18n="pl"` on `<DocxEditor>`. For composed ed
 
 Choose an import style:
 
-- Use named exports for a fixed set of locales: `import { es } from '@docx-editor.dev/i18n'`. Hyphenated codes (`pt-BR`, `zh-CN`) use camelCase exports (`ptBR`, `zhCN`).
-- Use a dynamic subpath import to load a locale on demand: `(await import('@docx-editor.dev/i18n/es')).default`. A static subpath import includes that locale in your bundle.
+- Use named exports for a fixed set of locales: `import { es } from '@zqmi/docx-editor-i18n'`. Hyphenated codes (`pt-BR`, `zh-CN`) use camelCase exports (`ptBR`, `zhCN`).
+- Use a dynamic subpath import to load a locale on demand: `(await import('@zqmi/docx-editor-i18n/es')).default`. A static subpath import includes that locale in your bundle.
 
 Verify what your installed version ships:
 
 ```bash
-ls node_modules/@docx-editor.dev/i18n/
+ls node_modules/@zqmi/docx-editor-i18n/
 ```
 
 ## Set the editor language
@@ -68,8 +68,8 @@ Pass the catalog to `i18n`. These examples use Spanish controls and Spanish regi
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
-import { es } from '@docx-editor.dev/i18n';
+import { DocxEditor } from '@zqmi/docx-editor-react';
+import { es } from '@zqmi/docx-editor-i18n';
 
 <DocxEditor document={bytes} i18n={es} locale="es-ES" />;
 ```
@@ -80,7 +80,7 @@ import { es } from '@docx-editor.dev/i18n';
 ```vue
 <script setup lang="ts">
 import { DocxEditor } from '@docx-editor.dev/vue';
-import { es } from '@docx-editor.dev/i18n';
+import { es } from '@zqmi/docx-editor-i18n';
 </script>
 
 <template>
@@ -97,8 +97,8 @@ To share a catalog across editors, use `LocaleProvider`:
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, LocaleProvider } from '@docx-editor.dev/react';
-import { pl } from '@docx-editor.dev/i18n';
+import { DocxEditor, LocaleProvider } from '@zqmi/docx-editor-react';
+import { pl } from '@zqmi/docx-editor-i18n';
 
 <LocaleProvider i18n={pl}>
   <DocxEditor document={bytes} />
@@ -111,7 +111,7 @@ import { pl } from '@docx-editor.dev/i18n';
 ```vue
 <script setup lang="ts">
 import { DocxEditor, LocaleProvider } from '@docx-editor.dev/vue';
-import { pl } from '@docx-editor.dev/i18n';
+import { pl } from '@zqmi/docx-editor-i18n';
 </script>
 
 <template>
@@ -132,7 +132,7 @@ Custom controls read the same catalog through `useTranslation()`:
 <Framework value="react">
 
 ```tsx
-import { useTranslation } from '@docx-editor.dev/react';
+import { useTranslation } from '@zqmi/docx-editor-react';
 
 function BoldLabel() {
   const { t } = useTranslation();

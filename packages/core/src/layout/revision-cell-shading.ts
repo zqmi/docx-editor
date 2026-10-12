@@ -1,4 +1,4 @@
-import { WML_NAMESPACE_URI, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import {
   revisionNodeIncluded,
   type RevisionAuthorFilter,

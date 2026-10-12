@@ -202,7 +202,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(realpathSync(process.ar
       api,
       dispatch,
       // The registry client bypasses cached metadata and retries, like the verification.
-      latest: async () => (await registry('@docx-editor.dev/core'))['dist-tags'].latest,
+      latest: async () => (await registry('@zqmi/docx-editor-core'))['dist-tags'].latest,
     });
     const line =
       outcome.result === 'superseded'

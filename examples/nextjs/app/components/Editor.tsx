@@ -13,7 +13,7 @@
 // review controls disable with the engine's own reason.
 
 import { useState } from 'react';
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { DocxEditorReview } from '@docx-editor.dev/pro/react';
 import { ExampleSwitcher } from '../../../shared/ExampleSwitcher';

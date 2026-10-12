@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import type {
   CollaborationFailureCode,
   CollaborationStatus,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 
 /**
  * The notice the status part shows, or none while everything is in order.

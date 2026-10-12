@@ -7,7 +7,7 @@
  */
 
 import { useCallback, useState } from 'react';
-import { DocxEditor, useDocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor, useDocxEditor } from '@zqmi/docx-editor-react';
 import { customNodesModule, insertCustomNode, updateCustomNode } from '@docx-editor.dev/pro';
 import { CustomNodeChrome, CustomNodeContextMenu } from '@docx-editor.dev/pro/react';
 import { Citation } from './citation.ts';

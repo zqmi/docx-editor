@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // there would stop the whole room from materializing.
 
 import { describe, expect, test } from 'bun:test';
-import { WML_NAMESPACE_URI } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
 import { collaborationDocx } from './support.ts';
 import {
   destroyReplica,

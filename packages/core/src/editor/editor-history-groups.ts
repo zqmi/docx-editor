@@ -6,7 +6,7 @@ import type {
   HistoryGroup,
 } from '../contracts/editor.ts';
 import type { HistoryGroupOutcome, HistoryDiagnostic } from '../contracts/editor-scope.ts';
-import { observeHistoryGroup, type HistoryCaptureKind } from '@docx-editor.dev/core/store';
+import { observeHistoryGroup, type HistoryCaptureKind } from '@zqmi/docx-editor-core/store';
 import { runWithHistoryGroup } from './history-group-scope.ts';
 
 // These commands write synchronous formatting only. Structural edits can promote a story

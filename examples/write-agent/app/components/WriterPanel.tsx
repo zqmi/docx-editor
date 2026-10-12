@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useChat } from '@ai-sdk/react';
 import { DefaultChatTransport, lastAssistantMessageIsCompleteWithToolCalls } from 'ai';
 import type { DocxEditorRuntime } from '@docx-editor.dev/editor-api/browser';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { createWriterRuntime, runWriterTool } from '../agent/run-tool';
 import { exampleText as t } from '../../../shared/example-text';
 import type { WriterMode } from '../agent/run-tool';

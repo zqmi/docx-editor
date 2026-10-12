@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
-import type { CanonicalPrimitiveJournal } from '@docx-editor.dev/core/collaboration/replication';
+import type { CanonicalPrimitiveJournal } from '@zqmi/docx-editor-core/collaboration/replication';
 import { collaborationDocx } from './support.ts';
 import {
   applyJournal,

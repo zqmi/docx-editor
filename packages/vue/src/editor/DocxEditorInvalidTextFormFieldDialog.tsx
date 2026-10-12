@@ -1,5 +1,5 @@
 import { defineComponent, ref, watch, type CSSProperties, type PropType } from 'vue';
-import type { InvalidTextFormFieldSession } from '@docx-editor.dev/core/editor';
+import type { InvalidTextFormFieldSession } from '@zqmi/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { NativeDialog } from './dialog-parts';
 import { useFormControlTranslate } from './form-control-translate';

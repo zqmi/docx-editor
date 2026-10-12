@@ -45,8 +45,8 @@ If you use Pro review chrome, register its modules once on `Root`. For setup, se
 Compose the three required components in this order:
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
-import '@docx-editor.dev/core/styles/editor.css';
+import { DocxEditor } from '@zqmi/docx-editor-react';
+import '@zqmi/docx-editor-core/styles/editor.css';
 
 export function Editor({ bytes }: { bytes: Uint8Array }) {
   return (
@@ -92,8 +92,8 @@ For exact signatures, see the [React API reference](/docs/2.x/api/react).
 `Root` reads UI translations from `LocaleProvider`; it has no `i18n` prop. Set `locale` separately for regional date input. This example uses Polish for both:
 
 ```tsx
-import { DocxEditor, LocaleProvider, useChromeTranslate } from '@docx-editor.dev/react';
-import { pl } from '@docx-editor.dev/i18n';
+import { DocxEditor, LocaleProvider, useChromeTranslate } from '@zqmi/docx-editor-react';
+import { pl } from '@zqmi/docx-editor-i18n';
 
 function LocalizedToolbar() {
   const t = useChromeTranslate();
@@ -131,7 +131,7 @@ Choose the amount of customization you need:
 `asChild` applies the part's behavior to its child. This behavior includes handlers, disabled state, ARIA attributes, and active state. The part does not render a wrapper:
 
 ```tsx
-import { DocxEditor } from '@docx-editor.dev/react';
+import { DocxEditor } from '@zqmi/docx-editor-react';
 import { Button } from '@/components/ui/button';
 
 <DocxEditor.Toolbar.Bold asChild>
@@ -229,7 +229,7 @@ import {
   useEditorCommand,
   useEditorState,
   type EditorCommand,
-} from '@docx-editor.dev/react';
+} from '@zqmi/docx-editor-react';
 
 const highlight = (value: string): EditorCommand => ({
   type: 'setMarkAttr',
@@ -466,7 +466,7 @@ const [open, setOpen] = useState(false);
 
 The dialog and `usePageSetup()` use the same engine command.
 
-Page setup, paragraph options, and legacy text field options expose replaceable parts and draft contexts. Import `definePopup` from `@docx-editor.dev/react` and pass your component through the editor's `popups` map.
+Page setup, paragraph options, and legacy text field options expose replaceable parts and draft contexts. Import `definePopup` from `@zqmi/docx-editor-react` and pass your component through the editor's `popups` map.
 
 Use `popups.export` for export feedback and `popups.print` for print feedback. The packaged dialogs are `DocxEditor.ExportDialog` and `DocxEditor.PrintDialog`. For examples, see [Customize popups](/docs/2.x/guides/customize-dialogs).
 
@@ -497,7 +497,7 @@ Composed chrome resolves labels through the active locale catalog. `LocaleProvid
 Pass `t` when you need to rename labels. `useChromeTranslate(overrides?)` returns a catalog-backed resolver. It checks your overrides before the catalog:
 
 ```tsx
-import { DocxEditor, useChromeTranslate } from '@docx-editor.dev/react';
+import { DocxEditor, useChromeTranslate } from '@zqmi/docx-editor-react';
 
 // Keep this Map at module scope to preserve its identity.
 // A Map also avoids inherited object keys.

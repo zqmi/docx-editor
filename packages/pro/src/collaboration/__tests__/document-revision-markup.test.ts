@@ -6,8 +6,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { afterEach, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protocols/awareness';
-import { createDocxEditor } from '@docx-editor.dev/core/editor';
-import { paragraphTextOf, serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { paragraphTextOf, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { collaborationModule, reviewModule } from '../../index';
 import { createPeerHarness, zipDocument, type Peer } from './document-peer-support';
 import { packageFingerprint, saveReopenDigest } from './document-support';

@@ -1,7 +1,7 @@
 import { firstRowContentDeps } from './table-fragment-content-insets.ts';
 import { autofitContextOf } from './table-autofit-widths.ts';
 import type { CellContentInsets } from './table-cell-geometry.ts';
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { MAX_TABLE_NESTING, readTableStructure, tableOriginX } from './semantic-table.ts';
 import { stripAnchorSinksForProbe } from './table-probe-deps.ts';
 import {

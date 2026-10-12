@@ -18,7 +18,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 //
 // Split from `export-custom-nodes.ts` so that file stays reachable with no editor and no DOM.
 
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
 import { isCustomNodeDefinition, type AnyCustomNodeDefinition } from './define-custom-node.ts';
 import {
   prepareForExport,

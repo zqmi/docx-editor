@@ -2,7 +2,7 @@ import './dom-setup.ts';
 import { afterEach, expect, spyOn, test } from 'bun:test';
 import { createApp, createSSRApp, defineComponent, h, nextTick, ref, type PropType } from 'vue';
 import { renderToString } from 'vue/server-renderer';
-import type { ChromeExportHandlers } from '@docx-editor.dev/core/editor';
+import type { ChromeExportHandlers } from '@zqmi/docx-editor-core/editor';
 import { DocxEditor } from '../src/components/DocxEditor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';

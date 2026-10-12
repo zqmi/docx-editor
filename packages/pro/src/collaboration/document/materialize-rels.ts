@@ -16,7 +16,7 @@ import type {
   OoxmlElement,
   OoxmlNode,
   OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { elementFrom } from './node-shapes.ts';
 import { asLogicalId, idOf, type LogicalId } from './identity.ts';
 import { rejectDangerousKey, rejectPartName } from './limits.ts';

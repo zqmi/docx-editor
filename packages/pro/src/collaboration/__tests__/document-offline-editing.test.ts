@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // concurrent online edit. The default stays refuse-while-disconnected.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { createPeerHarness } from './document-peer-support.ts';
 import { collaborationDocx } from './support.ts';
 

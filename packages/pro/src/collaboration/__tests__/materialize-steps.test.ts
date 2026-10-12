@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // turns a local edit into operations on shared text.
 
 import { describe, expect, test } from 'bun:test';
-import type { OoxmlNode, OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { asLogicalId, type LogicalId } from '../document/identity.ts';
 import { spineChildren, type SpineContext } from '../document/materialize-spine.ts';
 import { typeUntypedParts } from '../document/materialize-rescued-parts.ts';

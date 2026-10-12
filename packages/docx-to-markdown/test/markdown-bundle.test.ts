@@ -3,7 +3,7 @@ import { mkdtemp, readFile, mkdir, readdir, rm, symlink, writeFile } from 'node:
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { strFromU8, unzipSync } from 'fflate';
-import { createFixedMeasurer } from '@docx-editor.dev/core/layout';
+import { createFixedMeasurer } from '@zqmi/docx-editor-core/layout';
 import { createMarkdownZip, exportMarkdown, toMarkdownJSON } from '../src/index.ts';
 import { writeMarkdownBundle } from '../src/node.ts';
 import { imageDocx, PNG } from './media-fixture.ts';

@@ -4,7 +4,7 @@
 
 ### Requirement: Comment and proposeChange transaction builders in core
 
-Comment creation, reply, and tracked-change proposal operations SHALL be contributed by the pro review module through the `EditorModule` seam rather than exported from `@docx-editor.dev/core` as free-core API. The operation contracts are unchanged: builders cover range resolution and overlapping-change rejection, and adapter-specific state mutation, event emission, and subscriber notification remain in each adapter. Core SHALL retain lossless parse/serialize of comments and revisions regardless of module registration.
+Comment creation, reply, and tracked-change proposal operations SHALL be contributed by the pro review module through the `EditorModule` seam rather than exported from `@zqmi/docx-editor-core` as free-core API. The operation contracts are unchanged: builders cover range resolution and overlapping-change rejection, and adapter-specific state mutation, event emission, and subscriber notification remain in each adapter. Core SHALL retain lossless parse/serialize of comments and revisions regardless of module registration.
 
 #### Scenario: Add a comment over a located range
 

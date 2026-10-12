@@ -11,7 +11,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * a name, optionally inside another addressed element. A replay then binds them to whatever
  * ids that replica holds, so a shrunk action list stays meaningful.
  */
-import type { OoxmlNode, TreeDocOp } from '@docx-editor.dev/core/store';
+import type { OoxmlNode, TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { elements } from './scenario-tree.ts';
 
 export type StructureEditKind =

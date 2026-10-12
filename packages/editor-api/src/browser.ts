@@ -18,7 +18,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * it. Both namespaces expose `createServer`: opening bytes is neutral, and a page that opens an
  * attachment beside the document it is showing should not need two imports.
  *
- * The editor comes from wherever the host got it — `@docx-editor.dev/react`,
+ * The editor comes from wherever the host got it — `@zqmi/docx-editor-react`,
  * `@docx-editor.dev/vue`, or a plain page that created one directly. This package does not create
  * editors and does not own their lifetime.
  *
@@ -31,7 +31,7 @@ import {
   type CreateBrowserOptions,
   type DocxEditorInstance,
 } from './runtime/browser.ts';
-import type { EditorCollaborationSession } from '@docx-editor.dev/core/collaboration';
+import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
 import { createCollaborative, createServer } from './runtime/server.ts';
 import type {
   CreateCollaborativeOptions,

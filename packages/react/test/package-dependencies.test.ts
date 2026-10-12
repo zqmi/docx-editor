@@ -6,7 +6,7 @@
 // identity-keyed cache — wrong and expensive, quietly.
 //
 // This is the package that CONSTRUCTS the editor, so it is the one a second copy hurts most, and
-// it is the easiest place to acquire one: `@docx-editor.dev/core` is published and documented, so
+// it is the easiest place to acquire one: `@zqmi/docx-editor-core` is published and documented, so
 // a consumer installing it directly is invited, not exotic. A regular dependency lets a package
 // manager nest a second copy the moment the ranges diverge — and `workspace:*` publishes as an
 // exact pin, so the ranges diverge as soon as the engine ships a version this adapter was not
@@ -45,9 +45,9 @@ const requiresSameMinor = (range: string | undefined, version: string) => {
 describe('how this package asks for the engine', () => {
   test('the engine is a peer, so the consumer resolves one copy of it', () => {
     expect(
-      requiresSameMinor(manifest.peerDependencies?.['@docx-editor.dev/core'], core.version)
+      requiresSameMinor(manifest.peerDependencies?.['@zqmi/docx-editor-core'], core.version)
     ).toBe(true);
-    expect(manifest.dependencies?.['@docx-editor.dev/core']).toBeUndefined();
+    expect(manifest.dependencies?.['@zqmi/docx-editor-core']).toBeUndefined();
   });
 
   test('the engine peer is REQUIRED, not optional', () => {
@@ -55,13 +55,13 @@ describe('how this package asks for the engine', () => {
     // the opposite of the point. React and react-dom are optional here because a consumer of the
     // headless surface genuinely may not have them. There is no such consumer for the engine —
     // this package cannot render a page without it.
-    expect(manifest.peerDependenciesMeta?.['@docx-editor.dev/core']?.optional).toBeUndefined();
+    expect(manifest.peerDependenciesMeta?.['@zqmi/docx-editor-core']?.optional).toBeUndefined();
   });
 
   test('it is still installed here, so this workspace builds and tests against it', () => {
     // A peer is what a CONSUMER resolves. It is not an install for this package's own build, so
     // the dev dependency is what makes `bun run build` and these tests see the engine at all.
-    expect(manifest.devDependencies?.['@docx-editor.dev/core']).toBe('workspace:*');
+    expect(manifest.devDependencies?.['@zqmi/docx-editor-core']).toBe('workspace:*');
   });
 
   test('does not install engine implementation dependencies', () => {

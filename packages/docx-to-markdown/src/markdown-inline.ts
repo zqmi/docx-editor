@@ -2,7 +2,7 @@ import {
   revisionsAreDeletion,
   type SemanticLayout,
   type StyleSpanRecord,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 import {
   concatMarkdown,
   literalMarkdown,

@@ -3,7 +3,7 @@ import { afterEach, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render, waitFor } from '@testing-library/react';
 import { useState } from 'react';
 import type { ReactNode } from 'react';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';

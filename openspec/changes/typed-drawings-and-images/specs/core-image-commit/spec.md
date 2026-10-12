@@ -2,7 +2,7 @@
 
 ### Requirement: Image resize/drag commit functions in core
 
-`@docx-editor.dev/core` SHALL expose framework-neutral image commit helpers that validate and commit through `TreeDocumentStore` package transactions, not through ProseMirror positions, node markup, or adapter-owned inline delete-and-insert. Adapters retain pointer tracking and resolve preview geometry from semantic layout records; core validates and commits the final intent once per user gesture.
+`@zqmi/docx-editor-core` SHALL expose framework-neutral image commit helpers that validate and commit through `TreeDocumentStore` package transactions, not through ProseMirror positions, node markup, or adapter-owned inline delete-and-insert. Adapters retain pointer tracking and resolve preview geometry from semantic layout records; core validates and commits the final intent once per user gesture.
 
 The production contract targets canonical drawing identity (`drawingId`), store/package transactions, and semantic records. Hit-testing and gesture tracking remain in adapters, which pass resolved EMU extents, crop rectangles, wrap choices, and anchor offsets into the commit helpers.
 

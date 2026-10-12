@@ -33,9 +33,9 @@
     "api:extract": "node scripts/api-extractor.mjs --local",
     "build": "bun run build:packages:demo && bun run build:react && bun run build:vue && bun run build:igloo:source && bun run build:markdown:source && bun run build:pdf:source && bun run build:assemble && bun run check:demo-deployment",
     "build:assemble": "rm -rf examples/parity/dist && mkdir -p examples/parity/dist && cp -R examples/vite/dist examples/parity/dist/react && cp -R examples/vue/dist examples/parity/dist/vue && cp -R examples/igloo/dist examples/parity/dist/igloo && cp -R examples/docx-to-markdown/dist examples/parity/dist/docx-to-markdown && cp -R examples/docx-to-pdf/dist examples/parity/dist/docx-to-pdf",
-    "build:packages": "bun run --filter '@docx-editor.dev/i18n' build && bun run --filter '@docx-editor.dev/core' build && bun run --filter '@docx-editor.dev/fonts' build && bun run --filter '@docx-editor.dev/fonts-cjk' build && bun run --filter '@docx-editor.dev/docx-to-markdown' build && bun run --filter '@docx-editor.dev/docx-to-pdf' build && bun run --filter '@docx-editor.dev/react' build && bun run --filter '@docx-editor.dev/vue' build && bun run --filter '@docx-editor.dev/editor-api' build && bun run --filter '@docx-editor.dev/pro' build",
+    "build:packages": "bun run --filter '@zqmi/docx-editor-i18n' build && bun run --filter '@zqmi/docx-editor-core' build && bun run --filter '@zqmi/docx-editor-fonts' build && bun run --filter '@docx-editor.dev/fonts-cjk' build && bun run --filter '@docx-editor.dev/docx-to-markdown' build && bun run --filter '@docx-editor.dev/docx-to-pdf' build && bun run --filter '@zqmi/docx-editor-react' build && bun run --filter '@docx-editor.dev/vue' build && bun run --filter '@docx-editor.dev/editor-api' build && bun run --filter '@docx-editor.dev/pro' build",
     "build:packages:vue": "bun run build:packages && bun run --filter '@docx-editor.dev/vue' build && bun run --filter '@docx-editor.dev/nuxt' build",
-    "build:packages:demo": "bun run --filter '@docx-editor.dev/i18n' build && bun run --filter '@docx-editor.dev/core' build && bun run --filter '@docx-editor.dev/fonts' build && bun run --filter '@docx-editor.dev/docx-to-markdown' build && bun run --filter '@docx-editor.dev/react' build && bun run --filter '@docx-editor.dev/vue' build && bun run --filter '@docx-editor.dev/pro' build && bun run --filter '@docx-editor.dev/editor-api' build",
+    "build:packages:demo": "bun run --filter '@zqmi/docx-editor-i18n' build && bun run --filter '@zqmi/docx-editor-core' build && bun run --filter '@zqmi/docx-editor-fonts' build && bun run --filter '@docx-editor.dev/docx-to-markdown' build && bun run --filter '@zqmi/docx-editor-react' build && bun run --filter '@docx-editor.dev/vue' build && bun run --filter '@docx-editor.dev/pro' build && bun run --filter '@docx-editor.dev/editor-api' build",
     "build:react": "cd examples/vite && USE_PUBLISHED_PACKAGES=true ENABLE_FRAMEWORK_SWITCHER=true VITE_ENABLE_FRAMEWORK_SWITCHER=true VITE_BASE_PATH=/react/ vite build",
     "build:markdown": "bun run build:packages:demo && bun run --filter './examples/docx-to-markdown' build",
     "build:markdown:source": "cd examples/docx-to-markdown && VITE_BASE_PATH=/docx-to-markdown/ vite build",
@@ -127,7 +127,7 @@
     "notices:check": "bun scripts/generate-third-party-notices.mjs --check",
     "notices:generate": "bun scripts/generate-third-party-notices.mjs",
     "parity:prepublish": "node scripts/parity-prepublish.mjs",
-    "prepare": "husky && bun run --filter '@docx-editor.dev/i18n' build",
+    "prepare": "husky && bun run --filter '@zqmi/docx-editor-i18n' build",
     "preview": "bun run build && bunx serve examples/parity/dist -p 4173",
     "reference:fetch": "node scripts/fetch-reference.mjs",
     "release": "bun run build:packages && bun run notices:generate && bun run collaboration:check --release && node scripts/collaboration/cli.mjs pack && bun run collaboration:test --all --candidate .cache/collaboration/publish && node scripts/collaboration/cli.mjs verify --candidate .cache/collaboration/publish && changeset publish",
@@ -152,13 +152,15 @@
     "collaboration:catalog": "node scripts/collaboration/cli.mjs catalog",
     "collaboration:test": "node scripts/collaboration/test.mjs",
     "check:lockfile-workspaces": "node scripts/check-lockfile-workspaces.mjs",
-    "build:pdf": "bun run --filter @docx-editor.dev/i18n build && bun run --filter @docx-editor.dev/core build && bun run --filter @docx-editor.dev/fonts build && bun run --filter @docx-editor.dev/fonts-cjk build && bun run --filter @docx-editor.dev/docx-to-pdf build",
+    "build:pdf": "bun run --filter @zqmi/docx-editor-i18n build && bun run --filter @zqmi/docx-editor-core build && bun run --filter @zqmi/docx-editor-fonts build && bun run --filter @docx-editor.dev/fonts-cjk build && bun run --filter @docx-editor.dev/docx-to-pdf build",
     "dev:pdf": "bun run build:pdf && bun run --filter ./examples/docx-to-pdf dev",
     "validation:pdf": "bun packages/docx-to-pdf/scripts/validator/launch.mjs",
     "check:docs-style": "node scripts/check-docs-style.mjs",
     "check:docs": "bun run check:docs-style && bun run check:example-readmes && bun run check:docs-mdx && bun run check:docs-chrome-slots && bun run check:docs-vue-refs && bun run check:public-docs-surface",
     "dev:refresh": "bun run --filter './examples/document-refresh' dev",
-    "dev:anchors": "bun run --filter './examples/anchor-navigation' dev"
+    "dev:anchors": "bun run --filter './examples/anchor-navigation' dev",
+    "publish:zqmi": "node scripts/publish-zqmi-packages.mjs",
+    "publish:zqmi:dry": "node scripts/publish-zqmi-packages.mjs --dry-run"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.0",
@@ -239,7 +241,7 @@
     "vue": "3.5.33"
   },
   "dependencies": {
-    "@docx-editor.dev/core": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
     "@docx-editor.dev/docx-to-pdf": "workspace:*",
     "@docx-editor.dev/fonts-cjk": "workspace:*",
     "prosemirror-commands": "^1.7.1",

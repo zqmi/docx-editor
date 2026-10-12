@@ -7,7 +7,7 @@
 // a mounted review rail there is nothing to open the draft, so the part renders nothing.
 
 import { defineComponent, h, type PropType, type VNode } from 'vue';
-import type { ChromeSlotId } from '@docx-editor.dev/core/editor';
+import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useReviewRailRegistry } from '../context';
 import { useAddCommentState } from './add-comment-state';
 import { mergeHostClass } from '../../lib/mergeHostClass';

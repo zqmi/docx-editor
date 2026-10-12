@@ -1,4 +1,4 @@
-import { contentControlsInLayout, type SemanticLayout } from '@docx-editor.dev/core/layout';
+import { contentControlsInLayout, type SemanticLayout } from '@zqmi/docx-editor-core/layout';
 import type { ContentControlMenuAnchor } from './content-control-widget-menu.ts';
 
 /** Where a control's pop-up anchors: under its first fragment, clamped to that page sheet. */

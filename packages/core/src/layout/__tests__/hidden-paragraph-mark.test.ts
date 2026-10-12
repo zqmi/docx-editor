@@ -4,7 +4,7 @@
 // the same container to take the join.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { numberingFlowBlocks } from '../hidden-paragraph-mark.ts';
 import { buildNumberingIndex } from '../numbering-index.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';

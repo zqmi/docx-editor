@@ -5,7 +5,7 @@ import {
   readOoxmlPart,
   readViewSettings,
   DEFAULT_VIEW_SETTINGS,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 

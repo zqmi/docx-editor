@@ -7,7 +7,7 @@ import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { PDFDocument } from 'pdf-lib';
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
-import { createFontSource } from '@docx-editor.dev/core/editor';
+import { createFontSource } from '@zqmi/docx-editor-core/editor';
 import { exportPdf } from '../src/index.ts';
 import { docx, paragraph } from './fixture.ts';
 import { baselineYPositions } from './glyph-positions.ts';

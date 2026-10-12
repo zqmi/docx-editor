@@ -11,7 +11,7 @@ import {
   serializeOoxmlPart,
   type OoxmlNode,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { createPeerHarness, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('inline-element-split', { offlineEditing: true });

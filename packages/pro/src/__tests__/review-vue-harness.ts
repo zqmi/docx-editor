@@ -11,7 +11,7 @@ import { DocxEditorReview } from '../vue/index.ts';
 import { reviewModule, type ReviewPaneOptions } from '../index.ts';
 import { trackVueWarnings, assertNoRefOwnerWarnings } from './vue-runtime-audit.ts';
 
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 
 export { flush, trackVueWarnings, assertNoRefOwnerWarnings };
 

@@ -8,9 +8,9 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { h } from 'vue';
-import { en } from '@docx-editor.dev/i18n';
-import { serializeOoxmlPart } from '@docx-editor.dev/core/store';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import { en } from '@zqmi/docx-editor-i18n';
+import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorToolbar } from '../src/editor/toolbar';
 import { docx, flush } from './helpers/fixtures';
 import { mountEditorTree, type MountedEditor } from './helpers/mount';

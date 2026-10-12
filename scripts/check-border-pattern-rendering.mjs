@@ -80,7 +80,7 @@ window.checkReady = true;
     resolve: {
       alias: [
         {
-          find: '@docx-editor.dev/core/collaboration/replication',
+          find: '@zqmi/docx-editor-core/collaboration/replication',
           replacement: path.join(root, 'packages/core/src/collaboration/replication.ts'),
         },
         {

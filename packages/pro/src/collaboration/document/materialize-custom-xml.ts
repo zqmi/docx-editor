@@ -11,7 +11,7 @@ import {
   WML_NAMESPACE_URI,
   partNameKey,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { idOf, type LogicalId } from './identity.ts';
 import { isElementRecord, type ElementRecord, type EncodedRelationship } from './schema.ts';
 import type { DocumentRegistry } from './registry.ts';

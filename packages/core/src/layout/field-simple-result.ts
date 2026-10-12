@@ -21,7 +21,7 @@ import {
   type DocumentProperties,
   type OoxmlNode,
   type OoxmlProperty,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   simpleFieldMarkerScope,
   type SimpleFieldMarkerScope,

@@ -11,7 +11,7 @@ import {
   readOoxmlPart,
   type OoxmlElement,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   keepsSubtreeMemo,
   WIDE_SUBTREE_CHILDREN,

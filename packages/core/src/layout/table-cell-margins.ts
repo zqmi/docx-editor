@@ -6,7 +6,7 @@
 // override merges over the table's. Layout reads the answer; the table structure lane owns
 // the order the sources are consulted in.
 
-import { readTwipsMeasure } from '@docx-editor.dev/core/store';
+import { readTwipsMeasure } from '@zqmi/docx-editor-core/store';
 import type { OoxmlElement } from '../store/package/ooxml-tree.ts';
 
 /** File-local element/attribute lookups, the same two `semantic-table.ts` keeps. */

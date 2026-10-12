@@ -12,11 +12,11 @@
     "test:lifecycle": "node --test server/lifecycle.integration.mjs"
   },
   "dependencies": {
-    "@docx-editor.dev/core": "workspace:*",
-    "@docx-editor.dev/fonts": "workspace:*",
-    "@docx-editor.dev/i18n": "workspace:*",
+    "@zqmi/docx-editor-core": "workspace:*",
+    "@zqmi/docx-editor-fonts": "workspace:*",
+    "@zqmi/docx-editor-i18n": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
-    "@docx-editor.dev/react": "workspace:*",
+    "@zqmi/docx-editor-react": "workspace:*",
     "@hocuspocus/provider": "^4.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

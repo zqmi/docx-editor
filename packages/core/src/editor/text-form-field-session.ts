@@ -1,4 +1,4 @@
-import type { TextFormFieldOptions, TextFormFieldRange } from '@docx-editor.dev/core/store';
+import type { TextFormFieldOptions, TextFormFieldRange } from '@zqmi/docx-editor-core/store';
 
 /** A core-owned options edit. Its signal aborts when the dialog must close. @public */
 export interface TextFormFieldDialogSession {

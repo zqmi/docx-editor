@@ -10,7 +10,7 @@
 // selection and the caret agreeing that a field is one thing.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { detectStoryPageFields, piecesOfParagraph } from '../field-projection.ts';
 import type { RevisionDisplayMode } from '../revision-projection.ts';
 

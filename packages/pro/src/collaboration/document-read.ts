@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  */
 
 import type * as Y from 'yjs';
-import { writeOoxmlPackage } from '@docx-editor.dev/core/store';
+import { writeOoxmlPackage } from '@zqmi/docx-editor-core/store';
 import { DocumentRegistry, PackageMaterializer } from './document/index.ts';
 import { admitSharedState } from './document-bootstrap.ts';
 import { SHARED_BLOBS_KEY, SharedBlobStore } from './shared-blob-store.ts';

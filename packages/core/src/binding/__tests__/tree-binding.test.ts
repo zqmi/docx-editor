@@ -7,10 +7,10 @@ import {
   TreeDocumentStore,
   type OoxmlNode,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { treeSchema } from '../tree-schema.ts';
 import { bodyParagraphs, docToTreeOps, reconcileDoc, treeToDoc } from '../tree-binding.ts';
-import { paragraphTextOf, ORIGIN_IDS } from '@docx-editor.dev/core/store';
+import { paragraphTextOf, ORIGIN_IDS } from '@zqmi/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const A = 'http://schemas.openxmlformats.org/drawingml/2006/main';

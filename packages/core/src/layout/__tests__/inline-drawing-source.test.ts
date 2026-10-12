@@ -4,7 +4,7 @@ import {
   readOoxmlPart,
   type ImageResourceLookup,
   type OoxmlNode,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { zipSync, strToU8 } from 'fflate';
 import { indexInlineDrawingProjectionsInPart } from '../../store/package/drawing-projection.ts';
 import {

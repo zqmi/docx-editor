@@ -7,7 +7,7 @@ import {
   paragraphOffsetIndex,
   readOoxmlPart,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   contentControlAtPoint,
   createFixedMeasurer,

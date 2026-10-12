@@ -26,7 +26,7 @@ import {
   type ChromeMenuId,
   type ChromeMenuItemEntry,
   type ChromeSlotId,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useEditorCommand } from '../useEditorCommand';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from '../toolbar/ToolbarButton';
 import {

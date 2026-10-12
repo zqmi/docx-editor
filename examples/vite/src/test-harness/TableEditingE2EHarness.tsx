@@ -4,14 +4,14 @@
 // `window.__DOCX_EDITOR_E2E__` over real Editor APIs — no test-only mutation paths.
 
 import { useEffect, useRef } from 'react';
-import type { Editor } from '@docx-editor.dev/core/contracts/editor';
-import { DocxEditor, useDocxEditor, useDocxSource } from '@docx-editor.dev/react';
+import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import { DocxEditor, useDocxEditor, useDocxSource } from '@zqmi/docx-editor-react';
 // FONTS ARE EAGER HERE, deliberately, unlike the demos. `packagedFonts()` resolves after
 // the parse and the editor re-paginates when the faces land, which inside a benchmark is a
 // surface remount in the middle of the measurement and an "open to ready" that reports
 // ready before the document is measured with its real fonts. `defaultFonts` settles before
 // the first layout, so every run measures the same thing.
-import { defaultFonts } from '@docx-editor.dev/fonts';
+import { defaultFonts } from '@zqmi/docx-editor-fonts';
 import { createDocxEditorE2EHook } from './table-editing-e2e-hook.ts';
 
 function E2EBridge() {

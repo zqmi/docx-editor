@@ -27,11 +27,11 @@ import './dom-setup.ts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { strToU8, zipSync } from 'fflate';
-import { createDocxEditor, defineFontResolver } from '@docx-editor.dev/core/editor';
+import { createDocxEditor, defineFontResolver } from '@zqmi/docx-editor-core/editor';
 import type {
   FontConfigurationFragment,
   FontResolutionRequest,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { packagedFonts } from '../index.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

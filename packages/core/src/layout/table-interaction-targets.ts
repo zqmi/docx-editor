@@ -6,7 +6,7 @@
 import type {
   TableColumnDividerResizeTarget,
   TableRightEdgeResizeTarget,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import type {
   BlockFragmentRecord,
   SemanticLayout,

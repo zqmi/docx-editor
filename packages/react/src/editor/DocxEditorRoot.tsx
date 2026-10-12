@@ -3,7 +3,7 @@ import type {
   ResolvedRevisionMarkup,
   ReviewDisplayMode,
   FieldResultsMode,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { FormControlTranslateProvider } from './form-control-translate';
 import { DialogProvider } from './dialog-host';
 import { PopupConfigProvider, type DocxEditorPopups } from './popup-config';
@@ -31,21 +31,21 @@ import type {
   EditorFontError,
   FontConfiguration,
   ZoomMode,
-} from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
 import {
   createDocxEditor,
   defaultTableLabel,
   resolveZoomMode,
   resolveRevisionMarkup,
   sameZoomMode,
-} from '@docx-editor.dev/core/editor';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import type {
   DocxEditorInstance,
   FontConfigurationFragment,
   FontResolver,
   ImageDecodePort,
-} from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/editor';
 import { useTranslation, type TranslationKey } from '../i18n';
 import { DocxEditorContext, ReviewRailContext, type ReviewRailRegistry } from './context';
 import type { useDocxEditor } from './context';
@@ -79,7 +79,7 @@ export interface DocxEditorRootProps {
   /**
    * Font bytes for Word-accurate (HarfBuzz-shaped) wrap and pagination. Omitted, layout
    * uses a fixed-width estimate; fonts embedded in the document are wired automatically
-   * either way. Pass `await loadDefaultFonts()` from `@docx-editor.dev/fonts` for
+   * either way. Pass `await loadDefaultFonts()` from `@zqmi/docx-editor-fonts` for
    * Word's default faces — a bare fragment is accepted — or compose several origins
    * with `composeFontConfiguration`. Sampled at mount; identity change remounts;
    * failures degrade to the fixed measurer and report through `onFontError`.

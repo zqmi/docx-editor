@@ -1,10 +1,10 @@
 import { expect, test } from 'bun:test';
 import { defineFontResolver, exportMarkdown } from '../src/index.ts';
 import { docx } from './fixture.ts';
-import { createPackagedFileFetch } from '@docx-editor.dev/core/export';
-import { composeFontOrigins } from '@docx-editor.dev/core/editor';
-import { HARD_MAX_FONT_BYTES } from '@docx-editor.dev/core/layout';
-import { FONT_ASSET_ROOT, packagedFonts } from '@docx-editor.dev/fonts';
+import { createPackagedFileFetch } from '@zqmi/docx-editor-core/export';
+import { composeFontOrigins } from '@zqmi/docx-editor-core/editor';
+import { HARD_MAX_FONT_BYTES } from '@zqmi/docx-editor-core/layout';
+import { FONT_ASSET_ROOT, packagedFonts } from '@zqmi/docx-editor-fonts';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
 
 test('plain text with bundled fonts has no warnings', async () => {

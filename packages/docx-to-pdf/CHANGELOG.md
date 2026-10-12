@@ -5,19 +5,19 @@
 ### Patch Changes
 
 - 9535470: With `revisionsIn: 'balloons'`, comments that reply to tracked changes no longer open an empty review pane, and the new `reviewPaneListsItem` export tells a custom review pane which items to list. PDF export marks text in tracked table rows inside text boxes.
-- Updated dependencies: @docx-editor.dev/core@2.28.0, @docx-editor.dev/fonts-cjk@2.28.0, @docx-editor.dev/fonts@2.28.0
+- Updated dependencies: @zqmi/docx-editor-core@2.28.0, @docx-editor.dev/fonts-cjk@2.28.0, @zqmi/docx-editor-fonts@2.28.0
 
 ## 2.27.0
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.27.0, @docx-editor.dev/fonts-cjk@2.27.0, @docx-editor.dev/fonts@2.27.0
+- Updated dependencies: @zqmi/docx-editor-core@2.27.0, @docx-editor.dev/fonts-cjk@2.27.0, @zqmi/docx-editor-fonts@2.27.0
 
 ## 2.26.0
 
 ### Patch Changes
 
-- Updated dependencies: @docx-editor.dev/core@2.26.0, @docx-editor.dev/fonts-cjk@2.26.0, @docx-editor.dev/fonts@2.26.0
+- Updated dependencies: @zqmi/docx-editor-core@2.26.0, @docx-editor.dev/fonts-cjk@2.26.0, @zqmi/docx-editor-fonts@2.26.0
 
 ## 2.25.0
 
@@ -33,8 +33,8 @@
 - Updated dependencies [f098ae6]
 - Updated dependencies [a13f6a7]
 - Updated dependencies [5d02def]
-  - @docx-editor.dev/core@2.25.0
-  - @docx-editor.dev/fonts@2.25.0
+  - @zqmi/docx-editor-core@2.25.0
+  - @zqmi/docx-editor-fonts@2.25.0
   - @docx-editor.dev/fonts-cjk@2.25.0
 
 ## 2.24.0
@@ -48,8 +48,8 @@
 - Updated dependencies [79d8bc1]
 - Updated dependencies [997814e]
 - Updated dependencies [de3aac8]
-  - @docx-editor.dev/core@2.24.0
-  - @docx-editor.dev/fonts@2.24.0
+  - @zqmi/docx-editor-core@2.24.0
+  - @zqmi/docx-editor-fonts@2.24.0
   - @docx-editor.dev/fonts-cjk@2.24.0
 
 ## 2.23.0
@@ -155,8 +155,8 @@
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
-  - @docx-editor.dev/core@2.23.0
-  - @docx-editor.dev/fonts@2.23.0
+  - @zqmi/docx-editor-core@2.23.0
+  - @zqmi/docx-editor-fonts@2.23.0
   - @docx-editor.dev/fonts-cjk@2.23.0
 
 ## 2.22.0
@@ -211,5 +211,5 @@
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
-  - @docx-editor.dev/core@2.22.0
-  - @docx-editor.dev/fonts@2.22.0
+  - @zqmi/docx-editor-core@2.22.0
+  - @zqmi/docx-editor-fonts@2.22.0

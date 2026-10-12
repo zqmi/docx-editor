@@ -11,8 +11,8 @@ import {
   TreePackageStore,
   canonicalOoxmlFingerprint,
   semanticDigest,
-} from '@docx-editor.dev/core/store';
-import { createCollaborationDocumentPort } from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
 import {
   createDocumentCollaboration,
   readCollaborationDocument,

@@ -1,6 +1,6 @@
 import { registerListGeometry, rememberListItemShape } from './list-marker-reuse.ts';
 import { walkStoryParagraphs } from './story-paragraph-walk.ts';
-import { readTwipsMeasure } from '@docx-editor.dev/core/store';
+import { readTwipsMeasure } from '@zqmi/docx-editor-core/store';
 import { styleSeparatorMembersOf } from './style-separator-group.ts';
 import { markerMeasureToken } from './list-marker-measure-key.ts';
 import {
@@ -11,7 +11,7 @@ import {
 // Resolve numbering into marker text, indentation, and font inputs for one story walk.
 
 import { paragraphIsRtl } from './rtl-paragraph.ts';
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
 import { framedTokenJoin } from './layout-cache.ts';
 import {

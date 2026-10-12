@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
-import { forEachSemanticSpan } from '@docx-editor.dev/core/layout';
+import { forEachSemanticSpan } from '@zqmi/docx-editor-core/layout';
 import { exportPdf } from '../src/index.ts';
 import { openExportSession } from '../src/open-session.ts';
 import { docx } from './fixture.ts';

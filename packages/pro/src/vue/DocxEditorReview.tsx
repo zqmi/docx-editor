@@ -32,8 +32,8 @@ import {
   reviewPaneListsItem,
   type DocxEditorInstance,
   type ReviewAuthorInfo,
-} from '@docx-editor.dev/core/editor';
-import type { ReviewRevisionKind, SelectionPin } from '@docx-editor.dev/core/contracts/editor';
+} from '@zqmi/docx-editor-core/editor';
+import type { ReviewRevisionKind, SelectionPin } from '@zqmi/docx-editor-core/contracts/editor';
 import {
   ReviewRailContext,
   useDocxEditor,

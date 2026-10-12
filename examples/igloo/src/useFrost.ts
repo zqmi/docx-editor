@@ -10,8 +10,8 @@
 // would look the same on screen and prove nothing about the API.
 
 import { useCallback, useMemo } from 'react';
-import { useDocxEditor, useEditorCommand, useEditorState } from '@docx-editor.dev/react';
-import type { EditorCommand } from '@docx-editor.dev/react';
+import { useDocxEditor, useEditorCommand, useEditorState } from '@zqmi/docx-editor-react';
+import type { EditorCommand } from '@zqmi/docx-editor-react';
 
 const frostCommand = (value: string): EditorCommand => ({
   type: 'setMarkAttr',

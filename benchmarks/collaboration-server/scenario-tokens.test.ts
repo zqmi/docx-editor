@@ -2,7 +2,7 @@
 
 import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
-import { paragraphTextOf, type OoxmlNode, type TreeDocOp } from '@docx-editor.dev/core/store';
+import { paragraphTextOf, type OoxmlNode, type TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { storeFrom } from './document-text.ts';
 import { DEFAULT_DOCUMENT } from './scenarios.ts';
 import { applyOp, type Addressed } from './scenario-plan.ts';

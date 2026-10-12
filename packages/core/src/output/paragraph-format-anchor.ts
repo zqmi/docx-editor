@@ -1,5 +1,5 @@
-import type { ParagraphFragmentRecord, RevisionAttribution } from '@docx-editor.dev/core/layout';
-import { formatRevisionOf } from '@docx-editor.dev/core/layout';
+import type { ParagraphFragmentRecord, RevisionAttribution } from '@zqmi/docx-editor-core/layout';
+import { formatRevisionOf } from '@zqmi/docx-editor-core/layout';
 
 /** Expose formatting decisions on the existing paragraph hit area without inserting a glyph. */
 export function applyParagraphFormatAnchor(

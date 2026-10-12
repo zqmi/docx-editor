@@ -9,7 +9,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // show nowhere else, so they follow the text they went in after, and nothing is lost.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import {
   createPeerHarness,
   nodeText,

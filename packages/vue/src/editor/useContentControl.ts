@@ -1,6 +1,6 @@
 import { computed, inject, ref, watch, type ComputedRef, type InjectionKey } from 'vue';
-import type { ContentControlSummary, ContentControlType } from '@docx-editor.dev/core';
-import type { CanResult, EditorSnapshot, ExecResult } from '@docx-editor.dev/core/contracts/editor';
+import type { ContentControlSummary, ContentControlType } from '@zqmi/docx-editor-core';
+import type { CanResult, EditorSnapshot, ExecResult } from '@zqmi/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

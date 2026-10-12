@@ -10,7 +10,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { collaborationDocx } from './support.ts';
 import {
   WML,

@@ -18,9 +18,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // supported and is what you reach for when one page mounts two rooms, or when the bytes come
 // from somewhere this component cannot see.
 
-import { DocxEditorRoot } from '@docx-editor.dev/react';
-import type { DocxEditorRootProps } from '@docx-editor.dev/react';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+import { DocxEditorRoot } from '@zqmi/docx-editor-react';
+import type { DocxEditorRootProps } from '@zqmi/docx-editor-react';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import type { ReactNode } from 'react';
 import type { CollaborationSession } from '../collaboration/types.ts';
 

@@ -16,7 +16,7 @@ import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { z } from 'zod';
-import { readOoxmlPackage, writeOoxmlPackage } from '@docx-editor.dev/core/store';
+import { readOoxmlPackage, writeOoxmlPackage } from '@zqmi/docx-editor-core/store';
 import {
   customXmlLabelXPath,
   customXmlNodes,
@@ -27,8 +27,8 @@ import {
   withCustomXmlNode,
   withoutCustomXmlDataPart,
   withoutOrphanCustomXmlNodes,
-} from '@docx-editor.dev/core/store';
-import { sanitizeHref } from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
+import { sanitizeHref } from '@zqmi/docx-editor-core/store';
 import { parseCustomNodeData, serializeCustomNodeData } from '../data-schema.ts';
 
 const STORY = '/word/document.xml';

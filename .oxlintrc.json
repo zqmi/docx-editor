@@ -123,10 +123,10 @@
                   "react-dom",
                   "react-dom/*",
                   "@vitejs/plugin-react",
-                  "@docx-editor.dev/react",
-                  "@docx-editor.dev/react/*"
+                  "@zqmi/docx-editor-react",
+                  "@zqmi/docx-editor-react/*"
                 ],
-                "message": "Vue/core files cannot import React. Use @docx-editor.dev/core for shared logic. See openspec/changes/archive/2026-07-22-vue-editor-robust-implementation/specs/framework-isolation-lint/spec.md"
+                "message": "Vue/core files cannot import React. Use @zqmi/docx-editor-core for shared logic. See openspec/changes/archive/2026-07-22-vue-editor-robust-implementation/specs/framework-isolation-lint/spec.md"
               }
             ]
           }
@@ -163,7 +163,7 @@
                   "@docx-editor.dev/vue",
                   "@docx-editor.dev/vue/*"
                 ],
-                "message": "React/core files cannot import Vue. Use @docx-editor.dev/core for shared logic. See openspec/changes/archive/2026-07-22-vue-editor-robust-implementation/specs/framework-isolation-lint/spec.md"
+                "message": "React/core files cannot import Vue. Use @zqmi/docx-editor-core for shared logic. See openspec/changes/archive/2026-07-22-vue-editor-robust-implementation/specs/framework-isolation-lint/spec.md"
               }
             ]
           }
@@ -187,8 +187,8 @@
                   "react-dom",
                   "react-dom/*",
                   "@vitejs/plugin-react",
-                  "@docx-editor.dev/react",
-                  "@docx-editor.dev/react/*",
+                  "@zqmi/docx-editor-react",
+                  "@zqmi/docx-editor-react/*",
                   "vue",
                   "vue/*",
                   "@vue/*",

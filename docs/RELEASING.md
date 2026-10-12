@@ -12,14 +12,14 @@ The [Release workflow](../.github/workflows/release.yml) uses Changesets:
 
 | Package                             | Path                        | Published |
 | ----------------------------------- | --------------------------- | --------- |
-| `@docx-editor.dev/core`             | `packages/core`             | Yes       |
-| `@docx-editor.dev/react`            | `packages/react`            | Yes       |
+| `@zqmi/docx-editor-core`             | `packages/core`             | Yes       |
+| `@zqmi/docx-editor-react`            | `packages/react`            | Yes       |
 | `@docx-editor.dev/editor-api`       | `packages/editor-api`       | Yes       |
 | `@docx-editor.dev/vue`              | `packages/vue`              | Yes       |
 | `@docx-editor.dev/nuxt`             | `packages/nuxt`             | No        |
-| `@docx-editor.dev/i18n`             | `packages/i18n`             | Yes       |
+| `@zqmi/docx-editor-i18n`             | `packages/i18n`             | Yes       |
 | `@docx-editor.dev/pro`              | `packages/pro`              | Yes       |
-| `@docx-editor.dev/fonts`            | `packages/fonts`            | Yes       |
+| `@zqmi/docx-editor-fonts`            | `packages/fonts`            | Yes       |
 | `@docx-editor.dev/docx-to-markdown` | `packages/docx-to-markdown` | Yes       |
 | `@docx-editor.dev/docx-to-pdf`      | `packages/docx-to-pdf`      | Yes       |
 | `@docx-editor.dev/fonts-cjk`        | `packages/fonts-cjk`        | Yes       |
@@ -32,7 +32,7 @@ The ten published packages are in a fixed group in `.changeset/config.json`. Cha
 
 Example applications and the Nuxt package are private workspaces (`"private": true`). They are not published to npm. Private workspace versioning and tagging are disabled in Changesets, so these workspaces do not receive release version bumps or appear in the release PR's release notes. Keep example applications private when adding them to the workspace.
 
-A changeset can declare one package bump. The other packages in the fixed group follow that bump. `@docx-editor.dev/i18n` changes use an i18n changeset.
+A changeset can declare one package bump. The other packages in the fixed group follow that bump. `@zqmi/docx-editor-i18n` changes use an i18n changeset.
 
 ## Python (PyPI) releases
 

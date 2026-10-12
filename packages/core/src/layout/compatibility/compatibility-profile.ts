@@ -10,7 +10,7 @@
 // The file is attacker-controlled. The walk visits each `w:compat` child once, accepts a mode
 // of at most four digits, and keys results only by the names below, never by file strings.
 
-import { WML_NAMESPACE_URI, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import {
   MODE_RULES,
   PROFILE_RULES,

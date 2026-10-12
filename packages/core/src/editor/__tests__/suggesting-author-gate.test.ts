@@ -113,7 +113,7 @@ describe('the decision helpers', () => {
     expect(emitted[0]!.message).toContain(SUGGESTING_AUTHOR_REASON);
     expect(emitted[0]!.message).toContain('setAuthor');
     expect(lines).toHaveLength(1);
-    expect(lines[0]).toContain('[@docx-editor.dev/core]');
+    expect(lines[0]).toContain('[@zqmi/docx-editor-core]');
     reporter.report(SUGGESTING_AUTHOR_REASON);
     await afterReport();
     expect(emitted).toHaveLength(1);

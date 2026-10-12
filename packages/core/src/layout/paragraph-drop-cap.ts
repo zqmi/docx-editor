@@ -1,4 +1,4 @@
-import { readTwipsMeasure, type OoxmlElement } from '@docx-editor.dev/core/store';
+import { readTwipsMeasure, type OoxmlElement } from '@zqmi/docx-editor-core/store';
 import { breakPreparedParagraph } from './paragraph-break-request.ts';
 import {
   readParagraphFrame,

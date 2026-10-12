@@ -16,7 +16,7 @@
 // has to keep its box, because that content is visible and Word merely merges it forward —
 // dropping it would lose text. Only the intersection is removed.
 
-import type { OoxmlElement, OoxmlNode } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
 import {
   isInlineRunContainer,
   MAX_INLINE_CONTAINER_DEPTH,

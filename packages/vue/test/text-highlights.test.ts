@@ -12,8 +12,8 @@ import type {
   HighlightRange,
   HighlightResult,
   TextMatch,
-} from '@docx-editor.dev/core/contracts/editor';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';
@@ -26,7 +26,7 @@ import {
 } from '../src/editor/navigation/useDocumentSearch';
 import { HIGHLIGHT_REFRESH_MS, useHighlights } from '../src/editor/useHighlights';
 import { useHighlightAt } from '../src/editor/useHighlightAt';
-import { createDocumentSearch } from '@docx-editor.dev/core/editor';
+import { createDocumentSearch } from '@zqmi/docx-editor-core/editor';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const CT = 'http://schemas.openxmlformats.org/package/2006/content-types';

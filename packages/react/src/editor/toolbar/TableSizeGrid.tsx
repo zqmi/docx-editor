@@ -3,7 +3,7 @@
 
 import type { ReactNode } from 'react';
 import { useCallback, useRef, useState } from 'react';
-import type { ChromeSlotId } from '@docx-editor.dev/core/editor';
+import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorCommand } from '../useEditorCommand';
 import { guardToolbarMousedown } from './ToolbarButton';

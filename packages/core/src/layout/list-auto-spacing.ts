@@ -1,4 +1,4 @@
-import type { OoxmlElement, OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { flowNeighbourStyle } from './contextual-paragraph-spacing.ts';
 import { paragraphSpacing, type ParagraphSpacing } from './paragraph-style.ts';
 import { resolveParagraphLayoutInputs, type StyleCascadeTable } from './style-cascade.ts';

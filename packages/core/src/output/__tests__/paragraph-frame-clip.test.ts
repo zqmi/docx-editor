@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../../layout/semantic-layout.ts';
 import type { ParagraphFragmentRecord, SemanticLayout } from '../../layout/semantic-records.ts';
 import { paintSemanticLayout } from '../semantic-paint.ts';

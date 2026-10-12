@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
-import type { TreeDocOp } from '@docx-editor.dev/core/store';
+import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
 import { EditWait } from '../document-edit-wait.ts';
 
 /** A document holding back an update until `release` applies the one it depends on. */

@@ -6,7 +6,7 @@ import { blockMetadataIdentity } from '../layout/block-metadata-identity.ts';
 // widths replaces every page the table crosses, so each walk read every cell paragraph of the
 // table on every keystroke. One walk now answers both, memoised on the list's identity.
 
-import type { OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import type { BlockFragmentRecord, ParagraphFragmentRecord } from '../layout/semantic-records.ts';
 
 export interface BlockContentSummary {

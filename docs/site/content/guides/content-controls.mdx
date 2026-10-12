@@ -84,7 +84,7 @@ const unfilled = controls.items.filter((c) => c.placeholderShown);
 <Framework value="react">
 
 ```tsx
-import { useContentControl } from '@docx-editor.dev/react';
+import { useContentControl } from '@zqmi/docx-editor-react';
 
 function ControlInspector() {
   const { control, setValue, canSetValue, setValueDisabledReason, remove, canRemove } =
@@ -156,7 +156,7 @@ A data-bound control rejects a direct write: its content comes from the Custom X
 <Framework value="react">
 
 ```tsx
-import { useDocxEditor } from '@docx-editor.dev/react';
+import { useDocxEditor } from '@zqmi/docx-editor-react';
 
 function InsertFieldButton() {
   const editor = useDocxEditor();

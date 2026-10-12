@@ -13,10 +13,10 @@
 // page; remove it and the comments still exist, they just have no rail.
 
 import { useCallback, useMemo, useRef, useState } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@docx-editor.dev/react';
+import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { DocxEditorReview } from '@docx-editor.dev/pro/react';
-import type { DocxEditorInstance } from '@docx-editor.dev/core/editor';
+import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
 import { EditorBridge } from './EditorBridge';
 import { AgentPanel } from './AgentPanel';
 import { seedDocx } from '../seed-document';

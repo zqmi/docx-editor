@@ -1,7 +1,7 @@
 import { defineComponent, h, type CSSProperties, type VNode } from 'vue';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import type { RefObject } from '../docx-editor-ref-object';
-import type { ColorValue, Theme } from '@docx-editor.dev/core/contracts/editor';
+import type { ColorValue, Theme } from '@zqmi/docx-editor-core/contracts/editor';
 import type { DocumentStyleSummary } from '../lib/stylePreview';
 import type { FontOption } from '../lib/fontOptions';
 import type { ListState } from '../lib/listState';

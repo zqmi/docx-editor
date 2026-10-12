@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import type { PDFPage } from 'pdf-lib';
-import type { EquationGeometry, SemanticSpanVisit } from '@docx-editor.dev/core/layout';
+import type { EquationGeometry, SemanticSpanVisit } from '@zqmi/docx-editor-core/layout';
 import { TextWriter } from './text.ts';
 import { Work, color } from './context.ts';
 import { pageHeight, rect } from './context.ts';

@@ -10,7 +10,7 @@ import {
   type HeadlessDocumentView,
   type OoxmlNode,
   type OoxmlPackage,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import { forEachSemanticSpan } from '../../layout/export-traversal.ts';
 import { openDocumentForExport } from '../export-session.ts';
 

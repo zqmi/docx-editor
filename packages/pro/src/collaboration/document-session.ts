@@ -27,7 +27,7 @@ import {
   type OoxmlPackage,
   type StoryScope,
   type TreeDocOp,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import type {
   CollaborationFailure,
   CollaborationFailureCode,
@@ -39,16 +39,16 @@ import type {
   CollaborationSelectionMove,
   CollaborationStatusSnapshot,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import {
   historyGroupOfJournal,
   type CanonicalPrimitiveJournal,
   type CollaborationDocumentPort,
-} from '@docx-editor.dev/core/collaboration/replication';
+} from '@zqmi/docx-editor-core/collaboration/replication';
 import {
   createCollaborationStatusTracker,
   safeParticipantColor,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import { DocumentRegistry, PackageMaterializer, applyPrimitiveJournal } from './document/index.ts';
 import { collectJournalBlobs, putJournalBlobs } from './document-session-blobs.ts';
 import { healTargetOf, RefusalStreak, type HealTarget } from './document-session-heal.ts';

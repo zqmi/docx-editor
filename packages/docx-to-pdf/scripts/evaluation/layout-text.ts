@@ -3,8 +3,8 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-pdf/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import { forEachSemanticSpan, type SemanticSpanVisit } from '@docx-editor.dev/core/layout';
-import type { ExportSemanticLayout } from '@docx-editor.dev/core/export';
+import { forEachSemanticSpan, type SemanticSpanVisit } from '@zqmi/docx-editor-core/layout';
+import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
 
 /** Logical text evidence, not PDF extraction or final painted geometry. */
 export function recordLayoutText(layout: ExportSemanticLayout) {

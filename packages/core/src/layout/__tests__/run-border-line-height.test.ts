@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@docx-editor.dev/core/store';
+import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
 import { createLayoutSession, layoutSemanticDocument } from '../semantic-layout.ts';
 import { linesOf, type TextMeasurer } from '../semantic-records.ts';
 import { runBorderStrokesForLine } from '../run-border-strokes.ts';

@@ -1,7 +1,7 @@
 import { computed, defineComponent, h, type PropType, type VNode } from 'vue';
 import type { DocxEditorChildren } from '../../docx-editor-children';
-import type { EditorCommand } from '@docx-editor.dev/core/contracts/editor';
-import { tableChromeIconPaths } from '@docx-editor.dev/core/editor';
+import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
+import { tableChromeIconPaths } from '@zqmi/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorCommand } from '../useEditorCommand';
 import { useEditorState } from '../useEditorState';

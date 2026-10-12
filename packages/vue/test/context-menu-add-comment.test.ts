@@ -3,7 +3,7 @@
 import './dom-setup.ts';
 import { afterEach, expect, mock, test } from 'bun:test';
 import { defineComponent, h, onBeforeUnmount, type VNode } from 'vue';
-import type { EditorModule } from '@docx-editor.dev/core/editor';
+import type { EditorModule } from '@zqmi/docx-editor-core/editor';
 import { DocxEditorContextMenu } from '../src/editor/contextmenu/index.ts';
 import { useReviewRailRegistry } from '../src/editor/context';
 import { flush, mountEditorTree, type MountedEditor } from './helpers/mount';

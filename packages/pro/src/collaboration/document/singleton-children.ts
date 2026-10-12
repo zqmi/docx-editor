@@ -26,7 +26,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * acts only on a group that some peer wrote into.
  */
 
-import { WML_NAMESPACE_URI } from '@docx-editor.dev/core/store';
+import { WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
 import { rejectDangerousKey } from './limits.ts';
 import { replicaOfLogicalId, type LogicalId } from './identity.ts';
 import { childArrayOf, isNodeMap, namespaceUriOf, readNodeShell } from './schema.ts';

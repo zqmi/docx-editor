@@ -1,14 +1,14 @@
 import { describe, expect, test } from 'bun:test';
 import { micromark } from 'micromark';
 import { gfm, gfmHtml } from 'micromark-extension-gfm';
-import type { ExportSemanticLayout, ExportSession } from '@docx-editor.dev/core/export';
+import type { ExportSemanticLayout, ExportSession } from '@zqmi/docx-editor-core/export';
 import { exportMarkdownFrom } from '../src/index.ts';
-import type { AnchoredDrawingRecord } from '@docx-editor.dev/core/layout';
+import type { AnchoredDrawingRecord } from '@zqmi/docx-editor-core/layout';
 import type {
   ParagraphFragmentRecord,
   SemanticLayout,
   TableFragmentRecord,
-} from '@docx-editor.dev/core/layout';
+} from '@zqmi/docx-editor-core/layout';
 
 function paragraph(
   id: string,

@@ -1,5 +1,5 @@
 {
-  "name": "@docx-editor.dev/i18n",
+  "name": "@zqmi/docx-editor-i18n",
   "version": "2.28.0",
   "description": "Shared UI locale strings and types for the @docx-editor.dev editor adapters (React and Vue).",
   "sideEffects": false,
@@ -81,10 +81,10 @@
     "THIRD_PARTY_NOTICES.md"
   ],
   "scripts": {
-    "build": "tsup && node ../../scripts/inject-package-doc.mjs --package @docx-editor.dev/i18n",
+    "build": "tsup && node ../../scripts/inject-package-doc.mjs --package @zqmi/docx-editor-i18n",
     "typecheck": "tsc --noEmit",
-    "api:extract": "node ../../scripts/api-extractor.mjs --package @docx-editor.dev/i18n --local",
-    "api:check": "node ../../scripts/api-extractor.mjs --package @docx-editor.dev/i18n"
+    "api:extract": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-i18n --local",
+    "api:check": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-i18n"
   },
   "devDependencies": {
     "tsup": "^8.0.1",
@@ -103,13 +103,14 @@
     "url": "https://github.com/jedrazb"
   },
   "license": "Apache-2.0",
-  "homepage": "https://docx-editor.dev/",
+  "homepage": "https://github.com/zqmi/docx-editor",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eigenpal/docx-editor.git",
+    "url": "https://github.com/zqmi/docx-editor.git",
     "directory": "packages/i18n"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

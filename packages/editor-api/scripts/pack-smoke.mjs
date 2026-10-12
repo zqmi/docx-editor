@@ -38,7 +38,7 @@ const CORE_PACKAGE = path.resolve(PACKAGE, '..', 'core');
 const manifest = JSON.parse(readFileSync(path.join(PACKAGE, 'package.json'), 'utf8'));
 const coreManifest = JSON.parse(readFileSync(path.join(CORE_PACKAGE, 'package.json'), 'utf8'));
 
-/** Bare `@docx-editor.dev/core` specifiers a bundle may keep external. */
+/** Bare `@zqmi/docx-editor-core` specifiers a bundle may keep external. */
 function allowedCoreBareSpecifiers(exports) {
   const allowed = new Set();
   for (const [subpath, target] of Object.entries(exports)) {
@@ -46,7 +46,7 @@ function allowedCoreBareSpecifiers(exports) {
     if (typeof target === 'string') continue;
     if (typeof target !== 'object') continue;
     allowed.add(
-      subpath === '.' ? '@docx-editor.dev/core' : `@docx-editor.dev/core${subpath.slice(1)}`
+      subpath === '.' ? '@zqmi/docx-editor-core' : `@zqmi/docx-editor-core${subpath.slice(1)}`
     );
   }
   return allowed;
@@ -58,7 +58,7 @@ function coreExportTargets(exports) {
   for (const [subpath, target] of Object.entries(exports)) {
     if (typeof target !== 'object') continue;
     const bare =
-      subpath === '.' ? '@docx-editor.dev/core' : `@docx-editor.dev/core${subpath.slice(1)}`;
+      subpath === '.' ? '@zqmi/docx-editor-core' : `@zqmi/docx-editor-core${subpath.slice(1)}`;
     targets.set(bare, { import: target.import, require: target.require });
   }
   return targets;
@@ -217,19 +217,19 @@ try {
     'dist/index.mjs imports a Node builtin, so it no longer runs in a worker'
   );
   check(
-    manifest.peerDependencies?.['@docx-editor.dev/core'],
+    manifest.peerDependencies?.['@zqmi/docx-editor-core'],
     'the package does not declare the external core engine as a peer dependency'
   );
   check(
-    serverBundle.includes('@docx-editor.dev/core/automation'),
+    serverBundle.includes('@zqmi/docx-editor-core/automation'),
     'dist/index.mjs does not import the external automation lane'
   );
   check(
-    !serverBundle.includes('@docx-editor.dev/core/editor'),
+    !serverBundle.includes('@zqmi/docx-editor-core/editor'),
     'dist/index.mjs reaches the browser-only editor lane'
   );
   check(
-    browserBundle.includes('@docx-editor.dev/core/editor'),
+    browserBundle.includes('@zqmi/docx-editor-core/editor'),
     'dist/browser.mjs does not reach the editor lane'
   );
 
@@ -239,9 +239,9 @@ try {
   for (const name of ['dist/index.mjs', 'dist/index.js', 'dist/browser.mjs', 'dist/browser.js']) {
     const source = readFileSync(path.join(root, name), 'utf8');
     const bare = [...new Set(bareImports(source))];
-    const nonCore = bare.filter((specifier) => !specifier.startsWith('@docx-editor.dev/core'));
+    const nonCore = bare.filter((specifier) => !specifier.startsWith('@zqmi/docx-editor-core'));
     check(nonCore.length === 0, `${name} imports ${nonCore.join(', ')} unexpectedly`);
-    const coreImports = bare.filter((specifier) => specifier.startsWith('@docx-editor.dev/core'));
+    const coreImports = bare.filter((specifier) => specifier.startsWith('@zqmi/docx-editor-core'));
     const disallowedCore = coreImports.filter((specifier) => !ALLOWED_CORE.has(specifier));
     check(
       disallowedCore.length === 0,
@@ -267,7 +267,7 @@ try {
   mkdirSync(scope, { recursive: true });
   check(
     existsSync(path.join(CORE_PACKAGE, 'dist', 'index.js')),
-    'core is not built; run bun run --filter @docx-editor.dev/core build before pack:smoke'
+    'core is not built; run bun run --filter @zqmi/docx-editor-core build before pack:smoke'
   );
   if (existsSync(path.join(CORE_PACKAGE, 'dist', 'index.js'))) {
     symlinkSync(CORE_PACKAGE, path.join(scope, 'core'), 'dir');

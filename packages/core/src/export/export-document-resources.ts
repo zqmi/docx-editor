@@ -9,7 +9,7 @@ import {
   type BookmarkIndex,
   type DocumentProperties,
   type HeadlessDocumentView,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 /** Bounded package metadata for exporter output dictionaries. @public */
 export type ExportDocumentMetadata = Readonly<DocumentProperties>;

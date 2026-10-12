@@ -21,7 +21,7 @@
 // (`tableKeepOpening` in `table-row-keeps.ts`) when the caller supplies one. When the table's
 // kept rows run to its end, the chain goes on through them into the content after the table.
 
-import type { OoxmlProperty } from '@docx-editor.dev/core/store';
+import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
 import { hasCompatibilityRule } from './compatibility/compatibility-rules.ts';
 import { framedTokenJoin } from './layout-cache.ts';
 import { sha256FontBytes } from '../store/package/sha256.ts';

@@ -1,5 +1,5 @@
 // Character-style header values and body pagination settle together in a bounded pass.
-import type { OoxmlPart } from '@docx-editor.dev/core/store';
+import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
 import { drainLayoutSteps, type LayoutSteps } from './layout-steps.ts';
 import { stableHash } from '../store/comparators/canonical.ts';
 import { characterStyleFields, type CharacterStyleField } from './field-character-style.ts';

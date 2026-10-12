@@ -11,7 +11,7 @@
 // It stays an ESTIMATE on the paths it has always approximated: the oversized-word chop
 // and horizontal float passages are placement-time decisions this pass cannot see.
 
-import { PAGE_BREAK_CHAR } from '@docx-editor.dev/core/store';
+import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
 import type { FieldAwarePiece } from './field-projection.ts';
 import { lineOpenDecisionAt, wordBoundaries } from './cjk-line-break.ts';
 import type { CjkParagraphBreaks } from './cjk-paragraph-breaks.ts';

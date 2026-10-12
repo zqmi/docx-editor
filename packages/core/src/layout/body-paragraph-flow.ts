@@ -1,7 +1,7 @@
 // Body paragraph flow inputs that come from the layout options alone, and the placement inputs
 // a body paragraph's break reads from the region it lands in.
 
-import type { OoxmlElement } from '@docx-editor.dev/core/store';
+import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
 import type { BodyAnchorFrameBase } from './body-flow-helpers.ts';
 import type { InlineDrawingLayoutContext } from './drawing-layout.ts';
 import { ownBandKeyInputs } from './drawing-placement-exclusion.ts';

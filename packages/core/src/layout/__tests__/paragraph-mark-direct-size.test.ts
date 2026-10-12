@@ -18,7 +18,7 @@ import {
   TreeDocumentStore,
   type OoxmlElement,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   buildStyleCascadeTable,
   layoutSemanticDocument,

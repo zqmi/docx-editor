@@ -8,7 +8,7 @@ import type {
   CollaborationLocalSelection,
   CollaborationRemoteSelection,
   EditorCollaborationSession,
-} from '@docx-editor.dev/core/collaboration';
+} from '@zqmi/docx-editor-core/collaboration';
 import { zipSync, strToU8 } from 'fflate';
 import {
   collaborationParagraphScanRecorder,

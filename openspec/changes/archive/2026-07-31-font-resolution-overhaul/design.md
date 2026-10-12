@@ -85,11 +85,11 @@ keeps `createLayoutShaping`'s validation path single.
 Today `createLayoutShaping` runs once at editor construction. It moves to a per-load
 async step that awaits *all* origins (explicit bytes are sync; embedded extraction is
 sync; HarfBuzz init is async) and produces one shaped measurer, then performs the one
-existing remount. `loadFonts`/`@docx-editor.dev/fonts` resolve *before* the app
+existing remount. `loadFonts`/`@zqmi/docx-editor-fonts` resolve *before* the app
 constructs the editor (they produce config, they don't talk to the editor), so they
 add no remounts.
 
-### D6 — `@docx-editor.dev/fonts`: assets as URLs, helper returns a fragment
+### D6 — `@zqmi/docx-editor-fonts`: assets as URLs, helper returns a fragment
 
 New workspace package holding TTF assets (Carlito, Caladea, Liberation Serif/Sans/Mono
 — regular/bold/italic/boldItalic each) referenced via `new URL(..., import.meta.url)`

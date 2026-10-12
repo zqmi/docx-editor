@@ -23,7 +23,7 @@ import {
   validatePackageInvariants,
   type OoxmlPackage,
   type OoxmlPart,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 import {
   commentAnchorsOfStory,
   commentsOfPart,

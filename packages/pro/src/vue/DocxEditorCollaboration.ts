@@ -27,8 +27,8 @@ import { useDocxEditor, useReviewAuthors, useTranslation } from '@docx-editor.de
 import type {
   CollaborationParticipant,
   CollaborationRemoteSelection,
-} from '@docx-editor.dev/core/collaboration';
-import type { RemoteCaretLabelAnchor } from '@docx-editor.dev/core/editor';
+} from '@zqmi/docx-editor-core/collaboration';
+import type { RemoteCaretLabelAnchor } from '@zqmi/docx-editor-core/editor';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import {
   orderedParticipants,

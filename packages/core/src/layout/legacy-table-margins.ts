@@ -2,7 +2,7 @@ import {
   readTwipsMeasure,
   WML_NAMESPACE_URI,
   type OoxmlElement,
-} from '@docx-editor.dev/core/store';
+} from '@zqmi/docx-editor-core/store';
 
 // The ordinary margin reader is deliberately permissive. Its fallback values alone are
 // insufficient evidence for a NEW negative table origin. Validate this lane's sources,
