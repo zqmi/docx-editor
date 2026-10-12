@@ -154,15 +154,22 @@ interface ReadbackWalk {
  * Walk one painted container in DOM order, collecting spans AND the text between them.
  *
  * DOM order is what places text the browser wrote outside any span. An empty paragraph paints
- * a line holding nothing but a `<br>`, and a paragraph whose only content is a field paints
- * spans the caret is refused inside, so in both the browser is handed the LINE as the
- * selection node and composes a bare text node into it. A stray contributes at the model
- * offset the walk has reached, so it lands before or after the spans exactly as placed.
+ * a line holding an empty-line host (a ZWSP text node), and a paragraph whose only content is
+ * a field paints spans the caret is refused inside, so in both the browser is handed the LINE
+ * as the selection node and composes into it. A stray contributes at the model offset the walk
+ * has reached, so it lands before or after the spans exactly as placed.
  */
 function walkContainer(container: Element, walk: ReadbackWalk): void {
   for (const node of container.childNodes) {
     if (node.nodeType === Node.TEXT_NODE) {
-      const text = node.textContent ?? '';
+      let text = node.textContent ?? '';
+      // The empty-line host keeps a ZWSP so a CJK IME has somewhere to attach. It is paint
+      // furniture, not model text — strip it so a cancelled composition does not insert U+200B
+      // and so "你好\u200b" diffs as just the composed characters.
+      const parent = node.parentElement;
+      if (parent?.hasAttribute('data-docx-empty-line-host')) {
+        text = text.replaceAll('\u200b', '');
+      }
       // A stray occupies no model range (`end === start`), because it is text the model does
       // not have yet — that is the whole reason it is worth reading.
       if (text.length > 0) {

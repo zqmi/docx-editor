@@ -719,10 +719,26 @@ export function createSurfaceSelectionSync(deps: SurfaceSelectionSyncDeps): Surf
         const composed = event?.data ?? '';
         if (composed.length > 0) deps.replaceSelectionWith?.(composed);
       } else {
-        // The composed text is in the DOM and nowhere else. Read it back, diff it against
-        // what the model holds for that paragraph, and commit the difference — the only
-        // route by which an IME edit can reach the tree, since it could not be intercepted.
-        reconcileParagraphFromDom(paragraphId);
+        // Same-paragraph compositions usually leave glyphs in the painted DOM; read them
+        // back and diff. Empty paragraphs / empty list items are the exception: Windows CJK
+        // IMEs often finish with `compositionend.data` and no stable painted text (the line
+        // held only the empty-line host, beside a list marker). Asking the DOM first, then
+        // discardPaint on an unchanged revision, is what wiped the preedit and jumped the
+        // caret to the previous line. Prefer the event string for an empty model — the same
+        // lane the cross-paragraph path already trusts — and fall back to it when readback
+        // leaves the paragraph unchanged despite a non-empty `data`.
+        const modelBefore = deps.textOf(paragraphId);
+        const composed = event?.data ?? '';
+        if (modelBefore.length === 0 && composed.length > 0) {
+          deps.setSelection(collapsedAt({ paragraphId, offset: 0 }));
+          deps.replaceSelectionWith?.(composed);
+        } else {
+          reconcileParagraphFromDom(paragraphId);
+          if (composed.length > 0 && deps.textOf(paragraphId) === modelBefore) {
+            deps.setSelection(collapsedAt({ paragraphId, offset: modelBefore.length }));
+            deps.replaceSelectionWith?.(composed);
+          }
+        }
       }
 
       session.endComposition();

@@ -8,9 +8,10 @@
 // Three ways it could not see one:
 //
 //   - The text is not inside a `[data-start]` span. An empty paragraph paints a line holding
-//     nothing but a `<br>`, so the browser is handed the LINE as the selection node and
-//     composes a bare text node into it. Chinese could not be typed at the start of an empty
-//     paragraph at all (#190).
+//     an empty-line host, so the browser is handed the LINE as the selection node and
+//     composes into it. Chinese could not be typed at the start of an empty paragraph at all
+//     (#190). Some Windows CJK IMEs additionally finish with `compositionend.data` only —
+//     no painted glyphs — which must still commit (empty list items especially).
 //   - The paragraph is painted MORE THAN ONCE. A shared header or footer repaints the same
 //     paragraph ids on every page, so a document-wide scan read a three-page header back as
 //     three concatenated copies of itself and then wrote the extra two into the part.
@@ -224,6 +225,32 @@ describe('#190 composition at offset 0 of an empty paragraph', () => {
       expect(surface.session.bodyText()).toBe('');
     });
   });
+
+  test('compositionend.data alone commits into an empty paragraph (no DOM glyphs)', () => {
+    // Windows CJK IMEs often leave event.data and clear the preedit before readback runs.
+    withSurface(docx('<w:p/>'), (surface, container) => {
+      const id = surface.session.paragraphIds()[0]!;
+      caretAt(surface, id, 0);
+      const pages = container.querySelector('.docx-pages')!;
+      pages.dispatchEvent(new CompositionEvent('compositionstart', { bubbles: true }));
+      pages.dispatchEvent(compositionEnd(COMPOSED));
+      expect(surface.state().lastRejection).toBeNull();
+      expect(surface.session.bodyText()).toBe(COMPOSED);
+      expect(surface.state().selection.head).toEqual({ paragraphId: id, offset: COMPOSED.length });
+    });
+  });
+
+  test('the empty-line host ZWSP is not committed as model text', () => {
+    withSurface(docx('<w:p/>'), (surface, container) => {
+      const id = surface.session.paragraphIds()[0]!;
+      caretAt(surface, id, 0);
+      expect(container.querySelector('[data-docx-empty-line-host]')?.textContent).toBe('\u200b');
+      const pages = container.querySelector('.docx-pages')!;
+      pages.dispatchEvent(new CompositionEvent('compositionstart', { bubbles: true }));
+      pages.dispatchEvent(new CompositionEvent('compositionend', { bubbles: true }));
+      expect(surface.session.bodyText()).toBe('');
+    });
+  });
 });
 
 describe('painted furniture is never composed into the document', () => {
@@ -238,6 +265,19 @@ describe('painted furniture is never composed into the document', () => {
       expect(marker?.textContent).toBe('1.');
       compose(container, (scope) => composeIntoLine(scope, id, COMPOSED));
       expect(surface.session.bodyText()).toBe(COMPOSED);
+    });
+  });
+
+  test('an empty LIST item commits from compositionend.data when the DOM kept no glyphs', () => {
+    withSurface(docx(LIST_ITEM), (surface, container) => {
+      const id = surface.session.paragraphIds()[0]!;
+      caretAt(surface, id, 0);
+      expect(container.querySelector('.docx-list-marker')?.textContent).toBe('1.');
+      const pages = container.querySelector('.docx-pages')!;
+      pages.dispatchEvent(new CompositionEvent('compositionstart', { bubbles: true }));
+      pages.dispatchEvent(compositionEnd(COMPOSED));
+      expect(surface.session.bodyText()).toBe(COMPOSED);
+      expect(surface.state().selection.head).toEqual({ paragraphId: id, offset: COMPOSED.length });
     });
   });
 });
