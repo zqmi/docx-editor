@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from 'bun:test';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { docx } from './paginated-surface-fixtures.ts';
 import { parseRefLinkInstruction } from '../../layout/field-ref-link.ts';

@@ -32,7 +32,7 @@ Core's CHANGELOG has no collaboration entry. The surface exists only behind
 pending changesets, so this move needs no deprecation shim.
 
 `packages/pro/src/__tests__/package-dependencies.test.ts` currently asserts
-that `dependencies` is empty and that `@zqmi/docx-editor-core` is a peer with a
+that `dependencies` is empty and that `@onsitesai/docx-editor-core` is a peer with a
 `~same.minor` range.
 
 ## Goals / Non-Goals
@@ -311,9 +311,9 @@ the signaling client.
 deleted:
 
 1. Keep "the engine is a peer, so the consumer resolves one copy of it".
-   `@zqmi/docx-editor-core` stays a `~same.minor` peer and is never a regular
+   `@onsitesai/docx-editor-core` stays a `~same.minor` peer and is never a regular
    dependency.
-2. Keep the same assertion for `@zqmi/docx-editor-react` and
+2. Keep the same assertion for `@onsitesai/docx-editor-react` and
    `@docx-editor.dev/vue`.
 3. Replace "there are no runtime dependencies left to nest" with: the only
    `dependencies` key is `y-protocols`.
@@ -332,7 +332,7 @@ _Rejected alternatives:_
 - Delete `package-dependencies.test.ts`. The one-engine rule would have no
   gate.
 - Widen the test to allow any `dependencies`. A later change would add
-  `@zqmi/docx-editor-core` as a regular dependency.
+  `@onsitesai/docx-editor-core` as a regular dependency.
 - Keep `@docx-editor.dev/collaboration-yjs` and depend on it from Pro. The
   owner decided on one Pro install.
 - Make `yjs` a regular dependency of Pro. Review-only apps would install it.

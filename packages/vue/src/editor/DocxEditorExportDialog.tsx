@@ -1,6 +1,6 @@
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { defineComponent, type CSSProperties, type PropType } from 'vue';
-import type { ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportFormat } from '@onsitesai/docx-editor-core/editor';
 import { useTranslation } from '../i18n';
 import { NativeDialog } from './dialog-parts';
 

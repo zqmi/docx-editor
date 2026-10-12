@@ -3,7 +3,7 @@
 // Find pane drive the same session, so state set here shows in the pane and back.
 
 import { computed, shallowRef, toValue, watch, type ComputedRef } from 'vue';
-import type { TextMatch } from '@zqmi/docx-editor-core/contracts/editor';
+import type { TextMatch } from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   createDocumentSearch,
   SEARCH_DEBOUNCE_MS,
@@ -16,7 +16,7 @@ import {
   type DocumentSearchNavigateOptions,
   type DocumentSearchOptions,
   type DocumentSearchState,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { scopeDispose } from '../scope-dispose';
 import type { MaybeRefOrGetter } from '../../maybe-ref-or-getter';
 import { useDocxEditor } from '../context';

@@ -9,7 +9,7 @@ import { DEFAULT_REVISION_MARKUP } from '../../contracts/revision-markup.ts';
 // runtime failure: flip any single field and the snapshots must compare unequal.
 
 import { describe, expect, test } from 'bun:test';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
 import { snapshotsEqual } from '../docx-editor-equality.ts';
 
 const BASELINE: EditorSnapshot = {

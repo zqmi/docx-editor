@@ -15,7 +15,7 @@ import {
   Fragment,
   type KeyboardEvent,
 } from 'react';
-import type { TableBorderStyle } from '@zqmi/docx-editor-core/contracts/editor';
+import type { TableBorderStyle } from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   TABLE_BORDER_STYLE_OPTIONS,
   TABLE_BORDER_TARGET_OPTIONS,
@@ -24,7 +24,7 @@ import {
   tableChromeLabelKeyForTarget,
   type TableBorderTargetValue,
   type TableChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useToolbarLabel } from './toolbar-context';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from './ToolbarButton';
 import type { ToolbarSlotPartComponent } from './parts';

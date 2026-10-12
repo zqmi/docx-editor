@@ -10,7 +10,7 @@ import type {
   DocxEditorNotePreviewProps,
   DocxEditorNotesContextMenuProps,
 } from './note-popup-parts';
-import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { TranslationKey } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../i18n';
 import { createContext, useContext } from 'react';
 import { renderPopup, type DocxEditorPopup } from './popup-renderer';

@@ -4,8 +4,8 @@ import '../../../packages/react/test/dom-setup.ts';
 
 import { afterEach, beforeEach, expect, mock, test } from 'bun:test';
 import { act, cleanup, fireEvent, render, within } from '@testing-library/react';
-import type { CollaborationFailure } from '@zqmi/docx-editor-core/collaboration';
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import type { CollaborationFailure } from '@onsitesai/docx-editor-core/collaboration';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { exampleText } from '../../shared/example-text';
 import { CollaborationControl, type CollaborationControlProps } from './CollaborationDemo';
 

@@ -97,7 +97,7 @@ Pass review and custom-node modules through the hook’s `modules` option. Pass 
 
 ```tsx
 import { useRef } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
+import { DocxEditor, type DocxEditorRef } from '@onsitesai/docx-editor-react';
 import { useWebrtcCollaboration } from '@docx-editor.dev/pro/react/webrtc';
 
 type CollaborativeEditorProps = {
@@ -220,7 +220,7 @@ A collaborative root needs three values from the room. `key` remounts the editor
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { DocxEditorCollaboration, DocxEditorCollaborationRoot } from '@docx-editor.dev/pro/react';
 import {
   useHocuspocusCollaboration,
@@ -540,7 +540,7 @@ For production, pass your signaling URLs to `connect` or `room`. Also provide yo
 Import the hook from `@docx-editor.dev/pro/react/hocuspocus`. Import the Vue composable from `@docx-editor.dev/pro/vue/hocuspocus`.
 
 ```tsx
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { useHocuspocusCollaboration } from '@docx-editor.dev/pro/react/hocuspocus';
 
 export function ServerBackedEditor({
@@ -801,16 +801,16 @@ Keep one authority per document at a time:
 
 ## Use the replication contracts
 
-Use `@zqmi/docx-editor-core/collaboration/replication` when you implement document replication. It exports the document port and change journal contracts.
+Use `@onsitesai/docx-editor-core/collaboration/replication` when you implement document replication. It exports the document port and change journal contracts.
 
 ```ts
 import type {
   CollaborationDocumentPort,
   CanonicalPrimitiveJournal,
-} from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
 ```
 
-For status, participant, and remote selection types, import `@zqmi/docx-editor-core/collaboration`. You do not need the replication contracts for these controls.
+For status, participant, and remote selection types, import `@onsitesai/docx-editor-core/collaboration`. You do not need the replication contracts for these controls.
 
 ## Integrate a custom Yjs provider
 

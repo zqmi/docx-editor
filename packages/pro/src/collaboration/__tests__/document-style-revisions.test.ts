@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { afterEach, expect, test } from 'bun:test';
-import { planRevisionBatch, serializeOoxmlPart, stylesPartOf } from '@zqmi/docx-editor-core/store';
+import { planRevisionBatch, serializeOoxmlPart, stylesPartOf } from '@onsitesai/docx-editor-core/store';
 import { commitSessionTreeOpsAtomic } from '../../../../core/src/binding/tree-session-apply.ts';
 import { createPeerHarness, zipDocument, W, R, REL } from './document-peer-support.ts';
 const peers = createPeerHarness('shared-style-revisions');

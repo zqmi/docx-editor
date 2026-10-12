@@ -20,7 +20,7 @@ import {
   zipDocument,
   type Peer,
 } from './document-peer-support.ts';
-import type { StoryScope } from '@zqmi/docx-editor-core/store';
+import type { StoryScope } from '@onsitesai/docx-editor-core/store';
 
 const DATE = '2026-03-26T11:00:00Z';
 const QA = { id: '1', author: 'QA', date: DATE };
@@ -153,7 +153,7 @@ for (const action of ['accept', 'reject'] as const) {
     );
     const { alice, bob } = await peers.pair(bytes);
     const { planRevisionBatch, revisionItemsOf, reviewItemKey } =
-      await import('@zqmi/docx-editor-core/store');
+      await import('@onsitesai/docx-editor-core/store');
     const part = alice.store.bodyStore().part;
     const keys = revisionItemsOf(part)
       .filter((item) => item.author === 'Ada')
@@ -176,7 +176,7 @@ for (const action of ['accept', 'reject'] as const) {
         '<w:tc><w:p><w:ins w:id="1" w:author="Ada"><w:r><w:t>selected</w:t></w:r></w:ins></w:p></w:tc></w:tr></w:tbl><w:p/>'
     );
     const { alice, bob } = await peers.pair(bytes);
-    const { planRevisionBatch, revisionItemsOf } = await import('@zqmi/docx-editor-core/store');
+    const { planRevisionBatch, revisionItemsOf } = await import('@onsitesai/docx-editor-core/store');
     const batch = planRevisionBatch(alice.store.bodyStore().part, action);
     expect(batch.result.resolved).toHaveLength(1);
     expect(batch.result.skipped).toHaveLength(1);

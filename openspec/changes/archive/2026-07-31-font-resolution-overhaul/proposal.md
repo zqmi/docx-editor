@@ -17,7 +17,7 @@ which are proprietary and cannot be bundled.
   builds (or extends) the shaped-measurement font set from those deobfuscated bytes
   automatically — no config, no assets, no network. Explicit `config.fonts` sources
   take precedence over embedded faces on family/weight/style collision.
-- **New `@zqmi/docx-editor-fonts` companion package.** Ships metric-compatible libre
+- **New `@onsitesai/docx-editor-fonts` companion package.** Ships metric-compatible libre
   substitutes for Word's default faces (Carlito→Calibri, Caladea→Cambria, Liberation
   Serif/Sans/Mono→Times New Roman/Arial/Courier New; OFL-licensed) as lazily loaded
   assets plus a helper that returns a ready `FontConfiguration` fragment including the
@@ -39,7 +39,7 @@ which are proprietary and cannot be bundled.
 - `embedded-font-autowire`: Embedded DOCX fonts flow into shaped measurement
   automatically on load, with validation, size caps, and precedence rules against
   explicitly configured sources.
-- `default-font-substitutes`: The `@zqmi/docx-editor-fonts` package — metric-compatible
+- `default-font-substitutes`: The `@onsitesai/docx-editor-fonts` package — metric-compatible
   substitute faces, their substitution map, lazy asset loading, and the helper that
   yields a `FontConfiguration` fragment.
 - `font-fetch-cache`: The `loadFonts` helper — explicit URL map in, hash-verified and
@@ -59,7 +59,7 @@ which are proprietary and cannot be bundled.
   sources; keep hard caps (`HARD_MAX_FONT_BYTES` et al.) authoritative.
 - `packages/core/src/store/package/embedded-fonts.ts` — already exists; gains a
   consumer. Validation stays in the font-resource lane, not here.
-- New workspace package `packages/fonts` (`@zqmi/docx-editor-fonts`) — added to the
+- New workspace package `packages/fonts` (`@onsitesai/docx-editor-fonts`) — added to the
   fixed-version release group, changesets, API Extractor snapshot, parity checks.
 - New core helper (exported from core) for `loadFonts`; uses the existing
   `sha256FontBytes` hash format.

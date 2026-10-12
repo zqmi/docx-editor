@@ -5,15 +5,15 @@ import type { DocxEditorChildren } from '../../docx-editor-children';
 import { refAsRefObject, type RefObject } from '../../docx-editor-ref-object';
 // Image properties dialog — one atomic `setImageProperties` on Apply.
 
-import type { EditorSnapshot, SelectedImageState } from '@zqmi/docx-editor-core/contracts/editor';
-import type { DrawingPositionInput, ImageWrapTarget } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot, SelectedImageState } from '@onsitesai/docx-editor-core/contracts/editor';
+import type { DrawingPositionInput, ImageWrapTarget } from '@onsitesai/docx-editor-core/editor';
 import {
   DRAWING_REL_FROM_H,
   DRAWING_REL_FROM_V,
   IMAGE_WRAP_TARGETS,
   positionInputFromPropertiesCommand,
   validateDrawingPositionInput,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useTranslation } from '../../i18n';
 import { useStableDocxId } from '../../lib/stable-id';
 import { useDocxEditor } from '../context';

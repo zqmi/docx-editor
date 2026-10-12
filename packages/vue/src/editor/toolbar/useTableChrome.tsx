@@ -11,15 +11,15 @@ import {
   type ComputedRef,
   type InjectionKey,
 } from 'vue';
-import type { DocumentEditingMode, EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocumentEditingMode, EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import {
   DEFAULT_TABLE_CHROME_DRAFT,
   runTableChromeCommand,
   tableChromeToolbarState,
   type TableChromeDraft,
   type TableChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorEvent } from '../useEditorEvent';
 import { useEditorState } from '../useEditorState';

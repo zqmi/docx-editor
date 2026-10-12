@@ -22,7 +22,7 @@ import {
   type ChromeMenuEntry,
   type ChromeMenuId,
   type ChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useEditorCommand } from '../useEditorCommand';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from '../toolbar/ToolbarButton';
 import {

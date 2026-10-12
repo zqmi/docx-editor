@@ -8,7 +8,7 @@ import './dom-setup.ts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createElement } from 'react';
 import { act, cleanup, render } from '@testing-library/react';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';

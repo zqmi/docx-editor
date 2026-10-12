@@ -13,8 +13,8 @@ import {
   diffSemanticDigests,
   readOoxmlPackage,
   semanticDigest,
-} from '@zqmi/docx-editor-core/store';
-import { caretAt, createFixedMeasurer, type SemanticLayout } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import { caretAt, createFixedMeasurer, type SemanticLayout } from '@onsitesai/docx-editor-core/layout';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

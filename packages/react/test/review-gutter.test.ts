@@ -15,8 +15,8 @@ import {
   REVIEW_PANE_GUTTER,
   reviewGutter,
 } from '../src/editor/review-gutter.ts';
-import type { ZoomMode } from '@zqmi/docx-editor-core/contracts/editor';
-import { reviewPaneEntitledZoom, type ReviewPaneOverflow } from '@zqmi/docx-editor-core/editor';
+import type { ZoomMode } from '@onsitesai/docx-editor-core/contracts/editor';
+import { reviewPaneEntitledZoom, type ReviewPaneOverflow } from '@onsitesai/docx-editor-core/editor';
 
 // Letter at 100%: 8.5in x 96dpi.
 const PAGE = 816;

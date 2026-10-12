@@ -10,7 +10,7 @@
  * @packageDocumentation
  * @public
  */
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 
 /**
  * One entry of `Editor.getDocumentStyles()` — the engine's document-style

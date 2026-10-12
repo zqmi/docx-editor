@@ -1,8 +1,8 @@
 import { usePickerKeyboard } from './usePickerKeyboard';
 import { computed, defineComponent, ref, watch, type PropType, type VNode } from 'vue';
 import type { DocxEditorChildren } from '../../docx-editor-children';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
-import { commandForSlotValue, type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
+import { commandForSlotValue, type ChromeSlotId } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';
 import { useEditorCommand } from '../useEditorCommand';

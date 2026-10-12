@@ -1,5 +1,5 @@
 import { shallowRef, toValue, watch, type ShallowRef } from 'vue';
-import type { HighlightHit, HighlightRange } from '@zqmi/docx-editor-core/contracts/editor';
+import type { HighlightHit, HighlightRange } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { MaybeRefOrGetter } from '../maybe-ref-or-getter';
 import { scopeDispose } from './scope-dispose';
 import { useDocxEditor } from './context';

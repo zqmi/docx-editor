@@ -4,7 +4,7 @@ import {
   serializeOoxmlPart,
   TreeDocumentStore,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { treeSchema } from '../tree-schema.ts';
 import { bodyParagraphs, docToTreeOps, treeToDoc } from '../tree-binding.ts';
 

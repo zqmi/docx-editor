@@ -1,7 +1,7 @@
 // Legacy default-paragraph size/alignment exceptions inside tables. The
 // `strictTableStyleHierarchy` compatibility rule (`overrideTableStyleFontSizeAndJustification`)
 // turns them off.
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 
 /**
  * Only the default paragraph style is filtered, never derived styles or direct formatting.

@@ -1,7 +1,7 @@
 // An empty paragraph that carries a section mark before a continuous section takes no flow height.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,

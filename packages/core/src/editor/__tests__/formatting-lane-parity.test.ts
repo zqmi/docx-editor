@@ -17,7 +17,7 @@ import {
   runsCovering,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   hasAuthoredRunProperties,
   runPropertyEdits as surfaceRunPropertyEdits,

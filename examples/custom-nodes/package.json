@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
-    "@zqmi/docx-editor-i18n": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-i18n": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
-    "@zqmi/docx-editor-react": "workspace:*",
+    "@onsitesai/docx-editor-react": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "zod": "^4.4.3"

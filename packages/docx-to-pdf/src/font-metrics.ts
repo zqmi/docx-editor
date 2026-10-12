@@ -3,7 +3,7 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-pdf/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import type { ExportAdmittedFontFace } from '@zqmi/docx-editor-core/export';
+import type { ExportAdmittedFontFace } from '@onsitesai/docx-editor-core/export';
 
 /** Read static SFNT decoration metrics from the same selected face that Core admitted. */
 export function strikeMetrics(

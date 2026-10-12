@@ -6,11 +6,11 @@ import { verifyPublication } from './publication.mjs';
 const bytes = 'tested package bytes';
 const integrity = 'sha512-' + createHash('sha512').update(bytes).digest('base64');
 const published = {
-  name: '@zqmi/docx-editor-core',
+  name: '@onsitesai/docx-editor-core',
   version: '2.23.0',
   dist: {
     integrity,
-    tarball: 'https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.23.0.tgz',
+    tarball: 'https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.23.0.tgz',
   },
 };
 

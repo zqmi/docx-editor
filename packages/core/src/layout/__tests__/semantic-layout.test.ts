@@ -1,7 +1,7 @@
 // Revision-tagged semantic layout records (tasks 7.1, 7.3).
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import {
   fragmentsOfParagraph,

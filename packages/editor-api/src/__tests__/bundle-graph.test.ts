@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // shaper and a ProseMirror binding into what a server imports, while every file in
 // `packages/editor-api/src` still looks neutral.
 //
-// So this walk crosses the workspace boundary. It resolves `@zqmi/docx-editor-core/*` through
+// So this walk crosses the workspace boundary. It resolves `@onsitesai/docx-editor-core/*` through
 // core's `paths` table rather than by guessing directory names, so a lane that moves is still
 // followed instead of silently ending the walk. That table, not the `exports` map, is what
 // answers "which SOURCE file is this subpath": the export map points at built output.
@@ -118,8 +118,8 @@ describe('the walk itself', () => {
     // Every assertion below is an absence. An absence over an empty graph is worth nothing.
     expect(server.files.size).toBeGreaterThan(20);
     expect(browser.files.size).toBeGreaterThan(server.files.size);
-    expect([...server.lanes]).toContain('@zqmi/docx-editor-core/automation');
-    expect([...browser.lanes]).toContain('@zqmi/docx-editor-core/editor');
+    expect([...server.lanes]).toContain('@onsitesai/docx-editor-core/automation');
+    expect([...browser.lanes]).toContain('@onsitesai/docx-editor-core/editor');
     expect([...server.files].some((file) => file.startsWith(CORE))).toBe(true);
   });
 
@@ -181,7 +181,7 @@ describe('the browser bundle', () => {
     // Stated as lanes and file count rather than as third-party names on purpose. The editor lane
     // is reached — that is what makes this entry different from the root — but WHICH third-party
     // names come with it is the engine's business and changes as the engine drops dependencies.
-    expect([...browser.lanes]).toContain('@zqmi/docx-editor-core/editor');
+    expect([...browser.lanes]).toContain('@onsitesai/docx-editor-core/editor');
     expect(browser.files.size).toBeGreaterThan(server.files.size);
     expect([...browser.files].filter((file) => !server.files.has(file)).length).toBeGreaterThan(5);
   });

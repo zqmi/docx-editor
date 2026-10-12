@@ -8,7 +8,7 @@ import {
   canonicalOoxmlFingerprint,
   validateOoxmlPart,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { BackendKind } from './contract.ts';
 import { assertIndependentIdentity } from './identity.ts';
 import {

@@ -11,7 +11,7 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { cleanup, render } from '@testing-library/react';
-import type { Translations } from '@zqmi/docx-editor-i18n';
+import type { Translations } from '@onsitesai/docx-editor-i18n';
 import { DocxEditor } from '../src/components/DocxEditor.tsx';
 import { LocaleProvider } from '../src/i18n/index.ts';
 

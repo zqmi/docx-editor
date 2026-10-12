@@ -6,11 +6,11 @@
 
 import * as Y from 'yjs';
 import { Awareness, applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protocols/awareness';
-import type { TreePackageStore } from '@zqmi/docx-editor-core/store';
+import type { TreePackageStore } from '@onsitesai/docx-editor-core/store';
 import {
   createCollaborationDocumentPort,
   type CollaborationDocumentPort,
-} from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

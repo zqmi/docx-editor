@@ -8,7 +8,7 @@ import {
 } from './developer-reference';
 import { HighlightedCode } from './HighlightedCode';
 
-const INSTALL_COMMAND = 'npm install @docx-editor.dev/docx-to-markdown @zqmi/docx-editor-fonts';
+const INSTALL_COMMAND = 'npm install @docx-editor.dev/docx-to-markdown @onsitesai/docx-editor-fonts';
 
 export function DeveloperView({
   tab,

@@ -13,7 +13,7 @@ import { CONTROL_TAG, CONTROL_TEXT } from './story-parity-fixture.ts';
 import { caretInControl, openStory } from './story-parity-harness.ts';
 import { strToU8, zipSync } from 'fflate';
 import { createDocxEditor } from '../docx-editor.ts';
-import { paragraphFragmentsOfBlocks } from '@zqmi/docx-editor-core/layout';
+import { paragraphFragmentsOfBlocks } from '@onsitesai/docx-editor-core/layout';
 
 describe('the contentControls query covers every story', () => {
   test('the list holds one control per story, whatever the caret is in', () => {

@@ -1,5 +1,5 @@
 import { ref, toValue, watch, type Ref } from 'vue';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { MaybeRefOrGetter } from './maybe-ref-or-getter';
 import { scopeDispose } from './editor/scope-dispose';
 

@@ -17,7 +17,7 @@ import {
   collectReviewItems as engineCollectReviewItems,
   findNode,
   revisionItemsOf,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { EditorModule } from '../../contracts/modules.ts';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 

@@ -1,6 +1,6 @@
 // Where a numbering level's `w:pPr` ranks among a list paragraph's own formatting.
 
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
 import { propertiesOf } from './paragraph-flow.ts';
 import { styleChain } from './style-chain.ts';

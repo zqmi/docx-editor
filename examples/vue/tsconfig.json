@@ -13,8 +13,8 @@
     "skipLibCheck": true,
     "paths": {
       "@docx-editor.dev/vue": ["../../packages/vue/src/index.ts"],
-      "@zqmi/docx-editor-core": ["../../packages/core/src/core.ts"],
-      "@zqmi/docx-editor-core/*": ["../../packages/core/src/*"]
+      "@onsitesai/docx-editor-core": ["../../packages/core/src/core.ts"],
+      "@onsitesai/docx-editor-core/*": ["../../packages/core/src/*"]
     }
   },
   "include": ["src"]

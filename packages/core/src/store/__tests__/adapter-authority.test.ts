@@ -11,7 +11,7 @@ import { PACKAGES_ROOT } from './lane-paths.ts';
 const PACKAGES_DIR = PACKAGES_ROOT;
 
 const ADAPTERS = [
-  { name: '@zqmi/docx-editor-react', dir: 'react' },
+  { name: '@onsitesai/docx-editor-react', dir: 'react' },
   { name: '@docx-editor.dev/vue', dir: 'vue' },
 ] as const;
 
@@ -27,18 +27,18 @@ const FORBIDDEN_PACKAGE_ROOTS = [
   'prosemirror-inputrules',
   'prosemirror-schema-basic',
   'prosemirror-schema-list',
-  '@zqmi/docx-editor-core/binding',
-  '@zqmi/docx-editor-core/layout',
-  '@zqmi/docx-editor-core/output',
+  '@onsitesai/docx-editor-core/binding',
+  '@onsitesai/docx-editor-core/layout',
+  '@onsitesai/docx-editor-core/output',
 ];
 
 /** Workspace dependencies that keep adapters thin without granting private engine authority. */
 const ALLOWED_ENGINE_DEPS = new Set([
-  '@zqmi/docx-editor-core',
-  '@zqmi/docx-editor-core/editor',
+  '@onsitesai/docx-editor-core',
+  '@onsitesai/docx-editor-core/editor',
   // A leaf string catalogue, not an engine lane: no document model, geometry, or editing
   // authority, so it cannot violate the "no engine internals in an adapter" rule.
-  '@zqmi/docx-editor-i18n',
+  '@onsitesai/docx-editor-i18n',
 ]);
 
 /** Source tokens that indicate geometry derivation or PM bypass (comments stripped). */
@@ -232,8 +232,8 @@ describe('adapter authority rule fixtures', () => {
     expect(auditImportSpecifiers(['prosemirror-state', './local'])).toEqual([
       'forbidden package import: prosemirror-state',
     ]);
-    expect(auditImportSpecifiers(['@zqmi/docx-editor-core/binding'])).toEqual([
-      'forbidden package import: @zqmi/docx-editor-core/binding',
+    expect(auditImportSpecifiers(['@onsitesai/docx-editor-core/binding'])).toEqual([
+      'forbidden package import: @onsitesai/docx-editor-core/binding',
     ]);
     expect(auditImportSpecifiers(['examples/shared/mountDocxEditor'])).toEqual([
       'example orchestration import: examples/shared/mountDocxEditor',
@@ -257,7 +257,7 @@ describe('adapter authority rule fixtures', () => {
     const commented = `
       // adapters must not import ProseMirror
       /* EditorView is forbidden */
-      import { createEditor } from '@zqmi/docx-editor-core/editor';
+      import { createEditor } from '@onsitesai/docx-editor-core/editor';
     `;
     expect(auditForbiddenSource(commented)).toEqual([]);
   });
@@ -270,9 +270,9 @@ describe('adapter authority rule fixtures', () => {
     ).toEqual(['devDependencies: forbidden prosemirror-view']);
     expect(
       auditAdapterPackageJson({
-        dependencies: { '@zqmi/docx-editor-core/layout': 'workspace:*' },
+        dependencies: { '@onsitesai/docx-editor-core/layout': 'workspace:*' },
       })
-    ).toEqual(['dependencies: forbidden @zqmi/docx-editor-core/layout']);
+    ).toEqual(['dependencies: forbidden @onsitesai/docx-editor-core/layout']);
   });
 
   test('detects missing public editor facade wiring', () => {
@@ -281,13 +281,13 @@ describe('adapter authority rule fixtures', () => {
     // must not read as composition-root wiring.
     expect(
       auditUsesPublicEditorFacade([
-        "import { createEditor } from '@zqmi/docx-editor-core/editor';",
-        "import type { EditorHost } from '@zqmi/docx-editor-core/contracts/editor';",
+        "import { createEditor } from '@onsitesai/docx-editor-core/editor';",
+        "import type { EditorHost } from '@onsitesai/docx-editor-core/contracts/editor';",
       ])
     ).toBe(false);
     expect(
       auditUsesPublicEditorFacade([
-        "import { createDocxEditor } from '@zqmi/docx-editor-core/editor';",
+        "import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';",
       ])
     ).toBe(true);
   });

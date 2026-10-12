@@ -1,4 +1,4 @@
-import type { AnchoredDrawingRecord, InlineDrawingRecord } from '@zqmi/docx-editor-core/layout';
+import type { AnchoredDrawingRecord, InlineDrawingRecord } from '@onsitesai/docx-editor-core/layout';
 import type { MarkdownImageAsset, MarkdownImageOptions } from './media-types.ts';
 import type { MarkdownWarning } from './markdown-types.ts';
 import { escapeText } from './markdown-inline.ts';

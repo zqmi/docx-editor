@@ -9,8 +9,8 @@ import {
   paragraphOffsetIndex,
   type OoxmlElement,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 
 /**
  * The control's addressable content, or null when it holds nothing addressable.

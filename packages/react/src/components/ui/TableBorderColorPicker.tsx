@@ -6,7 +6,7 @@
  */
 
 import { useCallback } from 'react';
-import type { ColorValue, Theme } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ColorValue, Theme } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { TableAction } from './TableToolbar';
 import { ColorPicker } from './ColorPicker';
 import { resolveColorToHex } from '../../lib/colorResolver';

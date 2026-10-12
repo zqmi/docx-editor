@@ -2,7 +2,7 @@
 // Word handles with the same mechanism: a marker WIDER than its hanging slot.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,

@@ -6,7 +6,7 @@
     "fill": "bun run fill-template.ts ../remix/public/sample.docx filled.docx"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@docx-editor.dev/editor-api": "workspace:*"
   }
 }

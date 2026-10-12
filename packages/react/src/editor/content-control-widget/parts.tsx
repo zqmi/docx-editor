@@ -6,7 +6,7 @@ import {
   calendarDateForKey,
   calendarDateText,
   type CalendarDay,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../../docx-editor-children';
 import { Slot } from '../toolbar/Slot';
 import { useFormControlTranslate } from '../form-control-translate';

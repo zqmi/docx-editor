@@ -10,7 +10,7 @@ import {
   projectDrawing,
 } from '../../store/package/drawing-projection.ts';
 import type { ImageResourceState } from '../../store/package/image-resources.ts';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { InlineDrawingLayoutContext } from '../drawing-layout.ts';
 import {
   createFixedMeasurer,

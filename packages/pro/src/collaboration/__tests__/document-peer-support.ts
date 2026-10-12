@@ -23,8 +23,8 @@ import {
   type OoxmlPackage,
   type StoryScope,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

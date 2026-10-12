@@ -1,6 +1,6 @@
 ## Why
 
-The React and Vue adapters each re-implement the same editor orchestration. `@zqmi/docx-editor-core` already owns every underlying algorithm with zero framework imports, but a layer of pure `(view, args) → result` logic still lives twice — in `packages/react/` and `packages/vue/` — and has silently drifted. Issue #696 tracks unifying this. Tier 1 is the subset that can be centralized verbatim: pure logic with ~zero divergence, each centralize independently shippable, deleting two copies and (mostly) introducing no public API change. It is a pure win regardless of whether the Tier 2 engine spine ever lands, and it closes three latent Vue parity gaps along the way.
+The React and Vue adapters each re-implement the same editor orchestration. `@onsitesai/docx-editor-core` already owns every underlying algorithm with zero framework imports, but a layer of pure `(view, args) → result` logic still lives twice — in `packages/react/` and `packages/vue/` — and has silently drifted. Issue #696 tracks unifying this. Tier 1 is the subset that can be centralized verbatim: pure logic with ~zero divergence, each centralize independently shippable, deleting two copies and (mostly) introducing no public API change. It is a pure win regardless of whether the Tier 2 engine spine ever lands, and it closes three latent Vue parity gaps along the way.
 
 ## What Changes
 
@@ -34,8 +34,8 @@ Out of scope (Tier 2/3): the `DocxEditorEngine` spine, the transaction→repaint
 
 ## Impact
 
-- **`@zqmi/docx-editor-core`**: gains eight new pure modules + matching `package.json` `exports` keys (explicit, no wildcards).
-- **`@zqmi/docx-editor-react`**: duplicated helpers/internals become thin re-exports or delegations; no public ref/prop API change in signature. `applyFormatting`/`setParagraphStyle`/comment methods re-verified via `api:extract` + parity contract.
+- **`@onsitesai/docx-editor-core`**: gains eight new pure modules + matching `package.json` `exports` keys (explicit, no wildcards).
+- **`@onsitesai/docx-editor-react`**: duplicated helpers/internals become thin re-exports or delegations; no public ref/prop API change in signature. `applyFormatting`/`setParagraphStyle`/comment methods re-verified via `api:extract` + parity contract.
 - **`@docx-editor.dev/vue`**: same lifts; **gains** cell-selection highlight, drag auto-scroll, and a comment/revision ID fix (no more separate-max collisions after deletes).
 - **Parity contract**: ref methods already sit in `pairedViaInheritance`; this tightens the actual implementations behind that contract. CI gate `bun run check:parity-contract` runs on the PRs touching public surface.
 - **Vanilla JS package (#89)**: unblocked incrementally — every centralized function is one less thing the future thin wrapper must re-implement.

@@ -1,5 +1,5 @@
 import { ToolbarColorSwatch } from './toolbar/ColorSplit';
-import { observeContentControlPopup } from '@zqmi/docx-editor-core/editor';
+import { observeContentControlPopup } from '@onsitesai/docx-editor-core/editor';
 import { useId, useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 export const revisionColor = (value: string) =>

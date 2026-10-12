@@ -13,7 +13,7 @@ const __configDir = path.dirname(fileURLToPath(import.meta.url));
 // fall back to the in-repo source copy when building from the workspace.
 const corePreset = (() => {
   try {
-    return require('@zqmi/docx-editor-core/tailwind-preset.cjs');
+    return require('@onsitesai/docx-editor-core/tailwind-preset.cjs');
   } catch {
     return require(path.join(__configDir, 'packages/core/tailwind-preset.cjs'));
   }

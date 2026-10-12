@@ -21,7 +21,7 @@ import {
   canonicalFingerprintNodeVisits,
   canonicalTreeDifference,
 } from '../../../../core/src/store/package/ooxml-serialize.ts';
-import { paragraphTextOf, type OoxmlNode, type TreeModelChange } from '@zqmi/docx-editor-core/store';
+import { paragraphTextOf, type OoxmlNode, type TreeModelChange } from '@onsitesai/docx-editor-core/store';
 import { createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('remote-receive-cost');

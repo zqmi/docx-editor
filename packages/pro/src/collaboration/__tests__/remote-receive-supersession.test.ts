@@ -19,8 +19,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // supersede. Each shape here inserts twice first, which is what splits the run.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
-import type { CanonicalPrimitiveEffect } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
+import type { CanonicalPrimitiveEffect } from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   BODY,
   createPeerHarness,

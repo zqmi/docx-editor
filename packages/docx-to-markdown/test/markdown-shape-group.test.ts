@@ -4,7 +4,7 @@
 // group's size and drop the other members without a trace.
 
 import { describe, expect, test } from 'bun:test';
-import { createFixedMeasurer } from '@zqmi/docx-editor-core/layout';
+import { createFixedMeasurer } from '@onsitesai/docx-editor-core/layout';
 import { exportMarkdown, type MarkdownWarning } from '../src/index.ts';
 import { imageDocx, picture, R } from './media-fixture.ts';
 

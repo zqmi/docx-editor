@@ -1,7 +1,7 @@
 import './dom-setup.ts';
 import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
-import { createDocxEditor, customFonts } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, customFonts } from '@onsitesai/docx-editor-core/editor';
 
 class TestFontFace {
   constructor(

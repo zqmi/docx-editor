@@ -6,7 +6,7 @@ import {
   shownMarkRevision,
   type RevisionAttribution,
   type LineRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { lineContentEdges } from '../layout/pending-line.ts';
 import {
   REVIEW_AUTHOR_SLOTS,

@@ -1,8 +1,8 @@
 import { useEditorState } from './useEditorState';
 import { useEffect, useState } from 'react';
-import type { TextFormFieldDialogSession } from '@zqmi/docx-editor-core/editor';
-import { TEXT_FORM_FORMATS } from '@zqmi/docx-editor-core/editor';
-import type { TextFormFieldOptions } from '@zqmi/docx-editor-core/store';
+import type { TextFormFieldDialogSession } from '@onsitesai/docx-editor-core/editor';
+import { TEXT_FORM_FORMATS } from '@onsitesai/docx-editor-core/editor';
+import type { TextFormFieldOptions } from '@onsitesai/docx-editor-core/store';
 import { useFormControlTranslate } from './form-control-translate';
 import {
   createDialogParts,

@@ -9,7 +9,7 @@ import {
   TreePackageStore,
   type HeadlessDocumentView,
   type OoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { SemanticLayout } from '../../layout/semantic-records.ts';
 import { openDocumentForExport } from '../export-session.ts';
 import { projectReviewArtifacts } from '../review-artifact-projection.ts';

@@ -1,4 +1,4 @@
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { paragraphMergeGroupOf } from './story-roots.ts';
 import { mergeBoundariesOf } from './merged-paragraph-ranges.ts';
 import type { FieldAwarePiece } from './field-pieces.ts';

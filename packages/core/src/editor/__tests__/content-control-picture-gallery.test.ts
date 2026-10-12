@@ -8,7 +8,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { ContentControlWidgetSession } from '../popup-sessions.ts';
 import {
   CT_NS,

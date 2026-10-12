@@ -3,7 +3,7 @@
 // Shared by table command planning and adapter chrome — tint/shade semantics follow
 // reference/quick-ref/themes-colors.md:110-133 (OOXML byte-quantized modifiers).
 
-import type { ColorValue } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ColorValue } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { DocumentThemeColorEntry } from '../binding/document-theme.ts';
 import type { TreeDocColorValue } from '../store/store/tree-op-types.ts';
 

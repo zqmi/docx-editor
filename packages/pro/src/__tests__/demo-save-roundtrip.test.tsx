@@ -15,8 +15,8 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@zqmi/docx-editor-react';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import { DocxEditorContent, DocxEditorRoot, DocxEditorViewport } from '@onsitesai/docx-editor-react';
 import { customNodesModule, defineCustomNode, insertCustomNode, reviewModule } from '../index.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

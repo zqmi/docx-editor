@@ -6,7 +6,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createApp, defineComponent, h, nextTick } from 'vue';
-import type { ContentControlWidgetSession } from '@zqmi/docx-editor-core/editor';
+import type { ContentControlWidgetSession } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorContentControlWidget } from '../src/editor/DocxEditorContentControlWidget';
 import { useContentControlWidget } from '../src/editor/content-control-widget/context';
 

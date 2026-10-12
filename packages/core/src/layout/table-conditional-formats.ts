@@ -1,6 +1,6 @@
 // Which of a table style's conditional formats apply to one cell: `w:tblLook`, `w:cnfStyle`
 // and the layering order of the result.
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 
 function childNamed(node: OoxmlElement, localName: string): OoxmlElement | undefined {
   for (const child of node.children) {

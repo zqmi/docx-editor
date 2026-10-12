@@ -2,7 +2,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../../layout/semantic-layout.ts';
 import type { ParagraphFragmentRecord, SemanticLayout } from '../../layout/semantic-records.ts';
 import { createSurfaceCaret } from '../surface-caret.ts';

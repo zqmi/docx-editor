@@ -13,7 +13,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // nothing.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import { buildBookmarkIndex, detectBodyTocs } from '@zqmi/docx-editor-core/store';
+import { buildBookmarkIndex, detectBodyTocs } from '@onsitesai/docx-editor-core/store';
 import { createPeerHarness, walk, zipDocument } from './document-peer-support.ts';
 
 const peers = createPeerHarness('toc-replication-room');

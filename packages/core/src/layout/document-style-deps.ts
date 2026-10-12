@@ -1,6 +1,6 @@
 // Shared style/numbering assembly for browser layout and headless exporters.
 
-import type { HeadlessDocumentView, OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { HeadlessDocumentView, OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { buildNumberingIndex, type NumberingIndex } from './numbering-index.ts';
 import { defaultTabIntervalFromSettings } from './paragraph-tabs.ts';
 import { compatibilityModeFromSettings } from './compatibility/compatibility-profile.ts';

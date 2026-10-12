@@ -5,7 +5,7 @@
 // the fields' historical rendering.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import { createParagraphLayoutCache } from '../layout-cache.ts';

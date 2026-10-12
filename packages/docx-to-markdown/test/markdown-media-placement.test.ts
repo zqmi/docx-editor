@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
-import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
-import type { AnchoredDrawingRecord, ParagraphFragmentRecord } from '@zqmi/docx-editor-core/layout';
+import type { ExportSemanticLayout } from '@onsitesai/docx-editor-core/export';
+import type { AnchoredDrawingRecord, ParagraphFragmentRecord } from '@onsitesai/docx-editor-core/layout';
 import type { MarkdownImageAsset } from '../src/index.ts';
 import { exportMarkdownLayout } from '../src/markdown.ts';
 import { PNG } from './media-fixture.ts';

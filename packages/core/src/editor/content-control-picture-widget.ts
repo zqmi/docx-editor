@@ -6,7 +6,7 @@
 // land through the surface's `replaceImage`, so the trust boundary, the undo unit and the
 // mode rules are the ones every image write already has.
 
-import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { TranslationKey } from '@onsitesai/docx-editor-i18n';
 import { textFormTranslate } from './text-form-field-translations.ts';
 import { armContentControlMenuDismiss } from './content-control-widget-dismiss.ts';
 import {
@@ -14,7 +14,7 @@ import {
   observeContentControlPopup,
 } from './content-control-popup-behavior.ts';
 import { DEFAULT_IMAGE_RESOURCE_LIMITS } from '../store/runtime/limits.ts';
-import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { findDrawingOverlayFrameInLayout } from '../layout/semantic-hit-test.ts';
 import type { SemanticLayout } from '../layout/semantic-records.ts';
 import { sniffImageMime, type SupportedImageMime } from '../store/package/image-resources.ts';

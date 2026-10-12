@@ -4,7 +4,7 @@
 // it sits, even past the text area.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,

@@ -23,7 +23,7 @@ import {
   readOoxmlPackage,
   resolveHeaderFooterPartsBySection,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
@@ -102,7 +102,7 @@ function storyText(
 }
 
 function furnitureFromPackage(
-  pkg: import('@zqmi/docx-editor-core/store').OoxmlPackage,
+  pkg: import('@onsitesai/docx-editor-core/store').OoxmlPackage,
   part: OoxmlPart
 ): readonly (PageFurniture | undefined)[] {
   const sections = enumerateDocumentSections(part);

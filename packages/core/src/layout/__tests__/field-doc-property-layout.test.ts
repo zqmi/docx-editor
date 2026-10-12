@@ -17,7 +17,7 @@ import {
   readOoxmlPart,
   type DocumentProperties,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   layoutSemanticDocument,

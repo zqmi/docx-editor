@@ -11,11 +11,11 @@
     "test": "bun test ./shared/admission.test.ts ./server/stored-room.test.ts ./server/room-migration.test.ts"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
-    "@zqmi/docx-editor-fonts": "workspace:*",
-    "@zqmi/docx-editor-i18n": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-fonts": "workspace:*",
+    "@onsitesai/docx-editor-i18n": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
-    "@zqmi/docx-editor-react": "workspace:*",
+    "@onsitesai/docx-editor-react": "workspace:*",
     "@hocuspocus/provider": "^4.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

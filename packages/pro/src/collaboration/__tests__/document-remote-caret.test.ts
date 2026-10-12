@@ -13,7 +13,7 @@ import { Awareness, applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protoc
 import { createDocumentCollaboration } from '../document-session.ts';
 import { collaborationModule } from '../collaboration-module.ts';
 import { collaborationDocx } from './support.ts';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { createPeerHarness, nodeText, walk, type Peer } from './document-peer-support.ts';
 
 let registeredDom = false;
@@ -29,11 +29,11 @@ afterAll(() => {
 const DOCUMENT_ID = 'remote-caret-room';
 
 type Surface = NonNullable<
-  ReturnType<typeof import('@zqmi/docx-editor-core/editor').createDocxEditor>['surface']
+  ReturnType<typeof import('@onsitesai/docx-editor-core/editor').createDocxEditor>['surface']
 >;
 
 async function editorWithPeer() {
-  const { createDocxEditor } = await import('@zqmi/docx-editor-core/editor');
+  const { createDocxEditor } = await import('@onsitesai/docx-editor-core/editor');
   const harness = createPeerHarness(DOCUMENT_ID);
   const ydoc = new Y.Doc();
   const awareness = new Awareness(ydoc);

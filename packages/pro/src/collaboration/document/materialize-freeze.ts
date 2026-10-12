@@ -17,7 +17,7 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type OoxmlTextNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { elementFrom, withChildren } from './node-shapes.ts';
 import { idOf, type LogicalId } from './identity.ts';
 import type { DocumentRegistry } from './registry.ts';

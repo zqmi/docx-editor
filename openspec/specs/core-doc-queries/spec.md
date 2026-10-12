@@ -8,7 +8,7 @@ Defines framework-neutral contracts for behavior shared by supported adapters.
 
 ### Requirement: Pure document query functions in core
 
-`@zqmi/docx-editor-core` SHALL expose `findInDocument(view, query, opts?)`, `getSelectionInfo(view)`, and `getPageContent(view, layout, pageNumber)` as pure functions taking the `EditorView` (and `Layout` where needed) as explicit parameters. Both adapters SHALL delegate their corresponding ref methods to these functions.
+`@onsitesai/docx-editor-core` SHALL expose `findInDocument(view, query, opts?)`, `getSelectionInfo(view)`, and `getPageContent(view, layout, pageNumber)` as pure functions taking the `EditorView` (and `Layout` where needed) as explicit parameters. Both adapters SHALL delegate their corresponding ref methods to these functions.
 
 #### Scenario: Find matches across the document
 

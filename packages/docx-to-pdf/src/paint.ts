@@ -3,8 +3,8 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-pdf/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import { collectPageChangeBars } from '@zqmi/docx-editor-core/output';
-import { DEFAULT_REVISION_MARKUP, type ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import { collectPageChangeBars } from '@onsitesai/docx-editor-core/output';
+import { DEFAULT_REVISION_MARKUP, type ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 import {
   indexRowRevisions,
   markupBackground,
@@ -16,7 +16,7 @@ import { PDFDocument, type PDFPage } from 'pdf-lib';
 import type {
   ExportSemanticLayout,
   FontBackedExportCapabilities,
-} from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/export';
 import {
   forEachSemanticSpan,
   forEachSemanticStory,
@@ -27,7 +27,7 @@ import {
   type SemanticSpanVisit,
   type SemanticDrawingVisit,
   type TableCellFragmentRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   color,
   flateStream,

@@ -24,11 +24,11 @@ import {
   type OoxmlNode,
   type OoxmlPackage,
   type TreePackageStore,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type {
   CanonicalPrimitiveJournal,
   CollaborationDocumentPort,
-} from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
 import { CT, R, REL, createPeerHarness, walk } from './document-peer-support.ts';
 import { packageFingerprint, saveReopenDigest } from './document-support.ts';
 

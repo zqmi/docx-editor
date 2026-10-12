@@ -197,11 +197,11 @@ Alternative rejected: treating requestAnimationFrame deferral, post-layout bridg
 
 ### D13: Production engine source and publication converge on one core package
 
-All production `packages/engine-*` source moves physically into `packages/core/src/` under enforced internal lanes: `contracts`, `store`, `binding`, `layout`, `output`, `editor`, `sync`, `server`, and `clients`. The repository publishes one engine package, `@zqmi/docx-editor-core`; React, Vue, Nuxt, the `@docx-editor.dev/editor-api` product package, and i18n remain separate adapter/product packages.
+All production `packages/engine-*` source moves physically into `packages/core/src/` under enforced internal lanes: `contracts`, `store`, `binding`, `layout`, `output`, `editor`, `sync`, `server`, and `clients`. The repository publishes one engine package, `@onsitesai/docx-editor-core`; React, Vue, Nuxt, the `@docx-editor.dev/editor-api` product package, and i18n remain separate adapter/product packages.
 
 The physical merge does not create one unrestricted barrel. Intentional subpath exports expose environment-specific entry points such as `.`, `/editor`, `/layout`, `/sync`, and `/server`. The default semantic-core graph remains DOM-free, ProseMirror-free, Yjs-free, transport-neutral, and PDF-free. Lane-specific TypeScript projects, import-graph tests, conditional exports, and bundle-graph checks prevent browser entry points from pulling server code or optional runtime dependencies. React and Vue import the PM-free `/editor` composition boundary.
 
-Migration proceeds lane by lane with temporary compatibility aliases, then removes each `engine-*` workspace package only after its imports, tests, API surface, and runtime graph resolve through `packages/core`. Public API snapshots are updated only for intentional `@zqmi/docx-editor-core` exports.
+Migration proceeds lane by lane with temporary compatibility aliases, then removes each `engine-*` workspace package only after its imports, tests, API surface, and runtime graph resolve through `packages/core`. Public API snapshots are updated only for intentional `@onsitesai/docx-editor-core` exports.
 
 Alternative rejected: moving files into one directory while removing dependency-lane enforcement. That would make the semantic store transitively depend on DOM, ProseMirror, Yjs, server transports, or output backends and would erase the architecture rather than simplify its packaging.
 

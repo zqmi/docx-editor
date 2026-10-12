@@ -1,8 +1,8 @@
 import './dom-setup.ts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { h } from 'vue';
-import { en } from '@zqmi/docx-editor-i18n';
-import type { EditorModule } from '@zqmi/docx-editor-core/editor';
+import { en } from '@onsitesai/docx-editor-i18n';
+import type { EditorModule } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorToolbar } from '../src/editor/toolbar';
 import { mountEditorTree, flush, SOURCE, type MountedEditor } from './helpers/mount';
 

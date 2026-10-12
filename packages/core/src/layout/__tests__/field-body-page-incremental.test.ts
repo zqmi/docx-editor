@@ -10,7 +10,7 @@
 //      and its SECTIONPAGES shows section 2's own page count, distinct from the document NUMPAGES.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,

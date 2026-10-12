@@ -4,7 +4,7 @@ import {
   type TextFormFieldOptions,
   type TextFormFieldType,
   type TextFormFieldRange,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 /** The same accessible options dialog is mounted by every adapter. */
 export function textFormFieldDialog(

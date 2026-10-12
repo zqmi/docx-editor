@@ -21,7 +21,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlProperty,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { isInlineRunContainer, MAX_INLINE_CONTAINER_DEPTH } from '../store/package/ooxml-shared.ts';
 import {
   consumeScanNode,

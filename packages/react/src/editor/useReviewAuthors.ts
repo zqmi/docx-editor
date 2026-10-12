@@ -6,7 +6,7 @@
 // `setRevisionStyles` call all re-render the consumer.
 
 import { useCallback, useSyncExternalStore } from 'react';
-import type { ReviewAuthorInfo } from '@zqmi/docx-editor-core/editor';
+import type { ReviewAuthorInfo } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { deferredNotifier } from './useEditorState';
 

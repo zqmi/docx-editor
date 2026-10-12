@@ -17,14 +17,14 @@ afterAll(() => {
 });
 
 const { applyTreeOp } = await import('../../store/store/tree-ops.ts');
-const { readOoxmlPart, serializeOoxmlPart } = await import('@zqmi/docx-editor-core/store');
+const { readOoxmlPart, serializeOoxmlPart } = await import('@onsitesai/docx-editor-core/store');
 const { createLayoutSession } = await import('../layout-session.ts');
 const { createParagraphLayoutCache } = await import('../layout-cache.ts');
 const { readTableStructure } = await import('../semantic-table.ts');
 const { updateTableText } = await import('../table-text-update.ts');
 const { finalizedWithHeadroom } = await import('../table-budget-proof.ts');
 const { lay, load, measurer, styleCascade } = await import('./table-row-keep-fixtures.ts');
-import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { SemanticLayout, TableFragmentRecord } from '../semantic-records.ts';
 
 const p = (text: string) =>

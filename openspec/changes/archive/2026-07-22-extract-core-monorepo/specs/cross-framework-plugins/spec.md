@@ -2,42 +2,42 @@
 
 ### Requirement: Framework-agnostic EditorPluginCore interface in core
 
-The `@zqmi/docx-editor-core` package SHALL export an `EditorPluginCore` interface containing all framework-agnostic plugin fields: `id`, `name`, `proseMirrorPlugins`, `onStateChange`, `initialize`, `destroy`, `styles`, and `panelConfig`.
+The `@onsitesai/docx-editor-core` package SHALL export an `EditorPluginCore` interface containing all framework-agnostic plugin fields: `id`, `name`, `proseMirrorPlugins`, `onStateChange`, `initialize`, `destroy`, `styles`, and `panelConfig`.
 
 #### Scenario: Define a plugin with core logic only
 
-- **WHEN** a plugin author imports `EditorPluginCore` from `@zqmi/docx-editor-core`
+- **WHEN** a plugin author imports `EditorPluginCore` from `@onsitesai/docx-editor-core`
 - **AND** creates a plugin with `id`, `proseMirrorPlugins`, `onStateChange`, and `styles`
 - **THEN** the plugin definition SHALL compile without React or Vue as dependencies
 
 #### Scenario: EditorPluginCore has no framework types
 
-- **WHEN** inspecting the `EditorPluginCore` interface in `@zqmi/docx-editor-core`
+- **WHEN** inspecting the `EditorPluginCore` interface in `@onsitesai/docx-editor-core`
 - **THEN** it SHALL NOT reference `ReactNode`, `React.ComponentType`, `DefineComponent`, `VNode`, or any framework-specific types
 
 ### Requirement: PluginPanelProps exported from core without framework types
 
-The `@zqmi/docx-editor-core` package SHALL export a `PluginPanelProps` interface containing the framework-agnostic fields: `editorView`, `doc`, `scrollToPosition`, `selectRange`, `pluginState`, `panelWidth`, and `renderedDomContext`.
+The `@onsitesai/docx-editor-core` package SHALL export a `PluginPanelProps` interface containing the framework-agnostic fields: `editorView`, `doc`, `scrollToPosition`, `selectRange`, `pluginState`, `panelWidth`, and `renderedDomContext`.
 
 #### Scenario: PluginPanelProps usable by any framework
 
-- **WHEN** a framework adapter imports `PluginPanelProps` from `@zqmi/docx-editor-core`
+- **WHEN** a framework adapter imports `PluginPanelProps` from `@onsitesai/docx-editor-core`
 - **THEN** it SHALL be able to extend or use it as props for its own component type
 - **AND** `PluginPanelProps` SHALL NOT contain any framework-specific fields
 
 ### Requirement: RenderedDomContext exported from core
 
-The `@zqmi/docx-editor-core` package SHALL export the `RenderedDomContext` interface and its implementation, as it uses only vanilla DOM APIs.
+The `@onsitesai/docx-editor-core` package SHALL export the `RenderedDomContext` interface and its implementation, as it uses only vanilla DOM APIs.
 
 #### Scenario: RenderedDomContext available to plugin overlays
 
 - **WHEN** a plugin overlay (in any framework) needs to map ProseMirror positions to pixel coordinates
-- **THEN** it SHALL import `RenderedDomContext` from `@zqmi/docx-editor-core`
+- **THEN** it SHALL import `RenderedDomContext` from `@onsitesai/docx-editor-core`
 - **AND** use `getCoordinatesForPosition()`, `getRectsForRange()`, and `findElementsForRange()` without any framework dependency
 
 ### Requirement: PanelConfig exported from core
 
-The `@zqmi/docx-editor-core` package SHALL export the `PanelConfig` type (position, default width, collapsible settings).
+The `@onsitesai/docx-editor-core` package SHALL export the `PanelConfig` type (position, default width, collapsible settings).
 
 #### Scenario: Plugin specifies panel position
 
@@ -46,7 +46,7 @@ The `@zqmi/docx-editor-core` package SHALL export the `PanelConfig` type (positi
 
 ### Requirement: ReactEditorPlugin extends EditorPluginCore
 
-The `@zqmi/docx-editor-react` package SHALL export a `ReactEditorPlugin` interface that extends `EditorPluginCore` with React-specific fields: `Panel` (React.ComponentType) and `renderOverlay` (returns ReactNode).
+The `@onsitesai/docx-editor-react` package SHALL export a `ReactEditorPlugin` interface that extends `EditorPluginCore` with React-specific fields: `Panel` (React.ComponentType) and `renderOverlay` (returns ReactNode).
 
 #### Scenario: Existing React plugins remain compatible
 
@@ -61,7 +61,7 @@ The `@zqmi/docx-editor-react` package SHALL export a `ReactEditorPlugin` interfa
 
 ### Requirement: ReactPluginHost renders ReactEditorPlugin panels and overlays
 
-The `@zqmi/docx-editor-react` package SHALL contain a `PluginHost` (or `ReactPluginHost`) component that accepts `ReactEditorPlugin[]` and renders panels/overlays using React.
+The `@onsitesai/docx-editor-react` package SHALL contain a `PluginHost` (or `ReactPluginHost`) component that accepts `ReactEditorPlugin[]` and renders panels/overlays using React.
 
 #### Scenario: PluginHost manages plugin lifecycle
 
@@ -77,13 +77,13 @@ The `@docx-editor.dev/vue` package SHALL export a `VueEditorPlugin` interface th
 #### Scenario: Vue plugin interface mirrors React adapter pattern
 
 - **WHEN** inspecting `VueEditorPlugin` in `@docx-editor.dev/vue`
-- **THEN** it SHALL extend `EditorPluginCore` from `@zqmi/docx-editor-core`
+- **THEN** it SHALL extend `EditorPluginCore` from `@onsitesai/docx-editor-core`
 - **AND** it SHALL define `Panel` using Vue's `DefineComponent` (or equivalent)
 - **AND** it SHALL define `renderOverlay` returning Vue's `VNode` (or equivalent)
 
 ### Requirement: CorePlugin system unchanged
 
-The existing `CorePlugin` interface and `PluginRegistry` in `@zqmi/docx-editor-core` SHALL remain unchanged, as they are already framework-agnostic.
+The existing `CorePlugin` interface and `PluginRegistry` in `@onsitesai/docx-editor-core` SHALL remain unchanged, as they are already framework-agnostic.
 
 #### Scenario: CorePlugin continues to work headlessly
 

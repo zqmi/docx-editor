@@ -29,7 +29,7 @@ import {
   type ImageDecodePort,
   type OoxmlNode,
   type TreeModelChange,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { materializedNodeReads, materializedPassCounts } from '../document/materialize.ts';
 import { BODY, createPeerHarness, walk, type Peer } from './document-peer-support.ts';
 

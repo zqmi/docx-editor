@@ -20,7 +20,7 @@ import type {
   FontFaceRequest,
   FontSource,
   FontSourceSubstitution,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import { HARD_MAX_FONT_BYTES, fontRequestKey } from './font-resource.ts';
 
 /**

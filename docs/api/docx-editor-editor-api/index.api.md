@@ -4,22 +4,22 @@
 
 ```ts
 
-import { AutomationCapabilities } from '@zqmi/docx-editor-core/automation';
-import { AutomationHandle } from '@zqmi/docx-editor-core/automation';
-import { AutomationHost } from '@zqmi/docx-editor-core/automation';
-import { AutomationOperation } from '@zqmi/docx-editor-core/automation';
-import { AutomationPaginationOptions } from '@zqmi/docx-editor-core/automation';
-import { AutomationSpan } from '@zqmi/docx-editor-core/automation';
-import { AutomationSpanRef } from '@zqmi/docx-editor-core/automation';
-import { AutomationValue } from '@zqmi/docx-editor-core/automation';
-import { CollaborationModuleContribution } from '@zqmi/docx-editor-core/collaboration';
-import { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
-import { RevisionAuthorEntry } from '@zqmi/docx-editor-core/automation';
-import { RevisionAuthorResult } from '@zqmi/docx-editor-core/automation';
-import { RevisionAuthorSkipReason } from '@zqmi/docx-editor-core/automation';
-import { RevisionBatchEntry } from '@zqmi/docx-editor-core/automation';
-import { RevisionBatchResult } from '@zqmi/docx-editor-core/automation';
-import { RevisionBatchSkipReason } from '@zqmi/docx-editor-core/automation';
+import { AutomationCapabilities } from '@onsitesai/docx-editor-core/automation';
+import { AutomationHandle } from '@onsitesai/docx-editor-core/automation';
+import { AutomationHost } from '@onsitesai/docx-editor-core/automation';
+import { AutomationOperation } from '@onsitesai/docx-editor-core/automation';
+import { AutomationPaginationOptions } from '@onsitesai/docx-editor-core/automation';
+import { AutomationSpan } from '@onsitesai/docx-editor-core/automation';
+import { AutomationSpanRef } from '@onsitesai/docx-editor-core/automation';
+import { AutomationValue } from '@onsitesai/docx-editor-core/automation';
+import { CollaborationModuleContribution } from '@onsitesai/docx-editor-core/collaboration';
+import { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
+import { RevisionAuthorEntry } from '@onsitesai/docx-editor-core/automation';
+import { RevisionAuthorResult } from '@onsitesai/docx-editor-core/automation';
+import { RevisionAuthorSkipReason } from '@onsitesai/docx-editor-core/automation';
+import { RevisionBatchEntry } from '@onsitesai/docx-editor-core/automation';
+import { RevisionBatchResult } from '@onsitesai/docx-editor-core/automation';
+import { RevisionBatchSkipReason } from '@onsitesai/docx-editor-core/automation';
 
 // @public
 export enum Alignment {

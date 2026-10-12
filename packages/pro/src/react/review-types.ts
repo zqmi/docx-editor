@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // `../vue/review-types.ts`.
 
 import type { ReactNode } from 'react';
-import type { ToolbarTranslate } from '@zqmi/docx-editor-react';
+import type { ToolbarTranslate } from '@onsitesai/docx-editor-react';
 import type { ReviewItemView } from './useReview.ts';
 
 /** Shared props for every part. @public */

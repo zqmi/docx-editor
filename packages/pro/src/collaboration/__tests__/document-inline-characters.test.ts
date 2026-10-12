@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // A deletion across a symbol or hyphen removes it on every replica (issue #1071). A symbol is
 // one model character, like a hyphen.
 import { afterEach, expect, test } from 'bun:test';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createPeerHarness, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('inline-characters', { offlineEditing: true });

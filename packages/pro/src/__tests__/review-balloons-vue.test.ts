@@ -8,7 +8,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { describe, expect, test } from 'bun:test';
 import { defineComponent, h } from 'vue';
 import { useEditorEvent } from '@docx-editor.dev/vue';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { mountEditorTree } from '../../../vue/test/helpers/mount.ts';
 import { DocxEditorReview } from '../vue/index.ts';
 import { reviewModule } from '../index.ts';

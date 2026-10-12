@@ -7,7 +7,7 @@
 // made stale — which had left it past the paragraph's new end, with every later keystroke
 // landing in the wrong place.
 
-import type { OoxmlPart, TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPart, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import type { ContentControlBoundaryRecord } from '../layout/semantic-records.ts';
 import { placeholderControlForInsertion } from '../store/store/tree-op-content-controls.ts';
 

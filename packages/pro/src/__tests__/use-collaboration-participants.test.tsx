@@ -13,7 +13,7 @@ import { act, cleanup, render } from '@testing-library/react';
 import type {
   CollaborationParticipant,
   EditorCollaborationSession,
-} from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/collaboration';
 import { useCollaborationParticipants } from '../react/useCollaborationParticipants.ts';
 
 afterEach(() => {

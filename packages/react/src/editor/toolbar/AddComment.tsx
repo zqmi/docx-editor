@@ -7,7 +7,7 @@
 // a mounted review rail there is nothing to open the draft, so the part renders nothing.
 
 import { useContext } from 'react';
-import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import type { ChromeSlotId } from '@onsitesai/docx-editor-core/editor';
 import { ReviewRailContext } from '../context';
 import { useAddCommentState } from './add-comment-state';
 import { useToolbarLabel } from './toolbar-context';

@@ -3,9 +3,9 @@
 // Routes drawing tree ops and package image intents through the same applyOps / commit path
 // as keystrokes — viewing refusal, suggesting attribution, and layout/paint refresh.
 
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
-import type { StoryScope } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
+import type { StoryScope } from '@onsitesai/docx-editor-core/store';
 import type { ImageDecodePort, SupportedImageMime } from '../store/package/image-resources.ts';
 import type {
   InsertImageInput,

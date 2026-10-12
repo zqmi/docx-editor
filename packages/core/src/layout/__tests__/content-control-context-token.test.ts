@@ -14,7 +14,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { contentControlContextToken } from '../semantic-layout.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

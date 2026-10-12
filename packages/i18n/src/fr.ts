@@ -1,14 +1,14 @@
 /**
- * @zqmi/docx-editor-i18n/fr
+ * @onsitesai/docx-editor-i18n/fr
  *
  * French (`fr`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import fr from '@zqmi/docx-editor-i18n/fr';
+ * import fr from '@onsitesai/docx-editor-i18n/fr';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const fr = (await import('@zqmi/docx-editor-i18n/fr')).default;
+ * const fr = (await import('@onsitesai/docx-editor-i18n/fr')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

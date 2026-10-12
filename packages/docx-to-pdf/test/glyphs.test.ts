@@ -6,9 +6,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
-import { createFontSource } from '@zqmi/docx-editor-core/editor';
-import { openFontBackedDocumentForExport } from '@zqmi/docx-editor-core/export';
-import { forEachSemanticSpan } from '@zqmi/docx-editor-core/layout';
+import { createFontSource } from '@onsitesai/docx-editor-core/editor';
+import { openFontBackedDocumentForExport } from '@onsitesai/docx-editor-core/export';
+import { forEachSemanticSpan } from '@onsitesai/docx-editor-core/layout';
 import { exportPdf } from '../src/index.ts';
 import { docx, paragraph } from './fixture.ts';
 function font(path: string, family: string) {

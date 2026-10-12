@@ -1,5 +1,5 @@
 /* Import editor styles.
-   In standalone usage: @import '@zqmi/docx-editor-core/styles/editor.css';
+   In standalone usage: @import '@onsitesai/docx-editor-core/styles/editor.css';
    The demo imports the canonical core chrome stylesheet from source. */
 @import '../../../packages/core/src/styles/editor.css';
 

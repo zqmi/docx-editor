@@ -57,7 +57,7 @@ import {
   resolvedCommentIcon,
   reviewBadge,
 } from './review-icons.tsx';
-import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { TranslationKey } from '@onsitesai/docx-editor-i18n';
 import { revisionItemLabel, revisionLabelKey } from './review-labels.ts';
 import { authorAccent, authorCardStyle, authorSlot } from './review-author-styles.ts';
 import {

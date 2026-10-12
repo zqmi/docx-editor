@@ -7,7 +7,7 @@ import {
   type DocxEditorInstance,
   type RevisionMarkupDialogSession,
   type ResolvedRevisionMarkup,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import {
   DocxEditorRevisionMarkupDialog as Dialog,
   useRevisionMarkupDialog,

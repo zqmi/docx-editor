@@ -6,7 +6,7 @@ category: 'Customization'
 
 Use `i18n` for interface labels and `locale` for regional formatting. Changing labels does not translate document text.
 
-Import a shipped catalog from `@zqmi/docx-editor-i18n`. Pass a partial catalog to override selected labels. Missing values retain the inherited catalog, which defaults to English.
+Import a shipped catalog from `@onsitesai/docx-editor-i18n`. Pass a partial catalog to override selected labels. Missing values retain the inherited catalog, which defaults to English.
 
 The live selector changes packaged toolbar labels. The contract text and application labels stay in English.
 
@@ -28,7 +28,7 @@ Set interface translation and document locale separately. Neither setting transl
 
 ### Shipped locale catalogs
 
-Import only the catalogs your application uses from `@zqmi/docx-editor-i18n`. The `locales` record includes every catalog and therefore includes them all in the bundle.
+Import only the catalogs your application uses from `@onsitesai/docx-editor-i18n`. The `locales` record includes every catalog and therefore includes them all in the bundle.
 
 | Export | Locale             |
 | ------ | ------------------ |
@@ -69,10 +69,10 @@ Pass your DOCX bytes and loaded fonts to this component. The preview uses a fict
 <Framework value="react">
 
 ```tsx
-import { de } from '@zqmi/docx-editor-i18n';
-import { DocxEditor, LocaleProvider, type DocxEditorRootProps } from '@zqmi/docx-editor-react';
+import { de } from '@onsitesai/docx-editor-i18n';
+import { DocxEditor, LocaleProvider, type DocxEditorRootProps } from '@onsitesai/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 const modules = [reviewModule()];
 
@@ -114,11 +114,11 @@ export function ContractEditor({
 
 ```vue
 <script setup lang="ts">
-import { de } from '@zqmi/docx-editor-i18n';
+import { de } from '@onsitesai/docx-editor-i18n';
 import { DocxEditor, LocaleProvider } from '@docx-editor.dev/vue';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/vue';
 import type { FontConfigurationFragment } from '@docx-editor.dev/vue';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 defineProps<{ bytes: Uint8Array; fonts: FontConfigurationFragment }>();
 const modules = [reviewModule()];
@@ -160,8 +160,8 @@ Mount this toolbar inside your editor root. The nested provider changes two labe
 <Framework value="react">
 
 ```tsx
-import type { Translations } from '@zqmi/docx-editor-i18n';
-import { DocxEditor, LocaleProvider } from '@zqmi/docx-editor-react';
+import type { Translations } from '@onsitesai/docx-editor-i18n';
+import { DocxEditor, LocaleProvider } from '@onsitesai/docx-editor-react';
 
 const labels: Translations = {
   formattingBar: { bold: 'Bold text', italic: 'Italic text' },
@@ -184,7 +184,7 @@ export function ContractToolbar() {
 
 ```vue
 <script setup lang="ts">
-import type { Translations } from '@zqmi/docx-editor-i18n';
+import type { Translations } from '@onsitesai/docx-editor-i18n';
 import { DocxEditor, LocaleProvider } from '@docx-editor.dev/vue';
 
 const labels: Translations = {
@@ -207,4 +207,4 @@ const labels: Translations = {
 
 ## More control
 
-See [@zqmi/docx-editor-i18n](/docs/2.x/i18n) for supported parts, types, and additional examples.
+See [@onsitesai/docx-editor-i18n](/docs/2.x/i18n) for supported parts, types, and additional examples.

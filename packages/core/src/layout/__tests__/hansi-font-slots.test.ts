@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, serializeOoxmlPart, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { layoutSemanticDocument } from '../semantic-layout.ts';
 import { applyHAnsiFontSlots } from '../hansi-font-slots.ts';

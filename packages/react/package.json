@@ -1,5 +1,5 @@
 {
-  "name": "@zqmi/docx-editor-react",
+  "name": "@onsitesai/docx-editor-react",
   "version": "2.28.0",
   "description": "React DOCX editor adapter for the @docx-editor.dev editor contract.",
   "main": "./dist/index.js",
@@ -22,11 +22,11 @@
   "scripts": {
     "build": "node ../../scripts/check-built-siblings.mjs && tsup",
     "typecheck": "tsc --noEmit",
-    "api:extract": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-react --local",
-    "api:check": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-react"
+    "api:extract": "node ../../scripts/api-extractor.mjs --package @onsitesai/docx-editor-react --local",
+    "api:check": "node ../../scripts/api-extractor.mjs --package @onsitesai/docx-editor-react"
   },
   "peerDependencies": {
-    "@zqmi/docx-editor-core": "~2.28.0",
+    "@onsitesai/docx-editor-core": "~2.28.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "fflate": "^0.8.2",
     "typescript7": "npm:typescript@^7.0.2"
   },
@@ -67,7 +67,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@zqmi/docx-editor-i18n": "^2.28.0",
+    "@onsitesai/docx-editor-i18n": "^2.28.0",
     "@radix-ui/react-select": "^2.3.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1"

@@ -1,4 +1,4 @@
-@import '@zqmi/docx-editor-core/styles/editor.css';
+@import '@onsitesai/docx-editor-core/styles/editor.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -29,4 +29,4 @@ export {
   type CommentPosition,
   type CommentRecord,
   type CommentThreadState,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';

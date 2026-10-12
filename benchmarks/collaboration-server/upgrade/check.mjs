@@ -81,7 +81,7 @@ try {
       '--ignore-scripts',
       '--no-audit',
       '--no-fund',
-      `@zqmi/docx-editor-core@${from}`,
+      `@onsitesai/docx-editor-core@${from}`,
       `@docx-editor.dev/pro@${from}`,
       'yjs@^13.6.32',
       'y-protocols@^1.0.7',

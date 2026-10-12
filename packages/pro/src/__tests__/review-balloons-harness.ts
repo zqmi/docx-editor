@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { expect } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const W14 = 'http://schemas.microsoft.com/office/word/2010/wordml';

@@ -1,13 +1,13 @@
 import './dom-setup.ts';
 import { expect, test } from 'bun:test';
 import { createApp, h, shallowRef } from 'vue';
-import { createT, deepMerge, en, type LocaleStrings } from '@zqmi/docx-editor-i18n';
+import { createT, deepMerge, en, type LocaleStrings } from '@onsitesai/docx-editor-i18n';
 import { DocxEditor } from '../src/components/DocxEditor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';
 import { LocaleProvider } from '../src/i18n/LocaleContext';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { flush } from './helpers/mount';
 import {
   formFieldDocx,

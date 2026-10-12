@@ -5,7 +5,7 @@ import {
   readOoxmlPart,
   TOC_LEVEL_INDENT_TWIPS,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   emptyTocPlaceholderParagraphIds,

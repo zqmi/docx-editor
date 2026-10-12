@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // Which embedded nodes count as copies of a relocated position marker.
 import * as Y from 'yjs';
 import { expect, test } from 'bun:test';
-import { WML_NAMESPACE_URI, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { asLogicalId, type LogicalId } from '../document/identity.ts';
 import type { DocumentRegistry } from '../document/registry.ts';
 import {

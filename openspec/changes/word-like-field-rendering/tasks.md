@@ -1,6 +1,6 @@
 ## 0. Baseline before code
 
-- [x] 0.1 Record the `bun test` baseline at the base commit (4757 pass / 113 fail, every failure an uninstalled optional dependency — `harfbuzzjs`, `emf-converter`, `utif2`, unbuilt `@zqmi/docx-editor-i18n`)
+- [x] 0.1 Record the `bun test` baseline at the base commit (4757 pass / 113 fail, every failure an uninstalled optional dependency — `harfbuzzjs`, `emf-converter`, `utif2`, unbuilt `@onsitesai/docx-editor-i18n`)
 - [x] 0.2 Reproduce on the reported document: the `w:del` around a `FORMTEXT` result paints unattributed, while the review rail reports the replacement correctly
 - [x] 0.3 Sweep the fixture corpus for the same shape: 47 unattributed revisions across `list-pagination-break.docx` (46 `REF` insertions) and `issue-319-sections.docx` (a footer `PAGE`/`NUMPAGES` deletion)
 

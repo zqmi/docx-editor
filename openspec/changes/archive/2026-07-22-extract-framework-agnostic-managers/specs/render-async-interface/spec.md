@@ -2,7 +2,7 @@
 
 ### Requirement: EditorHandle interface in core
 
-The `@zqmi/docx-editor-core` package SHALL export an `EditorHandle` interface defining the contract for an imperatively mounted editor instance.
+The `@onsitesai/docx-editor-core` package SHALL export an `EditorHandle` interface defining the contract for an imperatively mounted editor instance.
 
 #### Scenario: EditorHandle provides document operations
 
@@ -16,7 +16,7 @@ The `@zqmi/docx-editor-core` package SHALL export an `EditorHandle` interface de
 
 ### Requirement: React renderAsync implements EditorHandle
 
-The `@zqmi/docx-editor-react` package SHALL export a `renderAsync(input, container, options): Promise<EditorHandle>` function that mounts a React editor into a DOM element.
+The `@onsitesai/docx-editor-react` package SHALL export a `renderAsync(input, container, options): Promise<EditorHandle>` function that mounts a React editor into a DOM element.
 
 #### Scenario: Mount editor imperatively with React
 
@@ -37,4 +37,4 @@ The `@docx-editor.dev/vue` package SHALL scaffold a `renderAsync(input, containe
 
 - **WHEN** inspecting `@docx-editor.dev/vue` exports
 - **THEN** a `renderAsync` function type or stub SHALL exist
-- **AND** it SHALL return `Promise<EditorHandle>` from `@zqmi/docx-editor-core`
+- **AND** it SHALL return `Promise<EditorHandle>` from `@onsitesai/docx-editor-core`

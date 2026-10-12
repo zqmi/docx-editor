@@ -18,14 +18,14 @@ The adapter includes the string catalog and declares the engine as a peer depend
 <Framework value="react">
 
 ```bash
-npm install @zqmi/docx-editor-react @zqmi/docx-editor-core
+npm install @onsitesai/docx-editor-react @onsitesai/docx-editor-core
 ```
 
 </Framework>
 <Framework value="vue">
 
 ```bash
-npm install @docx-editor.dev/vue @zqmi/docx-editor-core
+npm install @docx-editor.dev/vue @onsitesai/docx-editor-core
 ```
 
 </Framework>
@@ -49,8 +49,8 @@ The packaged `<DocxEditor>` shows a document page with loading status while a do
 ```tsx
 // App.tsx
 import { useRef, useState } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import { DocxEditor, type DocxEditorRef } from '@onsitesai/docx-editor-react';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 export default function App() {
   const editorRef = useRef<DocxEditorRef>(null);

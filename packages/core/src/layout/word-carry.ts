@@ -1,7 +1,7 @@
 // Moves a word that overflows at a run boundary inside it. Extracted from paragraph-flow so
 // that module stays inside its line budget; it is the only consumer.
 
-import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR } from '@onsitesai/docx-editor-core/store';
 import { growLineMetricsForText, lineBandText, type PendingLine } from './pending-line.ts';
 import { displayText } from './run-style.ts';
 import { styleForFontSlot } from './script-itemization.ts';

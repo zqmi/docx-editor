@@ -4,19 +4,19 @@
 
 ### Patch Changes
 
-- Updated dependencies: @zqmi/docx-editor-core@2.28.0, @zqmi/docx-editor-fonts@2.28.0
+- Updated dependencies: @onsitesai/docx-editor-core@2.28.0, @onsitesai/docx-editor-fonts@2.28.0
 
 ## 2.27.0
 
 ### Patch Changes
 
-- Updated dependencies: @zqmi/docx-editor-core@2.27.0, @zqmi/docx-editor-fonts@2.27.0
+- Updated dependencies: @onsitesai/docx-editor-core@2.27.0, @onsitesai/docx-editor-fonts@2.27.0
 
 ## 2.26.0
 
 ### Patch Changes
 
-- Updated dependencies: @zqmi/docx-editor-core@2.26.0, @zqmi/docx-editor-fonts@2.26.0
+- Updated dependencies: @onsitesai/docx-editor-core@2.26.0, @onsitesai/docx-editor-fonts@2.26.0
 
 ## 2.25.0
 
@@ -32,8 +32,8 @@
 - Updated dependencies [f098ae6]
 - Updated dependencies [a13f6a7]
 - Updated dependencies [5d02def]
-  - @zqmi/docx-editor-core@2.25.0
-  - @zqmi/docx-editor-fonts@2.25.0
+  - @onsitesai/docx-editor-core@2.25.0
+  - @onsitesai/docx-editor-fonts@2.25.0
 
 ## 2.24.0
 
@@ -44,8 +44,8 @@
 - Updated dependencies [79d8bc1]
 - Updated dependencies [997814e]
 - Updated dependencies [de3aac8]
-  - @zqmi/docx-editor-core@2.24.0
-  - @zqmi/docx-editor-fonts@2.24.0
+  - @onsitesai/docx-editor-core@2.24.0
+  - @onsitesai/docx-editor-fonts@2.24.0
 
 ## 2.23.0
 
@@ -140,8 +140,8 @@
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
-  - @zqmi/docx-editor-core@2.23.0
-  - @zqmi/docx-editor-fonts@2.23.0
+  - @onsitesai/docx-editor-core@2.23.0
+  - @onsitesai/docx-editor-fonts@2.23.0
 
 ## 2.22.0
 
@@ -190,14 +190,14 @@
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
-  - @zqmi/docx-editor-core@2.22.0
-  - @zqmi/docx-editor-fonts@2.22.0
+  - @onsitesai/docx-editor-core@2.22.0
+  - @onsitesai/docx-editor-fonts@2.22.0
 
 ## 2.21.1
 
 ### Patch Changes
 
-- @zqmi/docx-editor-fonts@2.21.1
+- @onsitesai/docx-editor-fonts@2.21.1
 
 ## 2.21.0
 
@@ -220,8 +220,8 @@
 - Updated dependencies [14a3468]
 - Updated dependencies [424a121]
 - Updated dependencies [2d4e0e7]
-  - @zqmi/docx-editor-core@2.21.0
-  - @zqmi/docx-editor-fonts@2.21.0
+  - @onsitesai/docx-editor-core@2.21.0
+  - @onsitesai/docx-editor-fonts@2.21.0
 
 ## 2.20.0
 
@@ -234,14 +234,14 @@
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
-  - @zqmi/docx-editor-core@2.20.0
-  - @zqmi/docx-editor-fonts@2.20.0
+  - @onsitesai/docx-editor-core@2.20.0
+  - @onsitesai/docx-editor-fonts@2.20.0
 
 ## 2.19.1
 
 ### Patch Changes
 
-- @zqmi/docx-editor-fonts@2.19.1
+- @onsitesai/docx-editor-fonts@2.19.1
 
 ## 2.19.0
 
@@ -251,5 +251,5 @@
 
 ### Patch Changes
 
-- @zqmi/docx-editor-core@2.19.0
-  - @zqmi/docx-editor-fonts@2.19.0
+- @onsitesai/docx-editor-core@2.19.0
+  - @onsitesai/docx-editor-fonts@2.19.0

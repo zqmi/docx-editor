@@ -1,4 +1,4 @@
-import type { ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportFormat } from '@onsitesai/docx-editor-core/editor';
 // Menu-scoped context: the translate function and the three host actions the menu bar's
 // File rows need, published by the root to its parts.
 //
@@ -15,7 +15,7 @@ import type { ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
 import { createContext, useContext } from 'react';
 import { useTranslation } from '../../i18n';
 import type { TranslationKey } from '../../i18n';
-import type { ChromeMenuId } from '@zqmi/docx-editor-core/editor';
+import type { ChromeMenuId } from '@onsitesai/docx-editor-core/editor';
 import type { ToolbarTranslate } from '../toolbar/toolbar-context';
 
 /**

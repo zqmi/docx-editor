@@ -1,4 +1,4 @@
-import type { DocumentProperties, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { DocumentProperties, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type { FieldResultsMode } from '../store/package/field-result-mode.ts';
 import type { ExclusionZone } from './drawing-exclusion.ts';
 import type { InlineDrawingLayoutContext } from './drawing-layout.ts';

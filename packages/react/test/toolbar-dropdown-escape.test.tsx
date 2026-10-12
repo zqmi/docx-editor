@@ -1,7 +1,7 @@
 import './dom-setup.ts';
 import { afterEach, expect, test } from 'bun:test';
 import { act, render } from '@testing-library/react';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { strFromU8, unzipSync } from 'fflate';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';

@@ -4,9 +4,9 @@ import { withNumberingParagraphProperties } from './numbering-paragraph-properti
 // Projection only — never mutation or serialization authority. Hostile values are dropped
 // or clamped; missing definitions resolve to "no list" rather than guessing.
 
-import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
-import { readTwipsMeasure, WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
+import { readTwipsMeasure, WML_NAMESPACE_URI } from '@onsitesai/docx-editor-core/store';
 import { propertiesOfRunContainer } from './field-projection.ts';
 import {
   readNumberingPictureBullets,

@@ -26,7 +26,7 @@ import { registerParagraphCachePeek } from './paragraph-cache-peek.ts';
 // a paragraph whose content and context are unchanged lays out identically whatever the
 // document around it did.
 
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
 import { registerParagraphCacheDiagnostics } from './paragraph-cache-diagnostics.ts';
 import { sha256FontBytes } from '../store/package/sha256.ts';

@@ -43,7 +43,7 @@ export { declarationCandidates, packageName };
 const core = join(dirname(fileURLToPath(import.meta.url)), '..', 'packages', 'core');
 const src = join(core, 'src');
 const dist = join(core, 'dist');
-const PACKAGE = '@zqmi/docx-editor-core';
+const PACKAGE = '@onsitesai/docx-editor-core';
 
 /** Every published subpath: its rollup entry name and its source file. */
 export function publishedEntries(manifest, paths) {
@@ -113,7 +113,7 @@ function declarationFor(outDir, sourceFile) {
  * Resolve the imports inside the emitted declarations.
  *
  * TypeScript keeps each specifier as written, so relative imports still end in `.ts`, and
- * the engine's imports of its own subpaths (`@zqmi/docx-editor-core/store`) still name the
+ * the engine's imports of its own subpaths (`@onsitesai/docx-editor-core/store`) still name the
  * package. Both resolve to the emitted files, so they bundle like any other module. Every
  * other bare specifier stays an import, and must be a dependency or peer dependency.
  */

@@ -17,7 +17,7 @@ import {
   resolveRelationship,
   type OoxmlExternalTarget,
   type RelationshipRecord,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { EncodedRelationship } from './schema.ts';
 import type { DocumentRegistry } from './registry.ts';
 import type { BlobBytesStore } from './seed.ts';

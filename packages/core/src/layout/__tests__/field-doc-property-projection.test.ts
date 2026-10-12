@@ -8,7 +8,7 @@ import {
   type DocumentProperties,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { docPropertyValue, parseDocPropertyInstruction } from '../field-doc-property.ts';
 import type { RevisionDisplayMode } from '../revision-projection.ts';

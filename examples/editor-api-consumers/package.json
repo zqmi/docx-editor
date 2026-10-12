@@ -11,7 +11,7 @@
     "test:published": "node fresh-contract-agent.ts && node fresh-tables-agent.ts"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@docx-editor.dev/editor-api": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
     "fflate": "^0.8.2"

@@ -1,6 +1,6 @@
 import { ref, shallowRef, watch, type ShallowRef } from 'vue';
-import type { EditorSnapshot, PageSetup } from '@zqmi/docx-editor-core/contracts/editor';
-import { REVIEW_MARKERS_GUTTER_PX, reviewPaneEntitledZoom } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot, PageSetup } from '@onsitesai/docx-editor-core/contracts/editor';
+import { REVIEW_MARKERS_GUTTER_PX, reviewPaneEntitledZoom } from '@onsitesai/docx-editor-core/editor';
 import { twipsToPixels } from '../lib/units';
 import { useReviewRailRegistry } from './context';
 import { useEditorState } from './useEditorState';

@@ -13,7 +13,7 @@
 
 #### Scenario: Free packages contain no review derivation or pane
 
-- **WHEN** the published `@zqmi/docx-editor-core` and `@zqmi/docx-editor-react` artifacts are inspected
+- **WHEN** the published `@onsitesai/docx-editor-core` and `@onsitesai/docx-editor-react` artifacts are inspected
 - **THEN** they contain no review model derivation and no review pane code, and every review command refuses with the pro reason
 
 ### Requirement: Review mutations go through the single write path

@@ -19,7 +19,7 @@
 // work, not covered here.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,

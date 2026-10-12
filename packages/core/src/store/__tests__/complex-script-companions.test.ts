@@ -1,7 +1,7 @@
 // Formatting writes reach the complex-script lane only on runs that use it.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, runPropertyEdits, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, runPropertyEdits, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { complexScriptAt, mergedRunWrite } from '../store/direct-properties.ts';
 import { withComplexScriptCompanions } from '../store/complex-script-companions.ts';
 

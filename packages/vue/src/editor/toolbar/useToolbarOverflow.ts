@@ -4,7 +4,7 @@ import {
   toolbarOverflowGroups,
   TOOLBAR_OVERFLOW_HYSTERESIS,
   type ToolbarFitInput,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import {
   collapsibleGroupCost,
   controlsOverflow,
@@ -13,7 +13,7 @@ import {
   readInlineMargins,
   separatorLeadingCost,
   trailingGapCost,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 export const GROUP_ATTRIBUTE = 'data-toolbar-group';
 export const FIXED_ATTRIBUTE = 'data-toolbar-fixed';

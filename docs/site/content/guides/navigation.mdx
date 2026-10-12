@@ -37,7 +37,7 @@ In React and Vue, call `useDocxEditor()` inside `DocxEditor.Root` to get the edi
 <Framework value="react">
 
 ```tsx
-import { useDocxEditor } from '@zqmi/docx-editor-react';
+import { useDocxEditor } from '@onsitesai/docx-editor-react';
 
 function GoToEndButton() {
   const editor = useDocxEditor();
@@ -126,7 +126,7 @@ const findings = paragraphs
 Pass a `DocAnchor` and check the boolean result:
 
 ```ts
-import type { DocAnchor, Editor } from '@zqmi/docx-editor-core';
+import type { DocAnchor, Editor } from '@onsitesai/docx-editor-core';
 
 function revealReference(editor: Editor, anchor: DocAnchor): boolean {
   return editor.scrollToAnchor(anchor);
@@ -169,7 +169,7 @@ Body paragraphs, table cells, block content controls, headers, footers, footnote
 To control the target position, pass `ScrollToAnchorOptions` as the second argument. These fields match `NavigateToChangeOptions` in the [document refresh API](/docs/2.x/guides/document-refresh#control-change-navigation):
 
 ```ts
-import type { ScrollToAnchorOptions } from '@zqmi/docx-editor-core';
+import type { ScrollToAnchorOptions } from '@onsitesai/docx-editor-core';
 
 const scroll: ScrollToAnchorOptions = {
   block: 'start',
@@ -192,7 +192,7 @@ The method validates options before it resolves the anchor. An invalid `block` o
 Use `editor.highlightAnchor(anchor, options)` to highlight a referenced paragraph. To scroll to the paragraph before highlighting it, call both methods:
 
 ```ts
-import type { DocAnchor, Editor } from '@zqmi/docx-editor-core';
+import type { DocAnchor, Editor } from '@onsitesai/docx-editor-core';
 
 function showReference(editor: Editor, anchor: DocAnchor): boolean {
   if (!editor.scrollToAnchor(anchor)) return false;
@@ -215,8 +215,8 @@ A `false` result leaves the current highlight unchanged. Body paragraphs, table 
 `RefreshHighlightOptions` extends `AnchorHighlightOptions`. Both use the same defaults, except for the color token. For details, see [Customize highlights and motion](/docs/2.x/guides/document-refresh#customize-highlights-and-motion). Each call starts from the defaults. To apply the same style across calls and APIs, reuse an options object:
 
 ```ts
-import { createDocumentRefresh } from '@zqmi/docx-editor-core/editor';
-import type { AnchorHighlightOptions } from '@zqmi/docx-editor-core';
+import { createDocumentRefresh } from '@onsitesai/docx-editor-core/editor';
+import type { AnchorHighlightOptions } from '@onsitesai/docx-editor-core';
 
 const findingHighlight: AnchorHighlightOptions = {
   color: 'var(--finding-fill)',
@@ -339,7 +339,7 @@ This button highlights every occurrence of a term and selects the first one:
 <Framework value="react">
 
 ```tsx
-import { useDocumentSearch } from '@zqmi/docx-editor-react';
+import { useDocumentSearch } from '@onsitesai/docx-editor-react';
 
 function ShowOccurrences({ term }: { term: string }) {
   const search = useDocumentSearch();
@@ -382,7 +382,7 @@ const search = useDocumentSearch();
 Without React or Vue:
 
 ```ts
-import { createDocumentSearch } from '@zqmi/docx-editor-core/editor';
+import { createDocumentSearch } from '@onsitesai/docx-editor-core/editor';
 
 const search = createDocumentSearch(editor);
 search.find('Supplier', { highlight: 'all', selectFirst: true });
@@ -473,7 +473,7 @@ Pass a function to recompute ranges after document changes. It runs after 150 mi
 
 ```tsx
 import { useCallback } from 'react';
-import { useHighlights, type Editor } from '@zqmi/docx-editor-react';
+import { useHighlights, type Editor } from '@onsitesai/docx-editor-react';
 
 function Glossary({ terms }: { terms: readonly string[] }) {
   const findTerms = useCallback(
@@ -505,7 +505,7 @@ useHighlights('glossary', (editor) => editor.findMatches(props.terms, { wholeWor
 Without React or Vue:
 
 ```ts
-import { watchHighlights } from '@zqmi/docx-editor-core/editor';
+import { watchHighlights } from '@onsitesai/docx-editor-core/editor';
 
 const glossary = watchHighlights(editor, 'glossary', (editor) =>
   editor.findMatches(terms, { wholeWord: true }).flat()
@@ -569,7 +569,7 @@ Add your own fields to each range. `useHighlightAt(name)` returns the highlight 
 
 ```tsx
 import { useCallback } from 'react';
-import { useHighlightAt, useHighlights, type Editor, type TextMatch } from '@zqmi/docx-editor-react';
+import { useHighlightAt, useHighlights, type Editor, type TextMatch } from '@onsitesai/docx-editor-react';
 
 type GlossaryRange = TextMatch & { readonly definition: string };
 

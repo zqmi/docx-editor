@@ -9,8 +9,8 @@
 
 import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { applyTreeOp, readOoxmlPackage, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { applyTreeOp, readOoxmlPackage, serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { resolveNotesPart } from '../../store/package/note-references.ts';
 import {
   resolveEndnoteProperties,

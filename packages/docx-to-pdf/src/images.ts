@@ -4,12 +4,12 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { PDFDocument, PDFName, PDFString, type PDFImage, type PDFPage } from 'pdf-lib';
-import type { FontBackedExportCapabilities } from '@zqmi/docx-editor-core/export';
+import type { FontBackedExportCapabilities } from '@onsitesai/docx-editor-core/export';
 import type {
   LayoutBox,
   ListMarkerPictureRecord,
   SemanticDrawingVisit,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { color, number as n, pageHeight, pdfLiteralUri, rect, Commands, Work } from './context.ts';
 import { paintVectorShape } from './vector-shapes.ts';
 

@@ -13,8 +13,8 @@ import {
   type LegacyCheckboxFieldRange,
   type OoxmlPart,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 
 interface Host {
   readonly pagesLayer: HTMLElement;

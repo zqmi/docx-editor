@@ -1,4 +1,4 @@
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { NoteKind } from '../store/package/note-nodes.ts';
 import type { NoteReferenceLineBand } from './note-fragment-geometry.ts';
 import type {

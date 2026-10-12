@@ -14,7 +14,7 @@
 // library's own element (and therefore its roles, its keyboard handling and its placement),
 // and the SVG sits behind at `z-index: 0` with no hit test of its own.
 
-import { DocxEditor, useChromeTranslate, useDocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor, useChromeTranslate, useDocxEditor } from '@onsitesai/docx-editor-react';
 import { CustomNodeContextMenu } from '@docx-editor.dev/pro/react';
 import { BergPanel } from './art/Iceberg';
 import { useFrost } from './useFrost';

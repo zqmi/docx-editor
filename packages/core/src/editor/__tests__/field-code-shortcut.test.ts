@@ -1,6 +1,6 @@
 import { zipSync, unzipSync, strToU8, strFromU8 } from 'fflate';
 import { afterEach, expect, test } from 'bun:test';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import { docx } from './paginated-surface-fixtures.ts';
 

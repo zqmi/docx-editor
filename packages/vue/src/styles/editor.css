@@ -1,6 +1,6 @@
 /* The editor stylesheet is the single source of truth in
-   @zqmi/docx-editor-core, including the one-surface page/overlay/input-host
+   @onsitesai/docx-editor-core, including the one-surface page/overlay/input-host
    layer used by the interactive paginated editor. This adapter imports it so
    tokens and ALL UI styling are identical to React — there are no Vue-only CSS
    rules (enforced by `bun run check:adapter-css-thin`). */
-@import '@zqmi/docx-editor-core/styles/editor.css';
+@import '@onsitesai/docx-editor-core/styles/editor.css';

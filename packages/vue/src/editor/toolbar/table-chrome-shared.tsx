@@ -1,6 +1,6 @@
-import { editorInstanceScope } from '@zqmi/docx-editor-core/editor';
+import { editorInstanceScope } from '@onsitesai/docx-editor-core/editor';
 import { h, toValue, watch, type MaybeRefOrGetter, type Ref, type VNode } from 'vue';
-import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
+import { localizeDisabledReason } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../../i18n';
 import { focusBy, focusEdge } from '../menu/menu-keyboard';
 import { useStableDocxId } from '../../lib/stable-id';

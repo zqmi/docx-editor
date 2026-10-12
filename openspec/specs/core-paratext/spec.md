@@ -8,7 +8,7 @@ Defines framework-neutral contracts for behavior shared by supported adapters.
 
 ### Requirement: Shared ProseMirror paragraph/text helpers
 
-`@zqmi/docx-editor-core` SHALL expose `findParaIdRange`, `findTextInPmParagraph`, `getVanillaNodeText`, and `getVanillaTextBetween` from a single framework-agnostic module. Both the React and Vue adapters SHALL import these from core rather than maintaining private copies. The helpers MUST satisfy the observable range and text-extraction scenarios below for every supported adapter.
+`@onsitesai/docx-editor-core` SHALL expose `findParaIdRange`, `findTextInPmParagraph`, `getVanillaNodeText`, and `getVanillaTextBetween` from a single framework-agnostic module. Both the React and Vue adapters SHALL import these from core rather than maintaining private copies. The helpers MUST satisfy the observable range and text-extraction scenarios below for every supported adapter.
 
 #### Scenario: Resolve a paragraph range by paraId
 

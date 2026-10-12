@@ -18,7 +18,7 @@ import {
 } from '../font-resolver.ts';
 import type { FontOrigin, FontOriginCompositionRequest } from '../font-resolver.ts';
 import type { FontConfigurationFragment, FontResolutionRequest } from '../font-composition.ts';
-import type { FontSource } from '@zqmi/docx-editor-core/contracts/editor';
+import type { FontSource } from '@onsitesai/docx-editor-core/contracts/editor';
 import { prepareLayoutFontConfiguration } from '../../layout/layout-shaping.ts';
 import { HARD_MAX_FONT_SOURCES } from '../../layout/font-resource.ts';
 
@@ -121,7 +121,7 @@ describe('the resolver mark', () => {
 
     expect((marked as unknown as Record<symbol, unknown>)[FONT_RESOLVER_BRAND]).toBe(true);
     // The string half is what `MarkedFontResolver` claims in the type and what lets
-    // `@zqmi/docx-editor-fonts` declare the same mark without importing from the engine.
+    // `@onsitesai/docx-editor-fonts` declare the same mark without importing from the engine.
     expect(marked[FONT_RESOLVER_MARK_KEY]).toBe(true);
     expect(FONT_RESOLVER_MARK_KEY).toBe('docx-editor.dev/font-resolver');
   });

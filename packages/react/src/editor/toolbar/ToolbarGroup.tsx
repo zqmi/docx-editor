@@ -15,7 +15,7 @@
 // content itself. They render on their own only under `preset={false}`.
 
 import { createContext, useContext } from 'react';
-import type { ChromeGroupId, ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import type { ChromeGroupId, ChromeSlotId } from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../../docx-editor-children';
 import { useToolbarLabel } from './toolbar-context';
 

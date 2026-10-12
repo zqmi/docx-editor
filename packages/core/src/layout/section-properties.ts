@@ -24,7 +24,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createRecentRootCache } from '../store/store/recent-root-cache.ts';
 import { parsePageBorders, type SectionPageBorders } from './page-borders.ts';
 import { marginInset } from './page-body-margins.ts';

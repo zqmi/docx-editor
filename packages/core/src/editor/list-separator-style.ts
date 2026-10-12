@@ -4,7 +4,7 @@ import {
   withPart,
   type OoxmlElement,
   type OoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { stylesPartOf } from '../store/package/ooxml-indexes.ts';
 import { createNodeIdAllocator, insertChildren } from '../store/package/ooxml-edit.ts';
 import {

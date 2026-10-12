@@ -21,10 +21,10 @@ For Node.js, use version 20.16.0 or later in the 20.x release line, or version 2
 ## Install the package
 
 ```sh
-npm install @docx-editor.dev/docx-to-markdown @zqmi/docx-editor-core
+npm install @docx-editor.dev/docx-to-markdown @onsitesai/docx-editor-core
 ```
 
-`@zqmi/docx-editor-core` is a required peer dependency. Install a version that satisfies the converter's peer dependency range and commit your lockfile.
+`@onsitesai/docx-editor-core` is a required peer dependency. Install a version that satisfies the converter's peer dependency range and commit your lockfile.
 
 ## Convert a DOCX file
 

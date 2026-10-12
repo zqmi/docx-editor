@@ -8,8 +8,8 @@
 
 import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
-import { composeFontConfiguration, createLayoutShaping } from '@zqmi/docx-editor-core/editor';
-import { FontResolutionError, sha256FontBytes } from '@zqmi/docx-editor-core/layout';
+import { composeFontConfiguration, createLayoutShaping } from '@onsitesai/docx-editor-core/editor';
+import { FontResolutionError, sha256FontBytes } from '@onsitesai/docx-editor-core/layout';
 import { loadDefaultFonts } from '../index.ts';
 
 const assetsDir = new URL('../../assets/', import.meta.url);

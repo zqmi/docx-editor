@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { readOoxmlPackage, readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { buildNumberingIndex, resolveNumberingLevel } from '../numbering-index.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

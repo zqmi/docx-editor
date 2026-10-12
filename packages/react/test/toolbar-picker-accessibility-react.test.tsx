@@ -5,7 +5,7 @@ import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';
 import { DocxEditorToolbar } from '../src/editor/toolbar';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { PICKER_SOURCE } from '../../vue/test/helpers/picker-document';
 import { POPUP_ESCAPE_SOURCE } from '../../vue/test/helpers/popup-escape-document';
 (globalThis as unknown as { IS_REACT_ACT_ENVIRONMENT: boolean }).IS_REACT_ACT_ENVIRONMENT = true;

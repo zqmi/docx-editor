@@ -4,8 +4,8 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
-import { layoutSemanticDocument, linesOf, createFixedMeasurer } from '@zqmi/docx-editor-core/layout';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
+import { layoutSemanticDocument, linesOf, createFixedMeasurer } from '@onsitesai/docx-editor-core/layout';
 import { underlineGap } from '../src/underline-gap.ts';
 
 function line() {

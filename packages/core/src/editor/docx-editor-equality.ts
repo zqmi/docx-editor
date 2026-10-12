@@ -12,7 +12,7 @@ import type {
   EditorSnapshot,
   PageSetup,
   RunFormatting,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import { isDocAnchorRange } from './anchor-resolution.ts';
 
 /**

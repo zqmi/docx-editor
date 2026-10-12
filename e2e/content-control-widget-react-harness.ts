@@ -1,6 +1,6 @@
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
-import type { ContentControlWidgetSession } from '@zqmi/docx-editor-core/editor';
+import type { ContentControlWidgetSession } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorContentControlWidget } from '../packages/react/src/editor/DocxEditorContentControlWidget';
 
 export function mountWidget(element: HTMLElement, session: ContentControlWidgetSession): void {

@@ -24,8 +24,8 @@ A picker choice does not mean the font is installed or loaded. Opening the picke
 Pass a font resolver to `useDocxSource`. For packaged substitutes, use `packagedFonts()`. The examples use the React hook; Vue provides the same API. Call the hook inside a component.
 
 ```ts
-import { useDocxSource } from '@zqmi/docx-editor-react';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { useDocxSource } from '@onsitesai/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
 
 const { document, fonts } = useDocxSource(url, { fonts: packagedFonts() });
 ```
@@ -33,9 +33,9 @@ const { document, fonts } = useDocxSource(url, { fonts: packagedFonts() });
 To add Google Fonts, pass the resolvers in an array:
 
 ```ts
-import { useDocxSource } from '@zqmi/docx-editor-react';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { useDocxSource } from '@onsitesai/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 const { document, fonts } = useDocxSource(url, {
   fonts: [packagedFonts(), googleFonts()],
@@ -84,7 +84,7 @@ The deprecated names remain available. Both constant aliases reference the same 
 
 ## Load default substitute families
 
-The optional `@zqmi/docx-editor-fonts` package provides open-licensed substitutes.
+The optional `@onsitesai/docx-editor-fonts` package provides open-licensed substitutes.
 
 | Word font       | Substitute        | License           | Included by `defaultFonts()` |
 | --------------- | ----------------- | ----------------- | ---------------------------- |
@@ -106,7 +106,7 @@ Supply licensed font bytes when pixels must match the original face.
 `defaultFonts()` loads five package defaults: Calibri, Cambria, Times New Roman, Arial, and Courier New. Century Gothic requires an explicit choice and adds about 709 KB:
 
 ```ts
-import { ALL_DEFAULT_FONT_FAMILIES, defaultFonts } from '@zqmi/docx-editor-fonts';
+import { ALL_DEFAULT_FONT_FAMILIES, defaultFonts } from '@onsitesai/docx-editor-fonts';
 
 const fonts = await defaultFonts({ families: ALL_DEFAULT_FONT_FAMILIES });
 ```
@@ -148,7 +148,7 @@ The package reads this setting when its module loads. Setting it after importing
 Use `defaultFonts()` when a visible re-pagination is worse than the extra bytes. Use `packagedFonts()` otherwise.
 
 ```ts
-import { defaultFonts } from '@zqmi/docx-editor-fonts';
+import { defaultFonts } from '@onsitesai/docx-editor-fonts';
 
 const { document, fonts } = useDocxSource(url, { fonts: defaultFonts });
 ```
@@ -179,10 +179,10 @@ If surrounding app text relied on these public fonts, configure those fonts sepa
 Use `customFonts()` to supply brand fonts or licensed Word fonts to the editor. Put it first so your supplied faces take precedence.
 
 ```tsx
-import { customFonts } from '@zqmi/docx-editor-core/editor';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
-import { DocxEditor, useFonts } from '@zqmi/docx-editor-react';
+import { customFonts } from '@onsitesai/docx-editor-core/editor';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
+import { DocxEditor, useFonts } from '@onsitesai/docx-editor-react';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const fonts = useFonts(
@@ -221,7 +221,7 @@ The helper uses `loadFonts` for validation and caching. `onFailure` receives eac
 `loadFonts()` remains the lower-level eager loader. It starts loading every listed source when called and returns validated bytes with a typed `failures` list. Use it when you need font bytes before opening a document.
 
 ```ts
-import { createDocxEditor, loadFonts, type FontUrlSource } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, loadFonts, type FontUrlSource } from '@onsitesai/docx-editor-core/editor';
 
 const sources: FontUrlSource[] = [
   { url: '/fonts/AcmeSans-Regular.ttf', family: 'Acme Sans', weight: 400, style: 'normal' },
@@ -255,7 +255,7 @@ console.log(result.sources.map((source) => `${source.id}: ${source.hash}`));
 Use `createFontSource` when you already have bytes from a file input, IndexedDB, or a bundler.
 
 ```ts
-import { composeFontConfiguration, createFontSource } from '@zqmi/docx-editor-core/editor';
+import { composeFontConfiguration, createFontSource } from '@onsitesai/docx-editor-core/editor';
 
 const made = createFontSource(bytes, {
   family: 'Acme Sans',
@@ -284,9 +284,9 @@ Font arrivals update the current editing session. Selection, pending typing form
 <Framework value="react">
 
 ```tsx
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
-import { DocxEditor, useFonts } from '@zqmi/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
+import { DocxEditor, useFonts } from '@onsitesai/docx-editor-react';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const fonts = useFonts(packagedFonts(), googleFonts());
@@ -299,8 +299,8 @@ function Editor({ bytes }: { bytes: Uint8Array }) {
 
 ```vue
 <script setup lang="ts">
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 import { DocxEditorRoot, useFonts } from '@docx-editor.dev/vue';
 
 defineProps<{ bytes: Uint8Array }>();
@@ -411,7 +411,7 @@ const fonts = useFonts(computed(() => packagedFonts()));
 `useFonts(() => packagedFonts())` cannot work: nothing distinguishes it from a resolver that ignores its request. The editor reports it rather than composing an empty result.
 
 ```ts
-import { defineFontResolver } from '@zqmi/docx-editor-core/editor';
+import { defineFontResolver } from '@onsitesai/docx-editor-core/editor';
 
 const faceKey = (family: string, weight: number, style: string) =>
   // Case-folded: Word matches font names that way, and so do both shipped resolvers.
@@ -492,13 +492,13 @@ import { copyFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 await copyFile(
-  fileURLToPath(import.meta.resolve('@zqmi/docx-editor-core/harfbuzz.wasm')),
+  fileURLToPath(import.meta.resolve('@onsitesai/docx-editor-core/harfbuzz.wasm')),
   'public/static/harfbuzz.wasm'
 );
 ```
 
 ```ts
-import { setHarfBuzzWasmUrl } from '@zqmi/docx-editor-core/layout';
+import { setHarfBuzzWasmUrl } from '@onsitesai/docx-editor-core/layout';
 
 setHarfBuzzWasmUrl('/static/harfbuzz.wasm');
 ```
@@ -509,7 +509,7 @@ Use a URL that your application controls. Do not build it from user input or rem
 
 Cross-origin hosting needs that origin in `connect-src`. WebAssembly needs `wasm-unsafe-eval` in `script-src`.
 
-The shaper rejects a missing, stale, or version-mismatched binary. An npm `overrides` entry for `harfbuzzjs` does not change bundled shaper code. Upgrade `@zqmi/docx-editor-core` instead.
+The shaper rejects a missing, stale, or version-mismatched binary. An npm `overrides` entry for `harfbuzzjs` does not change bundled shaper code. Upgrade `@onsitesai/docx-editor-core` instead.
 
 For engine implementation details, see [Architecture](/docs/2.x/core/architecture).
 

@@ -14,7 +14,7 @@
  *   type Translations,                  // shape of a community partial
  *   type TranslationKey,                // every valid `t()` key
  *   type LocaleCode,                    // 'en' | 'de' | 'pt-BR' | ...
- * } from '@zqmi/docx-editor-i18n';
+ * } from '@onsitesai/docx-editor-i18n';
  * ```
  *
  * The React and Vue adapters wrap `createT` in framework-native bindings
@@ -299,7 +299,7 @@ export { isApplePlatform, platformShortcut } from './platform-shortcuts';
  *
  * @example
  * ```ts
- * import { deepMerge, createT, en, de } from '@zqmi/docx-editor-i18n';
+ * import { deepMerge, createT, en, de } from '@onsitesai/docx-editor-i18n';
  * const merged = deepMerge(en, de) as LocaleStrings;
  * const t = createT(merged, 'de');
  * t('formattingBar.bold');                    // → 'Fett'

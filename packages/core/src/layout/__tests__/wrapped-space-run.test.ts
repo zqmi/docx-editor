@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   DEFAULT_DRAWING_PROJECTION_LIMITS,
   indexInlineDrawingProjectionsInPart,

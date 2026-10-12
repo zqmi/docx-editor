@@ -1,5 +1,5 @@
 import { defineComponent, inject, onUnmounted, watch } from 'vue';
-import type { RevisionAuthorStyle } from '@zqmi/docx-editor-core/editor';
+import type { RevisionAuthorStyle } from '@onsitesai/docx-editor-core/editor';
 import { RevisionStyleRegistryContext } from './revision-style-registry';
 
 /** @public */

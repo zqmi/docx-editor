@@ -6,7 +6,7 @@ import {
   chromeSlotIsToggle,
   type ChromeControl,
   type ChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { mergeHostClass } from '../../lib/mergeHostClass';
 import { useEditorCommand } from '../useEditorCommand';
 import { usePlatformShortcut } from '../usePlatformShortcut';

@@ -14,7 +14,7 @@ import type {
   DocxEditorInstance,
   EditorModule,
   ReviewPaneOverflow,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorNavigation } from '../src/editor/navigation';
 import { useReviewRailRegistry } from '../src/editor/context';
 import { SOURCE } from './helpers/fixtures';

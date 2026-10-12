@@ -1,8 +1,8 @@
 import { describe, expect, test } from 'bun:test';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
-import { FONT_ASSET_MANIFEST } from '@zqmi/docx-editor-fonts';
-import { openHeadlessDocument } from '@zqmi/docx-editor-core/store';
+import { FONT_ASSET_MANIFEST } from '@onsitesai/docx-editor-fonts';
+import { openHeadlessDocument } from '@onsitesai/docx-editor-core/store';
 import {
   DocumentOpenError,
   ExportResourceError,

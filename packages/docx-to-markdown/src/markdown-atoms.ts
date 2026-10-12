@@ -4,7 +4,7 @@ import type {
   InlineDrawingRecord,
   LineSegment,
   StyleSpanRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import type { MarkdownTextToken } from './markdown-inline.ts';
 
 export type MarkdownAtom =

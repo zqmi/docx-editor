@@ -1,6 +1,6 @@
 // Why a content control refuses an edit or a removal, from its lock and data binding.
-import type { ContentControlBoundaryRecord } from '@zqmi/docx-editor-core/layout';
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { ContentControlBoundaryRecord } from '@onsitesai/docx-editor-core/layout';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 
 /** Why the control's content refuses an edit: bound to custom XML, or content-locked. */
 export function contentLockedOrBound(control: ContentControlBoundaryRecord): string | null {

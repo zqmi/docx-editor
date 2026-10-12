@@ -4,7 +4,7 @@
 // and handles active-scope rebind after unlink / exit after delete-or-link of the open story.
 
 import type { EditorCommand, ExecResult } from '../contracts/editor.ts';
-import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';
 
 export type FurnitureVariant = 'default' | 'first' | 'even';

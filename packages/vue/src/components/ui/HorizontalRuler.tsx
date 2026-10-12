@@ -19,7 +19,7 @@
  */
 
 import { computed, defineComponent, ref, type CSSProperties, type PropType, type VNode } from 'vue';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   dragIndent,
   handlePosition,
@@ -28,7 +28,7 @@ import {
   type RulerIndent,
   type RulerIndentHandle,
   type RulerPageMetrics,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { twipsToPixels, pixelsToTwips, formatPx } from '../../lib/units';
 import { useTranslation } from '../../i18n';
 

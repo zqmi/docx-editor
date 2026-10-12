@@ -3,7 +3,7 @@ import { withDeclarations } from '../../scripts/build-declarations.mjs';
 import { readLocaleCodes } from './locale-files.mjs';
 
 // Each shipped locale gets its own subpath entry
-// (`@zqmi/docx-editor-i18n/<code>`) so consumer bundlers can code-split
+// (`@onsitesai/docx-editor-i18n/<code>`) so consumer bundlers can code-split
 // a single locale instead of pulling the whole locales map. `splitting: false`
 // keeps each entry self-contained. The locale list comes from `locale-files.mjs`
 // — same source `scripts/validate-i18n.mjs` reads, so the build and codegen

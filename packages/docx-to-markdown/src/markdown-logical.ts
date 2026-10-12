@@ -11,7 +11,7 @@ import type {
   ParagraphFragmentRecord,
   SemanticLayout,
   TableFragmentRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   concatMarkdown,
   EMPTY_MAPPED_MARKDOWN,

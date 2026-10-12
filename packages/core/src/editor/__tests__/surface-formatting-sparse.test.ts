@@ -20,7 +20,7 @@ import { applyTreeOp } from '../../store/store/tree-ops.ts';
 import { createLayoutSession } from '../../layout/layout-session.ts';
 import { createParagraphLayoutCache } from '../../layout/layout-cache.ts';
 import { readTableStructure } from '../../layout/semantic-table.ts';
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import type {
   BlockFragmentRecord,
   PageRecord,

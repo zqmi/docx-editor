@@ -6,10 +6,10 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "paths": {
-      "@zqmi/docx-editor-core": ["../../packages/core/src/index.ts"],
-      "@zqmi/docx-editor-core/*": ["../../packages/core/src/*"],
-      "@zqmi/docx-editor-i18n": ["../../packages/i18n/src/index.ts"],
-      "@zqmi/docx-editor-react": ["../../packages/react/src/index.ts"]
+      "@onsitesai/docx-editor-core": ["../../packages/core/src/index.ts"],
+      "@onsitesai/docx-editor-core/*": ["../../packages/core/src/*"],
+      "@onsitesai/docx-editor-i18n": ["../../packages/i18n/src/index.ts"],
+      "@onsitesai/docx-editor-react": ["../../packages/react/src/index.ts"]
     },
     "jsx": "react-jsx",
     "strict": true,

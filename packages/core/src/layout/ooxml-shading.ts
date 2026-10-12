@@ -8,7 +8,7 @@
 // into before/after spacing or bottom-border extent. Layout publishes that box; paint must not
 // invent it from the fragment outer box.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import type { OoxmlProperty } from '../store/store/tree-op-types.ts';
 import type { LayoutBox } from './semantic-records.ts';
 

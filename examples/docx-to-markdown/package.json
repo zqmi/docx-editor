@@ -10,12 +10,12 @@
     "check:preview": "node scripts/check-preview.mjs"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@docx-editor.dev/docx-to-markdown": "workspace:*",
-    "@zqmi/docx-editor-fonts": "workspace:*",
-    "@zqmi/docx-editor-i18n": "workspace:*",
+    "@onsitesai/docx-editor-fonts": "workspace:*",
+    "@onsitesai/docx-editor-i18n": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
-    "@zqmi/docx-editor-react": "workspace:*",
+    "@onsitesai/docx-editor-react": "workspace:*",
     "fflate": "^0.8.2",
     "github-markdown-css": "^5.9.0",
     "react": "^19.0.0",

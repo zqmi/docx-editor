@@ -8,7 +8,7 @@ import {
   canonicalOoxmlFingerprint,
   normalizeParagraphIdentity,
   readOoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { openBaselinePackage } from '../document-bootstrap.ts';
 import { W, zipDocument } from './document-peer-support.ts';
 

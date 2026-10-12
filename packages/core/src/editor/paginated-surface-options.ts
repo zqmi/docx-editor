@@ -15,7 +15,7 @@ import type {
 } from '../contracts/modules.ts';
 import type { EquationActivation } from './surface-equations.ts';
 import type { HyperlinkActivation } from './surface-navigation.ts';
-import type { TextMeasurer } from '@zqmi/docx-editor-core/layout';
+import type { TextMeasurer } from '@onsitesai/docx-editor-core/layout';
 import type { PaginatedSurfaceState, SurfaceEditingMode } from './paginated-surface-contract.ts';
 
 /**
@@ -143,7 +143,7 @@ export interface PaginatedSurfaceOptions {
   ) => boolean;
   /**
    * Localized accessible names for core-owned table insertion furniture.
-   * Defaults to English from `@zqmi/docx-editor-i18n` when omitted.
+   * Defaults to English from `@onsitesai/docx-editor-i18n` when omitted.
    */
   readonly tableInteractionLabel?: (
     key: 'table.insertRowBelow' | 'table.insertColumnRight'

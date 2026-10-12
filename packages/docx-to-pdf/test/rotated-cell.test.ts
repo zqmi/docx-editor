@@ -7,7 +7,7 @@ import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { PDFDocument, PDFRawStream, decodePDFRawStream } from 'pdf-lib';
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
-import { createFontSource } from '@zqmi/docx-editor-core/editor';
+import { createFontSource } from '@onsitesai/docx-editor-core/editor';
 import { exportPdf } from '../src/index.ts';
 import { formatDefaultsDocx as docx, paragraph } from './fixture.ts';
 

@@ -13,7 +13,7 @@
 //   at them before spawning, so the converter's bundled-font origin reads that directory.
 import { readFile } from 'node:fs/promises';
 import { createInterface } from 'node:readline';
-import '@zqmi/docx-editor-core/harfbuzz.wasm' with { type: 'file' };
+import '@onsitesai/docx-editor-core/harfbuzz.wasm' with { type: 'file' };
 import {
   createFontSource,
   exportMarkdown,
@@ -21,7 +21,7 @@ import {
   type MarkdownExportOptions,
   type MarkdownFontOrigin,
 } from '@docx-editor.dev/docx-to-markdown';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 interface FontFaceRequest {
   readonly path: string;

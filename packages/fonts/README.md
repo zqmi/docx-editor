@@ -8,7 +8,7 @@
   </a>
 </p>
 
-# @zqmi/docx-editor-fonts
+# @onsitesai/docx-editor-fonts
 
 Load open-licensed substitutes for common document fonts. The docx-editor engine uses these fonts to measure and render text.
 
@@ -21,7 +21,7 @@ Load open-licensed substitutes for common document fonts. The docx-editor engine
 | Courier New     | Liberation Mono   | SIL OFL           |
 | Century Gothic  | TeX Gyre Adventor | GUST Font License |
 
-The first five substitutes target matching advance widths for the glyphs they cover. TeX Gyre Adventor is slightly narrower than Century Gothic; the measured difference stays within 1% in `bun run check:font-width-fidelity`. Kerning and glyph differences can still change line breaks. For the original glyphs, supply licensed font bytes through `loadFonts()` from `@zqmi/docx-editor-core/editor`.
+The first five substitutes target matching advance widths for the glyphs they cover. TeX Gyre Adventor is slightly narrower than Century Gothic; the measured difference stays within 1% in `bun run check:font-width-fidelity`. Kerning and glyph differences can still change line breaks. For the original glyphs, supply licensed font bytes through `loadFonts()` from `@onsitesai/docx-editor-core/editor`.
 
 Packaged faces do not cover every script. Liberation Sans has no Arabic glyphs. The editor keeps native family fallback available for missing glyphs. Exact metrics still depend on the font available for that script.
 
@@ -44,7 +44,7 @@ The deprecated names remain available. Both constant aliases reference the same 
 Install the fonts package and its required engine peer:
 
 ```sh
-npm install @zqmi/docx-editor-fonts @zqmi/docx-editor-core
+npm install @onsitesai/docx-editor-fonts @onsitesai/docx-editor-core
 ```
 
 ## Load fonts
@@ -52,8 +52,8 @@ npm install @zqmi/docx-editor-fonts @zqmi/docx-editor-core
 Use `packagedFonts()` to load document fonts on demand. In React, `useFonts()` keeps the resolver identity stable so rerenders do not rebuild the editor.
 
 ```tsx
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { DocxEditor, useFonts } from '@zqmi/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { DocxEditor, useFonts } from '@onsitesai/docx-editor-react';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const fonts = useFonts(packagedFonts());
@@ -64,7 +64,7 @@ function Editor({ bytes }: { bytes: Uint8Array }) {
 To add Google Fonts, import its resolver and pass it after `packagedFonts()`:
 
 ```ts
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 const fonts = useFonts(packagedFonts(), googleFonts());
 ```
@@ -74,8 +74,8 @@ Call `useFonts()` inside a component.
 To load all 20 faces of the five default families before opening a document, use `defaultFonts()`. This loads 7.4 MB and avoids repagination when fonts arrive:
 
 ```ts
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
-import { defaultFonts } from '@zqmi/docx-editor-fonts';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
+import { defaultFonts } from '@onsitesai/docx-editor-fonts';
 
 const fonts = await defaultFonts(); // Add families to load a subset.
 const editor = createDocxEditor({ document: bytes, fonts });
@@ -98,10 +98,10 @@ The package reads this setting when its module loads. Setting it after importing
 Use `customFonts()` to supply brand fonts or the licensed original fonts to the editor. Put it first so your supplied faces take precedence.
 
 ```tsx
-import { customFonts } from '@zqmi/docx-editor-core/editor';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
-import { DocxEditor, useFonts } from '@zqmi/docx-editor-react';
+import { customFonts } from '@onsitesai/docx-editor-core/editor';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
+import { DocxEditor, useFonts } from '@onsitesai/docx-editor-react';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const fonts = useFonts(
@@ -162,11 +162,11 @@ Font binaries ship as separate files (`assets/*.ttf` and `assets/*.otf`) fetched
 
 ## Google Fonts, on demand
 
-`@zqmi/docx-editor-fonts/google` includes a font catalog without bundling its font files. It fetches fonts requested by the document or its default face.
+`@onsitesai/docx-editor-fonts/google` includes a font catalog without bundling its font files. It fetches fonts requested by the document or its default face.
 
 ```tsx
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
-import { DocxEditor, useFonts } from '@zqmi/docx-editor-react';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
+import { DocxEditor, useFonts } from '@onsitesai/docx-editor-react';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const fonts = useFonts(googleFonts());

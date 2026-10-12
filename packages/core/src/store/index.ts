@@ -1,5 +1,5 @@
 /**
- * `@zqmi/docx-editor-core/store` — the canonical OOXML tree and the only write path into it.
+ * `@onsitesai/docx-editor-core/store` — the canonical OOXML tree and the only write path into it.
  *
  * Bytes become a typed-where-layout-needs-it, generic-everywhere-else tree. Every mutation is a
  * `TreeDocOp` addressed by node id plus UTF-16 offset, applied in one transaction, so a batch

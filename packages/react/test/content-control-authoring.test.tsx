@@ -11,14 +11,14 @@ import './dom-setup.ts';
 import { useEffect, useState } from 'react';
 import { useDocxEditor } from '../src/editor/context';
 import { DocxEditorContentControlWidget } from '../src/editor/DocxEditorContentControlWidget';
-import type { ContentControlWidgetSession } from '@zqmi/docx-editor-core/editor';
+import type { ContentControlWidgetSession } from '@onsitesai/docx-editor-core/editor';
 
 (globalThis as unknown as { IS_REACT_ACT_ENVIRONMENT?: boolean }).IS_REACT_ACT_ENVIRONMENT = true;
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';

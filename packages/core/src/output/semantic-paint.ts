@@ -39,7 +39,7 @@ import {
   baselineShiftPtOf,
   glyphSizeFactorOf,
   TAB_LEADER_GLYPH,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { DEFAULT_CANVAS_FONT_STACK } from '../layout/canvas-measurer.ts';
 import { isolatePageFromHost } from './page-host-isolation.ts';
 import { styleForFontSlot } from '../layout/script-itemization.ts';
@@ -50,7 +50,7 @@ import {
   type RevisionStyleContext,
   type RevisionStyles,
 } from './revision-presentation.ts';
-import { formatRevisionOf } from '@zqmi/docx-editor-core/layout';
+import { formatRevisionOf } from '@onsitesai/docx-editor-core/layout';
 import { applyParagraphFormatAnchor } from './paragraph-format-anchor.ts';
 import type {
   BlockFragmentRecord,
@@ -65,7 +65,7 @@ import type {
   StyleSpanRecord,
   TableCellFragmentRecord,
   TableFragmentRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { paintPageNoteAreas } from './semantic-paint-notes.ts';
 import { paintContentControlChrome } from './semantic-paint-content-controls.ts';
 import {

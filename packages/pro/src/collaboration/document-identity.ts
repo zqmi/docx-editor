@@ -20,7 +20,7 @@ import type {
   CanonicalNodeDescriptor,
   CanonicalPrimitiveEffect,
   CanonicalPrimitiveJournal,
-} from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
 
 export class LogicalIdentityMap {
   private readonly allocator: LogicalIdAllocator;

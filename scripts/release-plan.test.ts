@@ -67,7 +67,7 @@ test('releases public packages without versioning private workspaces', async () 
   expect(config.privatePackages.tag).toBe(false);
   writeFileSync(
     join(directory, '.changeset', 'public-core-fix.md'),
-    '---\n"@zqmi/docx-editor-core": patch\n---\nFix document layout.\n'
+    '---\n"@onsitesai/docx-editor-core": patch\n---\nFix document layout.\n'
   );
   const plan = await getReleasePlan(directory);
   const versioned = plan.releases.filter((release) => release.type !== 'none');
@@ -96,7 +96,7 @@ test('releases public packages without versioning private workspaces', async () 
     join(directory, 'packages/docx-to-markdown/CHANGELOG.md'),
     'utf8'
   );
-  const fonts = plan.releases.find((r) => r.name === '@zqmi/docx-editor-fonts');
+  const fonts = plan.releases.find((r) => r.name === '@onsitesai/docx-editor-fonts');
   expect(markdownChangelog).toContain(
     `- Updated dependencies: ${fonts?.name}@${fonts?.newVersion}`
   );

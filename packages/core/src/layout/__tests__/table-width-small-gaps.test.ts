@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import type { BlockFragmentRecord, TableFragmentRecord } from '../semantic-records.ts';
 import { readTableStructure, tableOriginX } from '../semantic-table.ts';

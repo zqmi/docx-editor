@@ -19,7 +19,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * diff decides by its own rules, so the general path writes those.
  */
 import type * as Y from 'yjs';
-import type { CanonicalPrimitiveJournal } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { CanonicalPrimitiveJournal } from '@onsitesai/docx-editor-core/collaboration/replication';
 import type { LogicalId } from './identity.ts';
 import type { DocumentLimits } from './limits.ts';
 import { SharedTextValueRefused } from './paragraph-text-codec.ts';

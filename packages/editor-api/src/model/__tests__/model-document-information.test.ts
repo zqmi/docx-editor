@@ -11,7 +11,7 @@ if (registered) GlobalRegistrator.register();
 afterAll(() => {
   if (registered) GlobalRegistrator.unregister();
 });
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditor, RemoveDocInfoType } from '@docx-editor.dev/editor-api';
 import { DocxEditor as BrowserDocxEditor } from '@docx-editor.dev/editor-api/browser';
 import { propertyRemovalDocument, PROPERTY_PARTS } from './support/property-removal-document.ts';

@@ -3,7 +3,7 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-pdf/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import type { SemanticSpanVisit } from '@zqmi/docx-editor-core/layout';
+import type { SemanticSpanVisit } from '@onsitesai/docx-editor-core/layout';
 
 /** Device grid the reference paints on: 1/300 inch. */
 const PDF_PAINT_GRID_PT = 0.24;

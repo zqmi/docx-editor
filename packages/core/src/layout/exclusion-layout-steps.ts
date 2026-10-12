@@ -3,7 +3,7 @@
 // blocks are laid out until the zones settle. Steps, so a long pass may pause; see
 // `layout-steps.ts`.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { createDrawingExclusionPasses } from './drawing-exclusion-passes.ts';
 import {
   collectExclusionZonesByPage,

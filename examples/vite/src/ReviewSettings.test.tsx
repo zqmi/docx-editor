@@ -4,8 +4,8 @@ import '../../../packages/react/test/dom-setup.ts';
 
 import { afterEach, beforeEach, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render, within } from '@testing-library/react';
-import { DocxEditor, useDocxEditor } from '@zqmi/docx-editor-react';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { DocxEditor, useDocxEditor } from '@onsitesai/docx-editor-react';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { exampleText as t } from '../../shared/example-text';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { EXAMPLE_REVIEW_PANE, ReviewSettings, storedReviewPane } from './ReviewSettings';

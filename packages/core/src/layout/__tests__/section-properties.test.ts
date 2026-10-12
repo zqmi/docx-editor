@@ -11,7 +11,7 @@ import {
   readOoxmlPart,
   writeOoxmlPackage,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   DEFAULT_SECTION_PROPERTIES,
   enumerateDocumentSections,

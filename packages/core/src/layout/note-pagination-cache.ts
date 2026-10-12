@@ -1,6 +1,6 @@
 import type { NoteMarkContext } from './note-projection.ts';
 import type { NoteStoryLayoutCache } from './note-layout.ts';
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { NoteKind } from '../store/package/note-nodes.ts';
 import {
   layoutNoteSeparator,

@@ -12,7 +12,7 @@ import { afterEach, describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import * as Y from 'yjs';
 import { resolve } from 'node:path';
-import { addPackageComment, type OoxmlNode, type TreeDocOp } from '@zqmi/docx-editor-core/store';
+import { addPackageComment, type OoxmlNode, type TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import {
   createPeerHarness,
   nodeText,

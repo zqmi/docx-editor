@@ -1,5 +1,5 @@
 /**
- * `@zqmi/docx-editor-core/binding` — the canonical tree ↔ ProseMirror binding.
+ * `@onsitesai/docx-editor-core/binding` — the canonical tree ↔ ProseMirror binding.
  *
  * Forward: project one revision of the tree into a ProseMirror doc. Reverse: explain an edited
  * doc as the smallest set of tree ops, or REFUSE. The reverse direction never reconstructs the
@@ -35,7 +35,7 @@ export {
   type TreeDocxSessionView,
   type TreeSessionRejection,
 } from './tree-session.ts';
-export type { StoryScope, StoryTargetRejection } from '@zqmi/docx-editor-core/store';
+export type { StoryScope, StoryTargetRejection } from '@onsitesai/docx-editor-core/store';
 export {
   mountTreeSurface,
   type TreeSurface,

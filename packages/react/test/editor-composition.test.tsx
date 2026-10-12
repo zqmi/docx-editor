@@ -22,8 +22,8 @@ import type {
   Editor,
   EditorSnapshot,
   FontConfiguration,
-} from '@zqmi/docx-editor-core/contracts/editor';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditor } from '../src/components/DocxEditor.tsx';
 import { DocxEditorRoot, provideDocxEditor } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';

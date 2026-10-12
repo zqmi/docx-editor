@@ -17,7 +17,7 @@
 import { describe, expect, test } from 'bun:test';
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { readOoxmlPackage, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, type OoxmlNode, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { isRevisionWrapper, revisionAttributionOf } from '../revision-projection.ts';
 import { storyBlocks } from '../story-roots.ts';

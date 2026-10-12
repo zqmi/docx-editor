@@ -21,32 +21,32 @@
     "noFallthroughCasesInSwitch": true,
     "allowImportingTsExtensions": true,
     "paths": {
-      "@zqmi/docx-editor-i18n": ["../i18n/src/index.ts"],
-      "@zqmi/docx-editor-i18n/*": ["../i18n/src/*.ts"],
+      "@onsitesai/docx-editor-i18n": ["../i18n/src/index.ts"],
+      "@onsitesai/docx-editor-i18n/*": ["../i18n/src/*.ts"],
       // core's and react's export maps point at dist, which typecheck never builds.
       // Map every subpath this package reaches for to source, or the same type arrives
       // under two identities depending on whether a build happens to be lying around.
-      "@zqmi/docx-editor-core": ["../core/src/index.ts"],
-      "@zqmi/docx-editor-core/automation": ["../core/src/automation/index.ts"],
-      "@zqmi/docx-editor-core/binding": ["../core/src/binding/index.ts"],
-      "@zqmi/docx-editor-core/contracts/editor": ["../core/src/contracts/editor.ts"],
-      "@zqmi/docx-editor-core/contracts/document": ["../core/src/contracts/document.ts"],
-      "@zqmi/docx-editor-core/contracts/interaction": ["../core/src/contracts/interaction.ts"],
-      "@zqmi/docx-editor-core/contracts/mcp": ["../core/src/contracts/mcp.ts"],
-      "@zqmi/docx-editor-core/contracts/modules": ["../core/src/contracts/modules.ts"],
-      "@zqmi/docx-editor-core/contracts/plugin": ["../core/src/contracts/plugin.ts"],
-      "@zqmi/docx-editor-core/contracts/types": ["../core/src/contracts/types-barrel.ts"],
-      "@zqmi/docx-editor-core/layout": ["../core/src/layout/index.ts"],
-      "@zqmi/docx-editor-core/output": ["../core/src/output/index.ts"],
-      "@zqmi/docx-editor-core/store": ["../core/src/store/index.ts"],
-      "@zqmi/docx-editor-core/editor": ["../core/src/editor/index.ts"],
-      "@zqmi/docx-editor-core/collaboration/replication": [
+      "@onsitesai/docx-editor-core": ["../core/src/index.ts"],
+      "@onsitesai/docx-editor-core/automation": ["../core/src/automation/index.ts"],
+      "@onsitesai/docx-editor-core/binding": ["../core/src/binding/index.ts"],
+      "@onsitesai/docx-editor-core/contracts/editor": ["../core/src/contracts/editor.ts"],
+      "@onsitesai/docx-editor-core/contracts/document": ["../core/src/contracts/document.ts"],
+      "@onsitesai/docx-editor-core/contracts/interaction": ["../core/src/contracts/interaction.ts"],
+      "@onsitesai/docx-editor-core/contracts/mcp": ["../core/src/contracts/mcp.ts"],
+      "@onsitesai/docx-editor-core/contracts/modules": ["../core/src/contracts/modules.ts"],
+      "@onsitesai/docx-editor-core/contracts/plugin": ["../core/src/contracts/plugin.ts"],
+      "@onsitesai/docx-editor-core/contracts/types": ["../core/src/contracts/types-barrel.ts"],
+      "@onsitesai/docx-editor-core/layout": ["../core/src/layout/index.ts"],
+      "@onsitesai/docx-editor-core/output": ["../core/src/output/index.ts"],
+      "@onsitesai/docx-editor-core/store": ["../core/src/store/index.ts"],
+      "@onsitesai/docx-editor-core/editor": ["../core/src/editor/index.ts"],
+      "@onsitesai/docx-editor-core/collaboration/replication": [
         "../core/src/collaboration/replication.ts"
       ],
-      "@zqmi/docx-editor-core/collaboration": ["../core/src/collaboration/index.ts"],
+      "@onsitesai/docx-editor-core/collaboration": ["../core/src/collaboration/index.ts"],
       "@docx-editor.dev/editor-api": ["../editor-api/src/index.ts"],
       "@docx-editor.dev/editor-api/browser": ["../editor-api/src/browser.ts"],
-      "@zqmi/docx-editor-react": ["../react/src/index.ts"],
+      "@onsitesai/docx-editor-react": ["../react/src/index.ts"],
       "@docx-editor.dev/vue": ["../vue/src/index.ts"]
     }
   },

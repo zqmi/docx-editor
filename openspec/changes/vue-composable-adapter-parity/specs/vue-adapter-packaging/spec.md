@@ -2,7 +2,7 @@
 
 ### Requirement: The Vue adapter SHALL resolve exactly one copy of the engine
 
-`@docx-editor.dev/vue` SHALL declare `@zqmi/docx-editor-core` as a required `peerDependency` and
+`@docx-editor.dev/vue` SHALL declare `@onsitesai/docx-editor-core` as a required `peerDependency` and
 as a `workspace:*` `devDependency`, and SHALL NOT declare it as a regular `dependency`. The
 published bundle SHALL import the engine by bare specifier and SHALL NOT inline it.
 
@@ -15,29 +15,29 @@ cannot.
 #### Scenario: The manifest asks for the engine as a peer
 
 - **WHEN** `packages/vue/package.json` is read
-- **THEN** `peerDependencies['@zqmi/docx-editor-core']` is present and is not marked optional in
+- **THEN** `peerDependencies['@onsitesai/docx-editor-core']` is present and is not marked optional in
   `peerDependenciesMeta`
-- **AND** `dependencies['@zqmi/docx-editor-core']` is absent
-- **AND** `devDependencies['@zqmi/docx-editor-core']` is `workspace:*`, so this workspace builds
+- **AND** `dependencies['@onsitesai/docx-editor-core']` is absent
+- **AND** `devDependencies['@onsitesai/docx-editor-core']` is `workspace:*`, so this workspace builds
   and tests against the engine
 
 #### Scenario: The build leaves the engine external
 
 - **WHEN** the package is built and `dist/index.js` is read
-- **THEN** it contains a bare import of `@zqmi/docx-editor-core` or one of its subpaths
+- **THEN** it contains a bare import of `@onsitesai/docx-editor-core` or one of its subpaths
 - **AND** it contains no copy of the engine's module-level shaper setup
 
 #### Scenario: A page running both packages gets one engine
 
-- **WHEN** a host installs `@docx-editor.dev/vue`, `@zqmi/docx-editor-core` and
+- **WHEN** a host installs `@docx-editor.dev/vue`, `@onsitesai/docx-editor-core` and
   `@docx-editor.dev/pro` at compatible versions
-- **THEN** the package manager resolves a single `@zqmi/docx-editor-core`, and a pro module
+- **THEN** the package manager resolves a single `@onsitesai/docx-editor-core`, and a pro module
   registered against the editor the Vue adapter created is the same engine that paints
 
 ### Requirement: The Vue package SHALL be publishable and installable
 
 The manifest SHALL carry no `workspace:` specifier in a field a consumer resolves, SHALL NOT be
-`private`, and SHALL declare an `exports` map whose subpaths match `@zqmi/docx-editor-react`
+`private`, and SHALL declare an `exports` map whose subpaths match `@onsitesai/docx-editor-react`
 exactly. The build SHALL emit an esbuild metafile so the third-party notice generator has an
 attribution path.
 

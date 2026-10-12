@@ -3,9 +3,9 @@
 // Keeps package-level furniture ops and allowlisted field insertion off the composition
 // root so paginated-surface stays under the max-lines budget.
 
-import type { TreeApplyResult } from '@zqmi/docx-editor-core/binding';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
-import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult } from '@onsitesai/docx-editor-core/binding';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
+import type { TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import type { SurfaceLifecycleOp } from './surface-hf-editing.ts';
 
 export function createHeaderFooterOps(deps: {

@@ -8,8 +8,8 @@
 // Split out of `field-projection.ts` because these are the vocabulary, not the walk — and that
 // module is against the file-size cap.
 
-import { WML_NAMESPACE_URI, type OoxmlNode, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
-import type { HardBreakKind } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI, type OoxmlNode, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
+import type { HardBreakKind } from '@onsitesai/docx-editor-core/store';
 import type { TextWrappingBreakClear } from './text-wrapping-break-clear.ts';
 import type { LegacyFormFieldData } from '../store/package/field-nodes.ts';
 import type { InlineDrawingLayoutInput } from './drawing-layout.ts';
@@ -39,7 +39,7 @@ import {
 } from './revision-projection.ts';
 import type { ResolvedRunStyle, ThemeFonts } from './run-style.ts';
 import type { SpanLinkRecord } from './semantic-records.ts';
-import type { OmmlEquationProjection } from '@zqmi/docx-editor-core/store';
+import type { OmmlEquationProjection } from '@onsitesai/docx-editor-core/store';
 
 /**
  * A `w:ptab` — the ABSOLUTE-position tab (ECMA-376 §17.3.3.16), which is what a table of

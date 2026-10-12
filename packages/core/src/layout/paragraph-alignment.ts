@@ -1,5 +1,5 @@
 import { shrinkJustifiedSpans } from './paragraph-space-shrink.ts';
-import { PAGE_BREAK_CHAR, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { paragraphIsRtl, reorderBidiSpans, splitBidiTrailingWhitespace } from './rtl-paragraph.ts';
 import type { StyleSpanRecord, TextMeasurer } from './semantic-records.ts';
 import { measureDisplayText } from './run-style.ts';

@@ -11,7 +11,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { TreeDocOp, TreeModelChange } from '@zqmi/docx-editor-core/store';
+import type { TreeDocOp, TreeModelChange } from '@onsitesai/docx-editor-core/store';
 import type { EditorCollaborationSession } from '../../collaboration/index.ts';
 import { runContentControlCommand } from '../content-controls.ts';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';

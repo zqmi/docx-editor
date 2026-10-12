@@ -11,7 +11,7 @@
     "typecheck": "node ../../node_modules/typescript7/bin/tsc --noEmit -p ."
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
     "@hocuspocus/provider": "^4.6.0",
     "@hocuspocus/server": "^4.6.0",

@@ -1,7 +1,7 @@
 // OOXML East Asian typography policy. Settings travel with the style cascade so its
 // producer fingerprint invalidates all stories when document typography changes.
 // References: ECMA-376 §17.3.1.16, §17.3.1.21, §17.15.1.18, §17.15.1.58–59, §17.15.1.82.
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 
 /** Document-wide East Asian line-break and whitespace policy. @public */
 export interface CjkTypographySettings {

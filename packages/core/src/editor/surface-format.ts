@@ -7,13 +7,13 @@ import { createContextualRunFormatting } from '../layout/complex-script-formatti
 // covers a WHOLE paragraph also writes its mark, because that is what a list marker
 // inherits its face from.
 
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { StoryScope } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { StoryScope } from '@onsitesai/docx-editor-core/store';
 import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   directParagraphMarkProperties,
   directParagraphProperties,
@@ -29,13 +29,13 @@ import {
   withPendingFormatting,
   type SurfaceProperty,
 } from './surface-formatting.ts';
-import { formattableRanges } from '@zqmi/docx-editor-core/store';
+import { formattableRanges } from '@onsitesai/docx-editor-core/store';
 import type {
   FormattingDisplayMode,
   FormattingRevisionAuthorFilter,
   TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
-import { paragraphsInCells } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import { paragraphsInCells } from '@onsitesai/docx-editor-core/layout';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';
 import { directionalParagraphEntry } from './paragraph-direction-writes.ts';
 

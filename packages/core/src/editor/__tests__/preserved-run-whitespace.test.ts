@@ -11,8 +11,8 @@ import {
   diffSemanticDigests,
   readOoxmlPackage,
   semanticDigest,
-} from '@zqmi/docx-editor-core/store';
-import { linesOf } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import { linesOf } from '@onsitesai/docx-editor-core/layout';
 import { paragraphTextOf } from '../../store/store/tree-ops.ts';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 import { docx } from './paginated-surface-fixtures.ts';

@@ -1,5 +1,5 @@
-import { readViewSettings } from '@zqmi/docx-editor-core/store';
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import { readViewSettings } from '@onsitesai/docx-editor-core/store';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
 
 /** The document setting is shared by every field paint and memoized per package revision. */
 export function createFormFieldShading(

@@ -31,7 +31,7 @@ import type {
   AutomationBatchResponse,
   AutomationHandle,
   AutomationHost,
-} from '@zqmi/docx-editor-core/automation';
+} from '@onsitesai/docx-editor-core/automation';
 import { Document } from '../model/document.ts';
 import { hostFailure } from './batch.ts';
 import type { ClientObject } from './client-object.ts';

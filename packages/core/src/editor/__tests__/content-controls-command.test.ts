@@ -10,7 +10,7 @@ import {
   contentControlPropertiesOf,
   contentControlTextOf,
   findNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createDocxEditor } from '../docx-editor.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

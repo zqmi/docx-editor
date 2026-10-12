@@ -15,7 +15,7 @@ import {
   type TreeDocxSession,
   type TreeSurface,
   type TreeSurfaceState,
-} from '@zqmi/docx-editor-core/binding';
+} from '@onsitesai/docx-editor-core/binding';
 
 declare global {
   interface Window {

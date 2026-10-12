@@ -1,33 +1,35 @@
-# zqmi fork of docx-editor
+# onsitesai fork of docx-editor
 
 Apache-2.0 fork of [eigenpal/docx-editor](https://github.com/eigenpal/docx-editor) maintained for Onsites Chat Office.
+
+GitHub: https://github.com/zqmi/docx-editor  
+npm scope: **`@onsitesai`**
 
 ## Published packages (npmjs)
 
 | Package | Upstream name |
 |---------|----------------|
-| `@zqmi/docx-editor-core` | `@docx-editor.dev/core` |
-| `@zqmi/docx-editor-react` | `@docx-editor.dev/react` |
-| `@zqmi/docx-editor-fonts` | `@docx-editor.dev/fonts` |
-| `@zqmi/docx-editor-i18n` | `@docx-editor.dev/i18n` |
+| `@onsitesai/docx-editor-core` | `@docx-editor.dev/core` |
+| `@onsitesai/docx-editor-react` | `@docx-editor.dev/react` |
+| `@onsitesai/docx-editor-fonts` | `@docx-editor.dev/fonts` |
+| `@onsitesai/docx-editor-i18n` | `@docx-editor.dev/i18n` |
 
 Upstream `fonts-cjk` / `vue` / `pro` / `editor-api` stay under `@docx-editor.dev/*` in this monorepo and are **not** published by us.
 
 ## First-time npm setup
 
-1. Create an npm user and the **`@zqmi` org** (or grant this user publish rights on `@zqmi`).
+1. Create the **`@onsitesai` org** on npmjs (Free · public packages).
 2. Locally: `npm login`
-3. Publish: `bun run publish:zqmi` (or `--dry-run` first)
-4. CI: add repo secret `NPM_TOKEN` (Automation token with publish). Workflow: `.github/workflows/publish-zqmi.yml` (manual or tag `zqmi-v*`).
+3. Publish: `bun run publish:onsitesai` (or `publish:onsitesai:dry` first)
+4. CI: add repo secret `NPM_TOKEN`. Workflow: `.github/workflows/publish-onsitesai.yml` (manual or tag `onsitesai-v*`).
 
 ## Sync upstream
 
 ```bash
 git fetch upstream
 git merge upstream/main
-# resolve conflicts, re-run rename only if upstream reintroduced old names
 bun install
-bun run publish:zqmi   # after bumping package versions
+bun run publish:onsitesai   # after bumping package versions
 ```
 
 ## Onsites-specific fixes

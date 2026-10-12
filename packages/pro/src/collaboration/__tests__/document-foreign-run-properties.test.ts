@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // nor removes it, so every replica keeps the extension and shows the same formatting.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { OoxmlNode, TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import { createPeerHarness, W, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('foreign-run-properties-room');

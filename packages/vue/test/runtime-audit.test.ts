@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks -- Vue composables in defineComponent setup */
 
 import './dom-setup.ts';
-import { editorInstanceScope } from '@zqmi/docx-editor-core/editor';
+import { editorInstanceScope } from '@onsitesai/docx-editor-core/editor';
 
 import { afterEach, describe, expect, mock, spyOn, test } from 'bun:test';
 import { createApp, createSSRApp, h, nextTick, ref } from 'vue';
 import { renderToString } from 'vue/server-renderer';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';

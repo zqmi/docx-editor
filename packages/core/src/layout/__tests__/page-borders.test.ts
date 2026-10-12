@@ -11,7 +11,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { bodySectionNode, parseSectionProperties } from '../section-properties.ts';
 import { parsePageBorders } from '../page-borders.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';

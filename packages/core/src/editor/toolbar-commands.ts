@@ -28,7 +28,7 @@ import type {
   EditorCommand,
   EditorExecOptions,
   ExecResult,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import type { ChromeSlotId } from './chrome-controls.ts';
 import { NOTHING_TO_COPY_FORMATTING } from './surface-format-painter-contract.ts';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';

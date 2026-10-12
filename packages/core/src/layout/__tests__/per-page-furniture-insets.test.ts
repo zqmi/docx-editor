@@ -19,8 +19,8 @@ import {
   type PageFurniture,
 } from '../index.ts';
 import { convergenceTailShiftAllowed } from '../page-reuse-guards.ts';
-import { readOoxmlPackage, resolveHeaderFooterPartsBySection } from '@zqmi/docx-editor-core/store';
-import type { OoxmlPackage, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, resolveHeaderFooterPartsBySection } from '@onsitesai/docx-editor-core/store';
+import type { OoxmlPackage, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { PageRecord } from '../semantic-records.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

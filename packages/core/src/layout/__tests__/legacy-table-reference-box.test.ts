@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { readTableStructure, tableOriginX } from '../semantic-table.ts';
 import { cellContentInsets } from '../table-cell-geometry.ts';
 

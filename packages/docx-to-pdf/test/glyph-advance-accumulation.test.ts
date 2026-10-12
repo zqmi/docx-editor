@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
-import { createFontSource } from '@zqmi/docx-editor-core/editor';
+import { createFontSource } from '@onsitesai/docx-editor-core/editor';
 import { exportPdf } from '../src/index.ts';
 import { docx, paragraph } from './fixture.ts';
 import { glyphPositions } from './glyph-positions.ts';

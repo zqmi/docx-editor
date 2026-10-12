@@ -85,9 +85,9 @@ function bareSpecifiers(files: readonly string[]): string[] {
 
 function sourceTarget(file: string, specifier: string): string | null {
   const mapped =
-    specifier === '@zqmi/docx-editor-core/automation'
+    specifier === '@onsitesai/docx-editor-core/automation'
       ? join(CORE_SRC, 'automation', 'index.ts')
-      : specifier === '@zqmi/docx-editor-core/collaboration'
+      : specifier === '@onsitesai/docx-editor-core/collaboration'
         ? join(CORE_SRC, 'collaboration', 'index.ts')
         : null;
   if (mapped) return mapped;
@@ -151,14 +151,14 @@ describe('what the runtime imports', () => {
 
   test('the neutral modules import only provider-neutral core capabilities', () => {
     expect(bareSpecifiers(files.filter(isNeutral))).toEqual([
-      '@zqmi/docx-editor-core/automation',
-      '@zqmi/docx-editor-core/collaboration',
+      '@onsitesai/docx-editor-core/automation',
+      '@onsitesai/docx-editor-core/collaboration',
     ]);
   });
 
   test('exactly one module names the editor lane', () => {
     const reaching = files
-      .filter((file) => specifiersOf(file).includes('@zqmi/docx-editor-core/editor'))
+      .filter((file) => specifiersOf(file).includes('@onsitesai/docx-editor-core/editor'))
       .map((file) => relative(PACKAGE_SRC, file));
     expect(reaching).toEqual([join('runtime', 'browser.ts')]);
   });

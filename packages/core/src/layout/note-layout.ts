@@ -10,7 +10,7 @@
 // bounded: hostile note counts and over-tall flows fail closed with named reasons.
 
 import { withFieldResultsProducer } from './field-results-producer.ts';
-import type { OoxmlElement, OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   findNoteById,
   formatNoteScopeId,
@@ -188,7 +188,7 @@ export interface LayoutNoteStoryOptions {
   ) => string;
   readonly projectionTokenForTableForPart?: (ownerPartName: string, table: OoxmlNode) => string;
   /** Document properties for a document-property field inside a note story. */
-  readonly documentProperties?: import('@zqmi/docx-editor-core/store').DocumentProperties;
+  readonly documentProperties?: import('@onsitesai/docx-editor-core/store').DocumentProperties;
   /**
    * The document's resolved REF inputs, so a footnote's cross-reference paints the live
    * value the body paints. The flow folds each paragraph's resolved values into its break

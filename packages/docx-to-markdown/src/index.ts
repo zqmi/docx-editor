@@ -34,16 +34,16 @@ import {
   type ExportSession,
   type OpenDocumentForExportResult,
   type OpenFontBackedDocumentForExportResult,
-} from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/export';
 import {
   HARD_MAX_FONT_BYTES,
   prepareLayoutFontConfiguration,
   type LayoutFontConfiguration,
   type PreparedLayoutFontConfiguration,
-} from '@zqmi/docx-editor-core/layout';
-import type { HeadlessDocumentRejection } from '@zqmi/docx-editor-core/store';
-import { defineFontResolver } from '@zqmi/docx-editor-core/editor';
-import { FONT_ASSET_ROOT, loadDefaultFonts, packagedFonts } from '@zqmi/docx-editor-fonts';
+} from '@onsitesai/docx-editor-core/layout';
+import type { HeadlessDocumentRejection } from '@onsitesai/docx-editor-core/store';
+import { defineFontResolver } from '@onsitesai/docx-editor-core/editor';
+import { FONT_ASSET_ROOT, loadDefaultFonts, packagedFonts } from '@onsitesai/docx-editor-fonts';
 import { exportMarkdownLayout as translateMarkdownLayout } from './markdown.ts';
 import type {
   MarkdownExportOptions,
@@ -54,18 +54,18 @@ import type {
 } from './markdown-types.ts';
 import { createSuccessfulValueCache, provisionWithExportDeadline } from './export-deadline.ts';
 
-export { ExportResourceError } from '@zqmi/docx-editor-core/export';
+export { ExportResourceError } from '@onsitesai/docx-editor-core/export';
 export {
   forEachSemanticDrawing,
   HARD_MAX_AGGREGATE_FONT_BYTES,
   HARD_MAX_FONT_BYTES,
   HARD_MAX_FONT_SOURCES,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 export {
   createFontSource,
   defineFontResolver,
   REVISION_MARKUP_COLORS,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 export type {
   ReviewDisplayMode,
   RevisionMarkupOptions,
@@ -77,7 +77,7 @@ export type {
   RevisionChangedLinesMark,
   RevisionMarkupColor,
   RevisionMarkupNamedColor,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 export type {
   ExportDestinationAnchor,
@@ -95,7 +95,7 @@ export type {
   OpenDocumentForExportOptions,
   OpenDocumentForExportResult,
   PreservedImageConverter,
-} from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/export';
 export type {
   AnchoredDrawingLayoutFallback,
   FontRequest,
@@ -128,13 +128,13 @@ export type {
   TextboxStoryLayout,
   TextMeasurer,
   VectorShapeProjection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 export type {
   HeadlessDocumentRejection,
   HeadlessDocumentView,
   ImageDecodePort,
   ImageResourceState,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 export type {
   MarkdownExportOptions,
   MarkdownExportResult,

@@ -23,7 +23,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { createBrowser } from '../../runtime/browser.ts';
 import { createServer } from '../../runtime/server.ts';
 import { isDocxEditorError } from '../../runtime/errors.ts';

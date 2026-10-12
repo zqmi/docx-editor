@@ -20,7 +20,7 @@ import type {
   AutomationError,
   AutomationErrorCode,
   AutomationOperation,
-} from '@zqmi/docx-editor-core/automation';
+} from '@onsitesai/docx-editor-core/automation';
 import { DocxEditorError, type DocxEditorErrorCode } from './errors.ts';
 import type { QueuedAction } from './queue.ts';
 

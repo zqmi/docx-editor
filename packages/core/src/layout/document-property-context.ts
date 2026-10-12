@@ -1,6 +1,6 @@
 // Document-property fields change measured text without changing their paragraph nodes.
 import { withFieldResultsProducer } from './field-results-producer.ts';
-import type { DocumentProperties } from '@zqmi/docx-editor-core/store';
+import type { DocumentProperties } from '@onsitesai/docx-editor-core/store';
 import type { DocumentPropertyKey } from './field-doc-property.ts';
 import type { SemanticLayoutOptions } from './semantic-layout-options.ts';
 import { producerWithControlContext } from './pass-producer.ts';

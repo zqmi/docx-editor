@@ -28,7 +28,7 @@ symptom that does not point back at its cause. Read it before writing any of thi
 are the arrangement. `ruler-indent.ts` holds the four-handle drag geometry, `ruler-ticks.ts`
 the ticks, `zoom-fit.ts` the fit, `navigationShift` the displacement rule,
 `composeFontConfiguration` the font merge, and the whole stylesheet lives in
-`@zqmi/docx-editor-core/styles/editor.css` (enforced by `check:adapter-css-thin`, which the Vue
+`@onsitesai/docx-editor-core/styles/editor.css` (enforced by `check:adapter-css-thin`, which the Vue
 package already passes). Any Vue file that recomputes one of those is a bug, not a port.
 
 ## 0. Greenfield
@@ -104,7 +104,7 @@ something, and reading that report is a task in this change rather than an after
 `LOADING_SNAPSHOT` — the frozen `EditorSnapshot` every path returns when there is no editor yet —
 lives in `packages/react/src/editor/loading-snapshot.ts`. Vue cannot import it: React is not a
 dependency of the Vue package, and the framework-isolation lint forbids the direction anyway. So
-it moves to `@zqmi/docx-editor-core/editor` and both adapters re-export it.
+it moves to `@onsitesai/docx-editor-core/editor` and both adapters re-export it.
 
 Copying it is the alternative, and the repository already shows what that costs. Vue's
 `DocxEditor.ts` carries a hand-rolled `PRE_MOUNT_SNAPSHOT` for the same purpose, and the two have
@@ -507,7 +507,7 @@ each has a core home:
 | the navigation pane displacement         | `navigationShift` / `navigationPaneReservation` |
 | search debounce and the match cap        | `SEARCH_DEBOUNCE_MS` / `SEARCH_MATCH_LIMIT`     |
 | font composition                         | `composeFontConfiguration`                      |
-| any colour, spacing, or chrome rule      | `@zqmi/docx-editor-core/styles/editor.css`       |
+| any colour, spacing, or chrome rule      | `@onsitesai/docx-editor-core/styles/editor.css`       |
 | any user-facing English                  | `packages/i18n/en.json`                         |
 
 `check:feature-parity` already walks both `src` trees and reports drift; it becomes useful again

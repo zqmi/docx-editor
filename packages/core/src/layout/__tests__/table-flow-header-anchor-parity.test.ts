@@ -19,7 +19,7 @@ import {
   projectDrawing,
 } from '../../store/package/drawing-projection.ts';
 import type { ImageResourceState } from '../../store/package/image-resources.ts';
-import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { InlineDrawingLayoutContext } from '../drawing-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import { createParagraphLayoutCache, tableCellBreakKeysOf } from '../layout-cache.ts';

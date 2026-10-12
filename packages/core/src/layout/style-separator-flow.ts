@@ -3,7 +3,7 @@ import { hasVisibleSeparatorText } from './style-separator-visible.ts';
 import { paragraphIsRtl } from './rtl-paragraph.ts';
 import { resolveCjkTypography } from './cjk-typography.ts';
 import { paragraphKeeps } from './pagination-keeps.ts';
-import type { OoxmlElement, OoxmlNode, OoxmlParagraphNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode, OoxmlParagraphNode } from '@onsitesai/docx-editor-core/store';
 import { paragraphOffsetIndex } from '../store/store/tree-op-segments.ts';
 import { WML_NAMESPACE_URI } from '../store/package/ooxml-tree.ts';
 import { propertiesOfRunContainer } from './field-run-text.ts';

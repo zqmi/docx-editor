@@ -9,7 +9,7 @@ import {
   readOoxmlPart,
   type OoxmlElement,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { collectFlowBlocks } from '../../store/package/content-control-walk.ts';
 import { framedTokenJoin } from '../framed-token.ts';
 import {

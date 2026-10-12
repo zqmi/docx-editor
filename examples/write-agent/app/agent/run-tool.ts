@@ -4,7 +4,7 @@ import {
   type DocxEditorServerRuntime,
 } from '@docx-editor.dev/editor-api';
 import { DocxEditor as EditorApi } from '@docx-editor.dev/editor-api/browser';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { ZodError } from 'zod';
 import { WRITER_TOOLS } from './tools';
 import {

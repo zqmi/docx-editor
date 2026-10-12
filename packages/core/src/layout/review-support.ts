@@ -6,7 +6,7 @@
 // implementation and lives in `@docx-editor.dev/pro`. The review-item VOCABULARY — the typed
 // item shapes, stable keys and position resolution — lives in the store lane
 // (`store/store/review-items.ts`), where the binding lane can reach it too; this module
-// re-exports it so `@zqmi/docx-editor-core/layout` keeps publishing the whole review surface,
+// re-exports it so `@onsitesai/docx-editor-core/layout` keeps publishing the whole review surface,
 // and adds only what needs layout records: anchor indexes and card geometry.
 
 export {
@@ -49,7 +49,7 @@ export {
   linkRevisionReplies,
   paragraphOrderOfPart,
   type LinkableReviewItem,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 import { firstReviewRange, type ReviewItem } from '../store/store/review-items.ts';
 

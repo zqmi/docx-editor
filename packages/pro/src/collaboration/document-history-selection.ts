@@ -19,8 +19,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * as the selection.
  */
 import type * as Y from 'yjs';
-import type { CollaborationLocalSelection } from '@zqmi/docx-editor-core/collaboration';
-import { mapOffsetAcrossText } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { CollaborationLocalSelection } from '@onsitesai/docx-editor-core/collaboration';
+import { mapOffsetAcrossText } from '@onsitesai/docx-editor-core/collaboration/replication';
 import type { EncodedCharacter } from './document-awareness.ts';
 
 type Endpoint = CollaborationLocalSelection['anchor'] & { readonly character?: EncodedCharacter };

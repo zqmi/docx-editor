@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer } from '../index.ts';
 import { createParagraphLayoutCache, paragraphLayoutKey } from '../layout-cache.ts';
 import { breakParagraph, type PendingLine } from '../paragraph-flow.ts';

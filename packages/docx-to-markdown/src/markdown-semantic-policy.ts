@@ -31,8 +31,8 @@ import type {
   ResolvedRunStyle,
   SemanticRootStoryKind,
   TextboxStoryLayout,
-} from '@zqmi/docx-editor-core/layout';
-import type { ImageResourceState } from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/layout';
+import type { ImageResourceState } from '@onsitesai/docx-editor-core/store';
 
 type DrawingAccessibility = InlineDrawingRecord['accessibility'];
 

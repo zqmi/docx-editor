@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import * as Y from 'yjs';
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type {
   BackendKind,
   DirtyPaths,

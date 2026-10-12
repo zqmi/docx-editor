@@ -5,7 +5,7 @@ import {
   readOoxmlPart,
   serializeOoxmlPart,
   type HeadlessDocumentView,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createDocumentFurnitureSource } from '../document-furniture-source.ts';
 import { createDocumentLinkProjectors } from '../document-link-projector.ts';
 import { createDocumentStyleDependencies } from '../document-style-deps.ts';

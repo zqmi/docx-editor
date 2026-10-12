@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * left: an edit script over tokens, one per character, embed or empty element.
  */
 import type * as Y from 'yjs';
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { linearizeParagraph } from './paragraph-linear.ts';
 import type { DocumentLimits } from './limits.ts';
 import {

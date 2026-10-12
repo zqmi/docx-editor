@@ -29,7 +29,7 @@ const PACKAGES = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..')
  * Importable specifier to the source root it resolves to.
  *
  * Built from the lane DAG rather than from directory names, so a lane that moves into
- * `packages/core` is still followed — as its subpath (`@zqmi/docx-editor-core/store`)
+ * `packages/core` is still followed — as its subpath (`@onsitesai/docx-editor-core/store`)
  * instead of its old package name. Resolving by hand here would make this walk silently stop
  * at the first moved lane, and a walk that reaches nothing cannot fail.
  */
@@ -38,7 +38,7 @@ const WORKSPACE: ReadonlyMap<string, string> = new Map(
     const root = join(PACKAGES, laneSourceRoot(lane));
     if (!laneHasMoved(lane)) return [[CORE_LANES[lane].package!, root] as const];
     const subpath = CORE_LANES[lane].subpath;
-    const CORE = '@zqmi/docx-editor-core';
+    const CORE = '@onsitesai/docx-editor-core';
     const specifier = !subpath || subpath === '.' ? CORE : `${CORE}/${subpath.slice(2)}`;
     return [[specifier, root] as const];
   })

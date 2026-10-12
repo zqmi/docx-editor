@@ -14,7 +14,7 @@ import {
   readOoxmlPart,
   type FieldResultsMode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createParagraphLayoutCache } from '../layout-cache.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { caretAt, paragraphTextFromLayout } from '../semantic-interaction.ts';

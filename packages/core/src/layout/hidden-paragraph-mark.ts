@@ -27,7 +27,7 @@
 // space after of the paragraph before the run. The removed paragraph adds no spacing itself.
 // {@link hiddenMarkNeighboursOf} carries those neighbours on the kept paragraphs.
 
-import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { readOnOffChild } from '../store/package/ooxml-shared.ts';
 import { WML_NAMESPACE_URI } from '../store/package/ooxml-tree.ts';
 import type { RevisionAuthorFilter, RevisionDisplayMode } from './revision-projection.ts';

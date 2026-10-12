@@ -12,13 +12,13 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { strToU8, zipSync } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import {
   DocxEditorAuthorStyle,
   DocxEditorContent,
   DocxEditorRoot,
   DocxEditorViewport,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 import { DocxEditorReview } from '../react/index.ts';
 import { reviewModule } from '../index.ts';
 

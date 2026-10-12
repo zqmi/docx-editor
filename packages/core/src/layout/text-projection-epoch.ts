@@ -4,7 +4,7 @@ import type {
   DocumentProperties,
   HeadlessDocumentView,
   OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { sha256FontBytes } from '../store/package/sha256.ts';
 import type { DocumentPropertyKey } from './field-doc-property.ts';
 import { piecesOfParagraph } from './field-projection.ts';

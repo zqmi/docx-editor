@@ -13,7 +13,7 @@
 // These rules wrap the legacy text-form rules, which already treat a FORMTEXT input this way;
 // a position that is not at a saved result falls through to them unchanged.
 
-import { findNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { findNode, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { SemanticPosition, SemanticSelection } from '../layout/semantic-interaction.ts';
 import { savedResultRanges, type SavedResultRange } from '../store/store/field-result-edits.ts';
 import type { TreeDocOp } from '../store/store/tree-op-types.ts';

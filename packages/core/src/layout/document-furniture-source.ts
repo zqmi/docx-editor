@@ -7,7 +7,7 @@ import {
   type HeaderFooterSectionResolution,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { InlineDrawingLayoutContext } from './drawing-layout.ts';
 import type { DocumentLinkProjectors } from './document-link-projector.ts';
 import { layoutHeaderFooterStory } from './hf-layout.ts';

@@ -8,7 +8,7 @@ import {
   type GroupTextboxStoryRecord,
   type ParagraphFragmentRecord,
   type SemanticDrawingVisit,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { number as n, rect } from './context.ts';
 
 type GroupOwner = SemanticDrawingVisit['drawing'];

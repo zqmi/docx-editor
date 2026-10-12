@@ -6,8 +6,8 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createApp, defineComponent, h, nextTick } from 'vue';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';

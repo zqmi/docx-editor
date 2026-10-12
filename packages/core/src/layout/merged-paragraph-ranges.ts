@@ -13,7 +13,7 @@
 // k-th member starts at the sum of the lengths before it.
 
 import { paragraphOffsetIndex } from '../store/store/tree-op-segments.ts';
-import type { OoxmlParagraphNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlParagraphNode } from '@onsitesai/docx-editor-core/store';
 import type { ParagraphMergeGroup } from './story-roots.ts';
 import type { LineRecord, SourceRange, StyleSpanRecord } from './semantic-records.ts';
 import { resolvedParagraphMarkChangeSites } from './revision-formatting-projection.ts';

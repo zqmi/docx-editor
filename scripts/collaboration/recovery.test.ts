@@ -2,7 +2,7 @@ import { expect, test } from 'bun:test';
 import { createRegistryClient, PUBLICATION_TIMEOUT_MS } from './registry.mjs';
 import { verifyRecoveryPublication } from './recovery.mjs';
 
-const name = '@zqmi/docx-editor-core';
+const name = '@onsitesai/docx-editor-core';
 const converter = '@docx-editor.dev/docx-to-markdown';
 const version = '2.21.1';
 const published = { name, version, dist: { integrity: 'sha512-tested' } };

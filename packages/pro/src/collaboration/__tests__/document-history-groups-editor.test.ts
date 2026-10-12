@@ -10,7 +10,7 @@ import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { createDocumentCollaboration } from '../document-session.ts';
 import { collaborationModule } from '../collaboration-module.ts';
 import { collaborationDocx } from './support.ts';
@@ -43,7 +43,7 @@ function colors(root: OoxmlNode): string[] {
 
 describe('history groups through Editor.exec on a collaborating surface', () => {
   test('frames of one gesture are one shared undo item', async () => {
-    const { createDocxEditor } = await import('@zqmi/docx-editor-core/editor');
+    const { createDocxEditor } = await import('@onsitesai/docx-editor-core/editor');
     const ydoc = new Y.Doc();
     const awareness = new Awareness(ydoc);
     const room = await createDocumentCollaboration({

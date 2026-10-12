@@ -17,8 +17,8 @@ import {
   type StoryScope,
   type TreeDocOp,
   type TreePackageStore,
-} from '@zqmi/docx-editor-core/store';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import { COLLABORATION_FORMAT_VERSION } from '@docx-editor.dev/pro/collaboration';
 import {
   createHocuspocusCollaboration,

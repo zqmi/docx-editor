@@ -18,7 +18,7 @@ import {
   type SectionProperties,
   type SurfaceFormatting,
   type TextMeasurer,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 /** @public */
 export interface PaginatedDocxEditorProps {

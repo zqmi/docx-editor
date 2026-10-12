@@ -20,7 +20,7 @@ import {
   readOoxmlPart,
   resolveHeaderFooterPartsBySection,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { cascadedTabStops, nextTabDestination, tabAdvanceWidth } from '../paragraph-tabs.ts';
 import { cascadeParagraphFormatting } from '../style-cascade.ts';
 

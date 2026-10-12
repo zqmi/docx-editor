@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { applyLineSpacing, type ParagraphLineSpacing } from '../paragraph-style.ts';
 import { paragraphSnapsToLineGrid, withLineGrid } from '../line-grid.ts';
 import { parseSectionProperties } from '../section-properties.ts';

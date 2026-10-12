@@ -15,7 +15,7 @@
 // recognition but its transform is NOT applied — the raw property value paints. Word would
 // re-case it; this renders the stored string verbatim.
 
-import type { DocumentProperties } from '@zqmi/docx-editor-core/store';
+import type { DocumentProperties } from '@onsitesai/docx-editor-core/store';
 import { normalizeFieldInstruction } from './field-instruction.ts';
 
 /** The document-property keys a field may resolve to. A subset of {@link DocumentProperties}. */

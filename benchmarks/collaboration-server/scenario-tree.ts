@@ -1,7 +1,7 @@
 // Small readers of a document tree and of shared state, shared by the scenario fuzzer.
 
 import * as Y from 'yjs';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { PACKAGE_NODES_KEY } from '../../packages/pro/src/collaboration/document/index.ts';
 import { INLINE_FIELD } from '../../packages/pro/src/collaboration/document/paragraph-text.ts';
 

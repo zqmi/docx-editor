@@ -42,7 +42,7 @@ import { HandleCollection, type PromisedItem } from './item-collection.ts';
 import { ModelObject } from './model-object.ts';
 import { Range } from './range.ts';
 import { clientResult, type ClientResult } from '../runtime/client-result.ts';
-import type { RevisionAuthorResult, RevisionBatchResult } from '@zqmi/docx-editor-core/automation';
+import type { RevisionAuthorResult, RevisionBatchResult } from '@onsitesai/docx-editor-core/automation';
 export type {
   RevisionAuthorEntry,
   RevisionAuthorResult,
@@ -50,7 +50,7 @@ export type {
   RevisionBatchResult,
   RevisionBatchEntry,
   RevisionBatchSkipReason,
-} from '@zqmi/docx-editor-core/automation';
+} from '@onsitesai/docx-editor-core/automation';
 
 /**
  * Word's own names for a kind of change.

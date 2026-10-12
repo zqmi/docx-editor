@@ -10,13 +10,13 @@ import { afterEach, beforeEach, describe, expect, mock, test } from 'bun:test';
 import { useContext, useEffect, type ReactNode } from 'react';
 import { act, cleanup, fireEvent, render, waitFor } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';
 import { ReviewRailContext } from '../src/editor/context.ts';
 import { DocxEditorToolbar as T } from '../src/editor/toolbar/index.ts';
-import { en } from '@zqmi/docx-editor-i18n';
+import { en } from '@onsitesai/docx-editor-i18n';
 import { testReviewModule } from './review-test-module.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

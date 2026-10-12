@@ -6,8 +6,8 @@ import {
   OFFICE_MATH_NAMESPACE_URI,
   WML_NAMESPACE_URI,
   readOoxmlPart,
-} from '@zqmi/docx-editor-core/store';
-import { createFixedMeasurer, layoutSemanticDocument, linesOf } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import { createFixedMeasurer, layoutSemanticDocument, linesOf } from '@onsitesai/docx-editor-core/layout';
 import { paintSemanticLayout } from '../semantic-paint.ts';
 
 function layoutAndPaint(body: string) {

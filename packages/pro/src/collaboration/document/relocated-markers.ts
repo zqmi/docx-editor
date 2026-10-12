@@ -23,7 +23,7 @@ import {
   WML_NAMESPACE_URI,
   type OoxmlElement,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { LogicalId } from './identity.ts';
 import type { DocumentRegistry } from './registry.ts';
 import {

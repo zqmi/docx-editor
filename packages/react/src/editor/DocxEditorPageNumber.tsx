@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import type { CSSProperties } from 'react';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useTranslation } from '../i18n';
 import { useDocxEditor } from './context';
 import { useNavigationViewportElement } from './navigation/navigation-layout';

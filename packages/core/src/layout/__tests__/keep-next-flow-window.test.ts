@@ -7,7 +7,7 @@
 // The page is 350pt by 210pt with 20pt margins: the body holds twelve exact 14pt lines.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, TreeDocumentStore, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, TreeDocumentStore, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { createLayoutSession } from '../layout-session.ts';
 import { keepNextFlowKeys } from '../pagination-keeps.ts';

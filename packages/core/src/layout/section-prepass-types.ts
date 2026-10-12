@@ -1,6 +1,6 @@
 // The prepass shapes one section's block flow reads: each block prepared once per width and
 // producer, and the section-wide results kept on the session between passes.
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { ResolvedListItem } from './list-resolve.ts';
 import type { NumberingIndex } from './numbering-index.ts';
 import type { ParagraphKeeps } from './pagination-keeps.ts';

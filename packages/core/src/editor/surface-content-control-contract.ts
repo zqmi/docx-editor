@@ -1,4 +1,4 @@
-import type { ContentControlBoundaryRecord } from '@zqmi/docx-editor-core/layout';
+import type { ContentControlBoundaryRecord } from '@onsitesai/docx-editor-core/layout';
 
 /**
  * Content-control interaction lane on the paginated surface.

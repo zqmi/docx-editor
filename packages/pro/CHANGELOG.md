@@ -26,7 +26,7 @@
 - 63dde82: Preserve deprecated public text-only collaboration constants and the session type for existing imports.
 - 9535470: With `revisionsIn: 'balloons'`, comments that reply to tracked changes no longer open an empty review pane, and the new `reviewPaneListsItem` export tells a custom review pane which items to list. PDF export marks text in tracked table rows inside text boxes.
 - 63dde82: Refuse incompatible or damaged saved rooms in the server review example.
-- Updated dependencies: @zqmi/docx-editor-core@2.28.0, @zqmi/docx-editor-react@2.28.0, @docx-editor.dev/vue@2.28.0
+- Updated dependencies: @onsitesai/docx-editor-core@2.28.0, @onsitesai/docx-editor-react@2.28.0, @docx-editor.dev/vue@2.28.0
 
 ## 2.27.0
 
@@ -35,13 +35,13 @@
 - 1e1b513: Text that another participant types into a run at the same time as a line break or tab is inserted in that run is no longer lost. Fixes #1129
 - 9318dc1: Keep replacement halves and revisions separated by unchanged text independently reviewable. Fixes #1139
 - 2246044: Keep separate editing commands in separate undo steps and restore text selections during undo and redo.
-- Updated dependencies: @zqmi/docx-editor-core@2.27.0, @zqmi/docx-editor-react@2.27.0, @docx-editor.dev/vue@2.27.0
+- Updated dependencies: @onsitesai/docx-editor-core@2.27.0, @onsitesai/docx-editor-react@2.27.0, @docx-editor.dev/vue@2.27.0
 
 ## 2.26.0
 
 ### Patch Changes
 
-- Updated dependencies: @zqmi/docx-editor-core@2.26.0, @zqmi/docx-editor-react@2.26.0, @docx-editor.dev/vue@2.26.0
+- Updated dependencies: @onsitesai/docx-editor-core@2.26.0, @onsitesai/docx-editor-react@2.26.0, @docx-editor.dev/vue@2.26.0
 
 ## 2.25.0
 
@@ -61,8 +61,8 @@
 - Updated dependencies [f098ae6]
 - Updated dependencies [a13f6a7]
 - Updated dependencies [5d02def]
-  - @zqmi/docx-editor-core@2.25.0
-  - @zqmi/docx-editor-react@2.25.0
+  - @onsitesai/docx-editor-core@2.25.0
+  - @onsitesai/docx-editor-react@2.25.0
   - @docx-editor.dev/vue@2.25.0
 
 ## 2.24.0
@@ -74,8 +74,8 @@
 - Updated dependencies [79d8bc1]
 - Updated dependencies [997814e]
 - Updated dependencies [de3aac8]
-  - @zqmi/docx-editor-core@2.24.0
-  - @zqmi/docx-editor-react@2.24.0
+  - @onsitesai/docx-editor-core@2.24.0
+  - @onsitesai/docx-editor-react@2.24.0
   - @docx-editor.dev/vue@2.24.0
 
 ## 2.23.0
@@ -180,8 +180,8 @@
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
 - Updated dependencies [30bd2a8]
-  - @zqmi/docx-editor-core@2.23.0
-  - @zqmi/docx-editor-react@2.23.0
+  - @onsitesai/docx-editor-core@2.23.0
+  - @onsitesai/docx-editor-react@2.23.0
   - @docx-editor.dev/vue@2.23.0
 
 ## 2.22.0
@@ -232,9 +232,9 @@
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
 - Updated dependencies [07718bd]
-  - @zqmi/docx-editor-core@2.22.0
+  - @onsitesai/docx-editor-core@2.22.0
   - @docx-editor.dev/vue@2.22.0
-  - @zqmi/docx-editor-react@2.22.0
+  - @onsitesai/docx-editor-react@2.22.0
 
 ## 2.21.1
 
@@ -261,8 +261,8 @@
 - Updated dependencies [14a3468]
 - Updated dependencies [424a121]
 - Updated dependencies [2d4e0e7]
-  - @zqmi/docx-editor-core@2.21.0
-  - @zqmi/docx-editor-react@2.21.0
+  - @onsitesai/docx-editor-core@2.21.0
+  - @onsitesai/docx-editor-react@2.21.0
   - @docx-editor.dev/vue@2.21.0
 
 ## 2.20.0
@@ -277,8 +277,8 @@
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
 - Updated dependencies [a9034d4]
-  - @zqmi/docx-editor-core@2.20.0
-  - @zqmi/docx-editor-react@2.20.0
+  - @onsitesai/docx-editor-core@2.20.0
+  - @onsitesai/docx-editor-react@2.20.0
   - @docx-editor.dev/vue@2.20.0
 
 ## 2.19.1
@@ -289,8 +289,8 @@
 
 - fb596a6: Preserve formatted text when splitting a paragraph in a collaboration room.
 - af15667: Reject oversized collaboration edits before allocating their shared-state projection.
-- @zqmi/docx-editor-core@2.19.0
-  - @zqmi/docx-editor-react@2.19.0
+- @onsitesai/docx-editor-core@2.19.0
+  - @onsitesai/docx-editor-react@2.19.0
   - @docx-editor.dev/vue@2.19.0
 
 ## 2.18.0
@@ -327,8 +327,8 @@
 - Updated dependencies [90ea211]
 - Updated dependencies [f10341d]
 - Updated dependencies [040e653]
-  - @zqmi/docx-editor-core@2.18.0
-  - @zqmi/docx-editor-react@2.18.0
+  - @onsitesai/docx-editor-core@2.18.0
+  - @onsitesai/docx-editor-react@2.18.0
   - @docx-editor.dev/vue@2.18.0
 
 ## 2.17.0
@@ -337,8 +337,8 @@
 
 - Updated dependencies [332494b]
 - Updated dependencies [d1d8043]
-  - @zqmi/docx-editor-core@2.17.0
-  - @zqmi/docx-editor-react@2.17.0
+  - @onsitesai/docx-editor-core@2.17.0
+  - @onsitesai/docx-editor-react@2.17.0
   - @docx-editor.dev/vue@2.17.0
 
 ## 2.16.2
@@ -382,8 +382,8 @@
 - Updated dependencies [b5ab91b]
 - Updated dependencies [1de0f64]
 - Updated dependencies [6f7da01]
-  - @zqmi/docx-editor-core@2.16.0
-  - @zqmi/docx-editor-react@2.16.0
+  - @onsitesai/docx-editor-core@2.16.0
+  - @onsitesai/docx-editor-react@2.16.0
   - @docx-editor.dev/vue@2.16.0
 
 ## 2.15.1
@@ -405,8 +405,8 @@
 - Updated dependencies [cfe3fe1]
 - Updated dependencies [0e1360d]
 - Updated dependencies [2a8e57e]
-  - @zqmi/docx-editor-core@2.15.0
-  - @zqmi/docx-editor-react@2.15.0
+  - @onsitesai/docx-editor-core@2.15.0
+  - @onsitesai/docx-editor-react@2.15.0
   - @docx-editor.dev/vue@2.15.0
 
 ## 2.14.1
@@ -420,8 +420,8 @@
 - Updated dependencies [01022a4]
 - Updated dependencies [6b5bb8d]
 - Updated dependencies [f731c52]
-  - @zqmi/docx-editor-core@2.14.0
-  - @zqmi/docx-editor-react@2.14.0
+  - @onsitesai/docx-editor-core@2.14.0
+  - @onsitesai/docx-editor-react@2.14.0
   - @docx-editor.dev/vue@2.14.0
 
 ## 2.13.0
@@ -450,8 +450,8 @@
 - Updated dependencies [0d782e3]
 - Updated dependencies [7e85377]
 - Updated dependencies [96cdbe2]
-  - @zqmi/docx-editor-core@2.13.0
-  - @zqmi/docx-editor-react@2.13.0
+  - @onsitesai/docx-editor-core@2.13.0
+  - @onsitesai/docx-editor-react@2.13.0
   - @docx-editor.dev/vue@2.13.0
 
 ## 2.12.0
@@ -472,8 +472,8 @@
 - Updated dependencies [3755b98]
 - Updated dependencies [8fe5920]
 - Updated dependencies [fe3b8a3]
-  - @zqmi/docx-editor-core@2.12.0
-  - @zqmi/docx-editor-react@2.12.0
+  - @onsitesai/docx-editor-core@2.12.0
+  - @onsitesai/docx-editor-react@2.12.0
   - @docx-editor.dev/vue@2.12.0
 
 ## 2.11.0
@@ -550,8 +550,8 @@
 - Updated dependencies [d11816f]
 - Updated dependencies [0d770d9]
 - Updated dependencies [dfaafc0]
-  - @zqmi/docx-editor-core@2.11.0
-  - @zqmi/docx-editor-react@2.11.0
+  - @onsitesai/docx-editor-core@2.11.0
+  - @onsitesai/docx-editor-react@2.11.0
   - @docx-editor.dev/vue@2.11.0
 
 ## 2.10.0
@@ -570,8 +570,8 @@
 - Updated dependencies [0e3663d]
 - Updated dependencies [b10d396]
 - Updated dependencies [0e3663d]
-  - @zqmi/docx-editor-core@2.10.0
-  - @zqmi/docx-editor-react@2.10.0
+  - @onsitesai/docx-editor-core@2.10.0
+  - @onsitesai/docx-editor-react@2.10.0
   - @docx-editor.dev/vue@2.10.0
 
 ## 2.9.2
@@ -581,8 +581,8 @@
 ### Patch Changes
 
 - Updated dependencies [36ea49a]
-  - @zqmi/docx-editor-core@2.9.1
-  - @zqmi/docx-editor-react@2.9.1
+  - @onsitesai/docx-editor-core@2.9.1
+  - @onsitesai/docx-editor-react@2.9.1
   - @docx-editor.dev/vue@2.9.1
 
 ## 2.9.0
@@ -669,8 +669,8 @@
 ### Patch Changes
 
 - Updated dependencies [51f14f5]
-  - @zqmi/docx-editor-core@2.0.1
-  - @zqmi/docx-editor-react@2.0.1
+  - @onsitesai/docx-editor-core@2.0.1
+  - @onsitesai/docx-editor-react@2.0.1
 
 ## 2.0.0
 
@@ -694,5 +694,5 @@
 - Updated dependencies [26095c6]
 - Updated dependencies [26095c6]
 - Updated dependencies [26095c6]
-  - @zqmi/docx-editor-react@2.0.0
-  - @zqmi/docx-editor-core@2.0.0
+  - @onsitesai/docx-editor-react@2.0.0
+  - @onsitesai/docx-editor-core@2.0.0

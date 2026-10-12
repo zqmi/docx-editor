@@ -14,11 +14,11 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * typing before a peer's caret drew that caret inside the new words for a whole round trip.
  */
 import type { Awareness } from 'y-protocols/awareness';
-import type { CollaborationRemoteSelection } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationRemoteSelection } from '@onsitesai/docx-editor-core/collaboration';
 import {
   mapOffsetAcrossText,
   type CollaborationDocumentPort,
-} from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   AWARENESS_FIELD,
   MAX_AWARENESS_STATES,

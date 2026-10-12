@@ -19,14 +19,14 @@ const server = await createServer({
   resolve: {
     alias: [
       {
-        find: '@zqmi/docx-editor-core/styles/editor.css',
+        find: '@onsitesai/docx-editor-core/styles/editor.css',
         replacement: resolve(root, 'packages/core/dist/editor.css'),
       },
       {
         find: '@docx-editor.dev/editor-api/browser',
         replacement: resolve(root, 'packages/editor-api/src/browser.ts'),
       },
-      { find: '@zqmi/docx-editor-core', replacement: resolve(root, 'packages/core/src') },
+      { find: '@onsitesai/docx-editor-core', replacement: resolve(root, 'packages/core/src') },
     ],
   },
 });

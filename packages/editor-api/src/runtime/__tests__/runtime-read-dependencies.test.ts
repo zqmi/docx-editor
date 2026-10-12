@@ -7,7 +7,7 @@ import { expect, test } from 'bun:test';
 import { createRuntime } from '../runtime.ts';
 import { openHost, spyHost } from './support/hosts.ts';
 import { docx, p } from './support/docx.ts';
-import type { AutomationHost } from '@zqmi/docx-editor-core/automation';
+import type { AutomationHost } from '@onsitesai/docx-editor-core/automation';
 
 async function textOf(runtime: ReturnType<typeof createRuntime>): Promise<string> {
   return runtime.run(async (context) => {
@@ -139,7 +139,7 @@ test('asynchronous host preparation pins a first write before resources finish l
 test('a failed prerequisite discards coalesced writes so the same proxy can be edited again', async () => {
   const inner = openHost(docx(p('original')));
   let refuseRead = true;
-  const requests: import('@zqmi/docx-editor-core/automation').AutomationBatchRequest[] = [];
+  const requests: import('@onsitesai/docx-editor-core/automation').AutomationBatchRequest[] = [];
   const host: AutomationHost = {
     ...inner,
     execute(request) {

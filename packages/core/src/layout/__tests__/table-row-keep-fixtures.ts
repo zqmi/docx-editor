@@ -3,7 +3,7 @@
 // The page shape is 350pt by 210pt with 20pt margins: a 170pt body that holds twelve exact
 // 14pt lines. Eight preamble lines leave four.
 
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { buildStyleCascadeTable } from '../style-cascade.ts';
 import type { BlockFragmentRecord, SemanticLayout } from '../semantic-records.ts';

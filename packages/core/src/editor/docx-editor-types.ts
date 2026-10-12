@@ -25,7 +25,7 @@ import type {
   FontConfiguration,
   Unsubscribe,
   ZoomMode,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import type { EditorModule } from '../contracts/modules.ts';
 import type { EditorCollaborationSession } from '../collaboration/index.ts';
 import type {
@@ -69,7 +69,7 @@ export interface DocxEditorConfig {
    * Font bytes for Word-accurate (HarfBuzz-shaped) line wrap and pagination. Omitted,
    * layout falls back to a fixed-width estimate; fonts embedded in the document are
    * wired in automatically either way. For Word's default faces (Calibri, Times New
-   * Roman, …) pass `await loadDefaultFonts()` from `@zqmi/docx-editor-fonts` — a bare
+   * Roman, …) pass `await loadDefaultFonts()` from `@onsitesai/docx-editor-fonts` — a bare
    * fragment (`{ sources, substitutions }`) is accepted and composed with defaults, or
    * merge several origins yourself with `composeFontConfiguration`. Sampled per load;
    * failures degrade to the fixed measurer and report through `onFontError`.

@@ -10,7 +10,7 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type OoxmlTextNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 const W = WML_NAMESPACE_URI;
 const W14 = 'http://schemas.microsoft.com/office/word/2010/wordml';

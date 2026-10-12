@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { afterEach, expect, test } from 'bun:test';
 import * as Y from 'yjs';
-import { ORIGIN_IDS } from '@zqmi/docx-editor-core/store';
+import { ORIGIN_IDS } from '@onsitesai/docx-editor-core/store';
 import { createPeerHarness, nodeText, zipDocument, type Peer } from './document-peer-support.ts';
 import { PACKAGE_META_KEY } from '../document/schema.ts';
 

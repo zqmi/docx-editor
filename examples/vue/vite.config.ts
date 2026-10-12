@@ -107,15 +107,15 @@ export default defineConfig({
           // a clean checkout. The React demo sidesteps it by importing core's stylesheet
           // from source with a relative path in its own `styles.css`.
           {
-            find: '@zqmi/docx-editor-core/styles/editor.css',
+            find: '@onsitesai/docx-editor-core/styles/editor.css',
             replacement: path.join(monorepoRoot, 'packages/core/src/styles/editor.css'),
           },
           {
-            find: '@zqmi/docx-editor-core/editor',
+            find: '@onsitesai/docx-editor-core/editor',
             replacement: path.join(monorepoRoot, 'packages/core/src/editor/index.ts'),
           },
           {
-            find: '@zqmi/docx-editor-core/collaboration/replication',
+            find: '@onsitesai/docx-editor-core/collaboration/replication',
             replacement: path.join(monorepoRoot, 'packages/core/src/collaboration/replication.ts'),
           },
           {
@@ -147,18 +147,18 @@ export default defineConfig({
             replacement: path.join(monorepoRoot, 'packages/pro/src/index.ts'),
           },
           // Before the bare `fonts` entry: matching is prefix-based, so the shorter find
-          // would rewrite `@zqmi/docx-editor-fonts/google` to `…/src/index.ts/google` and
+          // would rewrite `@onsitesai/docx-editor-fonts/google` to `…/src/index.ts/google` and
           // fail with "Not a directory". The React config carries the same pair.
           {
-            find: '@zqmi/docx-editor-fonts/google',
+            find: '@onsitesai/docx-editor-fonts/google',
             replacement: path.join(monorepoRoot, 'packages/fonts/src/google-fonts.ts'),
           },
           {
-            find: '@zqmi/docx-editor-fonts',
+            find: '@onsitesai/docx-editor-fonts',
             replacement: path.join(monorepoRoot, 'packages/fonts/src/index.ts'),
           },
           {
-            find: '@zqmi/docx-editor-i18n',
+            find: '@onsitesai/docx-editor-i18n',
             replacement: path.join(monorepoRoot, 'packages/i18n/src/index.ts'),
           },
         ],

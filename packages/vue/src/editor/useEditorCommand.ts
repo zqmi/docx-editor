@@ -6,9 +6,9 @@ import {
   runToolbarCommand,
   toolbarCommandState,
   type ChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
-import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
-import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
+} from '@onsitesai/docx-editor-core/editor';
+import type { EditorCommand } from '@onsitesai/docx-editor-core/contracts/editor';
+import { localizeDisabledReason } from '@onsitesai/docx-editor-i18n';
 import type { MaybeRefOrGetter } from '../maybe-ref-or-getter';
 import { useTranslation } from '../i18n';
 import { useDocxEditor } from './context';

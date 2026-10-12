@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
+import type { ExportSemanticLayout } from '@onsitesai/docx-editor-core/export';
 import { exportMarkdownLayout } from '../src/index.ts';
 
 test('uses all-markup consistently when a raw Core layout omits displayMode', () => {

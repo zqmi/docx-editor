@@ -15,14 +15,14 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import {
   DocxEditorContextMenu,
   DocxEditorAuthorStyle,
   DocxEditorRoot,
   DocxEditorViewport,
   DocxEditorContent,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 import { DocxEditorReview, useReview } from '../react/index.ts';
 import { reviewModule } from '../index.ts';
 
@@ -653,7 +653,7 @@ describe('the review sidebar', () => {
     expect(view.queryByTestId('review-balloon')).toBeNull();
 
     // A tracked ROW is a structural site: its balloon opens on click, with actions.
-    // These tests paint through the BUILT react adapter (`@zqmi/docx-editor-react` resolves
+    // These tests paint through the BUILT react adapter (`@onsitesai/docx-editor-react` resolves
     // to packages/react/dist, which inlines the core painter) — a stale dist paints rows
     // without their attribution datasets and this balloon silently cannot open. If the
     // assertions below fail on attributes the source clearly paints, rebuild the adapter.

@@ -14,7 +14,7 @@ import { zipSync, strToU8 } from 'fflate';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import type { PaginatedSurface } from '../paginated-surface.ts';
 import { selectCellRectangle } from './paginated-surface-fixtures.ts';
-import { findNode, paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { findNode, paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const CT = 'http://schemas.openxmlformats.org/package/2006/content-types';

@@ -7,8 +7,8 @@ import {
   type FontResolutionRequest,
   type FontResolver,
   type MarkedFontResolver,
-} from '@zqmi/docx-editor-core/editor';
-import type { FontConfiguration } from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/editor';
+import type { FontConfiguration } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { MaybeRefOrGetter } from '../maybe-ref-or-getter';
 
 /** @public */

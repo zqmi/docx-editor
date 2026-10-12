@@ -41,21 +41,21 @@ const core = read(join(import.meta.dir, '..', '..', '..', 'core', 'package.json'
 
 describe('how this package asks for the engine', () => {
   test('the engine is a peer, so the consumer resolves one copy of it', () => {
-    expect(manifest.peerDependencies?.['@zqmi/docx-editor-core']).toBeDefined();
-    expect(manifest.dependencies?.['@zqmi/docx-editor-core']).toBeUndefined();
+    expect(manifest.peerDependencies?.['@onsitesai/docx-editor-core']).toBeDefined();
+    expect(manifest.dependencies?.['@onsitesai/docx-editor-core']).toBeUndefined();
   });
 
   test('the engine peer is REQUIRED, not optional', () => {
     // An optional peer is a suggestion: the manager installs nothing and stays silent, which is
     // the opposite of the point. There is no consumer of this package without the engine — the
     // server entry parses with it and the browser entry attaches to an editor built from it.
-    expect(manifest.peerDependenciesMeta?.['@zqmi/docx-editor-core']?.optional).toBeUndefined();
+    expect(manifest.peerDependenciesMeta?.['@onsitesai/docx-editor-core']?.optional).toBeUndefined();
   });
 
   test('it is still installed here, so this workspace builds and tests against it', () => {
     // A peer is what a CONSUMER resolves. It is not an install for this package's own build, so
     // the dev dependency is what makes `bun run build` and these tests see the engine at all.
-    expect(manifest.devDependencies?.['@zqmi/docx-editor-core']).toBe('workspace:*');
+    expect(manifest.devDependencies?.['@onsitesai/docx-editor-core']).toBe('workspace:*');
   });
 
   test('the engine peer requires the minor it ships with', () => {
@@ -63,7 +63,7 @@ describe('how this package asks for the engine', () => {
     // is not, so the automation host never attaches to an engine minor it did not ship with.
     // The floor patch may lag within the minor because in-range releases do not rewrite the
     // range.
-    const range = manifest.peerDependencies?.['@zqmi/docx-editor-core'];
+    const range = manifest.peerDependencies?.['@onsitesai/docx-editor-core'];
     const match = /^~(\d+)\.(\d+)\.(\d+)(?:-[0-9A-Za-z.-]+)?$/.exec(range ?? '');
     expect(match).not.toBeNull();
     const [major, minor, patch] = core.version.split('.').map(Number);

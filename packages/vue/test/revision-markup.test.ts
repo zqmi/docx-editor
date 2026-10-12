@@ -5,7 +5,7 @@ import type {
   DocxEditorInstance,
   ResolvedRevisionMarkup,
   RevisionMarkupOptions,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorRevisionMarkup } from '../src/editor/DocxEditorRevisionMarkup';
 

@@ -5,7 +5,7 @@
 // closure is always the one called.
 
 import { useEffect, useRef } from 'react';
-import type { EditorEvents } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorEvents } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 
 /**

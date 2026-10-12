@@ -137,10 +137,10 @@ Install `@docx-editor.dev/editor-api` before you use this example. The runtime u
 
 ## Fetch bytes and fonts together
 
-Install `@zqmi/docx-editor-fonts` to use the packaged font resolver:
+Install `@onsitesai/docx-editor-fonts` to use the packaged font resolver:
 
 ```bash
-npm install @zqmi/docx-editor-fonts
+npm install @onsitesai/docx-editor-fonts
 ```
 
 Load document bytes with fonts for measurement:
@@ -153,7 +153,7 @@ import {
   DocxEditorContent,
   useDocxSource,
 } from '@docx-editor.dev/vue';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
 
 const { document, fonts, error, isLoading } = useDocxSource('/sample.docx', {
   fonts: packagedFonts(),

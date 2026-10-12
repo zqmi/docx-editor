@@ -15,8 +15,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { afterAll, expect, test } from 'bun:test';
 import { strFromU8, unzipSync } from 'fflate';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
-import { canonicalOoxmlFingerprint, readOoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
+import { canonicalOoxmlFingerprint, readOoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';
 import { collaborationModule, reviewModule } from '../../index';
 import { createPeerHarness, zipDocument, type Peer } from './document-peer-support';

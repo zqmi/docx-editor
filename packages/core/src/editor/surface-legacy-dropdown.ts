@@ -5,9 +5,9 @@ import {
   validateTreeOp,
   type OoxmlPart,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { legacyDropdownFieldsOf } from '../store/store/legacy-dropdown-fields.ts';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 
 interface Host {
   readonly pagesLayer: HTMLElement;

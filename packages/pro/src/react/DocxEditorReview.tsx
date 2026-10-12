@@ -43,9 +43,9 @@ import {
   useSyncExternalStore,
 } from 'react';
 import type { ReactNode } from 'react';
-import type { ReviewRevisionKind, SelectionPin } from '@zqmi/docx-editor-core/contracts/editor';
-import { reviewPaneListsItem } from '@zqmi/docx-editor-core/editor';
-import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { ReviewRevisionKind, SelectionPin } from '@onsitesai/docx-editor-core/contracts/editor';
+import { reviewPaneListsItem } from '@onsitesai/docx-editor-core/editor';
+import type { TranslationKey } from '@onsitesai/docx-editor-i18n';
 import {
   REVIEW_PANE_GUTTER,
   ReviewRailContext,
@@ -56,7 +56,7 @@ import {
   useReviewAuthors,
   useReviewGutter,
   useTranslation,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 import { cloneReviewCard, listCardTemplate, partitionReviewChildren } from './review-composition';
 import {
   COMPACT_CARD_WIDTH,

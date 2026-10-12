@@ -12,7 +12,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * what one shared text per paragraph stores; this module only converts between it and the
  * canonical tree, so the round trip can be proven on the corpus before any shared state.
  */
-import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { elementsOf, expectElement, textNode, withChildren } from './node-shapes.ts';
 
 /** An element without its content: what a run, text element, or wrapper record keeps. */

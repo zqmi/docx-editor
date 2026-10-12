@@ -16,8 +16,8 @@ import {
   TreePackageStore,
   normalizeParagraphIdentity,
   readOoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   ATTACH_WATCHDOG_MS_FOR_TESTS,
   createDocumentCollaboration,

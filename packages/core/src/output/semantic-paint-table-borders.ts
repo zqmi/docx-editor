@@ -7,7 +7,7 @@ import type {
   ResolvedCellBorders,
   ResolvedTableBorderEdge,
   TableBorderStrokeRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 
 const HEX = /^[0-9A-Fa-f]{6}$/;
 

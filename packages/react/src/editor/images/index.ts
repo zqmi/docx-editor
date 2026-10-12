@@ -28,7 +28,7 @@ export {
   type ImagePropertiesTriggerProps,
 } from './ImageProperties';
 export { ImageSelectionOverlay, type ImageSelectionOverlayProps } from './ImageSelectionOverlay';
-export type { ImageOverlayScrollPort } from '@zqmi/docx-editor-core/editor';
+export type { ImageOverlayScrollPort } from '@onsitesai/docx-editor-core/editor';
 export {
   normalizeImageBytes,
   emuToPoints,

@@ -14,12 +14,12 @@
       },
       "directory": ".collaboration/releases/2.18.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.18.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.18.0.tgz",
           "integrity": "sha512-VumfBQLF0l5Qm333+kPEZ5/RCyD4Z2sqbIIpXjVbY8uzQrb4z8ljM+HOEX+da76V8YqwR6P5z4RyXhvB6Agk0Q=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.18.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.18.0.tgz",
           "integrity": "sha512-RR4EVNigbUmetqjPG01TalcMMocuM4zy/Dm3T6rK6qQxeFFb5smGP/ladRAuJGrnQ2lMSeE4WA16Uy3d64g8Vg=="
         },
         "@docx-editor.dev/editor-api": {
@@ -50,12 +50,12 @@
       },
       "directory": ".collaboration/releases/2.19.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.19.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.19.0.tgz",
           "integrity": "sha512-mmzZSrDtnNFyc0hZAyogk+bHC7826XpYiDmecF8TF1H6aTqbNeaNVgXCqUzI2FFwg+e69+rkmYDOiULcim4/Sw=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.19.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.19.0.tgz",
           "integrity": "sha512-3JsQXbU2HwfG+7xOu8m3lkawAuGMLTtns+Q7UaT4PXmFXdXL7hQYbCLxy4n5ZPokbIls6kxNqLreV5cWt/zibQ=="
         },
         "@docx-editor.dev/editor-api": {
@@ -86,12 +86,12 @@
       },
       "directory": ".collaboration/releases/2.19.1",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.19.1.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.19.1.tgz",
           "integrity": "sha512-wAFJZdqtDsB7/U2ED5SH10SmA6fjCn7pile2jxYDkKN/FosuGOyk/qPRtt5iG93f57MRjhmZXayu6h3/mC5tEA=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.19.1.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.19.1.tgz",
           "integrity": "sha512-tEF86HydHW+bnIoCrxtRfNo2uMIUmTyHrMcfOZYZj7LvGuFtA0aLkTUlopqzC1haFfM+9EtVJcBXtb/2rRhE2w=="
         },
         "@docx-editor.dev/editor-api": {
@@ -122,12 +122,12 @@
       },
       "directory": ".collaboration/releases/2.20.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.20.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.20.0.tgz",
           "integrity": "sha512-Jr4TNA7ZybOG+arUg6txyWVSxy5J02tJXICYjn76ThNzQSgFFGqCXvyyyIqdtpQoa92FG30GsxmdgTIMM6LXLw=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.20.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.20.0.tgz",
           "integrity": "sha512-P0r5QoRYZTWsshPki9M0lTQ+UYhgeMjHXduzDlR/8hMFulVOCygTk0PMuor2QcOByBU9ZBwyfaKpexalx7yTjg=="
         },
         "@docx-editor.dev/editor-api": {
@@ -158,12 +158,12 @@
       },
       "directory": ".collaboration/releases/2.21.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.21.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.21.0.tgz",
           "integrity": "sha512-Q9EZyPKLiaAuK8U7fObr3DMjJZxboNJM0MRdjY/2E3jVsL5ua3hh6Zf2WrFEwlBfuLyyPOJBX4TW94qrIuyI2w=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.21.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.21.0.tgz",
           "integrity": "sha512-ePmHyP0BiQUcN2EKVoht4+rk22WqnEa6WAp65LRMDjuE7sO5y/jWsBTRryi9VOeYAc34PcrXLPsKl2+8Zk32Rw=="
         },
         "@docx-editor.dev/editor-api": {
@@ -194,12 +194,12 @@
       },
       "directory": ".collaboration/releases/2.21.1",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.21.1.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.21.1.tgz",
           "integrity": "sha512-C271xCzPO1F6McLXAn43wJn5jNB4yU3/zOmpFHpLgHsUVE/Kzt4v98MtDDuGhRkKSRXuAycCSS7aSlDWOwW04Q=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.21.1.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.21.1.tgz",
           "integrity": "sha512-ici7oagiKsXW8CmYlZaPuPYT4sNF5u0nyEJrYMxxtRZqHjf6Q8KnHCiDklpG1BuJP5WhGABFNj3kCLMFblhXjQ=="
         },
         "@docx-editor.dev/editor-api": {
@@ -230,12 +230,12 @@
       },
       "directory": ".collaboration/releases/2.22.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.22.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.22.0.tgz",
           "integrity": "sha512-g0gjrXQixsPmuZPjQQQrqI/Zf7P0KOggn0PKg2/3tCTvb5Z06VLMvpKQueFt5wtaBUVFYjZmx3loyY7d235pbQ=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.22.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.22.0.tgz",
           "integrity": "sha512-Umwc4eoPts0qVfL0riJcK9u5hPYEj41yOWC7aBKRTUhZUD+PULEDO3O1Ouazn4Ti5eQqLCbg2EcjJIt8kUTuhw=="
         },
         "@docx-editor.dev/editor-api": {
@@ -266,12 +266,12 @@
       },
       "directory": ".collaboration/releases/2.23.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.23.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.23.0.tgz",
           "integrity": "sha512-A0NqvQIgSBeKfNuRzD16s0umOCf23NSIrHJOK4GIgXOsuoX0sy6ZAFaiaQf5Db0u45QoTz/bXkDJ2YaugTub3w=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.23.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.23.0.tgz",
           "integrity": "sha512-OOipeKNxwlEnUka+Cc8HsV2WATZ9UVyyFlbVYan1OfHal8LMg83Livn4ivPftT0L/8o1w7XekgKwfk8LAYPrQQ=="
         },
         "@docx-editor.dev/editor-api": {
@@ -302,12 +302,12 @@
       },
       "directory": ".collaboration/releases/2.24.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.24.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.24.0.tgz",
           "integrity": "sha512-dOgQbBxb6z+ieyRaLSKjWtlmlrZxcoleU5NozhidbQ0PVsh9YU9MW93Fxms7PahUdgsdDc8EGx3b3Ixj999xxw=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.24.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.24.0.tgz",
           "integrity": "sha512-zNBiM8CIM1niuTJg1PRBVfvJ+fC0lPtc08L4GQy4I3m56pVRmkkUMrX/tvmGhU8XHo+W1uxivWWqNBgeM1KEmw=="
         },
         "@docx-editor.dev/editor-api": {
@@ -338,12 +338,12 @@
       },
       "directory": ".collaboration/releases/2.25.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.25.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.25.0.tgz",
           "integrity": "sha512-BdGT3+16YfWzYAaVHRza11RCCsXHUKttNm3HJCqExUYw+CKpZgzAiUYTq1dY9aznU9yuGZshlHx4gIctQSMRVw=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.25.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.25.0.tgz",
           "integrity": "sha512-8Gh8zz/7yZQz4pTzEKaHEiN14HXxdSWYHq/CwIqYmCbiZ9osHHKdD5NuZKbIdfnQ041X8yPye1NlpbgJ22RT0A=="
         },
         "@docx-editor.dev/editor-api": {
@@ -374,12 +374,12 @@
       },
       "directory": ".collaboration/releases/2.26.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.26.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.26.0.tgz",
           "integrity": "sha512-qzGopAOBrdlwaqA+CI4tc3wFI9y+lOzw4AzxkSQ1SoehFrpIC3jkdeFkPTtI4oGrv8W0k9mQYqvxW4/phMVkqQ=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.26.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.26.0.tgz",
           "integrity": "sha512-f/wKUB4vBmgRSFsaUc/2f3DP13W2kFjk6z2y0KugFM+zetpONpB+F//b62OwuOc8TzXvWEKyL4e1VSalo71tHQ=="
         },
         "@docx-editor.dev/editor-api": {
@@ -410,12 +410,12 @@
       },
       "directory": ".collaboration/releases/2.27.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.27.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.27.0.tgz",
           "integrity": "sha512-KF4nflNVfqwaCvdCUFjNVZSzyTOJ3oW//Zr2SGRY33qez46yBGFdw+uptfD+CvqGax17AZmPN/DLtj2EpWeqSg=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.27.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.27.0.tgz",
           "integrity": "sha512-26Wu9RFH0znB+N43yYUWOsnFr6T8xjmajwTjk5rDbpQwKaFkiROAjYvc942ZUnul7oJeW0hqFXLhH5IZ+EH+4w=="
         },
         "@docx-editor.dev/editor-api": {
@@ -446,12 +446,12 @@
       },
       "directory": ".collaboration/releases/2.28.0",
       "packages": {
-        "@zqmi/docx-editor-i18n": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-i18n/-/i18n-2.28.0.tgz",
+        "@onsitesai/docx-editor-i18n": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-i18n/-/i18n-2.28.0.tgz",
           "integrity": "sha512-pujqEOD5iQsD+AJAnLeZDOKjNpmT03/xng13LsinZhWfR5z7+kCAZzYNg0vyuNPxwLcOxJ8NAHHKM1gM4dwrNQ=="
         },
-        "@zqmi/docx-editor-core": {
-          "tarball": "https://registry.npmjs.org/@zqmi/docx-editor-core/-/core-2.28.0.tgz",
+        "@onsitesai/docx-editor-core": {
+          "tarball": "https://registry.npmjs.org/@onsitesai/docx-editor-core/-/core-2.28.0.tgz",
           "integrity": "sha512-kq+n1fzeexx3/kKEVmPH9hMHXKHAG0QdASOYlnHxPOQHYTSE8VoBpkVONTMhS7OE6+pHKq6+U8zndu5GFwWIKg=="
         },
         "@docx-editor.dev/editor-api": {

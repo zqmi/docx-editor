@@ -1,6 +1,6 @@
 ---
 title: 'Contributing a translation'
-description: 'Add a new editor language to @zqmi/docx-editor-i18n: scaffold the locale JSON, fill the strings, validate, and open a PR. Partial translations are accepted.'
+description: 'Add a new editor language to @onsitesai/docx-editor-i18n: scaffold the locale JSON, fill the strings, validate, and open a PR. Partial translations are accepted.'
 category: 'Reference'
 ---
 
@@ -8,7 +8,7 @@ The editor UI ships in twelve languages. To add another language, add one JSON f
 
 ## How locales work
 
-`packages/i18n/en.json` is the source of truth. Every other locale mirrors its shape; a `null` value falls back to the English string at runtime, and a missing key fails CI. Locales publish as named exports and per-locale subpaths of `@zqmi/docx-editor-i18n`.
+`packages/i18n/en.json` is the source of truth. Every other locale mirrors its shape; a `null` value falls back to the English string at runtime, and a missing key fails CI. Locales publish as named exports and per-locale subpaths of `@onsitesai/docx-editor-i18n`.
 
 ## Add a language
 

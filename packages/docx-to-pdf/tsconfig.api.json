@@ -2,11 +2,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "@zqmi/docx-editor-core/editor": ["../core/dist/editor.d.ts"],
-      "@zqmi/docx-editor-core/export": ["../core/dist/export.d.ts"],
-      "@zqmi/docx-editor-core/layout": ["../core/dist/layout.d.ts"],
-      "@zqmi/docx-editor-core/store": ["../core/dist/store.d.ts"],
-      "@zqmi/docx-editor-fonts": ["../fonts/dist/index.d.ts"],
+      "@onsitesai/docx-editor-core/editor": ["../core/dist/editor.d.ts"],
+      "@onsitesai/docx-editor-core/export": ["../core/dist/export.d.ts"],
+      "@onsitesai/docx-editor-core/layout": ["../core/dist/layout.d.ts"],
+      "@onsitesai/docx-editor-core/store": ["../core/dist/store.d.ts"],
+      "@onsitesai/docx-editor-fonts": ["../fonts/dist/index.d.ts"],
       "@docx-editor.dev/fonts-cjk": ["../fonts-cjk/dist/index.d.ts"]
     }
   },

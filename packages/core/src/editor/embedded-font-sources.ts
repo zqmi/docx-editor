@@ -1,11 +1,11 @@
 // Editor adapter over the shared layout embedded-font mapper.
 
-import type { EmbeddedFont } from '@zqmi/docx-editor-core/store';
+import type { EmbeddedFont } from '@onsitesai/docx-editor-core/store';
 import {
   EditorFontError,
   type FontFaceRequest,
   type FontSource,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   boundedExplicitFontSources as mapBoundedExplicitFontSources,
   embeddedFontSources as mapEmbeddedFontSources,

@@ -1,7 +1,7 @@
 // The autofit context a table flow builds once per deps object, and the scope carry over it.
 // Split from `table-autofit-widths.ts`, which measures with the context this builds.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { carryAutofitScope } from './autofit-context-reuse.ts';
 import { currentFieldResultsMode } from '../store/package/field-result-mode.ts';
 import { valueDigest } from './autofit-value-token.ts';

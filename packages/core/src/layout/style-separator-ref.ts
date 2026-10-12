@@ -1,4 +1,4 @@
-import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { resolveStoryRefFieldsWithNoteNumbers } from './field-ref.ts';
 import { noteRefNumberingFromNotes } from './field-noteref.ts';
 import { enumerateDocumentSectionsFromBlocks, type DocumentSection } from './section-properties.ts';

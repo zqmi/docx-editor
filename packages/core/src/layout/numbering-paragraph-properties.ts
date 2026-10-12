@@ -1,4 +1,4 @@
-import { canonicalOoxmlFingerprint, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { canonicalOoxmlFingerprint, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { stableHash } from '../store/comparators/canonical.ts';
 
 // Derived metadata follows resolved level/item identity without widening public records.

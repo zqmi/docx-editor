@@ -3,7 +3,7 @@
 // Both walk a story tree and answer one question about all of it, and both are on the
 // `snapshot()` path — which is why each carries its own note about what a naive version cost.
 
-import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import type { OoxmlElement, OoxmlNode, OoxmlPart } from '../store/package/ooxml-tree.ts';
 import { keepsSubtreeMemo } from '../store/package/subtree-memo-policy.ts';
 import { allParagraphs } from './tree-binding.ts';

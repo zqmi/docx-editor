@@ -12,7 +12,7 @@
 // that request; the pane asks only while its Find tab is open.
 
 import { useEffect, useMemo, useSyncExternalStore } from 'react';
-import type { TextMatch } from '@zqmi/docx-editor-core/contracts/editor';
+import type { TextMatch } from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   createDocumentSearch,
   SEARCH_DEBOUNCE_MS,
@@ -24,7 +24,7 @@ import {
   type DocumentSearchNavigateOptions,
   type DocumentSearchOptions,
   type DocumentSearchState,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 
 export {

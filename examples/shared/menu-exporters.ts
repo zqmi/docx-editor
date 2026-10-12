@@ -1,4 +1,4 @@
-import type { ChromeExportHandlers } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportHandlers } from '@onsitesai/docx-editor-core/editor';
 import { exampleText as t } from './example-text';
 
 /** Browser Markdown conversion and an explicit, user-triggered PDF server request. */

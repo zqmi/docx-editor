@@ -21,7 +21,7 @@
 // The previous rows of a table are offered by the session only when its table update refused,
 // and the paginator takes them once.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { sharedCellContentInsets } from './cell-content-insets-memo.ts';
 import {
   moveRowToTop,

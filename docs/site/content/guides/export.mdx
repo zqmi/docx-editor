@@ -19,13 +19,13 @@ Install the converter for each format your application enables. Editor packages 
 For Markdown export, install the converter in your browser application:
 
 ```sh
-npm install @docx-editor.dev/docx-to-markdown @zqmi/docx-editor-core
+npm install @docx-editor.dev/docx-to-markdown @onsitesai/docx-editor-core
 ```
 
 For PDF export, install the converter on your Node.js server:
 
 ```sh
-npm install @docx-editor.dev/docx-to-pdf @zqmi/docx-editor-core
+npm install @docx-editor.dev/docx-to-pdf @onsitesai/docx-editor-core
 ```
 
 PDF conversion requires the EigenPal Pro License. The PDF package does not run in browsers. Keep its import in server code.
@@ -39,7 +39,7 @@ The menu downloads `result.markdown` as continuous text without page separators,
 Create `exporters.ts` with browser Markdown conversion and a PDF endpoint:
 
 ```ts
-import type { ChromeExportHandlers } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportHandlers } from '@onsitesai/docx-editor-core/editor';
 export const exporters: ChromeExportHandlers = {
   async markdown(source) {
     const { exportMarkdown } = await import('@docx-editor.dev/docx-to-markdown');
@@ -69,9 +69,9 @@ export const exporters: ChromeExportHandlers = {
 Pass the handlers to the React editor:
 
 ```tsx
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { exporters } from './exporters';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 export function Editor({ source }: { source: Uint8Array }) {
   return <DocxEditor document={source} menu={{ exporters }} />;
@@ -84,7 +84,7 @@ Use the same handlers in Vue:
 <script setup lang="ts">
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { exporters } from './exporters';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 defineProps<{ source: Uint8Array }>();
 </script>
@@ -108,7 +108,7 @@ Your PDF endpoint calls `exportPdf` and returns `result.bytes` with the `applica
 
 ```ts
 import { exportPdf } from '@docx-editor.dev/docx-to-pdf';
-import type { ChromeExportView } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportView } from '@onsitesai/docx-editor-core/editor';
 
 export async function POST(request: Request): Promise<Response> {
   const source = new Uint8Array(await request.arrayBuffer());
@@ -161,7 +161,7 @@ Use the named export parts to connect menu handlers. `Menu.Item` dispatches edit
 
 If you replace the **File** menu with `preset={false}`, include these parts inside `DocxEditor.Menu.Submenu`. In Vue, use `:preset="false"`. Set the submenu's `labelKey` to `toolbar.export`. Export controls use menu handlers rather than document editing commands.
 
-For a custom download interface, call `runChromeExport(editor, format, exporters)` from `@zqmi/docx-editor-core/editor`. It returns bytes, a filename extension, and a media type. It rejects missing handlers with `ChromeExportError`, whose `code` is `missing-exporter`.
+For a custom download interface, call `runChromeExport(editor, format, exporters)` from `@onsitesai/docx-editor-core/editor`. It returns bytes, a filename extension, and a media type. It rejects missing handlers with `ChromeExportError`, whose `code` is `missing-exporter`.
 
 ## Demo behavior
 

@@ -1,7 +1,7 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../../layout/semantic-layout.ts';
 import { DEFAULT_RUN_STYLE } from '../../layout/run-style.ts';
 import { paintSemanticLayout } from '../semantic-paint.ts';

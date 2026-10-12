@@ -7,13 +7,13 @@ import {
   type OoxmlPart,
   type OoxmlProperty,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   cascadeParagraphFormatting,
   type StyleCascadeTable,
   type SemanticLayout,
   type SemanticPosition,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { markerHolding } from '../layout/line-segments.ts';
 import { readNumPr } from '../layout/list-resolve.ts';
 import { propertyElement } from '../store/store/tree-op-properties.ts';

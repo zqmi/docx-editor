@@ -4,13 +4,13 @@
 // from semantic layout records — never from painted table DOM.
 
 import type { ExecResult } from '../contracts/editor.ts';
-import type { SemanticLayout, SemanticSelection } from '@zqmi/docx-editor-core/layout';
-import { readTwipsMeasure, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { SemanticLayout, SemanticSelection } from '@onsitesai/docx-editor-core/layout';
+import { readTwipsMeasure, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { validateTableResizeGrid } from '../store/store/table-resize-grid.ts';
 import { readEditableTableTopology } from '../store/store/tree-op-table-topology.ts';
 import { wmlAttributeValue } from '../store/store/tree-op-table-shared.ts';
 import { MIN_TABLE_COLUMN_WIDTH_TWIPS } from '../store/store/table-constraints.ts';
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
 import { findTableOnPage, offeredHit, partOfTableIn } from './surface-table-story.ts';
 import type { CellSelection } from '../layout/semantic-cell-selection.ts';
 import type { SurfaceEditingMode } from './paginated-surface-contract.ts';
@@ -32,7 +32,7 @@ import {
 import type {
   TableColumnDividerResizeTarget,
   TableRightEdgeResizeTarget,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   findTableOccurrence,
   tableColumnDividerResizeTargetFrom,

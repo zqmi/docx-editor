@@ -5,7 +5,7 @@ import { schemaAttributeValue, WPS_NAMESPACE_URI } from '../store/package/ooxml-
 import { DRAWINGML_MAIN_NAMESPACE_URI } from '../store/package/ooxml-tree.ts';
 import type { TreeDocOp } from '../store/store/tree-op-types.ts';
 import { authoredRunPropertiesAt } from './surface-formatting.ts';
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
 import type { ViewScope } from '../contracts/editor.ts';
 import { translateParagraphFragment } from '../layout/paragraph-frame.ts';
 import type { SemanticLayout, SemanticSelection } from '../layout/index.ts';

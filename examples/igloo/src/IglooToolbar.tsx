@@ -9,7 +9,7 @@
 // Every packaged part still drives its chrome slot: the enabled state, the pressed state
 // and the command all still come from the engine. Only the glyph is the demo's.
 
-import { DocxEditor, useChromeTranslate } from '@zqmi/docx-editor-react';
+import { DocxEditor, useChromeTranslate } from '@onsitesai/docx-editor-react';
 import { useFrost } from './useFrost';
 import { ICE_LABELS } from './labels';
 import {

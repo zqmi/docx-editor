@@ -1,4 +1,4 @@
-import { trapTabWithin } from '@zqmi/docx-editor-core/editor';
+import { trapTabWithin } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { deferredNotifier } from './useEditorState';
 import {

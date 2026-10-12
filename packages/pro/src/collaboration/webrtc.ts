@@ -15,7 +15,7 @@ import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
 import { WebrtcProvider } from 'y-webrtc';
 import { trackUnsyncedChanges } from './webrtc-unsynced.ts';
-import type { CollaborationIdentity } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationIdentity } from '@onsitesai/docx-editor-core/collaboration';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

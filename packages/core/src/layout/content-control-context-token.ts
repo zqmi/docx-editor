@@ -4,7 +4,7 @@
 // functions over immutable parts; the memos are the point — the token is folded into the
 // layout producer, so it is asked for on every pass over every fresh part revision.
 
-import type { OoxmlElement, OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   MAX_CONTENT_CONTROL_NESTING as MAX_SDT_NESTING,
   contentControlContentChildren,

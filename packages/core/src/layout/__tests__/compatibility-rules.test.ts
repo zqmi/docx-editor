@@ -1,7 +1,7 @@
 // Which compatibility rule applies in which mode, and with which options.
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   MODE_RULES,
   PROFILE_RULES,

@@ -4,7 +4,7 @@ import { MenuParagraphDialog } from '../src/editor/menu/parts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createApp, h, nextTick } from 'vue';
 import { zipSync, strToU8 } from 'fflate';
-import { CHROME_MENUS } from '@zqmi/docx-editor-core/editor';
+import { CHROME_MENUS } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';

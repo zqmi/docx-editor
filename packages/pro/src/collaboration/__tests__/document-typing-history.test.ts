@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // intent and timing rules as local history, independently of the shared capture clock.
 import { afterEach, expect, spyOn, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { collaborationModule } from '../collaboration-module.ts';
 import { createPeerHarness, R, REL, W, zipDocument } from './document-peer-support.ts';
 import { packageFingerprint, saveReopenDigest } from './document-support.ts';

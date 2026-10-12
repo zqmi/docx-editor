@@ -188,7 +188,7 @@ export function createSuggestingConfigurationReporter(input: {
           `${SUGGESTING_AUTHOR_REASON}. Edits are not tracked until an author is set ` +
           '(the author option at construction, setAuthor(), or the adapter author prop).';
         input.emit(editorError('suggestingNeedsAuthor', message));
-        log(`[@zqmi/docx-editor-core] ${message}`);
+        log(`[@onsitesai/docx-editor-core] ${message}`);
       }, 0);
     },
     dispose() {

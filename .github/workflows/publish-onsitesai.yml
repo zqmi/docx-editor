@@ -1,10 +1,10 @@
-name: Publish @zqmi packages
+name: Publish @onsitesai packages
 
 on:
   workflow_dispatch:
   push:
     tags:
-      - 'zqmi-v*'
+      - 'onsitesai-v*'
 
 permissions:
   contents: read
@@ -28,8 +28,8 @@ jobs:
       - name: Install
         run: bun install --frozen-lockfile
 
-      - name: Publish @zqmi/docx-editor-*
+      - name: Publish @onsitesai/docx-editor-*
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: bun scripts/publish-zqmi-packages.mjs
+        run: bun scripts/publish-onsitesai-packages.mjs

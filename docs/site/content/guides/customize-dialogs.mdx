@@ -14,9 +14,9 @@ These examples replace **Apply** in the **Page Setup** dialog. The editor manage
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, definePopup } from '@zqmi/docx-editor-react';
-import type { DocxEditorPageSetupDialogProps, DocxEditorPopups } from '@zqmi/docx-editor-react';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import { DocxEditor, definePopup } from '@onsitesai/docx-editor-react';
+import type { DocxEditorPageSetupDialogProps, DocxEditorPopups } from '@onsitesai/docx-editor-react';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 function PageSetup(props: DocxEditorPageSetupDialogProps) {
   return (
@@ -67,7 +67,7 @@ Keep `preset: true` when forwarding Vue props. Otherwise, omitted Boolean props 
 import { DocxEditor, definePopup } from '@docx-editor.dev/vue';
 import type { DocxEditorPopups } from '@docx-editor.dev/vue';
 import PageSetup from './PageSetup.vue';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 defineProps<{ document: ArrayBuffer }>();
 const popups: DocxEditorPopups = { pageSetup: definePopup(PageSetup) };
@@ -127,8 +127,8 @@ The Pro review module opens **Track changes options** through `popups.revisionMa
 In React, wrap the packaged dialog and replace its parts:
 
 ```tsx
-import { DocxEditor, definePopup } from '@zqmi/docx-editor-react';
-import type { DocxEditorPopups, DocxEditorRevisionMarkupDialogProps } from '@zqmi/docx-editor-react';
+import { DocxEditor, definePopup } from '@onsitesai/docx-editor-react';
+import type { DocxEditorPopups, DocxEditorRevisionMarkupDialogProps } from '@onsitesai/docx-editor-react';
 
 function ReviewOptions(props: DocxEditorRevisionMarkupDialogProps) {
   return (
@@ -177,7 +177,7 @@ The dialog exposes `Header`, `Title`, `Body`, `Footer`, `Apply`, `Cancel`, `Erro
 Use `useRevisionMarkupDialog()` inside the dialog to read its draft. It provides the shared dialog actions and `reset()`. `setValue()` replaces one top-level value. Spread the existing value when changing a nested property:
 
 ```tsx
-import { useRevisionMarkupDialog } from '@zqmi/docx-editor-react';
+import { useRevisionMarkupDialog } from '@onsitesai/docx-editor-react';
 
 function RedInsertions() {
   const draft = useRevisionMarkupDialog();
@@ -239,8 +239,8 @@ Forward the properties to `DocxEditorExportDialog` to retain the default dialog,
 In React, register a component with `definePopup()`:
 
 ```tsx
-import { DocxEditor, definePopup } from '@zqmi/docx-editor-react';
-import type { DocxEditorExportDialogProps, DocxEditorPopups } from '@zqmi/docx-editor-react';
+import { DocxEditor, definePopup } from '@onsitesai/docx-editor-react';
+import type { DocxEditorExportDialogProps, DocxEditorPopups } from '@onsitesai/docx-editor-react';
 
 function ExportDialog(props: DocxEditorExportDialogProps) {
   return <DocxEditor.ExportDialog {...props} className="app-export" />;
@@ -309,8 +309,8 @@ Use a nonempty `url` for an **Open PDF** link. It stays valid until the next pri
 In React, register a component with `definePopup()`:
 
 ```tsx
-import { DocxEditor, definePopup } from '@zqmi/docx-editor-react';
-import type { DocxEditorPopups, DocxEditorPrintDialogProps } from '@zqmi/docx-editor-react';
+import { DocxEditor, definePopup } from '@onsitesai/docx-editor-react';
+import type { DocxEditorPopups, DocxEditorPrintDialogProps } from '@onsitesai/docx-editor-react';
 
 function PrintDialog(props: DocxEditorPrintDialogProps) {
   return <DocxEditor.PrintDialog {...props} className="app-print" />;
@@ -397,7 +397,7 @@ Create `BrandedWidget.tsx`:
 import {
   DocxEditorContentControlWidget as Widget,
   type DocxEditorContentControlWidgetProps,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 
 export function BrandedWidget({ session }: DocxEditorContentControlWidgetProps) {
   if (session.kind !== 'date') return <Widget session={session} />;
@@ -423,9 +423,9 @@ export function BrandedWidget({ session }: DocxEditorContentControlWidgetProps) 
 Register `BrandedWidget` with `definePopup()`:
 
 ```tsx
-import { DocxEditor, definePopup } from '@zqmi/docx-editor-react';
+import { DocxEditor, definePopup } from '@onsitesai/docx-editor-react';
 import { BrandedWidget } from './BrandedWidget';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 const popups = { contentControlWidget: definePopup(BrandedWidget) };
 
@@ -471,7 +471,7 @@ Register `BrandedWidget` with `definePopup()`:
 <script setup lang="ts">
 import { DocxEditor, definePopup } from '@docx-editor.dev/vue';
 import BrandedWidget from './BrandedWidget.vue';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 defineProps<{ source: Uint8Array }>();
 const popups = { contentControlWidget: definePopup(BrandedWidget) };
@@ -502,7 +502,7 @@ const popups = { contentControlWidget: definePopup(BrandedWidget) };
 Call `useContentControlWidget()` in a child of `Widget`. This React button commits a date through the same validation as the packaged picker:
 
 ```tsx
-import { useContentControlWidget } from '@zqmi/docx-editor-react';
+import { useContentControlWidget } from '@onsitesai/docx-editor-react';
 
 function UseDepartureDate() {
   const { isEnabled, apply } = useContentControlWidget();
@@ -539,7 +539,7 @@ Calendar cells expose `data-selected`, `data-today`, and `data-other-month`. Pop
 
 ### Build a custom grid or root
 
-Prefer packaged parts to retain keyboard behavior. For a custom grid, read `calendar.days` and use `focusDay` from the widget context. Import `calendarDateForKey` from `@zqmi/docx-editor-core/editor`. Preserve grid roles, selected states, and one focusable day. For a custom list, use `listId` and `listNavigation` to preserve listbox relationships, typeahead, and roving focus.
+Prefer packaged parts to retain keyboard behavior. For a custom grid, read `calendar.days` and use `focusDay` from the widget context. Import `calendarDateForKey` from `@onsitesai/docx-editor-core/editor`. Preserve grid roles, selected states, and one focusable day. For a custom list, use `listId` and `listNavigation` to preserve listbox relationships, typeahead, and roving focus.
 
 For a separate popup root, call `observeContentControlPopup(panel, session.anchor)` and run its returned cleanup on close. Use `contentControlPopupKeyDown` for Escape and Tab wrapping. You must also handle outside clicks, focus return, and `session.signal` cancellation. The packaged root handles these requirements.
 
@@ -551,7 +551,7 @@ Put the input inside a named `Field`. Call the draft hook in the input component
 <Framework value="react">
 
 ```tsx
-import { usePageSetupDialog } from '@zqmi/docx-editor-react';
+import { usePageSetupDialog } from '@onsitesai/docx-editor-react';
 
 function TopMargin() {
   const { values, setValue, isEnabled } = usePageSetupDialog();

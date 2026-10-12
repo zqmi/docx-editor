@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // Mount once inside `DocxEditor.Root`.
 
 import { useEffect } from 'react';
-import { useDocxEditor } from '@zqmi/docx-editor-react';
+import { useDocxEditor } from '@onsitesai/docx-editor-react';
 import {
   CUSTOM_NODE_IDENTITY_PATTERN,
   type ActivatedCustomNode,

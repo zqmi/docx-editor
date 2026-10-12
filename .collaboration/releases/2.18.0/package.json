@@ -2,8 +2,8 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@zqmi/docx-editor-i18n": "2.18.0",
-    "@zqmi/docx-editor-core": "2.18.0",
+    "@onsitesai/docx-editor-i18n": "2.18.0",
+    "@onsitesai/docx-editor-core": "2.18.0",
     "@docx-editor.dev/editor-api": "2.18.0",
     "@docx-editor.dev/pro": "2.18.0",
     "yjs": "13.6.32",

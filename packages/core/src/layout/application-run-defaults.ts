@@ -1,4 +1,4 @@
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import {
   APPLICATION_RUN_PROPERTIES,
   omittedDocDefaults,

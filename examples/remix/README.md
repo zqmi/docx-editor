@@ -57,9 +57,9 @@ React swaps the fallback for the editor in one frame. Give the fallback the heig
 Install the adapter and its required engine peer:
 
 ```bash
-npm install @zqmi/docx-editor-react @zqmi/docx-editor-core
+npm install @onsitesai/docx-editor-react @onsitesai/docx-editor-core
 ```
 
-Import `@zqmi/docx-editor-core/styles/editor.css` once. Render the editor only after the component mounts.
+Import `@onsitesai/docx-editor-core/styles/editor.css` once. Render the editor only after the component mounts.
 
 For more information, see the [Remix integration guide](https://www.docx-editor.dev/docs/2.x/frameworks/remix).

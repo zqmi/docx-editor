@@ -21,7 +21,7 @@ import {
   datastoreItemIdFor,
   fnv1a32,
   type CustomNodeBinding,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { encodeCustomNodeTag, type EncodeTagResult } from './tag-codec.ts';
 import {
   CUSTOM_NODE_IDENTITY_PATTERN,

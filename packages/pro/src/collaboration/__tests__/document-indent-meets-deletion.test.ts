@@ -10,7 +10,7 @@ import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import { readOoxmlPackage, type OoxmlNode } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, type OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { createDocumentCollaboration } from '../document-session.ts';
 import { collaborationModule } from '../collaboration-module.ts';
 import { zipDocument } from './document-peer-support.ts';
@@ -32,7 +32,7 @@ const DOCUMENT = zipDocument(
 );
 
 async function editorOn(ydoc: Y.Doc, bootstrap: unknown) {
-  const { createDocxEditor } = await import('@zqmi/docx-editor-core/editor');
+  const { createDocxEditor } = await import('@onsitesai/docx-editor-core/editor');
   const awareness = new Awareness(ydoc);
   const room = await createDocumentCollaboration({
     ydoc,

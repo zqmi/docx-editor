@@ -6,8 +6,8 @@ import {
   validateTreeOp,
   type OoxmlPart,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 import { formatTextFormValue } from '../store/store/text-form-field-options.ts';
 
 /** Validate all pending values before a save changes any field or history entry. */

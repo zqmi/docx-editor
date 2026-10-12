@@ -8,7 +8,7 @@ import { readFile } from 'node:fs/promises';
 import {
   createNodeImageDecodePort,
   openDocumentForExport as openCore,
-} from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/export';
 import { exportMarkdownFrom } from '../../docx-to-markdown/src/index.ts';
 import {
   openDocumentForExport,

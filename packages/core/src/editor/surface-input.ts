@@ -7,9 +7,9 @@
 // instead of three hand-written keymaps that drift.
 
 import { chordLetter } from './chord-letter.ts';
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { NavigationCommand } from '@zqmi/docx-editor-core/layout';
-import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { NavigationCommand } from '@onsitesai/docx-editor-core/layout';
+import { paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';
 import { plainTextFromTransfer } from './clipboard-plain-text.ts';
 import { selectionsEqual, spanSearchRoots } from './dom-selection.ts';

@@ -11,9 +11,9 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
-import type { CollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
-import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
+import type { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
+import type { CollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
+import { readOoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 import { docx, paragraph } from './paginated-surface-fixtures.ts';
 

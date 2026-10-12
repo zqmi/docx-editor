@@ -1,4 +1,4 @@
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { selectionRects } from '../layout/selection-rects.ts';
 import type { TextMeasurer } from '../layout/semantic-records.ts';
 import { tocParagraphRanges } from './surface-toc-ranges.ts';

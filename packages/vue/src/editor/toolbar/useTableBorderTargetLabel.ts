@@ -4,8 +4,8 @@ import {
   tableChromeLabelKeyForTarget,
   toolbarCommandState,
   type TableChromeDraft,
-} from '@zqmi/docx-editor-core/editor';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';
 import { useToolbarLabel } from './toolbar-context';

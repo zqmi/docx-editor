@@ -2,9 +2,9 @@ import type { MarkdownImageAsset, MarkdownProjectionOptions } from './media-type
 import type {
   ExportFontResolutionReport,
   OpenDocumentForExportOptions,
-} from '@zqmi/docx-editor-core/export';
-import type { FontOrigin } from '@zqmi/docx-editor-core/export';
-import type { RevisionDisplayMode } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/export';
+import type { FontOrigin } from '@onsitesai/docx-editor-core/export';
+import type { RevisionDisplayMode } from '@onsitesai/docx-editor-core/layout';
 import type {
   MarkdownComment,
   MarkdownReviewArtifact,

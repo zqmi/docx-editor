@@ -58,7 +58,7 @@ The `modules` prop registers capability modules during construction. [`@docx-edi
 The editor reads `modules` only during construction. A later array change has no effect. To change modules, remount the editor with a different React `key`:
 
 ```tsx
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { reviewModule } from '@docx-editor.dev/pro/react';
 
 const MODULES = [reviewModule()];
@@ -97,7 +97,7 @@ This example controls the editor color mode:
 
 ```tsx
 import { useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 
 export function ThemedEditor({ bytes }: { bytes: Uint8Array }) {
   const [colorMode, setColorMode] = useState<'light' | 'dark'>('light');
@@ -134,8 +134,8 @@ The resolver also requests the configured default font. With the default Calibri
 Wrap it in `useFonts` to keep one resolver identity:
 
 ```tsx
-import { DocxEditor, useFonts } from '@zqmi/docx-editor-react';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { DocxEditor, useFonts } from '@onsitesai/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
 
 function Editor({ bytes }: { bytes: Uint8Array }) {
   const fonts = useFonts(packagedFonts());
@@ -146,7 +146,7 @@ function Editor({ bytes }: { bytes: Uint8Array }) {
 Add an origin by adding an argument. Arguments compose first-wins:
 
 ```tsx
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 const fonts = useFonts(packagedFonts(), googleFonts());
 ```
@@ -210,7 +210,7 @@ This example saves and accesses the editor:
 
 ```tsx
 import { useRef } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
+import { DocxEditor, type DocxEditorRef } from '@onsitesai/docx-editor-react';
 
 const editorRef = useRef<DocxEditorRef>(null);
 

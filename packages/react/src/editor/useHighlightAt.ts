@@ -4,7 +4,7 @@
 // changes, which move marks under a pointer that stays still.
 
 import { useEffect, useState } from 'react';
-import type { HighlightHit, HighlightRange } from '@zqmi/docx-editor-core/contracts/editor';
+import type { HighlightHit, HighlightRange } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 
 function sameHit(a: HighlightHit | null, b: HighlightHit | null): boolean {

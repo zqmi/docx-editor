@@ -9,8 +9,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // node was under it.
 
 import { useMemo } from 'react';
-import { useDocxEditor } from '@zqmi/docx-editor-react';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import { useDocxEditor } from '@onsitesai/docx-editor-react';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   isCustomNodeDefinition,
   type ActivatedCustomNode,
@@ -18,9 +18,9 @@ import {
 } from '../custom-nodes/define-custom-node.ts';
 import { decodeCustomNodeTag } from '../custom-nodes/tag-codec.ts';
 import { parseCustomNodeData } from '../custom-nodes/data-schema.ts';
-import { customNodePayloadsByControl } from '@zqmi/docx-editor-core/store';
-import { partOfNodeId } from '@zqmi/docx-editor-core/editor';
-import type { PaginatedSurface as EditorSurface } from '@zqmi/docx-editor-core/editor';
+import { customNodePayloadsByControl } from '@onsitesai/docx-editor-core/store';
+import { partOfNodeId } from '@onsitesai/docx-editor-core/editor';
+import type { PaginatedSurface as EditorSurface } from '@onsitesai/docx-editor-core/editor';
 
 /**
  * The definitions a chrome surface should act on: the `nodes` prop when given, else the

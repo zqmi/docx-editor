@@ -4,14 +4,14 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { createRevisionColorPicker } from './revision-markup-colors';
-import { createT, en, type TranslationKey } from '@zqmi/docx-editor-i18n';
+import { createT, en, type TranslationKey } from '@onsitesai/docx-editor-i18n';
 import {
   REVISION_MARKUP_COLORS,
   type RevisionMarkupDialogHost,
   type RevisionMarkupDialog,
   type RevisionMarkupOptions,
   type ResolvedRevisionMarkup,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 const marks = [
   'none',

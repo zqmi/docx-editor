@@ -2,7 +2,7 @@
 // their own file, so the menu parts file stays under its line cap.
 
 import { openReportIssue } from '../../lib/reportIssue';
-import type { ChromeMenuId } from '@zqmi/docx-editor-core/editor';
+import type { ChromeMenuId } from '@onsitesai/docx-editor-core/editor';
 import { useMenuContext, useMenuLabel } from './menu-context';
 import { Menu, MenuRow, type MenuPartComponent, type MenuProps } from './parts';
 

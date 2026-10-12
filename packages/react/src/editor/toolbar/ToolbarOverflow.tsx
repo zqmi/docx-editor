@@ -28,14 +28,14 @@ import {
   listenForPopupEscape,
   listenForPopupFocusLeave,
   type ChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useNavigationViewportElement } from '../navigation/navigation-layout';
 import { useEditorCommand } from '../useEditorCommand';
 import { usePlatformShortcut } from '../usePlatformShortcut';
 import { useToolbarLabel } from './toolbar-context';
 import { chromeControlForSlot, chromeIcon, guardToolbarMousedown } from './ToolbarButton';
 import { MORE_ATTRIBUTE } from './useToolbarOverflow';
-import { toolbarPanelPlacement, type ToolbarPanelPlacement } from '@zqmi/docx-editor-core/editor';
+import { toolbarPanelPlacement, type ToolbarPanelPlacement } from '@onsitesai/docx-editor-core/editor';
 
 /**
  * `more_horiz`. Here rather than in the registry for the reason the context menu's icons

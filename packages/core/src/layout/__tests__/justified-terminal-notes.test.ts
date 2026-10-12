@@ -2,7 +2,7 @@ import { expect, test } from 'bun:test';
 import { loadBody } from './float-over-table-harness.ts';
 import { breakParagraph } from '../paragraph-flow.ts';
 import type { TextMeasurer } from '../semantic-records.ts';
-import { applyTreeOp, paragraphTextOf, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { applyTreeOp, paragraphTextOf, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { isSpaceShrinkWordPiece } from '../space-shrink-piece.ts';
 import { DEFAULT_RUN_STYLE } from '../run-style.ts';
 import { createLayoutSession, layoutSemanticDocument } from '../semantic-layout.ts';

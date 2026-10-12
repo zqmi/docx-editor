@@ -25,7 +25,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      ...(isMonorepo ? { '@zqmi/docx-editor-react': path.join(monorepoRoot, 'src/index.ts') } : {}),
+      ...(isMonorepo ? { '@onsitesai/docx-editor-react': path.join(monorepoRoot, 'src/index.ts') } : {}),
     },
   },
   css: {

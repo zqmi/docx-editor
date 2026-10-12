@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { useTranslation } from '../i18n';
-import { isChromePrintShortcut } from '@zqmi/docx-editor-core/editor';
+import { isChromePrintShortcut } from '@onsitesai/docx-editor-core/editor';
 import { DialogFrame } from './dialog-parts';
 
 /** State and presentation for the File menu print dialog. @public */

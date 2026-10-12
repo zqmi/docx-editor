@@ -8,7 +8,7 @@ import {
   sniffImageMime,
   validateRasterHeader,
   type SupportedImageMime,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 const EMU_PER_POINT = 12_700;
 const DEFAULT_DPI = 96;

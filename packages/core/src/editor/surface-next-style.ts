@@ -16,9 +16,9 @@
 // style question, answered against `styles.xml` and the document's own default, rather
 // than a structural edit at the selection.
 
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
-import { directParagraphProperties, paragraphTextOf } from '@zqmi/docx-editor-core/store';
-import type { StyleCascadeTable } from '@zqmi/docx-editor-core/layout';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
+import { directParagraphProperties, paragraphTextOf } from '@onsitesai/docx-editor-core/store';
+import type { StyleCascadeTable } from '@onsitesai/docx-editor-core/layout';
 
 /** What this lane borrows: the styles index, and the part the split's paragraph lives in. */
 export interface NextStyleDeps {

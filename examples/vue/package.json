@@ -9,9 +9,9 @@
     "test": "bun test ./src/composed-demo.test.ts"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
-    "@zqmi/docx-editor-fonts": "workspace:*",
-    "@zqmi/docx-editor-i18n": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-fonts": "workspace:*",
+    "@onsitesai/docx-editor-i18n": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
     "@docx-editor.dev/vue": "workspace:*",
     "vue": "^3.5.0",

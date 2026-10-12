@@ -3,7 +3,7 @@
 // A symbol is one model character; layout paints its glyph (`store/package/symbol-glyph.ts`)
 // over that one offset in the face the symbol names.
 
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { resolveRunStyle, type ResolvedRunStyle, type ThemeFonts } from './run-style.ts';
 import type { SymbolGlyph } from '../store/package/symbol-glyph.ts';
 

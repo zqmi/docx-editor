@@ -18,7 +18,7 @@ import {
   readOoxmlPart,
   findNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   activeReviewItem,
   commentBodyText,
@@ -29,7 +29,7 @@ import {
   reviewItemsAt,
   type ReviewItem,
   type ReviewRevisionItem,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   collectReviewItems,
   revisionItemsOf,

@@ -20,8 +20,8 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
-import { caretAt } from '@zqmi/docx-editor-core/layout';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
+import { caretAt } from '@onsitesai/docx-editor-core/layout';
 import { reviewModule } from '../../../../pro/src/review/review-module.ts';
 import { DocxEditor } from '../../index.ts';
 import { DocxEditor as DocxEditorBrowser, type CreateBrowserOptions } from '../../browser.ts';

@@ -116,7 +116,7 @@ describe('what the package depends on', () => {
   });
 
   test('the engine is a peer dependency, resolved rather than carried', () => {
-    // `@zqmi/docx-editor-core` is a published package and stays external in both outputs, so a
+    // `@onsitesai/docx-editor-core` is a published package and stays external in both outputs, so a
     // consumer resolves one copy of the engine. Inlining it would put a second engine in this
     // tarball, and a page running this next to the adapter would hold two instances.
     // A plain range, never `workspace:*`: that protocol survives `changeset version` and
@@ -125,11 +125,11 @@ describe('what the package depends on', () => {
     // package; this asserts the range still points at the engine. Why the engine is a PEER
     // rather than a regular dependency — and why the range is a same-minor tilde — is
     // `package-dependencies.test.ts`, next to this file.
-    expect(manifest.peerDependencies?.['@zqmi/docx-editor-core']).toMatch(/^~\d+\.\d+\.\d+/);
+    expect(manifest.peerDependencies?.['@onsitesai/docx-editor-core']).toMatch(/^~\d+\.\d+\.\d+/);
   });
 
   test('the engine is the only peer dependency, and it is required', () => {
-    expect(Object.keys(manifest.peerDependencies ?? {})).toEqual(['@zqmi/docx-editor-core']);
+    expect(Object.keys(manifest.peerDependencies ?? {})).toEqual(['@onsitesai/docx-editor-core']);
     expect(manifest.peerDependenciesMeta).toBeUndefined();
   });
 

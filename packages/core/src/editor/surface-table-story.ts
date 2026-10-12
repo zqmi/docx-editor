@@ -10,9 +10,9 @@
  * functions over ids and records, with no DOM and no host.
  */
 
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { SemanticLayout } from '@zqmi/docx-editor-core/layout';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { SemanticLayout } from '@onsitesai/docx-editor-core/layout';
 import type {
   BlockFragmentRecord,
   LayoutBox,

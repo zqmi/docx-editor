@@ -98,9 +98,9 @@ Create the configuration once. Pass it to `DocxEditor.Root` through `fonts`.
 <Framework value="react">
 
 ```tsx
-import { useFonts } from '@zqmi/docx-editor-react';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { useFonts } from '@onsitesai/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 const local = packagedFonts();
 const remote = googleFonts({ allow: ['Lato', 'Arvo', 'PT Serif'] });
@@ -116,8 +116,8 @@ export function useContractFonts() {
 ```vue
 <script setup lang="ts">
 import { DocxEditor, useFonts } from '@docx-editor.dev/vue';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 defineProps<{ bytes: Uint8Array }>();
 const fonts = useFonts(packagedFonts(), googleFonts({ allow: ['Lato', 'Arvo', 'PT Serif'] }));
@@ -146,9 +146,9 @@ Pass your DOCX bytes and loaded fonts to this component. The preview uses a fict
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, type DocxEditorRootProps } from '@zqmi/docx-editor-react';
+import { DocxEditor, type DocxEditorRootProps } from '@onsitesai/docx-editor-react';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/react';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 const modules = [reviewModule()];
 
@@ -193,7 +193,7 @@ export function ContractEditor({
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { reviewModule, DocxEditorReview } from '@docx-editor.dev/pro/vue';
 import type { FontConfigurationFragment } from '@docx-editor.dev/vue';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 defineProps<{ bytes: Uint8Array; fonts: FontConfigurationFragment }>();
 const modules = [reviewModule()];
@@ -233,7 +233,7 @@ Host font files in your application. Load them before you mount the editor. This
 
 ```ts
 // contract-fonts.ts
-import { loadFonts } from '@zqmi/docx-editor-core/editor';
+import { loadFonts } from '@onsitesai/docx-editor-core/editor';
 
 export function loadContractFonts() {
   return loadFonts({
@@ -262,7 +262,7 @@ Call the helper after mount. Keep loading failures visible.
 
 ```tsx
 import { useEffect, useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { loadContractFonts } from './contract-fonts';
 
 type Fonts = Awaited<ReturnType<typeof loadContractFonts>>;
@@ -348,7 +348,7 @@ Mount this picker inside `DocxEditor.Root` with the document surface. The hook r
 <Framework value="react">
 
 ```tsx
-import { useFontFamily } from '@zqmi/docx-editor-react';
+import { useFontFamily } from '@onsitesai/docx-editor-react';
 
 export function ContractFontPicker() {
   const { value, options, isEnabled, setValue } = useFontFamily();

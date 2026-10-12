@@ -11,7 +11,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { describe, expect, test, afterEach } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { zipSync, strToU8 } from 'fflate';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { fragmentFromHtml, wrapInteropHtml } from '../clipboard-fragment-codec.ts';
 import { clipboardPasteLandsContent } from '../clipboard-file-lane.ts';
 import { mountPaginatedSurface } from '../paginated-surface.ts';

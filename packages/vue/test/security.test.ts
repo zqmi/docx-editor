@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-import { sanitizeHref } from '@zqmi/docx-editor-core/store';
+import { sanitizeHref } from '@onsitesai/docx-editor-core/store';
 
 describe('vue adapter security sinks', () => {
   test('sanitizeHref refuses javascript targets', () => {

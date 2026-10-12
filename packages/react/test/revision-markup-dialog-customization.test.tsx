@@ -3,7 +3,7 @@ import './dom-setup.ts';
 import { afterEach, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { StrictMode, useState } from 'react';
-import type { DocxEditorInstance, RevisionMarkupDialogSession } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance, RevisionMarkupDialogSession } from '@onsitesai/docx-editor-core/editor';
 import { reviewModule } from '../../pro/src/index';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';

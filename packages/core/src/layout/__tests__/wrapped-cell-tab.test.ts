@@ -4,7 +4,7 @@ import {
   applyTreeOp,
   paragraphTextOf,
   type OoxmlElement,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createLayoutSession, layoutSemanticDocument } from '../semantic-layout.ts';
 import { linesOf, type TextMeasurer } from '../semantic-records.ts';
 import { breakParagraph } from '../paragraph-flow.ts';

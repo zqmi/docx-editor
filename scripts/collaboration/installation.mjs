@@ -26,7 +26,7 @@ export function assertIsolated(directory) {
     }
   }
   // There must be one core and one Yjs runtime within each peer process.
-  for (const name of ['@zqmi/docx-editor-core', 'yjs']) {
+  for (const name of ['@onsitesai/docx-editor-core', 'yjs']) {
     const matches = Object.keys(lock.packages).filter(
       (path) => path.endsWith('/node_modules/' + name) || path === 'node_modules/' + name
     );

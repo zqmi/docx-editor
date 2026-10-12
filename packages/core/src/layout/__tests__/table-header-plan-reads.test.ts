@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
-import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createParagraphLayoutCache, tableCellBreakKeysOf } from '../layout-cache.ts';
 import { readTableStructure, type SemanticTableStructure } from '../semantic-table.ts';
 import { updateTableText } from '../table-text-update.ts';

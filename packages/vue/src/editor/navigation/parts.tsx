@@ -7,7 +7,7 @@ import {
   type CSSProperties,
   type PropType,
 } from 'vue';
-import type { TextMatch } from '@zqmi/docx-editor-core/contracts/editor';
+import type { TextMatch } from '@onsitesai/docx-editor-core/contracts/editor';
 import { MaterialSymbol } from '../../components/ui/Icons';
 import { selectDocumentAbsent } from '../document-presence';
 import { useEditorState } from '../useEditorState';

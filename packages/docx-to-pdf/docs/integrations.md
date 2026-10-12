@@ -3,7 +3,7 @@
 The converter runs on Node.js and returns PDF bytes. Keep conversion on the server for browser applications. The package uses the EigenPal Pro License. Install the converter and its engine peer before using these examples:
 
 ```sh
-npm install @docx-editor.dev/docx-to-pdf @zqmi/docx-editor-core
+npm install @docx-editor.dev/docx-to-pdf @onsitesai/docx-editor-core
 ```
 
 ## Return a PDF response
@@ -68,14 +68,14 @@ Keep packages external so Node.js resolves their font and WebAssembly assets:
 export default {
   serverExternalPackages: [
     '@docx-editor.dev/docx-to-pdf',
-    '@zqmi/docx-editor-core',
-    '@zqmi/docx-editor-fonts',
+    '@onsitesai/docx-editor-core',
+    '@onsitesai/docx-editor-fonts',
     '@docx-editor.dev/fonts-cjk',
   ],
 };
 ```
 
-For a standalone deployment, include the `assets/` directories from the converter and `@zqmi/docx-editor-fonts`. If you install `@docx-editor.dev/fonts-cjk`, include its `assets/` directory too. Keep the package directory structure intact. Test the deployment artifact with a real conversion before release.
+For a standalone deployment, include the `assets/` directories from the converter and `@onsitesai/docx-editor-fonts`. If you install `@docx-editor.dev/fonts-cjk`, include its `assets/` directory too. Keep the package directory structure intact. Test the deployment artifact with a real conversion before release.
 
 ## Convert a batch
 

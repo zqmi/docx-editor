@@ -59,4 +59,4 @@ export type {
   AutomationSpan,
   AutomationSpanRef,
   AutomationValue,
-} from '@zqmi/docx-editor-core/automation';
+} from '@onsitesai/docx-editor-core/automation';

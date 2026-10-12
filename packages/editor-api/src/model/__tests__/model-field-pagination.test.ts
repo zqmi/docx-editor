@@ -9,8 +9,8 @@ import {
   createFixedMeasurer,
   prepareLayoutFontConfiguration,
   sha256FontBytes,
-} from '@zqmi/docx-editor-core/layout';
-import { acquireSharedExportShaping } from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/layout';
+import { acquireSharedExportShaping } from '@onsitesai/docx-editor-core/export';
 import { docx, mainXmlOf } from './support/documents.ts';
 
 const field = '<w:fldSimple w:instr="PAGE"><w:r><w:t>0</w:t></w:r></w:fldSimple>';

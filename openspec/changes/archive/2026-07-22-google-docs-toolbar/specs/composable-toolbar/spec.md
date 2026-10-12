@@ -149,7 +149,7 @@ The system SHALL export `EditorToolbar` and all its sub-components (`TitleBar`, 
 
 #### Scenario: Named exports available
 
-- **WHEN** a consumer imports from `@zqmi/docx-editor-react`
+- **WHEN** a consumer imports from `@onsitesai/docx-editor-react`
 - **THEN** `EditorToolbar` SHALL be available as a named export
 - **AND** sub-components SHALL be accessible as `EditorToolbar.TitleBar`, `EditorToolbar.Logo`, etc.
 

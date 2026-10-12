@@ -9,7 +9,7 @@
 
 import { describe, expect, test } from 'bun:test';
 import iconPaths from '../../vue/src/components/ui/icon-paths.json';
-import { CHROME_GROUPS, chromeSlotId } from '@zqmi/docx-editor-core/editor';
+import { CHROME_GROUPS, chromeSlotId } from '@onsitesai/docx-editor-core/editor';
 
 /**
  * SLOT id → MATERIAL SYMBOL name.

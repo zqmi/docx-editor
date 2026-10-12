@@ -1,6 +1,6 @@
 import { defineComponent, ref } from 'vue';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
-import { commandForSlotValue } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
+import { commandForSlotValue } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';
 import { useEditorCommand } from '../useEditorCommand';

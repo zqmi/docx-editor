@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { ooxmlTreesEqual, type OoxmlNode, type OoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { ooxmlTreesEqual, type OoxmlNode, type OoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import { CT, OD, REL, W, createPeerHarness, walk, zipDocument } from './document-peer-support.ts';
 import { saveReopenDigest } from './document-support.ts';
 

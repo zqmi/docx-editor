@@ -2,8 +2,8 @@ import { useEffect, useState, useSyncExternalStore, useCallback, useRef, useId }
 import type {
   RevisionMarkupDialogSession,
   ResolvedRevisionMarkup,
-} from '@zqmi/docx-editor-core/editor';
-import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+} from '@onsitesai/docx-editor-core/editor';
+import type { TranslationKey } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../i18n';
 import {
   createDialogParts,

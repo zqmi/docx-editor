@@ -1,5 +1,5 @@
 import { useEffect, useRef, type RefObject } from 'react';
-import { listenForPopupEscape, listenForPopupFocusLeave } from '@zqmi/docx-editor-core/editor';
+import { listenForPopupEscape, listenForPopupFocusLeave } from '@onsitesai/docx-editor-core/editor';
 import { useNavigationViewportElement } from '../navigation/navigation-layout';
 
 /** Bind keyboard dismissal and option navigation to this mounted picker. */

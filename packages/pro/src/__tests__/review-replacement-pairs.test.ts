@@ -11,12 +11,12 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import type {
   ReviewItemPlacement,
   ReviewItemRevealEvent,
   ReviewRevisionPlacement,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import { reviewModule } from '../review/review-module.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

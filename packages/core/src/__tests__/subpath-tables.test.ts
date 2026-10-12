@@ -4,7 +4,7 @@
 //   - `package.json` exports        — what a consumer is allowed to import
 //   - `tsup.config.ts` entry        — what gets BUILT into dist; missing means the export map
 //                                     points at a file that was never emitted
-//   - `tsup.config.ts` esbuild alias— how the engine's own `@zqmi/docx-editor-core/*` imports
+//   - `tsup.config.ts` esbuild alias— how the engine's own `@onsitesai/docx-editor-core/*` imports
 //                                     resolve during that build, now that exports point at dist
 //   - `tsconfig.json` paths         — the same, for the declaration pass and for every consumer
 //                                     that compiles core's sources
@@ -52,7 +52,7 @@ function esbuildAliasOf(build: BuildConfig): Record<string, string> {
 }
 
 /**
- * The SELF-reference aliases: the `@zqmi/docx-editor-core/*` rows the four tables are about.
+ * The SELF-reference aliases: the `@onsitesai/docx-editor-core/*` rows the four tables are about.
  *
  * The table also carries `module`, which is not a subpath of this package at all — it is
  * what the inlined HarfBuzz runtime's `await import("module")` resolves to, so that no
@@ -62,7 +62,7 @@ function esbuildAliasOf(build: BuildConfig): Record<string, string> {
 function esbuildAlias(): Record<string, string> {
   const alias = esbuildAliasOf(config);
   return Object.fromEntries(
-    Object.entries(alias).filter(([specifier]) => specifier.startsWith('@zqmi/docx-editor-core'))
+    Object.entries(alias).filter(([specifier]) => specifier.startsWith('@onsitesai/docx-editor-core'))
   );
 }
 
@@ -70,9 +70,9 @@ function esbuildAlias(): Record<string, string> {
 const asEntryKey = (subpath: string): string =>
   subpath === '.' ? 'index' : subpath.replace(/^\.\//, '');
 
-/** `.` → `@zqmi/docx-editor-core`, `./store` → `@zqmi/docx-editor-core/store`. */
+/** `.` → `@onsitesai/docx-editor-core`, `./store` → `@onsitesai/docx-editor-core/store`. */
 const asSpecifier = (subpath: string): string =>
-  subpath === '.' ? '@zqmi/docx-editor-core' : `@zqmi/docx-editor-core${subpath.slice(1)}`;
+  subpath === '.' ? '@onsitesai/docx-editor-core' : `@onsitesai/docx-editor-core${subpath.slice(1)}`;
 
 /**
  * The JS subpaths, which is what the four tables are about.
@@ -149,7 +149,7 @@ describe('the published subpath tables agree', () => {
     const selfReferenceAliases = (build: BuildConfig): Record<string, string> =>
       Object.fromEntries(
         Object.entries(esbuildAliasOf(build)).filter(([specifier]) =>
-          specifier.startsWith('@zqmi/docx-editor-core')
+          specifier.startsWith('@onsitesai/docx-editor-core')
         )
       );
 

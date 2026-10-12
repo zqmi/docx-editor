@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // refuses that combination. This test only proves what the shared format sees if a local
 // store edit of this kind reaches a room.
 import { expect, test } from 'bun:test';
-import { FIELD_ATOM_CHAR, paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { FIELD_ATOM_CHAR, paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import { BODY, createPeerHarness, zipDocument } from './document-peer-support.ts';
 
 const FIELD =

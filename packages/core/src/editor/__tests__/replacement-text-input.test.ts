@@ -14,7 +14,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surface.ts';
 import { docx } from './paginated-surface-fixtures.ts';
 

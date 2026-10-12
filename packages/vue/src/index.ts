@@ -41,7 +41,7 @@ export {
   type DocxEditorAuthorStyleProps,
 } from './editor/DocxEditorAuthorStyle';
 export { useScopeClassName } from './editor/scope-context';
-export { LOADING_SNAPSHOT } from '@zqmi/docx-editor-core/editor';
+export { LOADING_SNAPSHOT } from '@onsitesai/docx-editor-core/editor';
 
 export { useEditorCommand, type EditorCommandState } from './editor/useEditorCommand';
 export {
@@ -377,7 +377,7 @@ export {
   type ChromeMenuSubmenuEntry,
   type ChromeSlotId,
   type ToolbarCommandState,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 export { EditorFontError } from './types';
 export type {
@@ -409,7 +409,7 @@ export {
   type FontUrlSource,
   type LoadFontsRequest,
   type LoadFontsResult,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 export {
   generateRulerTicks,
@@ -441,14 +441,14 @@ export type {
   EditorScope,
   PageSetup,
   ScrollToAnchorOptions,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 export type {
   ReviewAuthorInfo,
   RevisionAuthorAssignments,
   RevisionAuthorStyle,
   RevisionStyles,
-} from '@zqmi/docx-editor-core/editor';
-export type { DocxDocument } from '@zqmi/docx-editor-core/contracts/types';
+} from '@onsitesai/docx-editor-core/editor';
+export type { DocxDocument } from '@onsitesai/docx-editor-core/contracts/types';
 
 export {
   usePageSetupDialog,
@@ -511,7 +511,7 @@ export { definePopup, type DocxEditorPopup } from './editor/popup-renderer';
 
 export { useHistoryGroup, type UseHistoryGroupReturn } from './editor/useHistoryGroup';
 
-export { createDocumentRefresh, DocumentRefreshError } from '@zqmi/docx-editor-core/editor';
+export { createDocumentRefresh, DocumentRefreshError } from '@onsitesai/docx-editor-core/editor';
 export type {
   DocumentRefresh,
   DocumentRefreshState,
@@ -526,9 +526,9 @@ export type {
   RefreshHighlightAnimation,
   ClearRefreshHighlightsOptions,
   NavigateToChangeOptions,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
-export type { ChromeExportHandlers, ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
+export type { ChromeExportHandlers, ChromeExportFormat } from '@onsitesai/docx-editor-core/editor';
 
 export {
   DocxEditorExportDialog,
@@ -554,7 +554,7 @@ export type {
   RevisionDeletionMark,
   RevisionChangedLinesMark,
   ReviewDisplayMode,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 export {
   DocxEditorRevisionMarkupDialog,
@@ -565,4 +565,4 @@ export {
 export type {
   RevisionMarkupDialogSession,
   RevisionMarkupChromeHandlers,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';

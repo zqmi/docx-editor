@@ -3,12 +3,12 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-pdf/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import type { ResolvedRevisionMarkup, RevisionMarkupColor } from '@zqmi/docx-editor-core/editor';
+import type { ResolvedRevisionMarkup, RevisionMarkupColor } from '@onsitesai/docx-editor-core/editor';
 import {
   formatRevisionOf,
   type BlockFragmentRecord,
   type SemanticSpanVisit,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 
 // These are the print values of the named document revision tokens.
 const COLORS: Record<string, string> = {

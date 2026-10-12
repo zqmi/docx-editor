@@ -7,16 +7,16 @@
     "skipLibCheck": true,
     "moduleResolution": "bundler",
     "paths": {
-      "@zqmi/docx-editor-core": ["../../packages/core/src/index.ts"],
-      "@zqmi/docx-editor-core/*": ["../../packages/core/src/*"],
+      "@onsitesai/docx-editor-core": ["../../packages/core/src/index.ts"],
+      "@onsitesai/docx-editor-core/*": ["../../packages/core/src/*"],
       "@docx-editor.dev/docx-to-markdown": ["../../packages/docx-to-markdown/src/index.ts"],
-      "@zqmi/docx-editor-fonts": ["../../packages/fonts/src/index.ts"],
-      "@zqmi/docx-editor-fonts/google": ["../../packages/fonts/src/google-fonts.ts"],
-      "@zqmi/docx-editor-fonts/*": ["../../packages/fonts/src/*"],
-      "@zqmi/docx-editor-i18n": ["../../packages/i18n/src/index.ts"],
+      "@onsitesai/docx-editor-fonts": ["../../packages/fonts/src/index.ts"],
+      "@onsitesai/docx-editor-fonts/google": ["../../packages/fonts/src/google-fonts.ts"],
+      "@onsitesai/docx-editor-fonts/*": ["../../packages/fonts/src/*"],
+      "@onsitesai/docx-editor-i18n": ["../../packages/i18n/src/index.ts"],
       "@docx-editor.dev/pro": ["../../packages/pro/src/index.ts"],
       "@docx-editor.dev/pro/*": ["../../packages/pro/src/*"],
-      "@zqmi/docx-editor-react": ["../../packages/react/src/index.ts"]
+      "@onsitesai/docx-editor-react": ["../../packages/react/src/index.ts"]
     },
     "allowImportingTsExtensions": true,
     "isolatedModules": true,

@@ -5,7 +5,7 @@
 // queued `selectionchange` reaches the model.
 
 import { expect, test, type Page } from '@playwright/test';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorE2EHook } from '../examples/vite/src/test-harness/table-editing-e2e-hook.ts';
 
 const DEMO_URL = 'http://localhost:5273/?e2e=1&fixture=formtext-selection.docx';

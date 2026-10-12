@@ -1,5 +1,5 @@
 // Local character-style field recognition. Unknown switches keep their cached result.
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import {
   MAX_FIELD_INSTRUCTION_CHARS,
   MAX_STORY_FIELD_SCAN_DEPTH,

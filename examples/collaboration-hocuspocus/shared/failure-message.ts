@@ -1,5 +1,5 @@
 import { exampleText as t } from '../../shared/example-text';
-import type { CollaborationFailure } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationFailure } from '@onsitesai/docx-editor-core/collaboration';
 
 export interface DemoFailureMessage {
   readonly title: string;

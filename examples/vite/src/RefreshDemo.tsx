@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { DocxEditor, useDocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor, useDocxEditor } from '@onsitesai/docx-editor-react';
 import { mountRefreshDemoControls } from '../../shared/refresh-demo-controls';
 import { refreshFixture } from '../../shared/refresh-demo-fixture';
 import '../../shared/refresh-demo.css';

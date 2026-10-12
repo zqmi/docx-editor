@@ -9,7 +9,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { caretAt } from '../../layout/semantic-interaction.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../../layout/semantic-layout.ts';
 import type { SemanticLayout } from '../../layout/semantic-records.ts';

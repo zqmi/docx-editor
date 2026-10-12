@@ -1,5 +1,5 @@
 import { parsedFieldSpansOf } from '../store/package/field-nodes.ts';
-import { findNode, paragraphOffsetIndex, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { findNode, paragraphOffsetIndex, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { SemanticSelection } from '../layout/semantic-interaction.ts';
 
 export const FIELD_CODE_INPUT_REFUSAL = 'switch to field results before editing a form value';

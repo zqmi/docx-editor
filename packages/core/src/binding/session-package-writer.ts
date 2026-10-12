@@ -1,4 +1,4 @@
-import { writeOoxmlPackage, type OoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { writeOoxmlPackage, type OoxmlPackage } from '@onsitesai/docx-editor-core/store';
 
 // Retain at most one compressed document per session, never an XML copy per undo state.
 const MAX_CACHED_SAVE_BYTES = 8 * 1024 * 1024;

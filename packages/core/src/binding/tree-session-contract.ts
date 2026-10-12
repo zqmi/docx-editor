@@ -14,7 +14,7 @@ import type {
   OoxmlElement,
   OoxmlPackage,
   OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { ReviewItem } from '../store/store/review-items.ts';
 import type {
   SelectionMark,

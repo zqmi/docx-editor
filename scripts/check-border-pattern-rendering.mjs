@@ -80,7 +80,7 @@ window.checkReady = true;
     resolve: {
       alias: [
         {
-          find: '@zqmi/docx-editor-core/collaboration/replication',
+          find: '@onsitesai/docx-editor-core/collaboration/replication',
           replacement: path.join(root, 'packages/core/src/collaboration/replication.ts'),
         },
         {

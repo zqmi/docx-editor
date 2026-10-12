@@ -9,8 +9,8 @@
     "start": "remix-serve ./build/server/index.js"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
-    "@zqmi/docx-editor-react": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-react": "workspace:*",
     "@remix-run/node": "^2.16.0",
     "@remix-run/react": "^2.16.0",
     "@remix-run/serve": "^2.16.0",

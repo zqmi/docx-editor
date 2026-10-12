@@ -5,9 +5,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
 import { strFromU8, unzipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import { linesOf } from '@zqmi/docx-editor-core/layout';
-import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import { linesOf } from '@onsitesai/docx-editor-core/layout';
+import { paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import { styleForFontSlot } from '../../../../core/src/layout/script-itemization.ts';
 import { collaborationModule } from '../collaboration-module.ts';
 import { createPeerHarness, zipDocument, type Peer } from './document-peer-support.ts';

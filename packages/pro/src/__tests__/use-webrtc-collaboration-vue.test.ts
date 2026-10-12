@@ -12,7 +12,7 @@ import { join } from 'node:path';
 import { createApp, defineComponent, h, nextTick } from 'vue';
 import type * as Y from 'yjs';
 import type { WebrtcProvider } from 'y-webrtc';
-import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import type { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
 import { collaborationModule } from '../collaboration/collaboration-module.ts';
 import {
   useWebrtcCollaboration,

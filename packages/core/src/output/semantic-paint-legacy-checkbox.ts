@@ -1,4 +1,4 @@
-import type { StyleSpanRecord } from '@zqmi/docx-editor-core/layout';
+import type { StyleSpanRecord } from '@onsitesai/docx-editor-core/layout';
 
 /** Paint Word's fixed-size checkbox after run text, so text mounting cannot erase its hit area. */
 export function paintLegacyCheckbox(

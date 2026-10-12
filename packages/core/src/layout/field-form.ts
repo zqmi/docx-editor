@@ -15,7 +15,7 @@ import { parseCharacterStyleField, type CharacterStyleField } from './field-char
 // Everything fails closed to the previous behavior (cached text or nothing): an instruction
 // without matching ffData state, an empty entry list, an empty selected entry.
 
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { LegacyFormFieldData } from '../store/package/field-nodes.ts';
 import type { FieldAtomMarker } from './field-pieces.ts';
 import { parseButtonInstruction, type ButtonFieldSpec } from './field-button.ts';

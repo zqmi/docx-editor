@@ -10,9 +10,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@docx-editor.dev/editor-api": "workspace:*",
-    "@zqmi/docx-editor-i18n": "workspace:*",
+    "@onsitesai/docx-editor-i18n": "workspace:*",
     "@docx-editor.dev/pro": "workspace:*",
     "fflate": "^0.8.3",
     "y-protocols": "^1.0.7",

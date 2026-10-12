@@ -9,8 +9,8 @@ import type {
   DocumentSource,
   EditorCommand,
   EditorError,
-} from '@zqmi/docx-editor-core/contracts/editor';
-import type { SemanticSelection as SurfaceSelection } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/contracts/editor';
+import type { SemanticSelection as SurfaceSelection } from '@onsitesai/docx-editor-core/layout';
 // Direct, not through the layout barrel: this is an internal bound the write shares with
 // the reader, not something the layout package publishes.
 import { MAX_PARAGRAPH_INDENT_TWIPS } from '../layout/paragraph-flow.ts';

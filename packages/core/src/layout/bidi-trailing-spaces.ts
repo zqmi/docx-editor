@@ -1,5 +1,5 @@
 import { unchangedLtrLine } from './unchanged-ltr-line.ts';
-import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR } from '@onsitesai/docx-editor-core/store';
 import { isCollapsibleLineEndWhitespace } from './line-end-whitespace.ts';
 import { reorderBidiSpans } from './rtl-paragraph.ts';
 import type { StyleSpanRecord } from './semantic-records.ts';

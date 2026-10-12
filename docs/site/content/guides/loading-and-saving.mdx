@@ -100,7 +100,7 @@ Use `blankDocumentBytes()` for a repeatable **File > New** command. Repeating `'
 <Framework value="react">
 
 ```tsx
-import { blankDocumentBytes } from '@zqmi/docx-editor-core/editor';
+import { blankDocumentBytes } from '@onsitesai/docx-editor-core/editor';
 
 <button onClick={() => ref.current?.load(blankDocumentBytes())}>New</button>;
 ```
@@ -112,7 +112,7 @@ import { blankDocumentBytes } from '@zqmi/docx-editor-core/editor';
 <script setup lang="ts">
 import { ref } from 'vue';
 import { DocxEditor, type DocxEditorRef } from '@docx-editor.dev/vue';
-import { blankDocumentBytes } from '@zqmi/docx-editor-core/editor';
+import { blankDocumentBytes } from '@onsitesai/docx-editor-core/editor';
 
 const editorRef = ref<DocxEditorRef | null>(null);
 </script>
@@ -137,7 +137,7 @@ Fetch the document bytes and handle loading failures before mounting the editor:
 
 ```tsx
 import { useEffect, useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 
 export function Editor({ url }: { url: string }) {
   const [doc, setDoc] = useState<Uint8Array>();
@@ -200,7 +200,7 @@ Read the selected file into bytes, then pass those bytes through `document`:
 
 ```tsx
 import { useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 
 export function FileEditor() {
   const [doc, setDoc] = useState<Uint8Array>();
@@ -346,7 +346,7 @@ Render each autosave component with a key based on `docId`. This keeps its timer
 
 ```tsx
 import { useEffect, useRef } from 'react';
-import { DocxEditor, type DocxEditorRef } from '@zqmi/docx-editor-react';
+import { DocxEditor, type DocxEditorRef } from '@onsitesai/docx-editor-react';
 
 export function AutosaveEditor({ docId, bytes }: { docId: string; bytes: Uint8Array }) {
   const ref = useRef<DocxEditorRef>(null);

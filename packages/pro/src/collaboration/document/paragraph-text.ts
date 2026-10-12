@@ -26,7 +26,7 @@ import {
   XML_NAMESPACE_URI,
   type OoxmlElement,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { emptyWmlElement, expectElement, withChildren } from './node-shapes.ts';
 import { rejectDangerousKey, type DocumentLimits } from './limits.ts';
 import { asLogicalId, type LogicalId } from './identity.ts';

@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { describe, expect, test } from 'bun:test';
-import { canonicalOoxmlFingerprint, validateOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { canonicalOoxmlFingerprint, validateOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { BackendKind, MoveGateEvidence } from './contract.ts';
 import { collectKind, moveFixture, nodeText, runWithText } from './fixtures.ts';
 import { moveEvidence } from './gates.ts';

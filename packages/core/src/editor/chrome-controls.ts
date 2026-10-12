@@ -35,7 +35,7 @@ import type { ChromeMenu } from './chrome-menu-entries.ts';
 // SLOT id, never the bare control id.
 
 import { GENERATED_ICON_PATHS } from './generated-icon-paths.ts';
-import type { ImageContext } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ImageContext } from '@onsitesai/docx-editor-core/contracts/editor';
 
 /**
  * HOW a control reaches the engine — never WHETHER it is enabled.

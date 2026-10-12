@@ -1,7 +1,7 @@
 import type { ResolvedRevisionMarkup } from './revision-markup.ts';
 import type { ResolvedReviewPane } from './review-pane.ts';
 /**
- * `@zqmi/docx-editor-core/contracts/editor` — the `Editor` contract adapters are written against.
+ * `@onsitesai/docx-editor-core/contracts/editor` — the `Editor` contract adapters are written against.
  *
  * Commands go through `can` before `exec`; queries answer against the live, laid-out document.
  * Type-only declarations let adapters name the surface without importing the engine.
@@ -133,7 +133,7 @@ export type {
   ReviewRange,
   ReviewRevisionItem,
 } from '../store/store/review-items.ts';
-export type { RevisionAddress } from '@zqmi/docx-editor-core/store';
+export type { RevisionAddress } from '@onsitesai/docx-editor-core/store';
 export type { SemanticPosition, SemanticSelection } from '../layout/semantic-interaction.ts';
 export type {
   DrawingHorizontalReferenceFrame,
@@ -179,7 +179,7 @@ export interface DocumentHandle {
  * which would be lossy against the canonical package.
  *
  * `'blank'` is Word's blank template, the same bytes `blankDocumentBytes()` returns from
- * `@zqmi/docx-editor-core/editor`. OMITTING the document is not a way to ask for an empty
+ * `@onsitesai/docx-editor-core/editor`. OMITTING the document is not a way to ask for an empty
  * one: with no document there is no editing surface, so every command refuses with "no
  * document is loaded" behind a loading screen waiting for bytes that are not coming.
  *

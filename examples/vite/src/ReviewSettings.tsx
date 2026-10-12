@@ -5,8 +5,8 @@
 // through `editor.setReviewPaneOptions()` and reads back from `snapshot.reviewPane`, so the
 // panel shows what the editor uses, not a copy of it.
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
-import { useDocxEditor, useEditorState } from '@zqmi/docx-editor-react';
-import type { ResolvedReviewPane, ReviewPaneOptions } from '@zqmi/docx-editor-core/editor';
+import { useDocxEditor, useEditorState } from '@onsitesai/docx-editor-react';
+import type { ResolvedReviewPane, ReviewPaneOptions } from '@onsitesai/docx-editor-core/editor';
 import { exampleText as t } from '../../shared/example-text';
 import {
   EXAMPLE_REVIEW_PANE,

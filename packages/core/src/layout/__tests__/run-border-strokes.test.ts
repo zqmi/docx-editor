@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { paragraphFragmentsOf } from '../semantic-records.ts';
 import { resolveRunStyle, runStylesEqual } from '../run-style.ts';

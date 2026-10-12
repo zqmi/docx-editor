@@ -21,7 +21,7 @@ import type {
   AutomationCapabilities,
   AutomationHandle,
   AutomationHost,
-} from '@zqmi/docx-editor-core/automation';
+} from '@onsitesai/docx-editor-core/automation';
 import type { ActionQueue } from './queue.ts';
 import type { RequestContext } from './request-context.ts';
 import type { RevisionTextView } from './runtime.ts';

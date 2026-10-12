@@ -6,7 +6,7 @@
 
 import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import type { FocusEvent as ReactFocusEvent, KeyboardEvent as ReactKeyboardEvent } from 'react';
-import { toolbarPopupLeft, type ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import { toolbarPopupLeft, type ChromeSlotId } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorCommand } from '../useEditorCommand';
 import { useToolbarLabel } from './toolbar-context';

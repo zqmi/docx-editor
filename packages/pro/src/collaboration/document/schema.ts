@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import * as Y from 'yjs';
-import type { CanonicalBinaryDescriptor } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { CanonicalBinaryDescriptor } from '@onsitesai/docx-editor-core/collaboration/replication';
 import { itemIdOf, mapEntry, pendingUpdate } from './yjs-items.ts';
 import { rejectDangerousKey, rejectString } from './limits.ts';
 import { asLogicalId, type LogicalId } from './identity.ts';

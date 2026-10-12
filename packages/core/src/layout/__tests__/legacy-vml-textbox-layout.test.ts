@@ -24,7 +24,7 @@ import {
   readOoxmlPart,
   resolveHeaderFooterPartsBySection,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   DEFAULT_DRAWING_PROJECTION_LIMITS,
   indexInlineDrawingProjectionsInPart,

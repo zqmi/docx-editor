@@ -5,8 +5,8 @@
 // not a boolean. Geometry comes from layout rather than the DOM: the destination page may
 // still be virtualized, so it has no element to measure.
 
-import type { TextMeasurer } from '@zqmi/docx-editor-core/layout';
-import { caretAt, type SemanticLayout, type SemanticSelection } from '@zqmi/docx-editor-core/layout';
+import type { TextMeasurer } from '@onsitesai/docx-editor-core/layout';
+import { caretAt, type SemanticLayout, type SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 
 /**
  * Whether the viewport may move to the selection this write leaves behind.

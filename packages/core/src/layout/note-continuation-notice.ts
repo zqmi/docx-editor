@@ -1,4 +1,4 @@
-import type { OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { noteIdOf, notesOf, noteTypeOf } from '../store/package/note-nodes.ts';
 import {
   layoutNoteCached,

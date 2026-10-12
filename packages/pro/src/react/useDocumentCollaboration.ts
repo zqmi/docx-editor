@@ -4,8 +4,8 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { useId, useMemo } from 'react';
-import type { CollaborationFailure } from '@zqmi/docx-editor-core/collaboration';
-import type { EditorModule } from '@zqmi/docx-editor-core/editor';
+import type { CollaborationFailure } from '@onsitesai/docx-editor-core/collaboration';
+import type { EditorModule } from '@onsitesai/docx-editor-core/editor';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import type { CreateDocumentCollaborationOptions } from '../collaboration/document-session.ts';
 import {

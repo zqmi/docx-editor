@@ -5,7 +5,7 @@
 // ~8% tight on every line of essentially every modern document.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   applyLineSpacing,
   createFixedMeasurer,

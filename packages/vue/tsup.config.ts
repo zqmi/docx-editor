@@ -14,7 +14,7 @@ export default defineConfig(
     treeshake: true,
     minify: true,
     metafile: true,
-    external: ['vue', '@zqmi/docx-editor-core', '@zqmi/docx-editor-i18n'],
+    external: ['vue', '@onsitesai/docx-editor-core', '@onsitesai/docx-editor-i18n'],
     esbuildOptions(options) {
       options.jsx = 'automatic';
       options.jsxImportSource = 'vue';

@@ -14,7 +14,7 @@ import type { DocxEditorChildren } from '../../docx-editor-children';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, KeyboardEvent, ReactElement } from 'react';
-import type { TextMatch } from '@zqmi/docx-editor-core/contracts/editor';
+import type { TextMatch } from '@onsitesai/docx-editor-core/contracts/editor';
 import { MaterialSymbol } from '../../components/ui/Icons';
 import { selectDocumentAbsent } from '../document-presence';
 import { useEditorState } from '../useEditorState';

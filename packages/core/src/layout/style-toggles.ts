@@ -49,7 +49,7 @@
 // used." Callers either append direct `w:rPr` after the combined result, where
 // `resolveRunStyle`'s last-wins reading makes it absolute, or pass it as a `direct` level.
 
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 
 /**
  * The toggle properties §17.7.3 enumerates, and only those.

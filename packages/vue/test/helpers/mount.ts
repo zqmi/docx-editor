@@ -11,7 +11,7 @@ import {
   type Ref,
   type VNode,
 } from 'vue';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../../src/editor/DocxEditorContent';
@@ -34,7 +34,7 @@ export function mountEditorTree(
   rootChildren: () => VNode | VNode[],
   source: Uint8Array = SOURCE,
   viewportChildren: () => VNode | VNode[] = () => [],
-  modules?: readonly import('@zqmi/docx-editor-core/editor').EditorModule[],
+  modules?: readonly import('@onsitesai/docx-editor-core/editor').EditorModule[],
   rootProps: Record<string, unknown> = {}
 ): MountedEditor {
   const container = document.createElement('div');
@@ -57,7 +57,7 @@ export function mountEditorTree(
             document: source,
             ...(modules !== undefined ? { modules } : {}),
             ...rootProps,
-            onReady: (editor: import('@zqmi/docx-editor-core/contracts/editor').Editor) =>
+            onReady: (editor: import('@onsitesai/docx-editor-core/contracts/editor').Editor) =>
               ready.push(editor as DocxEditorInstance),
           },
           {
@@ -101,7 +101,7 @@ export async function mountSugarAsync(
         DocxEditor,
         {
           document: SOURCE,
-          onReady: (editor: import('@zqmi/docx-editor-core/contracts/editor').Editor) =>
+          onReady: (editor: import('@onsitesai/docx-editor-core/contracts/editor').Editor) =>
             ready.push(editor as DocxEditorInstance),
           ...rest,
           ...(onSave !== undefined ? { saveHandler: onSave } : {}),
@@ -138,7 +138,7 @@ export function mountComponent(
         DocxEditorRoot,
         {
           document: SOURCE,
-          onReady: (editor: import('@zqmi/docx-editor-core/contracts/editor').Editor) =>
+          onReady: (editor: import('@onsitesai/docx-editor-core/contracts/editor').Editor) =>
             ready.push(editor as DocxEditorInstance),
         },
         {

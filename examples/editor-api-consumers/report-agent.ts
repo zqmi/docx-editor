@@ -12,7 +12,7 @@ import {
   createFixedMeasurer,
   disposeLayoutShaping,
   sha256FontBytes,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 
 const probe = process.argv.includes('--probe-batching');
 const output = '/tmp/editor-api-consumers/report' + (probe ? '/batching-probe' : '');

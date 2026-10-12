@@ -21,7 +21,7 @@ For every feature in the React adapter's v1 scope (editing, formatting, lists, t
 - **WHEN** a user presses `Ctrl+B` (or `Cmd+B` on macOS) with a non-empty selection in either adapter
 - **THEN** both apply the bold mark to the selected text
 - **AND** the toolbar bold-button state updates simultaneously
-- **AND** the same shortcut dispatch path is exercised in both (commands resolved through `@zqmi/docx-editor-core`, not duplicated per-adapter)
+- **AND** the same shortcut dispatch path is exercised in both (commands resolved through `@onsitesai/docx-editor-core`, not duplicated per-adapter)
 
 ### Requirement: Per-component parity matrix
 

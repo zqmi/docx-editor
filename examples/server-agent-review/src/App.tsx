@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { DocxEditor, useDocxSource } from '@zqmi/docx-editor-react';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { DocxEditor, useDocxSource } from '@onsitesai/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
 import { reviewModule } from '@docx-editor.dev/pro';
 import {
   DocxEditorCollaboration,

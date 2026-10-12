@@ -7,7 +7,7 @@ import {
   resolveHeaderFooterPartsBySection,
   type OoxmlPackage,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   enumerateDocumentSections,

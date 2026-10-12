@@ -12,7 +12,7 @@
 // Windows keyboard-layout switch, and flipping direction on every layout switch in a
 // left-to-right document would be a trap for users who never write right-to-left text.
 
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';
 
 /** `KeyboardEvent.location` for the left and right copies of a modifier. */

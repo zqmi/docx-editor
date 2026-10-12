@@ -95,7 +95,7 @@ describe('harfBuzzWasmUnavailableDiagnostic', () => {
     const diagnostic = harfBuzzWasmUnavailableDiagnostic(new Error('ENOENT: no such file'));
 
     expect(diagnostic).toContain('setHarfBuzzWasmUrl');
-    expect(diagnostic).toContain('@zqmi/docx-editor-core/harfbuzz.wasm');
+    expect(diagnostic).toContain('@onsitesai/docx-editor-core/harfbuzz.wasm');
     expect(diagnostic).toContain('ENOENT: no such file');
   });
 
@@ -156,7 +156,7 @@ describe('a Node runtime without process.getBuiltinModule', () => {
 
     expect(diagnostic).toContain('Upgrade Node');
     expect(diagnostic).toContain('does not apply');
-    expect(diagnostic).not.toContain('serve `@zqmi/docx-editor-core/harfbuzz.wasm` yourself');
+    expect(diagnostic).not.toContain('serve `@onsitesai/docx-editor-core/harfbuzz.wasm` yourself');
   });
 
   test('names the same two versions the manifest declares (#595)', async () => {

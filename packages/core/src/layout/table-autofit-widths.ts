@@ -18,7 +18,7 @@ import {
 // Autofit column minimums: a column is never narrower than the widest unbreakable segment
 // its cells hold.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { PAGE_BREAK_CHAR } from '../store/package/hard-break.ts';
 import { bidiSourceBoundaries } from './bidi-piece-coalescing.ts';
 import { bidiPieces, paragraphIsRtl } from './rtl-paragraph.ts';
@@ -30,7 +30,7 @@ import {
 } from './cjk-line-break.ts';
 import { measureInlineDrawing, type InlineDrawingLayoutContext } from './drawing-layout.ts';
 import { createEquationLayouter } from './equation-layout.ts';
-import type { DocumentProperties } from '@zqmi/docx-editor-core/store';
+import type { DocumentProperties } from '@onsitesai/docx-editor-core/store';
 import type { FieldCodeRanges } from './field-code-toc.ts';
 import type { BodyPageFieldContext } from './field-page-furniture.ts';
 import type { FieldPageContext } from './field-projection.ts';

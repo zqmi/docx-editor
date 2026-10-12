@@ -1,4 +1,4 @@
-import type { ReviewRevisionItem } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ReviewRevisionItem } from '@onsitesai/docx-editor-core/contracts/editor';
 
 type Presentation = {
   label: string;

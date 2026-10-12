@@ -1,5 +1,5 @@
 // Field projection entry point. The bounded tree walk lives in field-projection-walk.ts.
-import type { DocumentProperties, OoxmlNode, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { DocumentProperties, OoxmlNode, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { BodyPageFieldContext, FieldPageContext } from './field-page-furniture.ts';
 import type {
   FieldAwarePiece,

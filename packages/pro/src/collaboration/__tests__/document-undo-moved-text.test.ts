@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 // Undo of typing that a peer's join moved removes every character of it, however long.
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import {
   createPeerHarness,
   nodeText,

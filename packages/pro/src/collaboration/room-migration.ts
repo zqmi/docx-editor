@@ -21,7 +21,7 @@ import {
   canonicalOoxmlFingerprint,
   readOoxmlPackage,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { readCollaborationDocument } from './document-read.ts';
 import { validateDocumentId } from './document-awareness.ts';
 import { COLLABORATION_FORMAT_VERSION, readCollaborationFormatVersion } from './document-format.ts';

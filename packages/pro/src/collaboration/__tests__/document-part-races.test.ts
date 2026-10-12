@@ -18,7 +18,7 @@ import {
   type OoxmlElement,
   type OoxmlPackage,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { partMemberSpecFor } from '../document/materialize-part-members.ts';
 import { W, createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 

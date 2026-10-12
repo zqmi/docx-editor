@@ -6,7 +6,7 @@ The 1.0.0 unified rename ships `@docx-editor.dev/vue` as a public package, and t
 
 - Merge PR #245 into `1.0.0-release` as the foundation, then harden it on a `vue-editor-robust-implementation` follow-up branch. Not a rewrite; a hardening pass.
 - Audit the 49 files from #245: accept what's solid, refactor reactivity hot spots, identify gaps vs the React adapter's UI surface, and produce a per-component **parity matrix** (done / partial / missing / deliberately omitted in v1).
-- Lock the **3-package boundary**: `@zqmi/docx-editor-core` stays UI-framework-agnostic (DOCX parser, ProseMirror schema, layout engine, plugin API, agent API, headless), `@zqmi/docx-editor-react` keeps React-only UI, `@docx-editor.dev/vue` owns Vue-only UI. Add a CI lint that fails the build if `vue/` imports `react`/`react-dom` or `react/` imports `vue`. **BREAKING** for any contributor who's been crossing the boundary.
+- Lock the **3-package boundary**: `@onsitesai/docx-editor-core` stays UI-framework-agnostic (DOCX parser, ProseMirror schema, layout engine, plugin API, agent API, headless), `@onsitesai/docx-editor-react` keeps React-only UI, `@docx-editor.dev/vue` owns Vue-only UI. Add a CI lint that fails the build if `vue/` imports `react`/`react-dom` or `react/` imports `vue`. **BREAKING** for any contributor who's been crossing the boundary.
 - Reuse the existing Playwright `tests/` specs against the parity preview's `/vue/` route so the same DOCX behaves identically across both adapters. Shared fixtures live in `examples/parity/fixtures/` and drive both runners.
 - Manual QA pass: visual fidelity (side-by-side screenshots), keyboard interaction, accessibility (axe-core sweep, focus order, aria roles), responsive layout.
 - Agentic review pass: spawn dedicated Claude/Codex sessions targeting Vue-specific bug classes — reactivity drift (`ref` vs `reactive` vs `shallowRef` for ProseMirror state), watch/effect ordering, DOM event timing in `onMounted`, prop mutation, v-model integration. Each pass writes findings to `openspec/changes/vue-editor-robust-implementation/notes/`.
@@ -17,14 +17,14 @@ The 1.0.0 unified rename ships `@docx-editor.dev/vue` as a public package, and t
 
 ### New Capabilities
 
-- `vue-adapter`: Vue 3 wrapper over `@zqmi/docx-editor-core`. Mounts the editor as an SFC, exposes a `<DocxEditor>` component with v-model + ref-based imperative API, and ships a `useDocxEditor` composable. Owns Vue-only UI components and Vue reactivity bindings to ProseMirror state.
+- `vue-adapter`: Vue 3 wrapper over `@onsitesai/docx-editor-core`. Mounts the editor as an SFC, exposes a `<DocxEditor>` component with v-model + ref-based imperative API, and ships a `useDocxEditor` composable. Owns Vue-only UI components and Vue reactivity bindings to ProseMirror state.
 - `vue-agent-sdk`: Vue equivalent of `@docx-editor.dev/agents`'s React UI surface. Ships SFC components (`<AgentPanel>`, `<AgentChatLog>`, `<AgentComposer>`, `<AgentSuggestionChip>`, `<AgentTimeline>`) and composables (`useAgentBridge`, `useAgentEvents`) that hit the same framework-agnostic bridge from core. Same DOCX, same agent, same UX semantics — picked-Vue-or-React is purely a host-app choice. **Prerequisite:** the React agent UI components currently live in `packages/react/src/components/` (`AgentPanel.tsx`, `AgentChat.tsx`); they must first migrate to `packages/agent-use/src/react/` so the package actually owns the React UI surface it claims. The Vue subpath then mirrors that real `/react` subpath.
 - `vue-react-parity`: Behavioural parity contract between the React and Vue adapters. Same `Document` input → same on-page rendering, same DOCX output, same keyboard shortcuts, same i18n strings. Codified as a Playwright test suite that runs against both `/react/` and `/vue/` routes on the parity preview deployment, plus a per-component parity matrix tracking implementation status.
 - `framework-isolation-lint`: Build-time enforcement that `packages/vue/src/` contains no React imports, `packages/react/src/` contains no Vue imports, and `packages/core/src/` imports neither. Ships as a small lint rule + CI check.
 
 ### Modified Capabilities
 
-_None._ This is a foundation drop on a long-living release branch; existing `@zqmi/docx-editor-react` and `@zqmi/docx-editor-core` requirements don't change.
+_None._ This is a foundation drop on a long-living release branch; existing `@onsitesai/docx-editor-react` and `@onsitesai/docx-editor-core` requirements don't change.
 
 ## Impact
 

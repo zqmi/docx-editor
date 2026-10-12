@@ -10,7 +10,7 @@
 // declaration from a validated token or produces nothing, so a crafted attribute cannot
 // close the declaration and start its own.
 
-import { readTwipsMeasure, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import { readTwipsMeasure, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 
 /** `w:val` of a property, or undefined. */
 function val(property: OoxmlProperty): string | undefined {

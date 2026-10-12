@@ -142,7 +142,7 @@ const shared = {
   // source inside `dist/`.
   metafile: true,
   external: ['emf-converter', 'utif2'],
-  // The engine's own files import it by package name ('@zqmi/docx-editor-core/store'
+  // The engine's own files import it by package name ('@onsitesai/docx-editor-core/store'
   // and friends), which resolved through the export map back when that map pointed
   // at src. Now that it points at dist, the build has to be told where source is,
   // or it chases a dist that does not exist yet.
@@ -152,24 +152,24 @@ const shared = {
   // because core-lane-graph.test.ts reads that file with a plain JSON.parse.
   esbuildOptions(options) {
     options.alias = {
-      '@zqmi/docx-editor-core': resolve(here, 'src/index.ts'),
-      '@zqmi/docx-editor-core/automation': resolve(here, 'src/automation/index.ts'),
-      '@zqmi/docx-editor-core/binding': resolve(here, 'src/binding/index.ts'),
-      '@zqmi/docx-editor-core/collaboration/replication': resolve(
+      '@onsitesai/docx-editor-core': resolve(here, 'src/index.ts'),
+      '@onsitesai/docx-editor-core/automation': resolve(here, 'src/automation/index.ts'),
+      '@onsitesai/docx-editor-core/binding': resolve(here, 'src/binding/index.ts'),
+      '@onsitesai/docx-editor-core/collaboration/replication': resolve(
         here,
         'src/collaboration/replication.ts'
       ),
-      '@zqmi/docx-editor-core/collaboration': resolve(here, 'src/collaboration/index.ts'),
-      '@zqmi/docx-editor-core/contracts/editor': resolve(here, 'src/contracts/editor.ts'),
-      '@zqmi/docx-editor-core/contracts/document': resolve(here, 'src/contracts/document.ts'),
-      '@zqmi/docx-editor-core/contracts/interaction': resolve(here, 'src/contracts/interaction.ts'),
-      '@zqmi/docx-editor-core/contracts/modules': resolve(here, 'src/contracts/modules.ts'),
-      '@zqmi/docx-editor-core/contracts/types': resolve(here, 'src/contracts/types-barrel.ts'),
-      '@zqmi/docx-editor-core/layout': resolve(here, 'src/layout/index.ts'),
-      '@zqmi/docx-editor-core/output': resolve(here, 'src/output/index.ts'),
-      '@zqmi/docx-editor-core/store': resolve(here, 'src/store/index.ts'),
-      '@zqmi/docx-editor-core/editor': resolve(here, 'src/editor/index.ts'),
-      '@zqmi/docx-editor-core/export': resolve(here, 'src/export/index.ts'),
+      '@onsitesai/docx-editor-core/collaboration': resolve(here, 'src/collaboration/index.ts'),
+      '@onsitesai/docx-editor-core/contracts/editor': resolve(here, 'src/contracts/editor.ts'),
+      '@onsitesai/docx-editor-core/contracts/document': resolve(here, 'src/contracts/document.ts'),
+      '@onsitesai/docx-editor-core/contracts/interaction': resolve(here, 'src/contracts/interaction.ts'),
+      '@onsitesai/docx-editor-core/contracts/modules': resolve(here, 'src/contracts/modules.ts'),
+      '@onsitesai/docx-editor-core/contracts/types': resolve(here, 'src/contracts/types-barrel.ts'),
+      '@onsitesai/docx-editor-core/layout': resolve(here, 'src/layout/index.ts'),
+      '@onsitesai/docx-editor-core/output': resolve(here, 'src/output/index.ts'),
+      '@onsitesai/docx-editor-core/store': resolve(here, 'src/store/index.ts'),
+      '@onsitesai/docx-editor-core/editor': resolve(here, 'src/editor/index.ts'),
+      '@onsitesai/docx-editor-core/export': resolve(here, 'src/export/index.ts'),
     };
   },
 } satisfies Options;

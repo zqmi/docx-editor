@@ -11,7 +11,7 @@ import {
   TreePackageStore,
   type HeadlessDocumentView,
   type OoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { caretAt } from '../../layout/semantic-interaction.ts';
 import { openDocumentForExport } from '../export-session.ts';
 import {

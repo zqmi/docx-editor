@@ -1,7 +1,7 @@
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { defineComponent, type CSSProperties, type PropType } from 'vue';
 import { useTranslation } from '../i18n';
-import { isChromePrintShortcut } from '@zqmi/docx-editor-core/editor';
+import { isChromePrintShortcut } from '@onsitesai/docx-editor-core/editor';
 import { NativeDialog } from './dialog-parts';
 
 /** State and presentation for the File menu print dialog. @public */

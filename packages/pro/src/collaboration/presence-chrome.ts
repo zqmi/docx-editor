@@ -13,9 +13,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // painted caret label stays the authority (its inline `--doc-remote-color` is the engine's
 // literal answer); this module exists for chrome the engine does not paint, like avatars.
 
-import { safeParticipantColor } from '@zqmi/docx-editor-core/collaboration';
-import type { CollaborationParticipant } from '@zqmi/docx-editor-core/collaboration';
-import type { ReviewAuthorInfo } from '@zqmi/docx-editor-core/editor';
+import { safeParticipantColor } from '@onsitesai/docx-editor-core/collaboration';
+import type { CollaborationParticipant } from '@onsitesai/docx-editor-core/collaboration';
+import type { ReviewAuthorInfo } from '@onsitesai/docx-editor-core/editor';
 
 /** How many author slots the token ramp defines; past it, colours repeat. */
 const AUTHOR_SLOTS = 8;

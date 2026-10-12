@@ -1,5 +1,5 @@
 /**
- * `@zqmi/docx-editor-core/automation` — the host protocol document automation runs against.
+ * `@onsitesai/docx-editor-core/automation` — the host protocol document automation runs against.
  *
  * One interface with two implementations: a headless host owning bytes it opened, and a browser
  * host borrowing the live editor's session. Both answer the same operations identically, because

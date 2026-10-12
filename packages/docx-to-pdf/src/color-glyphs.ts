@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import type { FontkitFont, FontkitGlyph, FontkitPathCommand } from 'fontkit';
-import { ExportResourceError } from '@zqmi/docx-editor-core/export';
+import { ExportResourceError } from '@onsitesai/docx-editor-core/export';
 import { number as n, PdfWorkLimitError, Work } from './context.ts';
 
 /** One palette layer of a color glyph, as PDF path operators in font units plus its fill. */

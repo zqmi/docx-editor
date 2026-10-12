@@ -27,6 +27,6 @@ Separate package (`@docx-editor.dev/agents`) under BSL-1.1 — source-available,
 ## Impact
 
 - **New package**: `packages/agent-use/` with own `package.json`, `tsconfig.json`, `tsup.config.ts`, BSL-1.1 `LICENSE`
-- **Peer dependency**: `@zqmi/docx-editor-core` — no code duplication
+- **Peer dependency**: `@onsitesai/docx-editor-core` — no code duplication
 - **Core package**: No changes
 - **Breaking changes**: None — purely additive

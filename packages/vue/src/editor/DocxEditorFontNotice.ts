@@ -1,6 +1,6 @@
 import { defineComponent, h, ref, type CSSProperties, type PropType } from 'vue';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
-import type { TFunction } from '@zqmi/docx-editor-i18n';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
+import type { TFunction } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../i18n';
 import { useEditorState } from './useEditorState';
 

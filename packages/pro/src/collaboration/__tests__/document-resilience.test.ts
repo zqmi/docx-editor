@@ -18,7 +18,7 @@ import {
   readOoxmlPackage,
   type OoxmlNode,
   type OoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   BODY,
   CT,

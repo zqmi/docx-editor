@@ -4,7 +4,7 @@ import {
   positionedRunMetrics,
   type PendingLine,
 } from './pending-line.ts';
-import { PAGE_BREAK_CHAR } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR } from '@onsitesai/docx-editor-core/store';
 import { styleForFontSlot } from './script-itemization.ts';
 import type { TextMeasurer } from './semantic-records.ts';
 import { borderStrokeWidthPt } from './border-metrics.ts';

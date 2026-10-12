@@ -12,13 +12,13 @@ import {
   locales,
   type LocaleStrings,
   type TranslationKey,
-} from '@zqmi/docx-editor-i18n';
+} from '@onsitesai/docx-editor-i18n';
 import {
   DEFAULT_REVISION_MARKUP,
   createDocxEditor,
   type RevisionMarkupOptions,
   type ResolvedRevisionMarkup,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { reviewModule } from '../review/review-module';
 
 let cleanup = () => {};

@@ -16,12 +16,12 @@ The package uses the [EigenPal Pro License](LICENSE.md). Production use requires
 
 ## Before you begin
 
-Use Node.js 20.16.0 or later in the 20.x release line, or Node.js 22.3.0 or later. The converter needs WebAssembly and its packaged font assets. Install a compatible `@zqmi/docx-editor-core` peer alongside the converter. Keep one Core copy in your application.
+Use Node.js 20.16.0 or later in the 20.x release line, or Node.js 22.3.0 or later. The converter needs WebAssembly and its packaged font assets. Install a compatible `@onsitesai/docx-editor-core` peer alongside the converter. Keep one Core copy in your application.
 
 ## Install the package
 
 ```sh
-npm install @docx-editor.dev/docx-to-pdf @zqmi/docx-editor-core
+npm install @docx-editor.dev/docx-to-pdf @onsitesai/docx-editor-core
 ```
 
 For Chinese, Japanese, or Korean text, supply suitable fonts or install the optional `@docx-editor.dev/fonts-cjk` package. The converter finds the package without configuration.

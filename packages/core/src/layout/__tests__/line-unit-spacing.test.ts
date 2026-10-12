@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
 import { paragraphSpacing, MAX_PARAGRAPH_SPACING_PT } from '../paragraph-style.ts';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { layoutSemanticDocument, createFixedMeasurer } from '../semantic-layout.ts';
 import { createParagraphLayoutCache } from '../layout-cache.ts';
 import { createLayoutSession } from '../layout-session.ts';

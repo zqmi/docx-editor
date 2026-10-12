@@ -3,7 +3,7 @@
 // where a `w:ptab` lands. Extracted from paragraph-flow so that module stays inside its line
 // budget; it is the only consumer.
 
-import { PAGE_BREAK_CHAR, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { FieldAwarePiece, PositionalTab } from './field-projection.ts';
 import type { TabLeader } from './paragraph-tabs.ts';
 import { displayText, runStylesEqual, type ResolvedRunStyle } from './run-style.ts';

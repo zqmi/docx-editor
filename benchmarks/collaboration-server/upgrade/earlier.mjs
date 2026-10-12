@@ -20,12 +20,12 @@ import {
   createDocumentCollaboration,
   readCollaborationDocument,
 } from '@docx-editor.dev/pro/collaboration';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   normalizeParagraphIdentity,
   readOoxmlPackage,
   TreePackageStore,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 const BODY = { kind: 'body' };
 

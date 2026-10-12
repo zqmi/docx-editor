@@ -15,8 +15,8 @@
 //    published, which is the same string `w:author` carries in the saved file.
 
 import { useCallback, useEffect, useMemo, useState, type CSSProperties } from 'react';
-import { DocxEditor, useDocxEditor, useDocxSource } from '@zqmi/docx-editor-react';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { DocxEditor, useDocxEditor, useDocxSource } from '@onsitesai/docx-editor-react';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
 import { reviewModule } from '@docx-editor.dev/pro';
 import {
   DocxEditorCollaboration,

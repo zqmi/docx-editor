@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { RulerPageSetup, RulerTabStop } from '../ui/HorizontalRuler';
 import { LocaleProvider } from '../../i18n';
 import { cn } from '../../lib/utils';

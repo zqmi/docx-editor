@@ -9,7 +9,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
-import { forEachSemanticSpan } from '@zqmi/docx-editor-core/layout';
+import { forEachSemanticSpan } from '@onsitesai/docx-editor-core/layout';
 import { exportPdf } from '../../src/index.ts';
 import { openExportSession } from '../../src/open-session.ts';
 import { docx } from '../../test/fixture.ts';

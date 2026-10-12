@@ -5,7 +5,7 @@ import { strToU8, zipSync } from 'fflate';
 import type {
   ContentControlWidgetSession,
   InvalidTextFormFieldSession,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorContentControlWidget } from '../src/editor/DocxEditorContentControlWidget';
 import { DocxEditorInvalidTextFormFieldDialog } from '../src/editor/DocxEditorInvalidTextFormFieldDialog';
 const cleanups: (() => void)[] = [];
@@ -106,7 +106,7 @@ for (const mode of ['native', 'custom', 'manual'] as const)
       '<w:sdt><w:sdtPr><w:dropDownList><w:listItem w:displayText="One" w:value="1"/><w:listItem w:displayText="Two" w:value="2"/></w:dropDownList></w:sdtPr><w:sdtContent><w:p><w:r><w:t>One</w:t></w:r></w:p></w:sdtContent></w:sdt>'
     );
     let manual: ContentControlWidgetSession | undefined;
-    let editor: import('@zqmi/docx-editor-core/editor').DocxEditorInstance | undefined;
+    let editor: import('@onsitesai/docx-editor-core/editor').DocxEditorInstance | undefined;
     const Manual = defineComponent({
       setup() {
         // Vue composables run in setup; this is not a React hook.
@@ -461,7 +461,7 @@ for (const configured of [false, true])
 
 test('a gallery press renders the packaged list of glossary blocks, and a pick lands one', async () => {
   const { flush } = await import('./helpers/fixtures');
-  let editor: import('@zqmi/docx-editor-core/editor').DocxEditorInstance | undefined;
+  let editor: import('@onsitesai/docx-editor-core/editor').DocxEditorInstance | undefined;
   const container = await mountRoot(
     GALLERY_PRESS,
     {

@@ -1,7 +1,7 @@
 // Note editing scope — reference-stable slice for notes chrome.
 
 import { useCallback } from 'react';
-import type { Editor, EditorSnapshot, ViewScope } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor, EditorSnapshot, ViewScope } from '@onsitesai/docx-editor-core/contracts/editor';
 
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';

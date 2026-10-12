@@ -12,7 +12,7 @@
 // flow, and so does a band where the frame meets the anchor's text, a table, a drawing or a
 // paragraph border or shading.
 
-import { readTwipsMeasure } from '@zqmi/docx-editor-core/store';
+import { readTwipsMeasure } from '@onsitesai/docx-editor-core/store';
 import {
   WML_NAMESPACE_URI,
   type OoxmlElement,

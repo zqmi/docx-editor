@@ -79,7 +79,7 @@ export const CORE_LANES: Readonly<Record<LaneName, Lane>> = Object.freeze({
   contracts: {
     // Owns the core package itself, so it never "moves" in the sense the other lanes do.
     directory: 'src/contracts',
-    package: '@zqmi/docx-editor-core',
+    package: '@onsitesai/docx-editor-core',
     mayImport: [],
     environment: 'neutral',
     // No bare `./contracts` entry point exists; the lane ships one subpath per contract.

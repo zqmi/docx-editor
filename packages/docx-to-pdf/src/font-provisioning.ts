@@ -8,10 +8,10 @@ import { readFile, stat } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL, URL as NodeURL } from 'node:url';
-import type { FontSource } from '@zqmi/docx-editor-core';
-import { createFontSource, defineFontResolver } from '@zqmi/docx-editor-core/editor';
-import type { FontRequest } from '@zqmi/docx-editor-core/export';
-import { FONT_ASSET_ROOT } from '@zqmi/docx-editor-fonts';
+import type { FontSource } from '@onsitesai/docx-editor-core';
+import { createFontSource, defineFontResolver } from '@onsitesai/docx-editor-core/editor';
+import type { FontRequest } from '@onsitesai/docx-editor-core/export';
+import { FONT_ASSET_ROOT } from '@onsitesai/docx-editor-fonts';
 
 const assetRoot = new NodeURL(
   '../assets/',
@@ -42,7 +42,7 @@ const latinSubstitute = (family: string, prefix: string): readonly PackagedFace[
 const CJK_FAMILY = 'Noto Sans CJK JP';
 /**
  * Every face this resolver can read: the symbol, mathematics, Arabic and emoji faces this
- * package carries, and the metric-compatible Latin substitutes from `@zqmi/docx-editor-fonts`,
+ * package carries, and the metric-compatible Latin substitutes from `@onsitesai/docx-editor-fonts`,
  * which stand in here for families that package has no plan for. The CJK face is not listed:
  * its file is located on demand ({@link CjkFaceLocator}).
  */
@@ -199,7 +199,7 @@ export function canonicalFamily(family: string): {
   };
 }
 /**
- * The families `@zqmi/docx-editor-fonts` substitutes when the document names them exactly.
+ * The families `@onsitesai/docx-editor-fonts` substitutes when the document names them exactly.
  * Named through a style word or a localized name, they reach this resolver instead.
  */
 const packagedSubstitutes: Record<string, string> = {
@@ -364,7 +364,7 @@ export function packagedFontResolvers(locateCjkFace: CjkFaceLocator = importCjkF
       }
     ));
   // Annotated with the public `FontSource`, so the declarations of the resolvers below
-  // name it through `@zqmi/docx-editor-core` rather than through a private build chunk.
+  // name it through `@onsitesai/docx-editor-core` rather than through a private build chunk.
   const readFaces = (
     faces: readonly PackagedFace[],
     signal: AbortSignal | undefined

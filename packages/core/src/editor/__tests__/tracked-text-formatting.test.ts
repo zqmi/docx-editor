@@ -17,8 +17,8 @@ import {
   runPropertyEdits,
   runsCovering,
   type OoxmlNode,
-} from '@zqmi/docx-editor-core/store';
-import type { RevisionDisplayMode } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+import type { RevisionDisplayMode } from '@onsitesai/docx-editor-core/layout';
 import { docx } from './paginated-surface-fixtures.ts';
 
 function withSurface(

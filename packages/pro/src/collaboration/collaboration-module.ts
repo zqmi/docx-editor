@@ -13,8 +13,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * pulling a CRDT into a review-only bundle.
  */
 
-import type { CollaborationModuleContribution, EditorModule } from '@zqmi/docx-editor-core/editor';
-import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationModuleContribution, EditorModule } from '@onsitesai/docx-editor-core/editor';
+import type { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
 import { rememberLicenseKey, type ProLicenseOptions } from '../license.ts';
 
 /**

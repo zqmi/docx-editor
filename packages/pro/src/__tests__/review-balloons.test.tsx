@@ -9,13 +9,13 @@ Object.assign(globalThis, { IS_REACT_ACT_ENVIRONMENT: true });
 import { describe, expect, test } from 'bun:test';
 import { act, render } from '@testing-library/react';
 import type { ReactNode } from 'react';
-import type { DocxEditorInstance, ReviewPaneOptions } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance, ReviewPaneOptions } from '@onsitesai/docx-editor-core/editor';
 import {
   DocxEditorContent,
   DocxEditorRoot,
   DocxEditorViewport,
   useEditorEvent,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 import { DocxEditorReview } from '../react/index.ts';
 import { reviewModule } from '../index.ts';
 import {

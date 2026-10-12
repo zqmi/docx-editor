@@ -8,10 +8,10 @@
 import { useEffect, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { z } from 'zod';
-import { useDocxEditor, type EditorCaret } from '@zqmi/docx-editor-react';
+import { useDocxEditor, type EditorCaret } from '@onsitesai/docx-editor-react';
 import { defineCustomNode, insertCustomNode, updateCustomNode } from '@docx-editor.dev/pro';
 import { CustomNodeChrome, useReviewItem } from '@docx-editor.dev/pro/react';
-import { sanitizeHref } from '@zqmi/docx-editor-core/store';
+import { sanitizeHref } from '@onsitesai/docx-editor-core/store';
 import { DEMO_PRIMARY_BUTTON, DEMO_SECONDARY_BUTTON, keepCaret } from './demoButtons';
 import { useChipPopover } from '../../shared/useChipPopover';
 

@@ -3,7 +3,7 @@ import {
   currentFieldResultsMode,
   type FieldResultsMode,
 } from '../store/package/field-result-mode.ts';
-import type { OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph } from './field-projection.ts';
 import { MAX_STORY_FIELD_SCAN_DEPTH } from './field-instruction.ts';
 import {

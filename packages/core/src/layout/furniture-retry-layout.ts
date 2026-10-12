@@ -1,7 +1,7 @@
 // One section's block run laid out under its geometry, with column balancing and the single
 // cold retry a hidden-furniture refusal allows. Steps; see `layout-steps.ts`.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import {
   layoutBlocksWithColumnBalanceSteps,
   type BlockLayoutResult,

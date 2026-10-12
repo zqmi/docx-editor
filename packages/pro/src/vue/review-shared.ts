@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 
 import { Fragment, isVNode, type VNode } from 'vue';
-import type { EditorSnapshot, ReviewItemQuery } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorSnapshot, ReviewItemQuery } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { ReviewItemView } from './useReview.ts';
 
 export const selectDocumentAbsent = (snapshot: EditorSnapshot) =>

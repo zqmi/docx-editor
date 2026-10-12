@@ -1,4 +1,4 @@
-# @zqmi/docx-editor-i18n
+# @onsitesai/docx-editor-i18n
 
 ## 2.28.0
 
@@ -17,13 +17,13 @@
 ### Minor Changes
 
 - 3a8853f: Support inserting, editing, deleting, moving, and resizing body textboxes, with synchronized edits and remote cursors during collaboration. Fix textbox pagination and caret visibility, and keep text direction commands in Format.
-- 567c1e5: Add Japanese translations through the `ja` export and the `@zqmi/docx-editor-i18n/ja` subpath.
+- 567c1e5: Add Japanese translations through the `ja` export and the `@onsitesai/docx-editor-i18n/ja` subpath.
 
 ## 2.23.0
 
 ### Minor Changes
 
-- 5981e48: Add a Spanish (`es`) locale, available as the `es` export and the `@zqmi/docx-editor-i18n/es` subpath.
+- 5981e48: Add a Spanish (`es`) locale, available as the `es` export and the `@onsitesai/docx-editor-i18n/es` subpath.
 
 ### Patch Changes
 
@@ -197,21 +197,21 @@
 
 ### Patch Changes
 
-- fe4cb94: Add per-locale subpath imports to `@zqmi/docx-editor-i18n` so dynamic locale loading can code-split a single locale instead of bundling the whole set:
+- fe4cb94: Add per-locale subpath imports to `@onsitesai/docx-editor-i18n` so dynamic locale loading can code-split a single locale instead of bundling the whole set:
 
   ```ts
   // Static — bundler ships only this locale's strings
-  import pl from '@zqmi/docx-editor-i18n/pl';
+  import pl from '@onsitesai/docx-editor-i18n/pl';
 
   // Dynamic — splits into its own chunk, loaded on demand
-  const pl = (await import('@zqmi/docx-editor-i18n/pl')).default;
+  const pl = (await import('@onsitesai/docx-editor-i18n/pl')).default;
   ```
 
   Subpaths ship for every locale: `/en`, `/de`, `/he`, `/pl`, `/pt-BR`, `/tr`, `/zh-CN`. The named exports on the package root still work — pick the ergonomic path for static lists, the subpath for runtime locale switching.
 
-  Also re-export `createEmptyDocument`, `createDocumentWithText`, and `CreateEmptyDocumentOptions` from `@zqmi/docx-editor-react` and `@docx-editor.dev/vue` so the common "spawn a blank editor" affordance no longer requires installing `-core` alongside the adapter.
+  Also re-export `createEmptyDocument`, `createDocumentWithText`, and `CreateEmptyDocumentOptions` from `@onsitesai/docx-editor-react` and `@docx-editor.dev/vue` so the common "spawn a blank editor" affordance no longer requires installing `-core` alongside the adapter.
 
-  Surface `Comment`, `CommentRangeStart`, `CommentRangeEnd`, `TrackedChangeInfo`, `TrackedRunChange`, `Insertion`, `Deletion`, `MoveFrom`, `MoveTo`, and `ParagraphContent` from the main `@zqmi/docx-editor-core` entry. They were already public via `@zqmi/docx-editor-core/headless`; the main entry just hadn't been re-exporting them.
+  Surface `Comment`, `CommentRangeStart`, `CommentRangeEnd`, `TrackedChangeInfo`, `TrackedRunChange`, `Insertion`, `Deletion`, `MoveFrom`, `MoveTo`, and `ParagraphContent` from the main `@onsitesai/docx-editor-core` entry. They were already public via `@onsitesai/docx-editor-core/headless`; the main entry just hadn't been re-exporting them.
 
 ## 1.0.0
 
@@ -225,20 +225,20 @@
 
   | Old import                            | New import                           |
   | ------------------------------------- | ------------------------------------ |
-  | `@eigenpal/docx-js-editor`            | `@zqmi/docx-editor-react`             |
-  | `@eigenpal/docx-js-editor/react`      | `@zqmi/docx-editor-react`             |
-  | `@zqmi/docx-editor-react/core`         | `@zqmi/docx-editor-core`              |
-  | `@zqmi/docx-editor-react/headless`     | `@zqmi/docx-editor-core/headless`     |
-  | `@zqmi/docx-editor-react/core-plugins` | `@zqmi/docx-editor-core/core-plugins` |
-  | `@zqmi/docx-editor-react/mcp`          | `@docx-editor.dev/agents/mcp`        |
-  | `@zqmi/docx-editor-react/i18n/*.json`  | `@zqmi/docx-editor-i18n/*.json`       |
+  | `@eigenpal/docx-js-editor`            | `@onsitesai/docx-editor-react`             |
+  | `@eigenpal/docx-js-editor/react`      | `@onsitesai/docx-editor-react`             |
+  | `@onsitesai/docx-editor-react/core`         | `@onsitesai/docx-editor-core`              |
+  | `@onsitesai/docx-editor-react/headless`     | `@onsitesai/docx-editor-core/headless`     |
+  | `@onsitesai/docx-editor-react/core-plugins` | `@onsitesai/docx-editor-core/core-plugins` |
+  | `@onsitesai/docx-editor-react/mcp`          | `@docx-editor.dev/agents/mcp`        |
+  | `@onsitesai/docx-editor-react/i18n/*.json`  | `@onsitesai/docx-editor-i18n/*.json`       |
 
   The old `@eigenpal/docx-js-editor` package stays on 0.x for legacy maintenance — no 1.x compatibility shim ships. Framework-agnostic utilities (e.g. `createEmptyDocument`) move to core:
 
   ```diff
   - import { DocxEditor, createEmptyDocument } from '@eigenpal/docx-js-editor';
-  + import { DocxEditor } from '@zqmi/docx-editor-react';
-  + import { createEmptyDocument } from '@zqmi/docx-editor-core';
+  + import { DocxEditor } from '@onsitesai/docx-editor-react';
+  + import { createEmptyDocument } from '@onsitesai/docx-editor-core';
   ```
 
   ## Vue 3 adapter (`@docx-editor.dev/vue`)
@@ -250,27 +250,27 @@
 
   Parity gates cover insert-table, find/replace, page-setup, context menus, image overlay (resize/move/rotate/aspect-locked corners, dimension tooltip), advanced cell/row options (margins, height rule, text direction, no-wrap), menu-bar icons + shortcuts + carets, toolbar pickers, and the agent UI surface.
 
-  ## Shared i18n package (`@zqmi/docx-editor-i18n`)
+  ## Shared i18n package (`@onsitesai/docx-editor-i18n`)
 
-  Locale strings move out of `@zqmi/docx-editor-react` into a dedicated package consumed by both adapters from a single source.
+  Locale strings move out of `@onsitesai/docx-editor-react` into a dedicated package consumed by both adapters from a single source.
 
   ```diff
-  - import de from '@zqmi/docx-editor-react/i18n/de.json';
-  + import de from '@zqmi/docx-editor-i18n/de.json';
+  - import de from '@onsitesai/docx-editor-react/i18n/de.json';
+  + import de from '@onsitesai/docx-editor-i18n/de.json';
   ```
 
   The `defaultLocale` value (English) is still re-exported from the adapter packages, unchanged.
 
   ## Agent UI relocation (breaking)
 
-  `AgentPanel`, `AgentChatLog`, `AgentComposer`, `AgentSuggestionChip`, `AgentTimeline` no longer ship from `@zqmi/docx-editor-react`. They live at:
+  `AgentPanel`, `AgentChatLog`, `AgentComposer`, `AgentSuggestionChip`, `AgentTimeline` no longer ship from `@onsitesai/docx-editor-react`. They live at:
   - `@docx-editor.dev/agents/react` — React components + `useAgentChat`
   - `@docx-editor.dev/agents/vue` — Vue 3 twins, plus `AIContextMenu` and `AIResponsePreview`
   - `@docx-editor.dev/agents/ai-sdk/react` / `/ai-sdk/vue` — `@ai-sdk/*` adapters
   - `@docx-editor.dev/agents/bridge` — React-free `createEditorBridge`, `agentTools`, `executeToolCall`, `getToolSchemas`, `createReviewerBridge`. Safe for headless / Vue / Node.
 
   ```diff
-  - import { AgentPanel, AgentChatLog } from '@zqmi/docx-editor-react';
+  - import { AgentPanel, AgentChatLog } from '@onsitesai/docx-editor-react';
   + import { AgentPanel, AgentChatLog } from '@docx-editor.dev/agents/react';
   ```
 

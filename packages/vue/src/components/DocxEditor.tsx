@@ -5,7 +5,7 @@ import type {
   ResolvedRevisionMarkup,
   ReviewDisplayMode,
   FieldResultsMode,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorExportDialog } from '../editor/DocxEditorExportDialog';
 import { DocxEditorPrintDialog } from '../editor/DocxEditorPrintDialog';
 import { DocxEditorContentControlWidget } from '../editor/DocxEditorContentControlWidget';
@@ -62,7 +62,7 @@ import {
 } from '../editor/DocxEditorAuthorStyle';
 import { ScopedByAncestorContext } from '../editor/scope-context';
 import { useDocxEditor } from '../editor/context';
-import type { EditorModule } from '@zqmi/docx-editor-core/editor';
+import type { EditorModule } from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorContextMenuProps } from '../editor/contextmenu';
 import type { DocxEditorMenuProps } from '../editor/menu';
 import type { DocxEditorProps, DocxEditorRef } from '../types';

@@ -15,13 +15,13 @@ import {
   normalizeParagraphIdentity,
   paraIdOf,
   readOoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
-import type { CollaborationLocalSelection } from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
+import type { CollaborationLocalSelection } from '@onsitesai/docx-editor-core/collaboration';
 import type {
   CanonicalPrimitiveJournal,
   CollaborationDocumentPort,
-} from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   createDocumentCollaboration,
   type DocumentCollaborationHandle,

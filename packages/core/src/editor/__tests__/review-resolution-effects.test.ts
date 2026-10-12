@@ -16,7 +16,7 @@ import {
   paragraphTextOf,
   revisionItemsOf,
   serializeOoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { EditorModule } from '../../contracts/modules.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

@@ -29,8 +29,8 @@ import {
   useDocxEditor,
   useEditorState,
   useTranslation,
-} from '@zqmi/docx-editor-react';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core';
+} from '@onsitesai/docx-editor-react';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core';
 import {
   type ActivatedCustomNode,
   type CustomNodeDefinition,

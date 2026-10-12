@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import * as Y from 'yjs';
-import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import {
   DocumentRegistry,
   MemoryBlobStore,

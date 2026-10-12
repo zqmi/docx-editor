@@ -8,7 +8,7 @@
 // WHY THIS EXISTS
 //
 // The published bundles are not thin wrappers around `dependencies`. tsup
-// inlines `@zqmi/docx-editor-core` (private, never published), and with it every
+// inlines `@onsitesai/docx-editor-core` (private, never published), and with it every
 // transitive dependency core has that the publishing package does not re-declare
 // — fast-xml-parser, fflate, the prosemirror packages, and friends all end up
 // as source inside `dist/*.js`. Redistributing MIT and Apache-2.0 code means

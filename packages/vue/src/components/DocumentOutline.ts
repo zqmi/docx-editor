@@ -1,5 +1,5 @@
 import { defineComponent, h, onMounted, ref, type PropType } from 'vue';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import { MaterialSymbol } from './ui/Icons';
 import { useTranslation } from '../i18n';
 

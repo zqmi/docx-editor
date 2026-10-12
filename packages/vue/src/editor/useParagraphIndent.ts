@@ -1,5 +1,5 @@
 import { computed, type ComputedRef } from 'vue';
-import type { EditorSnapshot, IndentFormatting } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorSnapshot, IndentFormatting } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

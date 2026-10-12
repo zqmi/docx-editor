@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // concurrent edits, undo, deletion, and save/reopen.
 import { afterEach, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { collaborationModule } from '../collaboration-module.ts';
 import { createPeerHarness, zipDocument } from './document-peer-support.ts';
 import { packageFingerprint, saveReopenDigest } from './document-support.ts';

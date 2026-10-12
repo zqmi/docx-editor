@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/editor-a
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { strFromU8, unzipSync } from 'fflate';
 import { createFixedMeasurer } from '../../../../core/src/layout/semantic-layout.ts';
 import { createBrowser } from '../../runtime/browser.ts';

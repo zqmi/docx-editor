@@ -146,7 +146,7 @@ Git ignores these files. Documentation sites clone the repository and run the ge
 
 ## Adapter parity
 
-The editor ships React and Vue adapters. Both use `@zqmi/docx-editor-core` for document state, input, layout, paint, and serialization.
+The editor ships React and Vue adapters. Both use `@onsitesai/docx-editor-core` for document state, input, layout, paint, and serialization.
 
 Put platform-neutral logic in core. Keep adapters limited to framework components, hooks, composables, and lifecycle integration.
 

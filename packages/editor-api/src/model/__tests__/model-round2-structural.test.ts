@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { expect, test } from 'bun:test';
 import { DocxEditor } from '@docx-editor.dev/editor-api';
 import { DocxEditor as BrowserDocxEditor } from '@docx-editor.dev/editor-api/browser';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
 import { WITH_FURNITURE, withNumbering, docx, p, table, row, cell } from './support/documents.ts';
 

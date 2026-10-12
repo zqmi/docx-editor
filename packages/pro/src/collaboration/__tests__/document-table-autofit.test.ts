@@ -6,9 +6,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { afterEach, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protocols/awareness';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
-import { caretAt, type SemanticLayout } from '@zqmi/docx-editor-core/layout';
-import { writeOoxmlPackage, type OoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
+import { caretAt, type SemanticLayout } from '@onsitesai/docx-editor-core/layout';
+import { writeOoxmlPackage, type OoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import { collaborationModule } from '../collaboration-module.ts';
 import { splitRowWidthTestRecorder } from '../../../../core/src/layout/table-width-split-rows.ts';
 import { createPeerHarness, zipDocument } from './document-peer-support.ts';

@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { buildStyleCascadeTable } from '../style-cascade.ts';
 import { hiddenStyleSeparatorMark } from '../style-separator-flow.ts';
 import { keepNextFlowKeys } from '../pagination-keeps.ts';

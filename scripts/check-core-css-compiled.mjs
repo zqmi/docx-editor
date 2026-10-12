@@ -20,7 +20,7 @@ const dist = join(
 if (!existsSync(dist)) {
   console.error(
     'check:core-css-compiled: packages/core/dist/editor.css is missing.\n' +
-      "Run `bun run --filter '@zqmi/docx-editor-core' build` first."
+      "Run `bun run --filter '@onsitesai/docx-editor-core' build` first."
   );
   process.exit(1);
 }

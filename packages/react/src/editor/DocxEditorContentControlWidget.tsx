@@ -5,7 +5,7 @@ import {
   observeContentControlPopup,
   contentControlPopupKeyDown,
   type ContentControlWidgetSession,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { useFormControlTranslate } from './form-control-translate';
 import {

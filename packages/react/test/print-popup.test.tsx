@@ -2,7 +2,7 @@ import './dom-setup.ts';
 import { afterEach, expect, spyOn, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { useState } from 'react';
-import type { ChromeExportHandlers } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportHandlers } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditor } from '../src/components/DocxEditor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';

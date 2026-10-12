@@ -134,7 +134,7 @@ export default defineConfig(
           replacement: path.join(monorepoRoot, 'packages/core/src/index.ts'),
         },
         {
-          find: '@zqmi/docx-editor-core/collaboration/replication',
+          find: '@onsitesai/docx-editor-core/collaboration/replication',
           replacement: path.join(monorepoRoot, 'packages/core/src/collaboration/replication.ts'),
         },
         {
@@ -146,7 +146,7 @@ export default defineConfig(
           replacement: path.join(monorepoRoot, 'packages/core/src/contracts/$1.ts'),
         },
         {
-          find: '@zqmi/docx-editor-fonts/google',
+          find: '@onsitesai/docx-editor-fonts/google',
           replacement: path.join(monorepoRoot, 'packages/fonts/src/google-fonts.ts'),
         },
         {

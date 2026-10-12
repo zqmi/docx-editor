@@ -23,7 +23,7 @@ import {
   type PropType,
   type VNode,
 } from 'vue';
-import type { ChromeGroupId, ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import type { ChromeGroupId, ChromeSlotId } from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../../docx-editor-children';
 import { mergeHostClass } from '../../lib/mergeHostClass';
 import { useToolbarLabel } from './toolbar-context';

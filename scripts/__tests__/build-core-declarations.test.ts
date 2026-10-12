@@ -9,8 +9,8 @@ import { siblingsOf } from '../check-built-siblings.mjs';
 import { declarationCompilerOptions } from '../declaration-options.mjs';
 
 const paths = {
-  '@zqmi/docx-editor-core': ['./src/index.ts'],
-  '@zqmi/docx-editor-core/store': ['./src/store/index.ts'],
+  '@onsitesai/docx-editor-core': ['./src/index.ts'],
+  '@onsitesai/docx-editor-core/store': ['./src/store/index.ts'],
 };
 
 test('each export with a top-level types condition becomes one declaration entry', () => {
@@ -26,8 +26,8 @@ test('each export with a top-level types condition becomes one declaration entry
     paths
   );
   expect(entries.map(({ specifier, name }) => [specifier, name])).toEqual([
-    ['@zqmi/docx-editor-core', 'index'],
-    ['@zqmi/docx-editor-core/store', 'store'],
+    ['@onsitesai/docx-editor-core', 'index'],
+    ['@onsitesai/docx-editor-core/store', 'store'],
   ]);
   expect(entries[1]!.source.endsWith('/packages/core/src/store/index.ts')).toBe(true);
 });
@@ -47,7 +47,7 @@ test('a subpath without a source path or with nested types fails instead of ship
 test('a bare import is checked against the package that owns it', () => {
   expect(packageName('prosemirror-model')).toBe('prosemirror-model');
   expect(packageName('fflate/browser')).toBe('fflate');
-  expect(packageName('@zqmi/docx-editor-i18n/locales')).toBe('@zqmi/docx-editor-i18n');
+  expect(packageName('@onsitesai/docx-editor-i18n/locales')).toBe('@onsitesai/docx-editor-i18n');
 });
 
 test('an import keeps its module kind when it resolves to a declaration file', () => {
@@ -80,7 +80,7 @@ test('declaration builds drop sibling source paths and keep local aliases', () =
     new URL('../../packages/editor-api/tsup.config.ts', import.meta.url)
   );
   expect(
-    Object.keys(editorApi.paths).every((key) => !key.startsWith('@zqmi/docx-editor-core'))
+    Object.keys(editorApi.paths).every((key) => !key.startsWith('@onsitesai/docx-editor-core'))
   ).toBe(true);
   expect(Object.keys(editorApi.paths)).toContain('@docx-editor.dev/editor-api');
 });
@@ -88,11 +88,11 @@ test('declaration builds drop sibling source paths and keep local aliases', () =
 test('a package checks every sibling it reads, including those behind core', () => {
   const siblings = (name: string) =>
     [...siblingsOf(new URL(`../../packages/${name}`, import.meta.url).pathname).keys()].sort();
-  expect(siblings('editor-api')).toEqual(['@zqmi/docx-editor-core', '@zqmi/docx-editor-i18n']);
+  expect(siblings('editor-api')).toEqual(['@onsitesai/docx-editor-core', '@onsitesai/docx-editor-i18n']);
   expect(siblings('pro')).toEqual([
-    '@zqmi/docx-editor-core',
-    '@zqmi/docx-editor-i18n',
-    '@zqmi/docx-editor-react',
+    '@onsitesai/docx-editor-core',
+    '@onsitesai/docx-editor-i18n',
+    '@onsitesai/docx-editor-react',
     '@docx-editor.dev/vue',
   ]);
   expect(siblings('fonts')).toEqual([]);

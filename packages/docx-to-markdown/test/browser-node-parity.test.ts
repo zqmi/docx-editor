@@ -4,9 +4,9 @@ import {
   createDocxEditor,
   type DocxEditorInstance,
   type EditorModule,
-} from '@zqmi/docx-editor-core/editor';
-import type { SemanticLayout } from '@zqmi/docx-editor-core/layout';
-import { loadDefaultFonts } from '@zqmi/docx-editor-fonts';
+} from '@onsitesai/docx-editor-core/editor';
+import type { SemanticLayout } from '@onsitesai/docx-editor-core/layout';
+import { loadDefaultFonts } from '@onsitesai/docx-editor-fonts';
 import { spawnSync } from 'node:child_process';
 import { writeFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';

@@ -8,9 +8,9 @@ import {
   openFontBackedDocumentForExport,
   type OpenFontBackedDocumentForExportOptions,
   type OpenFontBackedDocumentForExportResult,
-} from '@zqmi/docx-editor-core/export';
-import { HARD_MAX_FONT_BYTES } from '@zqmi/docx-editor-core/layout';
-import { FONT_ASSET_ROOT, packagedFonts } from '@zqmi/docx-editor-fonts';
+} from '@onsitesai/docx-editor-core/export';
+import { HARD_MAX_FONT_BYTES } from '@onsitesai/docx-editor-core/layout';
+import { FONT_ASSET_ROOT, packagedFonts } from '@onsitesai/docx-editor-fonts';
 import {
   cjkFonts,
   installedWordFonts,

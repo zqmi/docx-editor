@@ -11,9 +11,9 @@ import {
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { createPackagedFileFetch, type PackagedFileRead } from '@zqmi/docx-editor-core/export';
-import { HARD_MAX_FONT_BYTES } from '@zqmi/docx-editor-core/layout';
-import { FONT_ASSET_MANIFEST, FONT_ASSET_ROOT } from '@zqmi/docx-editor-fonts';
+import { createPackagedFileFetch, type PackagedFileRead } from '@onsitesai/docx-editor-core/export';
+import { HARD_MAX_FONT_BYTES } from '@onsitesai/docx-editor-core/layout';
+import { FONT_ASSET_MANIFEST, FONT_ASSET_ROOT } from '@onsitesai/docx-editor-fonts';
 
 const TEST_ROOT = new URL('file:///packaged/');
 const TEST_FILE = new URL('file:///packaged/font.woff2');

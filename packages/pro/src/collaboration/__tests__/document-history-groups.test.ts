@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // item and a change of group is a boundary, on every replica. The clock rule itself is
 // exercised against the manager in `history-group-capture.test.ts`.
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { BODY, createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('history-groups-room');

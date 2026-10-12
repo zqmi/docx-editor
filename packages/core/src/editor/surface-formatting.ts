@@ -22,7 +22,7 @@ import {
   type SemanticLayout,
   type SemanticSelection,
   type StyleSpanRecord,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   AUTHORABLE_RUN_PROPERTIES,
   authoredProperties,
@@ -35,7 +35,7 @@ import {
   type FormattingDisplayMode,
   type FormattingRevisionAuthorFilter,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 // By path, not through the store's public entry: the walk and its clip are the engine's own
 // answer to "which runs does this range cover", not surface a consumer builds on.
 import { clippedFormattableRuns } from '../store/store/formattable-runs.ts';
@@ -131,7 +131,7 @@ export {
   propertyContainer,
   runAddressRanges,
   type RunPropertyEdit,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 /**
  * Range run-property planning: THE STORE'S, re-exported under the name the editor lane uses.
@@ -143,7 +143,7 @@ export {
  * runs does this range cover" is the bug class #493, #497 and #498 all came out of, so the
  * answer lives in one place and this is a name for it.
  */
-export { runPropertyEdits } from '@zqmi/docx-editor-core/store';
+export { runPropertyEdits } from '@onsitesai/docx-editor-core/store';
 
 /**
  * Whether any run the range covers authors a property an op could clear.

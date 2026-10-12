@@ -14,7 +14,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // single-author gate could not see it.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { ImageDecodePort, StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { ImageDecodePort, StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import { BODY, createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('concurrent-variants-room');

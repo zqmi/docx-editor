@@ -12,7 +12,7 @@ import {
   serializeOoxmlPart,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { segmentsOf } from '../../store/store/tree-op-segments.ts';
 import { paragraphModelTextOf } from '../../store/store/paragraph-model-text.ts';
 import { projectVisibleParagraphText } from '../../store/store/text-projection.ts';

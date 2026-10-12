@@ -56,15 +56,15 @@ state" section, the hash-verification claim was corrected to pinned-hash-only, a
 `{}` base boilerplate was dropped everywhere. Deferred: `getFontMeasurement` naming
 alignment, folding `{measurer, resolving}` into `EditorSnapshot`, a `useDefaultFonts`
 React hook, per-family requested-but-uncovered coverage reporting, and the
-docs-vs-workspace import-specifier unification (docs say `@zqmi/docx-editor-core/editor`,
-the workspace package is the private `@zqmi/docx-editor-core-contract` until the core
+docs-vs-workspace import-specifier unification (docs say `@onsitesai/docx-editor-core/editor`,
+the workspace package is the private `@onsitesai/docx-editor-core-contract` until the core
 migration renames it).
 
 ## Deviations from tasks.md
 
 - 4.1 said "fixed-version release group membership": the package is instead added to
-  the changesets IGNORE list, alongside `@zqmi/docx-editor-core-contract` — on this
-  branch core itself is unpublished, and `@zqmi/docx-editor-fonts`' engine-facing tests
+  the changesets IGNORE list, alongside `@onsitesai/docx-editor-core-contract` — on this
+  branch core itself is unpublished, and `@onsitesai/docx-editor-fonts`' engine-facing tests
   devDepend on it. Joining the fixed release group is part of the v2 publish cutover.
 - 2.5's "checked-in fixture" is instead built in-memory by the test
   (`embedded-font-autowire.test.ts` obfuscates the DejaVu test fonts per §2.8.1 at

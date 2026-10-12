@@ -1,4 +1,4 @@
-import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement, type OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { MAX_XML_DEPTH } from '../store/package/xml-reader.ts';
 import { keepsSubtreeMemo } from '../store/package/subtree-memo-policy.ts';
 import { isParagraphMarkRevision } from '../store/store/tree-op-nodes.ts';

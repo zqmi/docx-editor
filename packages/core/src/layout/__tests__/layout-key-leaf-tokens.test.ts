@@ -6,7 +6,7 @@
 // other kind of child.
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { layoutNodeTokenVisitTestRecorder, paragraphLayoutKey } from '../layout-cache.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
@@ -57,7 +57,7 @@ test('leaf, text-only, and nested children cannot stand in for one another', () 
 });
 
 test('a text edit in one run of a long paragraph re-reads only that run', async () => {
-  const { applyTreeOp, readOoxmlPart: read } = await import('@zqmi/docx-editor-core/store');
+  const { applyTreeOp, readOoxmlPart: read } = await import('@onsitesai/docx-editor-core/store');
   const runs = Array.from(
     { length: 200 },
     (_, index) => `<w:r><w:rPr><w:b/><w:sz w:val="22"/></w:rPr><w:t>run ${index}</w:t></w:r>`

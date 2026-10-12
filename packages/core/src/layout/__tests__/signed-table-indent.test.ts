@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, serializeOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { buildStyleCascadeTable } from '../style-cascade.ts';
 import {
   createFixedMeasurer,

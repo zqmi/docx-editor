@@ -1,6 +1,6 @@
 # Toolbar
 
-Use root props to customize the packaged React editor. For a custom layout, compose the provider and toolbar components from `@zqmi/docx-editor-react`.
+Use root props to customize the packaged React editor. For a custom layout, compose the provider and toolbar components from `@onsitesai/docx-editor-react`.
 
 ## Layout
 
@@ -21,8 +21,8 @@ Pass title state and application actions through root props:
 
 ```tsx
 import { useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
-import '@zqmi/docx-editor-react/styles.css';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
+import '@onsitesai/docx-editor-react/styles.css';
 
 function App({ bytes }: { bytes: Uint8Array }) {
   const [title, setTitle] = useState('Untitled.docx');
@@ -56,8 +56,8 @@ Place components under `DocxEditor.Root` to share the editor instance. Packaged 
 The custom button prevents a mouse press from moving focus away from the document:
 
 ```tsx
-import { DocxEditor, useChromeTranslate, useEditorCommand } from '@zqmi/docx-editor-react';
-import '@zqmi/docx-editor-react/styles.css';
+import { DocxEditor, useChromeTranslate, useEditorCommand } from '@onsitesai/docx-editor-react';
+import '@onsitesai/docx-editor-react/styles.css';
 
 function BoldButton() {
   const bold = useEditorCommand('text.bold');

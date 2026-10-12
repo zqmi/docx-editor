@@ -29,7 +29,7 @@
 // `inside`/`outside` alignment resolve as top/bottom, and a nested table row moves whole, as it
 // does in every table, instead of splitting at line boundaries.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import type { TableFragmentRecord, TableRowFragmentRecord } from './semantic-records.ts';
 import { tableRefusesOverlap } from './table-float-overlap.ts';
 import {

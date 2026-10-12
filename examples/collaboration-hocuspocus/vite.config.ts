@@ -59,11 +59,11 @@ export default defineConfig({
       ? []
       : [
           {
-            find: '@zqmi/docx-editor-react',
+            find: '@onsitesai/docx-editor-react',
             replacement: path.join(monorepoRoot, 'packages/react/src/index.ts'),
           },
           {
-            find: '@zqmi/docx-editor-core/collaboration/replication',
+            find: '@onsitesai/docx-editor-core/collaboration/replication',
             replacement: path.join(monorepoRoot, 'packages/core/src/collaboration/replication.ts'),
           },
           {
@@ -107,11 +107,11 @@ export default defineConfig({
             replacement: path.join(monorepoRoot, 'packages/pro/src/index.ts'),
           },
           {
-            find: '@zqmi/docx-editor-fonts',
+            find: '@onsitesai/docx-editor-fonts',
             replacement: path.join(monorepoRoot, 'packages/fonts/src/index.ts'),
           },
           {
-            find: '@zqmi/docx-editor-i18n',
+            find: '@onsitesai/docx-editor-i18n',
             replacement: path.join(monorepoRoot, 'packages/i18n/src/index.ts'),
           },
         ],

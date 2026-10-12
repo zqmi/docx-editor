@@ -11,8 +11,8 @@
 // would otherwise measure nothing and settle a frame later, which reads as a flinch.
 
 import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
-import type { EditorSnapshot, PageSetup } from '@zqmi/docx-editor-core/contracts/editor';
-import { ZOOM_MAX, ZOOM_MIN } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot, PageSetup } from '@onsitesai/docx-editor-core/contracts/editor';
+import { ZOOM_MAX, ZOOM_MIN } from '@onsitesai/docx-editor-core/editor';
 import { twipsToPixels } from '../../lib/units';
 import { ReviewRailContext, useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';

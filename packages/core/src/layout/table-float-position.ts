@@ -5,7 +5,7 @@ import { framedTokenJoin } from './layout-cache.ts';
 import { isOutOfFlowFragment } from './fragment-flow.ts';
 import { marginInset } from './page-body-margins.ts';
 
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { RevisionAuthorFilter, RevisionDisplayMode } from './revision-projection.ts';
 import type { BlockFragmentRecord, TableFragmentRecord } from './semantic-records.ts';
 import { readTableStructure, type TableFloatPosition } from './semantic-table.ts';

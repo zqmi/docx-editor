@@ -24,7 +24,7 @@ Choose a preset to restyle the live document. Select **Customize appearance** to
 Pass initial preferences to `createDocxEditor()`. The editor uses them from its first render. You do not need to call `setRevisionMarkup()` afterward to apply them. Omitted fields use the defaults.
 
 ```ts
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { reviewModule } from '@docx-editor.dev/pro';
 
 const editor = createDocxEditor({
@@ -66,7 +66,7 @@ const unsubscribe = editor.on('revisionMarkupChange', (preferences) => {
 To reset all settings, pass `DEFAULT_REVISION_MARKUP` to the setter:
 
 ```ts
-import { DEFAULT_REVISION_MARKUP } from '@zqmi/docx-editor-core/editor';
+import { DEFAULT_REVISION_MARKUP } from '@onsitesai/docx-editor-core/editor';
 
 editor.setRevisionMarkup(DEFAULT_REVISION_MARKUP);
 ```
@@ -77,12 +77,12 @@ Passing `{}` to the setter preserves existing settings. It does not reset them.
 
 Your application owns preference storage. Use a key scoped to the signed-in user. Pass the saved object back when that user opens an editor.
 
-This browser storage helper validates saved values and falls back to defaults. Import it into either framework example. Load `@zqmi/docx-editor-core/styles/editor.css` once, as described in [Quickstart](/docs/2.x/quickstart).
+This browser storage helper validates saved values and falls back to defaults. Import it into either framework example. Load `@onsitesai/docx-editor-core/styles/editor.css` once, as described in [Quickstart](/docs/2.x/quickstart).
 
 ```ts
 // revision-preferences.ts
-import { DEFAULT_REVISION_MARKUP, resolveRevisionMarkup } from '@zqmi/docx-editor-core/editor';
-import type { ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import { DEFAULT_REVISION_MARKUP, resolveRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
+import type { ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 
 export function readPreferences(key: string): ResolvedRevisionMarkup {
   try {
@@ -109,10 +109,10 @@ For server rendering, load preferences after mount. The examples use that patter
 
 ```tsx
 import { useEffect, useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 import { reviewModule } from '@docx-editor.dev/pro/react';
-import { DEFAULT_REVISION_MARKUP } from '@zqmi/docx-editor-core/editor';
-import type { ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import { DEFAULT_REVISION_MARKUP } from '@onsitesai/docx-editor-core/editor';
+import type { ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 import { readPreferences, savePreferences } from './revision-preferences';
 
 const modules = [reviewModule()];
@@ -146,8 +146,8 @@ export function ReviewEditor({ bytes, userId }: { bytes: Uint8Array; userId: str
 import { onMounted, shallowRef } from 'vue';
 import { DocxEditor } from '@docx-editor.dev/vue';
 import { reviewModule } from '@docx-editor.dev/pro/vue';
-import { DEFAULT_REVISION_MARKUP } from '@zqmi/docx-editor-core/editor';
-import type { ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import { DEFAULT_REVISION_MARKUP } from '@onsitesai/docx-editor-core/editor';
+import type { ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 import { readPreferences, savePreferences } from './revision-preferences';
 
 const props = defineProps<{ bytes: Uint8Array; userId: string }>();

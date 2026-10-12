@@ -1,14 +1,14 @@
 /**
- * @zqmi/docx-editor-i18n/ja
+ * @onsitesai/docx-editor-i18n/ja
  *
  * Japanese (`ja`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import ja from '@zqmi/docx-editor-i18n/ja';
+ * import ja from '@onsitesai/docx-editor-i18n/ja';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const ja = (await import('@zqmi/docx-editor-i18n/ja')).default;
+ * const ja = (await import('@onsitesai/docx-editor-i18n/ja')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

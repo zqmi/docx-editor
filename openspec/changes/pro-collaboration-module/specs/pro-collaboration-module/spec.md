@@ -63,7 +63,7 @@ Pro paired exports.
 
 #### Scenario: Free adapters no longer export the hook
 
-- **WHEN** the published `@zqmi/docx-editor-react` and `@docx-editor.dev/vue`
+- **WHEN** the published `@onsitesai/docx-editor-react` and `@docx-editor.dev/vue`
   artifacts are inspected
 - **THEN** they do not export `useCollaborationStatus`
 

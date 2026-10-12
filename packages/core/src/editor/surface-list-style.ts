@@ -9,9 +9,9 @@
 // against `styles.xml` and the document's own default, rather than a structural edit at the
 // selection.
 
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { OoxmlElement, OoxmlPart, TreeDocOp } from '@zqmi/docx-editor-core/store';
-import { buildStyleCascadeTable } from '@zqmi/docx-editor-core/layout';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { OoxmlElement, OoxmlPart, TreeDocOp } from '@onsitesai/docx-editor-core/store';
+import { buildStyleCascadeTable } from '@onsitesai/docx-editor-core/layout';
 import { directParagraphProperties, mergedProperties } from './surface-formatting.ts';
 
 /** What this lane borrows: the session it reads styles from, and the story it writes to. */

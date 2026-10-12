@@ -31,7 +31,7 @@ import {
   type OoxmlPackage,
   type StoryScope,
   type TreePackageStore,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   readCollaborationDocument,
   type DocumentCollaborationHandle,

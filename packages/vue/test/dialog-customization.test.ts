@@ -1,7 +1,7 @@
 import './dom-setup.ts';
 import { afterEach, expect, test } from 'bun:test';
 import { createApp, h, nextTick, ref, type VNodeChild } from 'vue';
-import type { TextFormFieldDialogSession } from '@zqmi/docx-editor-core/editor';
+import type { TextFormFieldDialogSession } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorTextFormFieldDialog } from '../src/editor/DocxEditorTextFormFieldDialog';
 
 const cleanups: (() => void)[] = [];

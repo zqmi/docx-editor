@@ -10,7 +10,7 @@ The repository has accumulated overlapping engine and renderer proposals whose a
 - Define native page, paragraph-fragment, line, and style-span output over the canonical tree while retaining semantic interaction as the sole caret, selection, and hit-test authority.
 - Carry `ModelChange` evidence into resumable incremental pagination, preserve unchanged page/display identity, virtualize page content, and publish cancellable global layout atomically.
 - Serialize normalized OOXML from the canonical tree, preserving unsupported ordered content represented by generic nodes.
-- Physically consolidate production `packages/engine-*` lanes into one guarded `packages/core` source tree and publish one `@zqmi/docx-editor-core` engine package with intentional environment-specific subpath exports.
+- Physically consolidate production `packages/engine-*` lanes into one guarded `packages/core` source tree and publish one `@onsitesai/docx-editor-core` engine package with intentional environment-specific subpath exports.
 - Make the first implementation checkpoint a browser-visible React paragraph editor: the existing `DocxEditor` hosts visible ProseMirror `contenteditable`, browser-native selection, native keymaps, writing, deletion, paragraph split/join, and save/reopen through `EditorBinding → DocOp → DocumentStore`.
 - Stop at that checkpoint for hands-on user feedback before investing in comprehensive conformance matrices or replacing the visible ProseMirror surface with paginated semantic spans.
 - After the feedback checkpoint, prove paginated behavior through the private React acceptance harness, then require React/Vue production parity before exposing it as supported behavior.
@@ -32,4 +32,4 @@ None.
 
 ## Impact
 
-The change governs the migration of all `packages/engine-*` source into `packages/core`, the resulting `@zqmi/docx-editor-core` subpath exports, and the React/Vue adapters. It resets OpenSpec authority and documentation references without restoring archived proposals or changing public support claims until the parity gates pass.
+The change governs the migration of all `packages/engine-*` source into `packages/core`, the resulting `@onsitesai/docx-editor-core` subpath exports, and the React/Vue adapters. It resets OpenSpec authority and documentation references without restoring archived proposals or changing public support claims until the parity gates pass.

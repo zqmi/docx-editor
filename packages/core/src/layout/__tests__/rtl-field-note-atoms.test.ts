@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import { loadBody } from './float-over-table-harness.ts';
 import { breakParagraph, type ParagraphFlowOptions } from '../paragraph-flow.ts';
 import { createFixedMeasurer } from '../semantic-layout.ts';

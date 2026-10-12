@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { propertiesOfRunContainer } from '../field-run-text.ts';
 import { resolveRunStyle } from '../run-style.ts';
 

@@ -19,7 +19,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { zipSync, strToU8 } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { reviewModule as testReviewModule } from '../review/review-module.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

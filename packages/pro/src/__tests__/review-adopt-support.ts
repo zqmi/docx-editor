@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // One document and editor for the React and Vue `useReview().adopt` tests.
 
 import { zipSync, strToU8 } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { reviewModule } from '../index.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

@@ -195,7 +195,7 @@ window.runImageExport = async () => {
       lib: { entry: path.join(consumer, 'shake.js'), formats: ['es'] },
       rollupOptions: {
         external: (id) =>
-          id.startsWith('@zqmi/docx-editor-core') || id.startsWith('@zqmi/docx-editor-fonts'),
+          id.startsWith('@onsitesai/docx-editor-core') || id.startsWith('@onsitesai/docx-editor-fonts'),
         input: path.join(consumer, 'shake.js'),
       },
     },

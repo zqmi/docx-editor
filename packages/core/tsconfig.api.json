@@ -3,17 +3,17 @@
   // RESOLVES them.
   //
   // The `paths` block is the load-bearing part. Core's own modules import sibling subpaths by
-  // package name (`@zqmi/docx-editor-core/store`), which the exports map resolves back to `.ts`
+  // package name (`@onsitesai/docx-editor-core/store`), which the exports map resolves back to `.ts`
   // SOURCE. API Extractor cannot analyze a `.ts` entry and dies with an internal error, so the
   // self-references are redirected at the built declarations instead.
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "noEmit": true,
     "paths": {
-      "@zqmi/docx-editor-core": ["./dist/index.d.ts"],
-      "@zqmi/docx-editor-core/contracts/types": ["./dist/contracts/types.d.ts"],
-      "@zqmi/docx-editor-core/contracts/*": ["./dist/contracts/*.d.ts"],
-      "@zqmi/docx-editor-core/*": ["./dist/*.d.ts"]
+      "@onsitesai/docx-editor-core": ["./dist/index.d.ts"],
+      "@onsitesai/docx-editor-core/contracts/types": ["./dist/contracts/types.d.ts"],
+      "@onsitesai/docx-editor-core/contracts/*": ["./dist/contracts/*.d.ts"],
+      "@onsitesai/docx-editor-core/*": ["./dist/*.d.ts"]
     }
   }
 }

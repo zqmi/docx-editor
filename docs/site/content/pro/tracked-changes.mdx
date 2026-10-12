@@ -28,7 +28,7 @@ Formatting cards describe changed language, bold, italic, underline, strike, fon
 To offer a view from your own chrome, drive the `review.simpleMarkup`, `review.allMarkup`, `review.noMarkup`, or `review.original` slot with `useEditorCommand`, and read the current view with `useEditorState`:
 
 ```tsx
-import { useEditorCommand, useEditorState } from '@zqmi/docx-editor-react';
+import { useEditorCommand, useEditorState } from '@onsitesai/docx-editor-react';
 
 function SimpleMarkupButton() {
   const view = useEditorState((state) => state.reviewDisplayMode);
@@ -102,7 +102,7 @@ This example switches between editing and suggesting:
 <Framework value="react">
 
 ```tsx
-import { DocxEditor, useEditorCommand, useEditorState } from '@zqmi/docx-editor-react';
+import { DocxEditor, useEditorCommand, useEditorState } from '@onsitesai/docx-editor-react';
 import { DocxEditorReview, reviewModule } from '@docx-editor.dev/pro/react';
 
 const MODULES = [reviewModule()];
@@ -395,7 +395,7 @@ The event's `key` is the item's key without `pairReplacements`. **Next Change** 
 The following example opens a host tracked change balloon in React. In Vue, use `useEditorEvent` from `@docx-editor.dev/vue` with the same handler:
 
 ```tsx
-import { useEditorEvent } from '@zqmi/docx-editor-react';
+import { useEditorEvent } from '@onsitesai/docx-editor-react';
 
 useEditorEvent('reviewItemReveal', ({ key, pairKey, source }) => {
   // source is 'navigate' for Next Change and Previous Change,
@@ -417,7 +417,7 @@ The packaged tracked change balloons and review pane use the same event. With th
 | `getActivatedReviewItemKey(query?)` | The activated item's key under `query`, or `null`. |
 | `on('reviewItemReveal', handler)` | Each explicit reveal, as `{ key, pairKey, source }`. |
 
-Use `reviewPaneListsItem(revisionsIn, item)` to select items for a custom sidebar. Import it from `@zqmi/docx-editor-core/editor`. Apply it to an unfiltered `getReviewItems()` result before your application filters.
+Use `reviewPaneListsItem(revisionsIn, item)` to select items for a custom sidebar. Import it from `@onsitesai/docx-editor-core/editor`. Apply it to an unfiltered `getReviewItems()` result before your application filters.
 
 The packaged review rail can draw these tracked change balloons for you. See [Control the review pane](/docs/2.x/pro#control-the-review-pane).
 
@@ -428,7 +428,7 @@ A reviewer can take over changes that someone else proposed, such as an agent's 
 In React:
 
 ```tsx
-import { useEditorState } from '@zqmi/docx-editor-react';
+import { useEditorState } from '@onsitesai/docx-editor-react';
 import { useReview } from '@docx-editor.dev/pro/react';
 
 function AdoptSuggestions({ from }: { from: string }) {
@@ -496,7 +496,7 @@ Use `editor.getReviewAuthors()` to build custom chrome. Read visibility with `ed
 Use a tracked-changes predicate when reviewer names are not enough—for example, to show only recent changes, only deletions, or a combination of author, date, kind, and document location. The API is view-only:
 
 ```ts
-import type { TrackedChangeFilterMode, TrackedChangePredicate } from '@zqmi/docx-editor-core/editor';
+import type { TrackedChangeFilterMode, TrackedChangePredicate } from '@onsitesai/docx-editor-core/editor';
 
 const predicate: TrackedChangePredicate = (revision) => true;
 
@@ -543,7 +543,7 @@ This example keeps only insertions from Jess on or after February 1, 2026:
 
 ```tsx
 import { useEffect } from 'react';
-import { useDocxEditor } from '@zqmi/docx-editor-react';
+import { useDocxEditor } from '@onsitesai/docx-editor-react';
 
 const CUTOFF = Date.parse('2026-02-01T00:00:00Z');
 
@@ -607,7 +607,7 @@ watch(
 Predicates are ordinary functions, so compose small rules with boolean logic:
 
 ```ts
-import type { TrackedChangePredicate } from '@zqmi/docx-editor-core/editor';
+import type { TrackedChangePredicate } from '@onsitesai/docx-editor-core/editor';
 
 const byJess: TrackedChangePredicate = (revision) => revision.author === 'Jess';
 const deletionsOnly: TrackedChangePredicate = (revision) =>
@@ -663,7 +663,7 @@ If `preset={false}`, use `useStackedReviewPositions(items, heights, { gap, scale
 The review hook has no accept-all command. Call the per-item action for each actionable revision.
 
 ```tsx
-import { DocxEditor, useEditorState } from '@zqmi/docx-editor-react';
+import { DocxEditor, useEditorState } from '@onsitesai/docx-editor-react';
 import { DocxEditorReview, reviewModule, useReview } from '@docx-editor.dev/pro/react';
 
 const MODULES = [reviewModule()];

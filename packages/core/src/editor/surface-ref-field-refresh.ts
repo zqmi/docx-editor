@@ -1,6 +1,6 @@
 // Save-time REF result refresh for a paginated surface.
 
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
 import {
   pageRefPageNumbersFromLayout,
   planRefFieldResultRefresh,
@@ -8,8 +8,8 @@ import {
   type RevisionDisplayMode,
   type SemanticLayout,
   type StyleCascadeTable,
-} from '@zqmi/docx-editor-core/layout';
-import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/layout';
+import type { StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import { planNoteRefFieldResultRefreshes } from '../layout/field-ref-refresh.ts';
 
 const BODY_STORY = { kind: 'body' } as const;

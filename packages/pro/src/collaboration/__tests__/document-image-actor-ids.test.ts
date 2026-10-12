@@ -15,7 +15,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // so an ambient wrap around this call would already be unbound at the mint.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { ImageDecodePort, OoxmlNode, OoxmlPackage } from '@zqmi/docx-editor-core/store';
+import type { ImageDecodePort, OoxmlNode, OoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import { BODY, createPeerHarness, zipDocument, type Peer } from './document-peer-support.ts';
 
 const PNG_1X1 = Uint8Array.from(

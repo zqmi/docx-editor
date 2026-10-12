@@ -1,4 +1,4 @@
-import { REVISION_MARKUP_COLORS, type ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import { REVISION_MARKUP_COLORS, type ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 import type { UseRevisionMarkupDialogReturn } from './DocxEditorRevisionMarkupDialog';
 import { RevisionMarkupColorPicker as ColorPicker } from './revision-markup-color-picker';
 

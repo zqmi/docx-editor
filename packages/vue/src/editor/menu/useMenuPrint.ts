@@ -5,8 +5,8 @@ import {
   runChromePrint,
   type ChromeExportHandlers,
   type ChromePrintJob,
-} from '@zqmi/docx-editor-core/editor';
-import type { Editor } from '@zqmi/docx-editor-core';
+} from '@onsitesai/docx-editor-core/editor';
+import type { Editor } from '@onsitesai/docx-editor-core';
 import { useTranslation } from '../../i18n';
 
 interface UseMenuPrintReturn {

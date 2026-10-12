@@ -289,7 +289,7 @@ Review points worth a second pair of eyes:
   `scripts/check-max-lines-caps.mjs` runs inside `bun run lint`.
 - `bun run api:extract` re-emits stale snapshots unless `bun run build:packages` ran first.
 - Running `bun run test` while a build runs produces spurious `Cannot find module
-'@zqmi/docx-editor-i18n'` failures and perf-test timeouts. Rerun the files alone.
+'@onsitesai/docx-editor-i18n'` failures and perf-test timeouts. Rerun the files alone.
 - Only the scrubbed `e2e/fixtures/form-controls-catalog.docx` and the generated
   `examples/igloo/public/expedition-permit.docx` may be used in tests, screenshots, or docs.
   Never add another `.docx`, and never write personal names or the reporter's identity.

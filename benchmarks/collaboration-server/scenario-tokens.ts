@@ -15,7 +15,7 @@ import {
   type OoxmlPackage,
   type TreeDocOp,
   type TreePackageStore,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { Addressed } from './scenario-plan.ts';
 import { findNode, textOf } from './scenario-tree.ts';
 

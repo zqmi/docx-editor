@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { resolveThemeColorHex } from '@zqmi/docx-editor-core/editor';
+import { resolveThemeColorHex } from '@onsitesai/docx-editor-core/editor';
 import { resolveColor } from '../colorResolver.ts';
 
 // Independent ECMA expectations — reference/quick-ref/themes-colors.md:110-133

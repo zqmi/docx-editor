@@ -10,7 +10,7 @@ import {
   WML_NAMESPACE_URI,
   type OoxmlNode,
   type OoxmlProperty,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { runTextOutlineProperty } from './run-text-outline.ts';
 import {
   hyphenDisplayText,

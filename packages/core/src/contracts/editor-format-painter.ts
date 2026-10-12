@@ -3,7 +3,7 @@
  *
  * Separated from `editor.ts` so the facade file stays under the max-lines gate while the
  * painter keeps one cohesive vocabulary. Re-exported from `editor.ts`, so consumers keep
- * importing `@zqmi/docx-editor-core/contracts/editor`.
+ * importing `@onsitesai/docx-editor-core/contracts/editor`.
  */
 
 /**

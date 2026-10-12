@@ -1,14 +1,14 @@
 /**
- * @zqmi/docx-editor-i18n/de
+ * @onsitesai/docx-editor-i18n/de
  *
  * German (`de`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import de from '@zqmi/docx-editor-i18n/de';
+ * import de from '@onsitesai/docx-editor-i18n/de';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const de = (await import('@zqmi/docx-editor-i18n/de')).default;
+ * const de = (await import('@onsitesai/docx-editor-i18n/de')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

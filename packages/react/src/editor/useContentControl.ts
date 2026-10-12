@@ -7,8 +7,8 @@
 // at the caret; opening the panel is this hook's job.
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import type { ContentControlSummary, ContentControlType } from '@zqmi/docx-editor-core';
-import type { CanResult, EditorSnapshot, ExecResult } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ContentControlSummary, ContentControlType } from '@onsitesai/docx-editor-core';
+import type { CanResult, EditorSnapshot, ExecResult } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
 

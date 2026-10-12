@@ -3,7 +3,7 @@ import { defineComponent, shallowRef, watch } from 'vue';
 import type {
   ContentControlWidgetSession,
   InvalidTextFormFieldSession,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { usePopupConfig, type DocxEditorPopups } from './popup-config';
 import { useDocxEditor } from './context';
 

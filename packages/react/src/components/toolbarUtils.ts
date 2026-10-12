@@ -5,7 +5,7 @@
  * Extracted from Toolbar.tsx to reduce file size.
  */
 
-import type { RunFormatting, Theme } from '@zqmi/docx-editor-core/contracts/editor';
+import type { RunFormatting, Theme } from '@onsitesai/docx-editor-core/contracts/editor';
 import { resolveColorToHex } from '../lib/colorResolver';
 import { pointsToHalfPoints } from '../lib/units';
 import { createDefaultListState } from '../lib/listState';

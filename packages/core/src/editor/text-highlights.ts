@@ -10,7 +10,7 @@
 // when `findMatches()` returns it, so a match array that is a revision old when the host sets
 // it is checked against the text it was found in, never against what now sits at its offsets.
 
-import { findNode, paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { findNode, paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import type {
   EditorHighlights,
   HighlightHit,

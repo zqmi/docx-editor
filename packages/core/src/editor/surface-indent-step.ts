@@ -5,8 +5,8 @@
 // indents and keeps the text, and Shift+Tab reverses it. Without that rule, selecting a
 // paragraph and pressing Tab deleted it.
 
-import { readTwipsMeasure, type OoxmlPart } from '@zqmi/docx-editor-core/store';
-import type { SemanticLayout, SemanticPosition } from '@zqmi/docx-editor-core/layout';
+import { readTwipsMeasure, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
+import type { SemanticLayout, SemanticPosition } from '@onsitesai/docx-editor-core/layout';
 import { lineSegmentFor, logicalLineSegments } from '../layout/line-segments.ts';
 import { paragraphLinesIndex } from '../layout/paragraph-lines.ts';
 import { MAX_PARAGRAPH_INDENT_TWIPS } from '../layout/paragraph-indent.ts';

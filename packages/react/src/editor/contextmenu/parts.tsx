@@ -15,8 +15,8 @@ import type { DocxEditorChildren } from '../../docx-editor-children';
 // `Editor.can`/`isActive` directly, and both end at the same authority.
 
 import { useMemo, useCallback } from 'react';
-import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
-import { tableChromeIconPaths } from '@zqmi/docx-editor-core/editor';
+import type { EditorCommand } from '@onsitesai/docx-editor-core/contracts/editor';
+import { tableChromeIconPaths } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '../context';
 import { useEditorCommand } from '../useEditorCommand';
 import { useEditorState } from '../useEditorState';

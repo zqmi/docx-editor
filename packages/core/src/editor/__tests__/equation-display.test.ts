@@ -8,8 +8,8 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
-import { readOoxmlPart, serializeOoxmlPart, type OoxmlElement } from '@zqmi/docx-editor-core/store';
-import { resolveParagraphLayoutInputs } from '@zqmi/docx-editor-core/layout';
+import { readOoxmlPart, serializeOoxmlPart, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
+import { resolveParagraphLayoutInputs } from '@onsitesai/docx-editor-core/layout';
 import { createDocxEditor } from '../docx-editor.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

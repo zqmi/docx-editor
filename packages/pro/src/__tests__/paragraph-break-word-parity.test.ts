@@ -4,10 +4,10 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
-import { createT, en } from '@zqmi/docx-editor-i18n';
+import { createT, en } from '@onsitesai/docx-editor-i18n';
 import { zipSync, strToU8 } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { revisionItemLabel } from '../react/review-labels.ts';
 import { revisionItemLabel as vueRevisionItemLabel } from '../vue/review-labels.ts';
 import { reviewModule as testReviewModule } from '../review/review-module.ts';

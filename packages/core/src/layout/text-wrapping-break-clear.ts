@@ -11,7 +11,7 @@ import {
   hardBreakKind,
   type HardBreakKind,
   type OoxmlHardBreakNode,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   exclusionZoneIdentity,
   mergeAvailableIntervalsAtY,
@@ -34,7 +34,7 @@ import {
   type RevisionAuthorFilter,
   type RevisionDisplayMode,
 } from './revision-projection.ts';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 
 /** The floating objects a text wrapping break restarts below. */
 export type TextWrappingBreakClear = 'left' | 'right' | 'all';

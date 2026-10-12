@@ -7,14 +7,14 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // to a paragraph must not align that paragraph once for each of them, and an endpoint in a
 // paragraph that is gone must not be looked up again on every paint.
 import { describe, expect, mock, test } from 'bun:test';
-import * as replication from '@zqmi/docx-editor-core/collaboration/replication';
-import type { CollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+import * as replication from '@onsitesai/docx-editor-core/collaboration/replication';
+import type { CollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import type { Awareness } from 'y-protocols/awareness';
 import { AWARENESS_FIELD, textDigest } from '../document-awareness.ts';
 
 const aligned: string[] = [];
 const mapOffset = replication.mapOffsetAcrossText;
-mock.module('@zqmi/docx-editor-core/collaboration/replication', () => ({
+mock.module('@onsitesai/docx-editor-core/collaboration/replication', () => ({
   ...replication,
   mapOffsetAcrossText: (offset: number, before: string, after: string) => {
     aligned.push(before);

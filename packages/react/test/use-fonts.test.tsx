@@ -13,7 +13,7 @@ import './dom-setup.ts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { useState } from 'react';
 import { act, cleanup, render } from '@testing-library/react';
-import type { FontResolver } from '@zqmi/docx-editor-core/editor';
+import type { FontResolver } from '@onsitesai/docx-editor-core/editor';
 import { useFonts } from '../src/editor/useFonts.ts';
 
 afterEach(cleanup);

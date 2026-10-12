@@ -18,7 +18,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // must preserve the text while keeping peers and cold joins on the same tree.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { OoxmlNode, StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import { BODY, createPeerHarness, walk, zipDocument, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('concurrent-run-format-room');

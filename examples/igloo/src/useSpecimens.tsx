@@ -18,7 +18,7 @@ import {
   useState,
   type ReactNode,
 } from 'react';
-import { useDocxEditor, useEditorCaret, useEditorState } from '@zqmi/docx-editor-react';
+import { useDocxEditor, useEditorCaret, useEditorState } from '@onsitesai/docx-editor-react';
 import { insertCustomNode, updateCustomNode, type ActivatedCustomNode } from '@docx-editor.dev/pro';
 import { CustomNodeChrome } from '@docx-editor.dev/pro/react';
 import {

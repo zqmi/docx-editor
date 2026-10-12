@@ -11,12 +11,12 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import {
   canonicalOoxmlFingerprint,
   readOoxmlPackage,
   serializeOoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createDocumentCollaboration } from '../document-session.ts';
 import { collaborationModule } from '../collaboration-module.ts';
 import { zipDocument } from './document-peer-support.ts';

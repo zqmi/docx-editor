@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * type, at one boundary, so the registry and the materializer accept only IDs that came
  * through a conversion.
  */
-import type { CanonicalPrimitiveEffect } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { CanonicalPrimitiveEffect } from '@onsitesai/docx-editor-core/collaboration/replication';
 import type { LogicalId } from './identity.ts';
 
 type IdField = 'logicalId' | 'parentLogicalId' | 'destinationParentLogicalId' | 'rootLogicalId';

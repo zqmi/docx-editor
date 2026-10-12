@@ -1,7 +1,7 @@
 import { defineComponent, h, type PropType } from 'vue';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
-import { toolbarCommandState } from '@zqmi/docx-editor-core/editor';
-import { localizeDisabledReason } from '@zqmi/docx-editor-i18n';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
+import { toolbarCommandState } from '@onsitesai/docx-editor-core/editor';
+import { localizeDisabledReason } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../../i18n';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';

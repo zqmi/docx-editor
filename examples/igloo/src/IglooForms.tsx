@@ -13,8 +13,8 @@ import {
   DocxEditorContentControlWidget as Widget,
   useContentControlWidget,
   type DocxEditorPopups,
-} from '@zqmi/docx-editor-react';
-import type { ContentControlWidgetSession } from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-react';
+import type { ContentControlWidgetSession } from '@onsitesai/docx-editor-core/editor';
 import { announce } from './notice';
 
 const Frost = ({ children }: { children: React.ReactNode }) => (

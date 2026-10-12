@@ -1,7 +1,7 @@
 // `w:pageBreakBefore` (ECMA-376 Part 1 §17.3.1.23): where a paragraph opens a page, and whether
 // it keeps its space before there.
 
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { hasCompatibilityRule } from './compatibility/compatibility-rules.ts';
 import { paragraphBreaksBefore } from './paragraph-style.ts';
 import { markIgnoresPageBreakBefore } from './section-mark-break.ts';

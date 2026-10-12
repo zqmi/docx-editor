@@ -3,10 +3,10 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createApp, computed, defineComponent, h, nextTick, ref } from 'vue';
-import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorCommand } from '@onsitesai/docx-editor-core/contracts/editor';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent';
@@ -239,7 +239,7 @@ describe('useEditorCommand lifecycle', () => {
 
 import { useEditorValueCommand } from '../src/editor/useEditorValueCommand';
 import { useHistoryGroup } from '../src/editor/useHistoryGroup';
-import type { ExecResult } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ExecResult } from '@onsitesai/docx-editor-core/contracts/editor';
 
 test('range binding survives Vue updates, groups keyboard repeats and cleans up', async () => {
   const results: ExecResult[] = [];

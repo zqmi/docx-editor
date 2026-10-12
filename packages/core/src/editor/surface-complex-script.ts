@@ -1,5 +1,5 @@
 // Keep caret typing and paragraph splits on the same visible formatting owner.
-import type { TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
 import { complexScriptFormattingContext } from '../layout/complex-script-formatting.ts';
 import type { RevisionAuthorFilter, RevisionDisplayMode } from '../layout/revision-projection.ts';
 import { complexScriptAt } from '../store/store/direct-properties.ts';

@@ -9,9 +9,9 @@
 // showing its type's prompt, and the first character typed replaces the prompt whole. Refusing
 // it would leave a host inserting a field at the caret with nothing to call.
 
-import type { DocRange, DocTarget, ExecErrorCode } from '@zqmi/docx-editor-core/contracts/editor';
+import type { DocRange, DocTarget, ExecErrorCode } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { InsertableContentControlType } from '../contracts/types.ts';
-import type { TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import { isDocAnchor, resolveDocAnchor } from './anchor-resolution.ts';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';
 import { selectionMarkOf } from './surface-selection-ops.ts';

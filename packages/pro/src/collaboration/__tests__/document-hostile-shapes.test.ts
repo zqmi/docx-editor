@@ -11,7 +11,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { DocumentRegistry, PackageMaterializer, MemoryBlobStore } from '../document/index.ts';
 import { createPeerHarness, walk } from './document-peer-support.ts';
 import { collaborationDocx } from './support.ts';

@@ -3,8 +3,8 @@ import { afterEach, expect, test } from 'bun:test';
 import { createApp, h, ref } from 'vue';
 import { DocxEditor } from '../src/components/DocxEditor';
 import { VerticalRuler } from '../src/components/ui/VerticalRuler';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import type { Translations } from '@zqmi/docx-editor-i18n';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import type { Translations } from '@onsitesai/docx-editor-i18n';
 import { flush } from './helpers/fixtures';
 
 const cleanup: (() => void)[] = [];

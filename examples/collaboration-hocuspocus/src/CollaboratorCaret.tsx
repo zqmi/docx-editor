@@ -14,7 +14,7 @@
 // interactive presence chrome lives in the room bar instead.
 
 import type { CSSProperties } from 'react';
-import type { CollaborationRemoteSelection } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationRemoteSelection } from '@onsitesai/docx-editor-core/collaboration';
 import { participantInitials } from './people';
 
 /** The accent colour, handed to CSS as a custom property rather than a colour literal. */

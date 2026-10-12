@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // per process instead of per document would carry an edit, an undo, or a caret across them.
 import { afterEach, describe, expect, test } from 'bun:test';
 import { applyAwarenessUpdate, encodeAwarenessUpdate } from 'y-protocols/awareness';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { collaborationDocx } from './support.ts';
 import { createPeerHarness, nodeText, walk, type Peer } from './document-peer-support.ts';
 

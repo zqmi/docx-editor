@@ -21,7 +21,7 @@ import {
   useEditorEvent,
   useEditorState,
   type EditorCaret,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 // PRO: comments + tracked changes ship in @docx-editor.dev/pro. Register the
 // review module on the Root and mount the pane; without the module the same
 // document still opens (final-state view) and the review toolbar controls
@@ -29,9 +29,9 @@ import {
 import { customNodesModule, reviewModule } from '@docx-editor.dev/pro';
 import { CustomNodeContextMenu, DocxEditorReview } from '@docx-editor.dev/pro/react';
 import { useWebrtcCollaboration } from '@docx-editor.dev/pro/react/webrtc';
-import { blankDocumentBytes } from '@zqmi/docx-editor-core/editor';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { blankDocumentBytes } from '@onsitesai/docx-editor-core/editor';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 import { BrandLogo } from '../../shared/BrandLogo';
 import { AdapterSwitcher } from '../../shared/AdapterSwitcher';
 import { SourceLink } from '../../shared/SourceLink';
@@ -596,7 +596,7 @@ export function ComposedEditorDemo({ fixtureUrl }: { fixtureUrl: string }) {
   // fixture says. What it avoids is loading all five eager families up front.
   //
   // ORDER IS PRECEDENCE, and this direction is the point. `packagedFonts()` answers first
-  // from bytes inside `@zqmi/docx-editor-fonts`, so a document naming Calibri never touches
+  // from bytes inside `@onsitesai/docx-editor-fonts`, so a document naming Calibri never touches
   // the network. `googleFonts()` sees what the packaged origin already covers and fetches
   // only the rest, so composing the two never downloads the same face twice. Reverse them
   // and a local byte would lose to a CDN round trip.

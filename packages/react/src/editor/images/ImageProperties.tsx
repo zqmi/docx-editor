@@ -5,15 +5,15 @@ import { usePopupConfig } from '../popup-config';
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { DocxEditorChildren } from '../../docx-editor-children';
 import type { RefObject } from '../../docx-editor-ref-object';
-import type { EditorSnapshot, SelectedImageState } from '@zqmi/docx-editor-core/contracts/editor';
-import type { DrawingPositionInput, ImageWrapTarget } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot, SelectedImageState } from '@onsitesai/docx-editor-core/contracts/editor';
+import type { DrawingPositionInput, ImageWrapTarget } from '@onsitesai/docx-editor-core/editor';
 import {
   DRAWING_REL_FROM_H,
   DRAWING_REL_FROM_V,
   IMAGE_WRAP_TARGETS,
   positionInputFromPropertiesCommand,
   validateDrawingPositionInput,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useTranslation } from '../../i18n';
 import { useDocxEditor } from '../context';
 import { useEditorState } from '../useEditorState';

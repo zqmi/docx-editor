@@ -1,5 +1,5 @@
 {
-  "name": "@zqmi/docx-editor-fonts",
+  "name": "@onsitesai/docx-editor-fonts",
   "version": "2.28.0",
   "description": "Open-licensed substitutes for common Word fonts, packaged for @docx-editor.dev shaped measurement.",
   "sideEffects": false,
@@ -37,7 +37,7 @@
     "width:check": "bun scripts/check-width-fidelity.ts"
   },
   "devDependencies": {
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@happy-dom/global-registrator": "^20.8.3",
     "fflate": "^0.8.2",
     "typescript7": "npm:typescript@^7.0.2"

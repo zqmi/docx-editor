@@ -12,7 +12,7 @@ import {
   readOoxmlPart,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { symbolGlyphOf } from '../symbol-run.ts';

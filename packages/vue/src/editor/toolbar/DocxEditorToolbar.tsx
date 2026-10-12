@@ -10,12 +10,12 @@ import {
   type VNode,
 } from 'vue';
 import type { DocxEditorChildren } from '../../docx-editor-children';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
 import {
   chromeSlotId,
   formattingBarChromeGroups,
   type ChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { docxSlotOf, unwrapFragment } from '../merge-arrangement';
 import { flattenChildren } from '../../lib/flattenChildren';
 import { useEditorState } from '../useEditorState';
@@ -33,7 +33,7 @@ import {
   collapseOrder,
   TOOLBAR_COLLAPSE_ORDER,
   TOOLBAR_PINNED_GROUPS,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { readToolbarChildren, vnodeFlag, type ToolbarChildren } from './toolbar-children';
 import {
   hostGroupText,

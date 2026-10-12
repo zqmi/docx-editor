@@ -1,5 +1,5 @@
 /**
- * Build + publish the four @zqmi/docx-editor-* packages to npmjs.
+ * Build + publish the four @onsitesai/docx-editor-* packages to npmjs.
  *
  * Requires: npm login (or NPM_TOKEN in env), and membership of the @zqmi org.
  *
@@ -43,10 +43,10 @@ if (process.env.NPM_TOKEN) {
   env.NPM_CONFIG_USERCONFIG = npmrc
 }
 
-run('bun', ['run', '--filter', '@zqmi/docx-editor-i18n', 'build'], { env })
-run('bun', ['run', '--filter', '@zqmi/docx-editor-core', 'build'], { env })
-run('bun', ['run', '--filter', '@zqmi/docx-editor-fonts', 'build'], { env })
-run('bun', ['run', '--filter', '@zqmi/docx-editor-react', 'build'], { env })
+run('bun', ['run', '--filter', '@onsitesai/docx-editor-i18n', 'build'], { env })
+run('bun', ['run', '--filter', '@onsitesai/docx-editor-core', 'build'], { env })
+run('bun', ['run', '--filter', '@onsitesai/docx-editor-fonts', 'build'], { env })
+run('bun', ['run', '--filter', '@onsitesai/docx-editor-react', 'build'], { env })
 
 for (const rel of PACKAGES) {
   const pkg = JSON.parse(fs.readFileSync(path.join(root, rel, 'package.json'), 'utf8'))

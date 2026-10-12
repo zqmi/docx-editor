@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
-import { WML_NAMESPACE_URI } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI } from '@onsitesai/docx-editor-core/store';
 import { collaborationDocx } from './support.ts';
 import {
   destroyReplica,

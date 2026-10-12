@@ -12,7 +12,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // shows before `w:tabs`: the author's tree and the room disagreed.
 
 import { describe, expect, test } from 'bun:test';
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { projectJournalToShared } from '../document/projected-journal.ts';
 import { applyPrimitiveJournal } from '../document/journal.ts';
 import {

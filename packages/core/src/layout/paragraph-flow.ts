@@ -35,7 +35,7 @@ export {
 } from './paragraph-alignment.ts';
 import { bidiPieces, paragraphIsRtl } from './rtl-paragraph.ts';
 
-import { PAGE_BREAK_CHAR, type OoxmlNode, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import { PAGE_BREAK_CHAR, type OoxmlNode, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import {
   propertiesOfRunContainer as propertiesOf,
   type FieldAwarePiece,

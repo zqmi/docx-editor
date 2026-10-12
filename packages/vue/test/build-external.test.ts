@@ -27,7 +27,7 @@ describe('vue package build output', () => {
         expect(result.status).toBe(0);
         const text = readFileSync(join(outDir, 'index.js'), 'utf8');
         const cjsText = readFileSync(join(outDir, 'index.cjs'), 'utf8');
-        expect(text.includes('@zqmi/docx-editor-core')).toBe(true);
+        expect(text.includes('@onsitesai/docx-editor-core')).toBe(true);
         expect(text.includes('createLayoutShaping')).toBe(false);
         expect(text.includes('HarfBuzz')).toBe(false);
         expect(cjsText.length).toBeGreaterThan(0);

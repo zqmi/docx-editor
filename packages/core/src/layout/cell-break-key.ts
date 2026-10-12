@@ -3,7 +3,7 @@
 // One builder for cell placement and for row geometry reuse: reuse is sound only while every
 // part here matches the placement that measured the line. Width is the one input left out.
 
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { withDrawingContext, type ParagraphKeyInputs } from './layout-cache.ts';
 import type { TableFlowDeps } from './semantic-table-layout.ts';
 

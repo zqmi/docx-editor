@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import type { InvalidTextFormFieldSession } from '@zqmi/docx-editor-core/editor';
+import type { InvalidTextFormFieldSession } from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { useFormControlTranslate } from './form-control-translate';
 import { DialogFrame } from './dialog-parts';

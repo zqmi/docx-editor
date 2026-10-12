@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
 import { surfaceExtent } from '../surface-pages.ts';
-import type { SemanticLayout } from '@zqmi/docx-editor-core/layout';
+import type { SemanticLayout } from '@onsitesai/docx-editor-core/layout';
 
 function syntheticLayout(
   pages: ReadonlyArray<{

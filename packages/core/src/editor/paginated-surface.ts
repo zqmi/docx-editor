@@ -85,7 +85,7 @@ import {
 } from './content-control-widget-menu.ts';
 import { createLegacyCheckboxInteraction } from './surface-legacy-checkbox.ts';
 import { createTextFormFieldInteraction } from './surface-text-form-fields.ts';
-import { formsProtectionEnabled, sectionProtectsForms } from '@zqmi/docx-editor-core/store';
+import { formsProtectionEnabled, sectionProtectsForms } from '@onsitesai/docx-editor-core/store';
 // Engine-owned paginated paragraph surface (composition root).
 // Painted pages are the editable surface; seams live in sibling surface-*.ts modules.
 
@@ -97,7 +97,7 @@ import {
   openTreeSession,
   type TreeApplyResult,
   type TreeDocxSession,
-} from '@zqmi/docx-editor-core/binding';
+} from '@onsitesai/docx-editor-core/binding';
 import {
   TOC_MAX_PAGE_PASSES,
   detectBodyTocs,
@@ -115,7 +115,7 @@ import {
   type SelectionMark,
   type StoryScope,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { resolveSelectedDrawingRecord } from './docx-editor-images.ts';
 import { createHiddenMarkEditing, type RevisionView } from './hidden-mark-joins.ts';
 import { drawingSelectionPosition } from './surface-drawing-selection.ts';
@@ -156,7 +156,7 @@ import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { attachListResolveChangeEvidence } from '../layout/list-resolve.ts';
 import { refreshSurfaceRefFieldResults } from './surface-ref-field-refresh.ts';
 import { type RevisionAuthorFilter } from '../layout/revision-projection.ts';
@@ -169,7 +169,7 @@ import { PROPERTY_CHANGE_WRAPPER_OF_OP } from '../store/store/tree-op-tracked-pr
 import { mergedPredecessorsOf } from '../layout/line-segments.ts';
 import { surfaceSelectionMarkRects } from './surface-selection-ops.ts';
 import type { CaretGeometry } from '../layout/semantic-interaction.ts';
-import { paintSelectionOverlay, type OverlayRect } from '@zqmi/docx-editor-core/output';
+import { paintSelectionOverlay, type OverlayRect } from '@onsitesai/docx-editor-core/output';
 // By module path, like the roster walk below: dropping a retained paint is an engine
 // internal for the IME lane, not something the output barrel should offer consumers.
 import {

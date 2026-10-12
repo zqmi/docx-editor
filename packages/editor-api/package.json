@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@docx-editor.dev/pro": "workspace:*",
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "@microsoft/api-extractor": "^7.50.0",
     "fflate": "^0.8.2",
     "license-check-and-add": "^4.0.5",
@@ -83,6 +83,6 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@zqmi/docx-editor-core": "~2.28.0"
+    "@onsitesai/docx-editor-core": "~2.28.0"
   }
 }

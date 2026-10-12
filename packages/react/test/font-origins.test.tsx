@@ -15,12 +15,12 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, render } from '@testing-library/react';
-import { defineFontResolver, isFontResolver } from '@zqmi/docx-editor-core/editor';
-import type { FontResolutionRequest } from '@zqmi/docx-editor-core/editor';
-import type { FontSource } from '@zqmi/docx-editor-core/contracts/editor';
+import { defineFontResolver, isFontResolver } from '@onsitesai/docx-editor-core/editor';
+import type { FontResolutionRequest } from '@onsitesai/docx-editor-core/editor';
+import type { FontSource } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useDocxSource } from '../src/editor/useDocxSource.ts';
 import { useFonts, type FontsInput } from '../src/editor/useFonts.ts';
-import type { FontResolver } from '@zqmi/docx-editor-core/editor';
+import type { FontResolver } from '@onsitesai/docx-editor-core/editor';
 
 afterEach(cleanup);
 

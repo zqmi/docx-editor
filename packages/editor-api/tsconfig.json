@@ -27,25 +27,25 @@
       "@docx-editor.dev/editor-api/browser": ["./src/browser.ts"],
       "@docx-editor.dev/pro": ["../pro/src/index.ts"],
       // Every published subpath, mapped to source. The export map points at dist, so a subpath missing here resolves to built .d.ts while its siblings resolve to src, and the same type arrives under two identities.
-      "@zqmi/docx-editor-core": ["../core/src/index.ts"],
-      "@zqmi/docx-editor-core/automation": ["../core/src/automation/index.ts"],
-      "@zqmi/docx-editor-core/binding": ["../core/src/binding/index.ts"],
-      "@zqmi/docx-editor-core/collaboration/replication": [
+      "@onsitesai/docx-editor-core": ["../core/src/index.ts"],
+      "@onsitesai/docx-editor-core/automation": ["../core/src/automation/index.ts"],
+      "@onsitesai/docx-editor-core/binding": ["../core/src/binding/index.ts"],
+      "@onsitesai/docx-editor-core/collaboration/replication": [
         "../core/src/collaboration/replication.ts"
       ],
-      "@zqmi/docx-editor-core/collaboration": ["../core/src/collaboration/index.ts"],
-      "@zqmi/docx-editor-core/contracts/editor": ["../core/src/contracts/editor.ts"],
-      "@zqmi/docx-editor-core/contracts/document": ["../core/src/contracts/document.ts"],
-      "@zqmi/docx-editor-core/contracts/interaction": ["../core/src/contracts/interaction.ts"],
-      "@zqmi/docx-editor-core/contracts/mcp": ["../core/src/contracts/mcp.ts"],
-      "@zqmi/docx-editor-core/contracts/modules": ["../core/src/contracts/modules.ts"],
-      "@zqmi/docx-editor-core/contracts/plugin": ["../core/src/contracts/plugin.ts"],
-      "@zqmi/docx-editor-core/contracts/types": ["../core/src/contracts/types-barrel.ts"],
-      "@zqmi/docx-editor-core/layout": ["../core/src/layout/index.ts"],
-      "@zqmi/docx-editor-core/export": ["../core/src/export/index.ts"],
-      "@zqmi/docx-editor-core/output": ["../core/src/output/index.ts"],
-      "@zqmi/docx-editor-core/store": ["../core/src/store/index.ts"],
-      "@zqmi/docx-editor-core/editor": ["../core/src/editor/index.ts"]
+      "@onsitesai/docx-editor-core/collaboration": ["../core/src/collaboration/index.ts"],
+      "@onsitesai/docx-editor-core/contracts/editor": ["../core/src/contracts/editor.ts"],
+      "@onsitesai/docx-editor-core/contracts/document": ["../core/src/contracts/document.ts"],
+      "@onsitesai/docx-editor-core/contracts/interaction": ["../core/src/contracts/interaction.ts"],
+      "@onsitesai/docx-editor-core/contracts/mcp": ["../core/src/contracts/mcp.ts"],
+      "@onsitesai/docx-editor-core/contracts/modules": ["../core/src/contracts/modules.ts"],
+      "@onsitesai/docx-editor-core/contracts/plugin": ["../core/src/contracts/plugin.ts"],
+      "@onsitesai/docx-editor-core/contracts/types": ["../core/src/contracts/types-barrel.ts"],
+      "@onsitesai/docx-editor-core/layout": ["../core/src/layout/index.ts"],
+      "@onsitesai/docx-editor-core/export": ["../core/src/export/index.ts"],
+      "@onsitesai/docx-editor-core/output": ["../core/src/output/index.ts"],
+      "@onsitesai/docx-editor-core/store": ["../core/src/store/index.ts"],
+      "@onsitesai/docx-editor-core/editor": ["../core/src/editor/index.ts"]
     }
   },
   "include": ["src"],

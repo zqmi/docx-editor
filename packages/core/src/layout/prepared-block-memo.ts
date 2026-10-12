@@ -1,6 +1,6 @@
 // The per-block prepare memo of a section prepass, with what each entry was prepared under.
 
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type { PreparedBlock } from './section-prepass-types.ts';
 import {
   createSubtreeAggregateMemo,

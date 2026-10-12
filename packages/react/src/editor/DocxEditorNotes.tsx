@@ -18,7 +18,7 @@ export type {
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactElement } from 'react';
-import type { EditorCommand } from '@zqmi/docx-editor-core/contracts/editor';
+import type { EditorCommand } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useTranslation } from '../i18n';
 import { Z_INDEX } from '../styles/zIndex';
 import { useDocxEditor } from './context';

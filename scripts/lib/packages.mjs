@@ -36,12 +36,12 @@ export const PACKAGES = [
     },
   },
   {
-    name: '@zqmi/docx-editor-i18n',
+    name: '@onsitesai/docx-editor-i18n',
     root: 'packages/i18n',
     pkgSlug: 'docx-editor-i18n',
   },
   {
-    name: '@zqmi/docx-editor-react',
+    name: '@onsitesai/docx-editor-react',
     root: 'packages/react',
     pkgSlug: 'docx-editor-react',
     // Strips dev-time `paths` so Extractor follows `@docx-editor.dev/...` via
@@ -109,7 +109,7 @@ export const PACKAGES = [
   // Every package builds a `dist` and points `exports.types` at the `.d.ts` in it, so the
   // reference below is extracted from the same declarations a consumer installs.
   {
-    name: '@zqmi/docx-editor-core',
+    name: '@onsitesai/docx-editor-core',
     root: 'packages/core',
     pkgSlug: 'docx-editor-core',
     tsconfigPath: 'packages/core/tsconfig.api.json',
@@ -253,7 +253,7 @@ export const PACKAGES = [
     },
   },
   {
-    name: '@zqmi/docx-editor-fonts',
+    name: '@onsitesai/docx-editor-fonts',
     root: 'packages/fonts',
     pkgSlug: 'docx-editor-fonts',
     tsconfigPath: 'packages/fonts/tsconfig.api.json',

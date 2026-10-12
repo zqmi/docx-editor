@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 
-import type { ReviewActivationOptions } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ReviewActivationOptions } from '@onsitesai/docx-editor-core/contracts/editor';
 import type { VNode } from 'vue';
 import type { ReviewAdoptOptions, ReviewItemView } from './useReview.ts';
 

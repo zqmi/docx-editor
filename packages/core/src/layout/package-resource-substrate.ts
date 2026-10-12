@@ -1,4 +1,4 @@
-import type { OoxmlPackage } from '@zqmi/docx-editor-core/store';
+import type { OoxmlPackage } from '@onsitesai/docx-editor-core/store';
 
 /** Whether two maps hold the same keys with the very same values. */
 function sameEntries<K, V>(a: ReadonlyMap<K, V>, b: ReadonlyMap<K, V>): boolean {

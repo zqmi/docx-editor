@@ -28,9 +28,9 @@ touch the network.
 ### Requirement: Pro dependency test is narrowed, not deleted
 
 `packages/pro/src/__tests__/package-dependencies.test.ts` SHALL continue to
-assert that `@zqmi/docx-editor-core` is a `~same.minor` peer and is never a
+assert that `@onsitesai/docx-editor-core` is a `~same.minor` peer and is never a
 regular dependency. The same peer rule SHALL hold for
-`@zqmi/docx-editor-react` and `@docx-editor.dev/vue`. The test SHALL allow
+`@onsitesai/docx-editor-react` and `@docx-editor.dev/vue`. The test SHALL allow
 exactly one runtime dependency, `y-protocols`, and SHALL require `yjs` and
 `y-webrtc` as optional peers that never appear in `dependencies`. The test
 SHALL NOT be deleted. The file SHALL record that two engine copies load the
@@ -40,8 +40,8 @@ does not widen the allowance to include core.
 #### Scenario: Core stays a peer after the merge
 
 - **WHEN** `packages/pro/package.json` is inspected
-- **THEN** `peerDependencies['@zqmi/docx-editor-core']` is a tilde range on the
-  current minor, and `dependencies['@zqmi/docx-editor-core']` is absent
+- **THEN** `peerDependencies['@onsitesai/docx-editor-core']` is a tilde range on the
+  current minor, and `dependencies['@onsitesai/docx-editor-core']` is absent
 
 #### Scenario: Only y-protocols is a runtime dependency
 

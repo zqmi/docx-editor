@@ -1,6 +1,6 @@
 // Small body-flow policies extracted from the story loop.
 
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import {
   anchoredDrawingAtomsInParagraph,
   type DrawingAnchorFrameContext,

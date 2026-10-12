@@ -8,10 +8,10 @@ import type {
   FontBackedExportCapabilities,
   OpenFontBackedDocumentForExportResult,
   OpenFontBackedDocumentForExportOptions,
-} from '@zqmi/docx-editor-core/export';
-import type { FontOrigin } from '@zqmi/docx-editor-core/editor';
-import type { HeadlessDocumentRejection } from '@zqmi/docx-editor-core/store';
-import type { ReviewDisplayMode } from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/export';
+import type { FontOrigin } from '@onsitesai/docx-editor-core/editor';
+import type { HeadlessDocumentRejection } from '@onsitesai/docx-editor-core/store';
+import type { ReviewDisplayMode } from '@onsitesai/docx-editor-core/editor';
 
 /** A bounded explanation of content the PDF cannot reproduce. @public */
 export interface PdfDiagnostic {

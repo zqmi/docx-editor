@@ -1,6 +1,6 @@
 // Paint equation geometry without parsing OMML or measuring DOM.
 
-import type { EquationGeometry, EquationSpanRecord } from '@zqmi/docx-editor-core/layout';
+import type { EquationGeometry, EquationSpanRecord } from '@onsitesai/docx-editor-core/layout';
 
 function place(
   element: HTMLElement,

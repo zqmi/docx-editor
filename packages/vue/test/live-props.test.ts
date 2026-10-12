@@ -2,8 +2,8 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createApp, h, reactive, ref, type Component } from 'vue';
-import { serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditor } from '../src/components/DocxEditor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';

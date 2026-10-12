@@ -12,9 +12,9 @@ import type {
   DocRange,
   DocTarget,
   ExecErrorCode,
-} from '@zqmi/docx-editor-core/contracts/editor';
-import type { SemanticSelection as SurfaceSelection } from '@zqmi/docx-editor-core/layout';
-import { paragraphTextOf, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/contracts/editor';
+import type { SemanticSelection as SurfaceSelection } from '@onsitesai/docx-editor-core/layout';
+import { paragraphTextOf, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import type { ParagraphAnchorIndex } from '../binding/paragraph-anchors.ts';
 
 export interface ResolvedAnchorSpan {

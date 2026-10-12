@@ -6,12 +6,12 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import {
   canonicalOoxmlFingerprint,
   readOoxmlPackage,
   revisionItemsOf,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';
 import { reviewModule } from '../../review/review-module.ts';
 import { collaborationModule } from '../collaboration-module.ts';

@@ -11,7 +11,7 @@ import {
   piecesOfParagraph,
 } from '../field-projection.ts';
 import { layoutHeaderFooterStory } from '../hf-layout.ts';
-import { readOoxmlPackage, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';

@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import type { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
 import { collaborationModule } from '../collaboration/collaboration-module.ts';
 
 function stubSession(): EditorCollaborationSession {

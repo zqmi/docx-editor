@@ -3,7 +3,7 @@ import {
   type ResolvedRevisionMarkup,
 } from '../contracts/revision-markup.ts';
 import type { RevisionAuthorFilter } from '../layout/revision-projection.ts';
-import { findNode, parentNodeOf, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { findNode, parentNodeOf, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { markRemovedInMode } from '../layout/revision-visibility.ts';
 import { mergedFlowBlocks } from '../layout/story-roots.ts';
 import type { RevisionDisplayMode } from '../layout/revision-projection.ts';

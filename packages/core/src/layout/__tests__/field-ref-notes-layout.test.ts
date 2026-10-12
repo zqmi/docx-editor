@@ -10,8 +10,8 @@
 
 import { describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import { readOoxmlPackage, readOoxmlPart } from '@zqmi/docx-editor-core/store';
-import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, readOoxmlPart } from '@onsitesai/docx-editor-core/store';
+import type { OoxmlElement, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { resolveNotesPart } from '../../store/package/note-references.ts';
 import {
   authoredDocumentEndnoteProperties,

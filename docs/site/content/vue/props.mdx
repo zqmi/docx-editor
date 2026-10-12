@@ -138,7 +138,7 @@ The resolver also requests the configured default font. With the default Calibri
 ```vue
 <script setup lang="ts">
 import { DocxEditor, useFonts } from '@docx-editor.dev/vue';
-import { packagedFonts } from '@zqmi/docx-editor-fonts';
+import { packagedFonts } from '@onsitesai/docx-editor-fonts';
 
 const fonts = useFonts(packagedFonts());
 
@@ -155,7 +155,7 @@ function reportFontError(error: { code: string }) {
 Add an origin by adding an argument. Arguments compose first-wins:
 
 ```ts
-import { googleFonts } from '@zqmi/docx-editor-fonts/google';
+import { googleFonts } from '@onsitesai/docx-editor-fonts/google';
 
 const fonts = useFonts(packagedFonts(), googleFonts());
 ```

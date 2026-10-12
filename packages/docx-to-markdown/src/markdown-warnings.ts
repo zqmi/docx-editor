@@ -3,8 +3,8 @@ import {
   forEachStoryParagraphFragment,
   type AnchoredDrawingRecord,
   type InlineDrawingRecord,
-} from '@zqmi/docx-editor-core/layout';
-import type { ExportSemanticLayout } from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/layout';
+import type { ExportSemanticLayout } from '@onsitesai/docx-editor-core/export';
 import type { MarkdownWarning } from './markdown-types.ts';
 import { drawingKey, type MediaRendering } from './markdown-media.ts';
 

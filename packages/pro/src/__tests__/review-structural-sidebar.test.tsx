@@ -6,8 +6,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { afterEach, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import { DocxEditorRoot, DocxEditorViewport, DocxEditorContent } from '@zqmi/docx-editor-react';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import { DocxEditorRoot, DocxEditorViewport, DocxEditorContent } from '@onsitesai/docx-editor-react';
 import { DocxEditorReview } from '../react/index.ts';
 import { reviewModule } from '../index.ts';
 Object.assign(globalThis, { IS_REACT_ACT_ENVIRONMENT: true });

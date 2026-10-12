@@ -7,7 +7,7 @@ import {
   resolveFootnoteProperties,
 } from '../../store/package/note-properties.ts';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
-import { readOoxmlPart, serializeOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, serializeOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createLayoutSession } from '../layout-session.ts';
 import { createParagraphLayoutCache } from '../layout-cache.ts';
 import { layoutSemanticDocument } from '../semantic-layout.ts';

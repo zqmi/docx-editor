@@ -14,10 +14,10 @@ import {
   IMAGE_WRAP_TARGETS,
   type DocxEditorInstance,
   type ImageWrapTarget,
-} from '@zqmi/docx-editor-core/editor';
-import type { ImageDecodePort } from '@zqmi/docx-editor-core/editor';
-import { validateRasterHeader } from '@zqmi/docx-editor-core/editor';
-import { resolveImageResourceLimits } from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
+import type { ImageDecodePort } from '@onsitesai/docx-editor-core/editor';
+import { validateRasterHeader } from '@onsitesai/docx-editor-core/editor';
+import { resolveImageResourceLimits } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';

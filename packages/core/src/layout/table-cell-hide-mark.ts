@@ -1,4 +1,4 @@
-import { WML_NAMESPACE_URI, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import type { CascadedTableFormatting } from './style-cascade.ts';
 
 function childNamed(node: OoxmlElement | undefined, name: string): OoxmlElement | undefined {

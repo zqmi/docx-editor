@@ -8,7 +8,7 @@
 // its line does not move. Two faces, one rule, opposite outcomes.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { layoutSemanticDocument } from '../semantic-layout.ts';
 import { markerSymbolFontAvailability } from '../marker-symbol-font.ts';
 import { buildNumberingIndex } from '../numbering-index.ts';

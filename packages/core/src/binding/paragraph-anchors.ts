@@ -12,8 +12,8 @@
 // addressing form reached a header paragraph at all. `snapshot().selection` was therefore null
 // for the whole time the caret was in one, which is an agent unable to see where the user is.
 
-import type { OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
-import { isValidParaId, paraIdOf } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, OoxmlPart } from '@onsitesai/docx-editor-core/store';
+import { isValidParaId, paraIdOf } from '@onsitesai/docx-editor-core/store';
 import { allParagraphs } from './tree-binding.ts';
 
 /**

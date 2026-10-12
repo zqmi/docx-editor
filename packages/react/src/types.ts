@@ -3,7 +3,7 @@ import type {
   ResolvedRevisionMarkup,
   ReviewDisplayMode,
   FieldResultsMode,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorPopups } from './editor/popup-config';
 import type { DocxEditorChildren } from './docx-editor-children';
 import type {
@@ -19,24 +19,24 @@ import type {
   ExecResult,
   FontConfiguration,
   ZoomMode,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import type {
   EditorModule,
   FontConfigurationFragment,
   FontResolver,
-} from '@zqmi/docx-editor-core/editor';
-import type { Translations } from '@zqmi/docx-editor-i18n';
+} from '@onsitesai/docx-editor-core/editor';
+import type { Translations } from '@onsitesai/docx-editor-i18n';
 import type { DocxEditorMenuProps } from './editor/menu';
 import type { DocxEditorContextMenuProps } from './editor/contextmenu';
 import type { DocxEditorNavigationProps } from './editor/navigation';
-export { EditorFontError } from '@zqmi/docx-editor-core/contracts/editor';
+export { EditorFontError } from '@onsitesai/docx-editor-core/contracts/editor';
 export type {
   EditorFontErrorCode,
   FontConfiguration,
   FontFaceRequest,
   FontSource,
   FontSourceSubstitution,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 
 export type EditorMode = 'edit' | 'view' | 'suggesting';
 
@@ -45,7 +45,7 @@ export type {
   RevisionAuthorAssignments,
   RevisionAuthorStyle,
   RevisionStyles,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 /**
  * Props for the React `DocxEditor`. The adapter is a thin renderer over the
@@ -96,7 +96,7 @@ export interface DocxEditorProps {
    * Defaults to the bundled English catalogue, so the chrome is legible with no setup.
    * Strings still come from `packages/i18n/en.json` rather than literals in components;
    * this only chooses who resolves the key. For another language, pass
-   * `createT(locale)` from `@zqmi/docx-editor-i18n`.
+   * `createT(locale)` from `@onsitesai/docx-editor-i18n`.
    *
    * `params` carries interpolation values for parameterized keys (for example the
    * navigation pane's `{current} of {total}` match counter) — a resolver that ignores
@@ -104,12 +104,12 @@ export interface DocxEditorProps {
    */
   t?: (key: string, params?: Record<string, string | number>) => string;
   /**
-   * The chrome's language: a locale from `@zqmi/docx-editor-i18n` (or your own partial
+   * The chrome's language: a locale from `@onsitesai/docx-editor-i18n` (or your own partial
    * over English). Keys the locale leaves out fall back to English rather than showing
    * the key.
    *
    * ```tsx
-   * import { de } from '@zqmi/docx-editor-i18n';
+   * import { de } from '@onsitesai/docx-editor-i18n';
    * <DocxEditor i18n={de} />
    * ```
    *

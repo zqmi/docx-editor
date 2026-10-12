@@ -9,7 +9,7 @@ import type {
   EditorCommand,
   TableColumnDividerResizeTarget,
   TableRightEdgeResizeTarget,
-} from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
 import type { DocumentThemeColorEntry } from '../binding/document-theme.ts';
 import type { OoxmlPart } from '../store/package/ooxml-tree.ts';
 import type { OoxmlTableCellNode } from '../store/package/ooxml-tree.ts';

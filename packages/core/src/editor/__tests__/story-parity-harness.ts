@@ -3,8 +3,8 @@
 // Nothing here touches the DOM at module scope: each suite registers happy-dom itself, and
 // these helpers only reach for `document` once a test calls them.
 
-import type { StoryScope } from '@zqmi/docx-editor-core/store';
-import { paragraphTextFromLayout } from '@zqmi/docx-editor-core/layout';
+import type { StoryScope } from '@onsitesai/docx-editor-core/store';
+import { paragraphTextFromLayout } from '@onsitesai/docx-editor-core/layout';
 import { unzipSync, strFromU8 } from 'fflate';
 import { createDocxEditor, type DocxEditorInstance } from '../docx-editor.ts';
 import type { PaginatedSurface } from '../paginated-surface.ts';

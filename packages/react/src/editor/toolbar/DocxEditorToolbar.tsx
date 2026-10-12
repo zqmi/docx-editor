@@ -42,8 +42,8 @@ import {
   chromeSlotId,
   formattingBarChromeGroups,
   type ChromeSlotId,
-} from '@zqmi/docx-editor-core/editor';
-import type { EditorSnapshot } from '@zqmi/docx-editor-core/contracts/editor';
+} from '@onsitesai/docx-editor-core/editor';
+import type { EditorSnapshot } from '@onsitesai/docx-editor-core/contracts/editor';
 import { useEditorState } from '../useEditorState';
 import { ToolbarContext, useToolbarLabelFor, type ToolbarTranslate } from './toolbar-context';
 import { ToolbarButton, chromeControlForSlot, guardToolbarMousedown } from './ToolbarButton';
@@ -59,7 +59,7 @@ import {
   collapseOrder,
   TOOLBAR_COLLAPSE_ORDER,
   TOOLBAR_PINNED_GROUPS,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { readToolbarChildren, type ToolbarChildren } from './toolbar-children';
 import {
   hostGroupText,

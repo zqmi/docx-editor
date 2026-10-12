@@ -15,7 +15,7 @@ import {
   type OoxmlNode,
   type OoxmlPackage,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createFixedMeasurer } from '../index.ts';
 import { layoutSemanticDocument } from '../semantic-layout.ts';
 import type { HyperlinkProjector } from '../field-projection.ts';

@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // peer refused to install it and kept the pre-edit text.
 
 import { afterEach, describe, expect, test } from 'bun:test';
-import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import {
   BODY,
   createPeerHarness,

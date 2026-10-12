@@ -1,14 +1,14 @@
 /**
- * @zqmi/docx-editor-i18n/id
+ * @onsitesai/docx-editor-i18n/id
  *
  * Indonesian (`id`) — direct locale subpath for per-locale code-splitting.
  *
  * ```ts
  * // Static — bundler ships only this locale's strings
- * import id from '@zqmi/docx-editor-i18n/id';
+ * import id from '@onsitesai/docx-editor-i18n/id';
  *
  * // Dynamic — splits into its own chunk, loaded on demand
- * const id = (await import('@zqmi/docx-editor-i18n/id')).default;
+ * const id = (await import('@onsitesai/docx-editor-i18n/id')).default;
  * ```
  *
  * For multi-locale apps, prefer the per-locale subpaths over importing

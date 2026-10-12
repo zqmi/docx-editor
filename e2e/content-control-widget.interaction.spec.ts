@@ -2,7 +2,7 @@ import { resolve } from 'node:path';
 import { readOoxmlPackage } from '../packages/core/src/store/package/ooxml-package';
 import { serializeOoxmlPart } from '../packages/core/src/store/package/ooxml-serialize';
 import type { Page } from '@playwright/test';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { expect, test } from '@playwright/test';
 
 declare global {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 import { createRemoteCaret, mapSelectionAcrossText } from '../surface-remote-caret.ts';
 
 const caret = (paragraphId: string, offset: number): SemanticSelection => ({

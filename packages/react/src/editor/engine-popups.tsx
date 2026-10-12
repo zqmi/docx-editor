@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import type {
   ContentControlWidgetSession,
   InvalidTextFormFieldSession,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { usePopupConfig, type DocxEditorPopups } from './popup-config';
 

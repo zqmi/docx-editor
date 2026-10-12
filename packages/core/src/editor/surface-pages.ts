@@ -10,8 +10,8 @@ import {
   type CreateDocumentNotesInputOptions,
   type SemanticLayout,
   type SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
-import type { HeadlessDocumentView } from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/layout';
+import type { HeadlessDocumentView } from '@onsitesai/docx-editor-core/store';
 
 export const createSurfaceStyleDeps = createDocumentStyleDependencies;
 

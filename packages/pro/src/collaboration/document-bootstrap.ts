@@ -27,7 +27,7 @@ import {
   normalizeParagraphIdentity,
   readOoxmlPackage,
   type OoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { seedPackage, type DocumentRegistry } from './document/index.ts';
 import type { SharedBlobStore } from './shared-blob-store.ts';
 import { CollaborationSchemaError } from './errors.ts';

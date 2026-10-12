@@ -15,7 +15,7 @@ import {
   type ResolvedRevisionMarkup,
   type RevisionMarkupOptions,
   type RevisionMarkupDialogSession,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import type { DocxEditorChildren } from '../docx-editor-children';
 import { useTranslation } from '../i18n';
 import {

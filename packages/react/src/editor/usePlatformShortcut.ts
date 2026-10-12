@@ -10,7 +10,7 @@
 // does not become a different platform — so `subscribe` has nothing to do.
 
 import { useCallback, useSyncExternalStore } from 'react';
-import { platformShortcut } from '@zqmi/docx-editor-i18n';
+import { platformShortcut } from '@onsitesai/docx-editor-i18n';
 
 /** Nothing to subscribe to: the platform is fixed for the life of the page. */
 const NEVER = () => () => {};

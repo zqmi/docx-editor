@@ -1,10 +1,10 @@
 import type { HistoryGroupOutcome } from './editor-scope.ts';
 import type { RevisionAuthorResult, RevisionBatchResult } from './editor.ts';
 /**
- * Shared types for the `@zqmi/docx-editor-core` contract. Type-only, zero runtime.
+ * Shared types for the `@onsitesai/docx-editor-core` contract. Type-only, zero runtime.
  *
- * `@zqmi/docx-editor-core/contracts/types` re-exports this module verbatim, through
- * `types-barrel.ts`. There is no `@zqmi/docx-editor-core/types` subpath.
+ * `@onsitesai/docx-editor-core/contracts/types` re-exports this module verbatim, through
+ * `types-barrel.ts`. There is no `@onsitesai/docx-editor-core/types` subpath.
  */
 
 /** Which paragraph-level reads the selection disagrees about. @public */

@@ -12,13 +12,13 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "paths": {
-      "@zqmi/docx-editor-core": ["../../packages/core/src/index.ts"],
-      "@zqmi/docx-editor-core/*": ["../../packages/core/src/*"],
+      "@onsitesai/docx-editor-core": ["../../packages/core/src/index.ts"],
+      "@onsitesai/docx-editor-core/*": ["../../packages/core/src/*"],
       "@docx-editor.dev/editor-api": ["../../packages/editor-api/src/index.ts"],
       "@docx-editor.dev/editor-api/*": ["../../packages/editor-api/src/*"],
       "@docx-editor.dev/pro": ["../../packages/pro/src/index.ts"],
       "@docx-editor.dev/pro/*": ["../../packages/pro/src/*"],
-      "@zqmi/docx-editor-react": ["../../packages/react/src/index.ts"]
+      "@onsitesai/docx-editor-react": ["../../packages/react/src/index.ts"]
     },
     "types": ["bun"],
     "isolatedModules": true,

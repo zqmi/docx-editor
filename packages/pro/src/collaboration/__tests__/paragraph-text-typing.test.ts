@@ -17,8 +17,8 @@ import {
   TreePackageStore,
   type OoxmlNode,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/store';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import { createDocumentCollaboration } from '../document-session.ts';
 import { setTypedInsertShortcut, typedInsertsWritten } from '../document/paragraph-text-typing.ts';
 import { BODY, zipDocument } from './document-peer-support.ts';

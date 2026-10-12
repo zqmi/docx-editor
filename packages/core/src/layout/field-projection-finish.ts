@@ -1,7 +1,7 @@
 // The last step of a paragraph's field projection: field codes or buffered revision markup,
 // then East Asian font slots.
 
-import type { OoxmlNode, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { displayFieldCodes } from './field-code-display.ts';
 import type { FieldCodeRange } from './field-code-toc.ts';
 import {

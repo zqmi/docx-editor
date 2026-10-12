@@ -17,7 +17,7 @@ import type { DocxEditorPopups } from './popup-config';
 import type {
   TextFormFieldDialogSession,
   RevisionMarkupDialogSession,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { DocxEditorPageSetupDialog } from './DocxEditorPageSetup';
 import { DocxEditorParagraphDialog } from './DocxEditorParagraphDialog';

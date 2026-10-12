@@ -39,7 +39,7 @@ Use the canonical read model shared by snapshot and imperative API:
 <Framework value="react">
 
 ```tsx
-import { useEditorState } from '@zqmi/docx-editor-react';
+import { useEditorState } from '@onsitesai/docx-editor-react';
 
 const image = useEditorState((s) => s.image);
 // SelectedImageState | null: widthEmu/heightEmu, crop, wrap, position, locks, resourceStatus
@@ -113,7 +113,7 @@ Insert preflight:
 <Framework value="react">
 
 ```ts
-import { normalizeImageBytes } from '@zqmi/docx-editor-react';
+import { normalizeImageBytes } from '@onsitesai/docx-editor-react';
 
 const result = normalizeImageBytes(bytes);
 if (result.ok) {

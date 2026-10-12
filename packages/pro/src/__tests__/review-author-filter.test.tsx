@@ -12,14 +12,14 @@ Object.assign(globalThis, { IS_REACT_ACT_ENVIRONMENT: true });
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render, waitFor } from '@testing-library/react';
 import { strToU8, zipSync } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import {
   DocxEditorContent,
   DocxEditorMenu,
   DocxEditorRoot,
   DocxEditorToolbar,
   DocxEditorViewport,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 import { reviewModule } from '../index.ts';
 import { DocxEditorReview } from '../react/index.ts';
 

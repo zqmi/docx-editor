@@ -1,6 +1,6 @@
 // Deterministic DOM-free geometry for the bounded equation expression tree.
 
-import type { EquationExpression, OmmlEquationProjection } from '@zqmi/docx-editor-core/store';
+import type { EquationExpression, OmmlEquationProjection } from '@onsitesai/docx-editor-core/store';
 import { measureDisplayText, withFontFamily, type ResolvedRunStyle } from './run-style.ts';
 import type { LayoutBox, TextMeasurer } from './semantic-records.ts';
 

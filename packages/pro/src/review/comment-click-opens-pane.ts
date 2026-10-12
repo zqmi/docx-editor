@@ -8,7 +8,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // Shared by the React and Vue rails. A click, not a caret move: arrowing through a comment
 // must not throw the pane open under the reader's typing.
 
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 
 /**
  * Listen for clicks in the page of the editor that `rail` belongs to. After each click that

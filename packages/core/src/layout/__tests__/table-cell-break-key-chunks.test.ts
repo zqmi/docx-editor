@@ -10,7 +10,7 @@ import {
   serializeOoxmlPart,
   type OoxmlElement,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   createTableCellBreakKeyCollector,
   registerEditedTableCellBreakKeys,

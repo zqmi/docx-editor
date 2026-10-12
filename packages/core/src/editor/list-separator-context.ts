@@ -4,7 +4,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   collectFlowBlocks,
   isContentControl,

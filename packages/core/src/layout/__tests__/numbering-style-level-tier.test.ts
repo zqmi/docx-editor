@@ -6,7 +6,7 @@
 // own `w:pPr` states a `w:numPr` puts the level above the whole chain.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { buildNumberingIndex } from '../numbering-index.ts';
 import { resolveStoryListItems, walkStoryParagraphs } from '../list-resolve.ts';
 import { buildStyleCascadeTable, resolveParagraphLayoutInputs } from '../style-cascade.ts';

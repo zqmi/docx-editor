@@ -16,7 +16,7 @@
 // Table cells do not snap unless the document sets the `w:adjustLineHeightInTable`
 // compatibility option (§17.15.3.1).
 
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { ParagraphLineSpacing } from './paragraph-style.ts';
 
 /**

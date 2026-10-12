@@ -8,8 +8,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import type {
   CanonicalPrimitiveJournal,
   CollaborationDocumentPort,
-} from '@zqmi/docx-editor-core/collaboration/replication';
-import type { CollaborationFailure } from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/collaboration/replication';
+import type { CollaborationFailure } from '@onsitesai/docx-editor-core/collaboration';
 import {
   binaryPartReaderOf,
   collectJournalBinaryPayloads,

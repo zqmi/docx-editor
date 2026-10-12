@@ -1,6 +1,6 @@
 import { defineComponent, h, type PropType, type Ref } from 'vue';
 import type { DocxEditorChildren } from '../docx-editor-children';
-import type { PaginatedSurfaceState, TextMeasurer } from '@zqmi/docx-editor-core/editor';
+import type { PaginatedSurfaceState, TextMeasurer } from '@onsitesai/docx-editor-core/editor';
 import type { PaginatedDocxEditorHandle } from './PaginatedDocxEditor';
 
 /** @public */

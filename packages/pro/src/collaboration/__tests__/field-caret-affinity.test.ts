@@ -5,9 +5,9 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { expect, test } from 'bun:test';
 import { strFromU8, unzipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import { linesOf } from '@zqmi/docx-editor-core/layout';
-import { FIELD_ATOM_CHAR, paragraphTextOf } from '@zqmi/docx-editor-core/store';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import { linesOf } from '@onsitesai/docx-editor-core/layout';
+import { FIELD_ATOM_CHAR, paragraphTextOf } from '@onsitesai/docx-editor-core/store';
 import {
   FIELD_AFFINITY_RESULTS,
   fieldAffinityDocument,

@@ -16,7 +16,7 @@ import {
 import type { InlineDrawingLayoutContext } from '../drawing-layout.ts';
 import type { GroupTextboxStoryRecord } from '../group-textbox-layout.ts';
 import { paragraphFragmentsOfBlocks } from '../semantic-record-queries.ts';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   DEFAULT_DRAWING_PROJECTION_LIMITS,
   indexInlineDrawingProjectionsInPart,

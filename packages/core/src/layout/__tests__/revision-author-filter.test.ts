@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import {
   EMPTY_REVISION_AUTHOR_SET,

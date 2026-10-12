@@ -64,9 +64,9 @@ jobs:
       - name: Build the packages the runtime bundles
         # Only the converter's own dependency chain.
         run: >-
-          bun run --filter '@zqmi/docx-editor-i18n' build &&
-          bun run --filter '@zqmi/docx-editor-core' build &&
-          bun run --filter '@zqmi/docx-editor-fonts' build &&
+          bun run --filter '@onsitesai/docx-editor-i18n' build &&
+          bun run --filter '@onsitesai/docx-editor-core' build &&
+          bun run --filter '@onsitesai/docx-editor-fonts' build &&
           bun run --filter '@docx-editor.dev/docx-to-markdown' build
       - name: Typecheck runtime
         working-directory: python/docx-to-markdown

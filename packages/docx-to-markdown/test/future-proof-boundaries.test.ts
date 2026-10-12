@@ -28,7 +28,7 @@ test('the Markdown translator remains a semantic-record-only consumer', () => {
     (match) => match[1]
   );
   expect(new Set(externalImports)).toEqual(
-    new Set(['@zqmi/docx-editor-core/layout', '@zqmi/docx-editor-core/export'])
+    new Set(['@onsitesai/docx-editor-core/layout', '@onsitesai/docx-editor-core/export'])
   );
 });
 

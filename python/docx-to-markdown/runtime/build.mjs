@@ -19,7 +19,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const packageRoot = resolve(here, '..');
 const vendor = join(packageRoot, 'src', 'docx_to_markdown', '_vendor');
 const require = createRequire(import.meta.url);
-const fontsRoot = dirname(require.resolve('@zqmi/docx-editor-fonts/package.json'));
+const fontsRoot = dirname(require.resolve('@onsitesai/docx-editor-fonts/package.json'));
 
 const args = process.argv.slice(2);
 const targetIndex = args.indexOf('--target');
@@ -79,7 +79,7 @@ const catalog = spawnSync(
   'bun',
   [
     '-e',
-    "import { GOOGLE_FONT_FAMILIES, GOOGLE_METRIC_SUBSTITUTES, GOOGLE_FONTS_REVISION } from '@zqmi/docx-editor-fonts/google';" +
+    "import { GOOGLE_FONT_FAMILIES, GOOGLE_METRIC_SUBSTITUTES, GOOGLE_FONTS_REVISION } from '@onsitesai/docx-editor-fonts/google';" +
       'console.log(JSON.stringify({ revision: GOOGLE_FONTS_REVISION, families: GOOGLE_FONT_FAMILIES, substitutes: GOOGLE_METRIC_SUBSTITUTES }))',
   ],
   { cwd: packageRoot, encoding: 'utf8' }

@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 
 import type { CSSProperties } from 'vue';
-import type { DocxEditorInstance, ReviewAuthorInfo } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance, ReviewAuthorInfo } from '@onsitesai/docx-editor-core/editor';
 import type { ReviewItemView } from './useReview.ts';
 import { AUTHOR_SLOTS } from './review-shared.ts';
 

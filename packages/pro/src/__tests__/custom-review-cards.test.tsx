@@ -7,7 +7,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 // the node's range, and the context menu shows the node's data plus its Edit action at the
 // top when the right-click lands on the chip.
 //
-// These tests paint through the BUILT react adapter (`@zqmi/docx-editor-react` resolves to
+// These tests paint through the BUILT react adapter (`@onsitesai/docx-editor-react` resolves to
 // packages/react/dist, which inlines the core painter) — rebuild it before trusting a
 // failure on behaviour the source clearly implements.
 
@@ -19,13 +19,13 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { strToU8, zipSync } from 'fflate';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import {
   DocxEditorContent,
   DocxEditorContextMenu,
   DocxEditorRoot,
   DocxEditorViewport,
-} from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
 import { DocxEditorReview, CustomNodeContextMenu, useReviewItem } from '../react/index.ts';
 import { reviewModule } from '../index.ts';
 import { customNodesModule, defineCustomNode } from '../custom-nodes/define-custom-node.ts';

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Guards the per-locale i18n bundle promise: each `@zqmi/docx-editor-i18n/<code>`
+// Guards the per-locale i18n bundle promise: each `@onsitesai/docx-editor-i18n/<code>`
 // subpath ships only that locale's JSON, so dynamic-locale apps code-split
 // cleanly.
 //
@@ -8,7 +8,7 @@
 // breaks and the per-locale dist balloons toward the full ~220 KB root bundle.
 // This check fails loudly when that happens.
 //
-// Run after `bun run --filter '@zqmi/docx-editor-i18n' build`.
+// Run after `bun run --filter '@onsitesai/docx-editor-i18n' build`.
 // Wired into CI in `.github/workflows/ci.yml`.
 
 import { existsSync, statSync } from 'node:fs';
@@ -41,7 +41,7 @@ for (const code of codes) {
     const path = join(i18nDist, file);
     if (!existsSync(path)) {
       errors.push(
-        `✗ ${file} missing in dist/ — did \`bun run --filter '@zqmi/docx-editor-i18n' build\` complete?`
+        `✗ ${file} missing in dist/ — did \`bun run --filter '@onsitesai/docx-editor-i18n' build\` complete?`
       );
       continue;
     }

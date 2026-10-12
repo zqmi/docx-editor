@@ -1336,7 +1336,7 @@ See `openspec/changes/word-fidelity-review-findings.md`.
 | `bun run typecheck` | pass |
 | `openspec validate typed-drawings-and-images --strict` | pass |
 | `bunx playwright test e2e/editor-drawings.spec.ts` | 1 pass |
-| `bun run api:check` | **fail** — API Extractor internal error on `@zqmi/docx-editor-react` (`Unable to follow symbol for "const"`) |
+| `bun run api:check` | **fail** — API Extractor internal error on `@onsitesai/docx-editor-react` (`Unable to follow symbol for "const"`) |
 
 **Boxes checked with evidence:** 7.1–7.9 unchanged (exact oracles now enforce prior claims). §9.5 **unchecked** — no Word desktop on this machine.
 
@@ -1355,7 +1355,7 @@ See `openspec/changes/word-fidelity-review-findings.md`.
 - **`docs/site/content/guides/images.mdx`** — formats, `SelectedImageState`, React symbols (`ImageInsert*`, `ImageWrap`, `useEditorValueCommand`, `normalizeImageBytes`, properties dialog), wrap/security/unsupported scope; registered in both meta files.
 - **API Extractor fixes** — explicit `ImageWrapTarget` union (no `(typeof const)[number]`); `ImageWrapPartComponent`/`ImageAltTextPartComponent` without `typeof Toolbar*`; `NormalizedImagePayload.reasonKey` as public `string`; `@public` on `useEditorValueCommand` overloads.
 - **`intentional-export-divergence.md`** — documents twelve React-only image authoring exports.
-- **`.changeset/calm-images-float.md`** — `@zqmi/docx-editor-react` minor with plan summary.
+- **`.changeset/calm-images-float.md`** — `@onsitesai/docx-editor-react` minor with plan summary.
 - **`deferred-features.md`**, **`proposal.md`**, **`design.md`** — partial boundary + named Vue/VML follow-ups.
 - **`docs/api/docx-editor-react/index.api.md`**, **`docs/api/docx-editor-vue/index.api.md`** — refreshed via `api:extract`.
 

@@ -10,21 +10,21 @@ import { createContextualRunFormatting } from '../layout/complex-script-formatti
 // formatting as direct. Here that IS the point: the painter promises the reader "make this
 // look like that", and what the reader sees is the cascade.
 
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
 import type {
   FormattingDisplayMode,
   FormattingRevisionAuthorFilter,
   StoryScope,
   TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
-import { directParagraphProperties } from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
+import { directParagraphProperties } from '@onsitesai/docx-editor-core/store';
 import {
   paragraphsInCells,
   type ResolvedRunStyle,
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   paragraphsInRange,
   selectionRunStyle,

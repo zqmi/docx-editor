@@ -48,12 +48,12 @@ This simulation demonstrates highlights, navigation, and refused updates with sa
 
 ## Accept an updated file
 
-Import the controller from your adapter or `@zqmi/docx-editor-core/editor`. Get the editor through `useDocxEditor()` inside the editor root. React returns an instance or `null`; Vue returns a shallow ref. Call the controller after the document mounts.
+Import the controller from your adapter or `@onsitesai/docx-editor-core/editor`. Get the editor through `useDocxEditor()` inside the editor root. React returns an instance or `null`; Vue returns a shallow ref. Call the controller after the document mounts.
 
 Capture the document before sending it to your backend:
 
 ```ts
-import { createDocumentRefresh } from '@zqmi/docx-editor-react';
+import { createDocumentRefresh } from '@onsitesai/docx-editor-react';
 
 const refresh = createDocumentRefresh(editor);
 const submission = await refresh.capture();
@@ -254,7 +254,7 @@ Pass presentation settings directly to `highlightChanges()`. Each call starts fr
 For example, configure the highlight color, duration, and animation:
 
 ```ts
-import type { RefreshHighlightOptions } from '@zqmi/docx-editor-react';
+import type { RefreshHighlightOptions } from '@onsitesai/docx-editor-react';
 
 const highlights: RefreshHighlightOptions = {
   color: 'var(--doc-refresh-highlight-color)',
@@ -366,10 +366,10 @@ The class decorates the overlay, not document text. Keep position, dimensions, p
 
 ### Control change navigation
 
-Import `NavigateToChangeOptions` from your adapter or `@zqmi/docx-editor-core/editor`. All navigation settings belong to the host API:
+Import `NavigateToChangeOptions` from your adapter or `@onsitesai/docx-editor-core/editor`. All navigation settings belong to the host API:
 
 ```ts
-import type { NavigateToChangeOptions } from '@zqmi/docx-editor-react';
+import type { NavigateToChangeOptions } from '@onsitesai/docx-editor-react';
 
 const navigation: NavigateToChangeOptions = {
   block: 'centerIfNeeded',

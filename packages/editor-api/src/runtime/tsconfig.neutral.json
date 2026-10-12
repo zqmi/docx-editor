@@ -33,9 +33,9 @@
     // exists to prove are absent.
     "types": [],
     "paths": {
-      "@zqmi/docx-editor-core/store": ["../../../core/src/store/index.ts"],
-      "@zqmi/docx-editor-core/automation": ["../../../core/src/automation/index.ts"],
-      "@zqmi/docx-editor-core/collaboration": ["../../../core/src/collaboration/index.ts"]
+      "@onsitesai/docx-editor-core/store": ["../../../core/src/store/index.ts"],
+      "@onsitesai/docx-editor-core/automation": ["../../../core/src/automation/index.ts"],
+      "@onsitesai/docx-editor-core/collaboration": ["../../../core/src/collaboration/index.ts"]
     }
   },
   "include": [

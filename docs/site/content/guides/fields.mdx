@@ -52,7 +52,7 @@ Caret positions and selections retain both field boundaries, including paragraph
 To let readers edit the saved result of a field, set `fieldResults` to `'editable'` when you create the editor:
 
 ```ts
-import { createDocxEditor } from '@zqmi/docx-editor-core';
+import { createDocxEditor } from '@onsitesai/docx-editor-core';
 
 const editor = createDocxEditor({
   container,
@@ -67,7 +67,7 @@ The same setting works on the packaged editor and `DocxEditor.Root` in React and
 <Framework value="react">
 
 ```tsx
-import { DocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
 
 export function FieldEditor({ bytes }: { bytes: Uint8Array }) {
   return <DocxEditor document={bytes} fieldResults="editable" />;

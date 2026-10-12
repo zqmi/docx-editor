@@ -2,7 +2,7 @@
 // (4294967291 is -5 EMU) leaves the body text at full width.
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   layoutHeaderFooterStory,

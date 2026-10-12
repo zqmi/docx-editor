@@ -1,5 +1,5 @@
 {
-  "name": "@zqmi/docx-editor-i18n",
+  "name": "@onsitesai/docx-editor-i18n",
   "version": "2.28.0",
   "description": "Shared UI locale strings and types for the @docx-editor.dev editor adapters (React and Vue).",
   "sideEffects": false,
@@ -81,10 +81,10 @@
     "THIRD_PARTY_NOTICES.md"
   ],
   "scripts": {
-    "build": "tsup && node ../../scripts/inject-package-doc.mjs --package @zqmi/docx-editor-i18n",
+    "build": "tsup && node ../../scripts/inject-package-doc.mjs --package @onsitesai/docx-editor-i18n",
     "typecheck": "tsc --noEmit",
-    "api:extract": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-i18n --local",
-    "api:check": "node ../../scripts/api-extractor.mjs --package @zqmi/docx-editor-i18n"
+    "api:extract": "node ../../scripts/api-extractor.mjs --package @onsitesai/docx-editor-i18n --local",
+    "api:check": "node ../../scripts/api-extractor.mjs --package @onsitesai/docx-editor-i18n"
   },
   "devDependencies": {
     "tsup": "^8.0.1",

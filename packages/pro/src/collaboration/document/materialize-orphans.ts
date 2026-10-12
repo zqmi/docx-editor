@@ -25,7 +25,7 @@ import {
   type ElementRecord,
   type RepairIssueCode,
 } from './schema.ts';
-import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 
 type Push = (code: RepairIssueCode, logicalId?: LogicalId) => void;
 

@@ -38,8 +38,8 @@ export {
   type ReviewRange,
   type ReviewRevisionItem,
   type ReviewRevisionKind,
-} from '@zqmi/docx-editor-core/store';
-export type { ReviewCustomItem } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/store';
+export type { ReviewCustomItem } from '@onsitesai/docx-editor-core/layout';
 
 import {
   collectReviewItems as engineCollectReviewItems,
@@ -49,13 +49,13 @@ import {
   revisionItemsOf,
   type OoxmlPart,
   type ReviewRevisionItem,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   reviewItemPositionRank,
   type ReviewCustomItem,
   type ReviewItem,
   type ReviewModelInput,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import {
   isCustomNodeDefinition,
   recognizeCustomNodes,

@@ -31,14 +31,14 @@ import { gateImageCommand, resolveSelectedDrawingRecord } from './docx-editor-im
 export type CommandGate =
   | { ok: true; tablePlan?: import('./table-command-plan.ts').TableCommandPlan }
   | { ok: false; refusal: Exclude<ExecResult, { ok: true }> };
-import { tableContextAt } from '@zqmi/docx-editor-core/layout';
+import { tableContextAt } from '@onsitesai/docx-editor-core/layout';
 import {
   isTableEditorCommand,
   planTableCommand,
   type TableCommandPlan,
   type TableCommandPlannerInput,
 } from './table-command-plan.ts';
-import { findNode, paragraphTextOf, parentNodeOf } from '@zqmi/docx-editor-core/store';
+import { findNode, paragraphTextOf, parentNodeOf } from '@onsitesai/docx-editor-core/store';
 import { allParagraphs } from '../binding/tree-binding.ts';
 import { paragraphStyleId } from '../binding/document-outline.ts';
 import type { PaginatedSurface } from './paginated-surface-contract.ts';

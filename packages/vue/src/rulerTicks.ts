@@ -10,4 +10,4 @@ export {
   PX_PER_CM,
   type RulerTick,
   type RulerUnit,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';

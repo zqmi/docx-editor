@@ -5,7 +5,7 @@ import {
   readTwipsMeasure,
   type OoxmlElement,
   type OoxmlProperty,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { framedTokenJoin } from './layout-cache.ts';
 import { readTableStructure, type TableAnchorFrames } from './semantic-table.ts';
 import { positionedTableOriginX } from './table-origin.ts';

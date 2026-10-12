@@ -1,8 +1,8 @@
-import '@zqmi/docx-editor-core/styles/editor.css';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 import './style.css';
 
 import { exampleText as t } from '../../shared/example-text';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { collaborationModule } from '@docx-editor.dev/pro';
 import {
   createCollaborationRoomId,

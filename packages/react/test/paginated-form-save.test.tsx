@@ -7,7 +7,7 @@ import {
   type PaginatedDocxEditorHandle,
 } from '../src/components/PaginatedDocxEditor';
 import { formFieldDocx } from '../../core/src/editor/__tests__/form-field-docx.fixture';
-import { openTreeSession } from '@zqmi/docx-editor-core/binding';
+import { openTreeSession } from '@onsitesai/docx-editor-core/binding';
 
 afterEach(cleanup);
 

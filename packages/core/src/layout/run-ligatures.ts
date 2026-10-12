@@ -1,5 +1,5 @@
 import { combineStyleToggles } from './style-toggles.ts';
-import type { OoxmlElement, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { ResolvedRunStyle } from './run-style.ts';
 
 const W14 = 'http://schemas.microsoft.com/office/word/2010/wordml';

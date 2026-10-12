@@ -2,8 +2,8 @@
 // remount carries the selection and drawing intent across, and the editor facade shares its
 // review author state. Hosts never set these.
 
-import type { OpenTreeSessionResult } from '@zqmi/docx-editor-core/binding';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+import type { OpenTreeSessionResult } from '@onsitesai/docx-editor-core/binding';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 import type { StableReviewAuthorSlots } from '../output/revision-presentation.ts';
 import type {
   DrawingSelectionIntent,

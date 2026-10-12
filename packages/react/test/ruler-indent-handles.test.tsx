@@ -12,7 +12,7 @@ import './dom-setup.ts';
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { cleanup, fireEvent, render } from '@testing-library/react';
-import type { RulerIndent } from '@zqmi/docx-editor-core/editor';
+import type { RulerIndent } from '@onsitesai/docx-editor-core/editor';
 import { HorizontalRuler, type RulerPageSetup } from '../src/components/ui/HorizontalRuler.tsx';
 
 afterEach(cleanup);

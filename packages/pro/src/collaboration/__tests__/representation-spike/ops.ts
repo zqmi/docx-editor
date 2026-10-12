@@ -3,7 +3,7 @@ Copyright (c) 2026 EigenPal, Inc. All rights reserved.
 Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICENSE.md.
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
-import { WML_NAMESPACE_URI, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { WML_NAMESPACE_URI, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { isElementRecord, type EncodedAttribute, type LogicalId } from './contract.ts';
 import { collectKind, paragraphWithText, runWithText, textWith } from './fixtures.ts';
 import type { Replica } from './replicas.ts';

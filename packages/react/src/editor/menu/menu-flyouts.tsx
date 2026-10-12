@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import type { ChromeSlotId } from '@zqmi/docx-editor-core/editor';
+import type { ChromeSlotId } from '@onsitesai/docx-editor-core/editor';
 import { TableSizeGrid } from '../toolbar/TableSizeGrid';
 import { useMenuContext, useMenuLabel } from './menu-context';
 

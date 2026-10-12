@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { PDFDocument, PDFName, PDFString, type PDFPage } from 'pdf-lib';
-import { vectorShapeInkClip, type SemanticDrawingVisit } from '@zqmi/docx-editor-core/layout';
+import { vectorShapeInkClip, type SemanticDrawingVisit } from '@onsitesai/docx-editor-core/layout';
 import { color, number as n, pageHeight, pdfLiteralUri, rect, Commands, Work } from './context.ts';
 
 /** Paint only Core's admitted, flattened solid geometry; unsupported shapes stay diagnostic. */

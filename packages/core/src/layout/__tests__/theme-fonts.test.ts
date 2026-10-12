@@ -7,7 +7,7 @@
 // author's theme is invisible even when the reader has both fonts installed.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { buildStyleCascadeTable } from '../style-cascade.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';
 import { layoutHeaderFooterStory } from '../hf-layout.ts';

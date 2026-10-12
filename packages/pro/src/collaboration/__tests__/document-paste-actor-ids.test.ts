@@ -21,7 +21,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
-import type { OoxmlNode, OoxmlPackage } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, OoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import {
   CT,
   R,

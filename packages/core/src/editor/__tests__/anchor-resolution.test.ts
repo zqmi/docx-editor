@@ -3,7 +3,7 @@
 // offset vocabulary — the same offsets the ops and the surface selection use.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { buildParagraphAnchorIndex } from '../../binding/paragraph-anchors.ts';
 import { resolveAnchorSelection, resolveDocAnchor } from '../anchor-resolution.ts';
 

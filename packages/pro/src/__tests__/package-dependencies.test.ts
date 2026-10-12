@@ -49,27 +49,27 @@ const requiresSameMinor = (range: string | undefined, version: string) => {
 describe('how this package asks for the engine', () => {
   test('the engine is a peer, so the consumer resolves one copy of it', () => {
     expect(
-      requiresSameMinor(manifest.peerDependencies?.['@zqmi/docx-editor-core'], versionOf('core'))
+      requiresSameMinor(manifest.peerDependencies?.['@onsitesai/docx-editor-core'], versionOf('core'))
     ).toBe(true);
-    expect(manifest.dependencies?.['@zqmi/docx-editor-core']).toBeUndefined();
+    expect(manifest.dependencies?.['@onsitesai/docx-editor-core']).toBeUndefined();
   });
 
   test('the adapter is a peer for the same reason', () => {
     expect(
-      requiresSameMinor(manifest.peerDependencies?.['@zqmi/docx-editor-react'], versionOf('react'))
+      requiresSameMinor(manifest.peerDependencies?.['@onsitesai/docx-editor-react'], versionOf('react'))
     ).toBe(true);
     expect(
       requiresSameMinor(manifest.peerDependencies?.['@docx-editor.dev/vue'], versionOf('vue'))
     ).toBe(true);
-    expect(manifest.dependencies?.['@zqmi/docx-editor-react']).toBeUndefined();
+    expect(manifest.dependencies?.['@onsitesai/docx-editor-react']).toBeUndefined();
     expect(manifest.dependencies?.['@docx-editor.dev/vue']).toBeUndefined();
   });
 
   test('nothing is installed on a consumer that this package does not import', () => {
     // The string catalogue is a type-only import, so it erases at build time and never appears
     // in the output. Declaring it would make a consumer install what this package never loads.
-    expect(manifest.peerDependencies?.['@zqmi/docx-editor-i18n']).toBeUndefined();
-    expect(manifest.devDependencies?.['@zqmi/docx-editor-i18n']).toBe('workspace:*');
+    expect(manifest.peerDependencies?.['@onsitesai/docx-editor-i18n']).toBeUndefined();
+    expect(manifest.devDependencies?.['@onsitesai/docx-editor-i18n']).toBe('workspace:*');
   });
 
   test('the only runtime dependency is y-protocols', () => {

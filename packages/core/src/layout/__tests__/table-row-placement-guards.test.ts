@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import type { OoxmlElement, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { bodyLineId } from '../body-line-id.ts';
 import { createParagraphLayoutCache } from '../layout-cache.ts';
 import { readTableStructure, type SemanticTableRow } from '../semantic-table.ts';

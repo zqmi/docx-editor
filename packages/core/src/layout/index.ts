@@ -1,5 +1,5 @@
 /**
- * `@zqmi/docx-editor-core/layout` — DOM-free pagination, shaping, and hit testing.
+ * `@onsitesai/docx-editor-core/layout` — DOM-free pagination, shaping, and hit testing.
  *
  * Text is measured through an injected `TextMeasurer` and shaped through an injected
  * `TextShaper`, so the same code paginates in a browser and on a server. Points everywhere;

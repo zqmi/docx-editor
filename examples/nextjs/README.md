@@ -56,7 +56,7 @@ The `loading` option renders until the editor chunk arrives. Give it the height 
 Install the adapter and its required engine peer:
 
 ```bash
-npm install @zqmi/docx-editor-react @zqmi/docx-editor-core
+npm install @onsitesai/docx-editor-react @onsitesai/docx-editor-core
 ```
 
 Load your editor component with `dynamic(..., { ssr: false })` from a Client Component.

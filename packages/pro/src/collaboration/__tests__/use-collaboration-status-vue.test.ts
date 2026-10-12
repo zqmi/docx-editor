@@ -9,12 +9,12 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { createApp, defineComponent, h, nextTick } from 'vue';
-import { createCollaborationStatusTracker } from '@zqmi/docx-editor-core/collaboration';
+import { createCollaborationStatusTracker } from '@onsitesai/docx-editor-core/collaboration';
 import type {
   CollaborationFailureCode,
   CollaborationStatus,
   EditorCollaborationSession,
-} from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/collaboration';
 import { useCollaborationStatus } from '../../vue/useCollaborationStatus.ts';
 import { DocxEditorCollaboration } from '../../vue/DocxEditorCollaboration.ts';
 

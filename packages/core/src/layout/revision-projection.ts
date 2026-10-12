@@ -18,7 +18,7 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlProperty,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 /**
  * What a revision wrapper asserts about the content inside it.

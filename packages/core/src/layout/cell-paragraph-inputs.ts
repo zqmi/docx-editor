@@ -1,4 +1,4 @@
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import type { ResolvedListItem } from './list-resolve.ts';
 import {
   resolveParagraphLayoutInputs,

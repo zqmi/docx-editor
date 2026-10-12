@@ -1,7 +1,7 @@
 import './dom-setup.ts';
 import { afterEach, expect, test } from 'bun:test';
 import { createApp, defineComponent, h, nextTick, ref, type PropType } from 'vue';
-import type { ChromeExportHandlers, ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
+import type { ChromeExportHandlers, ChromeExportFormat } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditor } from '../src/components/DocxEditor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport';

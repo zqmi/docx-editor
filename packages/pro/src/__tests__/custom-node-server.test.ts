@@ -15,8 +15,8 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
 import { z } from 'zod';
-import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
-import { customNodePayloadsByControl } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage } from '@onsitesai/docx-editor-core/store';
+import { customNodePayloadsByControl } from '@onsitesai/docx-editor-core/store';
 import {
   customNodeXml,
   defineCustomNode,

@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { reviewModule } from '@docx-editor.dev/pro';
 import type { DocxEditorRuntime } from '@docx-editor.dev/editor-api/browser';
 import { seedDocx } from '../seed-document';

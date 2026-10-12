@@ -82,7 +82,7 @@ function laneOfSpecifier(specifier: string, fromFile: string): LaneName | null {
     const absolute = resolve(join(SRC, dirname(fromFile)), specifier);
     return laneOfFile(relative(SRC, absolute).split(sep).join('/'));
   }
-  const CORE = '@zqmi/docx-editor-core';
+  const CORE = '@onsitesai/docx-editor-core';
   if (specifier !== CORE && !specifier.startsWith(`${CORE}/`)) return null;
   const subpath = specifier === CORE ? '.' : `./${specifier.slice(CORE.length + 1)}`;
   for (const lane of LANES) {

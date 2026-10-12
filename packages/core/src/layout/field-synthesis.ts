@@ -17,8 +17,8 @@ import { characterStyleFieldValue } from './field-character-style.ts';
 //   6. empty cache only (and no hidden-but-present result): a document-property value, else a
 //      MACROBUTTON / GOTOBUTTON display.
 
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
-import type { DocumentProperties } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
+import type { DocumentProperties } from '@onsitesai/docx-editor-core/store';
 import { docPropertyValue } from './field-doc-property.ts';
 import { formFieldResult } from './field-form.ts';
 import {

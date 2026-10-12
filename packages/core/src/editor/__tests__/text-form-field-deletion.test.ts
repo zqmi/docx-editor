@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
 import { mountPaginatedSurface } from '../paginated-surface.ts';
-import { findNode, paragraphTextOf, textFormFieldsOf } from '@zqmi/docx-editor-core/store';
+import { findNode, paragraphTextOf, textFormFieldsOf } from '@onsitesai/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';

@@ -15,14 +15,14 @@ import {
   type OoxmlElement,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   createLayoutSession,
   createParagraphLayoutCache,
   layoutSemanticDocument,
   type SemanticLayout,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { openTreeSession } from '../../binding/tree-session.ts';
 import { createDocxEditor } from '../docx-editor.ts';
 import { createKeyDownHandler } from '../surface-input.ts';

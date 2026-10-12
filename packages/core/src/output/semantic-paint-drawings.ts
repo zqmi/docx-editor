@@ -25,7 +25,7 @@ import {
   forEachStoryDrawing,
   forEachStoryParagraphFragment,
 } from '../layout/semantic-record-queries.ts';
-import type { SemanticLayout } from '@zqmi/docx-editor-core/layout';
+import type { SemanticLayout } from '@onsitesai/docx-editor-core/layout';
 import { paintLayerOf } from '../layout/drawing-exclusion.ts';
 import { applyVectorInkReach, vectorShapeFrame } from './semantic-paint-vector-shape.ts';
 import { paintGroupTextboxStories } from './semantic-paint-group-text.ts';

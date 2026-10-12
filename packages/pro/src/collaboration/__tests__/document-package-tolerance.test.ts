@@ -10,7 +10,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, zipSync } from 'fflate';
-import { readOoxmlPackage, writeOoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage, writeOoxmlPackage } from '@onsitesai/docx-editor-core/store';
 import { CT, OD, REL, W, createPeerHarness, walk, type Peer } from './document-peer-support.ts';
 
 const harness = createPeerHarness('package-tolerance-room');

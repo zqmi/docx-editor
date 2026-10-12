@@ -8,7 +8,7 @@ import {
   characterHeaderPageToken,
 } from '../character-header-pages.ts';
 import { expect, test } from 'bun:test';
-import { applyTreeOp } from '@zqmi/docx-editor-core/store';
+import { applyTreeOp } from '@onsitesai/docx-editor-core/store';
 import { readOoxmlPart, serializeOoxmlPart } from '../../store/package/ooxml-tree.ts';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { buildStyleCascadeTable } from '../style-cascade.ts';

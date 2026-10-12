@@ -22,7 +22,7 @@ import {
   type OoxmlPackage,
   type OoxmlPart,
   type TreeModelChange,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 
 /** What the queue cache carries that the fast-path decision has to compare against. */
 export interface LocalReviewPatchCache {

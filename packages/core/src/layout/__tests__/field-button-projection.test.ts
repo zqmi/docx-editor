@@ -6,7 +6,7 @@
 // Word last painted.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph, type HyperlinkProjector } from '../field-projection.ts';
 import type { RevisionDisplayMode } from '../revision-projection.ts';
 import type { SpanLinkRecord } from '../semantic-records.ts';

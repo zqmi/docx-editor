@@ -3,7 +3,7 @@
 // Shared by cell placement and row geometry reuse, so a reused line goes through exactly the
 // arithmetic a fresh placement would.
 
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { InlineDrawingRecord } from './drawing-layout.ts';
 import { alignLineWithPictures } from './line-picture-alignment.ts';
 import {

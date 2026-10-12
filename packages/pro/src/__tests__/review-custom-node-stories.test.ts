@@ -20,7 +20,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { afterEach, describe, expect, test } from 'bun:test';
 import { strToU8, zipSync } from 'fflate';
 import { z } from 'zod';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { customNodesModule, customNodesOf, defineCustomNode, insertCustomNode } from '../index.ts';
 import { reviewModule } from '../review/review-module.ts';
 

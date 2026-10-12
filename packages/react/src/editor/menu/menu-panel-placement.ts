@@ -1,7 +1,7 @@
 // Keeps the menu bar's "⋯" panel inside the viewport, with the toolbar's placement rule.
 
 import { useLayoutEffect, useState, type CSSProperties, type RefObject } from 'react';
-import { toolbarPanelPlacement } from '@zqmi/docx-editor-core/editor';
+import { toolbarPanelPlacement } from '@onsitesai/docx-editor-core/editor';
 
 /**
  * The inline style that clamps an open panel to the viewport, or undefined while it is

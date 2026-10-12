@@ -1,5 +1,5 @@
 /**
- * `@zqmi/docx-editor-core/contracts/document` — the document-level edit and query vocabulary.
+ * `@onsitesai/docx-editor-core/contracts/document` — the document-level edit and query vocabulary.
  *
  * The subset that means something without a live editor: what an automation host or an LLM tool
  * can ask for and change.

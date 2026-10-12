@@ -5,9 +5,9 @@
   "compilerOptions": {
     "noEmit": true,
     "paths": {
-      "@zqmi/docx-editor-core": ["../core/dist/index.d.ts"],
-      "@zqmi/docx-editor-core/contracts/*": ["../core/dist/contracts/*.d.ts"],
-      "@zqmi/docx-editor-core/*": ["../core/dist/*.d.ts"]
+      "@onsitesai/docx-editor-core": ["../core/dist/index.d.ts"],
+      "@onsitesai/docx-editor-core/contracts/*": ["../core/dist/contracts/*.d.ts"],
+      "@onsitesai/docx-editor-core/*": ["../core/dist/*.d.ts"]
     }
   }
 }

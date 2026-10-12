@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/docx-to-
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { PDFDocument } from 'pdf-lib';
-import { hasFontBackedExportCapabilities } from '@zqmi/docx-editor-core/export';
+import { hasFontBackedExportCapabilities } from '@onsitesai/docx-editor-core/export';
 import { validateOptions } from './options.ts';
 import { openExportSession } from './open-session.ts';
 import { reportFontDiagnostics } from './font-diagnostics.ts';

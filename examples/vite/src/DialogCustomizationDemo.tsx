@@ -1,4 +1,4 @@
-import { definePopup } from '@zqmi/docx-editor-react';
+import { definePopup } from '@onsitesai/docx-editor-react';
 import type { ComponentProps } from 'react';
 import {
   DocxEditor,
@@ -6,8 +6,8 @@ import {
   DocxEditorParagraphDialog,
   DocxEditorTextFormFieldDialog,
   DocxEditorHyperLink,
-} from '@zqmi/docx-editor-react';
-import type { DocxEditorPopups } from '@zqmi/docx-editor-react';
+} from '@onsitesai/docx-editor-react';
+import type { DocxEditorPopups } from '@onsitesai/docx-editor-react';
 import '../../shared/dialog-customization.css';
 
 function CustomHyperlink(props: ComponentProps<typeof DocxEditorHyperLink>) {

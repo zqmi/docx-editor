@@ -17,7 +17,7 @@ import { afterEach, describe, expect, test } from 'bun:test';
 import { useState } from 'react';
 import { act, cleanup, render } from '@testing-library/react';
 import { zipSync, strToU8 } from 'fflate';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorRoot } from '../src/editor/DocxEditorRoot.tsx';
 import { DocxEditorViewport } from '../src/editor/DocxEditorViewport.tsx';
 import { DocxEditorContent } from '../src/editor/DocxEditorContent.tsx';
@@ -216,7 +216,7 @@ describe('a raw command target', () => {
 // A live control rerenders on every snapshot. That must not mint a new group per frame.
 import { useEditorValueCommand } from '../src/editor/useEditorValueCommand.ts';
 import { useHistoryGroup } from '../src/editor/useHistoryGroup.ts';
-import type { ExecResult } from '@zqmi/docx-editor-core/contracts/editor';
+import type { ExecResult } from '@onsitesai/docx-editor-core/contracts/editor';
 
 test('range binding survives React updates, groups two gestures, and cleans up', async () => {
   const results: ExecResult[] = [];

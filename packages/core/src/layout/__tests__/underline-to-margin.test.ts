@@ -3,7 +3,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { paintSemanticLayout } from '../../output/semantic-paint.ts';
 import { createFixedMeasurer } from '../fixed-measurer.ts';
 import { layoutSemanticDocument, linesOf } from '../index.ts';

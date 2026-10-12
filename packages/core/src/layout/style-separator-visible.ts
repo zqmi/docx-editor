@@ -1,4 +1,4 @@
-import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { WML_NAMESPACE_URI } from '../store/package/ooxml-tree.ts';
 import { propertiesOfRunContainer } from './field-run-text.ts';
 import { resolveRunStyle } from './run-style.ts';

@@ -13,8 +13,8 @@ test('package supports public releases and the encoder does not reshape text', (
   const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
   expect(pkg.private).toBe(false);
   expect(pkg.publishConfig.access).toBe('public');
-  expect(pkg.peerDependencies['@zqmi/docx-editor-core']).toBeDefined();
-  expect(pkg.dependencies['@zqmi/docx-editor-core']).toBeUndefined();
+  expect(pkg.peerDependencies['@onsitesai/docx-editor-core']).toBeDefined();
+  expect(pkg.dependencies['@onsitesai/docx-editor-core']).toBeUndefined();
   const source = ['fonts.ts', 'text.ts', 'paint.ts']
     .map((name) => readFileSync(new URL(`../src/${name}`, import.meta.url), 'utf8'))
     .join('\n');

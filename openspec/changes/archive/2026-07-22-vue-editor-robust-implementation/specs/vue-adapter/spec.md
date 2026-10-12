@@ -92,7 +92,7 @@ The package SHALL export a `useTranslation()` composable returning `{ t }` where
 
 ### Requirement: Plugin host parity (built-in plugins only)
 
-The Vue adapter SHALL accept the same plugin API as React for built-in plugins shipped with `@zqmi/docx-editor-core`. Third-party plugin authoring is explicitly out of scope for v1; the spec MAY be amended in a follow-up to add Vue-specific composable equivalents of React plugin hooks.
+The Vue adapter SHALL accept the same plugin API as React for built-in plugins shipped with `@onsitesai/docx-editor-core`. Third-party plugin authoring is explicitly out of scope for v1; the spec MAY be amended in a follow-up to add Vue-specific composable equivalents of React plugin hooks.
 
 #### Scenario: Built-in template plugin works in Vue
 
@@ -168,7 +168,7 @@ The `@docx-editor.dev/agents` package SHALL gain a `/vue` subpath export at pari
 
 ### Requirement: Package boundary (no React imports)
 
-`packages/vue/src/**` SHALL contain zero imports of `react`, `react-dom`, `@types/react`, or any subpath of `@zqmi/docx-editor-react`. Vue-only UI components live in `packages/vue/src/components/`. Shared logic that doesn't depend on Vue lives in `@zqmi/docx-editor-core` and is consumed via `import` from there.
+`packages/vue/src/**` SHALL contain zero imports of `react`, `react-dom`, `@types/react`, or any subpath of `@onsitesai/docx-editor-react`. Vue-only UI components live in `packages/vue/src/components/`. Shared logic that doesn't depend on Vue lives in `@onsitesai/docx-editor-core` and is consumed via `import` from there.
 
 #### Scenario: Lint flags a forbidden React import
 

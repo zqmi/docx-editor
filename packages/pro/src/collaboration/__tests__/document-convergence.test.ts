@@ -6,7 +6,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 import { describe, expect, test } from 'bun:test';
 import * as Y from 'yjs';
 import { strToU8, zipSync } from 'fflate';
-import type { CanonicalPrimitiveJournal } from '@zqmi/docx-editor-core/collaboration/replication';
+import type { CanonicalPrimitiveJournal } from '@onsitesai/docx-editor-core/collaboration/replication';
 import { collaborationDocx } from './support.ts';
 import {
   applyJournal,
@@ -751,7 +751,7 @@ describe('full-document two-replica convergence', () => {
       expect(headerPart).toBeDefined();
       const texts: string[] = [];
       if (headerPart) {
-        const walk = (node: import('@zqmi/docx-editor-core/store').OoxmlNode): void => {
+        const walk = (node: import('@onsitesai/docx-editor-core/store').OoxmlNode): void => {
           if (node.kind === 'textValue') {
             if (node.value.trim()) texts.push(node.value);
             return;

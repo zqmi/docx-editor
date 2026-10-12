@@ -17,7 +17,7 @@ if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 import { describe, expect, test } from 'bun:test';
 import { strFromU8, strToU8, unzipSync, zipSync } from 'fflate';
 import { z } from 'zod';
-import { createDocxEditor, type DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor, type DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import {
   customNodeXml,
   customNodesModule,
@@ -32,9 +32,9 @@ import {
   type AnyCustomNodeDefinition,
   type CustomNodeDiagnostic,
 } from '../index.ts';
-import { customNodePayloadsByControl } from '@zqmi/docx-editor-core/store';
+import { customNodePayloadsByControl } from '@onsitesai/docx-editor-core/store';
 import { customItemsOf } from '../review/review-model.ts';
-import { readOoxmlPackage } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPackage } from '@onsitesai/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const CT = 'http://schemas.openxmlformats.org/package/2006/content-types';

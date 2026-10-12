@@ -25,7 +25,7 @@ What you see painted and what an edit mutates are the same tree, so there is no 
 | `editor` | The public editor facade, surface input, caret, and chrome registry | A second document model |
 | `react` and `vue` | Providers, hooks or composables, and framework chrome | Editing state |
 
-The package boundary keeps one copy of `@zqmi/docx-editor-core` in an application. Both adapters use it as a peer dependency.
+The package boundary keeps one copy of `@onsitesai/docx-editor-core` in an application. Both adapters use it as a peer dependency.
 
 ## The canonical tree
 
@@ -74,7 +74,7 @@ That is what "structural fidelity" means here: unsupported XML and package paylo
 
 ## Adapters
 
-`@zqmi/docx-editor-core` contains the engine and no framework code. An adapter mounts the engine and provides framework-specific state access and chrome. `@zqmi/docx-editor-react` and `@docx-editor.dev/vue` hold no editing state.
+`@onsitesai/docx-editor-core` contains the engine and no framework code. An adapter mounts the engine and provides framework-specific state access and chrome. `@onsitesai/docx-editor-react` and `@docx-editor.dev/vue` hold no editing state.
 
 Packaged and custom controls consume the same public engine contract.
 

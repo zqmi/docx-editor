@@ -61,12 +61,12 @@ import {
   TreePackageStore,
   type OoxmlNode,
   type TreeDocOp,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { PACKAGE_NODES_KEY } from '../document/index.ts';
 import { createDocumentCollaboration } from '../document-session.ts';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import { createCollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+import { createCollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import {
   BODY,
   createPeerHarness,

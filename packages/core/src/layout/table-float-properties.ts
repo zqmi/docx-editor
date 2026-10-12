@@ -1,5 +1,5 @@
 // Bounded positioning and text-distance properties for top-level floating tables.
-import { readTwipsMeasure, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readTwipsMeasure, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 /**
  * `w:tblpPr/@w:horzAnchor` (17.4.58) and `@w:vertAnchor` (17.4.66): the box a floated
  * table's offsets are measured from. Absent means `text` for both.

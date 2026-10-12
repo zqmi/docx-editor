@@ -6,8 +6,8 @@
 // that read `numbering.xml` or `w:sectPr`, so they sit together rather than in the
 // composition root.
 
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { TreeDocOp, StoryScope } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { TreeDocOp, StoryScope } from '@onsitesai/docx-editor-core/store';
 import {
   enumerateDocumentSections,
   paragraphsInCells,
@@ -17,10 +17,10 @@ import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { sectionAnchorParagraphFor, sectionIndexForCaret } from './section-scope.ts';
 import { isTableNested } from '../store/store/tree-op-section-address.ts';
-import type { ListMarkerRecord } from '@zqmi/docx-editor-core/layout';
+import type { ListMarkerRecord } from '@onsitesai/docx-editor-core/layout';
 import { markerHolding } from '../layout/line-segments.ts';
 import { defaultTabIntervalFromSettings } from '../layout/paragraph-tabs.ts';
 import { paragraphTabStopsOf } from './surface-formatting.ts';

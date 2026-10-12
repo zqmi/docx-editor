@@ -1,6 +1,6 @@
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
-import type { SemanticSelection } from '@zqmi/docx-editor-core/layout';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
+import type { SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 import { storyScopeOfNodeId } from './surface-scope.ts';
 
 /** Field dialogs share the surface's normal commit, validation, and repaint path. */

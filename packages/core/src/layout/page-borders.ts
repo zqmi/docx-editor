@@ -9,7 +9,7 @@
 // a point and `w:space` is whole points, and a reader that mixes them draws an eight-times
 // hairline. `borderEdgeOf` is the one parser for both, so that conversion exists once.
 
-import type { OoxmlElement, OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import { isLineBorderVal } from './border-metrics.ts';
 import { borderEdgeOf, type ParagraphBorderEdge } from './paragraph-style.ts';
 

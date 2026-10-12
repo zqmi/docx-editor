@@ -63,7 +63,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * @public
  */
 
-import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import type { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
 import { createCollaborative, createServer } from './runtime/server.ts';
 import type {
   CreateCollaborativeOptions,

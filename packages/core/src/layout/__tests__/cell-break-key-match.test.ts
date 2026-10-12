@@ -6,7 +6,7 @@ import {
   type CellBreakKeyParts,
 } from '../cell-break-key.ts';
 import type { TableFlowDeps } from '../semantic-table-layout.ts';
-import type { OoxmlElement } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { load } from './table-row-keep-fixtures.ts';
 
 test('the allocation-free key match agrees with building and comparing the parts', () => {

@@ -19,7 +19,7 @@ import { mountPaginatedSurface, type PaginatedSurface } from '../paginated-surfa
 import { docx as bodyDocx, selectCellRectangle } from './paginated-surface-fixtures.ts';
 import { paragraphIndentOf } from '../surface-formatting.ts';
 import { paragraphTextOf } from '../../store/store/tree-op-apply.ts';
-import { findNode } from '@zqmi/docx-editor-core/store';
+import { findNode } from '@onsitesai/docx-editor-core/store';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
 const R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';

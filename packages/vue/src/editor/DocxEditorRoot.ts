@@ -3,7 +3,7 @@ import type {
   ResolvedRevisionMarkup,
   ReviewDisplayMode,
   FieldResultsMode,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { DialogHost } from './dialog-host';
 import { PopupConfigProvider, type DocxEditorPopups } from './popup-config';
 import {
@@ -22,8 +22,8 @@ import type {
   Editor,
   EditorFontError,
   ZoomMode,
-} from '@zqmi/docx-editor-core/contracts/editor';
-import type { EditorModule, ImageDecodePort } from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/contracts/editor';
+import type { EditorModule, ImageDecodePort } from '@onsitesai/docx-editor-core/editor';
 import { HyperlinkPopupContext, useHyperlinkPopupInstance } from './useHyperlinkPopup';
 import { ContentControlContext, useContentControlInstance } from './useContentControl';
 import { ImageInsertProvider } from './images/ImageInsert';

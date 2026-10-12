@@ -41,8 +41,8 @@
 // the page it is measuring, so they all read `useReviewGutter`.
 
 import { useCallback, useContext, useEffect, useRef, useState } from 'react';
-import type { EditorSnapshot, PageSetup } from '@zqmi/docx-editor-core/contracts/editor';
-import { REVIEW_MARKERS_GUTTER_PX, reviewPaneEntitledZoom } from '@zqmi/docx-editor-core/editor';
+import type { EditorSnapshot, PageSetup } from '@onsitesai/docx-editor-core/contracts/editor';
+import { REVIEW_MARKERS_GUTTER_PX, reviewPaneEntitledZoom } from '@onsitesai/docx-editor-core/editor';
 import { twipsToPixels } from '../lib/units';
 import { ReviewRailContext } from './context';
 import { useEditorState } from './useEditorState';

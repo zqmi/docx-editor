@@ -3,7 +3,7 @@ import { createDocxEditor } from '../../../packages/core/src/editor/docx-editor'
 import { createDocumentRefresh } from '../../../packages/core/src/editor/document-refresh';
 import { sampleDocx, sampleUpdate } from '../sample-document';
 import { runRefreshJob, type ServerUpdate } from './refresh-job';
-import type { RefreshResult } from '@zqmi/docx-editor-react';
+import type { RefreshResult } from '@onsitesai/docx-editor-react';
 
 const close: (() => void)[] = [];
 afterEach(() => close.splice(0).forEach((dispose) => dispose()));

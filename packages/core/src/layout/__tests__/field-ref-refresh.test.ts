@@ -8,7 +8,7 @@
 // cache — and must save it too.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { applyTreeOp } from '../../store/store/tree-op-apply.ts';
 import { validateTreeOp } from '../../store/store/tree-op-validate.ts';
 import { locateFieldResults } from '../../store/store/tree-op-field-results.ts';

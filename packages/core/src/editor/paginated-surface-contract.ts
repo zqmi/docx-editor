@@ -3,8 +3,8 @@ import type { ResolvedRevisionMarkup } from '../contracts/revision-markup.ts';
 // paginated-surface.ts implements and re-exports them, so importers keep one entry point.
 
 import type { SurfaceParagraphFormat, ParagraphPropertyEdit } from './paragraph-format-contract.ts';
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { BookmarkIndex } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { BookmarkIndex } from '@onsitesai/docx-editor-core/store';
 import type { StoryScope } from '../store/store/tree-package-store.ts';
 import type { TreeDocOp } from '../store/store/tree-op-types.ts';
 import type {
@@ -25,7 +25,7 @@ import type {
   SemanticLayout,
   SemanticPosition,
   SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 
 /**
  * How an edit is written.
@@ -101,7 +101,7 @@ export interface PaginatedSurface {
   readonly session: TreeDocxSessionView;
   /** The collaboration replica a `collaborationModule` attached, or null. */
   collaborationSession(): import('../collaboration/index.ts').EditorCollaborationSession | null;
-  storyScope(): import('@zqmi/docx-editor-core/store').StoryScope;
+  storyScope(): import('@onsitesai/docx-editor-core/store').StoryScope;
   imageDecodePort(): import('../store/package/image-resources.ts').ImageDecodePort;
   applyDrawingOps(
     ops: readonly import('../store/store/tree-op-types.ts').DrawingTreeDocOp[]
@@ -753,7 +753,7 @@ export interface PaginatedSurface {
    * band and the visible cards stay one answer.
    */
   setReviewActivationExclusions(
-    kinds: readonly import('@zqmi/docx-editor-core/store').ReviewRevisionKind[] | null,
+    kinds: readonly import('@onsitesai/docx-editor-core/store').ReviewRevisionKind[] | null,
     options?: { readonly formattingKinds?: readonly string[] }
   ): void;
   /**
@@ -829,7 +829,7 @@ export interface PaginatedSurface {
     readonly sectionIndex?: number;
     readonly kind?: 'header' | 'footer';
     readonly variant?: 'default' | 'first' | 'even';
-    readonly position?: import('@zqmi/docx-editor-core/layout').SemanticPosition;
+    readonly position?: import('@onsitesai/docx-editor-core/layout').SemanticPosition;
   }): boolean;
   /** Leave furniture editing and restore the prior body selection. */
   exitHeaderFooter(): void;

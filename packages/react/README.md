@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-react"><img src="https://img.shields.io/npm/v/@zqmi/docx-editor-react.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-react"><img src="https://img.shields.io/npm/dm/@zqmi/docx-editor-react.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
+  <a href="https://www.npmjs.com/package/@onsitesai/docx-editor-react"><img src="https://img.shields.io/npm/v/@onsitesai/docx-editor-react.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/@onsitesai/docx-editor-react"><img src="https://img.shields.io/npm/dm/@onsitesai/docx-editor-react.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
   <a href="https://github.com/eigenpal/docx-editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat-square&color=3B5BDB" alt="license" /></a>
   <a href="https://docx-editor.dev/editor"><img src="https://img.shields.io/badge/Live_Demo-3B5BDB?style=flat-square&logo=vercel&logoColor=white" alt="Demo" /></a>
   <a href="https://www.docx-editor.dev/docs"><img src="https://img.shields.io/badge/Docs-3B5BDB?style=flat-square&logo=readthedocs&logoColor=white" alt="Documentation" /></a>
 </p>
 
-# @zqmi/docx-editor-react
+# @onsitesai/docx-editor-react
 
 A visual `.docx` editor for React. Open a DOCX document, edit its paginated layout, and save a DOCX file. Parsing and serialization run in the browser.
 
@@ -25,7 +25,7 @@ Saving preserves untouched content, unsupported OOXML, and package payloads. Con
 Install the adapter and its required engine peer:
 
 ```bash
-npm install @zqmi/docx-editor-react @zqmi/docx-editor-core
+npm install @onsitesai/docx-editor-react @onsitesai/docx-editor-core
 ```
 
 ## Features
@@ -41,8 +41,8 @@ Import the stylesheet once and give the editor a container with a defined height
 
 ```tsx
 import { useState } from 'react';
-import { DocxEditor } from '@zqmi/docx-editor-react';
-import '@zqmi/docx-editor-core/styles/editor.css';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
+import '@onsitesai/docx-editor-core/styles/editor.css';
 
 export function App() {
   const [doc, setDoc] = useState<Uint8Array>();
@@ -74,7 +74,7 @@ For Next.js and server-side rendering (SSR), load the editor in the browser. Use
 Use components and hooks to build your own controls. Packaged controls use the same public API.
 
 ```tsx
-import { DocxEditor, useEditorCommand } from '@zqmi/docx-editor-react';
+import { DocxEditor, useEditorCommand } from '@onsitesai/docx-editor-react';
 
 function BoldButton() {
   const bold = useEditorCommand('text.bold');
@@ -125,7 +125,7 @@ Read `isEnabled` to set the disabled state. Show `disabledReason` when the comma
 
 - [`@docx-editor.dev/pro`](https://www.npmjs.com/package/@docx-editor.dev/pro) — tracked changes, comments, custom nodes
 - [`@docx-editor.dev/editor-api`](https://www.npmjs.com/package/@docx-editor.dev/editor-api) — A supported subset of the Office.js API for server and browser editing
-- [`@zqmi/docx-editor-core`](https://www.npmjs.com/package/@zqmi/docx-editor-core) — the engine this adapter renders
+- [`@onsitesai/docx-editor-core`](https://www.npmjs.com/package/@onsitesai/docx-editor-core) — the engine this adapter renders
 
 ## Documentation
 

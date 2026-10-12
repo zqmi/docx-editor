@@ -6,7 +6,7 @@ import {
   relationshipTargetIn,
   resolveHeaderFooterPartsBySection,
   type HeadlessDocumentView,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createDocumentFurnitureSource } from '../../layout/document-furniture-source.ts';
 import { createDocumentLinkProjectors } from '../../layout/document-link-projector.ts';
 import { layoutDocumentView } from '../../layout/document-layout-coordinator.ts';

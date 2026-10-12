@@ -13,7 +13,7 @@
 // it (a page break belongs under Insert), and the product's own menu is for what the product
 // added.
 
-import { DocxEditor, useChromeTranslate, useDocxEditor } from '@zqmi/docx-editor-react';
+import { DocxEditor, useChromeTranslate, useDocxEditor } from '@onsitesai/docx-editor-react';
 import { useFrost } from './useFrost';
 import { useSpecimens } from './useSpecimens';
 import { ICE_LABELS } from './labels';

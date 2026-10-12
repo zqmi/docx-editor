@@ -9,7 +9,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 
 import { afterAll, expect, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-import { createDocxEditor } from '@zqmi/docx-editor-core/editor';
+import { createDocxEditor } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditor } from '@docx-editor.dev/editor-api/browser';
 import { collaborationModule, reviewModule } from '../../index';
 import { createPeerHarness, zipDocument } from './document-peer-support';

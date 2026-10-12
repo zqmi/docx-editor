@@ -46,15 +46,15 @@
     "check:consumer": "node ../../scripts/check-markdown-media-consumer.mjs"
   },
   "peerDependencies": {
-    "@zqmi/docx-editor-core": "~2.28.0"
+    "@onsitesai/docx-editor-core": "~2.28.0"
   },
   "dependencies": {
-    "@zqmi/docx-editor-fonts": "~2.28.0",
+    "@onsitesai/docx-editor-fonts": "~2.28.0",
     "fflate": "^0.8.2"
   },
   "devDependencies": {
     "@happy-dom/global-registrator": "^20.8.3",
-    "@zqmi/docx-editor-core": "workspace:*",
+    "@onsitesai/docx-editor-core": "workspace:*",
     "micromark": "^4.0.2",
     "micromark-extension-gfm": "^3.0.0",
     "typescript7": "npm:typescript@^7.0.2"

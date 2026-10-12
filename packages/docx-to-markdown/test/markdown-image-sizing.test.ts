@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { createFixedMeasurer } from '@zqmi/docx-editor-core/layout';
+import { createFixedMeasurer } from '@onsitesai/docx-editor-core/layout';
 import { micromark } from 'micromark';
 import { gfm, gfmHtml } from 'micromark-extension-gfm';
 import {

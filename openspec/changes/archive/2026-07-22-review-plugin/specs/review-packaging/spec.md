@@ -2,7 +2,7 @@
 
 ### Requirement: Separate BSL-1.1 licensed package
 
-The package SHALL be published as `@docx-editor.dev/agents` on public npm under BSL-1.1. SHALL declare `@zqmi/docx-editor-core` as a peer dependency. SHALL include a `LICENSE` file with BSL-1.1 terms (licensor: EigenPal, change date: 4 years, change license: MIT, additional use grant: non-production permitted).
+The package SHALL be published as `@docx-editor.dev/agents` on public npm under BSL-1.1. SHALL declare `@onsitesai/docx-editor-core` as a peer dependency. SHALL include a `LICENSE` file with BSL-1.1 terms (licensor: EigenPal, change date: 4 years, change license: MIT, additional use grant: non-production permitted).
 
 #### Scenario: Install and import
 

@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { createParagraphLayoutCache, type ParagraphKeyInputs } from '../layout-cache.ts';
 import { reuseSingleLineAtWidth } from '../paragraph-cache-width-reuse.ts';
 import { breakParagraph, type PendingLine } from '../paragraph-flow.ts';

@@ -6,7 +6,7 @@
 // element exists, else the deleted buffer, with overflow accounted per buffer.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlNode, type OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   MAX_FIELD_INSTRUCTION_CHARS,
   detectStoryPageFields,

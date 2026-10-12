@@ -25,7 +25,7 @@ import {
   type StoryScope,
   type TreeDocOp,
   type TreePackageStore,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { storeFrom } from './document-text.ts';
 import { NETWORK, openReplica, type Replica } from './scenario-replica.ts';
 import { fingerprint } from './scenario-oracles.ts';

@@ -15,13 +15,13 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  * A paragraph's stable id is its `w14:paraId`: two participants can mint the same one, and
  * the editor then renames one of them in its own tree while shared state keeps both.
  */
-import type { OoxmlNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode } from '@onsitesai/docx-editor-core/store';
 import type {
   CollaborationEditorSelection,
   CollaborationLocalSelection,
   CollaborationSelectionMove,
-} from '@zqmi/docx-editor-core/collaboration';
-import type { CollaborationDocumentPort } from '@zqmi/docx-editor-core/collaboration/replication';
+} from '@onsitesai/docx-editor-core/collaboration';
+import type { CollaborationDocumentPort } from '@onsitesai/docx-editor-core/collaboration/replication';
 import type { EncodedCharacter } from './document-awareness.ts';
 import type { DocumentRegistry } from './document/registry.ts';
 import type { LogicalId } from './document/identity.ts';

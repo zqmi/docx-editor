@@ -33,7 +33,7 @@ import {
   type SemanticLayout,
   type SemanticSelection,
   type TextMeasurer,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { isBottomToTopCaret } from '../layout/table-cell-text-direction.ts';
 import {
   baselineShiftPtOf,

@@ -31,7 +31,7 @@ None.
 
 ## Impact
 
-- New collaboration contracts and a guarded optional sync lane/package that may import `@zqmi/docx-editor-core/store` but does not make core's default editor bundle import Yjs or any provider.
+- New collaboration contracts and a guarded optional sync lane/package that may import `@onsitesai/docx-editor-core/store` but does not make core's default editor bundle import Yjs or any provider.
 - Optional peer dependencies on stable Yjs 13.x and, only for the convenience entry point/example, `y-webrtc`; provider lifecycle remains consumer-owned at the low-level API.
 - `TreeDocxSession.applyTreeOps`, automation apply ports, `TreePackageStore`, and history handling plumb the existing frozen human/agent/remote/undo origins plus actor and operation identity needed for remote commits, duplicate detection, and collaborative undo isolation.
 - The editor output layer gains a non-editable remote-selection overlay derived from semantic layout geometry.

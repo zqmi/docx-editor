@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-i18n"><img src="https://img.shields.io/npm/v/@zqmi/docx-editor-i18n.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@zqmi/docx-editor-i18n"><img src="https://img.shields.io/npm/dm/@zqmi/docx-editor-i18n.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
+  <a href="https://www.npmjs.com/package/@onsitesai/docx-editor-i18n"><img src="https://img.shields.io/npm/v/@onsitesai/docx-editor-i18n.svg?style=flat-square&color=3B5BDB" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/@onsitesai/docx-editor-i18n"><img src="https://img.shields.io/npm/dm/@onsitesai/docx-editor-i18n.svg?style=flat-square&color=3B5BDB" alt="npm downloads" /></a>
   <a href="https://github.com/eigenpal/docx-editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat-square&color=3B5BDB" alt="license" /></a>
   <a href="https://docx-editor.dev/editor"><img src="https://img.shields.io/badge/Live_Demo-3B5BDB?style=flat-square&logo=vercel&logoColor=white" alt="Demo" /></a>
   <a href="https://www.docx-editor.dev/docs"><img src="https://img.shields.io/badge/Docs-3B5BDB?style=flat-square&logo=readthedocs&logoColor=white" alt="Documentation" /></a>
 </p>
 
-# @zqmi/docx-editor-i18n
+# @onsitesai/docx-editor-i18n
 
 Translate [docx-editor.dev](https://docx-editor.dev) controls with locale strings, types, and runtime helpers. The package provides twelve languages and falls back to English for missing translations.
 
@@ -25,14 +25,14 @@ Translate [docx-editor.dev](https://docx-editor.dev) controls with locale string
 Install the locale package:
 
 ```bash
-npm install @zqmi/docx-editor-i18n
+npm install @onsitesai/docx-editor-i18n
 ```
 
 Pass a locale to the editor. This example requires the React adapter and its engine peer:
 
 ```tsx
-import { DocxEditor } from '@zqmi/docx-editor-react';
-import { es } from '@zqmi/docx-editor-i18n';
+import { DocxEditor } from '@onsitesai/docx-editor-react';
+import { es } from '@onsitesai/docx-editor-i18n';
 
 <DocxEditor document={bytes} i18n={es} locale="es-ES" />;
 ```
@@ -42,8 +42,8 @@ The `i18n` prop translates controls. Set `locale` separately for regional date i
 To share a locale across editors and custom controls, use `LocaleProvider`:
 
 ```tsx
-import { DocxEditor, LocaleProvider } from '@zqmi/docx-editor-react';
-import { de } from '@zqmi/docx-editor-i18n';
+import { DocxEditor, LocaleProvider } from '@onsitesai/docx-editor-react';
+import { de } from '@onsitesai/docx-editor-i18n';
 
 <LocaleProvider i18n={de}>
   <DocxEditor document={bytes} />
@@ -55,7 +55,7 @@ Custom controls read the same catalog through `useTranslation()`.
 Mix a community locale with custom overrides:
 
 ```ts
-import { de } from '@zqmi/docx-editor-i18n';
+import { de } from '@onsitesai/docx-editor-i18n';
 
 const myLocale = {
   ...de,
@@ -85,7 +85,7 @@ Missing or `null` keys keep the inherited catalog value. Without an outer `Local
 BCP-47 codes (`pt-BR`, `zh-CN`) use camelCase JS identifiers (`ptBR`, `zhCN`). For runtime lookup by tag:
 
 ```tsx
-import { locales } from '@zqmi/docx-editor-i18n';
+import { locales } from '@onsitesai/docx-editor-i18n';
 
 <LocaleProvider i18n={locales[userPreferredLocale]}>
   <DocxEditor document={bytes} />
@@ -100,16 +100,16 @@ If you choose a locale at runtime, import its subpath to load only that locale. 
 
 ```ts
 // Static import: include only this locale's strings.
-import pl from '@zqmi/docx-editor-i18n/pl';
+import pl from '@onsitesai/docx-editor-i18n/pl';
 ```
 
 For on-demand loading, use a dynamic import instead:
 
 ```ts
-const pl = (await import('@zqmi/docx-editor-i18n/pl')).default;
+const pl = (await import('@onsitesai/docx-editor-i18n/pl')).default;
 ```
 
-Subpaths ship for every locale: `/en`, `/de`, `/es`, `/fr`, `/he`, `/hi`, `/id`, `/ja`, `/pl`, `/pt-BR`, `/tr`, `/zh-CN`. Each also exports its locale as a named binding (`import { pl } from '@zqmi/docx-editor-i18n/pl'`) for callers that prefer non-default imports.
+Subpaths ship for every locale: `/en`, `/de`, `/es`, `/fr`, `/he`, `/hi`, `/id`, `/ja`, `/pl`, `/pt-BR`, `/tr`, `/zh-CN`. Each also exports its locale as a named binding (`import { pl } from '@onsitesai/docx-editor-i18n/pl'`) for callers that prefer non-default imports.
 
 ## Types
 
@@ -123,7 +123,7 @@ import type {
   TranslationKey, // 'formattingBar.bold' | 'navigation.find.counter' | ...
   LocaleCode, // 'en' | 'de' | 'pt-BR' | ...
   TFunction, // signature of the `t()` callback
-} from '@zqmi/docx-editor-i18n';
+} from '@onsitesai/docx-editor-i18n';
 ```
 
 ## Outside the React adapter
@@ -131,7 +131,7 @@ import type {
 Build a typed `t()` outside the adapter packages:
 
 ```ts
-import { createT, deepMerge, en, de, type LocaleStrings } from '@zqmi/docx-editor-i18n';
+import { createT, deepMerge, en, de, type LocaleStrings } from '@onsitesai/docx-editor-i18n';
 
 const merged = deepMerge(en, de) as LocaleStrings;
 const t = createT(merged, 'de');

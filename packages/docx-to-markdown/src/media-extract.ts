@@ -2,8 +2,8 @@ import {
   ExportResourceError,
   type ExportSemanticLayout,
   type ExportSession,
-} from '@zqmi/docx-editor-core/export';
-import { forEachSemanticDrawing } from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/export';
+import { forEachSemanticDrawing } from '@onsitesai/docx-editor-core/layout';
 import type {
   MarkdownImageAsset,
   MarkdownImageData,

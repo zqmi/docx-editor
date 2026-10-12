@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 // Presence chrome for a live collaboration session: host-rendered remote-caret labels and
 // the packaged avatar stack, both coloured by the same review-roster derivation the painted
-// presence uses. Compose inside `DocxEditor.Root` from `@zqmi/docx-editor-react`.
+// presence uses. Compose inside `DocxEditor.Root` from `@onsitesai/docx-editor-react`.
 
 import {
   Fragment,
@@ -18,12 +18,12 @@ import {
 } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { useDocxEditor, useReviewAuthors, useTranslation } from '@zqmi/docx-editor-react';
+import { useDocxEditor, useReviewAuthors, useTranslation } from '@onsitesai/docx-editor-react';
 import type {
   CollaborationParticipant,
   CollaborationRemoteSelection,
-} from '@zqmi/docx-editor-core/collaboration';
-import type { RemoteCaretLabelAnchor } from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/collaboration';
+import type { RemoteCaretLabelAnchor } from '@onsitesai/docx-editor-core/editor';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import {
   orderedParticipants,

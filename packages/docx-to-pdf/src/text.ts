@@ -1,4 +1,4 @@
-import type { ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import type { ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 import { markupColor, spanMarkup, spanRevisions, type RowRevision } from './revision-markup.ts';
 /*
 Copyright (c) 2026 EigenPal, Inc. All rights reserved.
@@ -9,7 +9,7 @@ import { PDFName, type PDFDocument, type PDFPage, type PDFRef } from 'pdf-lib';
 import type {
   FontBackedExportCapabilities,
   ExportAdmittedFontIdentity,
-} from '@zqmi/docx-editor-core/export';
+} from '@onsitesai/docx-editor-core/export';
 import {
   baselineShiftPtOf,
   noteSeparatorRuleBox,
@@ -21,7 +21,7 @@ import {
   type LayoutBox,
   type SemanticSpanVisit,
   type ShapedRun,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { underlineGap } from './underline-gap.ts';
 import { paragraphGridOffsetX } from './paragraph-grid-origin.ts';
 import { EmbeddedFace } from './fonts.ts';

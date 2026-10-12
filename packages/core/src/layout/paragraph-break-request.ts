@@ -1,7 +1,7 @@
 import { paragraphAlignment } from './paragraph-alignment.ts';
 import { paragraphIsRtl } from './rtl-paragraph.ts';
 /** Internal contract shared by body flow and bounded/table stories. */
-import type { OoxmlNode, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import type { FieldPageContext } from './field-projection.ts';
 import type { ParagraphLayoutCache } from './layout-cache.ts';
 import {

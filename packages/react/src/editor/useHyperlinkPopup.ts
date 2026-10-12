@@ -22,10 +22,10 @@ import {
   useRef,
   useState,
 } from 'react';
-import type { SurfaceHyperlink } from '@zqmi/docx-editor-core/editor';
+import type { SurfaceHyperlink } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 import { useEditorState } from './useEditorState';
-import type { Editor, EditorSnapshot, SelectionPin } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor, EditorSnapshot, SelectionPin } from '@onsitesai/docx-editor-core/contracts/editor';
 
 /** Where the popover sits, in viewport coordinates. */
 export interface HyperlinkPopupAnchor {

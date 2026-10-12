@@ -6,7 +6,7 @@ import './dom-setup.ts';
 import { afterEach, describe, expect, test } from 'bun:test';
 import { h, type VNode } from 'vue';
 import { strToU8, zipSync } from 'fflate';
-import type { EditorModule } from '@zqmi/docx-editor-core/editor';
+import type { EditorModule } from '@onsitesai/docx-editor-core/editor';
 import { DocxEditorMenu } from '../src/editor/menu';
 import { DocxEditorToolbar } from '../src/editor/toolbar';
 import { POPUP_ESCAPE_SOURCE } from './helpers/popup-escape-document';

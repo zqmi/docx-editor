@@ -13,7 +13,7 @@
  * arrives, and the mapping runs when the next layout is published, so a burst of remote
  * commits costs one mapping and no extra layout pass.
  */
-import type { SemanticPosition, SemanticSelection } from '@zqmi/docx-editor-core/layout';
+import type { SemanticPosition, SemanticSelection } from '@onsitesai/docx-editor-core/layout';
 import type {
   CollaborationEditorPosition,
   CollaborationEditorSelection,

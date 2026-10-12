@@ -12,7 +12,7 @@ import { join } from 'node:path';
 import { createApp, defineComponent, h, nextTick } from 'vue';
 import * as Y from 'yjs';
 import { Awareness } from 'y-protocols/awareness';
-import type { EditorCollaborationSession } from '@zqmi/docx-editor-core/collaboration';
+import type { EditorCollaborationSession } from '@onsitesai/docx-editor-core/collaboration';
 import {
   useDocumentCollaboration,
   DOCUMENT_CREATE_ROOM_FOR_TESTS,

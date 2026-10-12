@@ -4,7 +4,7 @@ Licensed under the EigenPal Pro Evaluation License 1.0 — see packages/pro/LICE
 Production use requires a commercial agreement: licensing@eigenpal.com
 */
 import { useRef, useSyncExternalStore } from 'react';
-import type { CollaborationParticipant } from '@zqmi/docx-editor-core/collaboration';
+import type { CollaborationParticipant } from '@onsitesai/docx-editor-core/collaboration';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import { useCollaborationSession } from './useCollaborationSession.ts';
 

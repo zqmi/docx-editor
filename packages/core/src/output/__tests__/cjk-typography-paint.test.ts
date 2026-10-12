@@ -1,11 +1,11 @@
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import {
   buildStyleCascadeTable,
   createFixedMeasurer,
   createLayoutSession,
   layoutSemanticDocument,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { caretAt } from '../../layout/semantic-interaction.ts';
 import { layoutHeaderFooterStory } from '../../layout/hf-layout.ts';
 import { paintSemanticLayout } from '../semantic-paint.ts';

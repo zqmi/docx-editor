@@ -27,7 +27,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
  *
  * The review pane and its headless hook, plus the module factory re-exported so
  * a React host imports one path. Compose inside `DocxEditor.Root` from
- * `@zqmi/docx-editor-react` with the review module registered.
+ * `@onsitesai/docx-editor-react` with the review module registered.
  *
  * @packageDocumentation
  * @public
@@ -123,7 +123,7 @@ export type {
   CollaborationSelectionKind,
   CollaborationStatus,
   CollaborationStatusSnapshot,
-} from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/collaboration';
 export type {
   CollaborationBootstrap,
   CollaborationIdentityUpdate,

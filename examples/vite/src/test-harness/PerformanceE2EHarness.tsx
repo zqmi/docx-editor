@@ -5,16 +5,16 @@
 // existing E2E bridge. The benchmark drives real trusted browser input through this UI.
 
 import { useEffect, useRef } from 'react';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
 // FONTS ARE EAGER HERE, deliberately, unlike the demos. `packagedFonts()` resolves after
 // the parse and the editor re-paginates when the faces land, which inside a benchmark is a
 // surface remount in the middle of the measurement and an "open to ready" that reports
 // ready before the document is measured with its real fonts. `defaultFonts` settles before
 // the first layout, so every run measures the same thing.
-import { defaultFonts } from '@zqmi/docx-editor-fonts';
+import { defaultFonts } from '@onsitesai/docx-editor-fonts';
 import { reviewModule } from '@docx-editor.dev/pro';
 import { DocxEditorReview } from '@docx-editor.dev/pro/react';
-import { DocxEditor, useDocxEditor, useDocxSource } from '@zqmi/docx-editor-react';
+import { DocxEditor, useDocxEditor, useDocxSource } from '@onsitesai/docx-editor-react';
 import { createDocxEditorE2EHook } from './table-editing-e2e-hook.ts';
 
 const PERFORMANCE_MODULES = [reviewModule()];

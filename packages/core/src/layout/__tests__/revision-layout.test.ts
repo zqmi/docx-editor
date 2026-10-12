@@ -13,8 +13,8 @@ import {
   type OoxmlNode,
   type OoxmlPart,
   type OoxmlParagraphNode,
-} from '@zqmi/docx-editor-core/store';
-import { canonicalOoxmlFingerprint, serializeOoxmlPart } from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
+import { canonicalOoxmlFingerprint, serializeOoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { piecesOfParagraph } from '../field-projection.ts';
 import { breakParagraph } from '../paragraph-flow.ts';
 import { createFixedMeasurer, layoutSemanticDocument } from '../semantic-layout.ts';

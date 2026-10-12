@@ -1,5 +1,5 @@
 // Bounded readers for the row and cell properties a table structure reads.
-import { readTwipsMeasure, type OoxmlElement } from '@zqmi/docx-editor-core/store';
+import { readTwipsMeasure, type OoxmlElement } from '@onsitesai/docx-editor-core/store';
 import { shadingFillFromElement } from './ooxml-shading.ts';
 import {
   MAX_TABLE_ROW_HEIGHT_PT,

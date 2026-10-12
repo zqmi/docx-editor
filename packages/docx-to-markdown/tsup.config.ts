@@ -16,6 +16,6 @@ export default defineConfig(
     minify: true,
     metafile: true,
     // Core must remain a peer (one engine instance), and fonts must retain its packaged assets.
-    external: [/^@docx-editor\.dev\/core(?:\/|$)/, '@zqmi/docx-editor-fonts'],
+    external: [/^@docx-editor\.dev\/core(?:\/|$)/, '@onsitesai/docx-editor-fonts'],
   })
 );

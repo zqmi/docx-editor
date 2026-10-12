@@ -15,12 +15,12 @@ import {
   relationshipTargetIn,
   type OoxmlNode,
   type OoxmlPackage,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   createFixedMeasurer,
   layoutSemanticDocument,
   type HyperlinkFieldSpec,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { paintSemanticLayout } from '../semantic-paint.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

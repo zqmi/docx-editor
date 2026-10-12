@@ -5,7 +5,7 @@ Production use requires a commercial agreement: licensing@eigenpal.com
 */
 
 import { inject, provide, shallowRef, watch, type InjectionKey } from 'vue';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from '@docx-editor.dev/vue';
 
 export interface EditorRenderRevision {

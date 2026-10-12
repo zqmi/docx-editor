@@ -10,7 +10,7 @@ import type {
   CollaborationRemoteSelection,
   CollaborationStatus,
   CollaborationStatusSnapshot,
-} from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/collaboration';
 
 /**
  * Create or join bootstrap for one collaboration replica.

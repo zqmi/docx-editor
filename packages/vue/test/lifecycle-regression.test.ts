@@ -4,9 +4,9 @@ import './dom-setup.ts';
 import { afterEach, describe, expect, test, mock } from 'bun:test';
 import { createApp, defineComponent, h, nextTick, ref, watch } from 'vue';
 import { zipSync, strToU8 } from 'fflate';
-import type { Editor } from '@zqmi/docx-editor-core/contracts/editor';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
-import type { Translations } from '@zqmi/docx-editor-i18n';
+import type { Editor } from '@onsitesai/docx-editor-core/contracts/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
+import type { Translations } from '@onsitesai/docx-editor-i18n';
 import {
   DocxEditorRoot,
   provideDocxEditor,
@@ -18,7 +18,7 @@ import { DocxEditorContent } from '../src/editor/DocxEditorContent';
 import { useDocxEditor } from '../src/editor/context';
 import { useDocxSource } from '../src/editor/useDocxSource';
 import type { DocxSource } from '../src/editor/useDocxSource';
-import type { FontConfigurationFragment } from '@zqmi/docx-editor-core/editor';
+import type { FontConfigurationFragment } from '@onsitesai/docx-editor-core/editor';
 import { useFonts } from '../src/editor/useFonts';
 import { useHyperlinkPopupInstance } from '../src/editor/useHyperlinkPopup';
 import { SEARCH_DEBOUNCE_MS, useDocumentSearch } from '../src/editor/navigation/useDocumentSearch';

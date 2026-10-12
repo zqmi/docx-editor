@@ -19,8 +19,8 @@ import { partOfNodeId } from './surface-scope.ts';
 
 // The VIEW, not the concrete binding session: `paginated-surface.ts` is the only file in
 // this lane allowed to name that one (`store/__tests__/prosemirror-isolation.test.ts`).
-import type { TreeApplyResult, TreeDocxSessionView } from '@zqmi/docx-editor-core/binding';
-import type { StoryScope, TreeDocOp } from '@zqmi/docx-editor-core/store';
+import type { TreeApplyResult, TreeDocxSessionView } from '@onsitesai/docx-editor-core/binding';
+import type { StoryScope, TreeDocOp } from '@onsitesai/docx-editor-core/store';
 import {
   cellSelectionText,
   paragraphsInCells,
@@ -28,7 +28,7 @@ import {
   type SemanticLayout,
   type SemanticPosition,
   type SemanticSelection,
-} from '@zqmi/docx-editor-core/layout';
+} from '@onsitesai/docx-editor-core/layout';
 import { buildCopyFlavours, type CopyFlavours } from './clipboard-copy-payload.ts';
 import { routePaste } from './clipboard-paste-router.ts';
 import { insertableText } from './clipboard-plain-text.ts';

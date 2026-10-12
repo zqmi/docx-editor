@@ -1215,7 +1215,7 @@ export const wordFeatures: WordFeature[] = [
     rendering: 'full',
     roundTrip: 'full',
     tier: 'community',
-    notes: 'de, en, es, fr, he, hi, id, ja, pl, pt-BR, tr, and zh-CN via @zqmi/docx-editor-i18n.',
+    notes: 'de, en, es, fr, he, hi, id, ja, pl, pt-BR, tr, and zh-CN via @onsitesai/docx-editor-i18n.',
     docsLink: '/docs/2.x/i18n',
   },
   {

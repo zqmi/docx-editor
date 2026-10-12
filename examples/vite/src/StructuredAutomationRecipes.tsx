@@ -1,6 +1,6 @@
 import { exampleText as t } from '../../shared/example-text';
 import { useState } from 'react';
-import { useDocxEditor } from '@zqmi/docx-editor-react';
+import { useDocxEditor } from '@onsitesai/docx-editor-react';
 import {
   DocxEditor as AutomationDocxEditor,
   isDocxEditorError,

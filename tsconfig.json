@@ -27,12 +27,12 @@
     // 7 of them in `binding/tree-session.ts` alone, blamed on a file that is correct.
     "paths": {
       "@/*": ["./packages/react/src/*"],
-      "@zqmi/docx-editor-react": ["./packages/react/src/index.ts"],
-      "@zqmi/docx-editor-core": ["./packages/core/src/index.ts"],
-      "@zqmi/docx-editor-core/*": ["./packages/core/src/*"],
+      "@onsitesai/docx-editor-react": ["./packages/react/src/index.ts"],
+      "@onsitesai/docx-editor-core": ["./packages/core/src/index.ts"],
+      "@onsitesai/docx-editor-core/*": ["./packages/core/src/*"],
       "@docx-editor.dev/pro": ["./packages/pro/src/index.ts"],
       "@docx-editor.dev/pro/*": ["./packages/pro/src/*"],
-      "@zqmi/docx-editor-i18n": ["./packages/i18n/src/index.ts"],
+      "@onsitesai/docx-editor-i18n": ["./packages/i18n/src/index.ts"],
       "@docx-editor.dev/docx-to-markdown": ["./packages/docx-to-markdown/src/index.ts"],
       "@docx-editor.dev/editor-api": ["./packages/editor-api/src/index.ts"],
       "@docx-editor.dev/editor-api/*": ["./packages/editor-api/src/*"]

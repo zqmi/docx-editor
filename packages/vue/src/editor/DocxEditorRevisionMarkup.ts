@@ -1,5 +1,5 @@
 import { defineComponent, watch, type PropType } from 'vue';
-import type { RevisionMarkupOptions, ResolvedRevisionMarkup } from '@zqmi/docx-editor-core/editor';
+import type { RevisionMarkupOptions, ResolvedRevisionMarkup } from '@onsitesai/docx-editor-core/editor';
 import { useDocxEditor } from './context';
 
 /** Viewer-local markup declarations. @public */

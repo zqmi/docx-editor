@@ -45,7 +45,7 @@ Astro sends no HTML for a `client:only` island, so the page has an empty gap unt
 Install the adapter, its required engine peer, and the Astro React integration:
 
 ```bash
-npm install @zqmi/docx-editor-react @zqmi/docx-editor-core
+npm install @onsitesai/docx-editor-react @onsitesai/docx-editor-core
 npx astro add react
 ```
 

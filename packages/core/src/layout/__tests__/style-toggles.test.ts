@@ -5,7 +5,7 @@
 // levels combine, and what an explicit `w:val="0"` does at each of them.
 
 import { describe, expect, test } from 'bun:test';
-import { readOoxmlPart, type OoxmlElement, type OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import { readOoxmlPart, type OoxmlElement, type OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import {
   buildStyleCascadeTable,
   cascadeParagraphFormatting,

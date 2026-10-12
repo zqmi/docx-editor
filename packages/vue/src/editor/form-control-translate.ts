@@ -1,5 +1,5 @@
 import { inject, type ComputedRef, type InjectionKey } from 'vue';
-import type { TranslationKey } from '@zqmi/docx-editor-i18n';
+import type { TranslationKey } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../i18n';
 
 type FormControlTranslate = (key: string, params?: Record<string, string | number>) => string;

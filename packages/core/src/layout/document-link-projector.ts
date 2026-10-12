@@ -4,7 +4,7 @@ import {
   hyperlinkTargetOf,
   relationshipTargetIn,
   type HeadlessDocumentView,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import type { HyperlinkProjector } from './field-projection.ts';
 import {
   createStoryProjectionDependencies,

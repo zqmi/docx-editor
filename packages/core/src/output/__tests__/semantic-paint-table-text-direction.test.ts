@@ -2,8 +2,8 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 if (!GlobalRegistrator.isRegistered) GlobalRegistrator.register();
 
 import { expect, test } from 'bun:test';
-import { readOoxmlPart } from '@zqmi/docx-editor-core/store';
-import { createFixedMeasurer, layoutSemanticDocument } from '@zqmi/docx-editor-core/layout';
+import { readOoxmlPart } from '@onsitesai/docx-editor-core/store';
+import { createFixedMeasurer, layoutSemanticDocument } from '@onsitesai/docx-editor-core/layout';
 import { paintSemanticLayout } from '../semantic-paint.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

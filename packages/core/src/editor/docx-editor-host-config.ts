@@ -9,7 +9,7 @@ import {
   locales,
   type LocaleCode,
   type LocaleStrings,
-} from '@zqmi/docx-editor-i18n';
+} from '@onsitesai/docx-editor-i18n';
 import {
   DEFAULT_DRAWING_PAINT_STRINGS,
   drawingPaintStringsCacheToken,

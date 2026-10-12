@@ -8,7 +8,7 @@ import type {
   CollaborationFailure,
   CollaborationStatus,
   CollaborationStatusSnapshot,
-} from '@zqmi/docx-editor-core/collaboration';
+} from '@onsitesai/docx-editor-core/collaboration';
 import type { CollaborationSession } from '../collaboration/types.ts';
 import { useCollaborationSession } from './useCollaborationSession.ts';
 

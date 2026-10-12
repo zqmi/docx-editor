@@ -1,4 +1,4 @@
-import type { OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 import { themeFontFamilyOf } from '../store/package/theme-font-scheme.ts';
 import type { ThemeFonts } from './run-style.ts';
 import { isChineseFace } from '../store/package/default-font-faces.ts';

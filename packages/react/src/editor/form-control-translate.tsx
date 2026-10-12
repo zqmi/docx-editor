@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext } from 'react';
-import type { TFunction } from '@zqmi/docx-editor-i18n';
+import type { TFunction } from '@onsitesai/docx-editor-i18n';
 import { useTranslation } from '../i18n';
 
 const Context = createContext<TFunction | undefined>(undefined);

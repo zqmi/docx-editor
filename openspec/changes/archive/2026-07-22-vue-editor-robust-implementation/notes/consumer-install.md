@@ -7,9 +7,9 @@ Run date: 2026-05-12
 Local tarballs were created for:
 
 - `@docx-editor.dev/vue@0.0.1`
-- `@zqmi/docx-editor-core@0.0.28`
+- `@onsitesai/docx-editor-core@0.0.28`
 - `@docx-editor.dev/agents@0.5.1`
-- `@zqmi/docx-editor-i18n@0.0.1`
+- `@onsitesai/docx-editor-i18n@0.0.1`
 
 The first install attempt with only the Vue tarball correctly exposed a release
 packaging blocker: `workspace:*` dependency ranges were preserved in the packed
@@ -18,7 +18,7 @@ publishable internal ranges so released consumers will not need to install core
 or i18n directly for basic editor usage.
 
 Because the renamed internal packages are not published to npm yet, the local
-pack-only check cannot fetch `@zqmi/docx-editor-core` from the public
+pack-only check cannot fetch `@onsitesai/docx-editor-core` from the public
 registry before the 1.0.0 release. The explicit local-tarball variant below
 verifies the built package graph that npm will resolve after the fixed group is
 published.

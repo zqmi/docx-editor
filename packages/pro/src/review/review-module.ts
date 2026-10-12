@@ -18,7 +18,7 @@ import {
   resolveReviewPane,
   type EditorModule,
   type ReviewPaneOptions,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 import { collectReviewItems, revisionItemsOfParagraph } from './review-model.ts';
 import { rememberLicenseKey, type ProLicenseOptions } from '../license.ts';
 
@@ -29,7 +29,7 @@ export type {
   ReviewPaneOptions,
   ReviewPaneOverflow,
   RevisionDisplay,
-} from '@zqmi/docx-editor-core/editor';
+} from '@onsitesai/docx-editor-core/editor';
 
 /**
  * How {@link reviewModule} is configured. Every field is optional, so `reviewModule()`

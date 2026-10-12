@@ -1,5 +1,5 @@
 import { framedTokenJoin } from './layout-cache.ts';
-import type { OoxmlElement, OoxmlNode, OoxmlProperty } from '@zqmi/docx-editor-core/store';
+import type { OoxmlElement, OoxmlNode, OoxmlProperty } from '@onsitesai/docx-editor-core/store';
 
 export interface StyleSeparatorMember {
   readonly paragraph: OoxmlElement;

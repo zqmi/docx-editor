@@ -1,5 +1,5 @@
 import { paragraphOffsetIndex } from '../store/store/tree-op-segments.ts';
-import type { OoxmlParagraphNode } from '@zqmi/docx-editor-core/store';
+import type { OoxmlParagraphNode } from '@onsitesai/docx-editor-core/store';
 import type { unmergedPiecesOfParagraphForDisplay } from './field-projection-walk.ts';
 import type { FieldAwarePiece } from './field-pieces.ts';
 import { styleSeparatorMembersOf } from './style-separator-group.ts';

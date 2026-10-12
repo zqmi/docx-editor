@@ -12,7 +12,7 @@ import {
   PAGE_BREAK_CHAR,
   paragraphTextOf,
   readOoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import { createDocxEditor, type DocxEditorInstance } from '../../editor/docx-editor.ts';
 import { createFixedMeasurer } from '../index.ts';
 import { piecesOfParagraph } from '../field-projection.ts';

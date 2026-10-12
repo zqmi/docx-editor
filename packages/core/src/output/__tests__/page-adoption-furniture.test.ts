@@ -20,7 +20,7 @@ import type {
 } from '../../layout/semantic-records.ts';
 import { lay, load } from '../../layout/__tests__/table-row-keep-fixtures.ts';
 import { applyTreeOp } from '../../store/store/tree-ops.ts';
-import type { OoxmlNode, OoxmlPart } from '@zqmi/docx-editor-core/store';
+import type { OoxmlNode, OoxmlPart } from '@onsitesai/docx-editor-core/store';
 import { paintSemanticLayout, type PaintOptions } from '../semantic-paint.ts';
 
 const W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';

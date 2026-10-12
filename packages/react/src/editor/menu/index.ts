@@ -28,4 +28,4 @@ export { MenuReportIssue, type MenuReportIssueProps } from './menu-help';
 export type { MenuId } from './menu-context';
 export { MenuReview, MenuReviewers, type MenuReviewersProps } from './Reviewers';
 
-export type { ChromeExportHandlers, ChromeExportFormat } from '@zqmi/docx-editor-core/editor';
+export type { ChromeExportHandlers, ChromeExportFormat } from '@onsitesai/docx-editor-core/editor';

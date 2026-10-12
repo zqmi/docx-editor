@@ -25,7 +25,7 @@ import {
   storyRootsOf,
   type OoxmlNode,
   type OoxmlPart,
-} from '@zqmi/docx-editor-core/store';
+} from '@onsitesai/docx-editor-core/store';
 import {
   contentControlContentOf,
   isContentControl,

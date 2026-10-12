@@ -7,7 +7,7 @@ import {
   createAutomationPaginationProvider,
   type AutomationPaginationOptions,
   type AutomationPaginationProvider,
-} from '@zqmi/docx-editor-core/automation';
+} from '@onsitesai/docx-editor-core/automation';
 
 /** Explicit measurement inputs for headless field calculation. @public */
 export interface ServerPaginationOptions extends AutomationPaginationOptions {}

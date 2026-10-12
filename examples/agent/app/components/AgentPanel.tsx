@@ -15,7 +15,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useChat } from '@ai-sdk/react';
 import { DefaultChatTransport, lastAssistantMessageIsCompleteWithToolCalls } from 'ai';
 import type { DocxEditorRuntime } from '@docx-editor.dev/editor-api/browser';
-import type { DocxEditorInstance } from '@zqmi/docx-editor-core/editor';
+import type { DocxEditorInstance } from '@onsitesai/docx-editor-core/editor';
 import { useReviewOf } from '@docx-editor.dev/pro/react';
 import { createBrowserRuntime, runAgentTool, readAgentContext } from '../agent/run-tool';
 import { ChatLog, Composer, toAgentEntries } from './ChatLog';

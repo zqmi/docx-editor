@@ -1,5 +1,5 @@
 import { ToolbarColorSwatch } from './toolbar/ColorSplit';
-import { observeContentControlPopup } from '@zqmi/docx-editor-core/editor';
+import { observeContentControlPopup } from '@onsitesai/docx-editor-core/editor';
 import { defineComponent, getCurrentInstance, nextTick, ref, watch, type PropType } from 'vue';
 
 export function revisionColorToken(value: string): string {

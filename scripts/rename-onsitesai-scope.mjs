@@ -1,7 +1,7 @@
 /**
  * Rename the four Apache packages we ship as a fork:
  *   @docx-editor.dev/{core,react,fonts,i18n}
- * → @zqmi/docx-editor-{core,react,fonts,i18n}
+ * → @onsitesai/docx-editor-{core,react,fonts,i18n}
  *
  * Leaves @docx-editor.dev/fonts-cjk, vue, pro, editor-api, etc. untouched.
  */
@@ -44,10 +44,10 @@ const EXT = new Set([
 /** Longer / more-specific first. */
 const REPLACEMENTS = [
   ['@docx-editor.dev/fonts-cjk', '@docx-editor.dev/fonts-cjk'],
-  ['@zqmi/docx-editor-core', '@zqmi/docx-editor-core'],
-  ['@zqmi/docx-editor-react', '@zqmi/docx-editor-react'],
-  ['@zqmi/docx-editor-fonts', '@zqmi/docx-editor-fonts'],
-  ['@zqmi/docx-editor-i18n', '@zqmi/docx-editor-i18n'],
+  ['@onsitesai/docx-editor-core', '@onsitesai/docx-editor-core'],
+  ['@onsitesai/docx-editor-react', '@onsitesai/docx-editor-react'],
+  ['@onsitesai/docx-editor-fonts', '@onsitesai/docx-editor-fonts'],
+  ['@onsitesai/docx-editor-i18n', '@onsitesai/docx-editor-i18n'],
   ['@docx-editor.dev/fonts-cjk', '@docx-editor.dev/fonts-cjk'],
 ]
 
